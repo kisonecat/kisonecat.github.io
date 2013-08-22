@@ -1,0 +1,113 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+\usepackage{amssymb}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+
+\newtheorem*{example}{Example}
+\newtheorem*{thm}{Theorem}
+
+\title{Lecture 3: Limits}
+\author{Math 153 Section 57}
+\date{Friday October  3, 2008}
+
+\begin{document}
+\maketitle
+
+We will be following chapter 11.3.
+
+Here, we introduce limits, the \textbf{most important idea in
+  calculus}, and that which distinguishes calculus from mere algebra.
+
+\section{Review of where we've been}
+
+Defined ``bounded'' for sets and sequences.
+
+Defined ``monotone'' for sequences.
+
+\subsection{Some loose ends: recursively defined sequences}
+
+One person asked: is a sequence just a function?  Yes!  You've
+probably already studied functions $\R \to \R$, and a sequence is a
+function $\N \to \R$.
+
+A sequence (or a function) is not necessarily given by a formula: A
+weirder example: $p_n$ is the $n$-th digit of $\pi$.  $x_n$ is the
+number of digits in the decimal representation of $n$.
+
+Another way to define sequences: define future terms by using past terms.
+
+Example: $a_1 = 2$.  $a_{n+1} = 2 \cdot a_n$.  Increasing?  This is just $a_n = 2^n$.
+
+Example: $a_1 = 16$.  $a_{n+1} = 16 - a_n$.  Increasing?  This
+alternates between 0 and 16.
+
+Example: $a_1 = 1, a_2 = 1$.  $a_{n+2} = a_{n+1} + a_n$.  Increasing?
+
+\section{Limits}
+
+Formal definition: $\lim_{n \to \infty} a_n = L$ means for every $\epsilon >
+0$, there exists $K$ such that $n \geq K$ implies $|a_n - L| <
+\epsilon$.
+
+Intuitive definition: $\lim_{n \to \infty} a_n = L$ means that as
+close as you want $a_n$ to get to $L$, you can go far enough out in
+the sequence and stay that close.
+
+If $a_n$ has a limit, then it is a \textbf{convergent} sequence, and
+we say it \textbf{converges}.  If not, the sequence \textbf{diverges}
+(or \textbf{is divergent}).
+
+\subsection{Challenge-response}
+
+Think of the definition of limit as a challenge response game: the
+challenger gives you an $\epsilon$, and you must produce the $K$.
+
+To prove that something converges to $L$, you must be find a $K$ for
+every $\epsilon$.
+
+To prove that something doesn't converge at all?  You have to show
+that no matter what $L$ you pick, there is some $\epsilon$ for which
+you can't find a suitable $K$.  That sounds difficult.
+
+\subsection{Example}
+
+Useful fact: for any $b \in \R$, there is an $n \in \N$ with $n > b$.
+
+Useful fact: for any $b \in \R$ with $b > 0$, there is an $n \in \N$
+with $1/n < b$.
+
+If $\lim_{n \to \infty} (2n+1)/n = 2$.  Why?  Set $L = 2$.  We need to find $K$ so that for all $n > K$, we get $|2 + 1/n - 2| < \epsilon$.
+
+If $a_n = 0.9999 \cdots 9$, i.e., the $n$-term has $n$ nines, then
+$a_n = 1 - 10^{-n}$, and $\lim_{n \to \infty} a_n = 1$.  To be
+precise?  Set $L = 1$.  Then need $K$ so that for all $n > K$, we get
+$|1 - 10^{-n} - 1| < \epsilon$.  That is, we need $10^{-n} <
+\epsilon$, so we take $\log_{10} 10^{-n} < \log_{10} \epsilon$, so we
+take $n > -\log_{10} \epsilon$.
+
+\subsection{Theorems}
+
+Limits are unique: if $\lim_{n \to \infty} a_n = L$ and also $\lim_{n
+  \to \infty} a_n = M$, then $L = M$.
+
+Limits only depend on their tails: if $\lim_{n \to \infty} a_n = L$
+and $m \in \N$, then $\lim_{n \to \infty} a_{n+m} = L$.
+
+Convergent sequences are bounded.
+
+Unbounded sequences are divergent (awesome---a situation where we can
+show that no matter what $L$ we pick, there is an $\epsilon$ for which
+we can't find a $K$).
+
+\section{Survey with closed eyes}
+
+One week is over: are we going too fast, too slowly, just right?
+
+\end{document}

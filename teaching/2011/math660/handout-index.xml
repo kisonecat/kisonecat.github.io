@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Handouts - Math 660 - Summer 2011</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math660/</link>
+<atom:link href="http://www.math.osu.edu/~fowler/teaching/math660/handout-index.xml" rel="self" type="application/rss+xml" />
+<description>
+Handouts from the Summer 2011 quarter of Math 660, taught by Jim Fowler.
+</description>
+<language>en-us</language>
+<copyright>Copyright 2011 Jim Fowler</copyright>
+<managingEditor>fowler@math.osu.edu (Jim Fowler)</managingEditor>
+<lastBuildDate>Tue, 19 Jul 2011 10:47:01 -0400</lastBuildDate>
+<ttl>60</ttl>
+
+
+
+<item>
+<title>Syllabus</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math660/syllabus.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math660/syllabus.pdf</guid>
+<description>
+
+</description>
+<pubDate>Wed, 06 Jul 2011 16:48:23 -0400</pubDate>
+</item>
+
+
+
+<item>
+<title>Course Overview</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math660/overview.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math660/overview.pdf</guid>
+<description>
+
+</description>
+<pubDate>Thu, 30 Jun 2011 09:19:13 -0400</pubDate>
+</item>
+
+
+
+</channel>
+</rss>

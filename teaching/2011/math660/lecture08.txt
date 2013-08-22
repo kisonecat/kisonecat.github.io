@@ -1,0 +1,6 @@
+Lecture 8: Metric spaces
+Math 660—Jim Fowler Wednesday, June 29, 2011
+
+It’s time for the “Moore method.”
+
+

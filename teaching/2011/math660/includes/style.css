@@ -1,0 +1,169 @@
+/*******************************************************
+TITLE: Fluid Three-Column Layout (Basic) V1.0 (Beta)
+DATE: 20060418
+AUTHOR: The CSS Tinderbox - http://www.csstinderbox.com
+*******************************************************/
+
+body {
+margin:0;
+padding:0;
+background-color:#ffffff;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:1em;
+}
+
+a {
+color:#cc0000;
+text-decoration:underline;
+}
+
+a:hover {
+color:#ffffff;
+text-decoration:none;
+}
+
+blockquote {
+margin:1em;
+padding:.5em;
+font-size:.9em;
+background-color:#cccccc;
+border-top:1px solid #999999;
+border-bottom:1px solid #999999;
+}
+
+blockquote p {
+margin:.2em;
+}
+
+#header {
+margin:2em 2em 0 2em;
+padding:1em 1.5em;
+height:5em;
+background-color:#cccccc;
+border:1px solid #eeeeee;
+}
+
+#header h1 { 
+margin:0; 
+padding:0;
+font-size:1.2em;
+}
+
+#header h3 { 
+margin:0; 
+padding:0;
+font-size:.9em;
+}
+
+#header a {
+text-decoration:none;
+}
+
+#leftColumn {
+position:absolute;
+left:2.25em;
+top:10.3em;
+width:14em;
+margin:0;
+padding:1em .5em 2em .5em;
+background:#cccccc;
+border:1px solid #eeeeee;
+font-size:.9em;
+}
+
+#leftColumn h2 { 
+margin:0 0 -1em 0; 
+padding:0;
+font-size:1em;
+}
+
+#leftColumn ul { 
+margin:1.5em 0 0 0; 
+padding:0;
+list-style:none;
+}
+
+#leftColumn li { 
+margin:0 0 .4em 0; 
+padding:0;
+}
+
+#leftColumn li a { 
+margin:0 0 0 .2em;
+color:#cc0000;
+text-decoration:none; 
+}
+
+#leftColumn li a:hover { 
+color:#ffffff;
+text-decoration:underline; 
+}
+
+#centerColumn {
+margin-top:.2em;
+margin-left: 16em;
+margin-right:16em;
+voice-family: "\"}\"";
+voice-family: inherit;
+margin-left:17.50em;
+margin-right:17.50em;
+padding:1em .5em 2em .5em;
+background:#cccccc;
+font-size:.9em;
+}
+
+html>body #centerColumn {
+margin-left:17.50em;
+margin-right:17.50em;
+}
+
+#centerColumn h2 { 
+margin:0 0 -1em 0; 
+padding:0;
+font-size:1em;
+}
+
+#rightColumn {
+position:absolute;
+right:2.25em;
+top:10.3em;
+width:14em;
+margin:0;
+padding:1em .5em 2em .5em;
+background:#cccccc;
+border:1px solid #eeeeee;
+font-size:.9em;
+}
+
+#rightColumn h2 { 
+margin:0 0 -1em 0; 
+padding:0;
+font-size:1em;
+}
+
+#rightColumn ul { 
+margin:1.5em 0 0 0; 
+padding:0;
+list-style:none;
+}
+
+#tags {
+margin:0 0 .5em 0;
+width:10em;
+float:right;
+border:none;
+text-align:right;
+}
+
+#tags img {
+border:none;
+}
+
+#tags p {
+margin:0 0 .25em 0;
+}
+
+#tags a {
+font-size:.7em;
+color:#cc0000;
+}

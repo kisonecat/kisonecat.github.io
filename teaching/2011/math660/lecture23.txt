@@ -1,0 +1,127 @@
+Lecture 23: Higher derivatives
+Math 660—Jim Fowler Thursday, July 21, 2011
+
+Midterm tomorrow!
+
+Partial fractions
+
+Partial fractions
+
+Ahlfors’ technique: subtract oﬀ the poles
+
+f (z) =
+
+1 2πiη(γ, z)
+
+γ
+
+f (w ) dw . w −z
+
+f (z) =
+
+1 2πiη(γ, z)
+
+γ
+
+f (w ) dw . w −z
+
+Consequently, analytic functions are determined by their values on a circle.
+
+f (z) =
+
+1 2πiη(γ, z)
+
+γ
+
+f (w ) dw . w −z
+
+Consequently, analytic functions are determined by their values on a circle. By a fractional linear transformation, analytic functions are determined by their value on the real line.
+
+f (n)(z) =
+
+n! 2πiη(γ, z)
+
+γ
+
+f (w ) dw . (w − z)n+1
+
+Theorem (Liouville)
+If f : C → C analytic and bounded, then f ≡ constant.
+
+Theorem (Morera’s theorem)
+If f : Ω → C is continuous, and γ f (z) dz = 0 for all closed γ, then f (z) is analytic.
+
+Theorem (Morera’s theorem)
+If f : Ω → C is continuous, and γ f (z) dz = 0 for all closed γ, then f (z) is analytic.
+
+Proof.
+So there exists F : Ω → C with F = f .
+
+Theorem (Morera’s theorem)
+If f : Ω → C is continuous, and γ f (z) dz = 0 for all closed γ, then f (z) is analytic.
+
+Proof.
+So there exists F : Ω → C with F = f . But then F is twice diﬀerentiable, so f is analytic.
+
+Theorem (Morera’s theorem)
+If f : Ω → C is continuous, and γ f (z) dz = 0 for all closed γ, then f (z) is analytic.
+
+Proof.
+So there exists F : Ω → C with F = f . But then F is twice diﬀerentiable, so f is analytic.
+
+Cauchy’s estimate
+
+f (n) (z) =
+
+n! 2πiη(γ, z)
+
+γ
+
+f (w ) dw . (w − z)n+1
+
+Cauchy’s estimate
+
+f (n) (z) =
+
+n! 2πiη(γ, z)
+
+γ
+
+f (w ) dw . (w − z)n+1
+
+Considering a circle of radius R around z, if |f (z)| is bounded by C on the circle, |f (n) (z)| ≤ C · n! · R −n .
+
+Consequences
+
+Consequences
+
+If |f (Re iθ )| ∼ R n , what can you say about the derivatives of f ?
+
+Removable singularities
+
+f : Ω − {a} → C analytic can be extended to Ω → C iﬀ limz→a f (z) (z − a) = 0.
+
+Removable singularities
+
+f : Ω − {a} → C analytic can be extended to Ω → C iﬀ limz→a f (z) (z − a) = 0. Why? Cauchy’s formula is valid.
+
+Apply this trick to F (z) = f (z) − f (a) z −a
+
+and get f (z) = f (a) + (z − a)F (z).
+
+Apply this trick to F (z) = f (z) − f (a) z −a
+
+and get f (z) = f (a) + (z − a)F (z). Rinse, repeat.
+
+Consequently. . .
+If f : Ω → C is analytic, for any a ∈ Ω, we can write
+k
+
+f (z) = f (a) +
+n=1
+
+f (n) (a) (z − a)n + F (z)(z − a)k+1 n!
+
+for some analytic F : Ω → C.
+
+

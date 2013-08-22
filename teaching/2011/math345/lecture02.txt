@@ -1,0 +1,41 @@
+Lecture 2: Conditional sentences
+Thursday, September 23, 2010
+
+Math 345
+Jim Fowler
+
+Textbook
+This lecture discusses section 2 of the textbook.
+
+Homework
+The homework is due Tuesday, September 28, 2010. From Section 2 of the textbook, do exercises 7, 8, and 10.
+
+Conditional sentences
+P ⇒Q write out truth table
+
+Negation of conditional sentence
+¬(P ⇒ Q) is equivalent to P ∧ ¬Q
+
+Converse of conditional sentence
+the converse of P ⇒ Q is Q ⇒ P .
+
+Biconditonal sentences
+Show that P ⇔ Q is the same as P ⇒ Q and Q ⇒ P .
+
+1
+
+Quick survey of understanding Examples with numbers
+e.g., x2 = 1
+
+Tautologies
+a tautology is a proposition which is true, no matter the truth values of the propositions it is built from. formally, a proposition P is a tautology if it is logically equivalent to “true.” example: P ∨ ¬P . example: P ∧ Q ⇒ P .
+
+Conditional proof
+How do you prove a statement like P ⇒ Q?
+
+Modus Ponens
+If P holds and P ⇒ Q holds, then Q holds.
+
+2
+
+

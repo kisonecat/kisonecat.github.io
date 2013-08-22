@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+\newtheorem*{example}{Example}
+\newtheorem*{thm}{Theorem}
+
+\title{Lecture 3: Vector products}
+\author{Math 195 Section 91}
+\date{Friday June 26, 2009}
+
+\begin{document}
+\maketitle
+
+Goal: section 13.3 and 13.4
+
+\subsection*{Dot product}
+
+definition
+
+properties:
+\begin{itemize}
+\item $v \cdot v = |v|^2$
+\item $v \cdot (w + u) = v \cdot w + v \cdot u$
+\item $0 \cdot v = 0$.
+\item $v \cdot w = w \cdot v$
+\item $(\alpha v) \cdot w = \alpha \cdot (v \cdot w) = v \cdot (\alpha w)$.
+\end{itemize}
+
+use dot product to find length.  define unit vector.
+
+what does it measure: the angle $v \cdot w = |v| \cdot |w| \cdot \cos \theta$.
+
+how to find the angle
+
+prop: vectors $v$ and $w$ are orthognoal if $v \cdot w = 0$.
+
+especially fun to find angle with $i, j, k$.
+
+\subsection{Projection}
+
+project $w$ onto $v$.
+
+use projection to write $w$ as a combination of $u$ and $v$.
+
+\subsection{higher dimensions!}
+
+we can do dot products in any dimension!  can you compute the angle
+between two four dimensional vectors?
+
+\subsection{Cross product}
+
+cross product is something special about 3-dimensions---takes two vectors and gives another vector
+
+define cross product using the ``circle $ijk$''.  mention that the book uses determinants, but that we won't do this.
+
+theorem: $a \times b$ is perpendicular to $a$ and $b$.  proof?  dot products!
+
+theorem: $|a \times b| = |a| \cdot |b| \cdot \sin \theta$.  This is the same asthe area of the parallelogram.
+
+interactively deduce the varous properties of cross products
+
+commutative?  associative?  
+
+\end{document}

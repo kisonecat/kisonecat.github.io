@@ -1,0 +1,11 @@
+Homework and Quiz 3
+Due Monday, June 29, 2009 Ungraded homework
+For practice at home, might I recommend: Section 13.3, page 820, problems 3, 7, 11, 15, 17, 23, 35, 37. Section 13.4, page 828, problems 3, 5, 7, 11, 13, 19, 33. The problems on dot products are extremely important—you must become very skilled at computing dot products. The problems on cross products are admittedly less important (since it only applies to dimension 3), but they are a lot of fun.
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Graded Quiz
+(a) Compute the dot product of the vectors (4, 1, 5) and (−1, 2, −3). (b) Find a vector of unit length pointing in the same direction as the vector (2, −1, 3). (c) For which α ∈ R are the vectors (−6, α, 2) and (α, α2 , α) orthogonal? (d) Find the angle between the two vectors (cos θ, sin θ) and (sin θ, cos θ). Your answer should involve θ, and not involve any trigonometric functions. (e) Let v be the cross product of the vectors u = (1, 2, 3) and w = (3, 2, 1). Compute v. What is u · v? What is w · v? (f ) Find a vector which is orthogonal to both (1, t, 2) and (t, 2, 3). Your answer will, of course, depend on t. It might be fun to draw a picture of these vectors for diﬀerent values of t.
+
+c 2009 Jim Fowler
+
+

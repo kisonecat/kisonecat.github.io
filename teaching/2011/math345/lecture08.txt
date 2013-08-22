@@ -1,0 +1,15 @@
+Lecture 8: Nested quantiﬁers
+Tuesday, October 5, 2010
+
+Math 345
+Jim Fowler
+
+Textbook
+This lecture discusses section 3 of the textbook.
+
+Homework
+The homework is due Thursday, October 7, 2010. From Section 3 of the textbook, do exercises 9, 10, and 13.
+
+1
+
+

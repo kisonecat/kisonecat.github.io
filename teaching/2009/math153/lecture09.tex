@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+\newtheorem*{example}{Example}
+\newtheorem*{thm}{Theorem}
+
+\title{Lecture 9: More improper integrals}
+\author{Math 153 Section 57}
+\date{Friday October 17, 2008}
+
+\begin{document}
+\maketitle
+
+Continuing in chapter 11.7.
+
+Also, review for the test.
+
+\section{Insufficiently impressed with logarithms?}
+
+How about quartersquares?
+
+\section{Review for the test}
+
+\section{Existence without computation}
+
+Sometimes we can show that an improper integral converges without actually doing the calculation.  This is the comparison test.
+
+If $f$ and $g$ are cts on $[a,\infty)$ and $0 \leq f(x) \leq g(x)$,
+then $\int_a^\infty g(x) \, dx$ converges implies $\int_a^\infty f(x)
+\, dx$ converges.  And the contrapositive.
+
+Example: $\int_1^\infty dx/\sqrt{1+x^{100}}$ converges because
+$$
+\frac{1}{\sqrt{1 + x^{100}}} < 1/x^{50}
+$$
+as long as $x \geq 1$.
+
+Example: $\int_1^\infty dx/\sqrt{1+x^{100} + \sin^2 x}$ converges because
+$$
+\frac{1}{\sqrt{1 + x^{100} + \sin^2 x}} < \frac{1}{\sqrt{1 + x^{100}}}
+$$
+as long as $x \geq 1$.
+
+Example: $\int_2^\infty dx/\sqrt{x^2 - \sin^2 x}$ diverges because
+$$
+\frac{1}{x} < \frac{1}{\sqrt{x^2 - \sin^2 x}}
+$$
+
+\section{If only I could l'H\^opital sequences\ldots}
+
+Now you can!
+
+The following might be called a ``l'H\^opital's rule for sequences.''
+Here, the differences of successive terms take the place of the
+derivative:
+\begin{thm}[Stolz-Ces\`aro]
+  Let $a_n$ and $b_n$ be sequences of real numbers, both unbounded.
+  Assume $b_n$ is positive and increasing.  If
+$$
+\lim_{n \to \infty} \frac{a_{n+1} - a_n}{b_{n+1} - b_n} = L
+$$
+then $\displaystyle\lim_{n\to\infty} a_n/b_n = L$.
+\end{thm}
+
+\section{Review $\epsilon$-$K$ proofs}
+
+\end{document}

@@ -1,0 +1,187 @@
+Fake Midterm 2
+
+Math 345
+November 2010
+
+Practical application is found by not looking for it, and one can say that the whole progress of civilization rests on that principle. —Hadamard
+
+Name: Lecture time (circle one): 12:30–1:18p.m. 2:30–3:18p.m.
+
+1. Write your name above. 2. Calculators are forbidden. 3. Look inside the fake exam before taking the real exam. 4. Justify your answers. 5. Show your work. 6. Write your answers down to practice. 7. Answer all questions. 8. To prevent ﬁre, do not divide by zero.
+
+Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Total
+
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+
+/360 /360 /360 /360 /360 /360 /360 /360 /360 /360 /360 /360 /360 /360 /360 /360 /360 /360 /360 /360 /7200
+
+Problem 1
+Is it the case for all integers x that 12 divides x(x + 1)(x + 2)(x + 3)? If so, prove it. If not, provide a counterexample.
+
+/360
+
+Solution
+
+Problem 2
+Is it the case for all integers x that 16 divides 17n − 1? If so, prove it. If not, provide a counterexample.
+
+/360
+
+Solution
+
+Problem 3
+
+/360
+
+Suppose S ⊂ Z and that for all x ∈ S, x > −10. Does S have a least element? If so, prove it. If not, give a counterexample.
+
+Solution
+
+Problem 4
+
+/360
+
+Suppose a ≡ b mod m and c ≡ d mod m. Is it the case that ac ≡ bd mod m? If so, prove it. If not, give a counterexample.
+
+Solution
+
+Problem 5
+
+/360
+
+Suppose a ≡ b mod m and c ≡ d mod m. Is it the case that a + c ≡ b + d mod m? If so, prove it. If not, give a counterexample.
+
+Solution
+
+Problem 6
+
+/360
+
+Suppose a ≡ b mod m and c ≡ d mod m. Is it the case that ac ≡ bd mod m? If so, prove it. If not, give a counterexample.
+
+Solution
+
+Problem 7
+Find a polynomial f (n) so that
+n
+
+/360
+f (n) =
+k=1
+
+k2 + k .
+
+Solution
+
+Problem 8
+Find a polynomial f (n) so that
+n
+
+/360
+f (n) =
+k=1
+
+k3
+
+Solution
+
+Problem 9
+Prove by induction that for all n ∈ N, n 2 = (n)(n − 1) . 2
+
+/360
+
+(I thank Marilyn Rayner for correcting an error in a previous version of this problem.)
+
+Solution
+
+Problem 10
+Prove by induction that for all n ∈ N and for all integers x and y, xn − y n x−y is an integer.
+
+/360
+
+Solution
+
+Problem 11
+Prove by induction that, for all n ∈ N,
+n
+
+/360
+(2k + 1)
+k=0
+
+is a perfect square. (I thank Marilyn Rayner for correcting an error in a previous version of this problem.)
+
+Solution
+
+Problem 12
+Prove by induction that, for all n ∈ N, √ (n − 1) n < 3.
+
+/360
+
+2 3 4···
+
+Solution
+
+Problem 13
+Prove by induction that, for all n ∈ N,
+n
+
+/360
+n+k 1 = 2n . k k 2
+
+k=0
+
+(This problem might be very hard)
+
+Solution
+
+Problem 14
+Let Fn be the Fibonacci numbers. For wich values of n does Fn end in a zero?
+
+/360
+
+Solution
+
+Problem 15
+
+/360
+
+Let Fn be the Fibonacci numbers (here, F1 = 1 and F2 = 1, and Fn+2 = Fn+1 + Fn ). Suppose x is a real number for which x2 = 1 − x. Is it the case that x100 = F99 − F100 x? If so, prove it. (This is a situation where you might want to prove a much stronger statement by induction).
+
+Solution
+
+Problem 16
+
+/360
+
+Deﬁne a sequence Gn so that G1 = 1, G2 = 1, G3 = 1, and Gn+3 = Gn+2 + Gn+1 + Gn . For which n is Gn even? Prove your claim by using induction.
+
+Solution
+
+Problem 17
+Prove that there are inﬁnitely many prime numbers.
+
+/360
+
+Solution
+
+Problem 18
+State and prove the binomial theorem.
+
+/360
+
+Solution
+
+Problem 19
+Use the Binomial theorem to expand (1 + x)8 .
+
+/360
+
+Solution
+
+Problem 20
+Show that for every integer x ≥ 2, there is a prime number p so that p divides x.
+
+/360
+
+

@@ -1,0 +1,122 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+\newtheorem*{example}{Example}
+\newtheorem*{thm}{Theorem}
+
+\title{Lecture 13: Convergence tests}
+\author{Math 153 Section 57}
+\date{Monday October 27, 2008}
+
+\begin{document}
+\maketitle
+
+Following chapter 12.3 and starting 12.4.
+
+\subsection*{Bare hands proof that harmonic series diverges}
+
+Estimate $\sum_{n = 1}^K 1/n$.  1/1.  1/2.  $1/3 + 1/4$ underestimated
+by $1/2$.  $1/5 +1/6 + 1/7 + 1/8$ underestimates by $1/2$.  And so on.
+Therefore, $s_{2^k} \geq 1 + k/2$.  This argument is about 700 years
+old.
+
+Use this to estimate how many terms we have to add up.  How big does
+$K$ have to be in order for $\sum_{n=1}^K 1/n > 10$.  If I want $1 +
+k/2 \geq 10$, I need $k \geq 18$.  But $2^{18} = 262144$.
+
+This will do, but I actually only need $k = 12367$.  Better
+approximation from Euler–Mascheroni constant:
+$$
+\gamma = \lim_{K \to \infty} \left(\left( \sum_{n=1}^K 1/n \right) - \log K\right) \approx 0.577.
+$$
+Since $e^{10 - 0.577} = 12369.6$, guess that $k = 12367$ suffices.
+
+\subsection*{Be careful about series with negative terms}
+
+For example, $\sum 1/n$ diverges, but as we will see soon, $\sum
+(-1)^n/n$ converges---even though $1/n$ and $(-1)^n/n$ have the same
+magnitude.  More about this on Friday.
+
+\subsection*{Limit comparison test}
+
+Limit comparison test: let $a_n \geq 0$ and $b_n \geq 0$.  If $\lim_{n \to \infty} a_n / b_n = L > 0$, then $\sum a_n$ converges iff $\sum b_n$ converges.
+
+Proof: Choose $\epsilon$ so that $0 < \epsilon < L$.
+
+Then there exist $K$ so that for $n \geq K$, $|a_n / b_n - L| < \epsilon$.
+
+That means,
+$$
+(L - \epsilon) b_n < a_n < (L + \epsilon) b_n
+$$
+So if $\sum a_n$ converges, then $\sum (L - \epsilon) b_n$ converges.
+
+\textbf{The slogan: converge is all about how quickly those terms are
+  vanishing.}
+
+\subsection*{Example}
+
+$$
+\sum_n \frac{3n^2 + n + 17}{n^4 + n^2 + 8}
+$$
+On the one hand, we could try to bound this and apply comparison
+tes\ldots but even easier is to use the limit comparison test!  Use
+$\sum 1/n^2$.
+
+\subsection*{Buyer beware!}
+
+The limit comparison test does not tell you what the series
+equals---only whether it converges.
+
+\subsection*{Like all tools, use it properly}
+
+Limit comparison says nothing if $L = 0$, or $L = \infty$.
+
+\section*{Review}
+
+Does a series converge?
+
+First, is it a series we recognize? Geometric series?  Harmonic series
+or $p$-series?
+
+Apply integral test (which involves coming up with a function),
+comparison test (which involve coming up with another series), or
+limit comparison test (which involves coming up with another series
+and taking a limit).
+
+\section*{More tests}
+
+Let $a_n \geq 0$, and $\lim_{n \to \infty} {a_n}^{1/n} = L$.  Then if
+$L < 1$, then $\sum a_n$ converges, and if $L > 1$, then $\sum a_n$
+diverges.  If $L = 1$, inconclusive.
+
+Proof: suppose $L < 1$.  Choose $\epsilon$ small so that $L + \epsilon
+< 1$.  Then for $n$ large,
+$$
+{a_n}^{1/n} < L + \epsilon
+$$
+so for $n$ large, $a_n < (L + \epsilon)^n$.  By comparison with $\sum
+(L + \epsilon)^n$, the series converges.
+
+On the other hand, if $L > 1$, then choose $\epsilon$ small so that $L
+- \epsilon > 1$.  Again, for $n$ large, ${a_n}^{1/n} > L - \epsilon$,
+so ${a_n} > (L - \epsilon)^n$.  Since $\sum (L - \epsilon)^n$
+diverges, comparison proves $\sum a_n$ diverges.
+
+\subsection*{Example}
+
+$$
+\sum \frac{1}{n^n}.
+$$
+Or again,
+$$\sum \frac{1}{(\cos n + \sin \log n + n)^n}.$$
+
+counterexample: $\sum 1/n$ is not detected, since $\lim 1/n^{1/n} = 1$.  The same is true of $\sum 1/n^2$.
+
+This is nothing more than an application of the comparison test (or,
+if you like, a modification of the limit comparison test) with a
+geometric series.
+
+\end{document}

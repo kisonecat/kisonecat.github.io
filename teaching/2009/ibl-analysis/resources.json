@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Exercises on tensor products",
+    "shortname": "tensor-exercises",
+    "filename": "tensor-exercises.pdf",
+    "source": "tensor-exercises.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Group actions on tensor products",
+    "shortname": "group-actions",
+    "filename": "group-actions.pdf",
+    "source": "group-actions.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Little $o$ notation",
+    "shortname": "little-oh",
+    "filename": "little-oh.pdf",
+    "source": "little-oh.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Dissection Problems",
+    "shortname": "dissection",
+    "filename": "dissection.pdf",
+    "source": "dissection.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Examples of Metric Spaces",
+    "shortname": "metric-space-examples",
+    "filename": "metric-space-examples.pdf",
+    "source": "metric-space-examples.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Inverse Function Theorem",
+    "shortname": "inverse-function",
+    "filename": "inverse-function.pdf",
+    "source": "inverse-function.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+Lecture 8: Partial derivatives
+Math 195 Section 91 Wednesday July 8, 2009
+goal: partial derivatives (covering section 15.3, 15.4)
+
+1
+
+return midterm
+
+discuss some common mistakes; discuss the curve
+
+2 3 4
+
+reminder about limits deﬁne continuity partial derivatives
+
+deﬁnition notation example: f (x, y) = a polynomial. geometry: slopes of tangent lines higher partials commutativity of higher partials: true when the higher partials are continuous.
+
+5
+
+diﬀerentiability
+
+tangent plane if partials exist and are continuous, then diﬀerentiable example: xy/(x2 + y 2 ). consider the approach along the x and y axis.
+
+1
+
+

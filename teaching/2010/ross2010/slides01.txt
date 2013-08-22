@@ -1,0 +1,146 @@
+Topology of Piecewise-Linear Manifolds
+Jim Fowler Lecture 1 Summer 2010
+
+Syllabus
+Syllabus
+Summer 2010
+
+Piecewise-Linear Topology
+Jim Fowler
+
+Manifolds are spaces which are locally modeled on Euclidean space, but might be globally twisted in some way; two-dimensional examples include a sphere or a torus. In contrast to the usual introduction to manifolds based on calculus and charts (that is, smooth manifolds), this course will study manifolds as combinatorial objects (that is, piecewise-linear manifolds). Piecewise-linear manifolds are more general than smooth manifolds, and because the basic deﬁnitions involve combinatorics instead of calculus, we will ﬁnd it easier to give rigorous proofs.
+
+Homework
+Problem sets will be distributed during most lectures.
+
+Website
+The course website is http://www.math.osu.edu/~fowler/teaching/ross2010/
+
+Lectures
+We meet Mondays, Wednesdays, and Fridays, 1:30p.m.–2:30p.m. in CH240.
+
+Problem Set
+Problem Set 1
+Summer 2010
+
+Piecewise-Linear Topology
+Jim Fowler
+
+Problem Set 1 is intentionally vague: I want you to think a bit about how you would make these notions precise. Problems marked with a • should be written up. Problem 1. Build a circle S1 by gluing line segments together along their vertices. How many different ways are there of doing this? Problem 2. Build a sphere S2 by gluing triangles together along their boundaries. How are the various ways of doing this related to each other? Deﬁnition. An object built by gluing together triangles is called a simplicial complex. Problem 3. Build a torus T 2 by gluing triangles together. Deﬁnition. A function f : K → L sending
+
+◦ vertices to vertices,
+
+◦ edges to either edges or vertices, and ◦ triangles to triangles, or to edges, or to vertices
+is called a simplicial map.
+
+a torus
+
+• Problem 4. Find a map f : T 2 → S1 so that, for every x ∈ S1 , the preimage f −1 ( x ) is a circle. • Problem 5. Let k ∈ N. Find a simplicial map f : T 2 → T 2 so that, for every x ∈ T 2 , the preimage f −1 ( x ) consists of k points?
+
+ygolo po T
+
+Topology
+
+Yeast life cycle
+Divide
+
+Sleep
+
+Grow Yeast life cycle is a circle. S 1 = the circle.
+
+Yeast life cycle
+Divide
+
+Sleep
+
+Grow Yeast life cycle is a circle. S 1 = the circle.
+
+Yeast life cycle
+Divide
+
+Sleep
+
+Grow Yeast life cycle is a circle. S 1 = the circle.
+
+Yeast life cycle
+Divide
+
+Sleep
+
+Grow Yeast life cycle is a circle. S 1 = the circle.
+
+Yeast life cycle
+Divide
+
+Sleep
+
+Grow Yeast life cycle is a circle. S 1 = the circle.
+
+Yeast life cycle
+Divide
+
+Sleep
+
+Grow Yeast life cycle is a circle. S 1 = the circle.
+
+Yeast life cycle
+Divide
+
+Sleep
+
+Grow Yeast life cycle is a circle. S 1 = the circle.
+
+Yeast life cycle
+Divide
+
+Sleep
+
+Grow Yeast life cycle is a circle. S 1 = the circle.
+
+Yeast life cycle
+Divide
+
+Sleep
+
+Grow Yeast life cycle is a circle. S 1 = the circle.
+
+Yeast synchronize with their neighbors
+Cells signal each other so they all stay at the same point in the life cycle.
+
+Yeast synchronize with their neighbors
+Cells signal each other so they all stay at the same point in the life cycle.
+
+Yeast synchronize with their neighbors
+Cells signal each other so they all stay at the same point in the life cycle.
+
+Yeast synchronize with their neighbors
+Cells signal each other so they all stay at the same point in the life cycle.
+
+Yeast synchronize with their neighbors
+Cells signal each other so they all stay at the same point in the life cycle.
+
+Yeast synchronize with their neighbors
+Cells signal each other so they all stay at the same point in the life cycle.
+
+Yeast synchronize with their neighbors
+Cells signal each other so they all stay at the same point in the life cycle.
+
+This raises a question. . .
+
+A Question
+If two colonies are at diﬀerent points in the cycle,
+
+A Question
+If two colonies are at diﬀerent points in the cycle,
+
+A Question
+If two colonies are at diﬀerent points in the cycle,
+
+A Question
+If two colonies are at diﬀerent points in the cycle,
+
+A Question
+If two colonies are at diﬀerent points in the cycle,
+
+A Question
+If two co

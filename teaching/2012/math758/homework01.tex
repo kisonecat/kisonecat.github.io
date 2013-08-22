@@ -1,0 +1,130 @@
+\documentclass[12pt]{pset}
+
+\course{Math 758}
+\author{Jim Fowler}
+\date{Spring 2012}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows,chains,matrix,positioning,scopes}
+
+\makeatletter
+\tikzset{join/.code=\tikzset{after node path={%
+\ifx\tikzchainprevious\pgfutil@empty\else(\tikzchainprevious)%
+edge[every join]#1(\tikzchaincurrent)\fi}}}
+\makeatother
+
+\tikzset{>=stealth',every on chain/.append style={join},
+         every join/.style={->}}
+
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\CP}{\mathbb{C}P}
+\newcommand{\RP}{\mathbb{R}P}
+
+\usepackage{enumerate}
+\usepackage{nopageno}
+\usepackage{hyperref}
+
+\DeclareMathOperator{\Ext}{Ext}
+\DeclareMathOperator{\Hom}{Hom}
+
+\begin{document}
+\maketitle
+
+\noindent\textbf{\href{http://en.wikipedia.org/wiki/List_of_games_with_concealed_rules}{The only way to learn the game is to play the game.}}
+The following represents a \textit{lower bound} on the number of
+exercises you should be doing; the textbook is full of great
+exercises, so I encourage you to do as many as possible.
+
+%\textit{The exercises below should be handed in on Monday.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Hom is sometimes exact]
+  For which abelian groups $G$ is $\Hom(G,-)$ an exact functor?
+\end{problem}
+
+\begin{problem}[Ext is functorial]
+  Let $G$ be an abelian group; show that $\Ext(-,G)$ and $\Ext(G,-)$ are functors.
+\end{problem}
+
+\begin{problem}[Ext for cyclic groups]
+  Compute $\Ext(\Z/m,\Z/n)$.
+\end{problem}
+
+\begin{problem}[Ext is extensions]
+  An extension of $A$ by $B$ is a short exact sequence
+  $$
+  0 \to A \to E \to B \to 0.
+  $$
+  Two extensions $0 \to A \to E \to B \to 0$ and $0 \to A \to E' \to B
+  \to 0$ are said to be equivalent if there is a map $f : E \to E'$ so
+  that the following diagram
+  \begin{center}
+  \begin{tikzpicture}
+  \matrix (m) [matrix of math nodes, row sep=3em,
+    column sep=3em]
+    { 0 & A  & E  & B  & 0 \\
+      0 & A & E' & B & 0 \\ };
+  { [start chain] \chainin (m-1-1);
+    \chainin (m-1-2);
+    { [start branch=A] \chainin (m-2-2)
+        [join={node[right] {$\mathrm{id}$}}];}
+%    \chainin (m-1-3) %[join={node[above]
+                     % {$\scriptstyle\varphi$}}];
+    \chainin (m-1-3);
+    { [start branch=B] \chainin (m-2-3)
+        [join={node[right] {$f$}}];}
+%    \chainin (m-1-4)% [join={node[above]
+                    %  {$\scriptstyle\psi$}}];
+    \chainin (m-1-4);
+    { [start branch=C] \chainin (m-2-4)
+        [join={node[right] {$\mathrm{id}$}}];}
+    \chainin (m-1-5); }
+  { [start chain] \chainin (m-2-1);
+    \chainin (m-2-2);
+    \chainin (m-2-3);% [join={node[above]
+%                      {$\scriptstyle\varphi'$}}];
+    \chainin (m-2-4);% [join={node[above]
+%                      {$\scriptstyle\psi'$}}];
+    \chainin (m-2-5); 
+}
+\end{tikzpicture}
+\end{center}
+commutes.  Show that the set of equivalence classes of extensions of
+$A$ by $B$ is naturally isomorphic to $\Ext(B,A)$.
+\end{problem}
+
+\begin{problem}[Real projective plane]
+  Let $X$ be $\RP^2$.  Compute $H_\star(X;\Z)$ and $H^\star(X;\Z)$ via
+  (simplicial or) cellular (co)homology.
+\end{problem}
+
+\begin{problem}[Jacob's ladder]
+  Consider the simplicial graph $X$ with a vertex $a_i$ and $b_i$ for each $i \in \Z$, and edges
+  \begin{itemize}
+  \item between $a_k$ and $a_{k+1}$,
+  \item between $b_k$ and $b_{k+1}$,
+  \item between $a_k$ and $b_k$, for each $k \in K$.
+  \end{itemize}
+  Compute $H^\star(X;\Z)$.
+\end{problem}
+
+\begin{problem}[Isomorphic homology, isomorphic comohology?]
+  Let $f : X \to Y$ be a map of CW complexes and let $G$ be an abelian
+  group.  Is it the case that if $f_\star : H_\star(X;G) \to
+  H_\star(Y;G)$ is an isomorphism, then $f_\star : H^\star(Y;G) \to
+  H^\star(X;G)$?  If yes, prove it.  If not, salvage the statement to
+  make it true.
+\end{problem}
+
+\begin{problem}[Cohomology with coefficients and tensor product]
+  Suppose $H^\star(X;\Z)$ is torsion-free and $G$ is an abelian group.
+  Is it then the case that $H^n(X;G) = H^n(X;\Z) \otimes G$?  If yes,
+  prove it; if not, salvage the statement to make it true.
+\end{problem}
+
+
+
+
+\end{document}

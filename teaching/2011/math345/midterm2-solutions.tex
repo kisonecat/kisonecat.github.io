@@ -1,0 +1,289 @@
+\documentclass[12pt]{midterm}
+\title{Midterm 2 Solution Set}
+\course{Math 345}
+\date{November 2010}
+
+\newcommand{\abs}[1]{\left|#1\right|}
+\DeclareMathOperator{\realpart}{Re}
+\DeclareMathOperator{\imagpart}{Im}
+
+\settowidth{\introductionwidth}{\widthof{not to make simple things complicated,}}
+\introduction{%
+The essence of mathematics is \\
+not to make simple things complicated, \\
+but to make complicated things simple.
+\null\hfill---Stan Gudder
+}
+
+\instructions{%
+\begin{enumerate}
+\item Write your name above.
+\item Calculators are forbidden (and useless, anyhow).
+\item Do not look inside the exam until instructed to do so.
+\item You have \textbf{48 minutes} for this exam.
+\item Justify your answers for full credit.
+\item Show your work for generous partial credit.
+\item Write your answers on the included pages, or request additional paper.
+\item Answer all questions asked.
+\item To prevent fire, do not divide by zero.
+\vfill
+\end{enumerate}
+}
+
+\newtheorem*{claim}{Claim}
+
+\usepackage{xcolor}
+
+%\usepackage{graphicx}
+%\usepackage{eso-pic}
+
+%\newcommand\BackgroundPicture[1]{%
+%  \setlength{\unitlength}{1pt}%
+%  \put(0,792){%
+%  \parbox[t][\paperheight]{\paperwidth}{%
+%     \vfill
+%     \centering\includegraphics{#1}
+%     \vfill
+%}}} %
+%\AddToShipoutPicture{\BackgroundPicture{barcode.pdf}}
+
+\begin{document}
+\begin{exam}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[360]
+  State the binomial theorem, and then apply it to prove that, for
+  nonnegative integers $n$,
+$$
+\sum_{k=0}^n \binom{n}{k} = 2^n.
+$$
+Be sure to explain your argument carefully.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+First, I state the binomial theorem: \\
+For $x, y \in \mathbb{R}$ and a nonnegative integer $n$,
+$$(x+y)^n = \sum_{k=0}^n {n \choose k}\,x^{n-k} \,y^k.$$
+
+\begin{claim}
+$$
+\sum_{k=0}^n \binom{n}{k} = 2^n.
+$$
+\end{claim}
+\begin{proof}
+Let $x = y = 1$; then the binomial theorem gives
+$$(1+1)^n = \sum_{k=0}^n {n \choose k} 1^{n-k} 1^k.$$
+But $1^{k} = 1$ and $1^{n-k} = 1$, so 
+$$2^n = (1+1)^n = \sum_{k=0}^n {n \choose k},$$
+which is what we wanted to prove.
+\end{proof}
+
+\color{magenta!50!black}
+\vfill
+\setlength{\leftskip}{0in}
+\subsection*{Commentary}
+
+Some people gave an inductive proof of this fact; this is not needed.  All you need to do is apply the binommial theorem.
+
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[360]
+  Prove, by complete induction, that every integer $x \geq 2$ is
+  either prime, or is the product of primes.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+
+    Let $P(x)$ be the statement that $x$ is either prime, or a product
+    of primes.  In other words, $P(x)$ is the statement that $x = p_1
+    \cdots p_n$ for primes $p_i$.
+\begin{claim}
+For all integers $x \geq 2$, the statement $P(x)$ is true.
+\end{claim}
+\begin{proof}
+We proceed by induction. \\
+
+\textbf{Base case.}  Let $x = 2$.  Then two is prime, so $P(2)$ is true.
+
+\textbf{Inductive step.}  We assume $P(k)$ holds for $2 \leq k \leq
+x$.  We want to show $P(x+1)$.
+
+If $x+1$ is prime, then $P(x+1)$ is true.
+
+If $x+1$ is not prime, then $x+1 = ab$ for $a,b \in \mathbb{N}$ with
+$a \neq 1$ and $b \neq 1$.  Then $2 \leq a < x+1$ and $2 \leq b <
+x+1$, so $P(a)$ and $P(b)$ are true.  This means
+\begin{align*}
+a &= p_1 \ldots p_n \mbox{ and} \\
+b &= q_1 \cdots q_m 
+\end{align*}
+for primes $p_i$ and $q_j$, so
+$$
+x + 1 = ab = (p_1 \ldots p_n) (q_1 \cdots q_m)
+$$
+so $P(x+1)$ is true.
+
+Thus, by strong induction, the statement $P(x)$ holds for all integers
+$x \geq 2$.
+\end{proof}
+
+
+\color{magenta!50!black}
+\vfill
+\setlength{\leftskip}{0in}
+\subsection*{Commentary}
+
+Some people did not use complete induction---you really need to use complete induction here.
+
+
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[360]
+  Prove that there are infinitely many prime numbers.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+    \begin{claim}
+      There are infinitely primes numbers.
+    \end{claim}
+    \begin{proof}
+      Suppose not---then there are finitely many prime numbers, say $p_1, \ldots, p_n$.
+
+      Consider $x = p_1 \cdots p_n + 1$.  By the previous problem, $x$
+      can be written as a product of primes, so in particular, there
+      is a prime number $p_i$ which divides $x$.  But $p_i$ also
+      divides the product of all the primes, $p_1 \cdots p_n$.
+      Therefore, by the theorem that an integer dividing $a$ and $b$
+      divides $a - b$, we conclude that $p_i$ divides $x - p_1 \cdots
+      p_n$.  But then $p_i$ divides $1$, but $p_i > 0$, so $p_i \leq
+      1$. This implies $p_i = 1$, which is a contradiction.
+    \end{proof}
+
+\color{magenta!50!black}
+\vfill
+\setlength{\leftskip}{0in}
+\subsection*{Commentary}
+
+Many people gave very nicely written solutions for this problem.
+
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[360]
+Let $A = \{ k \in \mathbb{Z}\, |\, k \geq 3 \}$.  Prove by induction for each $n \in A$ that
+$$
+\binom{n}{3} = \frac{n \left( n - 1 \right) \left( n - 2 \right)}{6}.
+$$
+You may use the recurrence relation for binomial coefficients, and the fact that
+$$
+\binom{n}{2} = \frac{n(n-1)}{2}.
+$$
+You will get more points if you do the algebra in the induction
+efficiently than if you do it correctly but inefficiently---don't just
+expand everything in sight.  Look for a way to apply the distributive law
+to make your work easier to understand.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+Let $P(n)$ be the statement that
+      $$\binom{n}{3} = \frac{n \left( n - 1 \right) \left( n - 2 \right)}{6}.$$
+      I claim, for an integer $n$ with $n \geq 3$, the statement $P(n)$ holds.
+    \begin{proof}
+      We proceed by induction.
+
+\textbf{Base case.}  Consider $n = 3$.  The statement $P(3)$ is
+      $$\binom{3}{3} = \frac{3 \left( 3 - 1 \right) \left( 3 - 2 \right)}{6} = 1,$$
+      which is true by inspecting Pascal's triangle.
+
+\textbf{Inductive step.}  Assume $P(n)$; we will show $P(n+1)$.
+By the recurrence relation for binomial coefficients,
+\begin{align*}
+\binom{n+1}{3} &= \binom{n}{3} + \binom{n}{2} \\
+&= \binom{n}{3} + \frac{n(n-1)}{2} && \text{(as we are told we may assume)}\\
+&= \frac{n \left( n - 1 \right) \left( n - 2 \right)}{6} + \frac{n(n-1)}{2} && \text{(by the inductive hypothesis)} \\
+%&= (n)(n-1) \left( \frac{n - 2}{6} + \frac{1}{2} \right) %&& \text{(by the distributive law)} \\
+%&= (n)(n-1) \left( \frac{n - 2}{6} + \frac{3}{6} \right) 
+&= (n)(n-1) \left( \frac{n - 2}{6} + \frac{1}{2} \right) = (n)(n-1) \frac{n + 1}{6}% = \frac{\left( n+1 \right) \left( (n+1) - 1 \right) \left( (n+1) - 2 \right)}{6},
+&& \text{(by the distributive law)}
+\end{align*}
+which is the statement $P(n+1)$.  Therefore, by induction, $P(n)$ holds for all $n \geq 3$.
+    \end{proof}
+
+\color{magenta!50!black}
+\vfill
+\setlength{\leftskip}{0in}
+\subsection*{Commentary}
+
+Many people used the fact that
+$$
+\binom{n}{k} = \frac{n!}{k! \, (n-k)!}
+$$
+to prove this; however, the problem requires that you do this by induction.
+
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[360]
+Give a proof by induction that, for all $n \in \mathbb{N}$,
+$$
+\sum_{k=1}^n k^3 = \frac{n^2 (n+1)^2}{4}.
+$$
+Then, explain why $1^3 + 2^3 + 3^3 + \cdots + (2^{10})^3 \equiv 1 \pmod 3$.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+
+Let $P(n)$ be the statement that
+$$
+\sum_{k=1}^n k^3 = \frac{n^2 (n+1)^2}{4}.
+$$
+I claim $P(n)$ holds for all $n \in \mathbb{N}$.
+\begin{proof}
+  We proceed by induction.  \textbf{Base case.}  Let $n = 1$.  Then $P(1)$ asserts
+$$
+\sum_{k=1}^1 k^3 = \frac{1^2 (1+1)^2}{4} = 1,
+$$
+which is true.  \textbf{Inductive step.}  Suppose $P(n)$; we prove $P(n+1)$.  Since $P(n)$, we know
+$$
+\sum_{k=1}^n k^3 = \frac{n^2 (n+1)^2}{4}.
+$$
+Adding $(n+1)^3$ to both sides yields
+\begin{align*}
+\sum_{k=1}^{n+1} k^3
+&= \frac{n^2 (n+1)^2}{4} + (n+1)^3 \\
+&= \left( n+1 \right)^2 \left( \frac{n^2}{4} + (n+1) \right) \\
+&= \left( n+1 \right)^2 \left( \frac{n^2}{4} + \frac{4n+4}{4} \right) \\
+&= \left( n+1 \right)^2 \left( \frac{n^2 + 4n + 4}{4} \right) \\
+&= \left( n+1 \right)^2 \left( \frac{(n+2)^2}{4} \right),
+\end{align*}
+which is the statement $P(n+1)$, so, by induction, we may conclude $\forall n \in \mathbb{N}\, P(n)$.
+\end{proof}
+
+\pagebreak
+
+\begin{claim}
+  $1^3 + 2^3 + 3^3 + \cdots + (2^{10})^3 \equiv 1 \pmod 3$
+\end{claim}
+
+\begin{proof}
+  By the preceeding claim, $1^3 + 2^3 + 3^3 + \cdots + (2^{10})^3 = \displaystyle\frac{(2^{10})^2 (2^{10}+1)^2}{4}$, and
+\begin{align*}
+\frac{(2^{10})^2 (2^{10}+1)^2}{4}
+&= \frac{2^{20} (2^{20}+2 \cdot 2^{10} + 1)}{4} \\
+&= 2^{18} (2^{20}+2 \cdot 2^{10} + 1) \\
+&= 4^{9} (4^{10}+2 \cdot 4^{5} + 1) \\
+&\equiv 1^{9} (1^{10}+2 \cdot 1^{5} + 1) \pmod 3\\
+&\equiv 1 (1+2 + 1) \pmod 3\\
+&\equiv 4 \equiv 1 \pmod 3
+\end{align*}
+\end{proof}
+
+\end{solutiontext}\end{solution}
+
+
+\end{exam}
+
+
+\end{document}

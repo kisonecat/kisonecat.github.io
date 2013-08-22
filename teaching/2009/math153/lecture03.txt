@@ -1,0 +1,51 @@
+Lecture 3: Limits
+Math 153 Section 57 Friday October 3, 2008
+We will be following chapter 11.3. Here, we introduce limits, the most important idea in calculus, and that which distinguishes calculus from mere algebra.
+
+1
+
+Review of where we’ve been
+
+Deﬁned “bounded” for sets and sequences. Deﬁned “monotone” for sequences.
+
+1.1
+
+Some loose ends: recursively deﬁned sequences
+
+One person asked: is a sequence just a function? Yes! You’ve probably already studied functions R → R, and a sequence is a function N → R. A sequence (or a function) is not necessarily given by a formula: A weirder example: pn is the n-th digit of π. xn is the number of digits in the decimal representation of n. Another way to deﬁne sequences: deﬁne future terms by using past terms. Example: a1 = 2. an+1 = 2 · an . Increasing? This is just an = 2n . Example: a1 = 16. an+1 = 16 − an . Increasing? This alternates between 0 and 16. Example: a1 = 1, a2 = 1. an+2 = an+1 + an . Increasing?
+
+2
+
+Limits
+
+Formal deﬁnition: limn→∞ an = L means for every > 0, there exists K such that n ≥ K implies |an − L| < . Intuitive deﬁnition: limn→∞ an = L means that as close as you want an to get to L, you can go far enough out in the sequence and stay that close. If an has a limit, then it is a convergent sequence, and we say it converges. If not, the sequence diverges (or is divergent).
+
+1
+
+2.1
+
+Challenge-response
+
+Think of the deﬁnition of limit as a challenge response game: the challenger gives you an , and you must produce the K. To prove that something converges to L, you must be ﬁnd a K for every . To prove that something doesn’t converge at all? You have to show that no matter what L you pick, there is some for which you can’t ﬁnd a suitable K. That sounds diﬃcult.
+
+2.2
+
+Example
+
+Useful fact: for any b ∈ R, there is an n ∈ N with n > b. Useful fact: for any b ∈ R with b > 0, there is an n ∈ N with 1/n < b. If limn→∞ (2n + 1)/n = 2. Why? Set L = 2. We need to ﬁnd K so that for all n > K, we get |2 + 1/n − 2| < . If an = 0.9999 · · · 9, i.e., the n-term has n nines, then an = 1 − 10−n , and limn→∞ an = 1. To be precise? Set L = 1. Then need K so that for all n > K, we get |1 − 10−n − 1| < . That is, we need 10−n < , so we take log10 10−n < log10 , so we take n > − log10 .
+
+2.3
+
+Theorems
+
+Limits are unique: if limn→∞ an = L and also limn→∞ an = M , then L = M . Limits only depend on their tails: if limn→∞ an = L and m ∈ N, then limn→∞ an+m = L. Convergent sequences are bounded. Unbounded sequences are divergent (awesome—a situation where we can show that no matter what L we pick, there is an for which we can’t ﬁnd a K).
+
+3
+
+Survey with closed eyes
+
+One week is over: are we going too fast, too slowly, just right?
+
+2
+
+

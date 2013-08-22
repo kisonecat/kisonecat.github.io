@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{nopageno}
+\title{Differential Equation Vocabulary}
+
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+
+\newtheorem*{thm}{Theorem}
+\theoremstyle{definition}
+\newtheorem*{example}{Example}
+
+
+\begin{document}
+
+\section*{Vocab for Differential Equations}
+\begin{itemize}
+\item A differential equation is \textbf{ordinary} if the unknown function
+is a real-valued function of a single independent variable.
+\textbf{Partial} differential equations may include functions of many
+variables.
+\item The \textbf{order} of a differential equation is the highest
+  derivative that appears in the equation.
+\begin{example}For instance, $f''(x) =
+  -f(x)$ is second-order, while $f^{(17)}(x) = e^x$ is seventeenth
+  order.
+\end{example}
+\item An ordinary differential equation for the function $f(x)$ is
+\textbf{linear} if it is of the form
+\begin{equation*}
+a_n(x) \, f^{(n)}(x) + \cdots +
+a_1(x) \, f'(x) +
+a_0(x) \, f(x) = g(x)
+\tag{$\ast$}
+\end{equation*}
+for functions $a_i(x)$ and a function $g(x)$.
+\item An ordinary differential equation for $f(x)$ is
+  \textbf{homogeneous} if $f(x)$ (or a derivative thereof) appears in each
+  term.  A differential equation is \textbf{inhomogeneous} if there is
+  a term without $f$ or its derivatives.
+\begin{example}For instance, a linear ordinary
+  differential equation is homogeneous precisely when $g(x) = 0$ in
+  equation ($\ast$).
+\end{example}
+\item An \textbf{integrating factor} is something you multiply a
+  differential equation by in order to make it solvable.
+\begin{example}
+For instance, to solve a first-order inhomogeneous linear ordinary differential equation, namely,
+$$
+f'(x) + a_0(x) \, f(x) = g(x)
+$$
+you should multiply by $e^{\int a_0(x) \, dx}$ so that
+$$
+e^{\int a_0(x) \, dx}\, f'(x) + e^{\int a_0(x) \, dx} \, a_0(x) \, f(x) = e^{\int a_0(x) \, dx}\, g(x)
+$$
+and then
+$$
+\frac{d}{dx} \left( e^{\int a_0(x) \, dx}\, f(x) \right) = e^{\int a_0(x) \, dx}\, g(x).
+$$
+Now you can antidifferentiate the right-hand side to find an equation for $f(x)$.\end{example}
+\end{itemize}
+
+\subsection*{}
+
+
+\end{document}

@@ -1,0 +1,63 @@
+Math 133 Section 22 Due Wednesday, May 31
+Problem 1. (5 points). In this problem, we will develop an explicit formula for the sequence a0 = 1, a1 = 1, an+2 = an+1 + an , namely, the Fibonacci sequence. We work in a few steps:
+∞
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+Step 1. Suppose f (x) =
+n=0
+
+an xn . Explain why f (x) =
+
+1 . 1 − x − x2
+
+√ √ 1+ 5 1− 5 Step 2. Deﬁne φ1 = , φ2 = . The number φ1 is the golden ratio. Prove 2 2 1 1 = √ · 2 1−x−x x 5 Step 3. Use the fact that xφ1 = 1 − xφi
+∞
+
+xφ1 xφ2 − 1 − xφ1 1 − xφ2
+
+.
+
+φi n xn to show
+n=1 ∞ ∞
+
+1 1 = √ · 2 1−x−x x 5 Rearrange to prove
+∞
+
+φ1 x −
+n=1 n=1
+
+n n
+
+φ2 n xn .
+
+an x n =
+n=0
+
+1 1 =√ 1 − x − x2 5
+
+∞
+
+φ1 n+1 − φ2 n+1 xn .
+n=0
+
+Equate corresponding coeﬃcients to conclude 1 an = √ φ1 n+1 − φ2 n+1 . 5 Step 4. Use the formula and a calculator to compute a15 .
+
+c 2008 Jim Fowler
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Take-Home Quiz 6
+
+Step 5. For three extra credit points, compute lim
+
+an+1 using the formula. n→∞ an
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Problem 2. (3 points). Find a Taylor series expansion for f (x) = x2 + 3x + 1 around the point a = 2. Problem √ (3 points). Find the ﬁrst three terms of the Taylor series expansion for 3. √ f (x) = 3 x around the point a = 1. Use this to approximate 3 1.1. Problem 4. (2 points). Use the ﬁrst three nonzero terms of the Maclaurin series for sin x to approximate sin 1. Problem 5. (2 points). Use the Maclaurin series expansion for f (x) = ex to compute f (100) (0).
+2
+
+c 2008 Jim Fowler
+
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+

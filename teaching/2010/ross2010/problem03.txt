@@ -1,0 +1,39 @@
+Problem Set 3
+Summer 2010
+
+Piecewise-Linear Topology
+Jim Fowler
+
+This is the end of the beginning. Problem Set 3 introduces manifolds, and with that, the last of the survey topics. Please submit answers to problems marked with a •. Deﬁnition. Let K be a complex, and σ ∈ K a simplex. The stellar subdivision of K at σ is a new complex Kσ with: • the vertices of K with a new vertex v. • the simplexes of K not in st(σ, K ), along with the simplexes in v ∗ (∂σ ) ∗ lk(σ, K ). In symbols, we say
+
+Kσ := (K − st(σ, K )) ∪ (v ∗ (∂σ) ∗ lk(σ, K ))
+If K can be produced through a (possibly empty) sequence of stellar subdivisions of L, we say that K is a subdivision of L, and write K ▹ L. If K and L are complexes, with K ′ ▹ K and L′ ▹ L, and K ′ and L′ are simplicially isomorphic, then we say that K and L are PL homeomorphic, and write K ∼ L. = Problem 1. For n ≥ 3, let Pn be the boundary of an n-gon. Prove that Pn ∼ Pm for n, m ≥ 3. = 1. Thus, any Pn is topologically an S Deﬁnition. A complex K is path-connected if for any two vertices v, w ∈ K, there exists a sequence of edges [v, v0 ], [v0 , v1 ], [v1 , v2 ], [v2 , v3 ], . . . , [vn , w] connecting v and w. Problem 2. Prove that being path-connected is a topological property, meaning that a space which is PL homeomorphic to a path-connected space is itself path-connected.
+
+Homeomorphisms
+Problem 3. Is PL homeomorphism an equivalence relation? That is, is it: reﬂexive, meaning, is A homeomorphic to A, symmetric, meaning, if A ∼ B, is it true that B ∼ A, and = = transitive, meaning, if A ∼ B and B ∼ C, is it true that A ∼ C? = = =
+
+• Problem 4. Is join well-deﬁned with respect to homeomorphism? That is, if we have PL homeomorphic complexes K ∼ K ′ and L ∼ L′ , is it then the case that K ∗ L ∼ K ′ ∗ L′ ? = = =
+
+Problem 5. Let Xn consist of n points. For which n ∈ N is it the case that for every two injective maps f , g : Xn → S1 , there is a homeomorphism h : S1 → S1 so that h ◦ f = g? For that matter, in what sense can we think of PL homeomorphic spaces as having a “homeomorphism” between them? Problem 6. Let Xn be the disjoint union of n circles (e.g., X3 = S1 ∪ S1 ∪ S1 ). For this problem, call two maps f , g : Xn → S2 “equivalent” if there exists a homeomorphism h : S2 → S2 so that h ◦ f = g. Count the equivalence classes of maps from X5 to S2 ? Problem 7. To the right, three curves are pictured on T 2 #T 2 , which is our notation for a two-holed surface. For which pairs of curves α and β does there exist a homeomorphism
+
+f : T 2 #T 2 → T 2 #T 2
+so that f (α) = β?
+
+Manifolds
+Deﬁnition. A complex M is an n-dimensional PL manifold (for short, an n-manifold) if for every vertex v of M, we have that lk(v, M) is PL homeomorphic to Sn−1 . Problem 8. List all of the 0-manifolds.
+
+• Problem 9. Show that any 1-manifold is a disjoint union of circles.
+Problem 10. Show that there are inﬁnitely many path-connected 2-manifolds.
+
+• Problem 11. If M is a manifold, and N ∼ M, is N a manifold? In other words, is “being a = manifold” preserved by PL homeomorphisms?
+Problem 12. If σ is a k-simplex in an n-manifold M, show that lk(σ, M) ∼ Sn−k−1 . = Problem 13. Suppose Mm is an m-manifold, and N n is an n-manifold. Is their join, M ∗ N , a manifold?
+
+• Problem 14. Identify the manifold Sn ∗ Sm .
+Deﬁnition. If a complex N is a subcomplex of a complex M, and both N and M are also manifolds, then we say that N is a submanifold of M. Problem 15. Suppose f : M → N is a simplicial map between manifolds, M and N . If K is a submanifold of M, is f (K ) a submanifold of N ?
+
+Problem 16. Suppose f : M → N is a simplicial map between manifolds, M and N . Is it always the case, for a vertex v ∈ N , that f −1 (v) a submanifold of M? Is that never the case? Problem 17. Suppose M is a 3-manifold. Calculate χ( M). Problem 18. If you glue together ∆n and ∆n using a homeomorphism between their boundaries, do you necessarily get Sn ? (You probably can’t answer this question yet, but I think it is worth considering).
+
+Manifolds with boundary
+Deﬁnition. A complex M is an n-dimensional PL manifold with boundary (for short, and confusingly, also called an n-manifold) if, for every vertex v of M, we have that lk(v, M) is PL homeomorphic to either Sn−1 or to ∆n−1 . The boundary of an n-manifold Mn is the closure of the set of (n − 1)-simplexes σ ∈ M, for which there is a unique n-simplex τ ∈ M with σ < τ . We write ∂M for the boundary of M. Finally, we say that Mn is a manifold without boundary if ∂M = ∅, i.e., if the link of every vertex is a sphere. Problem 19. Show that ∂ is well-deﬁned (up to PL homeomorphism—in other words, why is ∂M ∼ ∂N for PL homeomorphic manifolds M and N ?). = Problem 20. Prove that ∂M is a submanifold of M, and that ∂∂M = ∅. Problem 21. Suppose M and N are n-manifolds with PL homeomorphic boundaries. Deﬁne what one might mean by gluing M and N along their common boundary—is the result a manifold? Problem 22. Does there exist a complex K and a number n so that, for every vertex v of K, lk({v}, M ) ∼ ∆n−1 ? =
+
+

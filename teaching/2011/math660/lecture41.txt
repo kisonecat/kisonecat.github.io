@@ -1,0 +1,74 @@
+Lecture 41: Taylor series
+Math 660—Jim Fowler Tuesday, August 17, 2010
+
+Taylor series
+
+If f (z) is analytic in the region Ω
+∞
+
+z0 , then
+
+f (z) =
+n=0
+
+f (n) (z0 ) (z − z0 )n n!
+
+on the largest open disk of center z0 contained in Ω.
+
+Taylor series for log
+
+Taylor series for log
+
+∞
+
+log(1 + z) =
+n=1
+
+(−1)n+1 z n n
+
+Taylor series for log
+
+∞
+
+log(1 + z) =
+n=1
+
+(−1)n+1 z n n
+
+Sums and products
+
+Find the Taylor series for a product f (z)g (z), given the Taylor series for f (z) and g (z).
+
+Sums and products
+
+Find the Taylor series for a product f (z)g (z), given the Taylor series for f (z) and g (z).
+
+What is the radius of converegence?
+
+Composition
+
+Find the Taylor series for a composition f (g (z)), given the Taylor series for f (z) and g (z).
+
+Inverse function
+
+Find the Taylor series for f −1 (z), given the Taylor series for f (z).
+
+Laurent series
+A Laurent series is one of the form
+∞
+
+an z n .
+n=−∞
+
+The series is convergent if the parts consisting of nonnegative powers and negative powers are separately convergent.
+
+Laurent series
+A Laurent series is one of the form
+∞
+
+an z n .
+n=−∞
+
+The series is convergent if the parts consisting of nonnegative powers and negative powers are separately convergent. Convergence occurs in an annulus.
+
+

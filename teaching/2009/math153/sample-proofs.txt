@@ -1,0 +1,69 @@
+Practice Proof Problems
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+The Statements
+Prove or Disprove 1. Suppose an is a sequence of real numbers, and lim n2 ·an = 0. n→∞ Then lim n · an = 0.
+n→∞
+
+Prove or Disprove 2. If an and bn are sequences of real numbers, and lim an = 0,
+n→∞
+
+and bn is bounded, then lim (an · bn ) = 0.
+n→∞
+
+Prove or Disprove 3. If an and bn are bounded sequences of real numbers, then cn = an · bn is a bounded sequence. Prove or Disprove 4. If an is an nondecreasing sequence of real numbers, then an has a subsequence which is increasing. Prove or Disprove 5. If an is a decreasing sequence of real numbers, then an is bounded below. Prove or Disprove 6. If an is an increasing sequence of real numbers, then bn = an 3 is also increasing. Prove or Disprove 7. There exists a sequence an of positive numbers, with lim an < n→∞ 0. Prove or Disprove 8. If an is a decreasing sequence of real numbers, then an is bounded above. Prove or Disprove 9. There exists a sequence an of rational numbers, with lim an = n→∞ √ 2. Prove or Disprove 10. If an is a sequence of real numbers, and lim cos an = 1, n→∞ then lim an = 0.
+n→∞
+
+Prove or Disprove 11. There exists a sequence an of irrational numbers, with lim an = 3. 1
+c 2008 Jim Fowler n→∞
+
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+Below are a list of statements that you can either prove (if the claim is true) or disprove (by exhibiting a counterexample). These are just for fun—statements to ponder if you are looking for more things to think about. Incidentally, there is a pattern (dare I say the beginning of a sequence!) to which statements are false, and which statements are true. And by my count, there are eighteen false statements in need of counterexamples, and seventeen true statements in need of a proof.
+
+Prove or Disprove 13. If an is an unbounded sequence, then an+1 bn = √ n+1 is bounded. Prove or Disprove 14. If an is an unbounded sequence and an = 0 for all n ∈ N, then an+1 bn = an is bounded. Prove or Disprove 15. If an is a bounded sequence, then lim an /n = 0.
+n→∞
+
+n→∞
+
+Prove or Disprove 16. If an is a sequence of real numbers, and lim an 2 = 1, then n→∞ lim an = 1. Prove or Disprove 17. If an is an unbounded sequence, then bn = cos an is bounded, but does not converge.
+
+Prove or Disprove 18. If an is a bounded sequence, and bn is an unbounded sequence, then lim an /bn = 0.
+n→∞
+
+Prove or Disprove 19. If an is a sequence of positive real numbers, and lim log an = n→∞ 0, then lim an = 1.
+n→∞
+
+Prove or Disprove 20. If an is an increasing sequence of positive real numbers, then bn = an /an+1 is increasing. Prove or Disprove 21. If an is a sequence of real numbers, and lim an 2 = 0, then n→∞ lim an = 0. Prove or Disprove 22. Let an be a sequence of non-zero numbers, and deﬁne bn = |an |/an . If an converges, then bn converges. Prove or Disprove 23. If an and bn are increasing sequences of positive real numbers, then an if n is even, cn = bn if n is odd. is also increasing. 2
+
+n→∞
+
+c 2008 Jim Fowler
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Prove or Disprove 12. If an is a sequence of integers, and lim an = 6, then for all n→∞ but ﬁnitely many values of n ∈ N, we have an = 6.
+
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+Prove or Disprove 24. If bn is the n-th digit of π, and an = (bn /10)n , then lim an = n→∞ 0. Prove or Disprove 25. If an is a sequence of real numbers, and bn = an /n is bounded, then bn converges.
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Prove or Disprove 26. If an is an increasing sequence of positive real numbers, then bn = a2n is increasing. Prove or Disprove 27. If lim an = L, and there exists A and B so that for all n→∞ n ∈ N, we have A ≤ an ≤ B, then A ≤ L ≤ B. Prove or Disprove 28. If an is an increasing sequence of positive real numbers, then bn = an+1 − an is increasing. Prove or Disprove 29. There exists a bounded sequence an so that bn = ean converges to 0. Prove or Disprove 30. Suppose lim an = L, and lim bn = L. Deﬁne
+n→∞ n→∞
+
+cn = Then lim cn = L.
+n→∞
+
+an bn
+
+if n is even, if n is odd.
+
+Prove or Disprove 31. Deﬁne an = nn . Then bn = an /n! converges. Prove or Disprove 32. There is a K ∈ N so that for every > 0, if n ≥ K, then 1 −0 < . n Prove or Disprove 33. Let an be the biggest number that can be written down using n letters from the “alphabet” containing 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, +, −, ×. Then an > n. Prove or Disprove 34. There exists a sequence an of integers, with lim an = π.
+n→∞
+
+Prove or Disprove 35. Let an be a sequence of real numbers, and deﬁne bn = Then bn converges. 3 an 0 if an < 1/n, if an ≥ 1/n.
+
+c 2008 Jim Fowler
+
+

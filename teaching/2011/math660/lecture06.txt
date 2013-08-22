@@ -1,0 +1,111 @@
+Lecture 6: Abel’s limit theorem
+Math 660—Jim Fowler
+
+Monday, June 27, 2011
+
+Homework questions
+
+How did it go?
+
+Abel’s limit theorem
+
+Suppose an converges and let f (z) = an z n . Then limz→1 f (z) = f (1) provided z → 1 so that |1 − z| 1 − |z| remains bounded.
+
+Wlog
+
+an = 0 by changing a0 .
+
+sn (z) = a0 + a1 z + · · · + an z n = s0 + (s1 − s0 )z + · · · + (sn − sn−1 )z n = s0 (1 − z) + s1 (z − z 2 ) + · · · + sn−1 (z n−1 − z n ) + sn z n = (1 − z)(s0 + · · · + sn−1 z n−1 ) + sn z n Since sn z n → 0, we conclude f (z) = (1 − z) Then |f (z)| ≤ |1 − z|
+n=0 m−1
+
+sn z n
+
+sn z n + M
+
+Applications
+
+∞
+
+(−1)n /(n + 1) = log 2
+k=0 ∞
+
+(−1)n /(2n + 1) = π/4
+k=0
+
+Armed with a good theorem, we can extend the objects under consideration.
+
+Armed with a good theorem, we can extend the objects under consideration. Abel summability
+
+Let an be a series—convergent or not! f (z) = an z n is more likely to converge for |z| < 1 than an . n If an z converges for |z| < 1, and limx→1− f (x) = L, say that an is Abel summable, with Abel sum L
+
+Let an be a series—convergent or not! f (z) = an z n is more likely to converge for |z| < 1 than an . n If an z converges for |z| < 1, and limx→1− f (x) = L, say that an is Abel summable, with Abel sum L
+
+How does Abel summability relate to usual summability?
+
+Quiz
+
+Tauber’s theorem
+
+Suppose an is Abel summable, and limn→∞ n an = 0. Then an converges in the usual sense.
+
+Tauber’s theorem
+
+Suppose an is Abel summable, and limn→∞ n an = 0. Then an converges in the usual sense.
+
+There are other such theorems, known as Tauberian theorems (and so-called Abelian theorems, which go the other way).
+
+Divergent series
+
+A summability method associates to
+
+an a sum L.
+
+Divergent series
+
+A summability method associates to
+
+an a sum L.
+
+A summability method is regular if it yields the honest value for convergent series.
+
+Divergent series
+
+A summability method associates to
+
+an a sum L.
+
+A summability method is regular if it yields the honest value for convergent series.
+
+Abel’s theorem: Abel summability is regular.
+
+Use Abel summation to “sum” 1 − 2 + 3 − 4 + 5 − ··· =
+
+Use Abel summation to “sum” 1 − 2 + 3 − 4 + 5 − ··· =
+
+Amusingly, consider (1 − 1 + 1 − 1 + · · · )2 .
+
+Deﬁne ζ(s) =
+
+∞ n=1
+
+n−s .
+
+Deﬁne ζ(s) = ∞ n−s . n=1 2−s ζ(s) = (2n)−s .
+
+Deﬁne ζ(s) = ∞ n−s . n=1 2−s ζ(s) = (2n)−s . (1 − 2 · 2−s )ζ(s) = (−1)n+1 n−s .
+
+Deﬁne ζ(s) = ∞ n−s . n=1 2−s ζ(s) = (2n)−s . (1 − 2 · 2−s )ζ(s) = (−1)n+1 n−s . When s = −1, this is (1 − 2 · 21 )ζ(−1) = 1 − 2 + 3 − 4 + · · · = 1/4
+
+Deﬁne ζ(s) = ∞ n−s . n=1 2−s ζ(s) = (2n)−s . (1 − 2 · 2−s )ζ(s) = (−1)n+1 n−s . When s = −1, this is (1 − 2 · 21 )ζ(−1) = 1 − 2 + 3 − 4 + · · · = 1/4 so 1 + 2 + 3 + 4 + · · · = −1/12.
+
+So what about 1 + 2 + 3 + 4 + · · · ?
+
+So what about 1 + 2 + 3 + 4 + · · · ? Deﬁne ζ(s) = ∞ n−s n=1 when the real part of s is larger than 1, but there is an analytic function agreeing with ζ(s) with ζ(−1) = −1/12.
+
+What about 1 + 2 + 4 + 8 + 16 + · · · ?
+
+What about 1 + 2 + 4 + 8 + 16 + · · · ? Consider f (x) = 1/(1 − 2x).
+
+What about 1 + 2 + 4 + 8 + 16 + · · · ? Consider f (x) = 1/(1 − 2x). So = −1? Does this make any sense?
+
+

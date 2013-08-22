@@ -1,0 +1,158 @@
+\documentclass[12pt]{pset}
+
+\course{Math 765}
+\author{Jim Fowler}
+\date{Winter 2011}
+
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\CP}{\mathbb{C}P}
+\newcommand{\RP}{\mathbb{R}P}
+
+\usepackage{enumerate}
+\usepackage{nopageno}
+\usepackage{hyperref}
+\usepackage{tikz}
+
+\DeclareMathOperator{\Vect}{Vect}
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\SO}{SO}
+\DeclareMathOperator{\so}{\mathfrak{so}}
+\DeclareMathOperator{\codim}{codim}
+\DeclareMathOperator{\Mat}{Mat}
+\DeclareMathOperator{\SymMat}{SymMat}
+\DeclareMathOperator{\Id}{Id}
+\DeclareMathOperator{\Sym}{Sym}
+\newcommand{\Proj}{\mathbb{P}}
+\newcommand{\LL}{\mathcal{L}}
+
+\newcommand{\HH}{H}
+\newcommand{\hh}{\mathfrak{h}}
+
+\begin{document}
+\maketitle
+
+\noindent\textbf{Curves and flows.}  This week, we adopt a dynamic
+perspective: our vector fields give rise to flows on a manifold.
+Email me with questions at \texttt{fowler@math.osu.edu}.  \textit{The
+  exercises below should be handed in on Monday, February 21, 2011.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Lee 17--4]
+
+  Let $M$ be a connected smooth manifold.  Show that the group of
+  diffeomorphisms of $M$ acts transitively on $M$.  More precisely,
+  for any two points $p,q \in M$, show that there is a diffeomorphism
+  $F : M \to M$ such that $F(p) = q$.
+
+\end{problem}
+
+\vfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Lee 17--13 (Collar neighborhoods exist)]
+
+Let $M$ be a smooth manifold with boundary.  A subset $C \subset M$
+containing $\partial M$ is called a \textit{collar} if $C$ is the
+image of a smooth embedding $[0,1] \times \partial M \to M$ that
+restricts to the obvious identification $\{ 0 \} \times \partial M
+\to \partial M$.  This problem shows that every smooth manifold with
+boundary has a collar.
+\begin{description}
+  \item[(a)] Show that here exists a vector field $N \in
+    \mathcal{T}(M)$ whose restriction to $\partial M$ is
+    inward-pointing.
+    \item[(b)] For any positive real-valued function $\delta
+      : \partial M \to \R$, define a subset $\mathcal{D}_\delta \subset
+      [0,\infty) \times \partial M$ by
+$$
+\mathcal{D}_\delta = \{ (t,p) : p \in \partial M, 0 \leq t \leq
+\delta(p) \}.
+$$
+Show that there are a smooth positive function $\delta : \partial M
+\to \R$ and a smooth map $\theta : \mathcal{D}_\delta \to M$ such that
+for each $p \in \partial M$, the map $t \mapsto \theta(t,p)$ is an
+integral curve of $N$ starting at $p$.  \textit{Hint:} Use the ODE
+theorem in local coordinates around each point of $\partial M$, and
+define $\delta$ by means of a partition of unity.
+\item[(c)] Show that $\theta$ is an embedding.
+\item[(d)] Show that the image of $\theta$ is a collar.
+\end{description}
+
+\end{problem}
+
+\vfill
+\vfill
+
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Lee Exercise 18.2]
+  Prove these statements for smooth vector fields $V, W, X$ and a
+  smooth function $f$.
+  \begin{description}
+  \item[(a)] $\LL_V W = -\LL_W V$.
+  \item[(b)] $\LL_V[W,X] = [\LL_V W,X] + [W,\LL_V X]$.
+  \item[(c)] $\LL_{[V,W]} X = \LL_V \LL_W X - \LL_W \LL_V X$.
+  \item[(d)] $\LL_V(fW) = (Vf) W + f \LL_V W$.
+  \item[(e)] If $F : M \to N$ is a diffeomorphism, then $F_\star(\LL_V
+    W) = \LL_{F_\star V} F_\star W$.
+  \end{description}
+
+\end{problem}
+\vfill
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Cartan's formula]
+
+\newcommand{\InteriorMultiplication}{\lrcorner}
+For a smooth vector field $X$ and a smooth form $\omega$, prove that
+$$
+\LL_X \omega = X \InteriorMultiplication (d\omega) + d(X
+\InteriorMultiplication \omega).
+$$  
+
+\end{problem}
+
+\vfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{hardproblem}[Traveling along a vector field]
+
+Does there exist a vector field on the plane $\R^2$ so that every two
+points in the plane are connected by an integral curve?
+  
+\end{hardproblem}
+
+\vfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Baker--Campbell--Hausdorff for the Heisenberg group]
+
+  Let $\HH$ be the Lie group of $3 \times 3$ matrices of the form
+  $$
+  \begin{pmatrix}
+    1 & a & b \\
+    0 & 1 & c \\
+    0 & 0 & 1
+  \end{pmatrix}\hspace{1em}\mbox{for $a, b, c \in \R$,}
+  $$
+  and $\hh = T_e \HH$ be its tangent space at the identity.
+
+  \vspace{1ex}\noindent%
+  A vector $v \in \hh$ gives rise to the left-invariant vector
+  field $X_v$ with $X_v(e) = v$; the function $\theta_{X_v} : \HH \times \R
+  \to \HH$ is the flow along this vector field, and the exponential
+  map $\exp : \hh \to \HH$ is defined by $\exp(v) =
+  \theta_v(e,1)$.
+
+  \vspace{1ex}\noindent%
+  Given $a, b \in \hh$, find a formula for a vector $c \in \hh$
+  in terms of $a$ and $b$ so that $$\exp c = (\exp a) \cdot (\exp b).$$
+  Your formula will permit you to do calculations in the Lie group
+  $\HH$ by doing calculations in the Lie algebra $\hh$.
+  
+\end{problem}
+
+\vfill
+\vfill
+
+\end{document}

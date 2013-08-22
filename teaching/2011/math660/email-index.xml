@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Emails - Math660 - Summer 2010</title>
+<link>http://www.math.osu.edu/~fowler/teaching/</link>
+<atom:link href="http://www.math.osu.edu/~fowler/teaching/math660/email-index.xml" rel="self" type="application/rss+xml" />
+<description>
+Emails from the Summer 2010 quarter of Math660, taught by Jim Fowler.
+</description>
+<language>en-us</language>
+<copyright>Copyright 2010 Jim Fowler</copyright>
+<managingEditor>fowler@math.osu.edu (Jim Fowler)</managingEditor>
+<lastBuildDate>Tue, 15 Jun 2010 10:51:17 -0400</lastBuildDate>
+<ttl>60</ttl>
+
+
+</channel>
+</rss>

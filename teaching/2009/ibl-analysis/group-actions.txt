@@ -1,0 +1,131 @@
+Math 205 May 12, 2009
+The footnotes in this document are only for ﬂavor.
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+Left and right group actions
+One thing we have not really paid much attention to yet is that a group acts from either the left, or from the right. Deﬁnition. A left action of a group G on a set X is a map G × X → X, which we write as g · x, with the property that g · (h · x) = (gh) · x. On the other hand (and I mean that literally), Deﬁnition. A right action of a group G on a set X is a map X × G → X, which we write as x · g, with the property that (x · g) · h = x · (gh). These look similar, but they are not at all the same—in a left action, the meaning of “gh” is “do h, then do g.” In a right action, “gh” means “do g, then do h.” It is perhaps signiﬁcant to reﬂect on my use of the word “means”—it is precisely the group action that gives a meaning to a group element. Philosophically, a group is a symmetric thing without the thing—only the symmetry∗ remains. A group action is what glues this abstract symmetry back to something in the real world. The handedness, this choice of a left or a right action, gives an interpretation of the group operation: does it mean “ﬁrst do this, then do that” or does it mean “ﬁrst do that, then do this”? These are not the same. Yet, they are not so diﬀerent. You can always turn a left action into a right action (and vice versa) with a trick: if G acts on the left on a set X, then G acts on the right after taking inverses. Speciﬁcally, deﬁne the right action x · g to be g −1 · x. Exercise. Check that this is a right action. Very concretely, what this says is this: if you want to read a sequence of commands backwards, you should interpret each command as an “undo.”
+∗
+
+that is, the beauty
+
+1
+
+c 2009 Jim Fowler
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Group actions on tensor products
+
+Group action example
+All this theory is useless without something concrete, so here is an example: a group∗ acting on a square piece of paper with a front and a back side. The group has eight elements, which are e = X2 , R, R2 , R3 , X, XR = R3 X, XR2 = R2 X, XR3 = RX
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+You can do calculations in this group, like RXR = RR3 X = R4 X = X. This group acts on the set of conﬁgurations of a piece of square paper. R acts by rotating clockwise by 90◦ , turning FRONT FRONT
+
+↑
+FRONT
+
+into
+
+.
+
+X acts by ﬂipping across the x-axis, turning
+
+Once you decide whether to read the list of instructions from left-to-right (or from right-toleft), you will have decided that this is a right (or a left) action, respectively. For English readers, you might scoﬀ and say “Why would I want to read the instructions from right to left?” Let me remind you that you already know any example of such a situation! The notation f ◦g means “ﬁrst apply g, then apply f ” which is arguably backwards from what you might have wanted§ .
+
+Actions on tensors
+The goal is to prove the following. Theorem. Let S ∈ T k V and T ∈ T V . If Alt S = 0, then Alt(S ⊗ T ) = 0.
+A popular application of this group is to the ancient problem of square mattress ﬂipping. One would like a single group element (e.g., RX) which, as it is applied repeatedly to the mattress, produces each of the 8 possible conﬁgurations of the square mattress. This would be helpful because you could decide “every month I will apply RX to my square mattress” and over the course of 8 months you would have rotated your mattress through all conﬁgurations. Tragically, it turns out that there is no such an element—or in more intimidating language “the group of symmetries of the square is not cyclic.” It is therefore a rather complicated matter to ﬂip one’s square mattress through all 8 conﬁgurations. This remains problematic even in the smaller group of symmetries of rectangular mattresses. § This is why I would be happier putting the arguments to functions on the left hand side—i.e., we should all be writing (x)f instead of f (x).
+∗
+
+2
+
+c 2009 Jim Fowler
+
+BACK
+
+↑
+
+into
+
+.
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+↑ ↑
+
+To prove this, we will deﬁne an additional concept (namely, an action of the symmetric group Sk on T k V ) which should make it clearer what exactly is happening. Recall that an element S ∈ T k V is a k-linear functional
+k times
+
+S : V × ··· × V → R
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+A permutation σ ∈ Sk will act on S ∈ T k V to produce a new k-linear functional, σ S ∈ T k V . But how? How do we deﬁne this? “Deﬁnition”. Let S ∈ T k V and σ ∈ Sk . Then deﬁne (σ S) (v1 , . . . , vk ) = S vσ(1) , vσ(2) , . . . , vσ(k) . I put this in quotation marks not because it isn’t a deﬁnition (it will be the deﬁnition we will use, as it agrees with what we have been using thus far), but because it is more of a convention—there ar other choices that are (arguably) better. A good thing about the action of Sk on T k V is a concise deﬁnition of our friend Alt. Deﬁnition. Alt S = 1 (−1)σ σ S. k! σ∈S
+k
+
+Here I have used a convention that (−1)σ means the sign of the permutation σ. I think this makes the formulas nicer looking (and, as good notation ought, suggests that this is a homomorphism). A bad thing about our “deﬁnition” is shown in the next pair of exercises. Exercise. Show that (στ ) S = σ τ S. Exercise. Show that (στ ) S = τ σ S. In fact, the whole reason I put the little stars as a superscript instead of as a subscript is because of this fact: the superscript star reminds me that something contravariant (“backwards”) is taking place. In other words, what we have built is actually a right action of the symmetric group Sk on tensors T k V . If we want a left action, we could take inverses—but in order to keep consistent with the conventions we have already chosen, we will not do this. Exercise. The action of Sk on T k V is by linear maps, that is, σ (S + T ) = σ S + σ T for σ ∈ Sk and S, T ∈ T k V . I want to deﬁne another operation: a sort of “tensor product” on the symmetric group. Deﬁnition. The operation ⊗ : Sk × S → Sk+ is deﬁned by. . .
+
+3
+
+c 2009 Jim Fowler
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+I will let you complete the deﬁnition appropriately; using the ⊗ symbol is merely suggestive— of course this isn’t a tensor product at all. We are now ready to “prove” the theorem. (k + )! · Alt(S ⊗ T ) =
+σ∈Sk+
+
+(−1)σ σ (S ⊗ T ) (−1)στ (στ ) (S ⊗ T )
+τ σ
+
+= =
+τ σ
+
+(−1)σ (−1)τ τ σ (S ⊗ T ) (−1)τ τ
+τ σ
+
+= =
+τ
+
+(−1)σ σ (S ⊗ T ) (−1)σ⊗id (σ ⊗ id) (S ⊗ T )
+σ∈Sk
+
+(−1)τ τ (−1)τ τ
+τ σ∈Sk
+
+=
+
+(−1)σ (σ S) ⊗ id T (−1)σ (σ S) ⊗ T
+σ∈Sk
+
+=
+τ
+
+(−1)τ τ (−1)τ τ
+τ
+
+= =
+τ
+
+(−1)σ σ S
+σ∈Sk
+
+⊗T
+
+(−1) τ (k! · Alt S ⊗ T ) (−1)τ τ (0 ⊗ T ) = 0.
+τ
+
+τ
+
+=
+
+I have supressed exactly what we are summing over (i.e., where do τ and σ take values?). I hope you will take a moment to reﬂect on this notation—its beneﬁts, its drawbacks. There is a great discussion to be had about the purpose of proof and excessive machinery and such. There is also a theme illustrated here: we have worked with the tensors directly, without considering their inputs. This technique—reasoning about things which take parameters without referring to the parameters—can be quite powerful.
+
+4
+
+c 2009 Jim Fowler
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+

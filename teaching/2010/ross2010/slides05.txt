@@ -1,0 +1,455 @@
+Topology of Piecewise-Linear Manifolds
+Jim Fowler Lecture 5 Summer 2010
+
+Why do you keep hitting your hand with a hammer?
+
+Where are we?
+
+Where are we?
+
+Objects
+
+Where are we?
+
+Objects
+PL manifolds?
+
+Where are we?
+
+Objects
+PL manifolds? simplicial complexes
+
+Where are we?
+
+Objects
+PL manifolds? simplicial complexes
+
+Maps
+
+Where are we?
+
+Objects
+PL manifolds? simplicial complexes
+
+Maps
+PL maps?
+
+Where are we?
+
+Objects
+PL manifolds? simplicial complexes
+
+Maps
+PL maps? simplicial maps
+
+Where are we?
+
+Objects
+PL manifolds? simplicial complexes
+
+Maps
+PL maps? simplicial maps
+
+Invariants
+
+Where are we?
+
+Objects
+PL manifolds? simplicial complexes
+
+Maps
+PL maps? simplicial maps
+
+Invariants
+χ
+
+Where are we?
+
+Objects
+PL manifolds? simplicial complexes
+
+Maps
+PL maps? simplicial maps
+
+Invariants
+χ b0
+
+How to deﬁne
+
+PL maps
+
+a fork in the road
+
+our notion of subdivision is, thus far, restricted to stellar subdivision
+
+Why restrict to stellar subdivision?
+
+Some Philosophy
+“Lines are made up of points? Really?”
+
+State of the art
+Theorem
+Two n-dimensional simplicial complexes are PL homeomorphic if and only if they are stellar equivalent.
+
+State of the art
+Theorem
+Two n-dimensional simplicial complexes are PL homeomorphic if and only if they are stellar equivalent.
+
+Theorem
+A PL map f : K → L is a simplicial map from a subdivision of K to a stellar subdivision of L. Warning: The subdivision of K needn’t be stellar.
+
+State of the art
+Theorem
+Two n-dimensional simplicial complexes are PL homeomorphic if and only if they are stellar equivalent.
+
+Theorem
+A PL map f : K → L is a simplicial map from a subdivision of K to a stellar subdivision of L. Warning: The subdivision of K needn’t be stellar. Question: What does “subdivision” mean?
+
+The combinatorial part
+simplicial complex join link star Euler characteristic PL manifold: a complex K the link of each vertex PL homeomorphic (meaning stellar equivalent) to a sphere.
+
+The non-combinatorial part
+The notion of PL map is not quite general enough: a simplicial map from a stellar subdivision of K to a stellar subdivision of L is a PL map, but we will need more general maps.
+
+To do this, we will place our simplexes in Rn .
+
+R
+
+n
+
+The join of A, B ⊂ Rn is {λa + (1 − λ)b : a ∈ A, b ∈ B, λ ∈ [0, 1]}
+
+Polyhedron
+P ⊂ Rn is a polyhedron if for each p ∈ P there is a neighborhood N p so that N = p ∗ L, with L closed and bounded.
+
+Polyhedron
+P ⊂ Rn is a polyhedron if for each p ∈ P there is a neighborhood N p so that N = p ∗ L, with L closed and bounded. For example, N = {q ∈ P : d(p, q) ≤ }, but we allow more general neighborhoods.
+
+Polyhedron
+P ⊂ Rn is a polyhedron if for each p ∈ P there is a neighborhood N p so that N = p ∗ L, with L closed and bounded. For example, N = {q ∈ P : d(p, q) ≤ }, but we allow more general neighborhoods. N is called a closed star around p. L is a link of p.
+
+Piecewise linear map
+Let P, Q be polyhedra. f : P → Q is a PL map if each point p ∈ P has a closed star N = p ∗ L so that f (λp + (1 − λ)x) = λf (p) + (1 − λ)f (x) for x ∈ L and λ ∈ [0, 1].
+
+In short, it locally maps conical rays to conical rays.
+
+Next steps
+
+Next steps
+New constructions
+
+Next steps
+New constructions connected sum
+
+Next steps
+New constructions connected sumand Cartesian product, using polyhedra
+
+Next steps
+New constructions connected sumand Cartesian product, using polyhedra New invariant
+
+Next steps
+New constructions connected sumand Cartesian product, using polyhedra New invariant orientability, w1
+
+Next steps
+New constructions connected sumand Cartesian product, using polyhedra New invariant orientability, w1 New kind of equivalence
+
+Next steps
+New constructions connected sumand Cartesian product, using polyhedra New invariant orientability, w1 New kind of equivalence simple homotopy equivalence
+
+#
+connected sum
+
+Connected sum
+Deﬁnition
+Suppose K and L are two n-manifolds. Let K be K with one n-simplex removed. L L Deﬁne K #L = K ∪∂∆n L .
+
+Connected sum
+Deﬁnition
+Suppose K and L are two n-manifolds. Let K be K with one n-simplex removed. L L Deﬁne K #L = K ∪∂∆n L .
+
+Problem
+What is T 2 #T 2 ?
+
+Connected sum
+Deﬁnition
+Suppose K and L are two n-manifolds. Let K be K with one n-simplex removed. L L Deﬁne K #L = K ∪∂∆n L .
+
+Problem
+What is T #T ?
+2 2
+
+Problem
+What is S 2 #T 2 ?
+
+#
+
+∼ =
+
+#
+
+∼ =
+
+#
+
+∼ =
+
+#
+
+∼ =
+
+In general, Σg = genus g surface,
+
+#
+
+∼ =
+
+In general, Σg = genus g surface, and T 2 #Σg = Σg +1 .
+
+Covering map
+
+Deﬁnition
+f : M → N is an n-fold covering map if for every k-simplex τ ∈ N, f −1 (τ ) consists of n copies of a k-simplex.
+
+Gift-wrapping surfaces
+Problem
+When is there an n-fold covering map from a genus g surface to a genus g surface?
+
+Gift-wrapping surfaces
+Problem
+When is there an n-fold covering map from a genus g surface to a genus g surface?
+
+Theorem
+If f : M → N is an n-fold covering map then χ(M) = n · χ(N).
+
+Gift-wrapping surfaces
+Problem
+When is there an n-fold covering map from a genus g surface to a genus g surface?
+
+Theorem
+If f : M → N is an n-fold covering map then χ(M) = n · χ(N).
+
+Problem
+What is χ(genus g surface)?
+
+×
+Cartesian product
+
+Products, geometrically
+Deﬁnition
+Suppose K ⊂ Rn , and L ⊂ R m . The product of K and L is K × L = {(k, ) ∈ Rn+m : k ∈ K , ∈ L}.
+
+Products, geometrically
+Deﬁnition
+Suppose K ⊂ Rn , and L ⊂ R m . The product of K and L is K × L = {(k, ) ∈ Rn+m : k ∈ K , ∈ L}.
+
+Could we do this for a simplicial complex?
+
+Product of simplexes
+
+How do we take a product of ∆1 and ∆1 ?
+
+Product of simplexes
+
+How do we take a product of ∆1 and ∆2 ?
+
+Product of simplexes
+
+How do we take a product of ∆2 and ∆2 ?
+
+Product of simplexes
+
+How do we take a product of ∆2 and ∆2 ? Hard to see, so let’s take a step back.
+
+Vertices of ∆n × ∆m are pairs (i, j) with 0 ≤ i ≤ n + 1 and 0 ≤ j ≤ m + 1.
+
+Vertices of ∆n × ∆m are pairs (i, j) with 0 ≤ i ≤ n + 1 and 0 ≤ j ≤ m + 1.
+
+A simplex of ∆n × ∆m is
+
+Some counting problems
+
+∆1 × ∆n has (n + 1)! triangulations.
+
+Some counting problems
+
+∆1 × ∆n has (n + 1)! triangulations. ∆2 × ∆n has triangulations.
+
+Some counting problems
+
+∆1 × ∆n has (n + 1)! triangulations. ∆2 × ∆n has triangulations.
+
+So maybe it would be nice if we could handle these cases without resorting to simplexes.
+
+Product of polyhedra is a polyhedron
+P, Q polyhedra. Is P × Q a polyhedron?
+
+Product of polyhedra is a polyhedron
+P, Q polyhedra. Is P × Q a polyhedron? Need neighborhood of (p, q) ∈ P × Q.
+
+Product of polyhedra is a polyhedron
+P, Q polyhedra. Is P × Q a polyhedron? Need neighborhood of (p, q) ∈ P × Q. p ∈ P has a neighborhood p ∗ Lp q ∈ Q has a neighborhood q ∗ Lq
+
+Product of polyhedra is a polyhedron
+P, Q polyhedra. Is P × Q a polyhedron? Need neighborhood of (p, q) ∈ P × Q. p ∈ P has a neighborhood p ∗ Lp q ∈ Q has a neighborhood q ∗ Lq Use (p, q) ∗ (Lp ∗ Lq ).
+
+Some 4-manifolds
+
+Some 4-manifolds
+
+S3 × S1
+
+Some 4-manifolds
+
+S3 × S1 S2 × S2
+
+Some 4-manifolds
+
+S3 × S1 S2 × S2 Σg × Σh
+
+w1
+orientability
+
+The torus versus the Klein bottle
+Since χ(T 2 ) = χ(K ) = 0, we can’t distinguish T 2 and K using χ.
+
+The torus versus the Klein bottle
+Since χ(T 2 ) = χ(K ) = 0, we can’t distinguish T 2 and K using χ.
+
+We need a new invariant.
+
+Orientation
+An orientation of a simplex is a choice of ordering of the vertices, up to an even permutation.
+
+Orientation
+An orientation of a simplex is a choice of ordering of the vertices, up to an even permutation.
+
+Deﬁnition
+An orientation on a manifold M n is an orientation of each n-simplex so that neighboring n-simplexes induce opposite orientations on the shared (n − 1)-simplex.
+
+Orientation
+An orientation of a simplex is a choice of ordering of the vertices, up to an even permutation.
+
+Deﬁnition
+An orientation on a manifold M n is an orientation of each n-simplex so that neighboring n-simplexes induce opposite orientations on the shared (n − 1)-simplex. If M admits an orientation, w1 (M) = 0. Otherwise, w1 (M) = 1.
+
+Orientability for surfaces
+Theorem
+A surface Σ is not orientable iﬀ Σ contains a M¨bius strip. o
+
+Orientability for surfaces
+Theorem
+A surface Σ is not orientable iﬀ Σ contains a M¨bius strip. o
+
+Problem
+What is w1 (T 2 )?
+
+Orientability for surfaces
+Theorem
+A surface Σ is not orientable iﬀ Σ contains a M¨bius strip. o
+
+Problem
+What is w1 (T 2 )?
+
+Problem
+What is w1 (K )?
+
+Orientability for surfaces
+Theorem
+A surface Σ is not orientable iﬀ Σ contains a M¨bius strip. o
+
+Problem
+What is w1 (T 2 )?
+
+Problem
+What is w1 (K )?
+
+Problem
+Is w1 a PL homeomorphism invariant?
+
+Distinguishing other manifolds?
+Can we distinguish T 3 and S 3 with Euler characteristic?
+
+Distinguishing other manifolds?
+Can we distinguish T 3 and S 3 with Euler characteristic?
+
+No
+
+Distinguishing other manifolds?
+Can we distinguish T 3 and S 3 with Euler characteristic?
+
+No. . .
+
+We need more invariants,
+
+Distinguishing other manifolds?
+Can we distinguish T 3 and S 3 with Euler characteristic?
+
+No. . .
+
+We need more invariants, or a looser notion of “the same.”
+
+Simplicial Collapse
+
+Principal Simplexes
+Deﬁnition
+Let K be a complex, and σ ∈ K a simplex. Call σ a principal simplex if the only simplex containing σ is σ itself (i.e., it isn’t contained in a larger simplex).
+
+Principal Simplexes
+Deﬁnition
+Let K be a complex, and σ ∈ K a simplex. Call σ a principal simplex if the only simplex containing σ is σ itself (i.e., it isn’t contained in a larger simplex).
+
+Problem
+Does every complex have a principal simplex?
+
+Free faces
+Deﬁnition
+Let K be a complex, and σ ∈ K a simplex, and τ < σ a face. Call τ a free face of σ if the only simplexes containing τ are τ and σ.
+
+Free faces
+Deﬁnition
+Let K be a complex, and σ ∈ K a simplex, and τ < σ a face. Call τ a free face of σ if the only simplexes containing τ are τ and σ.
+
+Problem
+
+Does every complex have a simplex with a free face?
+
+Free faces
+Deﬁnition
+Let K be a complex, and σ ∈ K a simplex, and τ < σ a face. Call τ a free face of σ if the only simplexes containing τ are τ and σ.
+
+Problem
+
+Does every complex have a simplex with a free face? Does any complex have a simplex with a free face?
+
+Elementary simplicial collapse
+
+Deﬁnition
+Let L and K = L ∪ cl{σ, τ } be complexes If σ is a principal simplex of K , and τ is a free face of σ, then L is an elementary simplicial collapse of K .
+
+Simplicial collapse
+Deﬁnition
+Let K1 , K2 , . . . , Kn be complexes, with Ki+1 an elementary simplicial collapse of Ki . Call Kn a simplicial collapse of K1 , and write K1 Kn . Call K1 a simplicial expansion of Kn , and write Kn K1 .
+
+Simple homotopy equivalence
+Deﬁnition
+K is simple homotopy equivalent to L (sometimes abbreviated s.h.e.) if you can reach transform K into L via a sequence of PL homeomorphisms, simplicial collapses, simplicial expansions. In this case, we write K L.
+
+NextUNKNOTTING time
+
+SPHERES IN FIVE DIMENSIONS
+BY E. C. ZEEMAN
+
+Communicated by S. Eilenberg, December 26, 1959
+
+Given a semi-linear embedding of 5 2 in euclidean S-space, we show that it is unknotted. Join it up to a vertex V in general position. If the cone VS2 is nonsingular we are finished. Otherwise, for dimensional reasons, there are at most a finite number of singularities, where just two points of S2 are collinear with V. Let's have V away on one side, so that at each singularity we can call one point "near" and the other point "far." Now separate the near and far points by an equator S 1 , so that all the near points lie in the northern hemisphere A, and all the far points lie in the southern hemisphere B. Let S2 be the sphere VS^-VJB. Then S2 is equivalent to 5 2 , because they differ by the boundary of the ball VA, whose interior does not meet them. But S2 is unknotted because it bounds, and does not meet the interior of, the ball VB. Hence S2 is unknotted. n REMARK 1. The argument generalizes to unknotting S in &-space,
+
+NextUNKNOTTING time
+
+SPHERES IN FIVE DIMENSIONS
+BY E. C. ZEEMAN
+
+Communicated by S. Eilenberg, December 26, 1959
+
+Given a semi-linear embedding of 5 2 in euclidean S-space, we show that it is unknotted. Join it up to a vertex V in general position. If the cone VS2 is nonRegular neighborhoods singular we are finished. Otherwise, for dimensional reasons, there are at most a finite numberS 3 singularities, where just two points of Knotting S 1 in of 2 S are collinear with V. Let's have V away on one side, so that at each 1 4 Unknotting one point singularity we can call S in S "near" and the other point "far." Now separate the near and far points by an equator S 1 , so that all the How to unknot with simplicial collapse near points lie in the northern hemisphere A, and all the far points lie in the southern hemisphere B. Let S2 be the sphere VS^-VJB. Then S2 is equivalent to 5 2 , because they differ by the boundary of the ball VA, whose interior does not meet them. But S2 is unknotted because it bounds, and does not meet the interior of, the ball VB. Hence S2 is unknotted. n REMARK 1. The argument generalizes to unknotting S in &-space,
+
+

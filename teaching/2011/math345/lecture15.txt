@@ -1,0 +1,30 @@
+Lecture 15: Polynomials
+Monday, October 18, 2010
+
+Math 345
+Jim Fowler
+
+Textbook
+This lecture discusses section 4 of the textbook.
+
+Homework
+The homework is due Thursday, October 21, 2010. From Section 4 of the textbook, do exercises 17, 18.
+
+A message from Professor Falkner
+Dear Math 345 Student, Are you currently majoring in mathematics? If not, are you considering it? If you answered yes to either question, then I would like you to know about an opportunity to get acquainted with a faculty member in the Department of Mathematics whom you might eventually decide you would like to have as your advisor for your major program. A number of mathematics professors are oﬀering to meet this quarter with up to ﬁve students each to lead a ﬁve-session series of mathematics-related activities. Each of the professors has proposed a diﬀerent series of activities that they hope will interest students. I strongly encourage you to participate in one of these activities that interests you if your schedule permits it.
+
+an impassioned plea to major in mathematics humorous example
+n2 + n + 41 is a prime for each n ∈ N? try n = 41.
+
+there are inﬁnitely many prime numbers
+also, there are inﬁnitely many composite numbers! :-) 1
+
+Solving congruences? quadratic polynomials
+Let a, b ∈ Z. Suppose x2 + ax + b = 0 and x ∈ Q. What can we say about x?
+
+third degree polynomials
+Let r, s, t ∈ Z. Suppose x3 = rx2 + sx + t. Show that if x is rational, x is an integer.
+
+2
+
+

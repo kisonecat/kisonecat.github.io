@@ -1,0 +1,26 @@
+#! /usr/bin/perl
+
+print <<EndHtml;
+<ul>
+EndHtml
+
+foreach $elt (@ARGV)
+{
+    $filename = $elt;
+    $filename =~s/\.pdf/\.tex/;
+
+    local( $/, *FH ) ;
+    open $file, "<" . $filename;
+    $_ = <$file>;
+    ($title) = /title{.*}/g;
+    $title =~s/.*title{//g;
+    $title =~s/}.*//g;
+
+    $desc = "$title";
+    print "<li><a href=\"ibl-analysis/$elt\">$desc</a>";
+    print "\n";
+}
+
+print <<EndHtml;
+</ul>
+EndHtml

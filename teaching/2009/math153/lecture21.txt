@@ -1,0 +1,23 @@
+Lecture 21: Diﬀerentiating and integrating series
+Math 153 Section 57 Friday November 14, 2008 Stirling’s formula
+Try to estimate k! by
+k k
+
+log(k!) =
+n=1
+
+log n ≈
+1
+
+log x dx
+
+But this integral we can do log(k!) ≈ k log k − k + 1 so this means that k! = elog(k!) ≈ ek log k−k+1 ≈= (k/e)k A better estimate: k! ≈ For example, 270! ≈ √ 540π(270/e)270 ≈ √ 1600(100)270 ≈ 40 · 10540 ≈ 4 · 10541 √ 2πk(k/e)k
+
+The true value is about 6 · 10540 .
+
+Limits do not commute
+x + 2y x + 2y 1 = lim lim = lim lim =2 x→0 y→0 2x + y y→0 x→0 2x + y 2
+
+1
+
+

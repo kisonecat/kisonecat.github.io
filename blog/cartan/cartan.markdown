@@ -1,0 +1,28 @@
+{{{
+  "title": "Constructing a Lie group from a Lie algebra.",
+  "tags": ["mathematics"],
+  "date": "2006-11-30T04:56:41+00:00"
+}}}
+
+  Cartan proved that every finite-dimensional real Lie algebra $\germ g$ comes from a connected, simply-connected Lie group $G$.  I hadn't known the proof of this result (and apparently it is rather uglier than one might hope), but
+
+> MR0854249
+
+gives a short proof of it, which I presented to the undergraduates in my Lie group seminar.  I'll sketch the proof now.
+
+\begin{theorem}
+For every Lie algebra $\mathfrak{g}$, there is a simply-connected, connected Lie group $G$ having $\mathfrak{g}$ as its Lie algebra.
+\end{theorem}
+
+First, if $\mathfrak{g} \subset \mathfrak{gl}(V)$, then the exponential map gives $U = \exp \mathfrak{g}$, and we define $G = \bigcup_{k=1}^\infty U^k \subset GL(V)$.  It turns out $G$ is a Lie group, and $\mathfrak{g}$ is its Lie algebra.
+
+If $\mathfrak{g}$ has no center, then $\rm{ad} : \mathfrak{g} \to \mathfrak{gl}(\mathfrak{g})$ is injective, so we have realized $\mathfrak{g}$ as a Lie subalgebra of endomorphisms of a vector space, and by the above, there is a Lie group $G \subset GL(\mathfrak{g})$ with $\mathfrak{g}$ as its Lie algebra.  Taking its universal cover $\tilde{G}$ proves the theorem in this case.
+
+Now we induct on the dimension of the center $Z(\mathfrak{g})$.  Let $Z \subset Z(\mathfrak{g})$ be a one-dimensional central subspace of $\mathfrak{g}$, and construct a short exact sequence $0 \to Z \to \mathfrak{g} \to \mathfrak{g}' \to 0$.  But this central extension of $\mathfrak{g}'$ by $Z = \R$ corresponds to a 2-cocycle $\omega \in H^2(\mathfrak{g}; \R)$.
+
+\begin{lemma}
+Let $D : H^2(G;\R) \to H^2(\mathfrak{g}; \R)$ be the map which differentiates a (smooth!) $2$-cocycle of the group cohomology of $G$.  The map $D$ is injective.
+\end{lemma}
+
+Consequently, we can find $f \in H^2(G;\R)$ with $Df = \omega$.  Since $\dim Z(\mathfrak{g}') < \dim Z(\mathfrak{g})$, by induction there is a Lie group $G'$ having $\mathfrak{g}'$ as its Lie algebra.  We build the central extension of $G'$ by $\R$ using the cocycle $f$, namely, $0 \to \R \to G \to G' \to 0$, where $G \cong G' \times \R$ and the operation is $(g_1, t_1) \cdot (g_2, t_2) = (g_1 g_2, t_1 + t_2 + f(g_1,g_2))$.  Since $Df = \omega$, it turns out that the Lie algebra corresponding to $G$ is $\mathfrak{g}$.  We finish the proof by taking the universal cover $\tilde{G}$.
+

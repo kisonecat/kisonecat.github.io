@@ -1,0 +1,131 @@
+\documentclass[12pt]{handout}
+\usepackage{nopageno}
+\usepackage{geometry}\geometry{margin=0.5in}
+
+\title{Compactness}
+\course{Math 660}
+\author{Jim Fowler}
+\date{Summer 2011}
+
+\newcounter{question}
+\newenvironment{question}{\vspace{1ex}\addtocounter{question}{1}\noindent\textbf{Task
+    \arabic{question}.}}{\vfill}
+
+\DeclareMathOperator{\interior}{Int}
+\DeclareMathOperator{\closure}{Cl}
+
+\begin{document}
+\maketitle
+
+\begin{question}
+  A \textbf{geodesic metric space} is a metric space $X$ so that, for
+  any $x, y \in X$, there exists an isometry $f : [0,d(x,y)] \to X$ with
+  $f(0) = x$ and $f(d(x,y)) = y$.  Is $\C$ a geodesic metric space?
+  Is $\C - \{0\}$ a geodesic metric space?
+\end{question}
+
+\begin{definition}
+A metric space is \textbf{complete} if every Cauchy sequence converges.
+\end{definition}
+
+\begin{definition}
+  A metric space $X$ is \textbf{totally bounded} if, for every
+  $\epsilon > 0$, the space $X$ can be covered by finitely many
+  $\epsilon$-balls.
+\end{definition}
+
+\begin{question}
+  Suppose $X$ is a finite set; show that
+  \begin{itemize}
+  \item a function $f : X \to \R$ is bounded,
+  \item a function $f : X \to \C$ attains a maximum,
+  \item any cover of $X$ admits a finite subcover, and
+  \item any sequence in $X$ has a convergent subsequence.
+  \end{itemize}
+\end{question}
+
+\begin{definition}
+  A space $X$ is \textbf{compact} if every open covering of $X$ admits
+  a finite subcovering.
+\end{definition}
+
+\begin{question}
+  A subset $K$ is compact iff it is complete and totally bounded.
+\end{question}
+
+\begin{question}
+  A subset $K \subset \C$ is compact iff $K$ is closed and bounded.
+\end{question}
+
+\begin{question}
+  The continuous image of a closed set is closed?
+\end{question}
+
+\begin{question}
+  The continuous image of a bounded set is bounded?
+\end{question}
+
+\begin{question}
+  The continuous image of a compact space is compact?
+\end{question}
+
+\begin{question}
+  The pre-image of a compact space under a continuous function is
+  compact?
+\end{question}
+
+\begin{question}
+  A closed subset of a compact space is compact?
+\end{question}
+
+\begin{question}
+  For any open cover $\mathcal{U}$ of a compact metric space $X$,
+  there exists $\delta > 0$ so that for every $x \in X$, the open ball
+  $B_\delta(x)$ is contained in some $U \in \mathcal{U}$.
+\end{question}
+
+\begin{question}
+  Let $K$ be compact; any continuous function $f : K \to Y$ is
+  uniformly continuous.  (In other words, if the domain is compact,
+  the local condition of continuity gives rise to a global condition
+  of \textit{uniform} continuity.)
+\end{question}
+
+\begin{question}
+  For a metric space $X$ and a open subset $S \subset X$ with
+  $\closure S$ compact, define $n(S,X)$ to be the number of noncompact
+  connected components of $X - S$.  How large can $n(S,\R)$ be?  How
+  large can $n(S,\C)$ be?
+\end{question}
+
+\pagebreak
+\null
+
+\begin{question}
+  How many different functions can you form by composing $f(z) = 1-z$
+  and $g(z) = 1/z$?
+\end{question}
+
+\begin{question}
+  How many different functions can you form by composing $f(z) = 1+z$
+  and $g(z) = -1/z$?
+\end{question}
+
+\begin{question}
+  Find an analytic function sending $B_1(0) \subset \C$ to the upper
+  half-plane.
+\end{question}
+
+\begin{question}
+  Suppose $f(z)$ is a rational function of order $n$; what can you say
+  about the order of $f \circ f$?
+\end{question}
+
+\vfill
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

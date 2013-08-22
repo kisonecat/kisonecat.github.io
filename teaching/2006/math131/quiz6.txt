@@ -1,0 +1,16 @@
+Take-Home Quiz 6
+Math 131 Section 22 Due Monday, November 21, 2005
+These problems illustrate how we can take the material we’ve learned to do even fancier things—higher order implicit diﬀerentiation and a totally awesome related rates problem. Problem 1. (6 points). Consider the equation x2 + y 2 = 1. Using implicit diﬀerentiation gives a formula for the slope of the tangent line to (x, y) on the circle with radius one, namely: dy 2x + 2y = 0, dx so the tangent line to the point (x, y) has slope −x/y. Use implicit diﬀerentiation on this equation to get a formula for d2 y/dx2. Do some algebraic manipulation so your formula for y ′′ only depends on y. Problem 2. (6 points). On the Island of Sodor,1 Clarabel is stuck on her track. Thankfully, Clarabel’s track intersects Bertram’s track (at switch D), and there is a 50 foot steel cable welded to Bertram and Clarabel. Now Bertram is also stuck, but Bertram’s track intersects Arthur’s track (at switch E), and there is a 50 foot iron chain welded to Bertram and Arthur. Arthur is travelling away from switch E at a speed of 10 feet per minute, and is currently 30 feet from switch E. Bertram is 40 feet from switch E and 30 feet from switch D. Clarabel is currently 40 feet from switch D. Be “Really Useful” by computing how fast Clarabel is moving toward switch D.
+1
+
+A
+
+E
+B
+C
+
+D
+
+Not coincidentally, Thomas the Tank Engine lives there.
+
+

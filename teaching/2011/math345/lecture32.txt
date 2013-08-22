@@ -1,0 +1,18 @@
+Lecture 32: Counting
+Monday, November 22, 2010
+
+Math 345
+Jim Fowler
+
+Textbook
+This lecture discusses section 13 of the textbook.
+
+Homework
+The homework is due Wednesday, November 24, 2010. From Section 13 of the textbook, do exercises 1, 6, and 8.
+
+topics
+Let A and B be sets. To say that A is equinumerous to B means that there exists a bijection from A to B. this is an equivalence relation—prove it. deﬁne “ﬁnite.” deﬁne “inﬁnite.” possible for an inﬁnite set to equinumerous to a proper subset of itself A ﬁnite set cannot be equinumerous to a proper subset of itself. An injection from a ﬁnite set to itself is a surjection. A subset of a ﬁnite set is ﬁnite.
+
+1
+
+

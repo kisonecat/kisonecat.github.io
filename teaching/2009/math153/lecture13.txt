@@ -1,0 +1,56 @@
+Lecture 13: Convergence tests
+Math 153 Section 57 Monday October 27, 2008
+Following chapter 12.3 and starting 12.4.
+
+Bare hands proof that harmonic series diverges
+Estimate K 1/n. 1/1. 1/2. 1/3 + 1/4 underestimated by 1/2. 1/5 + 1/6 + 1/7 + 1/8 n=1 underestimates by 1/2. And so on. Therefore, s2k ≥ 1 + k/2. This argument is about 700 years old. Use this to estimate how many terms we have to add up. How big does K have to be in order for K 1/n > 10. If I want 1 + k/2 ≥ 10, I need k ≥ 18. But 218 = 262144. n=1 This will do, but I actually only need k = 12367. Better approximation from EulerMascheroni constant:
+K
+
+γ = lim
+
+K→∞
+
+1/n
+n=1
+
+− log K
+
+≈ 0.577.
+
+Since e10−0.577 = 12369.6, guess that k = 12367 suﬃces.
+
+Be careful about series with negative terms
+For example, 1/n diverges, but as we will see soon, (−1)n /n converges—even though 1/n and (−1)n /n have the same magnitude. More about this on Friday.
+
+Limit comparison test
+Limit comparison test: let an ≥ 0 and bn ≥ 0. If limn→∞ an /bn = L > 0, then iﬀ bn converges. Proof: Choose so that 0 < < L. Then there exist K so that for n ≥ K, |an /bn − L| < . That means, (L − )bn < an < (L + )bn an converges
+
+So if an converges, then (L − )bn converges. The slogan: converge is all about how quickly those terms are vanishing. 1
+
+Example
+n
+
+3n2 + n + 17 n4 + n2 + 8
+
+On the one hand, we could try to bound this and apply comparison tes. . . but even easier is to use the limit comparison test! Use 1/n2 .
+
+Buyer beware!
+The limit comparison test does not tell you what the series equals—only whether it converges.
+
+Like all tools, use it properly
+Limit comparison says nothing if L = 0, or L = ∞.
+
+Review
+Does a series converge? First, is it a series we recognize? Geometric series? Harmonic series or p-series? Apply integral test (which involves coming up with a function), comparison test (which involve coming up with another series), or limit comparison test (which involves coming up with another series and taking a limit).
+
+More tests
+an converges, and if L > 1, then Let an ≥ 0, and limn→∞ an 1/n = L. Then if L < 1, then an diverges. If L = 1, inconclusive. Proof: suppose L < 1. Choose small so that L + < 1. Then for n large, an 1/n < L + so for n large, an < (L + )n . By comparison with (L + )n , the series converges. On the other hand, if L > 1, then choose small so that L − > 1. Again, for n large, 1/n an > L − , so an > (L − )n . Since (L − )n diverges, comparison proves an diverges.
+
+Example
+1 . nn Or again, 1 . (cos n + sin log n + n)n 2
+
+counterexample: 1/n is not detected, since lim 1/n1/n = 1. The same is true of 1/n2 . This is nothing more than an application of the comparison test (or, if you like, a modiﬁcation of the limit comparison test) with a geometric series.
+
+3
+
+

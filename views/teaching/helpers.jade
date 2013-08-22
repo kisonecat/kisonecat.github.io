@@ -1,0 +1,18 @@
+mixin courseThumbnail(course)
+  if course.logo
+    a.thumbnail(href=course.url)
+      img(src=course.url + course.logo)
+  h4 <a href="#{course.url}">#{course.title}</a>
+    | 
+    small #{course.shortTitle()}
+  p 
+    !=course.description
+
+mixin resourceThumbnail(resource)
+  a.thumbnail(href=resource.url)
+    img(src="#{resource.filename.replace('.pdf','.png')}")
+    .caption
+      h3
+        !=resource.title
+      p
+        !=resource.description

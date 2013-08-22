@@ -1,0 +1,166 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+
+\usepackage{add-copyright}
+
+\newcommand{\R}{\mathbb{R}}
+
+\theoremstyle{plain}% default
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[theorem]
+\newtheorem{conjecture}{Conjecture}[theorem]
+\newtheorem{example}{Example}[theorem]
+\newtheorem{exercise}{Exercise}[theorem]
+\newtheorem{remark}{Remark}
+\newtheorem*{warning}{Warning}
+
+\title{Little $o$ notation}
+\author{Math 205}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Overview}
+
+There is no \textit{new} mathematics in this handout, but there is a
+slightly different perspective.  We think of the linear approximation
+(not the value of the derivative) as the fundamental object.
+
+\section{Introduction}
+
+Something that can make differentiation more beautiful is
+\textit{little $o$ notation}.
+\begin{definition}
+We say ``$f$ is little-oh of $h$ as $x$
+approaches $x_0$'' and write
+$$
+f(x) = o(h(x)) \mbox{ as $x \to x_0$}
+$$
+to mean that
+$$
+\lim_{x \to x_0} \frac{f(x)}{h(x)} = 0.
+$$
+\end{definition}
+Intuitively, this means $f(x)$ is \textit{much} smaller than $h(x)$
+for $x$ near $x_0$.
+
+\begin{warning}
+If $f(x) = o(h(x))$, it is not the case that $h(x) = o(f(x))$.
+\end{warning}
+
+\begin{example}
+For instance,
+\begin{itemize}
+\item $x^2 = o(x)$ as $x \to 0$.
+\item $x \neq o(x^2)$ as $x \to 0$.
+\item $x - \sin x = o(x)$ as $x \to 0$.
+\item $x - \sin x = o(x^2)$ as $x \to 0$.
+\item $x - \sin x = o(x^2)$ as $x \to 0$.
+\item $x - \sin x \neq o(x^3)$ as $x \to 0$.
+\end{itemize}
+\end{example}
+
+\begin{definition}
+For two functions $f, g : \R \to \R$, we say that $f(x) \sim_{x_0} g(x)$ provided
+$$
+f(x) - g(x) = o(x - x_0) \mbox{ as $x \to x_0$.}
+$$
+\end{definition}
+\noindent
+Unwrapping the definitions, this just means that
+$$
+\lim_{x \to x_0} \frac{f(x) - g(x)}{x - x_0} = 0
+$$
+Intuitively, $f(x) \sim_{x_0} g(x)$ means $f$ and $g$ look
+``linearly'' the same around $x_0$.  More formally (or when trying to
+intimidate others), we might say that the ``linear germ of $f$ and $g$
+around $x_0$ is the same.''
+
+\begin{exercise}
+Prove that $\sim_{x_0}$ is an equivalence relation.
+\end{exercise}
+
+\begin{definition}
+A \textbf{linear approximation} for $f(x)$ at $x_0$ is a linear function
+$$
+L(x) = ax + b
+$$
+so that $f(x) \sim_{x_0} L(x)$.
+\end{definition}
+
+\begin{exercise}
+If $ax + b \sim_{x_0} cx + d$, then $a = c$ and $b = d$.
+\end{exercise}
+
+\begin{exercise}
+Let $f : (a,b) \to \R$.  If $f$ has a linear approximation at $c$, then it is unique.
+\end{exercise}
+
+\begin{exercise}
+Let $f : (a,b) \to \R$.  Then $f$ is differentiable at $c$ if and only if $f$ has a linear approximation at $c$.
+\end{exercise}
+
+\begin{exercise}
+Let $f_i$ be functions, and $L_i$ be linear functions, so that $f_1 \sim_{x_0} L_1$ and $f_2 \sim_{x_0} L_2$.
+
+Then,
+\begin{itemize}
+\item $f_1 + f_2 \sim_{x_0} L_1 + L_2$.
+\item $f_1 \cdot f_2 \sim_{x_0} L_1 \cdot L_2$.
+\end{itemize}
+\end{exercise}
+
+\begin{remark}
+The latter ``explains'' the product rule:
+\begin{align*}
+f_1(x) &\sim_{x_0} {f_1}'(x_0) \, (x - x_0) + f_1(x_0) \\
+f_2(x) &\sim_{x_0} {f_2}'(x_0) \, (x - x_0) + f_2(x_0), \\
+\intertext{and therefore,}
+f_1(x) \, f_2(x) &\sim_{x_0} \left( {f_1}'(x_0) \, \left(x - x_0\right) + f_1(x_0) \right) \left( {f_2}'(x_0) \, \left(x - x_0\right) + f_2(x_0) \right) \\
+f_1(x) \, f_2(x) &\sim_{x_0} \left( {f_1}'(x_0) f_2(x_0) + f_1(x_0) {f_2}'(x_0) \right) \, \left(x - x_0\right) + f_1(x_0) f_2(x_0).
+\end{align*}
+You might have noticed that the ${f_1}'(x_0) {f_2}'(x_0) (x - x_0)^2$ term is missing---why are we justified in ignoring it?
+\end{remark}
+
+\section{Higher derivatives}
+
+\begin{definition}
+For two functions $f, g : \R \to \R$, we say that $f(x) \sim^n_{x_0} g(x)$ provided
+$$
+f(x) - g(x) = o\left( \left(x - x_0\right)^n \right) \mbox{ as $x \to x_0$.}
+$$
+\end{definition}
+\noindent
+Intuitively, this means that $f$ and $g$ are the ``same'' through degree $n$.
+Note that, as before, this is an equivalence relation.
+
+\begin{definition}
+A \textbf{quadratic approximation} for $f(x)$ at $x_0$ is a quadratic function
+$$
+L(x) = ax^2 + bx + c
+$$
+so that $f(x) \sim^2_{x_0} L(x)$.
+\end{definition}
+
+\begin{remark}
+The quadratic approximation packages together both the first and second derivative of $f$ at $x_0$.
+\end{remark}
+
+\begin{exercise}
+Let $L_1$ and $L_2$ be quadratic functions such that $L_1 \sim^2_{x_0} L_2$.  Prove $L_1 = L_2$.
+\end{exercise}
+
+\begin{exercise}
+Let $f : (a,b) \to \R$.  If $f$ has a quadratic approximation at $c$, then it is unique.
+\end{exercise}
+
+\end{document}

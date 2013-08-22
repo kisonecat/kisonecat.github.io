@@ -1,0 +1,59 @@
+The median was 210. The mean was 206. The standard deviation was 21. This means that many of you scored over 90%, which is very good. Here is the breakdown per problem: Problem Problem 10 Problem 9 Problem 6 Problem 11 Problem 4 Problem 1 Problem 8 Problem 2 Problem 5 Problem 3 Problem 12 Problem 7 Problem 1 Quanitiﬁers (those “for all” and “there exists”) are very important, and their order matters. “For every cat C, there is a bowl B, so that C eats from B” is not the same as “There is a bowl of food B, such that for every cat C, C eats from B” In the ﬁrst world, every cat has a bowl of food. In the other, there is one bowl of food that all the cats must eat from. In the same way, “for every > 0, there is a K. . . ” is not at all the same thing as “there is a K, for every > 0.” Average Score 79% 80% 81% 83% 86% 90% 90% 92% 92% 93% 96% 99%
+
+c 2010 Jim Fowler
+
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+25% of you scored above 220. 50% of you scored above 210. 75% of you scored above 200.
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+I have ﬁnally ﬁnished grading the exams. And I must admit: the exam was very long—so long that my compatriots said it could not be done! But we proved them wrong! You did very well. To quantify:
+
+Problem 2 Your proofs should begin “Let the limit was not equal to one. Problem 3 The deﬁnition should include for all n ∈ N. Problem 4 I found it diﬃcult to grade this problem, as very few people gave convincing arguments for cn being unbounded above: I was fairly generous. In any case, be careful not to use circular logic (i.e., do not claim that cn diverges because cn is unbounded, and then claim that cn is unbounded because it diverges). Problem 5 You should have shown dn > dn+1 algebraically, or at least claimed that n2 is increasing, so −n2 is decreasing, so 20 − n2 is decreasing. Problem 6 Many people failed to notice sin(πn) = 0 when n ∈ N (admittedly, it might feel like me tricking you, but this question hits at the diﬀerence between limits of sequences and of functions). Many people tried to use l’Hˆpital’s rule on this sequence—but l’Hˆpital o o is only for functions (unless you do something clever to explain why the limit of a sequence is equal to the limit of some similarly deﬁned function). Problem 7 People did very well on this problem. Be careful to mention that cosine is continuous.
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+> 0.” This problem proved tricky because
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+c 2010 Jim Fowler
+
+Problem 8 Some people found fancier things to squeeze between, but don’t need to make things harder than they already are. Problem 9 Many people forgot that additional assumption: that g (x) = 0 for x near a. The theorem is not true without this assumption. Problem 10 This problem turned out to be harder than I expected. I think many people ran out of time; other people seemed to have trouble applying the chain rule (though, again, this problem was designed to test that: applying the chain rule to sin2 (2x) can be tricky). Problem 11 One person did a very nice thing by pointing out
+2 x→0
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+lim+ x
+
+2x
+
+=
+
+x→0
+
+lim+ x
+
+x
+
+= 12 = 1.
+
+Most people just used l’Hˆpital to evaluate this limit, but many of you forgot o to undo the logarithm at the end: log lim+ x2x = 0 implies lim+ x2x = e0 = 1.
+x→0 x→0
+
+Of course, the problem is designed to lead you into trap (as one of you pointed out explicitly!), since the other limit equals 0. Problem 12 People mostly did well on this problem, though I think some of you ran out of time.
+
+c 2010 Jim Fowler
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+n4 ± 1 works—you n4
+
+Overall impressions.
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+c 2010 Jim Fowler
+
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+Your arguments in problems 4 and 5 should have been better. Many of you can do a better job presenting your answers. I’m very sloppy human being, but mathematics (which comes from the Greek word for “discipline” or “disciple”) does demand a certain amount of care, lest you make mistakes along the way. The chain rule, for instance, is a powerful tool, and we must be careful not to hurt ourselves when wielding such tools. Additionally, your mathematics should more closely resemble billiards than, say, tennis: your goal is to announce your next move clearly, and then perform it properly—not to surprise me with fastmoving shots precisely aimed to the place I am not looking.
+
+

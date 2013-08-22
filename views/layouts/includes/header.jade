@@ -1,0 +1,39 @@
+.navbar.navbar-static-top.navbar-transparent.navbar-inverse
+  .container
+    a.navbar-brand(href="/")
+        | Jim <strong>Fowler</strong>
+    ul.nav.navbar-nav
+        li(class=(title === 'CV' ? 'active' : ''))
+          a(href="/cv") CV
+        li(class=(section === 'Research' ? 'active' : ''))
+          a.dropdown-toggle(href="#",data-toggle="dropdown") Research <b class="caret"></b>
+          ul.dropdown-menu
+            li.dropdown-header Projects
+            - var projectsInMenu = _.sortBy( projects, 'year' ).reverse().slice(0, 6);
+            - each project in projectsInMenu
+              li
+                a(href="#{project.url}") #{project.title}
+            if projects.length > 6
+              li
+                a(href="/teaching") More projects&hellip;
+            li.divider
+            li
+              a(href="/research/papers") Publication list
+        li(class=(section === 'Teaching' ? 'dropdown active' : 'dropdown'))
+          a.dropdown-toggle(href="#",data-toggle="dropdown") Teaching <b class="caret"></b>
+          ul.dropdown-menu
+            li
+              a(href="/teaching/statement") Teaching Statement
+            li.divider
+            li.dropdown-header Courses
+            - var coursesInMenu = _.sortBy( courses, 'year' ).reverse().slice(0, 6);
+            - each course in coursesInMenu
+              li
+                a(href="#{course.url}") #{course.longname()}
+            li
+              a(href="/teaching") More courses&hellip;
+            li.divider
+            li
+              a(href="/teaching/videos") Videos
+        li(class=(((typeof post !== "undefined") || (typeof posts !== "undefined") || (title === 'Blog')) ? 'active' : ''))
+          a(href="/blog") Blog

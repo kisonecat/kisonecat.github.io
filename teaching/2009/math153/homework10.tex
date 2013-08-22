@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+
+\usepackage{hyperref}
+\usepackage{fullpage}
+\usepackage{nopageno}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\usepackage[margin=1in]{geometry}
+\usepackage{wasysym}
+\usepackage{add-copyright}
+
+\usepackage{graphicx}
+
+\title{Homework 10}
+\date{Due Friday, November 7, 2008}
+
+\long\def\symbolfootnote[#1]#2{\begingroup%
+\def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+
+\begin{document}
+\maketitle
+
+\begin{description}
+
+\item[(a)] On page 601, in section 12.5, do problems: 5, 6, 14, 20, 22.
+
+\vfill
+
+\item[(b)] Find a fifth-degree Taylor polynomial (i.e., up to and
+  including an $x^5$ term) for each of the following functions:
+\begin{description}
+\item[(i)] $f(x) = \sin x + \cos x$.
+\item[(ii)] $g(x) = \cos \left(x^2\right)$.
+\item[(iii)] $h(x) = \tan x$.
+\item[(iv)] $u(x) = \log \cos x$.
+\end{description}
+You can find these polynomials using tricks---for example, try
+substituting $x^2$ into a Taylor polynomial for $\cos x$ to find a
+polynomial for $g(x)$.
+
+\vfill
+
+\item[(c)] Consider a function $p : \R \to \R$ defined by a polynomial
+$$
+p(x) = a_n \, x^n + a_{n-1} \, x^{n-1} + \cdots + a_1 \, x + a_0.
+$$
+What is the Taylor series for $p(x)$?  Justify your answer.
+
+\vfill
+
+\item[(d)] Consider the function $f : \R \to \R$ defined by $f(x) =
+  1/(1 - x)$.  Find the Taylor series $\sum_{n=0}^\infty a_n\,x^n$ for
+  this function, and determine for which values of $x$ the series
+  converges to $f(x)$.
+
+\vfill
+
+\end{description}
+
+
+\end{document}

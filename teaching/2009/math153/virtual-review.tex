@@ -1,0 +1,223 @@
+\documentclass{article}
+\usepackage[pdftex,dvipsnames]{color}
+\usepackage[paperwidth=4in,paperheight=3in,margin=0.25cm]{geometry}
+\usepackage{nopageno}
+\usepackage{add-copyright}
+
+\usepackage{amsthm}
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{corollary}{Corollary}
+\newtheorem*{lemmma}{Lemma}
+\newtheorem*{proposition}{Proposition}
+
+\theoremstyle{definition}
+\newtheorem*{remark}{Remark}
+\newtheorem*{example}{Example}
+\newtheorem*{definition}{Definition}
+
+\usepackage{amssymb}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+
+\newcommand{\limn}{\displaystyle\lim_{n \to \infty}}
+
+\title{Virtual Review Session for Midterm 2}
+\author{Jim Fowler}
+
+\begin{document}
+
+\setlength{\parindent}{0in}
+\pagecolor{black}
+\color{white}
+
+%We'll be gathering here at 6pm Central Time for a virtual review session.
+
+The future is commonly understood to contain all events that have yet to occur.
+Welcome to the future of education.
+
+For the Alternating Series Test, if you have already proved a series not to absolutely convergent and the series fails one of the alternating series conditions (decreasing or positive...) does the series automatically converge even if the limit is 0?
+
+It turns out that if an alternating series fails to converge absolutely, and fails the alternating series test, there isn't much we can say.
+
+An example of a problematic series:
+$a_n = 2/n$ if $n$ is odd, and $a_n = -1/(n-1)$ is $n$ is even.
+
+If the sum of two converging series converges, if a sum is made up of a converging and diverging sequence does it diverge? I am guessing not, but I am not sure!
+
+The sum of a divergin series and a diverging series?  May or may not converge.
+
+$$
+\sum n + \sum -n = \sum (n-n) = \sum 0
+$$
+
+In the taylor series thereom remainder, there is a $t$. What is that $t$?
+
+$$
+\frac{1}{n!} \int_0^x f^{(n+1)} (t)\, (x - t)^n \, dt
+$$
+
+When figuring out if series converge, can you use composition of
+functions? For example, if you have the sine of a converging function
+does sine converge?
+
+$$
+\sum \cos\left(\frac{1}{n^2}\right) \mbox{diverge}
+$$
+
+Please give a canon definition for the sum of a sub n equals L (the
+first bullet point on the review sheet)
+
+$$
+\sum_{n=0}^\infty a_n = L
+$$
+means
+$$
+\lim_{k \to \infty} \sum_{n=0}^k a_n = L
+$$
+
+Define the sequence of partial sums
+$$
+s_k = \sum_{n=0}^k a_n
+$$
+A series converges to $L$ if the sequence of partial sums converges to $L$
+$$
+\lim_{k \to \infty} s_k = L
+$$
+
+\begin{theorem}[Taylor's theorem]
+$f : \R \to \R$ is a smooth function, and
+$$ f(x) = f(a) + \frac{f'(a)}{1!}(x - a) + \cdots + \frac{f^{(n)}(a)}{n!}(x - a)^n + R_n(x). $$
+ $$ R_n(x) = \int_a^x \frac{f^{(n+1)} (t)}{n!} (x - t)^n \, dt$$
+\end{theorem}
+
+\begin{theorem}[Lagrange]
+$$  R_n(x) = \frac{f^{(n+1)}(c)}{(n+1)!} x^{n+1}.$$
+for some $c \in (0,x)$.
+\end{theorem}
+
+How did you apply the limit comparison test on that $sin(1/n^2)$
+summation?
+
+$$
+\sum_{n=1}^\infty \frac{1}{n^2} = \sum a_n
+$$
+
+$$
+\sum_{n=1}^\infty \sin\left(\frac{1}{n^2}\right) = \sum b_n
+$$
+
+$$
+\lim_{n \to \infty} b_n/a_n = \lim_{n \to \infty} \frac{\sin(1/n^2)}{1/n^2} = 1
+$$
+
+The limit comparison test aplies, and $\sum a_n$ converges iff $\sum
+b_n$ converges.
+
+For the Limit Comparison test: if we are just making sure that lim
+(original/compared series) L, and L must be positive. Then the original
+converges only if the compared one converges. When will L not be positive?
+
+$$
+\sum 1/n = \sum a_n \hspace{1em} \sum 1/n^2 = \sum b_n
+$$
+
+$$
+\lim_{n \to \infty} b_n/a_n = \lim_{n \to \infty} \frac{1/n^2}{1/n} = \lim 1/n = 0
+$$
+
+If $\sum a_n$ converge, then $\sum b_n$ converge.
+
+$$
+\sum_{n=1}^\infty \frac{n!}{(n+1)!} = \sum_{n=1}^\infty \frac{1}{n+1}
+$$
+which diverges by harmonic series test.
+
+Could you perform the Taylor expansion for arctan(x)?
+$$
+\arctan x = \sum^{\infty}_{n=0} \frac{(-1)^n}{2n+1} x^{2n+1}
+$$
+
+$$
+\frac{d}{dx} \arctan x = \frac{1}{1+x^2} = \sum_{n=0}^\infty (-1)^n x^{2n}
+$$
+
+$$
+\int \frac{d}{dx} \arctan x \, dx = \int \frac{1}{1+x^2} \, dx = \int \sum_{n=0}^\infty (-1)^n x^{2n} \, dx
+$$
+
+$$
+\arctan x + C = \sum_{n=0}^\infty \int (-1)^n x^{2n} \, dx = \sum_{n=0}^\infty (-1)^n \frac{x^{2n+1}}{2n+1} 
+$$
+
+2. Problem 25 on page 636 in the Salas book.
+$$
+f(x) = x \cdot \log \frac{1+x^2}{1-x^2}
+$$
+
+$$
+\log \frac{a}{b} = \log a - \log b
+$$
+
+$$
+\log(1+x) =  \sum^{\infty}_{n=1} (-1)^{n+1}\frac{x^n}n
+$$
+
+$$
+\log(1+x^2) =  \sum^{\infty}_{n=1} (-1)^{n+1}\frac{x^{2n}}n
+$$
+
+$$
+\log(1-x^2) = \sum^{\infty}_{n=1} (-1)^{2n+1} \frac{x^{2n}}n
+$$
+
+\begin{eqnarray*}
+\log \frac{1+x^2}{1-x^2} &=& \log (1+x^2) - \log (1-x^2) \\
+&=& \sum^{\infty}_{n=1} (-1)^{n+1}\frac{x^{2n}}n - \sum^{\infty}_{n=1} (-1)^{2n+1} \frac{x^{2n}}n \\
+&=& \sum^{\infty}_{n=1} \left( (-1)^{n+1} - 1 \right) \frac{x^{2n}}n \\
+\end{eqnarray*}
+
+\begin{eqnarray*}
+x \cdot \log \frac{1+x^2}{1-x^2} &=& x \cdot \left(\log (1+x^2) - \log (1-x^2)\right) \\
+&=& x \cdot \left( \sum^{\infty}_{n=1} (-1)^{n+1}\frac{x^{2n}}n - \sum^{\infty}_{n=1} (-1)^{2n+1} \frac{x^{2n}}n \right) \\
+&=& x \cdot \sum^{\infty}_{n=1} \left( (-1)^{n+1} - 1 \right) \frac{x^{2n}}n \\
+&=& \sum^{\infty}_{n=1} \left( (-1)^{n+1} - 1 \right) \frac{x^{2n + 1}}n \\
+\end{eqnarray*}
+
+Is there any way to use Legrange Remainder method on a
+function that is not a trig function, so that you cannot say
+the nth derivative around zero is between -1 and 1?
+
+\begin{theorem}[Lagrange]
+$$  R_n(x) = \frac{f^{(n+1)}(c)}{(n+1)!} x^{n+1}.$$
+for some $c \in (0,x)$.
+\end{theorem}
+
+\textbf{Problem:} We do not know what the point $c$ is.
+
+\textbf{Solution:} We need to bound the $(n+1)$st derivative of $f$.
+
+Examples of functions for which we can control the size of $n$th
+derivaive: trig functions.  sums and products (by constants) of trig
+functions.
+
+Solutions to differential equations.  $f'''(x) = -f(x)$?
+
+A priori information given to you: $|f^{(n)}(x)| < 17$
+
+Secrets of the Exam:
+
+Know Taylor series for sin and cosine and geometric series.
+
+$$
+R_k(x)
+$$
+
+Differentiate a Taylor series.
+
+Conditional and absolute convergence.
+
+Don't be afraid of large numbers.
+
+
+
+\end{document}

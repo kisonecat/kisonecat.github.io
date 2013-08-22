@@ -1,0 +1,136 @@
+Lecture 24: Integrals with tricks
+Math 153 Section 57 Friday November 21, 2008
+Following chapter 8.3. There are many other tricks not in the book; we will cover some of these. Also, I will try to do examples that you might actually care about.
+
+Products of sines and cosines
+From your homework you know how to do sin(2x) cos(3x) dx by using parts. You can also do sin2 x dx by using a trig substitution. You can also do sinn x cosm x dx by making a substitution cos2 x + sin2 x = 1.
+
+Repeated integration
+uv = uv1 − u v2 + u v3 − · · · + (−1)n u(n) vn+1
+
+Integrals of products of sines and cosines
+Do sin(ax) cos(bx) dx by using an angle sum formula? No! Use parts twice. Powers of trig functions? Replace sin2 x with 1 − cos2 x as follows cos3 x sin5 x dx = cos x(1 − sin2 x) sin5 x dx = 1 (1 − u2 ) u5 du =
+
+Trig identities
+1 − sin2 x = cos2 x. 1 + tan2 x = sec2 x. sec2 x − a = tan2 x. √ So if you see a2 − x2 , set x = a sin u. For example, r√
+0
+
+r2 − x2 dx
+
+which we know is πr2 /4. But let’s check it. Set x = r sin u and dx = r cos u du. Then the integral above is
+π/2
+
+r2 − r2 sin2 u r cos u du
+0
+
+But this becomes
+0
+
+π/2
+
+r2 which becomes
+0
+
+1 − sin2 u cos u du
+π/2
+
+r2 cos2 u du which we can do using cos u = (1 + cos(2u))/2, so get
+π/2 2
+
+r2
+0
+
+1 + cos(2u) r2 du = 2 2
+
+π/2
+
+(1 + cos(2u)) du
+0
+
+which is πr2 /4, as we suspected.
+
+Volume of a sphere
+Even easier to compute the volume of a sphere this way! A hemisphere has volume
+r 0
+
+√ 2 π( r2 − x2 )2 dx = πr3 3
+
+So the whole sphere has voluem 4πr3 /3.
+
+Volume of a hypersphere
+A hemi-hypersphere has volume
+r 0
+
+4 √ 2 π( r − x2 )3 dx 3
+
+2
+
+If we make a trig substitution x = r sin u and dx = r cos u we get 4r4 π V = 3
+π/2
+
+cos4 u du
+0
+
+This is an integral we can do! Replace cos2 u with (1 + cos(2u))/2, and get 4r4 π V = 3 or equivalently V = Now do it again! 4r4 π V = 12 I’ll clean it up a bit V = 4r4 π 24
+π/2 π/2 π/2 0
+
+1 + cos(2u) 2
+
+2
+
+du
+
+4r4 π 12
+
+π/2
+
+1 + 2 cos(2u) + cos2 (2u) du
+0
+
+1 + 2 cos(2u) +
+0
+
+1 + cos(4u) 2
+
+du
+
+(3 + 4 cos(2u) + cos(4u)) du
+0
+
+But the integrals of cos(2u) and cos(4u) vanish (do not do more work than you need to do!). We end up with, 4r4 π r4 π 2 V = (3π/2) = 24 4 This is a volume for a hemisphere, so the whole sphere has volume V = r4 π 2 2 r4 π 2 = 4 2
+
+Yeah, this seems a bit ad hoc but in a multivariable course, you’ll see a more conceptual route to these calculations. Is this right? B 2 sits inside a box built out of two B 1 ’s; so π < 2 · 2. In the same way, B 4 sits inside a box built out of two B 2 ’s, so π 2 /2 < π 2 . Not exactly a big surprise.
+
+Using power series
+∞
+
+log(1 + e−x ) dx
+0
+
+This is
+0
+
+∞ ∞ n=1
+
+(e−x )n (−1)n+1 dx n 3
+
+which we can integrate term by term (why?!)
+∞ 0 ∞
+
+n=1
+
+(e−nx )(−1)n+1 dx n
+
+which gives
+
+∞
+
+n=1 2
+
+(−1)n+1 n2
+
+which is π /12. Why is that? Let A = even 1/n2 and B = odd 1/n2 . We want to compute B −A. But B +A = 4A, so B = 3A. And B + A = π 2 /6 = 4A, so A = π 2 /24 and B = π 2 /8. Then B − A = π 2 /12.
+
+4
+
+

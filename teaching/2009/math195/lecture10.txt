@@ -1,0 +1,19 @@
+Lecture 10: Optimization problems
+Math 195 Section 91 Monday July 13, 2009
+Goal: 15.7 and 15.8 Next midterm: orally on Friday. I’ll send an email with signups.
+
+1
+
+Extrema
+
+deﬁne global min, global max deﬁne local min, local max theorem re continuous image of closed, bounded sets. example: f (x, y) = x2 + y 2 . if local extrema, then derivative vanishes critical point: partials vanish, or partial dne. second derivative test procedure: ﬁnd critical points, ﬁnd boundary extrema, ﬁnd largest and smallest.
+
+2
+
+Lagrange multipliers
+
+ﬁnd extrema with a constraint intuitive argument: curves on constraint classic problem: biggest box (without a lid) with 12 square units of cardboard.
+
+1
+
+

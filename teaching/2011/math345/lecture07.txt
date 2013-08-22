@@ -1,0 +1,29 @@
+Lecture 7: Bound variables
+Monday, October 4, 2010
+
+Math 345
+Jim Fowler
+
+Textbook
+This lecture discusses section 3 of the textbook.
+
+Homework
+The homework is due Wednesday, October 6, 2010. From Section 3 of the textbook, do exercises 2, 4, and 7.
+
+Have some people come up and present solutions to homework from before Bound and free variables
+In the statement P (x), the variable x is free. In the statement ∀x P (x), the variable x is bound. In other words, “∀x P (x)” is not a statement about x. Possible (but poor style) to use the same variable name for a bound variable and a free variable. The scope of a quantiﬁer is the part of the proposition it applies to.
+
+Example
+For all integers x, x is even or odd. (For all integers x, x is even) or (For all integers x, x is odd).
+
+Nested quantiﬁers
+Does the order of quantiﬁers matter? P (x, y) means “x wants to date y.” 1
+
+Then, ∃y∀xP (y, x) means there is someone who wants to date everybody. Then, ∀x∃yP (y, x) means everybody has someone interested in them. These are diﬀerent. How does ∀x∃y diﬀer from ∃y∀x? The latter implies the former.
+
+Algebraic example
+think about sum and products
+
+2
+
+

@@ -1,0 +1,461 @@
+Topology of Piecewise-Linear Manifolds
+Jim Fowler Lecture 8 Summer 2010
+
+Knotting S 2 in S 4
+• | L| = X Problem.
+′
+
+This is called K derived away from L. On the other hand, the derived of K near L is obtained by deriving K away from L ∪ C ( L, K ), i.e., subdividing those simplexes meeting | L| but not in L. If K ′ is K derived near L, then N ( L, K ′ ) is a derived neighborhood of L in K. Deﬁnition (Regular neighborhood). Suppose X ⊂ Y are polyhedra. • |K | a neighborhood of X in Y .
+
+• L SupposeK. S 1 ⊂ S 3 is a knot; • show K derivedthe near L. that of K suspension Then N gives |a (L, K )| is called aS 2 inneighborhood of X in Y. knotted regular S 4 .
+′
+
+Theorem. If N1 and N2 are regular neighborhoods of X in Y , then there is a homeomorphism h : Y → Y , which throws N1 onto N2 , and which is the identity on X , and the identity outside a compact subset of Y . Theorem. A regular neighborhood N of a polyhedron X in a manifold M is a manifold with boundary. Theorem (Simplicial neighborhood theorem). Suppose X is a compact polyhedron, M is a manifold, and X ⊂ int M. Then a polyhedral neighborhood N of X in int M is a regular neighborhood if and only if • N is a compact manifold with boundary • there are triangulations (K, L, J ) of ( N, X, ∂N ) with L ∂N ( L, K ).
+
+K, K = N ( L, K ) and J =
+
+Knotting S 2 in S 4
+• | L| = X Problem.
+′
+
+This is called K derived away from L. On the other hand, the derived of K near L is obtained by deriving K away from L ∪ C ( L, K ), i.e., subdividing those simplexes meeting | L| but not in L. If K ′ is K derived near L, then N ( L, K ′ ) is a derived neighborhood of L in K. Deﬁnition (Regular neighborhood). Suppose X ⊂ Y are polyhedra. • |K | a neighborhood of X in Y .
+
+• L SupposeK. S 1 ⊂ S 3 is a knot; • show K derivedthe near L. that of K suspension Then N gives |a (L, K )| is called aS 2 inneighborhood of X in Y. knotted regular S 4 .
+′
+
+Proof.
+
+Theorem. If N1 and N2 are regular neighborhoods of X in Y , then there is a homeomorphism h : Y → Y , which throws N1 onto N2 , and which is the identity on X , and the identity outside a compact subset of Y .
+
+Theorem. A regular Linksboundary. neighborhood N of a polyhedron X in a manifold M is a manifold are preserved. with Theorem (Simplicial neighborhood theorem). Suppose X is a compact polyhedron, M is a manifold, and X ⊂ int M. Then a polyhedral neighborhood N of X in int M is a regular neighborhood if and only if • N is a compact manifold with boundary • there are triangulations (K, L, J ) of ( N, X, ∂N ) with L ∂N ( L, K ).
+
+K, K = N ( L, K ) and J =
+
+Knotting S 2 in S 4
+• | L| = X Problem.
+′
+
+This is called K derived away from L. On the other hand, the derived of K near L is obtained by deriving K away from L ∪ C ( L, K ), i.e., subdividing those simplexes meeting | L| but not in L. If K ′ is K derived near L, then N ( L, K ′ ) is a derived neighborhood of L in K. Deﬁnition (Regular neighborhood). Suppose X ⊂ Y are polyhedra. • |K | a neighborhood of X in Y .
+
+• L SupposeK. S 1 ⊂ S 3 is a knot; • show K derivedthe near L. that of K suspension Then N gives |a (L, K )| is called aS 2 inneighborhood of X in Y. knotted regular S 4 .
+′
+
+Proof.
+
+Theorem. If N1 and N2 are regular neighborhoods of X in Y , then there is a homeomorphism h : Y → Y , which throws N1 onto N2 , and which is the identity on X , and the identity outside a compact subset of Y .
+
+Theorem. A regular Linksboundary. neighborhood N of a polyhedron X in a manifold M is a manifold are preserved. with Theorem (Simplicial theorem). compact Problem X ⊂ neighborhoodpolyhedral Suppose X is a N of X in polyhedron, M is a manifold, and int M. Then a neighborhood int M is a regular neighborhood if and only Find a knotted Sif2 ⊂ S 4 which is locally ﬂat. • N is a compact manifold with boundary • there are triangulations (K, L, J ) of ( N, X, ∂N ) with L ∂N ( L, K ).
+
+K, K = N ( L, K ) and J =
+
+Philosophy
+Why is unknotting easier than knotting?
+(Why is it easier to show that a pair is unknotted than to show that it is knotted?)
+
+Philosophy
+Why is unknotting easier than knotting?
+(Why is it easier to show that a pair is unknotted than to show that it is knotted?)
+
+Existential versus universal quantiﬁers
+
+E. C. Zeeman
+Goal: “Unknotting combinatorial balls” a paper in the Annals
+
+Main result
+Theorem
+
+Any embedding S p ⊂ S q is unknotted, if q − p ≥ 3.
+
+Main result
+Theorem
+
+Any embedding S p ⊂ S q is unknotted, if q − p ≥ 3.
+Corollary
+
+Any embedding S 1 ⊂ S 4 is unknotted.
+
+Advertisement
+There are now other ways to prove Zeeman’s result.
+
+The technical lemmas do some “heavy lifting” and I am curious if there are other applications of the machinery in Zeeman’s paper.
+
+Pairs
+Deﬁnition
+“(p, q)-sphere pair” means S q ⊂ S p . We sometimes write (S p , S q ). “(p, q)-ball pair” means B q ⊂ B p , with B q properly embedded in B p , meaning ∂B q ⊂ ∂B p and int B q ⊂ int B p . We sometimes write (B p , B q ). “Pair” means either a ball-pair or sphere-pair. ∂(B p , B q ) = (S p−1 , S q−1 ).
+
+Joins of pairs
+(S p , S q ) ∗ S k is a sphere pair. (S p , S q ) ∗ B k is a ball pair. (B p , B q ) ∗ S k is a ball pair. (B p , B q ) ∗ B k is a ball pair. We’ll call the join of a pair and a point a cone pair.
+
+Subpairs
+X = (X p , X q ) and Y = (Y r , Y s ) are pairs we say Y is a subpair of X (written Y ⊂ X or X ⊃ Y ) if Y r ⊂ X p and T s = X q ∩ Y r . If P = (S p , S q ) ⊃ Q = (B p , B q ), then P − int Q = (S p − int B p , S q − int B q ) is a ball pair (via regular neighborhood machinery).
+
+Faces of pairs
+If Q = (B p−1 , B q−1 ) is contained in the boundary of Q = (B p , B q ), we call Q a face of Q.
+
+Theorem
+If ball pairs intersect in their common boundary, their union is a sphere pair.
+
+Faces of pairs
+If Q = (B p−1 , B q−1 ) is contained in the boundary of Q = (B p , B q ), we call Q a face of Q.
+
+Theorem
+If ball pairs intersect in their common boundary, their union is a sphere pair.
+
+Theorem
+If ball pairs intersect in a face, their union is a ball pair.
+
+Standard pairs
+Γp,q = (S p−q ∆q , ∆q ) is the standard (p, q)-ball pair. ∂Γp+1,q+1 is the standard (p, q)-sphere pair.
+
+A pair is unknotted if it is homeomorphic to a standard pair.
+
+Theorem (BallThmp,q )
+If p − q ≥ 3, then any (p, q)-ball pair is unknotted.
+
+Theorem (SphereThmp,q )
+If p − q ≥ 3, then any (p, q)-sphere pair is unknotted.
+
+Theorem (BallThmp,q )
+If p − q ≥ 3, then any (p, q)-ball pair is unknotted.
+
+Theorem (SphereThmp,q )
+If p − q ≥ 3, then any (p, q)-sphere pair is unknotted.
+
+Proof.
+By induction.
+
+Overview of the induction
+
+Prove BallThmp,0 by hand.
+
+Overview of the induction
+
+Prove BallThmp,0 by hand. BallThmp,q implies SphereThmp,q .
+
+Overview of the induction
+
+Prove BallThmp,0 by hand. BallThmp,q implies SphereThmp,q . BallThmp−1,q−1 and SphereThmp−1,q−1 together imply BallThmp,q .
+
+Overview of the induction
+
+Prove BallThmp,0 by hand. BallThmp,q implies SphereThmp,q . BallThmp−1,q−1 and SphereThmp−1,q−1 together imply BallThmp,q .
+
+Overview of the induction
+
+Prove BallThmp,0 by hand. BallThmp,q implies SphereThmp,q . BallThmp−1,q−1 and SphereThmp−1,q−1 together imply BallThmp,q .
+
+The last step
+BallThmp−1,q−1 and SphereThmp−1,q−1 ⇓ BallThmp,q
+
+This will require more machinery, building on simplicial collapse and regular neighborhoods.
+
+BallThmp−1,q−1 and SphereThmp−1,q−1 ⇓ BallThmp,q
+
+BallThmp−1,q−1 and SphereThmp−1,q−1 ⇓ BallThmp,q
+
+Lemma
+Assuming BallThmp−1,q−1 and SphereThmp−1,q−1 , (B p , B q ) with p − q ≥ 3 is unknotted provided B p B q.
+
+BallThmp−1,q−1 and SphereThmp−1,q−1 ⇓ BallThmp,q
+
+Lemma
+Assuming BallThmp−1,q−1 and SphereThmp−1,q−1 , (B p , B q ) with p − q ≥ 3 is unknotted provided B p B q.
+
+Lemma
+If p − q ≥ 3 and (B p , B q ) is any ball pair, then B p B q.
+
+But ﬁrst. . .
+
+Before we can proceed, we will prove a couple of helpful lemmas.
+
+Lemma
+Q1 and Q2 are unknotted (p, q)-ball pairs. ∼ = Any homeomorphism h : ∂Q1 −→ ∂Q2 ∼ = extends to a homeomorphism h : Q1 −→ Q2 .
+
+Lemma
+Q1 and Q2 are unknotted (p, q)-ball pairs. ∼ = Any homeomorphism h : ∂Q1 −→ ∂Q2 ∼ = extends to a homeomorphism h : Q1 −→ Q2 .
+
+Proof (via Alexander trick).
+
+y = point in interior of ∆q ; then since Qi is unknotted, we have maps ∼ = fi : Qi −→ {y } ∗ ∂Γp,q
+
+Lemma
+Q1 and Q2 are unknotted (p, q)-ball pairs. ∼ = Any homeomorphism h : ∂Q1 −→ ∂Q2 ∼ = extends to a homeomorphism h : Q1 −→ Q2 .
+
+Proof (via Alexander trick).
+
+y = point in interior of ∆q ; then since Qi is unknotted, we have maps ∼ = fi : Qi −→ {y } ∗ ∂Γp,q
+1 2 g : ∂Γp,q −→ ∂Q1 −→ ∂Q2 −→ ∂Γp,q
+
+f
+
+−1
+
+h
+
+f
+
+Lemma
+Q1 and Q2 are unknotted (p, q)-ball pairs. ∼ = Any homeomorphism h : ∂Q1 −→ ∂Q2 ∼ = extends to a homeomorphism h : Q1 −→ Q2 .
+
+Proof (via Alexander trick).
+
+y = point in interior of ∆q ; then since Qi is unknotted, we have maps ∼ = fi : Qi −→ {y } ∗ ∂Γp,q
+1 2 g : ∂Γp,q −→ ∂Q1 −→ ∂Q2 −→ ∂Γp,q
+
+f
+
+−1
+
+h
+
+f
+
+1 2 h : Q1 −→ {y } ∗ ∂Γp,q −→ {y } ∗ ∂Γp,q −→ Q2 In short, radial extension.
+
+f
+
+cone g
+
+f
+
+−1
+
+Lemma (assume BallThmp−1,q−1)
+If Q1 , Q2 are unknotted (p, q)-ball pairs, and Q3 = Q1 ∩ Q2 is a face, then Q1 ∪ Q2 is unknotted.
+
+Lemma (assume BallThmp−1,q−1)
+If Q1 , Q2 are unknotted (p, q)-ball pairs, and Q3 = Q1 ∩ Q2 is a face, then Q1 ∪ Q2 is unknotted.
+
+Proof.
+
+Choose Q3 −→ Γp−1,q−1 , extend over ∂Q1 − int Q3 ∼ = to h : ∂Q1 −→ Γp−1,q−1 ∪ C ∂Γp−1,q−1 ,
+
+∼ =
+
+Lemma (assume BallThmp−1,q−1)
+If Q1 , Q2 are unknotted (p, q)-ball pairs, and Q3 = Q1 ∩ Q2 is a face, then Q1 ∪ Q2 is unknotted.
+
+Proof.
+
+Choose Q3 −→ Γp−1,q−1 , extend over ∂Q1 − int Q3 ∼ = to h : ∂Q1 −→ Γp−1,q−1 ∪ C ∂Γp−1,q−1 , h extends to Q1 → C Γp−1,q−1
+
+∼ =
+
+Lemma (assume BallThmp−1,q−1)
+If Q1 , Q2 are unknotted (p, q)-ball pairs, and Q3 = Q1 ∩ Q2 is a face, then Q1 ∪ Q2 is unknotted.
+
+Proof.
+
+Choose Q3 −→ Γp−1,q−1 , extend over ∂Q1 − int Q3 ∼ = to h : ∂Q1 −→ Γp−1,q−1 ∪ C ∂Γp−1,q−1 , h extends to Q1 → C Γp−1,q−1 Similarly produce Q2 → C Γp−1,q−1
+
+∼ =
+
+Lemma (assume BallThmp−1,q−1)
+If Q1 , Q2 are unknotted (p, q)-ball pairs, and Q3 = Q1 ∩ Q2 is a face, then Q1 ∪ Q2 is unknotted.
+
+Proof.
+
+Choose Q3 −→ Γp−1,q−1 , extend over ∂Q1 − int Q3 ∼ = to h : ∂Q1 −→ Γp−1,q−1 ∪ C ∂Γp−1,q−1 , h extends to Q1 → C Γp−1,q−1 Similarly produce Q2 → C Γp−1,q−1 Glue together Q1 ∪ Q2 ∼ SΓp−1,q−1 . =
+
+∼ =
+
+Regular neighborhoods
+M, an n-manifold, X ⊂ M a polyhedron a regular neighborhood of X in M is a subpolyhedron N ⊂ M such that N is a closed neighborhood of X N is an n-manifold N X.
+
+Theorem
+If N1 and N2 are regular neighborhoods of X ⊂ M, there’s a homeomorphism N1 → N2 keeping X ﬁxed.
+
+Lemma
+Assuming BallThmp−1,q−1 and SphereThmp−1,q−1 , (B p , B q ) with p − q ≥ 3 is unknotted provided B p B q.
+
+Lemma
+Assuming BallThmp−1,q−1 and SphereThmp−1,q−1 , (B p , B q ) with p − q ≥ 3 is unknotted provided B p B q.
+
+Warning: The lemma is false if p − q = 2. If (B 4 , B 2 ) = cone(S 3 , S 1 ), then B 4 B 2 because cones collapse to a subcone
+
+Lemma
+Bp B q ⇒ (B p , B q ) unknotted
+
+Lemma
+Bp Pick regular neighborhood N of B q ; B q ⇒ (B p , B q ) unknotted
+
+Lemma
+Bp Pick regular neighborhood N of B q ; then (B p , B q ) ∼ (N, B q ). = B q ⇒ (B p , B q ) unknotted
+
+Lemma
+Bp Pick regular neighborhood N of B q ; then (B p , B q ) ∼ (N, B q ). = q B = Kk Kk−1 ··· K0 = {x} B q ⇒ (B p , B q ) unknotted
+
+Lemma
+Bp Pick regular neighborhood N of B q ; then (B p , B q ) ∼ (N, B q ). = q B = Kk Kk−1 ··· K0 = {x} Qi = simplicial neighborhood of Ki in (B p , B q ). B q ⇒ (B p , B q ) unknotted
+
+Lemma
+Bp Pick regular neighborhood N of B q ; then (B p , B q ) ∼ (N, B q ). = q B = Kk Kk−1 ··· K0 = {x} Qi = simplicial neighborhood of Ki in (B p , B q ). Proceed by induction. B q ⇒ (B p , B q ) unknotted
+
+Lemma
+Bp Pick regular neighborhood N of B q ; then (B p , B q ) ∼ (N, B q ). = q B = Kk Kk−1 ··· K0 = {x} Qi = simplicial neighborhood of Ki in (B p , B q ). Proceed by induction. Q0 = {x} ∗ L where L = (lk(x, B p ), lk(x, B q )), B q ⇒ (B p , B q ) unknotted
+
+Lemma
+Bp Pick regular neighborhood N of B q ; then (B p , B q ) ∼ (N, B q ). = q B = Kk Kk−1 ··· K0 = {x} Qi = simplicial neighborhood of Ki in (B p , B q ). Proceed by induction. Q0 = {x} ∗ L where L = (lk(x, B p ), lk(x, B q )), and L is unknotted by either BallThmp−1,q−1 or SphereThmp−1,q−1 . B q ⇒ (B p , B q ) unknotted
+
+Suppose Qi−1 is unknotted.
+
+Suppose Qi−1 is unknotted. Ki − Ki−1 consists of a principal simplex A with a free face C .
+
+Suppose Qi−1 is unknotted. Ki − Ki−1 consists of a principal simplex A with a free face C . Pick a ∈ int A and c ∈ int C .
+
+Suppose Qi−1 is unknotted. Ki − Ki−1 consists of a principal simplex A with a free face C . Pick a ∈ int A and c ∈ int C . Qa = {a} ∗ (lk(a, B p ), lk(a, B q )) is unknotted.
+
+Suppose Qi−1 is unknotted. Ki − Ki−1 consists of a principal simplex A with a free face C . Pick a ∈ int A and c ∈ int C . Qa = {a} ∗ (lk(a, B p ), lk(a, B q )) is unknotted. Qc = {c} ∗ (lk(c, B p ), lk(c, B q )) is unknotted.
+
+Suppose Qi−1 is unknotted. Ki − Ki−1 consists of a principal simplex A with a free face C . Pick a ∈ int A and c ∈ int C . Qa = {a} ∗ (lk(a, B p ), lk(a, B q )) is unknotted. Qc = {c} ∗ (lk(c, B p ), lk(c, B q )) is unknotted. Qi = Qi−1 ∪ Qa ∪ Qc is union of unknotted ball pairs along faces; therefore, Qi is unknotted.
+
+Suppose Qi−1 is unknotted. Ki − Ki−1 consists of a principal simplex A with a free face C . Pick a ∈ int A and c ∈ int C . Qa = {a} ∗ (lk(a, B p ), lk(a, B q )) is unknotted. Qc = {c} ∗ (lk(c, B p ), lk(c, B q )) is unknotted. Qi = Qi−1 ∪ Qa ∪ Qc is union of unknotted ball pairs along faces; therefore, Qi is unknotted.
+
+All that remains
+If we could prove
+
+Lemma
+If p − q ≥ 3 and (B p , B q ) is any ball pair, then B p B q. we would ﬁnish the argument.
+
+All that remains
+If we could prove
+
+Lemma
+If p − q ≥ 3 and (B p , B q ) is any ball pair, then B p B q. we would ﬁnish the argument. Note: we haven’t used the fact p − q ≥ 3 yet.
+
+All that remains
+If we could prove
+
+Lemma
+If p − q ≥ 3 and (B p , B q ) is any ball pair, then B p B q. we would ﬁnish the argument. Note: we haven’t used the fact p − q ≥ 3 yet.
+
+Proof Technique.
+Sunny collapse.
+
+All that remains
+If we could prove
+
+Lemma
+If p − q ≥ 3 and (B p , B q ) is any ball pair, then B p B q. we would ﬁnish the argument. Note: we haven’t used the fact p − q ≥ 3 yet.
+
+Proof Technique.
+Sunny collapse.
+
+Stop and back up a bit.
+
+Shadows
+I p = I p−1 × I , thinking of I p−1 as horizontal and I as vertical.
+
+X a polyhedron, X ⊂ I p . a point y ∈ I p lies in the shadow of X , if y lies below a point of X .
+
+Deﬁnition
+X a polyhedron, X ⊂ I p . X ∗ = closure of points in X which lie on the same vertical line as some other point of X .
+
+Deﬁnition
+X a polyhedron, X ⊂ I p . X ∗ = closure of points in X which lie on the same vertical line as some other point of X . (X are points that are in shadow or doing the overshadowing)
+
+Deﬁnition
+X a polyhedron, X ⊂ I p . X ∗ = closure of points in X which lie on the same vertical line as some other point of X . (X are points that are in shadow or doing the overshadowing)
+
+Lemma
+X is a subpolyhedron of X .
+
+Lemma
+If X is a polyhedron, X ⊂ I p, dim X = q ≤ p, and dim(X ∩ ∂I p ) < p − 1, then there exists ∼ = h : I p −→ I p , h(X ) = X , h(X ) ∩ I p−1 × {1} = ∅, h(X ) ∩ I p−1 × {0} = ∅, h(X ) ∩ vertical line = ﬁnite set, and dim h(X ) ≤ 2q − p + 1.
+
+Lemma
+If X is a polyhedron, X ⊂ I p, dim X = q ≤ p, and dim(X ∩ ∂I p ) < p − 1, then there exists ∼ = h : I p −→ I p , h(X ) = X , h(X ) ∩ I p−1 × {1} = ∅, h(X ) ∩ I p−1 × {0} = ∅, h(X ) ∩ vertical line = ﬁnite set, and dim h(X ) ≤ 2q − p + 1.
+
+Proof.
+Since ∂I p ⊂ X , pick vertical top-dim face I p−2 × I of I p . Throw X ∩ ∂I p into the interior of this face.
+
+Lemma
+If X is a polyhedron, X ⊂ I p, dim X = q ≤ p, and dim(X ∩ ∂I p ) < p − 1, then there exists ∼ = h : I p −→ I p , h(X ) = X , h(X ) ∩ I p−1 × {1} = ∅, h(X ) ∩ I p−1 × {0} = ∅, h(X ) ∩ vertical line = ﬁnite set, and dim h(X ) ≤ 2q − p + 1.
+
+Proof.
+Since ∂I p ⊂ X , pick vertical top-dim face I p−2 × I of I p . Throw X ∩ ∂I p into the interior of this face. Shift vertices into general position.
+
+Lemma
+If X is a polyhedron, X ⊂ I p, dim X = q ≤ p, and dim(X ∩ ∂I p ) < p − 1, then there exists ∼ = h : I p −→ I p , h(X ) = X , h(X ) ∩ I p−1 × {1} = ∅, h(X ) ∩ I p−1 × {0} = ∅, h(X ) ∩ vertical line = ﬁnite set, and dim h(X ) ≤ 2q − p + 1.
+
+Proof.
+Since ∂I p ⊂ X , pick vertical top-dim face I p−2 × I of I p . Throw X ∩ ∂I p into the interior of this face. Shift vertices into general position.
+
+Sunny collapse
+Y ⊂ X ⊂ I p. An elementary collapse X Y is sunny if no point of X − Y is in the shadow of X . A sunny collapse is a sequence of sunny elementary collapses.
+
+Sunny collapse
+Y ⊂ X ⊂ I p. An elementary collapse X Y is sunny if no point of X − Y is in the shadow of X . A sunny collapse is a sequence of sunny elementary collapses. Write X ☼ Y . If X ☼ pt, call X sunny collapsible.
+
+All that remains
+If we could prove
+
+Lemma
+If p − q ≥ 3 and (B p , B q ) is any ball pair, then B p B q. we would ﬁnish the argument.
+
+All that remains
+If we could prove
+
+Lemma
+If p − q ≥ 3 and (B p , B q ) is any ball pair, then B p B q. we would ﬁnish the argument.
+
+Lemma
+Suppose (I p , X ) is a (p, q)-ball pair, p−q ≥3 X ∩ I p−1 × {1} = ∅, X ∩ I p−1 × {0} = ∅, X ∩ vertical line = ﬁnite set, and dim X ≤ 2q − p + 1. Then X ☼ point.
+
+Sunny collapse in codimension two can be obstructed
+
+Proof postponed.
+
+Putting together all the pieces.
+
+If X ⊂ I p , deﬁne X to be all points in I p lying in shadow of X .
+
+If X ⊂ I p , deﬁne X to be all points in I p lying in shadow of X .
+
+M = I p−1 × {0} ∪ X .
+
+If X ⊂ I p , deﬁne X to be all points in I p lying in shadow of X .
+
+M = I p−1 × {0} ∪ X . First show I p
+
+M.
+
+collapsing the arc. There remain the intermediate steps M,-,
+
+\ Mi,
+
+If X ⊂ I p and X ☼ point, then
+
+X = X0 ☼ X1 ☼ · · · ☼ Kn = point.
+
+If X ⊂ I p and X ☼ point, then
+
+Deﬁne Mi = I p−1 × {0} ∪ X ∪ Xi .
+
+X = X0 ☼ X1 ☼ · · · ☼ Kn = point.
+
+If X ⊂ I p and X ☼ point, then
+
+Deﬁne Mi = I p−1 × {0} ∪ X ∪ Xi .
+
+X = X0 ☼ X1 ☼ · · · ☼ Kn = point.
+
+Goal: I p
+
+M0
+
+···
+
+Mn
+
+X.
+
+collapsing the arc. There remain the intermediate steps M,-,
+
+\ Mi, 1 5 i S
+
+n.
+
+We are given a sunny elementary simplicial collapse K,-I \ K,. Suppose t h a t the collapse is across the simplex A E Kip,, from the face B. Let a be the vertex of A opposite B. Therefore
+
+

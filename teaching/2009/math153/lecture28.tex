@@ -1,0 +1,178 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+\newtheorem*{example}{Example}
+\newtheorem*{thm}{Theorem}
+
+\title{Lecture 28: Differential equations}
+\author{Math 153 Section 57}
+\date{Monday December  1, 2008}
+
+\begin{document}
+\maketitle
+
+Following chapter 9.
+
+Differential equations are important: we often know something about the derivatives of a function, and we want to recover the function.
+
+Easy to verify a solution; hard to find.
+
+\subsection*{The technique from the homework}
+
+You already solved a diff equ on your homework; this was using the
+technique of ``separation of variables'' which we will talk about more
+on Wednesday.
+
+\subsection*{Melting icecube}
+
+The change in volume of a melting object is proportional to its
+surface area.  That is,
+$$
+\frac{dV}{dt} = k \, S(t)
+$$
+For a cube of side length $r$, $V = r^3$ and $S = 6r^2$, so
+$$
+3 \, r(t)^2 \frac{dr}{dt} = k \cdot 6 r(t)^2
+$$
+Divide both sides by $r(t)$ and get
+$$
+3 \, \frac{dr}{dt} = 6k
+$$
+so $\frac{dr}{dt} = 2k$.
+
+\subsection*{Homogeneous first-order linear equations}
+
+Consider:
+$$
+a(x) \, f'(x) + b(x) \, f(x) = 0
+$$
+Might as well divide everything by $q(x)$, so we are left with
+$$
+f'(x) + h(x) \, f(x) = 0.
+$$
+
+Note that if $f_1$ and $f_2$ are both solutions, then $f_1 + f_2$ is a solution.
+
+Note that if $f_1$ is a solution, so is $\alpha \cdot f_1$.
+
+Can we solve this equation?  Yes.  Rewrite it as
+$$
+\frac{f'(x)}{f(x)} = -h(x)
+$$
+We integrate both sides
+$$
+\log f(x) = - \int h(x) \, dx + C
+$$
+But then
+$$
+f(x) = e^{- \int h(x) \, dx + C} = k e^{-H(x)}.
+$$
+This is a solution, and indeed, every solution has this form.
+
+Example: the change in the value of my company is proportional to its
+current value.
+$$
+f'(x) = k \, f(x)
+$$
+which we can solve.  Get $e^{kx + C}$.
+
+\subsection*{Nonlinear equations}
+
+Solve something like
+$$
+f''(x) + f(x)^2 = 0.
+$$
+Note that if $f_1$ and $f_2$ are solutions, there is no reason to
+believe $f_1 + f_2$ would be a solution.
+
+You could solve these by finding the Taylor coefficients!
+
+\subsection*{Homogeneous second-order linear diff equ}
+
+Suppose we want to solve
+$$
+f''(x) + b(x) \, f'(x) + c(x) \, f(x) = 0
+$$
+In other words
+$$
+\left( \frac{d^2}{dx^2} + b(x) \, \frac{d}{dx} + c(x) \right) f(x) = 0
+$$
+Suppose we could ``factor'' the operator into
+$$
+\left( \frac{d}{dx} - r_1 \right) \left( \frac{d}{dx} - r_2 \right) f(x) = 0
+$$
+But then solutions include
+$$
+f(x) = e^{\int r_1(x) \, dx} \mbox{ and } f(x) = e^{\int r_2(x) \, dx}
+$$
+
+Very concretely: 
+$$
+f''(x) - 5f(x) + 6 = 0
+$$
+This can be factored as
+$$
+\left( \frac{d}{dx} - 2 \right) \left( \frac{d}{dx} - 3 \right) f(x) = 0
+$$
+So solutions include $e^{2x}$ and $e^{3x}$.  Check?
+
+More surprisingly, the spring equation:
+$$
+f''(x) = -f(x)
+$$
+can be written as
+$$
+\left( \frac{d^2}{dx^2} + 1 \right) f(x) = 0
+$$
+and then written as
+$$
+\left( \frac{d}{dx} - i \right) \left( \frac{d}{dx} + i \right) f(x) = 0
+$$
+where $i^2 = -1$.  But then the solutions we might guess would include
+$$
+f(x) = C \cdot e^{\pm ix}
+$$
+This includes sine and cosine!  Why?
+
+(Problems appear if there are repeated roots)
+
+\subsection*{And the third degree case?  And fourth?}
+
+\subsection*{What about the nonhomogeneous case?}
+
+What if we have
+$$
+f'(x) + h(x) \, f(x) = g(x)?
+$$
+Can we find a solution?
+
+Note that if $f_1$ and $f_2$ are solutions, it is no longer the case
+that $f_1 + f_2$ is a solution.
+
+Trick: integrating factor.  Set $H(x) = \int h(x) \, dx$, and multiply
+by $e^{H(x)}$.
+
+Then we want to solve
+$$
+e^{H(x)} f'(x) + h(x) \, e^{H(x)} \, f(x) = e^{H(x)} \, g(x).
+$$
+But this is the same as
+$$
+\frac{d}{dx} \left( e^{H(x)} f(x) \right) = e^{H(x)} \, g(x).
+$$
+And so
+$$
+e^{H(x)} f(x) = \int e^{H(x)} \, g(x) \, dx + C
+$$
+
+General trick: sometimes multiplying by something (the ``integrating
+factor'') lets us solve a previously unsolvable differential equation.
+
+What about nonhomogeneous second order equations?  The method of
+``undetermined coefficients'' (i.e., make an educated guess).
+
+
+
+\end{document}

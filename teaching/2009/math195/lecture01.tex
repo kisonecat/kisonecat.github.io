@@ -1,0 +1,98 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+\newtheorem*{example}{Example}
+\newtheorem*{thm}{Theorem}
+
+\title{Lecture 1: Welcome, parametric equations}
+\author{Math 195 Section 91}
+\date{Monday June 22, 2009}
+
+\begin{document}
+\maketitle
+
+Goal: Sections 11.1, and 11.2.
+
+\subsection*{Welcome to the course}
+
+\subsection*{Syllabus}
+
+\subsection*{Goal}
+
+Differentiation as a ``wiggle''
+
+Machine with $n$ inputs and $k$ outputs---wiggle one input.
+
+Goal: Expand both our intuition and our technical skill from one
+variable to many variables.
+
+Stop using your calculator.  You are Neo, and when you are good enough...
+
+The book does a lot of great examples which are more complicated than
+what I intend to do in class.  You should look at these examples.  You
+should read the book.  In contrast, I will tell you the secrets that
+this book---that every book---leaves out.
+
+\subsection*{Objects}
+
+Review: functions---what is a function?
+
+We often broad the class of objects under consideration (history of
+``number'')
+
+Introduce section 11.1: Parametric curve (i.e., curve defind using a parameter)
+
+example: $x(t) = 3t$ and $y(t) = 4t$---remark the goal of calculus to reduce evertying to a straight line.
+
+example: $x(t) = t^2$ and $y(t) = t^3$---what happens at 0?
+
+example: $x(t) = \sin t$ and $y(t) = \cos t$---why is that a circle?
+
+concerned more with patterns, with qualitative data, than quantative
+results.  A common problem is the following: you have a parametric
+equation, and you must find a cartesian equation for part of the
+curve.
+
+Better terminology than the books: reparameterization---sweep out the same curve, but in a different amount of time
+
+\subsection*{Thinking about parameters}
+
+Think about the parameter as looking down at a 3-dimensional object
+from above...
+
+sometimes we might have more than one parameter: example: $x(u,t) = u \cdot \sin t$ and $y(u,t) = u \cdot \cos t$---a family of circles!
+
+there's a great deal of flexibility about how you explore these objects
+
+\section*{Calculus on curves}
+
+take derivatives at a point
+
+elliptic curve $x(t) = t^2$ and $y(t) = t^3 - 3t$.  graph through
+$(0,0)$ and $(3,0)$ and $(1,2)$ and $(1,-2)$.
+
+$dy/dx = (dy/dt)/(dx/dt)$.  Why?
+
+calculate derivatives (and second derivatives) elsewhere to finish the sketch
+
+better than using a calculator---we're not just sampling points!  We're using calculus to understand the qualitative features of a graph
+
+what is the deriative at 0 when $x(t) = t^2$ and $y(t) = t^3$?
+
+\section*{arc length}
+
+under suitable conditions
+$$
+L = \int_a^b \sqrt{ x'(t)^2 + y'(t)^2 } \, dt
+$$
+confess: i could never remember this formula
+
+challenge: try to find situations where the formula is incorrect.  this is the ``understand biology by killing things'' or ``learn how cars work by removing parts until the car stops working'' method
+
+why should this be true?
+
+example...  can we calculate the circumference of a circle?
+
+\end{document}

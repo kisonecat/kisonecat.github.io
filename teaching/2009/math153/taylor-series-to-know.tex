@@ -1,0 +1,68 @@
+\documentclass[11pt]{article}
+\usepackage{fullpage}
+\usepackage{nopageno}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{add-copyright}
+
+\usepackage{amssymb}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+
+\title{Taylor Series You Should Know}
+
+\begin{document}
+\section*{Taylor Series You Should Know}
+
+You should have the following series memorized
+\begin{eqnarray*}
+\frac{1}{1-x} &=& \sum^{\infty}_{n=0} x^n = 1 + x + x^2 + x^3 + \cdots \hspace{1em}(\mbox{when $-1 < x < 1$)} \\
+e^{x} &=& \sum^{\infty}_{n=0} \frac{x^n}{n!} = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots \\
+\sin x &=& \sum^{\infty}_{n=0} \frac{(-1)^n}{(2n+1)!} x^{2n+1}\quad =  x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots \\
+\cos x &=& \sum^{\infty}_{n=0} \frac{(-1)^n}{(2n)!} x^{2n}\quad =  1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots
+\end{eqnarray*}
+Note the similarity between $\sin x$, $\cos x$ and $e^x$.
+
+\vfill
+
+\section*{How to Find a Taylor Series}
+
+Given a smooth function $f$, we can always write down a Taylor series;
+there is no guarantee that the series converges to anything, let alone
+to the function.  Given a smooth function $f : \R \to \R$, its Taylor
+series (around $0$) is
+$$
+\sum_{n=0}^\infty \frac{f^{(n)}(0) \, x^n}{n!}
+$$
+A common mistake is to use $f^{(n)}(x)$ instead of $f^{(n)}(0)$.
+
+Given a smooth function $f : \R \to \R$, its Taylor series expanded
+around $a$ is
+$$
+\sum_{n=0}^\infty \frac{f^{(n)}(a) \, (x-a)^n}{n!}
+$$
+The most important example of this sort of Taylor series is
+$$
+\log x = \sum_{n=1}^\infty \frac{(-1)^{n+1} \, (x-1)^n}{n} = (x-1) - \frac{(x-1)^2}{2} + \frac{(x-1)^3}{3} - \frac{(x-1)^4}{4} + \cdots
+$$
+
+\vfill
+
+\section*{How to \textit{More Easily} Find a Taylor Series}
+
+There are tricks: you can add, subtract, multiply, and divide (!)
+power series.  You can substitute one series into another.
+
+\vfill
+
+\section*{Why to Find a Taylor Series}
+
+Taylor series are good for:
+\begin{description}
+\item[Estimating values] by cutting the series off after a few terms and bounding the remainder;
+\item[Seeing a snapshot] by looking at the first few terms, you can get a sense of what the function is doing near zero;
+\item[Proving facts about functions] like $\cos (-x) = \cos x$, which follows from the fact that the Taylor series for cosine only includes even degree terms;
+\item[Doing calculus] because it is easy to differentiate and integrate term-by-term;
+\item[Solving differential equations] for which it is often easier to find a Taylor series for a solution.
+\end{description}
+
+\end{document}

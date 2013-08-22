@@ -1,0 +1,24 @@
+End of the World scenarios
+(a) Since the invention of the integrated circuit in 1958, the number of transistors that can be placed on an integrated circuit has doubled approximately every two years.† As a result, we have seen computers get faster. It is January 1, 2010, and a Model 1 self-replicating robot has been built: this robot will spend its ﬁrst two years building an improved robot that operates twice as quickly. It will take one year for the Model 2 to build a Model 3; it will take six months for the Model 3 to build a Model 4. . . What horrible thing happens on January 1, 2015? (b) It is January 1, 2009, and self-replicating nano-bots have escaped from your lab—nanobots which convert all matter they touch into more of themselves. It takes one day for a nanobot to create two copies of itself. Knowing that the mass of the earth is 6 × 1024 kilograms, and that each nanobot co (b) (a) On page 571, section 11.7, do problems: 1, 6, 9, 10, 17, 31. (b) Consider the graph of f (x) = 1/x, restricted to x ∈ [1, ∞). Rotate this graph around the x-axis, to produce
+
+The surface area of this object is inﬁnite, but what is its volume? (c) The Gamma function is deﬁned as follows:
+∞
+
+Γ(z) =
+0
+
+tz−1 e−t dt.
+
+Compute Γ(5). Hint: ﬁrst compute Γ(1), and then integrate by parts to ﬁnd Γ(z) in terms of Γ(z − 1).†
+π/2
+
+(d) Evaluate
+0
+
+x dx. This is an extremely diﬃcult integral. tan x
+
+† †
+
+See http://en.wikipedia.org/wiki/Moore’s_law If you are very stuck, look at http://en.wikipedia.org/wiki/Gamma_function
+
+

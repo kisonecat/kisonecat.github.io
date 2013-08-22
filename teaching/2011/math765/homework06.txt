@@ -1,0 +1,29 @@
+Problem Set 6
+Winter 2011
+
+Math 765
+Jim Fowler
+
+Stokes’ theorem. At the end of this week, we’ll have Stokes’ theorem, a beautiful generalization of the fundamental theorem of Calculus. As usual, email me with questions at fowler@math.osu.edu. The exercises below should be handed in on Monday, February 14, 2011.
+
+Problem 6.1 (Lee 13–3)
+Suppose M and N are oriented smooth manifolds and F : M → N is a local diffeomorphism. If M is connected, show that F is either orientation-preserving or orientation-reversing.
+
+Problem 6.2 (Lee 14–21)
+Suppose M and N are compact, connected, oriented smooth manifolds and F, G : M → N are diﬀeomorphisms. If F and G are homotopic, show that they are either both orientation-preserving or both orientation-reversing. Hint: Use Whitney approximation theorem (page 252) and Stokes’ theorem on M ×I.
+
+Problem 6.3 (Lee 13–6)
+Show that RP n is orientable iﬀ n is odd.
+
+Problem 6.4 (Lee 14–5a)
+˜ ˜ Suppose M and M are smooth n-manifolds, and π : M → M is a smooth k-sheeted ˜ and M are oriented and π is orientation-preserving, show that covering map. If M ˜ π ω = k M ω for any compactly supported n-form ω on M . M
+
+Problem 6.5 (Bicycle chains)
+(a) Let i : S 1 → R2 be the standard embedding of the circle in the plane, i(θ) = (cos θ, sin θ), and let j : S 1 → R2 be the ﬁgure eight immersion j(θ) = (cos θ, sin(2θ)) . Can you connect j and i by a smooth family of immersions? In other words, is there a smooth map F : S 1 × I → R2 so that each ft : S 1 → R2 given by ft (θ) = F (θ, t) is an immersion and f0 ≡ i and f1 ≡ j? (b) Let i : S 1 → R2 be the standard embedding of the circle in the plane, and let j : S 1 → R2 be the immersion
+
+Can you connect j and i by a smooth family of immersions?
+
+Problem 6.6 (Lee 14–6)
+If M is a compact, smooth, oriented manifold with boundary, show that there does not exist a smooth retraction of M onto its boundary. Hint: Consider an orientation form on ∂M .
+
+

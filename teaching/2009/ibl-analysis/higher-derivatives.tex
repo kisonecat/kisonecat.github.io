@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+
+\newcommand{\R}{\mathbb{R}}
+
+\usepackage{nopageno}
+
+
+\begin{document}
+
+\section*{Higher derivatives}
+
+Suppose $\gamma : \R \to \R^n$ linear, $\gamma(t) = tv$ and $f : \R^n
+\to \R$ is smooth.  We want to show
+$$
+D^k f (0)(v,\ldots,v) = D^k (f \circ \gamma)(0)(1,\ldots,1)
+$$
+
+In fact, we will show the stronger result
+$$
+D^k f (\gamma(t))(v,\ldots,v) = D^k (f \circ \gamma)(t)(1,\ldots,1)
+$$
+
+This is true for $k = 0$.  Suppose it holds for $k$; we will show it
+holds for $k+1$.
+
+Note that
+$$
+D^k f (\gamma(t))(v,\ldots,v) = D^k (f \circ \gamma)(t)(1,\ldots,1)
+$$
+is the same as
+$$
+\mbox{ev}_v \circ D^k f \circ \gamma = \mbox{ev}_1 \circ D^k (f \circ \gamma)
+$$
+Apply $D$ to both sides
+$$
+D(\mbox{ev}_v \circ D^k f \circ \gamma)(t) = D(\mbox{ev}_1 \circ D^k (f \circ \gamma))(t)
+$$
+By the chain rule
+$$
+\left( \mbox{ev}_v \circ D(D^k f \circ \gamma) \right)(t) = \mbox{ev}_1 \circ D(D^k (f \circ \gamma))(t)
+$$
+And applying the chain rule to $D(D^k f \circ \gamma$ gives
+$$
+D^{k+1} f(\gamma(t))(v,\ldots v) \circ \gamma = D^{k+1} (f \circ \gamma)(t)(1,\ldots,1)
+$$
+Both sides are linaer maps; evaluate both sides at $1$ to get
+$$
+D^{k+1} f(\gamma(t))(v,\ldots v)(\gamma(1)) = D^{k+1} (f \circ \gamma)(t)(1,\ldots,1)(1),
+$$
+but this is just
+$$
+D^{k+1} f(\gamma(t))(v,\ldots v)(v) = D^{k+1} (f \circ \gamma)(t)(1,\ldots,1)(1)
+$$
+which is what we wanted.
+
+
+\end{document}

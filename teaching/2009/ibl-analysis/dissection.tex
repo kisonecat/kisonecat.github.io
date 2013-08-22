@@ -1,0 +1,233 @@
+\documentclass[12pt]{article}
+
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+
+\usepackage{add-copyright}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+
+\theoremstyle{definition}
+\newtheorem{problem}{Problem}
+\newtheorem{definition}[problem]{Definition}
+\newtheorem*{remark}{Remark}
+\DeclareMathOperator{\Hom}{Hom}
+
+\title{Dissection Problems}
+\author{Math 205}
+
+\begin{document}
+
+\maketitle
+
+\section*{Polygons}
+
+\begin{problem}
+  Let $P$ and $Q$ be triangles having the same area; show that $P$ can
+  be cut into smaller triangles, which can be rearranged to form $Q$.
+\end{problem}
+
+\begin{problem}[Bolyai-Gerwien Theorem]
+  Let $P$ and $Q$ be polygons having the same area; show that $P$ can
+  be cut into smaller polygons, which can be rearranged to form $Q$.
+\end{problem}
+
+\begin{remark}
+  It is (surprisingly!) possible to partition $B^2 = \{(x,y) \in \R^2 : x^2 +
+  y^2 \leq 1 \}$ into about $10^{50}$ subsets, translate (without rotations)
+  these subsets, and form a square having the same area.  This was
+  proved by Mikl\'os Laczkovich in 1990.
+\end{remark}
+
+\section*{Banach-Tarski Paradox}
+
+\begin{definition}
+  The \textbf{free group on two generators}, denoted $F_2$, consists
+  of all words written using
+$$
+a, \hspace{1em} b, \hspace{1em} a^{-1}, \hspace{1em} b^{-1}
+$$
+where $a$ never appears next to $a^{-1}$, and $b$ never appears next
+to $b^{-1}$.  We can \textbf{multiply} two words by concatenating
+them, and cancelling $a$'s with $a^{-1}$ and $b$ with $b^{-1}$; the
+\textbf{empty word} is (ironically?) written $e$; multiplying a word
+$w$ by $e$ leaves $w$ unchanged (so $e$ is the \textbf{identity}).
+\end{definition}
+
+\begin{problem}
+  For every word $w \in F_2$, does there exist a word $w' \in F_2$ so
+  that $w w' = e$?
+\end{problem}
+
+\begin{problem}
+  For three words $w_1, w_2, w_3 \in F_2$, is it the case that $(w_1
+  w_2) w_3 = w_1 (w_2 w_3)$?
+\end{problem}
+
+\begin{remark}
+  If you answered \textbf{YES!} to the previous two quesions, you have
+  shown that $F_2$ is a \textbf{group}---a set with an binary
+  associative operation having an identity and inverses.
+\end{remark}
+
+\begin{definition}
+The set $S(\ell)$ consists of words in $F_2$ starting with the letter $\ell$.
+\end{definition}
+
+\begin{problem}
+Show that $F_2 = \{ e \} \cup S(a) \cup S(b) \cup S(a^{-1}) \cup S(b^{-1})$.
+\end{problem}
+
+\begin{definition}
+Let $S$ be a set of words in $F_2$, and $\ell$ a letter.  Define
+$$
+\ell \cdot S = \{ \ell \cdot s : s \in S \}.
+$$
+\end{definition}
+
+\begin{problem}
+``Paradoxically'' prove that $F_2 = a \cdot S(a^{-1}) \cup S(a)$. \\
+Similarly, prove that $F_2 = b \cdot S(b^{-1}) \cup S(b)$. \\
+\end{problem}
+
+\begin{remark}
+  Here we see the beginnings of a paradoxical decomposition: we have
+  divided $F_2$ into five sets, and using four of them, built two
+  copies of $F_2$.  If only there were a way to convert our
+  paradoxical decomposition of $F_2$ into a paradoxical decomposition
+  of the sphere\ldots
+\end{remark}
+
+\begin{problem}
+Let
+$$
+A = \begin{bmatrix}
+\frac{1}{3} & - \frac{2 \sqrt{2}}{3} & 0 \\
+\frac{2 \sqrt{2}}{3} & \frac{1}{3} & 0 \\
+0 & 0 & 1
+\end{bmatrix} \mbox{ and }
+B = \begin{bmatrix}
+1 & 0 & 0 \\
+0 & \frac{1}{3} & - \frac{2 \sqrt{2}}{3} \\
+0 & \frac{2 \sqrt{2}}{3} & \frac{1}{3}
+\end{bmatrix}.
+$$
+Both $A$ and $B$ are linear maps $\R^3 \to \R^3$.  Are these linear maps invertible?  Are they \textbf{rotations}?
+\end{problem}
+
+\begin{problem}
+  Any word in $F_2$ can be rewritten as a product of the matrices $A$,
+  $B$, $A^{-1}$, and $B^{-1}$; that is, there is a function $\phi :
+  F_2 \to \Hom(\R^3,\R^3)$.  For which $w \in F_2$ does it happen that
+  $\phi(w)$ is the identity matrix?
+\end{problem}
+
+\begin{definition}
+Write $S^2$ for the two-sphere, i.e., the set of points $(x,y,z) \in \R^3$ with $x^2 + y^2 + z^2 = 1$.
+\end{definition}
+
+\begin{problem}
+  The linear map $A : \R^3 \to \R^3$ can be restricted to give a
+  function $A : S^2 \to S^2$.  The analogous statement holds for $B$,
+  indeed, for any $\phi(w)$.  This means that $\phi(w)$ can be
+  regarded as function taking points on the sphere to other points on
+  the sphere.
+\end{problem}
+
+\begin{definition}
+  Let $D \subset S^2$ consist of those points $p \in S^2$ for which
+  there is some $w \in F_2$, with $w \neq e$ but $\phi(w)(p) =
+  p$.  These are the points \textbf{fixed by some element} of $F_2$.
+\end{definition}
+
+\begin{problem}
+$D$ is countable.  \textit{Hint:} if $p$ is fixed by a rotation, then $p$ is on the axis of the rotation; how many points on the sphere lie on a given axis of rotation?
+\end{problem}
+
+\begin{definition}
+  Points $p, q \in S^2 - D$ are in the same \textbf{orbit} if there is
+  some $w \in F_2$ so that $\phi(w)(p) = q$.  Let $R$ be a set
+  containing a representative from each orbit.
+\end{definition}
+
+\begin{problem}
+Every point in $S^2 - D$ can be written \textit{uniquely} as $\phi(w)(r)$ for some $w \in F_2$ and some $r \in R$.
+\end{problem}
+
+\begin{problem}
+Define
+\begin{align*}
+R_a &= \phi(S(a))(R), \\
+R_b &= \phi(S(b))(R), \\
+R_{a^{-1}} &= \phi(S(a^{-1}))(R), \\
+R_{b^{-1}} &= \phi(S(b^{-1}))(R).
+\end{align*}
+Show that $S^2 - D = R_a \cup R_b \cup R_{a^{-1}} \cup R_{b^{-1}}$. \\
+Also show that $S^2 - D = \phi(a)(R_{a^{-1}}) \cup R_a$. \\
+But also show that $S^2 - D = \phi(b)(R_{b^{-1}}) \cup R_b$.
+\end{problem}
+
+\begin{remark}
+  We have decomposed $S^2 - D$ into four pieces, thrown away two of
+  the pieces, rotated one the remaining pieces by $\phi(a)$, and ended
+  with $S^2 - D$.  This is \textit{paradoxical}.  Next we will show
+  that $S^2 - D$ can be cut up and rearranged to get $S^2$.
+\end{remark}
+
+\begin{problem}
+Pick some point $x \in S^2$ with $x \not\in D$.
+
+Let $J$ consist of the \textbf{bad angles}---angles $\theta$ so that
+rotation by $n \theta$ (for some $n \in \N$) around axis $x$ takes some point $d \in D$ to
+some other point in $D$.  Prove $J$ is countable.
+\end{problem}
+
+\begin{problem}
+  Let $\theta$ be a good angle (i.e., not in $J$).  Why does a good
+  angle exist?  Let $G : \R^3 \to \R^3$ be rotation around the axis $x \in S^2$
+  through angle $\theta$.
+\end{problem}
+
+\begin{problem}
+Define $D_n = G(G(G(\cdots G(D)$, i.e., $n$ applications of $G$ to $D$.  Prove that all the $D_n$ are disjoint; let $E = \bigcup_{i = 0}^\infty D_n$.
+\end{problem}
+
+\begin{problem}
+Show that $G(E) = E - D$.
+\end{problem}
+
+\begin{problem}
+Show that $S^2$ can be cut into two pieces, $S^2 - E$ and $E$, which can be rearranged to form $S^2 - D$.
+\end{problem}
+
+\begin{remark}
+  Altogether, we have shown that $S^2$ can be cut into two pieces,
+  which can be rearranged to form $S^2 - D$.  We earlier showed that
+  $S^2 - D$ can be cut into four pieces, which can be rearrnaged to
+  make two copies of $S^2 - D$.  But each of these copies of $S^2 - D$
+  can be cut up, make two copies of $S^2$.
+\end{remark}
+
+\begin{remark}
+  This decomposition did not even require translation!  We take $S^2$,
+  throw away some pieces, and rotate the remaining pieces (perhaps
+  through other pieces!) into new positions to reform $S^2$.
+\end{remark}
+
+\begin{problem}
+  Let $B^3 = \{(x,y,z) \in \R^3 : x^2 + y^2 + z^2 \leq 1 \}$; this is
+  the solid ball.  Use the paradoxical decomposition of $S^2$ to build
+  a paradoxical decomposition of $B^3 - \{ (0,0,0) \}$.  \textit{Hint:} Extend radially.
+\end{problem}
+
+\begin{problem}
+  Use a trick (like the one we used to convert $S^2 - D$ into $S^2$)
+  and some translations to build a paradoxical decomposition of $B^3$
+  into two copies of $B^3$.
+\end{problem}
+
+\end{document}
+

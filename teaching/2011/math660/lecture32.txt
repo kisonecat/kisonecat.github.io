@@ -1,0 +1,169 @@
+Lecture 32: Cauchy’s theorem
+Math 660—Jim Fowler Wednesday, August 4, 2010
+
+Suppose f is analytic in Ω.
+
+Suppose f is analytic in Ω. If z ∈ int Qj , then f (z) = 1 2πi f (ζ) dζ ζ −z
+
+Γδ
+
+Suppose f is analytic in Ω. If z ∈ int Qj , then f (z) = 1 2πi f (ζ) dζ ζ −z
+
+Γδ
+
+and by continuity, this holds for all z ∈ Ωδ .
+
+Suppose f is analytic in Ω. If z ∈ int Qj , then f (z) = 1 2πi f (ζ) dζ ζ −z
+
+Γδ
+
+and by continuity, this holds for all z ∈ Ωδ . Therefore, f (z) dz =
+γ γ
+
+1 2πi
+
+f (ζ) dζ ζ −z
+
+dz
+
+Suppose f is analytic in Ω. If z ∈ int Qj , then f (z) = 1 2πi f (ζ) dζ ζ −z
+
+Γδ
+
+and by continuity, this holds for all z ∈ Ωδ . Therefore, f (z) dz =
+γ γ
+
+1 2πi
+
+f (ζ) dζ ζ −z
+
+dz
+
+and reversing the order of integration, f (z) dz =
+γ Γδ
+
+1 2πi
+
+γ
+
+dz ζ −z
+
+f (ζ)dζ
+
+Suppose f is analytic in Ω. If z ∈ int Qj , then f (z) = 1 2πi f (ζ) dζ ζ −z
+
+Γδ
+
+and by continuity, this holds for all z ∈ Ωδ . Therefore, f (z) dz =
+γ γ
+
+1 2πi
+
+f (ζ) dζ ζ −z
+
+dz
+
+and reversing the order of integration, f (z) dz =
+γ Γδ
+
+1 2πi
+
+γ
+
+dz ζ −z
+
+f (ζ)dζ
+
+and the integral vanishes.
+
+If Ω is unbounded?
+If Ω is unbounded, consider Ω = Ω ∩ BR (0)
+
+If Ω is unbounded?
+If Ω is unbounded, consider Ω = Ω ∩ BR (0)for R large enough that BR (0) ⊃ γ.
+
+If Ω is unbounded?
+If Ω is unbounded, consider Ω = Ω ∩ BR (0)for R large enough that BR (0) ⊃ γ. Then n(γ, a) = 0 for all a ∈ BR (0) or a ∈ Ω,
+
+If Ω is unbounded?
+If Ω is unbounded, consider Ω = Ω ∩ BR (0)for R large enough that BR (0) ⊃ γ. Then n(γ, a) = 0 for all a ∈ BR (0) or a ∈ Ω,so [γ] = [0] ∈ H1 (Ω ).
+
+If Ω is unbounded?
+If Ω is unbounded, consider Ω = Ω ∩ BR (0)for R large enough that BR (0) ⊃ γ. Then n(γ, a) = 0 for all a ∈ BR (0) or a ∈ Ω,so [γ] = [0] ∈ H1 (Ω ). Thus, γ f (z) dz = 0, so the theorem holds for arbitrary Ω.
+
+If Ω is unbounded?
+If Ω is unbounded, consider Ω = Ω ∩ BR (0)for R large enough that BR (0) ⊃ γ. Then n(γ, a) = 0 for all a ∈ BR (0) or a ∈ Ω,so [γ] = [0] ∈ H1 (Ω ). Thus, γ f (z) dz = 0, so the theorem holds for arbitrary Ω.
+
+Theorem
+If f (z) is analytic in Ω, then f (z) dz = 0
+γ
+
+for every cycle γ which is homologus to zero in Ω.
+
+Theorem
+Suppose f (z) is analytic in Ω, a simply connected region. Then f (z) dz = 0
+γ
+
+for every cycle γ in Ω.
+
+Locally exact diﬀerentials
+A form p dx + q dy is locally exact in Ω if it is exact in a neighborhood of every point of Ω.
+
+Locally exact diﬀerentials
+A form p dx + q dy is locally exact in Ω if it is exact in a neighborhood of every point of Ω.
+
+Theorem
+If p dx + q dy is locally exact in Ω, then p dx + q dy = 0
+γ
+
+for every γ homologous to 0 in Ω.
+
+Locally exact diﬀerentials
+A form p dx + q dy is locally exact in Ω if it is exact in a neighborhood of every point of Ω.
+
+Theorem
+If p dx + q dy is locally exact in Ω, then p dx + q dy = 0
+γ
+
+for every γ homologous to 0 in Ω. Proof is in Ahlfors.
+
+Locally exact diﬀerentials
+A form p dx + q dy is locally exact in Ω if it is exact in a neighborhood of every point of Ω.
+
+Theorem
+If p dx + q dy is locally exact in Ω, then p dx + q dy = 0
+γ
+
+for every γ homologous to 0 in Ω. Proof is in Ahlfors. This is a theorem that probably belongs more properly to a topology course.
+
+Homology basis
+
+Suppose C − Ω has components A0 , . . . , An with ∞ ∈ A0 .
+
+Homology basis
+
+Suppose C − Ω has components A0 , . . . , An with ∞ ∈ A0 . Then every cycle γ in Ω is homologous to a cycle c1 γ1 + · · · cn γn for cycles γi which “go around” Ai .
+
+Homology basis
+
+Suppose C − Ω has components A0 , . . . , An with ∞ ∈ A0 . Then every cycle γ in Ω is homologous to a cycle c1 γ1 + · · · cn γn for cycles γi which “go around” Ai . The collection of γi are a homology basis for Ω.
+
+Periods
+
+If [γ] = [c1 γ1 + · · · cn γn ], then f dz =
+γ j
+
+cj
+γi
+
+f dz f dz (the “periods”)
+
+so every integral is a sum of with integral coeﬃcients.
+
+γi
+
+Compute some periods
+
+Residues
+
+

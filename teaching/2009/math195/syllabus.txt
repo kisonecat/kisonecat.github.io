@@ -1,0 +1,54 @@
+Syllabus
+
+Math 195, Section 91
+
+Summer 2009
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+A complicated model might have many inputs and many outputs. How do small changes to those inputs aﬀect the outputs? In this class, you will learn to use calculus to analyze such situations.
+
+We present six resources to help you to learn multivariable calculus.
+
+Oﬃce Hours
+If you have questions, want to work through problems, or just talk about mathematics, I invite you to come to my oﬃce hours. Name: Jim Fowler Oﬃce: Math/Stat 102 Email: jim@uchicago.edu Oﬃce Hours: Tuesday 4:30–6:00p.m. Thursday 4:30–6:00p.m. and by appointment
+
+Please email me with any concerns you have; the success of this course depends on open communication.
+
+Textbook
+Our text is Multivariable Calculus by James Stewart (sixth edition). Somewhat confusingly, the ﬁrst chapter in this book is numbered “11.”
+
+Website
+The website is on chalk; I will post assignments, notes, handouts.
+
+Lectures
+We will meet Mondays, Wednesdays, and Fridays, 9:00–11:00a.m. in room 108 of the Social Sciences Research Building for an interactive lecture. There will be no lecture on July 3, 2009.
+
+Take-home quizzes
+Your quizzes will be graded by Jim Fowler.
+
+Recommended Homework
+Homework will be assigned, but not graded.
+c 2009 Jim Fowler
+
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+Resources
+
+Requirements
+There are one thousand points possible in this course, broken down as follows: Quizzes (100 points). After most classes, a short take-home quiz will be assigned. 2 midterms (225 points each). The midterms are in class. The ﬁrst midterm is on Monday, July 6, 2009; the second will be on Friday, July 17, 2009. The ﬁrst midterm will replace the ﬁrst hour of lecture; the second hour will be an interactive lecture as usual. The second midterm will be an oral exam scheduled outside of class. Participation in lectures (50 points). The lectures will be interactive: you should participate. 1 ﬁnal exam (400 points). The ﬁnal exam will be at 9:00–11:00a.m. on Friday, July 24, 2009, in room 108 of the Social Sciences Research Building.
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Department Policy on Final Exams
+It is the policy of the Department of Mathematics that the following rules apply to ﬁnal exams in all undergraduate mathematics courses: 1. The ﬁnal exam must occur at the time and place designated on the College Final Exam Schedule. In particular, no ﬁnal examinations may be given during the tenth week of the quarter, except in the case of graduating seniors. 2. Any student who wishes to depart from the scheduled ﬁnal exam time for the course must receive permission from Paul Sally (oﬃce is Ryerson 350, phone is 2-7388, email is sally@math.uchicago.edu). Instructors are not permitted to excuse students from the scheduled time of the ﬁnal exam except in the cases of an Incomplete.
+
+Requesting to reschedule a midterm
+Contact Jim Fowler as soon as possible if you will not be able to take a midterm on the scheduled day.
+
+Late quizzes, skipping class, and so forth
+You absolutely must stay caught up. It is tempting to fall behind, but diﬃcult to catch up again—this is true of all courses, but especially true of a course in mathematics. That said, I understand your schedules are very busy, so I will not penalize you for infrequently turning in your work a day or two late. Do not make a habit of it!
+
+c 2009 Jim Fowler
+
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+

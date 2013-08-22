@@ -1,0 +1,187 @@
+The future is commonly understood to contain all events that have yet to occur. Welcome to the future of education. For the Alternating Series Test, if you have already proved a series not to absolutely convergent and the series fails one of the alternating series conditions (decreasing or positive...) does the series automatically converge even if the limit is 0? It turns out that if an alternating series fails to converge absolutely, and fails the alternating series test, there isn’t much we can say. An example of a problematic series: an = 2/n if n is odd, and an = −1/(n − 1) is n is even. If the sum of two converging series converges, if a sum is made up of a converging and diverging sequence does it diverge? I am guessing not, but I am not sure! The sum of a divergin series and a diverging series? May or may not converge.
+
+n+
+
+−n =
+
+(n − n) =
+
+0
+
+In the taylor series thereom remainder, there is a t. What is that t? 1 n!
+x
+
+f (n+1) (t) (x − t)n dt
+0
+
+When ﬁguring out if series converge, can you use composition of functions? For example, if you have the sine of a converging function does sine converge? cos 1 n2 diverge
+
+Please give a canon deﬁnition for the sum of a sub n equals L (the ﬁrst bullet point on the review sheet)
+
+∞
+
+an = L
+n=0
+
+means
+k k→∞
+
+lim
+
+an = L
+n=0
+
+Deﬁne the sequence of partial sums
+k
+
+sk =
+n=0
+
+an
+
+A series converges to L if the sequence of partial sums converges to L lim sk = L
+k→∞
+
+Theorem (Taylor’s theorem). f : R → R is a smooth function, and f (x) = f (a) + f (a) f (n) (a) (x − a) + · · · + (x − a)n + Rn (x). 1! n!
+x
+
+Rn (x) =
+a
+
+f (n+1) (t) (x − t)n dt n!
+
+Theorem (Lagrange). Rn (x) = for some c ∈ (0, x). How did you apply the limit comparison test on that sin(1/n2 ) summation? f (n+1) (c) n+1 x . (n + 1)!
+
+1 = n2 n=1
+∞
+
+∞
+
+an
+
+sin
+n=1
+
+1 n2
+
+=
+
+bn
+
+sin(1/n2 ) =1 n→∞ n→∞ 1/n2 The limit comparison test aplies, and an converges iﬀ bn converges. For the Limit Comparison test: if we are just making sure that lim (original/compared series) L, and L must be positive. Then the original converges only if the compared one converges. When will L not be positive? lim bn /an = lim 1/n = an 1/n2 = bn
+
+n→∞
+
+lim bn /an = lim
+
+1/n2 = lim 1/n = 0 n→∞ 1/n bn converge.
+∞
+
+If
+
+an converge, then
+∞
+
+1 n! = (n + 1)! n=1 n + 1 n=1 which diverges by harmonic series test. Could you perform the Taylor expansion for arctan(x)? arctan x = (−1)n 2n+1 x 2n + 1 n=0
+∞ ∞
+
+d 1 arctan x = = (−1)n x2n dx 1 + x2 n=0
+
+d arctan x dx = dx
+∞
+
+1 dx = 1 + x2 (−1)n x2n dx =
+
+∞
+
+(−1)n x2n dx
+n=0 ∞
+
+arctan x + C =
+n=0
+
+(−1)n
+n=0
+
+x2n+1 2n + 1
+
+2. Problem 25 on page 636 in the Salas book. f (x) = x · log log 1 + x2 1 − x2
+
+a = log a − log b b
+∞
+
+log(1 + x) =
+n=1
+
+(−1)n+1
+
+xn n
+
+∞
+
+log(1 + x2 ) =
+n=1 ∞
+
+(−1)n+1
+
+x2n n x2n n
+
+log(1 − x2 ) =
+n=1
+
+(−1)2n+1
+
+log
+
+1 + x2 1 − x2
+
+= =
+
+log(1 + x2 ) − log(1 − x2 )
+∞
+
+(−1)n+1
+n=1 ∞
+
+x2n x2n − (−1)2n+1 n n n=1 x2n n
+
+∞
+
+=
+n=1
+
+(−1)n+1 − 1
+
+x · log
+
+1 + x2 1 − x2
+
+= x · log(1 + x2 ) − log(1 − x2 )
+∞
+
+= x·
+n=1 ∞
+
+(−1)n+1
+
+x2n x2n − (−1)2n+1 n n n=1 x2n n
+
+∞
+
+= x·
+n=1 ∞
+
+(−1)n+1 − 1 (−1)n+1 − 1
+
+=
+n=1
+
+x2n+1 n
+
+Is there any way to use Legrange Remainder method on a function that is not a trig function, so that you cannot say the nth derivative around zero is between -1 and 1?
+
+Theorem (Lagrange). Rn (x) = for some c ∈ (0, x). Problem: We do not know what the point c is. Solution: We need to bound the (n + 1)st derivative of f . Examples of functions for which we can control the size of nth derivaive: trig functions. sums and products (by constants) of trig functions. Solutions to diﬀerential equations. f (x) = −f (x)? A priori information given to you: |f (n) (x)| < 17 Secrets of the Exam: Know Taylor series for sin and cosine and geometric series. Rk (x) f (n+1) (c) n+1 x . (n + 1)!
+
+Diﬀerentiate a Taylor series. Conditional and absolute convergence. Don’t be afraid of large numbers.
+
+

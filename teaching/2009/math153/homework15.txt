@@ -1,0 +1,28 @@
+Homework 15
+Due Monday, December 1, 2008
+(a) Recall our techniques: integration by parts, two half-angle formulas for exchanging sin2 x or cos2 x for something involving cos(2x), and the Pythagorean theorem for trading sin2 x for cos2 x (and vice versa). Use these techniques to ﬁnd: cos5 x sin5 x dx and cos4 x sin4 x dx
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+(b) Use the technique of partial fractions to evaluate the following integrals: (i) x + 27 dx. x2 − 9 8x − 36 dx. (x − 5)2
+
+(ii)
+
+(iii)
+
+6x2 + 20x + 9 dx. x(x2 + 2x + 1)
+
+(iv)
+
+2x3 − 7x2 + 6x − 21 dx. (x + 1)(x − 2)(x − 3)
+
+(v)
+
+x2 − 3x + 46 dx. (x + 3) ((x − 1)2 + 16)
+
+(c) Find a function f : R → R so that f (x) = f (x) · (1 − f (x)). Hint: Use partial fractions! Divide both sides of f (x) = f (x) · (1 − f (x)) by f (x) · (1 − f (x)) and integrate to discover f (x) dx = f (x) (1 − f (x)) 1 dx = x + C.
+
+Make the substitution u = f (x), evaluate the integral on the left hand side, and then solve for f (x).
+
+c 2008 Jim Fowler
+
+

@@ -1,0 +1,29 @@
+Syllabus
+Winter 2011
+
+Math 765
+Jim Fowler
+
+This course is the ﬁrst in the diﬀerential branch of the core topology and geometry curriculum of the Ph.D. program and provides a basic introduction to smooth manifolds.
+
+Resources
+We present ﬁve resources to help you to learn about manifolds.
+
+Oﬃce hours
+If you have questions, want to work through problems, or just talk about mathematics, please attend oﬃce hours. Name: Oﬃce: Phone: Email: Website: Jim Fowler MW658 Mathematics Tower Oﬃce Hours: (773) 809–5659 fowler@math.osu.edu http://www.math.osu.edu/~fowler/ Monday Wednesday Friday 2:30–3:18p.m. and by appointment
+
+Please email me with any concerns you have; the success of this course depends on open communication.
+
+Textbook
+Our text is John M. Lee’s “Introduction to Smooth Manifolds.”
+
+Website
+I will post handouts at http://www.math.ohio-state.edu/~fowler/teaching/math765/.
+
+Lectures
+We meet Mondays, Wednesdays, and Fridays, 1:30–2:18p.m. in Scott Lab E0245 for a lecture.
+
+Assessment
+There are 1000 points possible in this course, broken down as follows. 10 problem sets (600 points; 60 points each). Homework is assigned each week, usually assigned on Monday, and collected the following Monday. You should work on the homework problems together, but you must write up your solutions independently. You must stay caught up with the homework. But I understand your schedules are very busy, so I will not penalize you for occasionally turning in late homework. Do not make a habit of it. 10 quizzes (50 points; 5 points each). Each Friday, we will have a short quiz. 1 ﬁnal exam (350 points). The ﬁnal examination will be a take-home exam, distributed at the last lecture and due the following Thursday.
+
+

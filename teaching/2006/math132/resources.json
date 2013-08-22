@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Take-Home Quiz 6",
+    "shortname": "quiz6",
+    "filename": "quiz6.pdf",
+    "source": "quiz6.tex",
+    "description": "",
+    "tags": [
+      "quiz"
+    ]
+  },
+  {
+    "title": "Take-Home Quiz 5",
+    "shortname": "quiz5",
+    "filename": "quiz5.pdf",
+    "source": "quiz5.tex",
+    "description": "",
+    "tags": [
+      "quiz"
+    ]
+  },
+  {
+    "title": "Take-Home Quiz 1",
+    "shortname": "quiz1",
+    "filename": "quiz1.pdf",
+    "source": "quiz1.tex",
+    "description": "",
+    "tags": [
+      "quiz"
+    ]
+  },
+  {
+    "title": "Take-Home Quiz 2",
+    "shortname": "quiz2",
+    "filename": "quiz2.pdf",
+    "source": "quiz2.tex",
+    "description": "",
+    "tags": [
+      "quiz"
+    ]
+  },
+  {
+    "title": "Take-Home Quiz 3",
+    "shortname": "quiz3",
+    "filename": "quiz3.pdf",
+    "source": "quiz3.tex",
+    "description": "",
+    "tags": [
+      "quiz"
+    ]
+  },
+  {
+    "title": "Take-Home Quiz 4",
+    "shortname": "quiz4",
+    "filename": "quiz4.pdf",
+    "source": "quiz4.tex",
+    "description": "",
+    "tags": [
+      "quiz"
+    ]
+  },
+  {
+    "title": "Syllabus",
+    "shortname": "syllabus",
+    "filename": "syllabus.pdf",
+    "source": "syllabus.tex",
+    "description": "",
+    "tags": [
+      "syllabus"
+    ]
+  }
+]

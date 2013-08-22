@@ -1,0 +1,148 @@
+Lecture 2: Analytic functions
+Math 660—Jim Fowler Tuesday, June 21, 2011
+
+Stereographic projection
+Consider S 2 = {(x1 , x2 , x3 ) ∈ R3 : Extend C to C ∪ {∞}. xi 2 = 1},
+
+i
+
+Deﬁne f : S 2 → C ∪ {∞} by
+
+z = x + iy = f (x1 , x2 , x3 ) =
+
+x1 + ix2 1 − x3
+
+The points (0, 0, 1), (x, y , 0), and (x1 , x2 , x3 ) are collinear.
+
+phic projection sends a point P on S 2 to the intersection of th with the plane.
+
+P
+
+P
+
+Figure 7: Stereographic projection.
+
+ert reader will notice that the point (0, 0, 1) has no sensible im
+
+Today’s Goal
+§2.1.1 and 2.1.2 of Complex Analysis Derivatives for C-valued functions
+
+Review of Calculus
+
+Limit Derivative Integral
+
+Limits
+
+Deﬁnition
+lim f (x) = L if for all > 0, there exists δ > 0, such that |f (x) − L| < whenever |x − a| < δ. “Absolute value” makes sense in C.
+x→a
+
+Limits
+Theorem
+x→a
+
+lim (f (x) + g (x)) = lim f (x) + lim g (x).
+x→a x→a
+
+Theorem
+x→a
+
+lim f (x) = lim f (x)
+x→a
+
+Derivative
+
+Deﬁnition
+
+f (x + h) − f (x) h→0 h Warning: h ∈ C. This has deep consequences. f (x) = lim
+
+Theorem
+
+Suppose f : C → R is complex diﬀerentiable. Then f ≡ 0.
+
+Terminology
+Deﬁnition
+A complex diﬀerentiable function f is called analytic or holomorphic. If f : C → C and f is everywhere complex diﬀerentiable, we call it entire. Examples of entire functions include polynomials.
+
+Analytic Functions
+
+Analytic Functions
+What does “diﬀerentiable” even mean? Locally linear.
+
+Analytic Functions
+What does “diﬀerentiable” even mean? Locally linear. Compare linear maps R2 → R2 to linear maps C → C.
+
+The The The The
+
+sum diﬀerence product quotient
+
+of analytic functions is analytic. of analytic functions is analytic. of analytic functions is analytic. of analytic functions is analytic, where the denominator is nonzero.
+
+Cauchy-Riemann equations
+
+Cauchy-Riemann equations
+
+f (x + iy ) = u(x, y ) + i v (x, y ) is analytic iﬀ ∂u ∂v ∂u ∂v = and =− ∂x ∂y ∂y ∂x
+
+The Jacobian
+
+|f (z)|2 =
+
+∂u ∂v ∂u ∂v − ∂x ∂y ∂y ∂x = Jacobian of u and v with respect to x and y = inﬁnitesimal change in area
+
+Complex Analysis is Amazing
+Theorem
+The derivative of a analytic function is itself diﬀerentiable.
+
+Complex Analysis is Amazing
+Theorem
+The derivative of a analytic function is itself diﬀerentiable.
+
+Theorem
+An analytic function is inﬁnitely complex diﬀerentiable.
+
+Complex Analysis is Amazing
+Theorem
+The derivative of a analytic function is itself diﬀerentiable.
+
+Theorem
+An analytic function is inﬁnitely complex diﬀerentiable. This is incredible. We will prove this later.
+
+Harmonic functions
+A function f : U → R is harmonic if ∂ 2f ∂ 2f ∂ 2f + 2 + · · · + 2 = 0 on U ⊂ Rn . 2 ∂xn ∂x1 ∂x2
+
+Harmonic functions
+A function f : U → R is harmonic if ∂ 2f ∂ 2f ∂ 2f + 2 + · · · + 2 = 0 on U ⊂ Rn . 2 ∂xn ∂x1 ∂x2
+
+The real and imaginary parts of an analytic function are harmonic.
+
+Cauchy-Riemann equations
+
+If u, v are a harmonic functions (∆u = 0) and ∂u ∂v ∂u ∂v = and =− ∂x ∂y ∂y ∂x then v is called a conjugate harmonic function for u.
+
+Finding the conjugate harmonic function
+u(x, y ) = x 2 − y 2 is harmonic.
+
+Finding the conjugate harmonic function
+u(x, y ) = x 2 − y 2 is harmonic. v (x, y ) must satisfy ∂v ∂v = 2y and = 2x. ∂x ∂y So v (x, y ) = 2xy + C for some constant C .
+
+Finding the conjugate harmonic function
+u(x, y ) = x 2 − y 2 is harmonic. v (x, y ) must satisfy ∂v ∂v = 2y and = 2x. ∂x ∂y So v (x, y ) = 2xy + C for some constant C . Note that z 2 = u(x, y ) + i · 2xy .
+
+Cauchy-Riemann equations
+
+Theorem
+If u(x, y ) and v (x, y ) have continuous ﬁrst partials, and u and v satisfy the Cauchy-Riemann equations, then f (a + bi) = u(a, b) + i v (a, b) is analytic.
+
+Cauchy-Riemann equations
+Alternatively, the C-R equations can be written as ∂f =0 ∂z where z = x + iy and z = x − iy . In some sense, analytic functions are truly functions of z, and not of z.
+
+1 ∂ = ∂z 2
+
+∂ ∂ −i ∂x ∂y
+
+1 ∂ = ∂¯ 2 z
+
+∂ ∂ +i ∂x ∂y
+
+

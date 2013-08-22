@@ -1,0 +1,42 @@
+Homework and Quiz 10
+
+Due Friday, July 17, 2009
+
+Ungraded homework
+For practice, do Section 16.1, page 994, problems 3, 5. Section 16.2, page 1000, problems 3, 5, 9, 11, 15, 19, 21, 25, 27, 35. Section 16.3, page 1008, problems 7, 9, 11, 13, 15, 21, 23, 25, 45, 47, 49. .
+
+Graded Quiz
+1 2
+
+(a) Compute
+y=0 x=0
+
+x y 2 dx dy.
+
+2
+
+1
+
+(b) Compute
+x=0 y=0
+
+x y 2 dx dy. How does this compare to your answer to question (a)?
+
+(c) Compute
+D
+
+cos (2x + y) dA for D = [0, π/2] × [0, π].
+
+(d) Evaluate the integral
+1 y=0 3 x=3y
+
+ex dx dy.
+
+2
+
+(e) Compute
+D
+
+(2x − y) dA, where D is the circle centered at the origin with radius 2.
+
+

@@ -1,0 +1,80 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Creator: Jim Fowler by Hand
+%%Title: Stack of Blocks
+%%CreationDate: April 28, 2006
+%%DocumentData: Clean7Bit
+%%Origin: 0 0 
+%%BoundingBox: 0 0 468 144
+%%LanguageLevel: 2
+%%Pages: 1
+%%Page: 1 1
+%%EOF
+
+/width {468} def
+/height {144} def
+/margin {5} def
+/blockcount {15} def
+
+/partialsum 1 def
+/i blockcount def
+{
+    /partialsum partialsum 1 2 i mul div add def
+    /i i 1 sub def
+    i 1 lt { exit } if
+} loop
+
+/blockwidth width 2 margin mul sub partialsum div def
+/blockwidth 72 def
+/blockheight height 2 margin mul sub blockcount div def
+
+/drawblock {
+    newpath
+    0 0 moveto
+    blockwidth 0 lineto
+    blockwidth blockheight lineto
+    0 blockheight lineto
+    0 0 lineto
+    stroke
+} def
+
+/append {
+         2 copy length exch length add  % find the length of the new.
+         string dup     % string1 string2 string string
+         4 2 roll       % string string string1 string2
+         2 index 0 3 index
+         % string string string1 string2 string 0 string1
+         putinterval    % stuff the first string in.
+         % string string string1 string2
+         exch length exch putinterval
+} bind def
+
+/writetext {
+    /Times-Roman findfont
+    blockheight 2 sub scalefont
+    setfont
+    newpath
+    blockwidth 1 moveto
+    (string) cvs (1/) exch append
+    show
+} def
+
+1 setlinecap
+1 setlinejoin
+
+0 height margin sub blockheight sub translate
+width 2 div 0 translate
+
+blockwidth partialsum mul 2 div 0 translate
+blockwidth neg 0 translate
+
+/i 1 def
+{
+    drawblock
+    blockwidth 2 i mul div neg
+    blockheight neg translate
+    % 2 i mul writetext
+    
+    /i i 1 add def
+    i blockcount gt { exit } if
+} loop
+

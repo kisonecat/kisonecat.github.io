@@ -1,0 +1,11 @@
+Math 132 Section 22 Due Monday, January 9, 2006
+I give you a selection of problems about trigonometry. Problem 1. (2 points). Prove that (1 + cos θ)(1 − cos θ) = sin2 θ is an identity. Problem 2. (2 points). A bicycle wheel, 27 inches in diameter, has rotated through an angle of 60◦ . How far has the bicycle moved? Problem 3. (2 points). Find the limit, if it exists: sin θ − cos θ . θ→0 3θ + 2 + cos θ lim Problem 4. (2 points). Find the limit, if it exists: tan x . x→0 x lim Problem 5. (3 points). Find the limit, if it exists: sin(4x) . x→0 5x lim Problem 6. (3 points). Find the limit, if it exists: sin2 x . x→0 x lim
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+c 2008 Jim Fowler
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Take-Home Quiz 1
+
+

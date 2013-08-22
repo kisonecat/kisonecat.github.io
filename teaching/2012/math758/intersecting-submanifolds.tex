@@ -1,0 +1,110 @@
+\documentclass[12pt]{handout}
+\usepackage{nopageno}
+\course{Math 758}
+\title{Intersections, Linking}
+\author{Jim Fowler}
+
+\usepackage{amsmath}
+\newtheorem*{theorem*}{Theorem}
+\newtheorem*{corollary*}{Corollary}
+\theoremstyle{definition}
+\newtheorem{question}[theorem]{Question}
+\newtheorem*{remark*}{Remark}
+\newtheorem*{definition*}{Definition}
+\newtheorem*{example*}{Example}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{subproblem}[theorem]{Subproblem}
+\newtheorem{requiredproblem}[theorem]{\makebox[0in][r]{$\bullet$\hspace{0.25em}}Problem}
+
+\DeclareMathOperator{\projection}{proj}
+\DeclareMathOperator{\link}{link}
+
+\begin{document}
+
+\maketitle
+
+First, something that came up during office hours.
+
+\begin{problem}
+  Let $M^n$ be a closed manifold with a fixed triangulation; let $M'$
+  be its barycentric subdivision, and let $w_1$ be the $\mathbb{Z}/2$-chain
+  given by adding up all the edges in $M'$.  Is $w_1$ a cycle?  When
+  is $w_1$ a boundary?
+\end{problem}
+
+Next, we'll talk about submanifolds, intersections, and linking.  At
+this point, the ``special topics'' start, so if there are particular
+things you're eager to learn about, we should talk about those things.
+
+\begin{remark}
+For an oriented manifold $M^m$ with submanifolds ${A}^a$ and ${B}^{b}$ intersecting transversely, then
+$$
+[A \cap B] = \left( [A]^\star \smallsmile [B]^\star \right)^\star
+$$
+where $\star$ denotes Poincar\'e duality, and the inclusion maps are
+not mentioned.
+\end{remark}
+\noindent
+One proof of this goes via the \textbf{Thom isomorphism theorem} which
+is the purview of a future course---we haven't defined what
+``transversely'' means, even.
+
+\begin{problem}
+  When $a + b = m$, we can regard $[A \cap B]$ as a number.  Is this
+  number the same as the cardinality of the set $A \cap B$?  If we
+  count with orientation?  Can we isotope $A$ and $B$ to make $|A \cap
+  B| = [A \cap B]$?
+\end{problem}
+
+\begin{problem}
+  Compute $\pi_1$ of the complement of the ``unlink'' and the ``Hopf
+  link.''  Why might this fact put a mountain climber in danger?
+\end{problem}
+
+\begin{problem}
+  Use Alexander duality to compute $H_1(S^3 - A)$ for a curve $A$.
+  Can you describe a generator?
+\end{problem}
+
+\begin{definition}
+  For two curves $A$ and $B$ in $S^3$, their \textbf{linking number} $\link(A,B)$ is defined to be
+  $$
+  [A] = \link(A,B) [m] \in H_1(S^3 - B)
+  $$
+  where $m$ is the \textbf{meridian} of the curve $B$.
+\end{definition}
+
+\begin{problem}
+  Let $N(B)$ be a thickened, closed neighborhood of the curve $B$, and
+  let $\Sigma$ be an oriented connected surface with $\partial \Sigma
+  = B$.  Show that $\link(A,B) = [A \cap \Sigma]$ by using a certain
+  geometric fact about the meridian.
+\end{problem}
+
+\begin{problem}
+  How does $\link(A,B)$ relate to $\link(B,A)$?
+\end{problem}
+
+\begin{problem}
+  Compute the linking number of the Hopf link.
+\end{problem}
+
+\begin{problem}
+  Compute the linking number of the Whitehead link.
+\end{problem}
+
+\begin{problem}
+  Suppose $B$ is a curve, and that there is a surface $\Sigma$ in $S^3
+  - B$ with boundary $A_1 \sqcup A_2$ with $A_1$ and $A_2$ connected
+  curves; how does $\link(A_1,B)$ relate to $\link(A_2,B)$?
+\end{problem}
+
+\pagebreak
+\null
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

@@ -1,0 +1,40 @@
+Lecture 14: Root and ratio tests
+Math 153 Section 57 Wednesday October 29, 2008
+Following chapter 12.4.
+
+Ratio Test
+This is a test I do like, and it is easy to apply! If an > 0, and lim an+1 /an = L, then if L < 1, an converges, if L > 1, then an diverges, and if L = 1, the test is inconclusive. Proof: If L < 1, choose so small that L + < 1. Then there exists K so that for n ≥ K, we have |an+1 /an − L| < . In other words, an+1 /an < L + < 1. So an+1 < (L + ) · an . Therefore, an+k < (L + )n ak . But (L + )n ak converges, and therefore, by comparison, so does ∞ an . n=k
+
+0.1
+
+Best use of the ratio test
+1/n! converges, because for n large 1 1 1 < < n! n · (n − 1) (n − 1)2
+
+We know that
+
+But we can also check this using the ratio test. Set an = 1/n!. Then an+1 /an = 1/(n + 1) which converges to zero, and we are done. What do we know about 1/n!? It equals e. We’ll see that soon. n Anti-example: n /n!. But we already knew that since lim nn /n! = ∞. n/2 Example: n /n!. Apply ratio test: √ (n + 1)n+1 n! ·√ n = (n + 1)! n which converges. n+1· ( n+1 )n n ( n+1 )n n = √ n+1
+
+n+1
+
+0.2
+
+Bad uses of the ratio test
+1/(3n + 17). 1
+
+example:
+
+0.3
+
+Sometuimes we have a parameter
+
+Which test to apply?
+lim an = 0 is always a good thing to check! Integral test is good for things you can integrate. Root test is really only good for things with a powers of n. Limit comparison takes care of all rational functions (i.e., polynomial over polynomial). Ratio test is good for factorials.
+
+Absolute and conditional convergence
+Sometimes series have both positive and negative terms. Theorem: If |an | converges, then an converges. Proof: If |an |, then 2|an | conv, then an + |an | conv, so an = |an | conv. The proof doesn’t work backwards! Deﬁnition: an is absolutely convergent if |an | conv. Absolute convergence implies convergence, but it is not the same. Example: alternating series.
+
+(an + |an |) −
+
+2
+
+

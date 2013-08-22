@@ -1,0 +1,29 @@
+Lecture 3: Tautologies
+Monday, September 27, 2010
+
+Math 345
+Jim Fowler
+
+Textbook
+This lecture discusses section 2 of the textbook.
+
+Homework
+The homework is due Wednesday, September 29, 2010. From Section 2 of the textbook, do exercises 14, 15, and 17.
+
+Modus Ponens
+If P holds and P ⇒ Q holds, then Q holds.
+
+Examples
+P ⇒ (P ∨ Q) (P ∧ Q) ⇒ P (P ∧ Q) ⇒ Q (P ∧ Q) ⇒ (P ∨ Q) ((P ∨ Q) ∧ ((P ⇒ R) ∧ (Q → R))) ⇒ Q. ((P ⇒ Q) ∧ (Q ⇒ R)) ⇒ (P ⇒ R)
+
+Reinforcement
+Converse Contrapositive
+
+1
+
+Examples Distributive law homework
+Have someone come up and write out the proof of the distributive law P ∧ (Q ∨ R) ≡ (P ∧ Q) ∨ (P ∧ R)
+
+2
+
+

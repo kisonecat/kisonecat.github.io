@@ -1,0 +1,10 @@
+extends ../layouts/main
+include helpers
+
+block content
+  mixin breadcrumbs(['/research', '/research/papers'],['Research', 'Publication List'])
+
+  h1 Publication List
+
+  - each paper in papers
+    mixin bibliographyEntry(paper)

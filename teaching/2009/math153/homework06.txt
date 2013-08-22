@@ -1,0 +1,42 @@
+Due Friday, October 17, 2008
+Remember: October 20 is the date of the ﬁrst midterm! (a) On page 571, section 11.7, do problems: 1, 6, 9, 10, 17, 31.
+
+(b) Consider the graph of f (x) = 1/x, restricted to x ∈ [1, ∞). Rotate this graph around the x-axis, to produce
+
+The surface area of this object is inﬁnite, but what is its volume?
+
+(c) The Gamma function is deﬁned as follows:
+∞
+
+Γ(z) =
+0
+
+tz−1 e−t dt.
+
+Compute Γ(5). Hint: ﬁrst compute Γ(1), and then integrate by parts to ﬁnd Γ(z) in terms of Γ(z − 1).†
+
+π/2
+
+(d) Evaluate
+0
+
+x dx. This is an extremely diﬃcult integral. tan x
+
+†
+
+If you are very stuck, look at http://en.wikipedia.org/wiki/Gamma_function
+
+c 2008 Jim Fowler
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Homework 6
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+c 2008 Jim Fowler
+
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+

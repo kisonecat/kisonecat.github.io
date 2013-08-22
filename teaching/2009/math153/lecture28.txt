@@ -1,0 +1,58 @@
+Lecture 28: Diﬀerential equations
+Math 153 Section 57 Monday December 1, 2008
+Following chapter 9. Diﬀerential equations are important: we often know something about the derivatives of a function, and we want to recover the function. Easy to verify a solution; hard to ﬁnd.
+
+The technique from the homework
+You already solved a diﬀ equ on your homework; this was using the technique of “separation of variables” which we will talk about more on Wednesday.
+
+Melting icecube
+The change in volume of a melting object is proportional to its surface area. That is, dV = k S(t) dt For a cube of side length r, V = r3 and S = 6r2 , so 3 r(t)2 Divide both sides by r(t) and get 3 so
+dr dt
+
+dr = k · 6r(t)2 dt dr = 6k dt
+
+= 2k.
+
+Homogeneous ﬁrst-order linear equations
+Consider: a(x) f (x) + b(x) f (x) = 0 Might as well divide everything by q(x), so we are left with f (x) + h(x) f (x) = 0. 1
+
+Note that if f1 and f2 are both solutions, then f1 + f2 is a solution. Note that if f1 is a solution, so is α · f1 . Can we solve this equation? Yes. Rewrite it as f (x) = −h(x) f (x) We integrate both sides log f (x) = − But then f (x) = e−
+R h(x) dx+C
+
+h(x) dx + C = ke−H(x) .
+
+This is a solution, and indeed, every solution has this form. Example: the change in the value of my company is proportional to its current value. f (x) = k f (x) which we can solve. Get ekx+C .
+
+Nonlinear equations
+Solve something like f (x) + f (x)2 = 0. Note that if f1 and f2 are solutions, there is no reason to believe f1 + f2 would be a solution. You could solve these by ﬁnding the Taylor coeﬃcients!
+
+Homogeneous second-order linear diﬀ equ
+Suppose we want to solve f (x) + b(x) f (x) + c(x) f (x) = 0 In other words d d2 + b(x) + c(x) f (x) = 0 2 dx dx
+
+Suppose we could “factor” the operator into d − r1 dx But then solutions include f (x) = e
+R r1 (x) dx
+
+d − r2 f (x) = 0 dx
+
+and f (x) = e
+
+R
+
+r2 (x) dx
+
+2
+
+Very concretely: f (x) − 5f (x) + 6 = 0 d d −2 − 3 f (x) = 0 dx dx So solutions include e2x and e3x . Check? More surprisingly, the spring equation: f (x) = −f (x) can be written as d2 + 1 f (x) = 0 dx2 This can be factored as
+
+and then written as
+
+d d −i + i f (x) = 0 dx dx where i2 = −1. But then the solutions we might guess would include f (x) = C · e±ix
+
+This includes sine and cosine! Why? (Problems appear if there are repeated roots)
+
+And the third degree case? And fourth? What about the nonhomogeneous case?
+What if we have f (x) + h(x) f (x) = g(x)? Can we ﬁnd a solution? Note that if f1 and f2 are solutions, it is no longer the case that f1 + f2 is a solution. Trick: integrating factor. Set H(x) = h(x) dx, and multiply by eH(x) . Then we want to solve eH(x) f (x) + h(x) eH(x) f (x) = eH(x) g(x). But this is the same as And so eH(x) f (x) = eH(x) g(x) dx + C d H(x) e f (x) = eH(x) g(x). dx
+
+General trick: sometimes multiplying by something (the “integrating factor”) lets us solve a previously unsolvable diﬀerential equation. What about nonhomogeneous second order equations? The method of “undetermined coeﬃcients” (i.e., make an educated guess). 3
+
+

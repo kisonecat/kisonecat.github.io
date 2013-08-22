@@ -1,0 +1,164 @@
+Midterm 2 Solution Set
+
+Math 345
+November 2010
+
+The essence of mathematics is not to make simple things complicated, but to make complicated things simple. —Stan Gudder
+
+Name: Lecture time (circle one): 12:30–1:18p.m. 2:30–3:18p.m.
+
+1. Write your name above. 2. Calculators are forbidden (and useless, anyhow). 3. Do not look inside the exam until instructed to do so. 4. You have 48 minutes for this exam. 5. Justify your answers for full credit. 6. Show your work for generous partial credit. 7. Write your answers on the included pages, or request additional paper. 8. Answer all questions asked. 9. To prevent ﬁre, do not divide by zero.
+
+Problem Problem Problem Problem Problem Total
+
+1 2 3 4 5
+
+/360 /360 /360 /360 /360 /1800
+
+Problem 1
+State the binomial theorem, and then apply it to prove that, for nonnegative integers n,
+n
+
+/360
+n k = 2n .
+
+k=0
+
+Be sure to explain your argument carefully.
+
+Solution
+First, I state the binomial theorem: For x, y ∈ R and a nonnegative integer n,
+n
+
+(x + y) =
+k=0
+
+n
+
+n n−k k x y . k
+
+Claim.
+
+n
+
+k=0
+
+n k
+
+= 2n .
+
+Proof. Let x = y = 1; then the binomial theorem gives
+n
+
+(1 + 1)n =
+k=0
+
+n n−k k 1 1 . k
+
+But 1k = 1 and 1n−k = 1, so
+n
+
+2n = (1 + 1)n =
+k=0
+
+n , k
+
+which is what we wanted to prove.
+
+Commentary
+Some people gave an inductive proof of this fact; this is not needed. All you need to do is apply the binommial theorem.
+
+Problem 2
+
+/360
+
+Prove, by complete induction, that every integer x ≥ 2 is either prime, or is the product of primes.
+
+Solution
+Let P (x) be the statement that x is either prime, or a product of primes. In other words, P (x) is the statement that x = p1 · · · pn for primes pi . Claim. For all integers x ≥ 2, the statement P (x) is true. Proof. We proceed by induction. Base case. Let x = 2. Then two is prime, so P (2) is true. Inductive step. We assume P (k) holds for 2 ≤ k ≤ x. We want to show P (x + 1). If x + 1 is prime, then P (x + 1) is true. If x + 1 is not prime, then x + 1 = ab for a, b ∈ N with a = 1 and b = 1. Then 2 ≤ a < x + 1 and 2 ≤ b < x + 1, so P (a) and P (b) are true. This means a = p1 . . . pn and b = q1 · · · qm for primes pi and qj , so x + 1 = ab = (p1 . . . pn )(q1 · · · qm ) so P (x + 1) is true. Thus, by strong induction, the statement P (x) holds for all integers x ≥ 2.
+
+Commentary
+Some people did not use complete induction—you really need to use complete induction here.
+
+Problem 3
+Prove that there are inﬁnitely many prime numbers.
+
+/360
+
+Solution
+Claim. There are inﬁnitely primes numbers. Proof. Suppose not—then there are ﬁnitely many prime numbers, say p1 , . . . , pn . Consider x = p1 · · · pn + 1. By the previous problem, x can be written as a product of primes, so in particular, there is a prime number pi which divides x. But pi also divides the product of all the primes, p1 · · · pn . Therefore, by the theorem that an integer dividing a and b divides a − b, we conclude that pi divides x − p1 · · · pn . But then pi divides 1, but pi > 0, so pi ≤ 1. This implies pi = 1, which is a contradiction.
+
+Commentary
+Many people gave very nicely written solutions for this problem.
+
+Problem 4
+Let A = {k ∈ Z | k ≥ 3}. Prove by induction for each n ∈ A that n 3 = n (n − 1) (n − 2) . 6 n(n − 1) . 2
+
+/360
+
+You may use the recurrence relation for binomial coeﬃcients, and the fact that n 2 =
+
+You will get more points if you do the algebra in the induction eﬃciently than if you do it correctly but ineﬃciently—don’t just expand everything in sight. Look for a way to apply the distributive law to make your work easier to understand.
+
+Solution
+Let P (n) be the statement that n n (n − 1) (n − 2) . = 6 3 I claim, for an integer n with n ≥ 3, the statement P (n) holds. Proof. We proceed by induction. Base case. Consider n = 3. The statement P (3) is 3 3 = 3 (3 − 1) (3 − 2) = 1, 6
+
+which is true by inspecting Pascal’s triangle. Inductive step. Assume P (n); we will show P (n + 1). By the recurrence relation for binomial coeﬃcients, n+1 3 n n + 3 2 n n(n − 1) = + 3 2 n (n − 1) (n − 2) n(n − 1) = + 6 2 n+1 n−2 1 = (n)(n − 1) + = (n)(n − 1) 6 2 6 =
+
+(as we are told we may assume) (by the inductive hypothesis) (by the distributive law)
+
+which is the statement P (n + 1). Therefore, by induction, P (n) holds for all n ≥ 3.
+
+Commentary
+Many people used the fact that n n! = k k! (n − k)! to prove this; however, the problem requires that you do this by induction.
+
+Problem 5
+Give a proof by induction that, for all n ∈ N, n2 (n + 1)2 . k = 4 k=1
+3 n
+
+/360
+
+Then, explain why 13 + 23 + 33 + · · · + (210 )3 ≡ 1 (mod 3).
+
+Solution
+Let P (n) be the statement that
+n
+
+k3 =
+k=1
+
+n2 (n + 1)2 . 4
+
+I claim P (n) holds for all n ∈ N. Proof. We proceed by induction. Base case. Let n = 1. Then P (1) asserts
+1
+
+k3 =
+k=1
+
+12 (1 + 1)2 = 1, 4
+
+which is true. Inductive step. Suppose P (n); we prove P (n + 1). Since P (n), we know
+n
+
+k3 =
+k=1
+
+n2 (n + 1)2 . 4
+
+Adding (n + 1)3 to both sides yields
+n+1
+
+k3 =
+k=1
+
+n2 (n + 1)2 + (n + 1)3 4 n2 + (n + 1) 4 n2 4n + 4 + 4 4 2 n + 4n + 4 4 (n + 2)2 , 4
+
+= (n + 1)2 = (n + 1)2 = (n + 1)2 = (n + 1)2
+
+which is the statement P (n + 1), so, by induction, we may conclude ∀n ∈ N P (n).
+
+Claim. 13 + 23 + 33 + · · · + (210 )3 ≡ 1 (mod 3) Proof. By the preceeding claim, 13 + 23 + 33 + · · · + (210 )3 = (210 )2 (210 + 1)2 , and 4
+
+(210 )2 (210 + 1)2 220 (220 + 2 · 210 + 1) = 4 4 = 218 (220 + 2 · 210 + 1) = 49 (410 + 2 · 45 + 1) ≡ 19 (110 + 2 · 15 + 1) (mod 3) ≡ 1(1 + 2 + 1) (mod 3) ≡ 4 ≡ 1 (mod 3)
+
+

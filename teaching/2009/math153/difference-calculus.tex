@@ -1,0 +1,194 @@
+\documentclass[12pt]{article}
+
+\usepackage{fullpage}
+\usepackage{nopageno}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{add-copyright}
+
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{condition}{Condition}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+\newtheorem{problem}{Problem}
+\newtheorem{exercise}{Exercise}
+
+\title{Calculus of Finite Differences}
+\author{Jim Fowler}
+
+\begin{document}
+
+\section*{Calculus of Finite Differences}
+
+Mathematics is not just about solving problems: it is about analogies
+(and analogies between analogies).  If two things are perfectly
+analogous, they are exactly the same, so analogies are most
+interesting when they are imperfect.
+
+In this spirit, I present a ``dictionary,'' the term mathematicians
+often use when speaking of an analogy between two fields of study.  In
+this case, the analogy is between functions and sequences, between
+calculus and ``the calculus of finite differences.''
+
+\subsection*{Dictionary}
+\begin{center}
+\begin{tabular}{rcl}
+function $f$ & $\leadsto$ & sequence $\mathbf{a}$ \\
+$f(x)$ & $\leadsto$ & $\mathbf{a}_n$ \\
+derivative $\left(\frac{d}{dx}f\right)(x)$ & $\leadsto$ & difference $(D\mathbf{a})_n = \mathbf{a}_{n+1} - \mathbf{a}_n$ \\
+integral $F(x) = \displaystyle\int_0^x f(x) \, dx$ & $\leadsto$ & sum $\mathbf{b}_n = (I\mathbf{a})_n = \displaystyle\sum_{k=0}^n \mathbf{a}_k$ \\
+fundamental theorem of Calculus &$\leadsto$& telescoping sum \\
+differential equation &$\leadsto$& difference equation \\
+\end{tabular}
+\end{center}
+A true statement about functions and their derivatives can be
+``translated'' into a possibly true statement about sequences and
+their differences.
+
+\subsection*{Notation}
+
+Sequences have bold names, e.g., $\mathbf{a}, \mathbf{b}, \mathbf{c}$.
+The terms of a sequence are indexed by a subscript, e.g.,
+$\mathbf{a}_n$; the index may be any integer, e.g.,
+$\mathbf{a}_{-23}$.  Operators, which transform one sequence into
+another, are denoted by a capital letter.  Some operators include:
+\begin{center}
+\begin{tabular}{ccc}
+\textbf{Difference} & \textbf{Sum} & \textbf{Shift} \\
+$\left(D\mathbf{a}\right)_n = \mathbf{a}_{n+1} - \mathbf{a}_n$ &
+$\left(\Sigma \mathbf{a}\right)_n = \displaystyle\sum_{i=0}^n \mathbf{a}_i$ &
+$(S\mathbf{a})_n = \mathbf{a}_{n+1}$.
+\end{tabular}
+\end{center}
+
+\subsection*{The sum rule}
+The ``derivative'' of a sum is the sum of the ``derivatives,'' as
+follows:
+\begin{eqnarray*}
+\left( D\left(\mathbf{a} + \mathbf{b}\right) \right)_n 
+&=& \left(\mathbf{a} + \mathbf{b} \right)_{n+1} - \left(\mathbf{a} + \mathbf{b} \right)_{n} \\
+&=& \mathbf{a}_{n+1} + \mathbf{b}_{n+1} - \mathbf{a}_n - \mathbf{b}_n \\
+&=& \left( \mathbf{a}_{n+1} - \mathbf{a}_n \right) + \left( \mathbf{b}_{n+1} - \mathbf{b}_n \right) \\
+&=& \left(D\mathbf{a}\right)_n + \left(D\mathbf{b}\right)_n.
+\end{eqnarray*}
+Formally, this resembles $(f + g)'(x) = f'(x) + g'(x)$.
+
+\subsection*{The fundamental theorem of Calculus}
+
+Suppose $\mathbf{a} = D\mathbf{b}$, so $\mathbf{b}$ is an
+``antiderivative'' for $\mathbf{a}$.  Then,
+\begin{eqnarray*}
+\left(\Sigma \mathbf{a}\right)_n &=& \left(\Sigma D\mathbf{b}\right)_n \\
+&=& \sum_{i=0}^n \left( \mathbf{b}_{i+1} - \mathbf{b}_i \right) \\
+&=& \left( \mathbf{b}_{n+1} - \mathbf{b}_n \right) + 
+ \left( \mathbf{b}_{n} - \mathbf{b}_{n-1} \right) + 
+ \left( \mathbf{b}_{n-1} - \mathbf{b}_{n-2} \right) + \cdots +
+ \left( \mathbf{b}_{1} - \mathbf{b}_{0} \right) \\
+&=& \mathbf{b}_{n+1} - \mathbf{b}_0.
+\end{eqnarray*}
+Formally, this resembles the fact that if $f(x) = F'(x)$, then
+$\displaystyle\int_0^x f(x)\, dx = F(x) - F(0)$.
+
+\subsection*{The product rule}
+We can take successive differences of the product of two sequences as
+follows:
+\begin{eqnarray*}
+D\left(\mathbf{a} \cdot \mathbf{b}\right)_n
+&=& \left( \mathbf{a} \cdot \mathbf{b} \right)_{n+1}  - 
+\left( \mathbf{a} \cdot \mathbf{b} \right)_n  \\
+&=& \mathbf{a}_{n+1} \cdot \mathbf{b}_{n+1}  - 
+\mathbf{a}_n \cdot \mathbf{b}_n  \\
+&=& \mathbf{a}_{n+1} \cdot \mathbf{b}_{n+1} - 
+\mathbf{a}_{n} \cdot \mathbf{b}_{n+1} + 
+\mathbf{a}_{n} \cdot \mathbf{b}_{n+1} - 
+\mathbf{a}_n \cdot \mathbf{b}_n  \\
+&=& \left(\mathbf{a}_{n+1} - \mathbf{a}_n\right) \cdot \mathbf{b}_{n+1} +
+\mathbf{a}_{n} \cdot \left(\mathbf{b}_{n+1} - \mathbf{b}_n\right) \\
+&=& \left( D\mathbf{a}\right)_n \cdot \mathbf{b}_{n+1} + \mathbf{a}_{n} \cdot \left(D\mathbf{b} \right)_n.
+\end{eqnarray*}
+Formally, this resembles $(f \cdot g)'(x) = f'(x) \cdot g(x) + f(x) \cdot g'(x)$.
+
+\subsection*{Exercises}
+
+\begin{exercise}
+Let $\mathbf{a}_n = n$.  What is $D\mathbf{a}$?
+\end{exercise}
+
+\begin{exercise}
+Let $\mathbf{a}_n = n \cdot n$.  What is $D\mathbf{a}$?
+\end{exercise}
+
+\begin{exercise}
+  Find a sequence $\mathbf{a}$ solving the difference equation
+  $D\mathbf{a} = 2$.
+\end{exercise}
+
+\begin{exercise}
+  Find a sequence $\mathbf{a}$ solving the difference equation $D^2
+  \mathbf{a} = 2$.  Can you find another sequence solving the equation
+  (besides $\mathbf{a} + C$)?  Can you find a third solution?
+\end{exercise}
+
+\begin{exercise}
+  Find a nonzero sequence $\mathbf{a}$ solving the difference equation
+  $D\mathbf{a} = \mathbf{a}$.
+\end{exercise}
+
+\begin{exercise}
+  Find a nonzero sequence $\mathbf{a}$ solving the difference equation
+  $D\mathbf{a} = c \cdot \mathbf{a}$.
+\end{exercise}
+
+\begin{exercise}
+  Find a nonzero sequence $\mathbf{a}$ solving the difference equation
+  $D\mathbf{a} = c \cdot \mathbf{a}$.  Is this always possible?
+\end{exercise}
+
+\begin{exercise}
+  Find a nonzero sequence $\mathbf{a}$ solving the difference equation
+  $D^2 \mathbf{a} = - \mathbf{a}$.  This is quite interesting; a sequence which begins
+$$
+2, 2, 0, -4,  -8, -8, 0, 16, 32, 32, 0, -64, -128, -128, 0, 256, 512, \ldots
+$$
+is a solution---but can you find the general pattern?
+\end{exercise}
+
+\subsection*{Shift equations}
+
+Another equation you might enjoy solving is a ``shift equation''
+(these are usually called \textbf{recurrence relations}): can you find
+a sequence $\mathbf{a}_n$ which solves the equation
+$$
+S\mathbf{a} = 4 \cdot \mathbf{a}?
+$$
+The Fibonacci numbers $\mathbf{f}_n$ are a solution to a shift equation:
+$$
+S^2 \mathbf{f} = S \mathbf{f} + \mathbf{f}.
+$$
+
+\subsection*{Solving a shift equation}
+
+As a toy problem to consider, find a sequence $\mathbf{a}_n$ which
+solves
+$$
+S^2 \mathbf{a} = 5 \cdot S\mathbf{a} - 6 \cdot \mathbf{a}
+$$
+by the following method.  Rearrange this equation to have the form
+$$
+S^2 \mathbf{a} - 5 \cdot S\mathbf{a} + 6 \cdot \mathbf{a} = 0.
+$$
+``Factor'' the operators to get
+$$
+(S-3)\,(S-2)\,\mathbf{a} = 0.
+$$
+But $(S-2)$ kills the sequence $\mathbf{a}_n = 2^n$, and 
+$(S-3)$ kills the sequence $\mathbf{a}_n = 3^n$.  Is it the case that
+$$
+\mathbf{a}_n = \alpha \cdot 2^n + \beta \cdot 3^n
+$$
+is a solution to $S^2 \mathbf{a} = 5 \cdot S\mathbf{a} - 6 \cdot
+\mathbf{a}$, for any constants $\alpha$ and $\beta$?  What happens if
+you use this same trick on the Fibonacci sequence?
+
+\end{document}

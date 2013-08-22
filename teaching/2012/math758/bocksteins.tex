@@ -1,0 +1,100 @@
+\documentclass[12pt]{handout}
+\usepackage{nopageno}
+\course{Math 758}
+\title{Cohomology Operations}
+\author{Jim Fowler}
+
+\usepackage{amsmath}
+\newtheorem*{theorem*}{Theorem}
+\newtheorem*{corollary*}{Corollary}
+\theoremstyle{definition}
+\newtheorem{question}[theorem]{Question}
+\newtheorem*{remark*}{Remark}
+\newtheorem*{definition*}{Definition}
+\newtheorem*{example*}{Example}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{subproblem}[theorem]{Subproblem}
+\newtheorem{requiredproblem}[theorem]{\makebox[0in][r]{$\bullet$\hspace{0.25em}}Problem}
+
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\CP}{\mathbb{C}P}
+\newcommand{\RP}{\mathbb{R}P}
+\newcommand{\Z}{\mathbb{Z}}
+\DeclareMathOperator{\projection}{proj}
+\DeclareMathOperator{\link}{link}
+
+\begin{document}
+
+\maketitle
+
+\begin{problem}
+  Use $0 \to \Z/p \to \Z/p^2 \to \Z/p \to 0$ to produce a map
+\[
+\beta : H^\star(X;\Z/p) \to H^{\star+1}(X;\Z/p)
+\]
+\end{problem}
+
+\vfill
+
+\begin{problem}
+  Use $0 \to \Z \to \Z \to \Z/p \to 0$ to produce a map
+  \[
+  \tilde{\beta} : H^\star(X;\Z/p) \to H^{\star+1}(X;\Z)
+  \]
+\end{problem}
+
+\vfill
+
+\begin{problem}
+  There is a map from $0 \to \Z \to \Z \to \Z/p \to 0$ to $0 \to \Z/p
+  \to \Z/p^2 \to \Z/p \to 0$; what relationship does this provide
+  between $\beta$ and $\tilde{\beta}$?
+\end{problem}
+
+\vfill
+
+\begin{problem}
+  For which $n$ is
+  \[
+  \beta : H^n(\RP^\infty;\Z/2) \to H^{n+1}(\RP^\infty;\Z/2)
+  \]
+  an isomorphism?  Zero?
+\end{problem}
+
+\vfill
+
+\begin{problem}
+  Determine the sign in the formula
+  \[ 
+  \beta(x \smallsmile y) = \beta(x) \smallsmile y \pm x \smallsmile \beta(y).
+  \]
+\end{problem}
+
+\vfill
+
+\begin{problem}
+  Show that $\beta \circ \beta = 0$.
+\end{problem}
+
+\vfill
+
+\begin{problem}
+  Compute the homology of the ``chain complex'' $H^\star(X;\Z/p)$
+  where the differential is $\beta$.
+\end{problem}
+
+\vfill
+
+\begin{problem}
+  Compute $H^\star(\RP^\infty \times \RP^\infty ; \Z)$.
+\end{problem}
+
+\pagebreak
+\null
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

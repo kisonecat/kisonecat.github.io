@@ -1,0 +1,739 @@
+\documentclass[14pt]{beamer}
+
+\setbeamertemplate{navigation symbols}{}
+
+\usepackage{pgf}
+\usepackage{amsmath}
+\usepackage{amsthm}
+%\newtheorem*{problem}{Problem}
+\usepackage{amssymb}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+
+\usepackage{stmaryrd}
+\newcommand{\boundary}{\partial}
+\newcommand{\collapses}{\searrow}
+\newcommand{\expands}{\nearrow}
+\newcommand{\she}{\ssearrow\nnearrow}
+\newcommand{\join}{\ast}
+\newcommand{\subdivided}{\triangleleft}
+
+\DeclareMathOperator{\st}{st}
+\DeclareMathOperator{\vertices}{vert}
+\DeclareMathOperator{\lk}{lk}
+\DeclareMathOperator{\cl}{cl}
+\DeclareMathOperator{\interior}{int}
+
+\title{Topology of  \\ Piecewise-Linear Manifolds}
+\author{Jim Fowler}
+\date{Lecture 5 \\ Summer 2010}
+
+\newcommand{\setbackgroundpicture}[1]{%
+\usebackgroundtemplate{
+\begin{pgfpicture}{0in}{0in}{\paperwidth}{\paperheight}
+\pgfputat{\pgfxy(0,0)}{\includegraphics[width=\paperwidth]{#1}}
+\color{white}
+\pgfsetfillopacity{0.8}
+\pgfrect[fill]{\pgfxy(0,0)}{\pgfpoint{\paperwidth}{\paperheight}}
+\end{pgfpicture}
+}
+}
+\newcommand{\clearbackgroundpicture}{\usebackgroundtemplate{}}
+
+\begin{document}
+
+\begin{frame}
+\maketitle
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setbackgroundpicture{hammer.jpg}
+\begin{frame}
+ \vfill
+  \begin{center}
+    Why do you keep hitting your hand with a hammer?
+ \end{center}
+  \vfill
+\end{frame}
+\clearbackgroundpicture
+
+\setbackgroundpicture{A20_Ouest_km143.jpg}
+\begin{frame}
+\frametitle{Where are we?}
+
+\begin{pgfpicture}{0in}{0in}{\textwidth}{\textheight}
+\pgfsetxvec{\pgfpoint{\textwidth}{0cm}}
+\pgfsetyvec{\pgfpoint{0cm}{\textheight}}
+
+\only<2->{\pgfputat{\pgfxy(0.25,0.80)}{\pgfbox[center,bottom]{\scalebox{1}{\Huge\textcolor{green!50!black}{Objects}}}}}
+
+\only<2->{\pgfputat{\pgfxy(0.25,0.6)}{\pgfbox[center,bottom]{\scalebox{1}{\large\textcolor{green!50!black}{\parbox{0.5\textwidth}{\begin{center}\uncover<3->{PL manifolds?} \\ \uncover<4->{simplicial complexes}\end{center}}}}}}}
+
+\only<5->{\pgfputat{\pgfxy(0.75,0.80)}{\pgfbox[center,bottom]{\scalebox{1}{\Huge\textcolor{red!50!black}{Maps}}}}}
+
+\only<5->{\pgfputat{\pgfxy(0.75,0.6)}{\pgfbox[center,bottom]{\scalebox{1}{\large\textcolor{red!50!black}{\parbox{0.5\textwidth}{\begin{center}\uncover<6->{PL maps?} \\ \uncover<7->{simplicial maps}\end{center}}}}}}}
+
+\only<8->{\pgfputat{\pgfxy(0.5,0.35)}{\pgfbox[center,bottom]{\scalebox{1}{\Huge\textcolor{blue!50!black}{Invariants}}}}}
+
+\only<9->{\pgfputat{\pgfxy(0.3333,0.25)}{\pgfbox[center,bottom]{\scalebox{1}{\Large\textcolor{blue!50!black}{$\chi$}}}}}
+
+\only<10->{\pgfputat{\pgfxy(0.6666,0.25)}{\pgfbox[center,bottom]{\scalebox{1}{\Large\textcolor{blue!50!black}{$b_0$}}}}}
+
+\end{pgfpicture}
+\end{frame}
+\clearbackgroundpicture
+
+\setbackgroundpicture{Planisphaeri_celeste.jpg}
+  \begin{frame}
+    \vfill
+    \begin{center}
+   \large How to define \\
+   \vspace{2ex}\scalebox{3}{\Huge PL} \\
+   \vspace{1ex}\scalebox{3}{\large maps}
+   \end{center}
+    \vfill
+  \end{frame}
+\clearbackgroundpicture
+
+\setbackgroundpicture{salad-fork.jpg}
+\begin{frame}
+  \vfill
+  \begin{center}
+    \textbf{a fork in the road}  \\
+    \vspace{0.25\textheight}
+    our notion of subdivision is, thus far, \\
+    restricted to stellar subdivision
+  \end{center}
+  \vfill
+\end{frame}
+\clearbackgroundpicture
+
+\setbackgroundpicture{Aristotle_Altemps_Inv8575.jpg}
+\begin{frame}
+  \vfill
+  \begin{center}
+   Why restrict to stellar subdivision?
+    \vfill
+    \Huge Some \\
+    Philosophy \\
+   \vfill
+    \normalsize ``Lines are made up of points? Really?''
+    \vfill
+  \end{center}
+  \vfill
+\end{frame}
+\clearbackgroundpicture
+
+\begin{frame}
+  \frametitle{State of the art}
+
+  \begin{theorem}
+    Two $n$-dimensional simplicial complexes\\
+    are PL homeomorphic \\
+    if and only if \\
+    they are stellar equivalent.
+  \end{theorem}
+
+  \vfill
+  \pause
+  \begin{theorem}
+    A PL map $f : K \to L$ is a simplicial map
+    \\ from a subdivision of $K$ \\
+    to a stellar subdivision of $L$.
+  \end{theorem}
+
+  \textbf{Warning:} The subdivision of $K$ needn't be stellar. \\
+
+  \pause
+  \textbf{Question:} What does ``subdivision'' mean?
+
+\end{frame}
+
+% \setbackgroundpicture{broken-logs.jpg}
+% \begin{frame}
+%   \frametitle{Help put my shattered dreams together}
+
+%   Can't we set up PL theory in a way that doesn't involve, well, the
+%   \textbf{real numbers?}  I want a wholly combinatorial framework
+%   befitting the combinatorial objects!
+
+%   \vfill\pause
+
+%   How could we do this?
+
+%   \vfill\pause
+
+%   Mathematical reality versus definition-chasing
+
+%   \vfill\pause
+
+%   \textbf{Goal:} develop a theory of ``regular neighborhoods'' and
+%   ``collapse'' which will mostly obviate the need for the
+%   combinatorics, anyhow.
+  
+% \end{frame}
+% \clearbackgroundpicture
+
+\begin{frame}
+\frametitle{The combinatorial part}
+
+\begin{itemize}
+\item  simplicial complex
+\item  join
+\item  link
+\item  star
+\item  Euler characteristic
+\item PL manifold: a complex $K$ the link of each vertex PL
+  homeomorphic (meaning stellar equivalent) to a sphere.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{The non-combinatorial part}
+
+The notion of PL map is not quite general enough:\\
+a simplicial map from a stellar subdivision of $K$ \\
+to a stellar subdivision of $L$ is a PL map, \\
+but we will need more general maps.
+
+\vfill
+
+To do this, we will place our simplexes in $\mathbb{R}^n$.
+
+\end{frame}
+
+% need products to get ambient isotopy
+% also high dimensional manifolds
+% real projective plane
+
+% \begin{frame}
+%  \vfill
+%  \begin{center}
+%    \large
+%    I will have a handout prepared for Friday 
+%    with the following definitions.
+%  \end{center}
+%  \vfill
+% \end{frame}
+
+\begin{frame}
+\vfill
+ $$\scalebox{5}{$\mathbb{R}^n$}$$
+\vfill
+\end{frame}
+
+\begin{frame}
+The join of $A, B \subset \mathbb{R}^n$ is
+$$
+\{ \lambda a + (1-\lambda) b : a \in A, b \in B, \lambda \in [0,1] \}
+$$
+\end{frame}
+
+\begin{frame}
+  \frametitle{Polyhedron}
+
+  $P \subset \mathbb{R}^n$ is a \textbf{polyhedron} \\
+  if for each $p \in P$ \\
+  there is a neighborhood $N \ni p$ \\
+  so that $N = p \join L$, \\
+  with $L$ closed and bounded.
+
+  \vfill
+  \pause
+  For example, $N = \{ q \in P : d(p,q) \leq \epsilon \}$,
+  but we allow more general neighborhoods.
+
+  \vfill
+  \pause
+  $N$ is called a \textbf{closed star} around $p$. \\
+  $L$ is a \textbf{link} of $p$.
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Piecewise linear map}
+  Let $P, Q$ be polyhedra. \\
+  $f : P \to Q$ is a PL map \\
+  if each point $p \in P$ \\
+  has a closed star $N = p \join L$ \\
+  so that $f(\lambda p + (1-\lambda) x) = \lambda f(p) + (1 - \lambda)
+  f(x)$ \\
+  for $x \in L$ and $\lambda \in [0,1]$.
+
+  \vfill
+
+  In short, it locally maps conical rays to conical rays.
+
+\end{frame}
+
+\setbackgroundpicture{Stair10.jpg}
+\begin{frame}
+  \frametitle{Next steps}
+  \pause
+  \begin{itemize}
+   \item New constructions \pause\\
+     \textcolor{green!50!black}{connected sum}\pause and \\
+      \textcolor{green!50!black}{Cartesian product}, using polyhedra \pause \\
+    \item New invariant \pause\\
+      \textcolor{green!50!black}{orientability, $w_1$}\pause
+    \item New kind of equivalence \pause\\
+      \textcolor{green!50!black}{simple homotopy equivalence}
+ \end{itemize}
+
+\end{frame}
+\clearbackgroundpicture
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+  \vfill
+  \begin{center}
+    \scalebox{5}{\Huge $\#$} \\
+   \vspace{2ex}\hspace{-2em}connected sum
+  \end{center}
+  \vfill
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{Connected sum}
+
+  \begin{definition}
+  Suppose $K$ and $L$ are two $n$-manifolds. \\
+  \vspace{1ex}%
+  \begin{tabular}{@{}l@{ }l@{ }l@{ }l@{ }l}
+  Let & $K'$ & be & $K$ & with one $n$-simplex removed. \\
+   & $L'$ &  & $L$ &
+  \end{tabular} \\
+  \vspace{1ex}Define $K \# L = K' \cup_{\boundary \Delta^n} L'$.
+\end{definition}
+
+\vfill
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\uncover<2->{
+\begin{problem}
+ What is $T^2 \# T^2$?
+\end{problem}}
+\end{column}
+\begin{column}{0.5\textwidth}
+\uncover<3->{
+\begin{problem}
+ What is $S^2 \# T^2$?
+\end{problem}}
+\end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\vfill
+$$
+ \includegraphics[width=0.25\textwidth]{torus.png} \raisebox{0.06\textwidth}{$\#$}
+ \includegraphics[width=0.25\textwidth]{torus.png}  \raisebox{0.06\textwidth}{$\cong$}
+ \hspace{1ex}\includegraphics[width=0.25\textwidth]{genus-two-surface.png}
+$$
+\vfill
+\end{frame}
+
+\begin{frame}
+\vfill
+$$
+ \includegraphics[width=0.25\textwidth]{torus.png} \raisebox{0.06\textwidth}{$\#$}
+ \includegraphics[width=0.25\textwidth]{genus-two-surface.png}  \raisebox{0.06\textwidth}{$\cong$}
+ \uncover<2->{\includegraphics[width=0.25\textwidth]{genus-three-surface.png}}
+$$
+\vfill
+\uncover<3->{In general, $\Sigma_g = \mbox{genus $g$ surface}$,}\\
+\vspace{1ex}
+\uncover<4->{and $T^2 \# \Sigma_g  = \Sigma_{g+1}$.}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Covering map}
+
+  \begin{definition}
+    $f : M \to N$ is an $n$-fold \textbf{covering map} \\
+    if for every $k$-simplex $\tau \in N$, \\
+    $f^{-1}(\tau)$ consists of $n$ copies of a $k$-simplex.
+%    if there is a subdivision $N'$ of $N$, \\
+%    so that for every vertex $v \in N'$ \\
+%    $f^{-1}(\cl \st(v,N)) \cong$ $n$ copies of $\cl \st(v, N)$, \\
+%    and $f$ is a homeo onto each copy of $\cl \st(v, N)$.
+  \end{definition}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Gift-wrapping surfaces}
+
+  \begin{problem}
+    When is there an $n$-fold covering map \\
+    from a genus $g$ surface \\
+    to a genus $g'$ surface?
+  \end{problem}
+  \pause
+  \begin{theorem}
+    If $f : M \to N$ is an $n$-fold covering map \\
+    then $\chi(M) = n \cdot \chi(N)$.
+  \end{theorem}
+  \pause
+  \begin{problem}
+    What is $\chi(\mbox{genus $g$ surface})?$
+  \end{problem}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \vfill
+  \begin{center}
+    \scalebox{5}{\Huge $\times$} \\
+   \vspace{2ex}Cartesian product
+  \end{center}
+  \vfill
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Products, geometrically}
+
+\begin{definition}
+Suppose $K \subset \R^n$, and $L \subset R^m$. \\
+The product of $K$ and $L$ is
+$$
+K \times L = \{ (k,\ell) \in \R^{n+m} : k \in K, \ell \in L \}.
+$$
+\end{definition}
+
+\pause
+\vfill
+Could we do this for a simplicial complex?
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+ \frametitle{Product of simplexes}
+ How do we take a product of $\Delta^1$ and $\Delta^1$?
+ \vfill
+\end{frame}
+
+\begin{frame}
+\frametitle{Product of simplexes}
+How do we take a product of $\Delta^1$ and $\Delta^2$?
+\vfill
+\end{frame}
+
+\begin{frame}
+\frametitle{Product of simplexes}
+How do we take a product of $\Delta^2$ and $\Delta^2$? \\\pause
+Hard to see, so let's take a step back.
+\vfill
+\end{frame}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{frame}
+% \frametitle{Properties of products}
+
+% The product of $\Delta^n$ and $\Delta^m$ should have projection maps
+% \begin{align*}
+% p_1 &: \Delta^n \times \Delta^m \to \Delta^n \\
+% p_2 &: \Delta^n \times \Delta^m \to \Delta^m
+% \end{align*}
+% so that a point in $\Delta^n \times \Delta^m$ is determined by where
+% it lands under the two projection maps.
+
+% \vfill
+
+% \end{frame}
+
+\begin{frame}
+
+  Vertices of $\Delta^n \times \Delta^m$ are pairs \\
+  $(i,j)$ with $0 \leq i \leq n+1$ and $0 \leq j \leq m+1$.
+
+  \pause
+  \vfill
+  A simplex of $\Delta^n \times \Delta^m$ is \rule{48pt}{12pt}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Some counting problems}
+
+  \vfill
+
+  $\Delta^1 \times \Delta^n$ has $(n+1)!$ triangulations. \\
+
+  \vfill\pause
+
+  $\Delta^2 \times \Delta^n$ has \rule{48pt}{12pt} triangulations.
+
+  \vfill\pause
+
+  So maybe it would be nice if we could handle these cases without
+  resorting to simplexes.
+  
+\end{frame}
+
+\begin{frame}
+  \frametitle{Product of polyhedra is a polyhedron}
+
+  $P, Q$ polyhedra. \\
+  Is $P \times Q$ a polyhedron?
+  \vfill\pause
+  Need neighborhood of $(p,q) \in P \times Q$.
+  \vfill\pause
+  $p \in P$ has a neighborhood $p \join L_p$ \\
+  $q \in Q$ has a neighborhood $q \join L_q$ \\
+  \vfill\pause
+  Use $(p,q) \join (L_p \join L_q)$.
+
+\end{frame}
+
+%0a 0b 1a 1b
+%0a 0b 1a
+%0b 1a 1b
+
+% K times L,
+% get CK times L
+% 
+% CK times L is a copy of L attached to K times L
+
+\begin{frame}
+  \frametitle{Some 4-manifolds}
+  \Huge
+  \vfill
+  \begin{center}\pause
+  $S^3 \times S^1$\\\pause
+  $S^2 \times S^2$\\\pause
+  $\Sigma_g \times \Sigma_h$
+  \end{center}
+  \vfill
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbackgroundpicture{Templo_de_Afaia3.JPG}
+\begin{frame}
+  \vfill
+  \begin{center}
+    \scalebox{5}{\Huge $w_1$} \\
+   \vspace{2ex}orientability
+  \end{center}
+  \vfill
+\end{frame}
+\clearbackgroundpicture
+
+\begin{frame}
+  \frametitle{The torus versus the Klein bottle}
+
+Since $\chi(T^2) = \chi(K) = 0$, \\
+we can't distinguish $T^2$ and $K$ using $\chi$.
+
+\pause
+\vfill
+
+We need a new invariant.
+
+\vfill
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Orientation}
+
+  An orientation of a simplex is \\
+  a choice of ordering of the vertices,\\
+  up to an even permutation.
+
+  \vfill
+  \pause
+
+  \begin{definition}
+    An orientation on a manifold $M^n$ \\
+    is an orientation of each $n$-simplex \\
+    so that neighboring $n$-simplexes \\
+    induce opposite orientations on the shared $(n-1)$-simplex.
+  \end{definition}
+  \vfill
+  \pause
+
+  If $M$ admits an orientation, $w_1(M) = 0$. \\
+  Otherwise, $w_1(M) = 1$.
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Orientability for surfaces}
+
+  \begin{theorem}
+    A surface $\Sigma$ is not orientable \\
+    iff $\Sigma$ contains a M\"obius strip.
+  \end{theorem}
+  \pause
+  \begin{problem}
+   What is $w_1(T^2)$?
+ \end{problem}
+  \pause
+  \begin{problem}
+    What is $w_1(K)$?
+  \end{problem}
+  \pause
+ \begin{problem}
+   Is $w_1$ a PL homeomorphism invariant?
+ \end{problem}
+  
+\end{frame}
+
+\begin{frame}
+  \frametitle{Distinguishing other manifolds?}
+
+  Can we distinguish $T^3$ and $S^3$ with Euler characteristic?
+
+  \vfill
+  \pause
+
+  No\pause\ldots
+
+  \vfill
+
+  We need more invariants, \\
+  \pause
+  or a looser notion of ``the same.''
+  
+\end{frame}
+
+% a surface comes with a naturally defined map 
+% into a space of $n$-vertex circles with two marked points
+
+% vertices are 3, 4, 5, ... (different circles)
+% edges are unions of circles along two points
+% 
+
+
+\setbackgroundpicture{collapsedbarn.jpg}
+\begin{frame}
+  \vfill
+  \begin{center}
+    \Huge Simplicial \\
+    Collapse
+  \end{center}
+  \vfill
+\end{frame}
+\clearbackgroundpicture
+
+\begin{frame}
+  \frametitle{Principal Simplexes}
+
+  \begin{definition}
+  Let $K$ be a complex, and \\
+  $\sigma \in K$ a simplex.  \\
+  Call $\sigma$ a \textbf{principal simplex} \\
+  if the only simplex containing $\sigma$ \\
+  is $\sigma$ itself \\
+  \quad (i.e., it isn't contained in a larger simplex).
+  \end{definition} 
+
+  \pause
+  \begin{problem}
+  Does every complex have a principal simplex?
+  \end{problem}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Free faces}
+
+  \begin{definition}
+  Let $K$ be a complex, \\
+  and $\sigma \in K$ a simplex, \\
+  and $\tau < \sigma$ a face. \\
+  \vspace{1ex}Call $\tau$ a \textbf{free face} of $\sigma$ \\
+  if the only simplexes containing $\tau$ \\
+  are $\tau$ and $\sigma$.
+  \end{definition}
+
+  \pause
+  \begin{problem}
+    \begin{tabular}{@{}l@{ }c@{ }l}
+      Does & every & complex have a simplex with a free face? \\\pause
+      Does & any & complex have a simplex with a free face? \\
+   \end{tabular}
+ \end{problem}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Elementary simplicial collapse}
+
+\begin{definition}
+  Let $L$ and $K = L \cup \cl \{ \sigma, \tau \}$ be complexes \\
+
+  \vspace{1ex}If $\sigma$ is a principal simplex of $K$, and \\
+  $\tau$ is a free face of $\sigma$, then \\
+  $L$ is an \textbf{elementary simplicial collapse} of $K$.
+\end{definition}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Simplicial collapse}
+
+\begin{definition}
+  Let $K_1, K_2, \ldots, K_n$ be complexes, with \\
+  $K_{i+1}$ an elementary simplicial collapse of $K_i$.
+
+  \vspace{1ex}Call $K_n$ a \textbf{simplicial collapse} of $K_1$, and \\
+  write $K_1 \collapses K_n$.
+
+  \vspace{1ex}Call $K_1$ a \textbf{simplicial expansion} of $K_n$, and \\
+  write $K_n \expands K_1$.
+\end{definition}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Simple homotopy equivalence}
+
+  \begin{definition}
+    $K$ is \textbf{simple homotopy equivalent} to $L$
+    \quad (sometimes abbreviated s.h.e.) \\
+    if you can reach transform $K$ into $L$ \\
+    via a sequence of
+    \begin{itemize}
+    \item PL homeomorphisms,
+    \item simplicial collapses,
+    \item simplicial expansions.
+    \end{itemize}
+    In this case, we write $K \she L$.
+  \end{definition}
+
+\end{frame}
+
+
+
+\setbackgroundpicture{zeeman.pdf}
+\begin{frame}
+  \frametitle{Next time}
+  \pause
+  \begin{itemize}
+    \item Regular neighborhoods \\
+    \item Knotting $S^1$ in $S^3$ \\
+    \item Unknotting $S^1$ in $S^4$ \\
+    \item How to unknot with simplicial collapse
+\end{itemize}
+
+\end{frame}
+\clearbackgroundpicture
+
+\end{document}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

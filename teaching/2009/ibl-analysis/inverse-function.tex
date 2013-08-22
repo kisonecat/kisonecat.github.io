@@ -1,0 +1,163 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+
+\title{Inverse Function Theorem}
+\author{IBL Analysis}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\transpose}{{\mbox{\scriptsize\sf T}}}
+
+\usepackage{fullpage}
+\usepackage{add-copyright}
+
+\begin{document}
+
+\maketitle
+
+\section{Nodal singularity}
+
+Consider the function $f : \R^2 \to \R$ given by $f(x,y) = xy$.
+
+Draw a picture of the level set where $f(x,y) = 0$.  For which $(x,y)$
+does the implicit function theorem apply?  What (not so terribly) terrifying
+event happens at $(x,y) = (0,0)$?
+
+\section{Cuspidal singularity}
+
+Consider the function $f : \R^2 \to \R$ given by $f(x,y) = x^3 - y^2$.
+
+Draw a picture of the level set where $f(x,y) = 0$.  For which $(x,y)$
+does the implicit function theorem apply?  What truly terrifying event
+happens at $(x,y) = (0,0)$?
+
+\section{Lines}
+
+Consider the function
+$$
+f : \R^2 \times \R \to \R^2
+$$
+given by
+$$
+f(x,y,t) = (x t, y (1-t))
+$$
+That is, $f$ sends $(x,y,t)$ to the point in $\R^2$ which is $t$ of the way between $(x,0)$ and $(0,y)$.
+
+Qualitatively describe $f^{-1}(x,y)$ using the implicit function
+theorem.  Are there choices of $(x,y)$ with drastically different
+behavior?
+
+\section{Polar coordinates}
+
+Consider the function $f : \R^2 \to \R^2$ given by
+$$
+f(r,\theta) = (r \cos \theta, r \sin \theta).
+$$
+For which $(r,\theta)$ is $f$ locally bijective?
+
+\section{Polynomials}
+
+Let $P_{n-1}$ be the (vector) space of degree $n-1$ polynomials in a
+variable $t$; note that $\dim P_n = n$.  Define a function $f : \R^n
+\to P_{n-1}$ given by
+$$
+f(x_1,\ldots,x_n) = (t - x_1) \cdots (t - x_n) - t^n
+$$
+So $f$ takes $n$ points in $\R$ to a polynomial having those points as
+its roots (well, that polynomial minus $t^n$).
+
+Find points $(x_i) \in \R^n$ for which there exists a neighborhood $U
+\ni (x_i)$ with $f(U)$ open.  Our goal can can be described more
+colorfully: we are seeking polynomals with $n$ roots, which, when
+wiggled, still have $n$ roots.
+
+For concreteness, it will help tremendously to explore the special
+cases $f : \R^2 \to P_1$ and then $f : \R^3 \to P_2$.
+
+\section{How to (not) flatten a sphere}
+
+Write $D^2$ for the open unit disk, i.e.,
+$$
+D^2 = \{ v \in \R^2 : ||v|| < 1 \}.
+$$
+A function from the sphere $S^2$ to $X$ is given by a \textit{pair} of
+functions $f : D^2 \to X$ and $g : D^2 \to X$ so that
+$$
+f(v) = g\left( \frac{\frac{3}{2} - ||v||}{||v||} \, v \right) \hspace{1em} \mbox{for $\frac{1}{2} < ||v|| < 1$}
+$$
+You should think of $f$ as defining the function on a bit more than
+the top hemisphere, and $g$ as defining the function on a bit more
+than the bottom hemisphere; the functions must agree on the overlap.
+
+Does there exist a function $S^2 \to \R^2$ with everywhere
+nonvanishing derivative?  (Equivalently, is it possible to put
+coordinates on the Earth so that at every point, four ``cardinal
+directions'' are defined?)
+
+\section{Square roots}
+
+Let $M_2$ be the four-dimensional space of two-by-two matrices; let $f
+: M_2 \to M_2$ be the function $f(A) = A \cdot A$.
+
+Compute $D f^{-1}(I)$.  Use this to approximate
+$$
+\sqrt{ \begin{bmatrix}
+0.9 & 0.1  \\
+0.1 & 1.1
+\end{bmatrix}}
+$$
+For extra fun, when is $D f$ invertible?  This will tell us when
+perturbations of matrices having square roots also have square roots.
+
+\section{Orthogonal matrices}
+
+Recall that a matrix is \textbf{orthogonal} if $A \cdot A^\transpose =
+I$.
+
+Let $M_3$ be the nine-dimensional vector space of 3-by-3 matrices; let
+$S_3$ be the six-dimensional vector space of symmetric 3-by-3
+matrices.  Define a function $f : M_3 \to S_3$ by $f(A) = A \cdot
+A^\transpose$.  A matrix is orthogonal if it is in $f^{-1}(I)$.
+
+Note that $f(I) = I$; along how many degrees of freedom may we perturb
+$I$ and still have an orthogonal matrix?  (You will have to compute
+$Df(I)$ to analyze this).
+
+Repeat this problem for the analogously defined function $M_2 \to S_2$
+to show that, in two dimensions, there is only one degree of freedom
+for rotation.  For rotations in four dimensions, how many degrees of
+freedom do you have?  (It would indeed be very confusing to be
+tumbling in four dimensionsal space).
+
+\section{Segre variety}
+
+Consider $f : \R^2 \times \R^2 \to \R^4$ given by
+$$
+f(v_1,v_2,w_1,w_2) = (v_1 w_1, v_1 w_2, v_2 w_1, v_2 w_2).
+$$
+For the linear algebra cognoscenti, this is a special case of a
+certain (nonlinear!) function $V \oplus W \to V \otimes W$.
+
+Globally, $f$ is not injective---after all,
+$$
+f(0,0,w_1,w_2) = (0,0,0,0).
+$$
+But are there points for which $f$ is \textit{locally} bijective?
+
+\section{Characteristic polynomials}
+
+Let $M_2$ be the four-dimensional vector space of two-by-two matrices;
+let $P_2$ be the three-dimensional vector space of degree two
+polynomials in a variable $\lambda$.
+
+The characteristic polynomial of a matrix $A$ is $\det (A - \lambda
+I)$; let $f : M_2 \to P_2$ be the function sending a matrix to its
+characteristic polynomial.  (If you are very fancy, you might have
+learned that the roots of the characteristic polynomial are the
+eigenvalues of the matrix).
+
+Tell me a interesting story involving the implicit function theorem and
+the function $f$.
+
+\end{document}

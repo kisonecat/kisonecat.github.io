@@ -1,0 +1,100 @@
+Lecture 11: Series
+Math 153 Section 57 Wednesday October 22, 2008
+Following chapters 12.1 and 12.2.
+
+Sigma notation
+Write
+N
+
+fn
+n=0
+
+or
+
+b
+
+fn
+n=a
+
+Draw an analogy with integration. Some properties:
+b b b
+
+(αfn + βgn ) = α
+n=a n=a b c
+
+fn + β
+n=a c
+
+gn
+
+and
+
+fn +
+n=a n=b+1
+
+fn =
+n=a
+
+fn
+
+Classic example:
+
+b n=1
+
+n = (b)(b + 1)/2
+
+Inﬁnite series
+Consider a series ∞ an . k=0 A partial sum is
+n
+
+sn =
+k=0
+
+an .
+
+If limn→∞ sn = L, then we write
+
+∞
+
+ak = L
+k=0
+
+1
+
+We call L the sum of the series. This is not the same as “adding up all the terms in the sequence.”
+
+Example
+The series ∞ 1 diverges. n=1 The series ∞ 1/2n converges to 1 (show the picture). Mention Zeno’s paradox, and n=1 the Singularity. The series ∞ (−1)n diverges. Thompson’s Lamp (every interval, the lamp switches on n=1 or oﬀ).
+
+The most important example
+Geometric series. If −1 < x < 1, then Proof: compute sk =
+∞ n n=1 x = 1/(1 − x). For k n n=1 x . Multiply by (1
+
+other values of x, the series diverges. − x) to get (1 − x)sk = 1 − xk+1 , so
+
+sk = And take the limt as k → ∞.
+
+1 − xk+1 1−x
+
+Application
+∞ 9 n=1 10n
+
+= 1.
+
+Wrong applications
+∞ n=0
+
+2n = −1? Uhm, no.
+
+Theorems
+Sum of convergent series are convergent. Products of convergent series by a constant are convergent.
+
+Simplest criterion
+If
+∞ k=0
+
+ak converges, then lim ak = 0.
+
+2
+
+

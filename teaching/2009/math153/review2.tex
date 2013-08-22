@@ -1,0 +1,91 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{nopageno}
+\usepackage{multicol}
+\usepackage{add-copyright}
+
+\title{Midterm 2 Review Sheet}
+
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem*{example*}{Example}
+\newcommand{\limn}{\displaystyle\lim_{n \to \infty}}
+
+\usepackage{amssymb}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+
+\begin{document}
+
+\section*{The Second Midterm}
+
+\begin{itemize}
+\item There will be \textbf{12 questions} on the exam and it will last
+  \textbf{50 minutes}.
+
+\item The first question will ask you to explain what
+  $\displaystyle\sum_{n=1}^\infty a_n = L$ means (i.e., give a
+  definition of the limit of an infinite series, by invoking partial
+  sums).
+
+\item The last question will be an extra credit problem, with some
+  true/false questions.
+
+\item I was very impressed with your performance on the first midterm,
+  and will be expecting greatness.  Do not be lulled into a false
+  sense of security.
+
+\end{itemize}
+
+\section*{Topics covered on the exam}
+
+\begin{multicols}{2}
+\begin{itemize}
+\item Define $\displaystyle\sum_{n=1}^\infty a_n = L$.
+\item Determine whether a series converges by using
+\begin{itemize}
+\item the $n^{\mbox{th}}$ term test,
+\item the integral test,
+\item comparison test,
+\item limit comparison test,
+\item $p$-series test,
+\item geometric series test,
+\item harmonic series test,
+\item the root test,
+\item the ratio test,
+\item alternating series test.
+\end{itemize}
+A wise student may infer that I am not likely to ask about the integral test, or the root test.
+\item Provide statements of the preceeding tests.
+\item Determine whether a series converges absolutely; determine whether a series conditionally.
+\item Given a function, write down the first few terms of its Taylor series (around $0$ or around another point $a$)
+\item Given a function, write down its Taylor series.
+\item Approximate an alternating series and estimate the error in your approximation.
+\item Approximate a Taylor series and estimate the error in your approximation.
+\item State Taylor's theorem and Lagrange's theorem.
+\item Determine the interval on which a power series converges.
+\item Differentiate and integrate a power series term-by-term.
+\end{itemize}
+\end{multicols}
+
+\pagebreak
+
+\section*{What should I write for an answer?}
+
+You should not merely give the answer: you should give an explanation.
+For full credit, you must \textbf{justify you argument}.  In
+particular, if you are claiming that a series converges, you must
+state which test you are applying.
+
+\section*{Memorize the following series}
+
+\begin{eqnarray*}
+\frac{1}{1-x} &=& \sum^{\infty}_{n=0} x^n = 1 + x + x^2 + x^3 + \cdots \hspace{1em}(\mbox{when $-1 < x < 1$)} \\
+e^{x} &=& \sum^{\infty}_{n=0} \frac{x^n}{n!} = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots \\
+\sin x &=& \sum^{\infty}_{n=0} \frac{(-1)^n}{(2n+1)!} x^{2n+1}\quad =  x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots \\
+\cos x &=& \sum^{\infty}_{n=0} \frac{(-1)^n}{(2n)!} x^{2n}\quad =  1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots \\
+\log x &=& \sum_{n=1}^\infty \frac{(-1)^{n+1} \, (x-1)^n}{n} = (x-1) - \frac{(x-1)^2}{2} + \frac{(x-1)^3}{3} - \cdots \hspace{1em}\mbox{(when $0 < x \leq 2$)}
+\end{eqnarray*}
+
+
+\end{document}

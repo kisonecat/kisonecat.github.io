@@ -1,0 +1,4 @@
+Lecture 38: Mean-value property and Poisson’s formula
+Math 660—Jim Fowler Thursday, August 12, 2010
+
+

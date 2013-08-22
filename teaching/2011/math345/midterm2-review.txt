@@ -1,0 +1,20 @@
+Midterm 2 Review
+Autumn 2010
+
+Math 345
+Jim Fowler
+
+This sheet summarizes what sort of content will appear on the second midterm. Calculators are not permitted and would be useless anyhow.
+
+Possible topics
+The second midterm may include material through lecture 13 (“congruences”) through lecture 23 (“strong induction”). This means that you should work through section four, ﬁve, six, and seven of the textbook. • Induction • Complete induction • Fibonacci numbers • Least elements • Divisibility • Prime numbers • Proof that there are inﬁnitely many prime numbers • Sums of nth powers • Telescoping sums • Pascal’s triangle • Patterns in Pascal’s triangle • Binomial theorem • Proof of Binomial theorem • n+1 n n = + k k−1 k • Diﬀerences between successive terms in a sequence
+
+• Congruences (“mod” arithmetic)
+
+Proof that there are inﬁnitely many primes
+The exam will deﬁnitely ask you to provide a proof that there are inﬁnitely many prime numbers, so you should be prepared to write up a nice proof of this fact for the midterm.
+
+Problems
+There will again be ﬁve problems on the midterm, each worth 360 points, for a total of 1800 points. The fake midterm will give you an idea of the sorts of problems you might expect, but the fake midterm is longer than the real midterm.
+
+

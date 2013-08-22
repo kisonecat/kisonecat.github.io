@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage{rotating}
+\usepackage{worksheet}
+\usepackage{xypic}
+\title{Symmetries of a square}
+
+\newcommand{\AN}{\mathbf{N}}
+\newcommand{\AX}{\mathbf{X}}
+\newcommand{\AY}{\mathbf{Y}}
+\newcommand{\AR}{\mathbf{R}}
+
+\newcommand{\squareN}{\framebox{\raisebox{0in}[0.3in][0.3in]{\parbox{0.6in}{\hfill\textsf{FRONT}\hfill\null\vspace{1ex}\\\null\hfill{\Huge$\uparrow$}\hfill\null}}}}
+
+\newcommand{\squareF}{\framebox{\raisebox{0in}[0.3in][0.3in]{\parbox{0.6in}{\hfill\textsf{BACK}\hfill\null\vspace{1ex}\\\null\hfill{\Huge$\uparrow$}\hfill\null}}}}
+
+\newcommand{\squareRR}{\begin{turn}{180}\framebox{\raisebox{0in}[0.3in][0.3in]{\parbox{0.6in}{\hfill\textsf{FRONT}\hfill\null\vspace{1ex}\\\null\hfill{\Huge$\uparrow$}\hfill\null}}}\end{turn}}
+
+\newcommand{\squareFRR}{\begin{turn}{180}\framebox{\raisebox{0in}[0.3in][0.3in]{\parbox{0.6in}{\hfill\textsf{BACK}\hfill\null\vspace{1ex}\\\null\hfill{\Huge$\uparrow$}\hfill\null}}}\end{turn}}
+
+\newcommand{\squareRRR}{\raisebox{-3.5pt}{\raisebox{-0.3in}{\begin{turn}{90}\framebox{\raisebox{0in}[0.3in][0.3in]{\parbox{0.6in}{\hfill\textsf{FRONT}\hfill\null\vspace{1ex}\\\null\hfill{\Huge$\uparrow$}\hfill\null}}}\end{turn}}}}
+
+\newcommand{\squareFRRR}{\raisebox{-3.5pt}{\raisebox{-0.3in}{\begin{turn}{90}\framebox{\raisebox{0in}[0.3in][0.3in]{\parbox{0.6in}{\hfill\textsf{BACK}\hfill\null\vspace{1ex}\\\null\hfill{\Huge$\uparrow$}\hfill\null}}}\end{turn}}}}
+
+\newcommand{\squareR}{\raisebox{3.5pt}{\raisebox{0.3in}{\begin{turn}{270}\framebox{\raisebox{0in}[0.3in][0.3in]{\parbox{0.6in}{\hfill\textsf{FRONT}\hfill\null\vspace{1ex}\\\null\hfill{\Huge$\uparrow$}\hfill\null}}}\end{turn}}}}
+
+\newcommand{\squareFR}{\raisebox{3.5pt}{\raisebox{0.3in}{\begin{turn}{270}\framebox{\raisebox{0in}[0.3in][0.3in]{\parbox{0.6in}{\hfill\textsf{BACK}\hfill\null\vspace{1ex}\\\null\hfill{\Huge$\uparrow$}\hfill\null}}}\end{turn}}}}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Symmetries of a square.}
+
+\section*{Basic operations.}
+\begin{description}
+\item[Rotation,] written $\AR$, which rotates clockwise by $90^\circ$,\hfill turning \squareN\ into \squareR
+\item[X-Flipping,] written $\AX$, which flips across a horizontal line,\hfill turning \squareN\ into \squareFRR
+\item[Y-Flipping,] written $\AY$, which flips across a vertical line,\hfill turning \squareN\ into \squareF
+\item[Nothing,] written $\AN$, which does nothing,\hfill turning \squareN\ into \squareN
+\end{description}
+
+\vfill
+
+\section*{Useful facts.}
+\begin{description}
+\item[Four rotations] \hfill $\squareN \stackrel{\AR}{\mapsto} \squareR \stackrel{\AR}{\mapsto} \squareRR \stackrel{\AR}{\mapsto} \squareRRR \stackrel{\AR}{\mapsto} \squareN$ \hfill $\AR\AR\AR\AR = \AN$
+\item[Two X-flips] \hfill $\squareN \stackrel{\AX}{\mapsto} \squareFRR \stackrel{\AX}{\mapsto} \squareN$ \hfill $\AX\AX = \AN$
+\item [Two Y-flips] \hfill $\squareN \stackrel{\AY}{\mapsto} \squareF \stackrel{\AY}{\mapsto} \squareN$ \hfill $\AY\AY = \AN$
+\item [X's and Y's] $\squareN \stackrel{\AX}{\mapsto} \squareFRR \stackrel{\AY}{\mapsto} \squareRR \stackrel{\AX}{\mapsto} \squareF \stackrel{\AY}{\mapsto} \squareN$ \hfill $\AX\AY\AX\AY = \AN$
+%\item [X's and R's] $\squareN \stackrel{\AX}{\mapsto} \squareFRR \stackrel{\AR}{\mapsto} \squareFRRR \stackrel{\AX}{\mapsto} \squareRRR \stackrel{\AR}{\mapsto} \squareN$ \hfill $YRYR = N$
+\item [Y's and R's] $\squareN \stackrel{\AY}{\mapsto} \squareF \stackrel{\AR}{\mapsto} \squareFR \stackrel{\AY}{\mapsto} \squareRRR \stackrel{\AR}{\mapsto} \squareN$ \hfill $\AY\AR\AY\AR = \AN$
+
+\end{description}
+
+\vfill
+
+\end{document}

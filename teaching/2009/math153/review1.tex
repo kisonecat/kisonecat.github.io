@@ -1,0 +1,151 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{nopageno}
+\usepackage{multicol}
+\usepackage{add-copyright}
+
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem*{example*}{Example}
+\newcommand{\limn}{\displaystyle\lim_{n \to \infty}}
+
+\title{Midterm 1 Review Sheet}
+
+\usepackage{amssymb}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+
+\begin{document}
+
+\section*{I wonder---what will the exam be like?}
+
+\begin{itemize}
+\item There will be \textbf{13 questions} on the exam and it will last
+  \textbf{50 minutes}.  The first question will ask you to give the
+  $\epsilon$-$K$ definition of the limit of a sequence.
+
+\item Calculators are \textbf{forbidden}.
+
+\item There will be \textbf{one improper integral} on the exam; it
+  will not involve a challenging integral: I would rather that you
+  make sure you are extremely comfortable with
+  \textit{differentiation} on this exam, so you can handle the
+  questions involving l'H\^opital's rule---future exams will give us
+  plenty of practice with the fancier techniques of integration.
+
+\item The last question will be \textbf{extra credit} with true/false
+  questions.  I think these are \textbf{terribly enjoyable!}  They
+  will ask you to agree and disagree with statements of theorems,
+  slightly modified statements of theorems, existence of sequences
+  exhibiting certain kinds of phenomena, etc.
+
+\item You will lose points if you surround an otherwise convincing
+  argument with false statements (after all, once I have proved $2 =
+  1$, I can prove anything!).  \textbf{Erase} or cross-out untrue
+  statements \textbf{for full credit.}
+
+\item Style matters: if you are taking a limit, write $\lim$.  Do not
+  use an ``$=$'' between two expressions unless they are, in fact,
+  equal.  Do not \textbf{under any circumstances} divide by zero
+  during the exam.
+
+\item You can refer to our friend the ``natural logarithm'' by any
+  nickname you prefer.
+\end{itemize}
+
+\section*{I wonder---what must I do on this ``exam''?}
+
+\begin{multicols}{2}
+\begin{itemize}
+\item Give the definition of $\limn a_n = L$.
+\item Prove that a sequence converges by providing an $\epsilon$-$K$ proof.
+\item Give the definition for a sequence to be bounded above, bounded
+  below, increasing, decreasing, non-increasing, non-decreasing
+\item Recognize when a sequence is bounded
+\item Recognize when a sequence is monotone
+\item Find limits by using algebraic manipulation
+\item Use $\limn f(a_n) = f(\limn a_n)$ provided $f$ is continuous.
+\item Find limits by squeezing sequences between sequences with a
+  common, known limit
+\item Give the statement of l'H\^opital's rule for indeterminate forms $0/0$ and $\infty/\infty$
+\item Use l'H\^opital's rule to compute limits (sometimes it takes more than one application!)
+\item Handle indeterminate forms $0^0$, $\infty - \infty$
+\item Compute an improper integrals by taking limits of definite integrals (and do so carefully, noting where you are taking limits)
+\end{itemize}
+\end{multicols}
+
+\section*{How should I write down my answers?}
+
+You are not giving answers: you are giving an explanation.  For full
+credit, you must \textbf{justify your arguments} and \textbf{show the
+  steps you took}: if the central issue in the problem is that the
+limit of the sum is the sum of the limits, you should be sure to point
+that out.
+
+\section*{You must know the following limits}
+
+\begin{multicols}{2}
+\begin{example*}
+For $x \in \R$, $x > 0$,
+$\limn x^{1/n} = 1$.
+\end{example*}
+
+\begin{example*}
+For $x \in \R$ with $-1 < x < 1$,
+$\limn x^n = 0$.
+\end{example*}
+
+\begin{example*}
+For $x \in \R$, $x > 0$,
+$\limn \frac{1}{n^x} = 0$.
+\end{example*}
+
+\begin{example*}
+For $x \in \R$,
+$\limn \frac{x^n}{n!} = 0$.
+\end{example*}
+
+\begin{example*}
+$\limn \displaystyle\frac{\log n}{n} = 0$.
+\end{example*}
+
+\begin{example*}
+$\limn n^{1/n} = 1$.
+\end{example*}
+
+\begin{example*}
+For $x \in \R$,
+$\limn \left( 1 + \frac{x}{n} \right)^n = e^x$.
+\end{example*}
+\end{multicols}
+
+\section*{You must know the following trigonometric facts}
+
+$$
+\sin (2x) = 2\,\sin x\,\cos x \hspace{1em} \cos (2x) = \cos^2 x - \sin^2 x
+$$
+
+If additional identities are needed, I will provide them (but be
+warned: when you are one day stranded on desert island, you will have
+wished you knew as many trigonometric identities as possible---or at least, how to derive them from $e^{i\theta}$).
+
+You should know the derivatives of $\sin$, $\cos$, and $\tan$ (which
+you can remember with the mnemonic ``you'll \textit{tan} in two
+\textit{sec}onds using this product'' for $\displaystyle\frac{d}{dx} \tan x = \sec^2 x$).
+
+\section*{You must be able to give $\epsilon$-$K$ proofs to show}
+
+\begin{multicols}{2}
+\begin{itemize}
+\item $\limn \displaystyle\frac{1}{n} = 0$.
+\item $\limn \displaystyle\frac{1+n}{n} = 1$.
+\item $\limn \displaystyle\frac{1}{n^2} = 0$.
+\item $\limn \displaystyle\frac{3}{n^2} = 0$.
+\item $\limn \displaystyle\frac{(-1)^n}{n} = 0$.
+\item $\limn \displaystyle\frac{\cos n}{n} = 0$.
+\item $\limn \displaystyle\frac{\cos \left(n^3\right)}{n} = 0$.
+\item $\limn \displaystyle\frac{2 + 3 \, n}{n^2} = 0$.
+\end{itemize}
+\end{multicols}
+
+\end{document}

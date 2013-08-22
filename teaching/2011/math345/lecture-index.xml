@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Lectures - Math 345 - Autumn 2010</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/</link>
+<atom:link href="http://www.math.osu.edu/~fowler/teaching/math345/lecture-index.xml" rel="self" type="application/rss+xml" />
+<description>
+Lectures from the Autumn 2010 quarter of Math 345, taught by Jim Fowler.
+</description>
+<language>en-us</language>
+<copyright>Copyright 2010 Jim Fowler</copyright>
+<managingEditor>fowler@math.osu.edu (Jim Fowler)</managingEditor>
+<lastBuildDate>Wed, 01 Dec 2010 14:19:37 -0500</lastBuildDate>
+<ttl>60</ttl>
+
+
+
+
+
+<item>
+<title>Lecture 1: Propositional calculus</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture01.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture01.pdf</guid>
+<description>
+A lecture on section 2 from the textbook.
+</description>
+<pubDate>Wed, 22 Sep 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 2: Examples with real numbers</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture02.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture02.pdf</guid>
+<description>
+A lecture on section 2 from the textbook.
+</description>
+<pubDate>Thu, 23 Sep 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 3: Tautologies</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture03.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture03.pdf</guid>
+<description>
+A lecture on section 2 from the textbook.
+</description>
+<pubDate>Mon, 27 Sep 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 4: Solving equations</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture04.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture04.pdf</guid>
+<description>
+A lecture on section 2 from the textbook.
+</description>
+<pubDate>Tue, 28 Sep 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 5: Contradiction, contrapositives</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture05.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture05.pdf</guid>
+<description>
+A lecture on section 2 from the textbook.
+</description>
+<pubDate>Wed, 29 Sep 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 6: Quantifiers</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture06.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture06.pdf</guid>
+<description>
+A lecture on section 3 from the textbook.
+</description>
+<pubDate>Thu, 30 Sep 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 7: Bound variables</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture07.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture07.pdf</guid>
+<description>
+A lecture on section 3 from the textbook.
+</description>
+<pubDate>Mon, 04 Oct 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 8: Nested quantifiers</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture08.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture08.pdf</guid>
+<description>
+A lecture on section 3 from the textbook.
+</description>
+<pubDate>Tue, 05 Oct 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 9: Number theory</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture09.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture09.pdf</guid>
+<description>
+A lecture on section 4 from the textbook.
+</description>
+<pubDate>Wed, 06 Oct 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 10: Parity</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture10.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture10.pdf</guid>
+<description>
+A lecture on section 4 from the textbook.
+</description>
+<pubDate>Thu, 07 Oct 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 11: Irrationality</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture11.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture11.pdf</guid>
+<description>
+A lecture on section 4 from the textbook.
+</description>
+<pubDate>Mon, 11 Oct 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 12: Divisibility</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture12.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture12.pdf</guid>
+<description>
+A lecture on section 4 from the textbook.
+</description>
+<pubDate>Tue, 12 Oct 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 13: Congruences</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture13.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture13.pdf</guid>
+<description>
+A lecture on section 4 from the textbook.
+</description>
+<pubDate>Wed, 13 Oct 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 14: Prime numbers</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture14.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture14.pdf</guid>
+<description>
+A lecture on section 4 from the textbook.
+</description>
+<pubDate>Thu, 14 Oct 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 15: Polynomials</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture15.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture15.pdf</guid>
+<description>
+A lecture on section 4 from the textbook.
+</description>
+<pubDate>Mon, 18 Oct 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 16: Induction</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture16.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture16.pdf</guid>
+<description>
+A lecture on section 5 from the textbook.
+</description>
+<pubDate>Wed, 20 Oct 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 17: Induction and divisibility</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture17.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture17.pdf</guid>
+<description>
+A lecture on section 5 from the textbook.
+</description>
+<pubDate>Thu, 21 Oct 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 18: Pascal's triangle</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture18.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture18.pdf</guid>
+<description>
+A lecture on section 5 from the textbook.
+</description>
+<pubDate>Mon, 25 Oct 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 19: Binomial theorem</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture19.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture19.pdf</guid>
+<description>
+A lecture on section 5 from the textbook.
+</description>
+<pubDate>Tue, 26 Oct 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 20: More on binomial theorem</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture20.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture20.pdf</guid>
+<description>
+A lecture on section 5 from the textbook.
+</description>
+<pubDate>Wed, 27 Oct 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 21: Fibonacci numbers</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture21.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture21.pdf</guid>
+<description>
+A lecture on section 5 from the textbook.
+</description>
+<pubDate>Thu, 28 Oct 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 22: Sums of squares</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture22.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture22.pdf</guid>
+<description>
+A lecture on section 6 from the textbook.
+</description>
+<pubDate>Mon, 01 Nov 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 23: Strong induction</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture23.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture23.pdf</guid>
+<description>
+A lecture on section 7 from the textbook.
+</description>
+<pubDate>Tue, 02 Nov 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 24: Sets</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture24.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture24.pdf</guid>
+<description>
+A lecture on section 10 from the textbook.
+</description>
+<pubDate>Wed, 03 Nov 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 25: Intersections, unions, subsets</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture25.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture25.pdf</guid>
+<description>
+A lecture on section 10 from the textbook.
+</description>
+<pubDate>Thu, 04 Nov 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 26: Algebra of set operations</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture26.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture26.pdf</guid>
+<description>
+A lecture on section 10 from the textbook.
+</description>
+<pubDate>Mon, 08 Nov 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 27: Some practice problems</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture27.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture27.pdf</guid>
+<description>
+A lecture on section 10 from the textbook.
+</description>
+<pubDate>Tue, 09 Nov 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 28: Functions</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture28.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture28.pdf</guid>
+<description>
+A lecture on section 11 from the textbook.
+</description>
+<pubDate>Mon, 15 Nov 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 29: Surjections, injections</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture29.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture29.pdf</guid>
+<description>
+A lecture on section 11 from the textbook.
+</description>
+<pubDate>Tue, 16 Nov 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 30: Inverse functions</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture30.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture30.pdf</guid>
+<description>
+A lecture on section 11 from the textbook.
+</description>
+<pubDate>Wed, 17 Nov 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 31: Families of sets</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture31.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture31.pdf</guid>
+<description>
+A lecture on section 12 from the textbook.
+</description>
+<pubDate>Thu, 18 Nov 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 32: Counting</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture32.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture32.pdf</guid>
+<description>
+A lecture on section 13 from the textbook.
+</description>
+<pubDate>Mon, 22 Nov 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 33: Combinatorics</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture33.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture33.pdf</guid>
+<description>
+A lecture on section 14 from the textbook.
+</description>
+<pubDate>Tue, 23 Nov 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 34: Infinite sets</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture34.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture34.pdf</guid>
+<description>
+A lecture on section 15 from the textbook.
+</description>
+<pubDate>Wed, 24 Nov 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 35: Bijections</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture35.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture35.pdf</guid>
+<description>
+A lecture on section 15 from the textbook.
+</description>
+<pubDate>Mon, 29 Nov 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 36: Diagonalization argument</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture36.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture36.pdf</guid>
+<description>
+A lecture on section 15 from the textbook.
+</description>
+<pubDate>Tue, 30 Nov 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 37: Countability</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture37.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture37.pdf</guid>
+<description>
+A lecture on section 16 from the textbook.
+</description>
+<pubDate>Wed, 01 Dec 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+
+
+<item>
+<title>Lecture 38: Continuum hypothesis</title>
+<link>http://www.math.osu.edu/~fowler/teaching/math345/lecture38.pdf</link>
+<guid>http://www.math.osu.edu/~fowler/teaching/math345/lecture38.pdf</guid>
+<description>
+A lecture on section 16 from the textbook.
+</description>
+<pubDate>Thu, 02 Dec 2010 08:30:00 +0000</pubDate>
+</item>
+
+
+
+</channel>
+</rss>

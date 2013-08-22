@@ -1,0 +1,124 @@
+\documentclass[12pt]{pset}
+%\usepackage{add-copyright}
+
+\geometry{margin=0.5in}
+\title{Problem Set 15}
+\course{Piecewise-Linear Topology}
+\author{Jim Fowler}
+\date{Summer 2010}
+
+\usepackage{tikz}
+\usetikzlibrary{matrix}
+\usepackage{enumerate}
+
+\newcommand{\defnword}[1]{\textbf{#1}}
+
+\usepackage{stmaryrd}
+\newcommand{\boundary}{\partial}
+\newcommand{\collapses}{\searrow}
+\newcommand{\expands}{\nearrow}
+\newcommand{\she}{\ssearrow\nnearrow}
+\newcommand{\join}{\ast}
+\newcommand{\subdivided}{\triangleleft}
+\geometry{margin=1in,top=0.5in,bottom=0.5in}
+\DeclareMathOperator{\st}{st}
+\DeclareMathOperator{\trace}{trace}
+\DeclareMathOperator{\vertices}{vert}
+\DeclareMathOperator{\lk}{lk}
+\DeclareMathOperator{\cl}{cl}
+\DeclareMathOperator{\interior}{int}
+\DeclareMathOperator{\id}{id}
+\newcommand{\fullsubcomplex}{\Subset}
+\newcommand{\cupp}{\smallsmile}
+\newcommand{\Ct}{C_{\mbox{\scriptsize ord}}}
+\newcommand{\Chaint}{C^{\mbox{\scriptsize ord}}}
+
+\usepackage{hyperref}
+
+\begin{document}
+\maketitle
+
+% [[skim:///Users/jim/Papers/MR755006.pdf?page=2][page 2 of MR755006.pdf]]
+
+\subsubsection*{Cup product.} We discuss cup products from a somewhat
+different perspective.
+
+%Why does the sequence split?  last time we used the fact that $X
+%\times I$ is the same as $X$ to compute that $H_n(X \times S^1) =
+%H_n(X) \oplus H_{n-1}(X)$.
+
+%\parskip 0.45\baselineskip
+%\parindent 0pt
+
+\begin{definition*}
+  Define $\Chaint_n(X)$ to be formal sums of ordered simplexes (an
+  ordered simplex being a possibly degenerate simplex, with a chosen
+  order on the vertices---i.e., the vertices might be repeated!).  It
+  is very easy to see that a simplicial map $f : X \to Y$ induces a
+  chain map between the chain complexes $\Chaint_\bullet(X) \to
+  \Chaint_\bullet(Y)$, even if $f$ crushes some simplexes.
+
+  It is the case that $\Chaint_\bullet(X)$ and $C_\bullet(X)$ are
+  chain homotopy equivalent, and therefore the homology of these
+  complexes is the same.
+
+  Let $\Ct^n(X)$ be the corresponding cochains, i.e., homomorphisms
+  from $\Chaint_n(X)$ to the integers.
+  Given $\alpha \in \Ct^n(X)$ and $\beta \in \Ct^m(X)$, we define $\alpha \cupp \beta$ by
+  $$
+  (\alpha \cupp \beta) [v_0,\ldots,v_{n+m+1}] = \alpha [v_0,\ldots,v_n] \cdot \beta [v_n,\ldots,v_{n+m+1}].
+  $$
+  This product on $\Ct^\bullet(X)$ descends to a product on $H^\bullet(X)$.
+\end{definition*}
+
+\begin{problem}
+  Compute $H^\bullet(T^3)$ as a ring. Recall $T^3 = S^1 \times T^2 =
+  S^1 \times S^1 \times S^1$.
+\end{problem}
+
+\begin{problem}
+  Let $X = S^2 \vee S^1 \vee S^1$.  Recall that $A \vee B$ means that
+  $A$ attached to $B$ along a single point.  Show that $H_n(X) =
+  H_n(T^2)$ and $H^n(X) = H^n(T^2)$, but that $H^\bullet(T^2)$ and
+  $H^\bullet(X)$ differ as rings, and therefore $T^2 \not\simeq X$.
+\end{problem}
+
+\subsection*{Commutativity of cup product}
+
+\begin{problem}
+  Let $\alpha$ and $\beta$ be generators of $H^1(T^2)$; compare
+  $\alpha \cupp \beta$ and $\beta \cupp \alpha$.
+\end{problem}
+
+\begin{problem}
+  Define $\epsilon_n = \left(-1\right)^{n(n+1)/2}$, and a homomorphism $\rho :
+  \Chaint_n(X) \to \Chaint_n(X)$ by
+  $$
+  \rho( [v_0,\ldots,v_n] ) = \epsilon_n [v_n, \cdots, v_0].
+  $$
+  Show that the map $\rho$ is a chain map, and find a chain homotopy
+  between $\rho$ and the identity.
+\end{problem}
+
+% [[skim:///Users/jim/Teaching/ross2010/problem15.pdf?page=1][page 1 of problem15.pdf]]
+
+\begin{problem}
+Let $\rho : \Chaint_n(X) \to \Chaint_n(X)$ be as above, and let $\rho^\star :
+\Ct^n(X) \to \Ct^n(X)$ be the induced map on cochains. Then verify the following:
+  \begin{enumerate}[\bfseries (1)]
+  \item $\epsilon_{n+m} = (-1)^{nm} \epsilon_n \epsilon_m$.
+  \item $(\rho^\star \varphi \cupp \rho^\star \psi) [v_0,\ldots,v_{n+m}] =
+    \varphi( \epsilon_n [v_n,\ldots,v_0] ) \cdot \psi( \epsilon_m[v_{n+m},\ldots,v_n] )$.
+  \item $\rho^\star (\psi \cupp \varphi) [v_0,\ldots,v_{n+m}] =
+    \epsilon_{n+m} \varphi( [v_n,\ldots,v_0] ) \cdot \psi( [v_{n+m},\ldots,v_n] )$.
+  \item $\rho^\star (\varphi \cupp \psi) = (-1)^{nm} \left( \rho^\star \varphi \cupp \rho^\star \psi \right)$.
+  \end{enumerate}
+  Since $\rho$ is chain homotopic to the identity, we may conclude
+  that $\varphi \cupp \psi = (-1)^{nm} \left( \psi \cupp \varphi
+  \right)$ in cohomology.  You should be thrilled to see that the cup
+  product is (graded) commutative once we pass to cohomology, but far
+  from commutative on the level of cochains.
+\end{problem}
+
+\end{document}
+

@@ -1,0 +1,21 @@
+Lecture 5: Contradiction, contrapositives
+Wednesday, September 29, 2010
+
+Math 345
+Jim Fowler
+
+Textbook
+This lecture discusses section 2 of the textbook.
+
+Homework
+The homework is due Monday, October 4, 2010. From Section 2 of the textbook, do exercises 23 and 24. Check the web.
+
+converse contrapositives a proof that something exists
+There exists an irrational number which, when raised to an irrational power, is a rational number.
+
+quantiﬁers
+for all (universal) there exists (existential) universe of discourse
+
+1
+
+

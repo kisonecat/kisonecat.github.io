@@ -1,0 +1,28 @@
+Take-Home Quiz 8
+Math 131 Section 22 “Due” Friday, December 2, 2005
+This is the ﬁnal quiz—and rather than having it due during Reading Period—which may be forbidden!—this quiz is entirely optional. You will receive the full 12 points regardless of whether you do the quiz or not—but if you do hand it in, I will comment on your solutions, which might be helpful practice for the ﬁnal. Problem 1. (4 points). You work for a soup company, and you have been given 8π cubic inches of soup. Minimize the surface area of a cylindrical can holding this volume of soup. Problem 2. (4 points). Imagine we live in a world where sheep prefer hexagonal fences (it may even be this world; I’m not sure if any animals have polygonal preferences). You have been given 1200 feet of fence, which you can divide into four pieces of length x and two pieces of length y, and then attach at 120 degree angles as shown: y
+x
+
+x
+
+√ 3·x
+x
+
+x/2
+
+x
+
+y What lengths x and y should you choose to maximize the area enclosed by the hexagon? I have made some measurements of the dashed lines (using properties of 30–60–90 triangles) which might help you in your calculation.
+
+Problem 3. (4 points). You are in a canoe (a kν?), one mile from shore, trying to get to Q, your home, as quickly as possible. Let P be the point nearest you on the shore; the distance between P and your home Q is ten miles. Your plan is to paddle in a straight line (following the dashed line) to some point R on the shore, and then walk the rest of the way. You can paddle 3 miles per hour, and you can walk 4 miles per hour. Describe the best place R to land your canoe by reporting the distance x between P and R. 111111111111111111111111111111111111111111 000000000000000000000000000000000000000000 land 111111111111111111111111111111111111111111 000000000000000000000000000000000000000000
+111111111111111111111111111111111111111111 000000000000000000000000000000000000000000 111111111111111111111111111111111111111111 000000000000000000000000000000000000000000 111111111111111111111111111111111111111111 000000000000000000000000000000000000000000 111111111111111111111111111111111111111111 000000000000000000000000000000000000000000 111111111111111111111111111111111111111111 000000000000000000000000000000000000000000 111111111111111111111111111111111111111111 000000000000000000000000000000000000000000 111111111111111111111111111111111111111111 000000000000000000000000000000000000000000 111111111111111111111111111111111111111111 000000000000000000000000000000000000000000 111111111111111111111111111111111111111111 000000000000000000000000000000000000000000 P x
+
+R
+
+Q
+
+1 mile
+
+water
+
+

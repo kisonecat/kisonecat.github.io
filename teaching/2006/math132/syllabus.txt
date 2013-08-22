@@ -1,0 +1,41 @@
+Syllabus
+
+Math 132, Section 22
+
+Winter 2006
+
+Welcome to Math 132, the second quarter of a year-long Calculus sequence. Our goals are three-fold: study trigonometry, applications of diﬀerentiation, and integration.
+
+Resources
+We present ﬁve resources to help you to learn Calculus.
+
+Oﬃce Hours
+If you have questions, want to work through problems, or just talk about mathematics, I invite you to come to my oﬃce hours. Name: Oﬃce: Phone: Email: Jim Fowler Math/Stat 102 773–573–5659 jim@uchicago.edu Oﬃce Hours: Monday 4:30–6:30p.m. Thursday 4:30–6:30p.m. or by appointment
+
+Please email me with any concerns you have; the success of this course depends on open communication.
+
+Textbook
+Our text is Calculus by Verberg, Purcell, and Bigdon (8th Edition).
+
+Website
+The website is on chalk; we will post homework assignments and take-home quizzes.
+
+Lectures
+We meet Mondays, Wednesdays, and Fridays, 9:30–10:20a.m. in Ryerson 358 for an interactive lecture.
+
+Problem Session
+You meet with your tutor on Tuesdays and Thursdays, 9:00–10:20a.m. for an interactive problem session. The tutors, in alphabetical order, are: • Danny Rosenthal (danny@uchicago.edu) in Gates-Blake 411, • Sara Rezvi (arsinoe@uchicago.edu) in Harper 125, • Steve Balady (sbalady@uchicago.edu) in Wiebolt 106, replacing Brian Keto. If for any reason you want to switch to a diﬀerent problem session, contact Jim Fowler.
+
+Requirements
+There are one thousand points possible in this course, broken down as follows: Daily homework (100 points). Homework is assigned Mondays and Wednesdays, and due the following class period. You should work on the homework problems together, but you must write up your solutions independently. 2 midterms (201 points each). The midterms are in class. The ﬁrst midterm is on Friday, January 20, at the end of week 3; the second midterm is on Friday, February 17, at the end of week 7. 7 quizzes (14 points each). Short take-home quizzes are assigned most Fridays, and due the following Monday. 1 ﬁnal exam (400 points). The ﬁnal exam will be held 8:00–10:00a.m. on Friday, March 17, 2006.
+
+Department Policy on Final Exams
+It is the policy of the Department of Mathematics that the following rules apply to ﬁnal exams in all undergraduate mathematics courses: 1. The ﬁnal exam must occur at the time and place designated on the College Final Exam Schedule. In particular, no ﬁnal examinations may be given during the tenth week of the quarter, except in the case of graduating seniors. 2. Any student who wishes to depart from the scheduled ﬁnal exam time for the course must receive permission from Paul Sally (oﬃce is Ryerson 350, phone is 2-7388, email is sally@math.uchicago.edu). Instructors are not permitted to excuse students from the scheduled time of the ﬁnal exam except in the cases of an Incomplete.
+
+Rescheduling a Midterm
+Contact Jim Fowler early in the quarter if you will not be able to take a midterm on the scheduled day; we likely can accomodate you, but we will need time to prepare.
+
+Late Quizzes and Homework
+Quite simply, you must stay caught up. It is tempting to fall behind, but diﬃcult to catch up again—especially in a mathematics course. That said, I understand your schedules are busy, so I will not penalize you for very infrequently turning in work a day or two late.
+
+

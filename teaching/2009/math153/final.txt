@@ -1,0 +1,516 @@
+Problem 1. (20 points).
+Deﬁne lim an = L.
+n→∞
+
+Solution.
+For every ǫ > 0, there exists K ∈ N, so that if n ≥ K, then |an − L| < ǫ.
+
+Problem 2. (25 points).
+A mathematician often gives a deﬁnition, and then provides an example of the deﬁnition in action. Part (i). Deﬁne what it means for a sequence an to be bounded. Part (ii). Give an example of sequences xn and yn so that neither xn nor yn is bounded, but the sequence zn = xn + yn is bounded.
+
+Solution.
+Part (i). A sequence an is bounded if there exists real numbers U and L so that for all natural numbers n, L ≤ an ≤ U. Part (ii). As one of inﬁnitely many posible examples, set xn = n and yn = −n. Then neither xn nor yn is bounded, but zn = 0 is bounded.
+
+Problem 3. (25 points).
+Provide an ǫ-K proof of the fact that lim 1 + n5 = 1. n→∞ n5
+
+Solution.
+√ √ Let ǫ > 0. Pick K, a natural number, larger than 1/ 5 ǫ. So if n ≥ K, then n > 1/ 5 ǫ. Rearranging, n ≥ K implies 1 < ǫ. n5 Further algebraic manipulation proves that n ≥ K implies 0< And therefore, if n ≥ K, then n5 1 + n5 1 + 5 −1 = −1<ǫ 5 n n n5 1 + n5 − 1 < ǫ. n5
+
+Problem 4. (20 points).
+Evaluate lim cos ((1/x)x ).
+x→∞
+
+Solution.
+First note that limx→∞ (1/x)x = 0, by, say, squeezing: for large x, 0 ≤ (1/x)x ≤ 1/x but limx→∞ 1/x = 0, so limx→∞ (1/x)x = 0. Since cos is continuous,
+x→∞
+
+lim cos ((1/x)x ) = cos
+
+x→∞
+
+lim (1/x)x = cos 0 = 1 .
+
+Problem 5. (20 points).
+Evaluate lim sin cos2 cos3 sin4 cos5 sin6 cos7 sin8 x . x→∞ x
+
+Solution.
+Note that −1 sin (anything) 1 ≤ ≤ x x x But limx→∞ 1/x = 0 and limx→∞ −1/x = 0, so by squeezing,
+x→∞
+
+lim
+
+sin (anything) = 0. x
+
+Problem 6. (20 points).
+Give an example of a sequence an so that
+n→∞
+
+lim an = 1
+
+but lim (an )n = 17. Justify your choice.
+n→∞
+
+Solution.
+An example of such a sequence is an = 1+ log 17 n
+n
+
+.
+
+Since an is the indeterminate form 1∞ , we replace an with elog an to deduce
+n→∞
+
+lim an = elimn→∞ (n·log(1+
+
+log 17 n
+
+)) .
+
+But the latter involves the indeterminate ∞ · 0, which we transform as lim log 17 n · log 1 + n log 1 + = lim
+n→∞ log 17 n
+
+n→∞
+
+1/n
+
+to which we may appliy l’Hˆpital to get o log 1 +
+n→∞
+
+lim
+
+log 17 n
+
+1/n
+
+= lim
+
+1 1+ log 17 n
+
+·
+
+− log 17 n2
+
+n→∞
+
+−1/n2
+
+= lim
+
+1 1+
+log 17 n
+
+n→∞
+
+· log 17
+
+= log 17.
+
+And therefore,
+n→∞
+
+lim an = lim elog 17 = 17.
+n→∞
+
+Problem 7. (20 points).
+∞
+
+Deﬁne
+n=1
+
+an = L.
+
+Solution.
+∞
+
+The series
+n=1
+
+an converges to L if the sequence of partial sums
+k
+
+sk :=
+n=1
+
+an
+
+converges to L, that is, limk→∞ sk = L.
+
+Problem 8. (25 points).
+∞
+
+Part (i). What does it mean for the series
+n=1
+
+an to converge absolutely?
+
+Part (ii). What does it mean for the series to converge conditionally?
+∞
+
+Part (iii). Does the series
+n=2009!
+
+(−1)n n
+
+converge absolutely? Converge conditionally?
+
+Solution.
+∞ ∞
+
+Part (i). The series
+n=1
+
+an is said to converge absolutely provided
+n=1 ∞
+
+|an | converges.
+∞ ∞
+
+Part (ii). The series converge.
+n=1
+
+an is said to converge conditionally when
+n=1
+
+an converges but
+n=1
+
+|an | does not
+
+Part (iii). The ﬁrst 2009! terms of a series do not aﬀect convergence, so we need only know whether or not
+∞
+
+n=1
+
+(−1)n n
+
+converges absolutely or conditionally. But
+∞
+
+n=1
+
+1 (−1)n = n n n=1
+
+∞
+
+is the harmonic series, and so, diverges. Nevertheless, the original series satisﬁes the alternating series test (since the terms are decreasing in magnitude, and lim(−1)n /n = 0) and so the series converges conditionally.
+∞
+
+Does the series
+n=2009!
+
+(−1)n n
+
+converge absolutely? Converge conditionally?
+
+Problem 9. (20 points).
+Recall that 0.9 = 0.99999 · · · = 0.9 + 0.09 + 0.009 + 0.0009 + · · · = Use the formula for a geometric series to evaluate this series.
+
+∞
+
+n=1
+
+9 10n
+
+Solution.
+Recall that
+∞
+
+xn =
+n=0
+
+1 1−x x 1−x
+
+Consequently,
+∞
+
+xn =
+n=1
+
+Plugging in x = 1/10 gives
+∞
+
+10−n =
+n=1
+
+1/10 1/10 1 = = . 1 − 1/10 9/10 9
+
+Multiplying by nine gives
+∞ n=1
+
+1/10 1 9 =9· =9· = 1 . n 10 9/10 9
+
+Problem 10. (25 points).
+∞
+
+Does the series
+n=1
+
+n3
+
+1 n+1 + + n + 1 n!
+
+converge?
+
+Solution.
+The series converges, because it is the sum of two convergent series. 1 n+1 converges by the limit comparison test with . Since First, n3 +n+1 n2
+n+1 n3 +n+1 1 n→∞ n2
+
+lim
+
+= lim
+
+n3 + n2 =1 n→∞ n3 + n + 1
+n+1 n3 +n+1
+
+1 and since n2 converges (as its a p-series with p > 1), then by the limit comparison test, converges. 1 Additionally, n! converges by, say, the ratio test, since 1 (n+1)! lim 1 n→∞ n!
+
+also
+
+= lim
+
+n→∞
+
+1 = 0. n+1
+
+Problem 11. (20 points).
+Deﬁne a function f : N → R by f (n) =
+∞
+
+0 1
+
+if sin2 n ≤ 1/2, if sin2 n > 1/2.
+
+Does the series
+n=1
+
+f (n) n(14+f (n))
+
+converge?
+
+Solution.
+It does converge. We check convergence by comparison. Since 0 ≤ f (n) ≤ 1, we have 0≤ But
+1 n14
+
+f (n) n(14+f (n))
+
+≤
+
+1 n(14+f (n))
+
+≤
+
+1 n14
+
+converges, as it is a p-series with p > 1. Therefore, by comparison, the original series converges.
+
+Problem 12. (20 points).
+∞
+
+Does the series
+n=1
+
+1 n
+
+1/n
+
+converge?
+
+Solution.
+This series diverges by the n-th term test. I claim that lim 1 n
+1/n
+
+n→∞
+
+= 0.
+
+But this is a 00 indeterminate form, so we note that lim 1 n
+1/n
+
+n→∞
+
+= elimn→∞ n ·log( n ) ,
+1 1
+
+but the exponent is a 0 · ∞ indeterminate form, so we transform it 1 · log n→∞ n lim 1 n = lim
+1 log n n→∞ n
+
+which is an ∞/∞ indeterminate form, and we can apply l’Hˆpital to get o
+1 log n 1 −1 = lim · = 0. n→∞ 1/n n2 n→∞ n
+
+lim
+
+And therefore,
+n→∞
+
+lim
+
+1 n
+
+1/n
+
+= e0 = 1 = 0
+
+so the series diverges by the n-th term test.
+
+Problem 13. (25 points).
+∞
+
+Consider the power series
+n=0
+
+n3 xn . For which x ∈ R does the series converge?
+
+Solution.
+This series converges provided x ∈ (−1, 1), and diverges otherwise. By the ratio test, the series converges absolutely provided lim (n + 1)3 xn+1 = |x| < 1. n 3 xn
+
+n→∞
+
+Now we need only check the endpoints. If x = 1, then the series becomes
+∞
+
+n3
+n=0
+
+which diverges (by the n-th term test, say). If x = −1, then the series becomes
+∞
+
+n3 (−1)n
+n=0
+
+which diverges (again by the n-th term test).
+
+Problem 14. (20 points).
+Let f : R → R be the function
+
+f (x) = (1 + sin x)2 .
+
+Write down the the ﬁrst four terms (i.e., x0 through x3 ) of the Taylor series for f expanded around x = 0.
+
+Solution.
+We could diﬀerentiate f a few times to ﬁnd the Taylor series, but it is a bit faster just to plug in the ﬁrst few terms of sin x. That is, 2 f (x) = (1 + sin x)2 = 1 + x − x3 /6 + O(x5 ) which we expand out to get f (x) = 1 + 2x + x2 − x3 + O(x4 ). 3
+
+Problem 15. (25 points).
+For positive real numbers x, deﬁne
+∞
+
+J(x) =
+n=0
+
+1 (−1)n x2n = n! n! 22n π
+
+π
+
+cos(x sin t) dt
+0
+
+This is the Bessel function. Part (i): You may assume that |J (3) (x)| ≤ 1. Use this fact and Lagrange’s theorem to ﬁnd an approximation of J(1/2) and estimate the error in your approximation. Part (ii): What is J 4 (0)?
+
+Solution.
+Part (i): By Taylor’s theorem, J(1/2) = 1 − 15 (1/2)2 + R2 (1/2) = + R2 (1/2) 4 16
+
+But by Lagrange’s theorem, R2 (1/2) = J (3) (c)(1/2)3 /6 for some c ∈ [0, 1/2]. Since |J (3) (x)| ≤ 1, we can conclude 1 1 |R2 (1/2)| < 3 = 2 ·6 48 So J(1/2) ≈ 15/16 with error no worse than 1/48. In other words, J(1/2) ∈ (15/16 − 1/48, 15/16 + 1/48) = (22/24, 23/24). Indeed J(1/12) ≈ 22.5233 . . . /24. Part (ii): The coeﬃcient on x4 in the Taylor series for J(x) is (−1)2 J (4) (0) = 2! 2! 24 4! Therefore, J (4) (0) = 3 24 = . 2 · 2 · 16 8
+
+Problem 16. (20 points).
+Let f : R → R be the function
+∞
+
+f (x) = xex + ex =
+
+d (x ex ) . dx
+
+Let
+n=0
+
+an xn be the Taylor series for f expanded around x = 0. Find a formula for an .
+
+Solution.
+Since ex = we know that xe =
+n=0 x
+
+xn n! n=0
+∞
+
+∞
+
+xn+1 n! (n + 1) xn n!
+
+But diﬀerentiating gives d (x ex ) = dx We conclude that an =
+∞ n=0
+
+n+1 . n!
+
+Problem 17. (20 points).
+Use the method of partial fractions to evaluate 1 dx. x (x − 1) Remember to show your work.
+
+Solution.
+We must ﬁnd real numbers A and B so that B 1 A + = . x x−1 x (x − 1) Multiply both sides by x (x − 1) to get A(x − 1) + B(x) = 1 dx = 1 dx x (x − 1)
+
+and so A = −1, and A + B = 0, so B = 1. Thus,
+
+1 −1 + x x−1 And so,
+
+1 dx = − log x + log(x − 1) + C. x (x − 1)
+
+Problem 18. (25 points).
+Find a function f : R → R which satisﬁes x · f ′ (x) + f (x) = sin2 x cos3 x. Remember to show your work.
+
+Solution.
+Divide by x, to get the equivalent equation f ′ (x) + Since
+1 x
+
+f (x) sin2 x cos3 x = x x
+
+dx = log x + C, so an integrating factor is elog x = x. Multiplying by the integrating factor gives d (x f (x)) = xf ′ (x) + f (x) = sin2 x cos3 x dx
+
+Therefore, x f (x) = Exchange cos2 x for 1 − sin2 x to get x f (x) = sin2 x (1 − sin2 x) cos x dx = (sin2 x − sin4 x) cos x dx sin2 x cos3 x dx.
+
+but now we can do a u-substitution (with u = sin x) to get x f (x) = and therefore, the general solution is f (x) = sin3 x sin5 x C − + . 3x 5x x sin3 x sin5 − +C 3 5
+
+Problem 19. (0 points).
+Please ﬁll in the square next to the correct answer. True If an and bn are bounded, then cn = an + bn is bounded. False True If an and bn are monotone, then cn = an + bn is monotone. False True False True False True If lim log an = 0, then lim an = 1. False True There exists a sequence an of irrational numbers, with lim an = 0. False True There exists a sequence an of even integers, with lim an = 1. False True If False True If False True If False
+n=1 n=1 n=1 n→∞ n→∞ n→∞ n→∞
+
+If bn = an 2 converges, then an converges.
+
+If an is decreasing, then bn = an+1 − an is decreasing.
+
+∞
+
+∞
+
+an diverges, then
+n=1
+
+|an | diverges.
+
+∞
+
+∞
+
+∞
+
+an converges and
+n=1
+
+bn converges, then
+
+n=1
+
+(an · bn ) converges.
+
+∞
+
+∞
+
+an converges, then
+n=2
+
+(an − an−1 ) converges.
+
+Problem 20. (5 points).
+Congratulations—you have ﬁnished Math 153, the third and ﬁnal quarter of a year-long course in Calculus. Take a moment to reﬂect on this past quarter: how did you do on the sixteen homeworks, the two midterms, and now this ﬁnal exam? What letter grade (including ±) do you believe you have earned this quarter?
+
+Solution.
+Leading you through this course has been tremendously enjoyable for me. I wish you many blessings as you continue your studies.
+
+

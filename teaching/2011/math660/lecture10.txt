@@ -1,0 +1,60 @@
+Lecture 10: Continuous functions and topological spaces
+Math 660—Jim Fowler Friday, July 1, 2011
+
+f (z) = z + 1
+
+2
+
+Consider f (z) = 1/z and g (z) = 1 − z.
+
+= id
+
+=f ◦g
+
+=f
+
+=g ◦f
+
+=g
+
+=g ◦f ◦f
+
+Simple arc? Closed curve? Simple closed curve? Opposite arc?
+
+Arcs and closed curves
+
+Slogan: probe an object by considering curves on the object.
+
+Angle between arcs?
+
+A region is an open, connected set. Usually denoted by Ω.
+
+Analytic in a region
+
+A function f : Ω → C is analytic at x ∈ Ω if it is the restriction to Ω of a function analytic in an open set U ⊃ Ω.
+
+An analytic function in a region Ω whose derivative vanishes identically is a constant.
+
+An analytic function in a region Ω whose real part is constant, is constant.
+
+An analytic function in a region Ω whose real part is constant, is constant. If f = u + iv , and u is constant, then f (z) = so f is constant. ∂u ∂u −i =0 ∂x ∂y
+
+An analytic function in a region Ω whose imaginary part is constant, is constant.
+
+An analytic function in a region Ω whose imaginary part is constant, is constant. If f = u + iv , and v is constant, then f (z) = so f is constant. ∂v ∂v +i =0 ∂y ∂x
+
+An analytic function in a region Ω whose modulus is constant, is constant.
+
+An analytic function in a region Ω whose modulus is constant, is constant. If f = u + iv , and u 2 + v 2 is constant, then u ∂u ∂v ∂u ∂v +v = 0 and u +v =0 ∂x ∂x ∂y ∂y
+
+An analytic function in a region Ω whose modulus is constant, is constant. If f = u + iv , and u 2 + v 2 is constant, then u ∂u ∂v ∂u ∂v +v = 0 and u +v =0 ∂x ∂x ∂y ∂y
+
+Now use Cauchy-Riemann equations—but how?
+
+An analytic function in a region Ω whose argument is constant, is constant.
+
+An analytic function in a region Ω whose argument is constant, is constant. Choose k so that u = kv .
+
+An analytic function in a region Ω whose argument is constant, is constant. Choose k so that u = kv . Then the real part of (1 + ik)f is constant, so f is constant.
+
+

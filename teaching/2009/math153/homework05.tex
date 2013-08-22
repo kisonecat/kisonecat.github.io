@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+
+\usepackage{fullpage}
+\usepackage{nopageno}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\usepackage[margin=1in]{geometry}
+\usepackage{add-copyright}
+
+\title{Homework 5}
+\date{Due Wednesday, October 15, 2008}
+
+\long\def\symbolfootnote[#1]#2{\begingroup%
+\def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+
+\begin{document}
+\maketitle
+
+\textbf{Remember:} October 20 is the date of the first midterm!
+
+\begin{description}
+
+\item[(a)] On page 558, section 11.5, do problems: 2, 10, 13, 17, 23, 27.
+
+\vfill
+
+\item[(b)] On page 563, section 11.6, do problems: 3, 9, 14, 15, 21, 31.
+
+\vfill
+
+\item[(c)] Define two functions as follows:
+\begin{eqnarray*}
+f(x) &=& x + \cos x \, \sin x \\
+g(x) &=& e^{\sin x} \left( x + \cos x \, \sin x \right).
+\end{eqnarray*}
+We want to calculate $\displaystyle\lim_{x \to \infty} \displaystyle\frac{f(x)}{g(x)}$.  Since this is the indeterminate form $\infty/\infty$, we apply l'H\^opital's rule as follows:
+\begin{eqnarray*}
+\lim_{x \to \infty} \frac{f'(x)}{g'(x)}
+&=& \lim_{x \to \infty} \frac{1 + \cos^2 x - \sin^2 x}{e^{\sin x} \, \cos x \, \left( x + \sin x \, \cos x + 2 \, \cos x \right)} \\
+&=& \lim_{x \to \infty} \frac{\cos^2 x + \sin^2 x + \cos^2 x - \sin^2 x}{e^{\sin x} \, \cos x \, \left( x + \sin x \, \cos x + 2 \, \cos x \right)} \\
+&=& \lim_{x \to \infty} \frac{2 \cos^2 x}{e^{\sin x} \, \cos x \, \left( x + \sin x \, \cos x + 2 \, \cos x \right)} \\
+&=& \lim_{x \to \infty} \frac{2 \cos x}{e^{\sin x} \, \left( x + \sin x \, \cos x + 2 \, \cos x \right)} = 0.
+\end{eqnarray*}
+(I left out some steps in computing the derivative of the
+denominator.)  Therefore, by l'H\^opital's rule, the limit vanishes.
+Or\ldots does it?  Note that $g(x) = e^{\sin x} \, f(x)$, hence
+$$
+\lim_{x \to \infty} \frac{f(x)}{g(x)} = \lim_{x \to \infty} \frac{1}{e^{\sin x}}
+$$
+which does not exist.  Where did I make a mistake?
+
+\end{description}
+
+\end{document}

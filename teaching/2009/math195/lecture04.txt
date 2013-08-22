@@ -1,0 +1,41 @@
+Lecture 4: Lines and planes
+Math 195 Section 91 Monday June 29, 2009
+Section 13.5, and 14.1 and 14.2. parametric equation for line: v = tw + u. parametric equation for line segment.
+
+1
+
+Lines
+
+ﬁnd line through two points check if two lines intersect skew lines versus parallel lines.
+
+2
+
+Planes
+
+point on plane, and vector normal to the plane equation: n · (v − w) = 0 for w on the plane and n normal. write as scalar equation by substitting in coordinates ﬁnd normal vector by taking cross product two planes are parallel if their normals are parallel ﬁnd angle between two planes ﬁnd distance from point to a plane
+
+3
+
+Calculus
+
+vector-valued function—in coordinates, a parametric equation! take limits componentwise sketch curve: (cos t, sin t, t).
+
+4
+
+Derivatives
+
+deﬁne derivative take derivatives componentwise
+
+1
+
+ﬁnd unit tangent vector second derivative (on circle!) how to diﬀerentiate: dot products, cross products. it is the leibniz rule again!
+
+5
+
+Integrating vectors
+
+Indeed we can do it.
+
+2
+
+

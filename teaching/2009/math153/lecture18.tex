@@ -1,0 +1,80 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+\newtheorem*{example}{Example}
+\newtheorem*{thm}{Theorem}
+
+\title{Lecture 18: Generalizing Taylor series}
+\author{Math 153 Section 57}
+\date{Friday November  7, 2008}
+
+\begin{document}
+\maketitle
+
+Following chapter 12.7.
+
+\section{how to expand Taylor series around other values.}
+
+Two perspectives: the formal answer, and the trick by replacing $x$ by $x-a$.
+
+\section{examples}
+
+example: $\log$ around $x=1$
+
+example: $1/x$ around $x=1$
+
+\section{euler's formula}
+
+exponentials and trig functions: $e^{i\theta} = \cos \theta + i \sin \theta$
+
+\section{tricks}
+
+tricks for Taylor series: do $2 \sin x \cos x$ and discover that this is $\sin (2x)$:
+$$
+2 \left( x - \frac{x^3}{6} + \frac{x^5}{120} - \cdots \right) \cdot 
+\left( 1 - \frac{x^2}{2} + \frac{x^4}{24} - \cdots \right)
+$$
+which equals
+$$
+2 \left( x - \frac{x^3}{6} + \frac{x^5}{120} - \cdots \right) -
+2 \left( \frac{x^3}{2} - \frac{x^5}{12} + \cdots \right) + 
+2 \left( \frac{x^5}{24} - \cdots \right)
+$$
+which simplifies to
+$$
+2x - 2 \left(\frac{1}{6} + \frac{1}{2}\right) x^3 + 2 \left(\frac{1}{120} + \frac{1}{12} + \frac{1}{24}\right) x^5 - \cdots
+$$
+or equivalently
+$$
+2x - \frac{4}{3} x^3 + \left(\frac{4}{15} \right) x^5 - \cdots
+$$
+But this is the same as
+$$
+\frac{1}{2} \left( (2x) - \frac{(2x)^3}{6} + \frac{(2x)^5}{5!} - \cdots \right)
+$$
+which is the series for $\sin (2x)$
+
+Very formally:
+$$
+\sum_{n=0}^\infty \frac{(-1)^n x^{2n+1}}{(2n+1)!} 
+\sum_{m=0}^\infty \frac{(-1)^m x^{2m}}{(2m)!} =
+\sum_{n=0}^\infty \sum_{m=0}^\infty \frac{(-1)^{n+m} x^{2n+2m+1}}{(2n+1)! \, (2m)!}
+$$
+
+\section{trick again}
+
+$\sin x / x$ is very easy to do
+
+What about $x / \sin x$?  We could differentiate, but that would be painful.  Instead, assume it has a Taylor series, and do long division to find it.
+$$ \frac{x}{\sin x} = 1+\frac{x^2}{6}+\frac{7 x^4}{360}+\frac{31 x^6}{15120}+\frac{127
+    x^8}{604800}+\frac{73 x^{10}}{3421440}+\cdots$$
+
+same trick works on $1/(1-x)$.
+
+\section{proving facts about functions}
+
+$e^a \cdot e^b = e^{a+b}$
+
+\end{document}

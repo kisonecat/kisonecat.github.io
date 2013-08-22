@@ -1,0 +1,15 @@
+Math 132 Section 22 Due Wednesday, March 8, 2006
+Problem 1. (3 points). Find the volume of a ball of radius r with a hole of radius a drilled through it. Speciﬁcally, ﬁnd the volume of {(x, y, z) ∈ R3 : x2 + y 2 + z 2 ≤ r and x2 + y 2 ≥ a}.
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+The ﬁrst condition (i.e., x2 + y 2 + z 2 ) picks out those points which are inside the ball of radius r, and the second condition (i.e., x2 + y 2 ≥ a) picks out those points which are outside a cylinder of radius a. Hint: use the method of shells. Problem 2. (3 points). Find the length of the curve deﬁned for 0 ≤ t ≤ 4 by x(t) = t, 2t3/2 . y(t) = 3 Problem 3. (4 points). Where is the center of mass of a hemisphere of radius 1? Problem 4. (4 points). Archimedes, in a recently discovered book called The Method, describes a procedure for computing the volume of a sphere. He begins by building a mobile, with a cylinder of height r and radius r on one side balanced against a hemisphere of radius r and a cone of radius r and height r on the other side:
+
+You may assume that the volume of the cylinder is πr3 , and that the volume of the cone is πr3 /3, and that the balance point is at the midpoint. Explain why the mobile balances and therefore prove that the volume of a hemisphere is 2πr3 /3.
+
+c 2008 Jim Fowler
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Take-Home Quiz 6
+
+

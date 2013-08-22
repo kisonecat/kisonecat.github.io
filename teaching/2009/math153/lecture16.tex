@@ -1,0 +1,98 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+\newtheorem*{example}{Example}
+\newtheorem*{thm}{Theorem}
+
+\title{Lecture 16: Taylor series}
+\author{Math 153 Section 57}
+\date{Monday November  3, 2008}
+
+\begin{document}
+\maketitle
+
+Following chapter 12.6.
+
+\subsection{Administrative stuff}
+
+Many thanks to those who filled out an online anonymous survey; very
+helpful!  I especially noticed a consensus on doing trickier problems
+during lecture.
+
+\subsection{Recall}
+
+Series are not piles of numbers that we add up---they are
+\textbf{lists} of numbers that we add up, in order.
+
+\subsection{Overview}
+
+We have paid a high price (limits, series) and now we reap the rewards
+(Taylor series).
+
+\subsection{Taylor series}
+
+Goal: approximate $e^x$ (really, any function) by a polynomial.
+
+$p_0(x) = 1$ is a good approximation (gets the value correct at 0).
+
+$p_1(x) = 1 + x$ is better approximation (gets the value and first derivative correct at 0).
+
+$p_2(x) = 1 + x + x^2/2$ is yet better approximation (gets the value and first and second derivative correct at 0).
+
+$p_3(x) = 1 + x + x^2/2 + x^3/6$ is even yet a better approximation (gets the value and first and second and third derivative correct at 0).
+
+General pattern: $p_k(x) = \sum_{n=0}^k \frac{x^n}{n!}$.
+
+Very generally:
+$$
+p_k(x) = \sum_{n=0}^k \frac{f^{(n)}(0) \, x^n}{n!}
+$$
+
+\subsection{Is this useful?}
+
+Approximations are useless without error estimates.  People often say
+$\pi \approx 3.14$, but without knowing how good or bad an
+approximation this is, it is useless.  I could just as well say $\pi
+\approx 5$.
+
+\subsection{Theorem}
+
+If $f(x) : (-a,a) \to R$, with $n+1$ cts derivatives, then $f(x) = p_n(x) + R_n(x)$, where
+$$
+R_n(x) = \frac{1}{n!} \, \int_0^x f^{(n+1)}(t) \, (x-t)^n \, dt
+$$
+
+This is the exact error term---and if we know the error exactly, it
+isn't much of an error---if we could calculate $R_n(x)$ we could
+calculate the function.
+
+\subsection{Bounding the remainder}
+
+Lagrange's theorem:
+$$
+R_n(x) = \frac{f^{(n+1)}(c)}{(n+1)!} x^{n+1}
+$$
+where $c$ is some number between $0$ and $x$.
+
+\subsection{Remainder vanishes for large $n$}
+
+For instance, for $f(x) = e^x$, the remainder looks like $e^c \cdot x^{n+1}/(n+1)!$, which goes to zero.
+
+Consequence: $e^x = \sum_{n=0}^\infty x^n/n!$ for all $x$.
+
+\subsection{Other functions}
+
+We can find series for $\sin x$ and $\cos x$---and these series converge to the corresponding function for all $x$.
+
+\subsection{Horrible truth}
+
+For any smooth function, we can write down a Taylor series---but we
+can't be sure that it will converge unless we can show that the
+remainder term gets small.
+
+Example: $f(x) = 1/(1-x)$.
+
+
+\end{document}

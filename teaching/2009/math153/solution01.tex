@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+
+\usepackage{fullpage}
+\usepackage{nopageno}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\newcommand{\R}{\mathbb{R}}
+\usepackage{add-copyright}
+
+\title{Solution Set 1}
+\date{Wednesday, October 1, 2008}
+
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+\item For each of the following sets, find the least upper bound (if it
+exists) and the greatest lower bound (if it exists).
+
+\begin{description}
+\item[(a)] $(3,5)$.\\  The least upper bound is 5.  The greatest lower bound is 3.
+\vfill
+\item[(b)] $[-4,17)$.\\  The least upper bound is 17.  The greatest lower bound is -4.
+\vfill
+\item[(c)] $[0,\infty)$.\\  There is no upper bound.  The greatest lower bound is 0.
+\vfill
+\item[(d)] $\{ x \in \R : x < 6 \}$.\\  The least upper bound is 6.  There is no lower bound.
+\vfill
+\item[(e)] $\{ x \in \R : x^2 < 2 \}$.\\  The least upper bound is $\sqrt{2}$.  The greatest lower bound is $-\sqrt{2}$.
+\vfill
+\item[(f)] $\{ x \in \R : |x - 1| < 3 \}$.\\  The least upper bound is $4$.  The greatest lower bound is $-2$.
+\vfill
+\end{description}
+
+\item Which of the sets in Problem 1 are bounded?
+
+Only the sets in parts \textbf{(a)}, \textbf{(b)}, \textbf{(e)}, and \textbf{(f)} are bounded.
+
+\vfill
+
+\item Suppose $S$ is a bounded set of real numbers, and $T$ is a
+  subset of $S$.  Is $T$ also bounded?  Why or why not?
+
+  Yes: if $S$ is bounded, and $T$ is a subset of $S$, then $T$ is
+  bounded.  Why?  Because an upper (or lower) bound for $S$ is also an
+  upper (or lower) bound for $T$.
+
+  Suppose $b$ is a upper bound for $S$; by definition, this means that
+  for all $s \in S$, we have $b \geq s$.
+
+  But $T$ is a subset of $S$, so for all $t \in T$, we also have $t
+  \in S$; since $b$ is bigger than (or equal to) everything in $S$, we
+  have $b \geq t$.
+
+  We conclude that for all $t \in T$, we have $b \geq t$.  This is
+  what we mean when we say that $b$ is an upper bound for $T$, so $T$
+  is bounded above.
+
+  A similar argument shows that a lower bound for $S$ is also a lower bound for $T$.
+
+\vfill
+
+\end{enumerate}
+
+\end{document}

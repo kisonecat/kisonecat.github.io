@@ -1,0 +1,100 @@
+Problem 1.
+Let p1 be the point having polar coordinates r = 1 and θ = π. Let p2 be the point having polar coordinates r = −1 and θ = π/2. Find the Euclidean distance between p1 and p2 . Solution. The relationship between cartesian coordinates (x, y) and polar coordinates (r, θ) is given by (x, y) = (r cos θ, r sin θ). So the cartesian coordinates for p1 are (1 cos π, 1 sin π) = (−1, 0). The cartesian coordinates for p2 are (−1 cos (π/2) , −1 sin (π/2)) = (0, −1). A vector starting at p1 and ending at p2 is p2 − p1 = (0, −1) − (−1, 0) = (1, −1) which has length ||(1, −1)|| = √ The distance between p1 and p2 is 2. (1)2 + (−1)2 = √ 2.
+
+Problem 2.
+Deﬁne functions f1 , . . . , f4 : R → R2 by f1 (t) f2 (t) f3 (t) f4 (t) = = = = (t2 + t, t2 + t), (t2 + t, t2 − t), (t2 − t, t2 + t), and (t2 − t, t2 − t).
+
+Below are shown graphs of vector-valued functions; label the graphs with the corresponding function, and explain why you made the choices you did. Hint: To get started, calculate the deriative at t = 0. Solution. This problem was ill-posed; everyone received full credit.
+
+Problem 3.
+
+0.8π
+
+0.84π
+
+Consider the curve given, in polar coordinates, by r = θ2 . Find the slope of the 0.92π tangent line to the curve when θ = π/2.
+5 0.96π
+
+0.88π
+
+π -10 -5 0 5 10
+
+1.04π -5
+
+1.08π
+
+1.12π
+
+Solution.
+
+1.16π
+
+Recall that the relationship between polar and cartesian coordinates is
+1.2π
+
+1.24π
+
+x = r cos θ, y = r sin θ.
+1.72π
+
+Using this, we convert r = θ2 into 1.28πparametric equation a
+1.32π
+
+x = θ2 cos θ, 1.36π y = θ2 sin θ.
+1.4π 1.6π
+
+1.68π 1.64π
+
+1.44π 1.48π This gives the position of a point (x, y) depending on θ. We diﬀerentiate 1.52π ﬁnd 1.56π to
+
+dx = 2θ cos θ − θ2 sin θ, dθ dy = 2θ sin θ + θ2 cos θ. dθ The ratio of these derivatives gives dy dy/dθ 2θ cos θ − θ2 sin θ = = . dx dx/dθ 2θ sin θ + θ2 cos θ The problem asks us to ﬁnd the slope of the tangent line, dy/dx, when θ = π/2. In the graph, this looks to be roughly −1. In reality, this is dy 2 (π/2) cos (π/2) − (π/2)2 sin (π/2) = dx 2 (π/2) sin (π/2) + (π/2)2 cos (π/2) π · 0 − (π/2)2 · 1 = π · 1 + (π/2)2 · 0 − (π/2)2 π = =− , π 4 which is a bit less than −1, consistent with the picture.
+
+Problem 4.
+Consider the functions f : R → R2 and g : R → R2 given by f (t) = (6t, 8t) g(s) = (3s, 2s2 ). The graphs intersect when t = 1 and s = 2; ﬁnd the cosine of the angle of intersection of these two curves. Solution. Note that f (1) = (6, 8) and g(2) = (6, 8), so they do intersect. A common mistake was to ﬁnd the angle between the vectors f (1) and g(2), when in fact you must ﬁnd the angle between f (1) and g (2). Since f (t) = (6, 8) and g (s) = (3, 4s) we get f (1) = (6, 8) and g (2) = (3, 8) The angle between the curves at the point of intersection is the angle between the vectors (6, 8) and (3, 8). The dot product is (6, 8) · (3, 8) = 18 + 64 = 82 The length of the ﬁrst vector is ||f (1)|| = The length of the second vector is ||g (2)|| = √ 32 + 82 = √ 9 + 64 = √ 73. √ 62 + 82 = √ 100 = 10.
+
+Consequently, using the geometric interpretation of the dot product, cos θ = 82 f (1) · g (2) √ . = ||f (1)|| ||g (2)|| 10 · 73
+
+Some people wrote this in lowest terms, but that is, of course, not necessary.
+
+Problem 5.
+If possible, write the vector (8, 9) ∈ R2 as a scalar multiple of (1, 1) added to a scalar multiple of (1, 2). If it is not possible, explain why. Solution. We want to ﬁnd α, β ∈ R so that (8, 9) = α · (1, 1) + β · (1, 2).
+
+In other words, we want to solve the system of equations 8 = α · 1 + β · 1, 9 = α · 1 + β · 2.
+
+Subtracting the second equation from the ﬁrst implies β = 1. Solving then for α, we ﬁnd α = 7. A quick check (8, 9) = 7 · (1, 1) + 1 · (1, 2) = (7 · 1 + 1 · 1, 7 · 1 + 1 · 2) shows that this works.
+
+Problem 6.
+Consider two vectors in R2 , v = (1, 2) and w = (1, 1). (a) Find a unit length vector pointing in the same direction as v. (b) Calculate w · (100v + 1000w). Solution. The lengh of v is ||v|| = √ 12 + 22 = √ 5.
+
+To ﬁnd a unit length vector, we divide v by its length, to get v (1, 2) = √ = ||v|| 5 1 2 √ ,√ 5 5 .
+
+Some people chose to rationalize the denominator (though this is not necessary).
+
+Problem 7.
+√ Compute the angle between the vectors (1, 0, 0) and ( 3, 0, 3). Are they orthogonal? Solution. If θ is the angle between vectors v and w, then cos θ = √ If v = (1, 0, 0) and w = ( 3, 0, 3), then v×w =1· √ 3+0·0+0·3= √ 3. v×w . ||v|| ||w||
+
+The length of v is ||v|| = 1. The length of w is ||w|| = √ √ √ ( 3)2 + 02 + 32 = 3 + 9 = 12.
+
+Therefore,
+
+√ v×w 3 1 1 √ =√ = . = cos θ = ||v|| ||w|| 2 1 · 12 4 But the problem does not ask us to ﬁnd the cosine of the angle—the problem asks for the angle between the given vectors. Many people made the mistake of only determining whether or not the angles were orthogonal without determining θ. If cos θ = 1/2, then θ = π/3. Since the dot product is not zero (equivalently, since cos θ is not zero), the given vectors are not orthogonal.
+
+Problem 8.
+Let v = (1, 1, 1) ∈ R3 , and w = (2, 0, 0) ∈ R3 . (a) Compute v × w. (b) Calculate the area of the parallelogram having vertices (0, 0, 0), Solution. To calculate the cross product in (a), we rewrite v as i + j + k and w as 2i. Then, the cross product can be computed as v×w = = = = (i + j + k) × (2i) (i × (2i)) + (j × (2i)) + (k × (2i)) 0 + 2(j × i) + 2(k × i) 0 − 2k + 2j, (1, 1, 1), (3, 1, 1), (2, 0, 0).
+
+which, written as a tuple, is (0, 2, −2). Next, we tackle part (b). The area of the parallelogram with vertices 0,v,w, and v + w is the length of the cross product, i.e., ||v × w||. Since v × w = (0, 2, −2),the area of the parallelogram is the length of (0, 2, −2), namely, √ √ √ ||v × w|| = 02 + 22 + (−2)2 = 4 + 4 = 8 = 2 2. √ Of course, 8 is a perfectly good answer.
+
+Problem 9.
+Consider the lines L1 = {v ∈ R3 : v = (1, 1, 1)t + (0, 0, 0) for t ∈ R }, L2 = {v ∈ R3 : v = (1, 1, 2)t + (2, 2, 0) for t ∈ R }. Do L1 and L2 intersect? If they intersect, ﬁnd the point of intersection; if not, determine whether L1 and L2 are parallel or skew.
+
+Solution. They do intersect. We search for t, s ∈ R so that (1, 1, 1)t + (0, 0, 0) = (1, 1, 2)s + (2, 2, 0). Next, replace this single vector equation with three equations, 1 · t + 0 = 1 · s + 2, 1 · t + 0 = 1 · s + 2, 1 · t + 0 = 2 · s + 0.
+
+Subtracting the third equation from the second gives 0 = s − 2, so s = 2. Solving for t then, t = 4. The problem asks us to ﬁnd the point where these lines intersect (and a common mistake was forgetting to do this). Substituting t = 4 into the ﬁrst equation, we ﬁnd that the point of intersection is (4, 4, 4) = (1, 1, 1) · 4 + (0, 0, 0).
+
+Problem 10.
+Suppose P is a plane containing the point (1, 1, 1) and having normal vector (4, 5, −6). (a) Write down an equation for the plane P . (b) Find the intersection of P with the line L = {v ∈ R3 : v = t · (1, 1, 1) + (0, 0, 0) for t ∈ R}, or, if they do not intersect, prove it. Solution. For part (a), you should write down the formula for a plane through a point b and with normal vector n, namely, P = {v ∈ R3 : (v − b) · n = 0}. So in this case, P = {v ∈ R3 : (v − (1, 1, 1)) · (4, 5, −6) = 0}. Of course, there are other ways of writing down an equation for a plane, and I gave credit for any of them. For instance, you might rewrite this as ((x, y, z) − (1, 1, 1)) · (4, 5, −6) = 0 and then expand out to get 4x + 5y − 6z = 3. I meant part (b) to be really easy: the line L includes the point (1, 1, 1), and the plane P also contains the point (1, 1, 1), so they intersect at that point. You could have written down a system of linear equations and solved it, too, but you don’t need to if you can see the solution right away.
+
+Problem 11.
+The following ten questions are for extra credit. Circle the best answer. True False There are four vectors v1 , v2 , v3 , v4 ∈ R3 so that vi and vj are orthogonal for i = j. I meant this problem to ask for nonzero vectors; as stated, it is true, if you use the zero vector. I gave credit for either answer. True False If v1 , v2 ∈ R3 , then v1 × v2 is orthogonal to both v1 and v2 . This is a property of the cross product. True False There are two lines in R3 which do not intersect and are not parallel. This is the deﬁnition of skew lines. df True False If f (t) = (t, t2 , t3 ), then = (1, 2, 3) when t = 0. This is actually the derivative dt evaluated at t = 1 not t = 0. True False Given a vector v ∈ R3 , it is possible to ﬁnd six unit vectors in R3 which are each orthogonal to v. You can ﬁnd inﬁnitely many vectors perpendicular to a given vector True False If v, w, u are vectors in R3 , then ((v · u) · w) × v is zero. True False Suppose v ∈ R2 is a unit vector; there does not exist a vector w ∈ R2 so that v · w = 1010 . There does exist such a vector—you can choose w = 1010 · v. True False Given a line L in R3 , it is possible to ﬁnd two planes P1 and P2 so that P1 and P2 do not intersect L, but P1 intersects P2 in a line. Choose two planes that are not parallel, but which do not contain the line L. True False For all vectors v, w ∈ R3 , it is the case that ((4w) × (3v)) · (5w) = ((3v) × (4w)) · (4w). In fact, both sides are zero. True False For vectors v, w ∈ R4 , it is always the case that (v + w) · (v + w) = ||v||2 + ||w||2 + 2 · (v · w). You can prove this by using the distributive property.
+
+

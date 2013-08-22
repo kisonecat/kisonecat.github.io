@@ -1,0 +1,96 @@
+\documentclass[12pt]{handout}
+
+\course{Math 765}
+\title{Take-Home Final Exam}
+\author{Jim Fowler}
+\date{Winter 2011}
+
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\CP}{\mathbb{C}P}
+\newcommand{\RP}{\mathbb{R}P}
+
+\usepackage{enumerate}
+\usepackage{nopageno}
+\usepackage{hyperref}
+\usepackage{tikz}
+
+\DeclareMathOperator{\Vect}{Vect}
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\SO}{SO}
+\DeclareMathOperator{\so}{\mathfrak{so}}
+\DeclareMathOperator{\codim}{codim}
+\DeclareMathOperator{\Mat}{Mat}
+\DeclareMathOperator{\SymMat}{SymMat}
+\DeclareMathOperator{\Id}{Id}
+\DeclareMathOperator{\Sym}{Sym}
+\newcommand{\Proj}{\mathbb{P}}
+\newcommand{\LL}{\mathcal{L}}
+\DeclareMathOperator{\Div}{div}
+\DeclareMathOperator{\grad}{grad}
+
+\newcommand{\HH}{H}
+\newcommand{\hh}{\mathfrak{h}}
+
+\DeclareMathOperator{\Imm}{Imm}
+\DeclareMathOperator{\Mono}{Mono}
+\usepackage{amsthm}
+\newtheorem*{theorem*}{Theorem}
+
+\begin{document}
+\maketitle
+
+\noindent\textbf{The final exam.}  The course is ended, but there is
+still one task that remains---this, the take-home final exam.  Please
+feel free to email me with questions at \texttt{fowler@math.osu.edu},
+and feel free to discuss the problems with your friends---but write up
+your own solutions.
+\textit{The final exam below should be handed in 100 hours from now---on Tuesday, March 15,
+  2011, at 5:30\textsc{p.m.}}
+
+\subsection*{Problem 1}
+
+Consider $G_2(\R^4)$, the Grassmannian of planes in $\R^4$ (that is, a
+point in $G_2(\R^4)$ corresponds to a subspace $\R^2 \hookrightarrow
+\R^4$).  Show that the map
+$$
+\bigsqcup_{\stackrel{V \subset \R^4}{\dim V = 2}} V \to G_2(\R^4)
+$$
+sending a vector in $V$ to the point $[V] \in G_2(\R^4)$ is a smooth
+vector bundle.
+
+\subsection*{Problem 2}
+
+Let $M$ be a closed smooth $n$-manifold without boundary; let $g$ be a
+Riemannian metric on $M$; the Laplacian $\Delta : C^\infty(M) \to
+C^\infty(M)$ is given by
+$$
+\Delta(u) = -\Div(\grad u).
+$$
+\begin{itemize}
+\item Show that, if $\Delta u \equiv 0$, then $u$ is constant.
+\item Show that, if $\Delta u = \lambda u$ and $u$ is not constant, then $\lambda > 0$.
+\end{itemize}
+
+\subsection*{Problem 3}
+
+Suppose that $f : S^n \to S^n$ is a diffeomorphism; show that $X =
+D^{n+1} \cup_f D^{n+1}$ is a smooth manifold.
+
+\subsection*{Problem 4}
+
+Suppose $f : M^n \to \R$ is a proper smooth map for which there are no
+critical points.  Is it the case that $M = N \times \R$ for some
+smooth manifold $N$?
+
+\subsection*{Problem 5}
+
+Consider the tangent distribution on $\R^3$ given by $\ker \left( dz - y \, dx \right)$.
+\begin{itemize}
+\item Is this distribution involutive?
+\item For any two points $p, q \in \R^3$, can you find a curve $\gamma : I
+\to \R^3$ so that $\gamma'(t)$ lies in this distribution?
+\end{itemize}
+
+
+
+\end{document}

@@ -1,0 +1,40 @@
+\documentclass[12pt]{quiz}
+
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\CP}{\mathbb{C}P}
+\newcommand{\RP}{\mathbb{R}P}
+
+\usepackage{enumerate}
+\usepackage{nopageno}
+\usepackage{hyperref}
+
+\DeclareMathOperator{\Emb}{Emb}
+
+\begin{document}
+\maketitle
+
+\noindent
+Consider a smooth orientable 2-manifold $M$; we denote the vector
+space of 1-forms on $M$ by $\Omega^1(M)$.  Let $\Emb(S^1,M)$ denote
+the set of embedded circles in $M$ (i.e., injective immersions from
+$S^1$ to $M$), and $\R[\Emb(S^1,M)]$ the real vector space with basis
+$\Emb(S^1,M)$.  Its dual is $\R[\Emb(S^1,M)]^\star$.
+
+\vspace{2ex}\noindent%
+The \textit{period map} $p : \Omega^1(M) \to \R[\Emb(S^1,M)]^\star$
+sends a $1$-form $\omega$ to the functional $f_\omega :
+\R[\Emb(S^1,M)] \to \R$ given by $f_\omega(i) = \int_{S^1}
+i^\star(\omega)$ for an embedding $i :S^1 \to M$.
+
+\vspace{2ex}\noindent%
+Is $p$ a surjective function?  If not, why not?
+
+\subsection*{Solution}
+
+\pagebreak
+\null
+
+% no, it's not the case, but this requires knowing how to integrate
+% around a circle unfortunately.
+
+\end{document}

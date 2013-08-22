@@ -1,0 +1,153 @@
+[
+  {
+    "title": "Homework 9",
+    "shortname": "homework09",
+    "filename": "homework09.pdf",
+    "source": "homework09.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Homework 3",
+    "shortname": "homework03",
+    "filename": "homework03.pdf",
+    "source": "homework03.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Homework 2",
+    "shortname": "homework02",
+    "filename": "homework02.pdf",
+    "source": "homework02.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Final Exam",
+    "shortname": "final",
+    "filename": "final.pdf",
+    "source": "final.tex",
+    "description": "",
+    "tags": [
+      "exam",
+      "exam"
+    ]
+  },
+  {
+    "title": "Signature",
+    "shortname": "signature",
+    "filename": "signature.pdf",
+    "source": "signature.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Homework 1",
+    "shortname": "homework01",
+    "filename": "homework01.pdf",
+    "source": "homework01.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Homework 5",
+    "shortname": "homework05",
+    "filename": "homework05.pdf",
+    "source": "homework05.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Cup Products Commute",
+    "shortname": "cup-product-commute",
+    "filename": "cup-product-commute.pdf",
+    "source": "cup-product-commute.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Poincar\\'e Duality",
+    "shortname": "poincare-duality-applications",
+    "filename": "poincare-duality-applications.pdf",
+    "source": "poincare-duality-applications.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Homework 7",
+    "shortname": "homework07",
+    "filename": "homework07.pdf",
+    "source": "homework07.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Intersections, Linking",
+    "shortname": "intersecting-submanifolds",
+    "filename": "intersecting-submanifolds.pdf",
+    "source": "intersecting-submanifolds.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Cohomology Operations",
+    "shortname": "bocksteins",
+    "filename": "bocksteins.pdf",
+    "source": "bocksteins.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Homework 4",
+    "shortname": "homework04",
+    "filename": "homework04.pdf",
+    "source": "homework04.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Homework 6",
+    "shortname": "homework06",
+    "filename": "homework06.pdf",
+    "source": "homework06.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Homework 8",
+    "shortname": "homework08",
+    "filename": "homework08.pdf",
+    "source": "homework08.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  }
+]

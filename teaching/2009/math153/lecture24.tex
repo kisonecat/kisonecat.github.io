@@ -1,0 +1,176 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+\newtheorem*{example}{Example}
+\newtheorem*{thm}{Theorem}
+
+\title{Lecture 24: Integrals with tricks}
+\author{Math 153 Section 57}
+\date{Friday November 21, 2008}
+
+\begin{document}
+\maketitle
+
+Following chapter 8.3.
+
+There are many other tricks not in the book; we will cover some of these.
+
+Also, I will try to do examples that you might actually care about.
+
+\subsection*{Products of sines and cosines}
+
+From your homework you know how to do
+$$
+\int \sin (2x) \, \cos(3x) \, dx
+$$
+by using parts.
+
+You can also do
+$$
+\int \sin^2 x \, dx
+$$
+by using a trig substitution.
+
+You can also do
+$$
+\int \sin^n x \, \cos^m x \, dx
+$$
+by making a substitution $\cos^2 x + \sin^2 x = 1$.
+
+\subsection*{Repeated integration}
+
+$$\int uv = u v_1 - u' v_2 + u'' v_3 - \cdots + (-1)^{n}\ u^{(n)} \ v_{n+1}
+$$
+
+\subsection*{Integrals of products of sines and cosines}
+
+Do
+$$
+\int \sin(ax) \, \cos(bx) \, dx
+$$
+by using an angle sum formula? No!  Use parts twice.
+
+Powers of trig functions?  Replace $\sin^2 x$ with $1 - \cos^2 x$ as follows
+$$
+\int \cos^3 x \, \sin^5 x \, dx = 
+\int \cos x (1 - \sin^2 x) \, \sin^5 x \, dx = 
+\int  (1 - u^2) \, u^5 \, du = 
+$$
+
+\subsection*{Trig identities}
+
+$1 - \sin^2 x = \cos^2 x$.
+
+$1 + \tan^2 x = \sec^2 x$.
+
+$\sec^2 x - a = \tan^2 x$.
+
+So if you see $\sqrt{a^2 - x^2}$, set $x = a \sin u$.
+
+For example,
+$$
+\int_0^r \sqrt{r^2 - x^2} \, dx
+$$
+which we know is $\pi r^2/4$.  But let's check it.
+
+Set $x = r \sin u$ and $dx = r \cos u \, du$.  Then the integral above is
+$$
+\int_0^{\pi/2} \sqrt{r^2 - r^2 \sin^2 u} \, r\, \cos u \, du
+$$
+But this becomes
+$$
+\int_0^{\pi/2} r^2 \sqrt{1 - \sin^2 u} \, \cos u \, du
+$$
+which becomes
+$$
+\int_0^{\pi/2} r^2 \cos^2 u \, du
+$$
+which we can do using $\cos^2 u = (1 + \cos (2u))/2$, so get
+$$
+\int_0^{\pi/2} r^2 \frac{1 + \cos (2u)}{2} \, du = \frac{r^2}{2} \int_0^{\pi/2} (1 + \cos (2u)) \, du 
+$$
+which is $\pi r^2/4$, as we suspected.
+
+\subsection*{Volume of a sphere}
+
+Even easier to compute the volume of a sphere this way!  A hemisphere has volume
+$$
+\int_0^r \pi (\sqrt{r^2 - x^2})^2 \, dx = \frac{2}{3} \pi r^3
+$$
+So the whole sphere has voluem $4 \pi r^3/3$.
+
+\subsection*{Volume of a hypersphere}
+
+A hemi-hypersphere has volume
+$$
+\int_0^r \frac{4}{3} \pi (\sqrt{r^2 - x^2})^3 \, dx
+$$
+If we make a trig substitution $x = r \sin u$ and $dx = r \cos u$ we get
+$$
+V = \frac{4 r^4 \pi}{3} \int_0^{\pi/2} \cos^4 u \, du
+$$
+This is an integral we can do!
+
+Replace $\cos^2 u$ with $(1 + \cos(2u))/2$, and get
+$$
+V = \frac{4 r^4 \pi}{3} \int_0^{\pi/2} \left( \frac{1 + \cos (2u)}{2} \right)^2 \, du
+$$
+or equivalently
+$$
+V = \frac{4 r^4 \pi}{12} \int_0^{\pi/2} \left( 1 + 2 \cos (2u) + \cos^2 (2u) \right) \, du
+$$
+Now do it again!
+$$
+V = \frac{4 r^4 \pi}{12} \int_0^{\pi/2} \left( 1 + 2 \cos (2u) + \frac{1 + \cos (4u)}{2} \right) \, du
+$$
+I'll clean it up a bit
+$$
+V = \frac{4 r^4 \pi}{24} \int_0^{\pi/2} \left( 3 + 4 \cos (2u) + \cos (4u) \right) \, du
+$$
+But the integrals of $\cos (2u)$ and $\cos (4u)$ vanish (do not do more work than you need to do!).
+We end up with,
+$$
+V = \frac{4 r^4 \pi}{24} (3 \pi/2) = \frac{r^4 \pi^2}{4}
+$$
+This is a volume for a hemisphere, so the whole sphere has volume
+$$
+V = \frac{2 \, r^4 \pi^2}{4} = \frac{r^4 \pi^2}{2}
+$$
+Yeah, this seems a bit \textit{ad hoc} but in a multivariable course,
+you'll see a more conceptual route to these calculations.
+
+Is this right?
+
+$B^2$ sits inside a box built out of two $B^1$'s; so $\pi < 2 \cdot
+2$.  In the same way, $B^4$ sits inside a box built out of two
+$B^2$'s, so $\pi^2 /2 < \pi^2$.  Not exactly a big surprise.
+
+\subsection*{Using power series}
+
+$$
+\int_0^\infty \log (1 + e^{-x}) \, dx
+$$
+This is
+$$
+\int_0^\infty \sum_{n=1}^\infty \frac{(e^{-x})^n (-1)^{n+1} }{n} \, dx
+$$
+which we can integrate term by term (why?!)
+$$
+\sum_{n=1}^\infty \int_0^\infty \frac{(e^{-nx}) (-1)^{n+1} }{n} \, dx  
+$$
+which gives
+$$
+\sum_{n=1}^\infty \frac{ (-1)^{n+1} }{n^2}
+$$
+which is $\pi^2/12$.  Why is that?
+
+Let $A = \sum_{\mbox{even}} 1/n^2$ and $B = \sum_{\mbox{odd}} 1/n^2$.
+We want to compute $B - A$.  But $B + A = 4A$, so $B = 3A$.  And $B +
+A = \pi^2/6 = 4A$, so $A = \pi^2/24$ and $B = \pi^2/8$.  Then $B - A =
+\pi^2/12$.
+
+
+
+\end{document}

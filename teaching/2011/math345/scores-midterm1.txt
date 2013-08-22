@@ -1,0 +1,43 @@
+Midterm 1 Scores
+Autumn 2010
+
+Math 345
+Jim Fowler
+
+The average score on the ﬁnal exam was 1412/1800, with a standard deviation of 240. The median score on the ﬁnal exam was 1420/1800. Because 1412/1800 ≈ 78.4% < 80%, I will add 80% × 1800 − 1412 = 28 points to everyone’s score at the end of the quarter, so as to bring the class average on this ﬁrst midterm up to 80%.
+
+Histogram
+
+700
+
+800
+
+900
+
+1000
+
+1100
+
+1200
+
+1300
+
+1400
+
+1500
+
+1600
+
+1700
+
+1800
+
+Per Problem
+On On On On On problem problem problem problem problem 1 2 3 4 5 the the the the the class class class class class averaged averaged averaged averaged averaged 261.6/360 334.7/360 251.8/360 251.9/360 311.8/360 with with with with with standard standard standard standard standard deviation deviation deviation deviation deviation 93.0 56.2 72.7 108.9 80.2
+
+Crosstabs
+This shows the correlation between your scores on one problem and your scores on another. P1 100% 07% 01% 14% 26% 56% P2 07% 100% 37% 12% 30% 53% P3 01% 37% 100% 15% 23% 54% P4 14% 12% 15% 100% 13% 63% P5 26% 30% 23% 13% 100% 64% Total 56% 53% 54% 63% 64% 100%
+
+P1 P2 P3 P4 P5 Total
+
+

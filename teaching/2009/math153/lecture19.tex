@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+\newtheorem*{example}{Example}
+\newtheorem*{thm}{Theorem}
+
+\title{Lecture 19: Power series}
+\author{Math 153 Section 57}
+\date{Monday November 10, 2008}
+
+\begin{document}
+\maketitle
+
+Following chapter 12.8.
+
+\subsection*{Some loose ends}
+
+using Taylor series to instantly solve differential equations
+
+dividing series
+
+\subsection*{Power series}
+
+definition of power series
+
+point out that discussing $\sum a_n x^n$ suffices, since $\sum a_n
+(x-a)^n$ is just a slight modification.
+
+\subsection*{Convergence}
+
+If $\sum a_n x^n$ converges at $c$, then it converges absolutely for all $x$ with $|x| < |c|$.
+
+Proof: use limit comparison test.  $|a_n x^n| / |a_n c^n|$ converges to zero, and since $\sum |a_n c^n|$ converges, so does $\sum |a_n x^n|$.
+
+Ask about the set of convergence.  The possibilities are
+\begin{itemize}
+\item convergence only at zero (radius $0$)
+\item converges everywhere (radius $\infty$)
+\item converges for $(-r,r)$ and diverges for $(-\infty,-r) \cup (r,\infty)$.
+\end{itemize}
+
+interval of convergence
+
+On the endpoints of the interval, we cannot say anything (examples: $x^n$, $(-1)^n x^n / n$, $x^n/n$, $x^n / n^2$)
+
+\end{document}

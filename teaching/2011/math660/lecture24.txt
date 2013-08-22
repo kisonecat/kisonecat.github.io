@@ -1,0 +1,143 @@
+Lecture 24: Removable singularities
+Math 660—Jim Fowler Monday, July 25, 2011
+
+Removable singularities
+
+f : Ω − {a} → C analytic can be extended to Ω → C iﬀ limz→a f (z) (z − a) = 0.
+
+Removable singularities
+
+f : Ω − {a} → C analytic can be extended to Ω → C iﬀ limz→a f (z) (z − a) = 0. Why? Cauchy’s formula is valid.
+
+Apply this trick to F (z) = f (z) − f (a) z −a
+
+and get f (z) = f (a) + (z − a)F (z).
+
+Apply this trick to F (z) = f (z) − f (a) z −a
+
+and get f (z) = f (a) + (z − a)F (z). Rinse, repeat.
+
+Consequently. . .
+If f : Ω → C is analytic, for any a ∈ Ω, we can write
+k
+
+f (z) = f (a) +
+n=1
+
+f (n) (a) (z − a)n + F (z)(z − a)k+1 n!
+
+for some analytic F : Ω → C.
+
+Say more about F
+If f : Ω → C is analytic, for any a ∈ Ω, we can write
+k
+
+f (z) = f (a) +
+n=1
+
+f (n) (a) (z − a)n + F (z)(z − a)k+1 n!
+
+for the analytic F : Ω → C. F (z) = 1 2πiη(z, γ) f (w ) dw . (w − a)n (w − z)
+
+γ
+
+Zeroes and poles
+
+If all derivatives of f vanish at a, then f (z) = F (z)(z − a)n
+
+Zeroes and poles
+
+If all derivatives of f vanish at a, then f (z) = F (z)(z − a)n Estimate the size of F (z).
+
+Zeroes and poles
+
+If all derivatives of f vanish at a, then f (z) = F (z)(z − a)n Estimate the size of F (z). f (z) vanishes on Ω.
+
+Zero of order k
+
+If f (n) (a) = 0 for n ∈ {0, . . . , k − 1}, but f (k) (a) = 0, we say f has a zero of order k.
+
+Zero of order k
+
+If f (n) (a) = 0 for n ∈ {0, . . . , k − 1}, but f (k) (a) = 0, we say f has a zero of order k. It’s like a polynomial!
+
+Zeroes are isolated
+
+Zeroes of analytic function are isolated.
+
+Zeroes are isolated
+
+Zeroes of analytic function are isolated. So if f (z) = g (z) for z ∈ S, (what sort of set is S?) then f ≡ g on Ω.
+
+Classifying singularities
+∆ a disk, with center a. Suppose f : ∆ − {a} → C is analytic.
+
+Classifying singularities
+∆ a disk, with center a. Suppose f : ∆ − {a} → C is analytic. If limz→a f (z) = ∞, we call a a pole. Consider 1/f (z), which has a zero at a of order k, now called the order of the pole.
+
+Classifying singularities
+∆ a disk, with center a. Suppose f : ∆ − {a} → C is analytic. If limz→a f (z) = ∞, we call a a pole. Consider 1/f (z), which has a zero at a of order k, now called the order of the pole. Meromorphic means holomorphic except for poles.
+
+Meromorphic functions
+
+Meromorphic functions
+
+Quotients of analytic functions
+
+Meromorphic functions
+
+Quotients of analytic functions
+
+Poles of meromorphic functions are isolated
+
+Meromorphic functions
+
+Quotients of analytic functions
+
+Poles of meromorphic functions are isolated
+
+Think of the relationship between Z and Q.
+
+Z = {α ∈ R : lim |(z − a)α f (z)| = 0}
+z→a
+
+P = {α ∈ R : lim |(z − a)α f (z)| = ∞}
+z→a
+
+Z = {α ∈ R : lim |(z − a)α f (z)| = 0}
+z→a
+
+P = {α ∈ R : lim |(z − a)α f (z)| = ∞}
+z→a
+
+If α ∈ Z and β > α, then β ∈ Z . If α ∈ P and β < α, then β ∈ P.
+
+Z = {α ∈ R : lim |(z − a)α f (z)| = 0}
+z→a
+
+P = {α ∈ R : lim |(z − a)α f (z)| = ∞}
+z→a
+
+If α ∈ Z and β > α, then β ∈ Z . If α ∈ P and β < α, then β ∈ P. Z = R and P = ∅, Z = (n, ∞) and P = (−∞, n), Z = ∅ and P = ∅.
+
+Partial fractions redux
+
+If f (z) has a pole of order k, consider
+
+(z−a)k f (z) = a0 +a1 (z−a)+· · ·+ak−1 (z−a)k−1 +F (z)(z− and divide by (z − a)k to get the singular part.
+
+Z = ∅ and P = ∅
+These are essential singularities.
+
+Theorem (Weierstrass)
+f : Ω − {a} → C analytic with essential singularity at a. For every w ∈ C and > 0, there is z ∈ B (a) ∩ Ω so that f (z) = w .
+
+Singularities at inﬁnity
+
+To determine the behavior of f (z) at inﬁnity, consider instead f (1/z).
+
+Singularities at inﬁnity
+
+To determine the behavior of f (z) at inﬁnity, consider instead f (1/z). What sort of singularity does sin z have near inﬁnity?
+
+

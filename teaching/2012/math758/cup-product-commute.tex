@@ -1,0 +1,106 @@
+\documentclass[12pt]{handout}
+\usepackage{nopageno}
+\course{Math 758}
+\title{Cup Products Commute}
+\author{Jim Fowler}
+
+\usepackage{amsmath}
+\newtheorem*{theorem*}{Theorem}
+\newtheorem*{corollary*}{Corollary}
+\theoremstyle{definition}
+\newtheorem{question}[theorem]{Question}
+\newtheorem*{remark*}{Remark}
+\newtheorem*{definition*}{Definition}
+\newtheorem*{example*}{Example}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{subproblem}[theorem]{Subproblem}
+\newtheorem{requiredproblem}[theorem]{\makebox[0in][r]{$\bullet$\hspace{0.25em}}Problem}
+
+\DeclareMathOperator{\projection}{proj}
+
+\begin{document}
+
+\maketitle
+
+I'll update the calendar soon to account for the changes in the schedule.
+
+\begin{remark}
+  Our goal is to show that for $\alpha \in H^i(X)$ and $\beta \in H^j(X)$, show that the cup product satisfies
+  \[
+  \alpha \smallsmile \beta = (-1)^{ij} \beta \smallsmile \alpha.
+  \]
+\end{remark}
+
+\begin{definition}
+Let $\epsilon_n = (-1)^{n \cdot (n+1)/2}$.
+\end{definition}
+
+\begin{subproblem}
+Verify $\epsilon_{i+j} = (-1)^{ij} \epsilon_i \epsilon_j$.
+\end{subproblem}
+
+\begin{definition}
+Let $\tau : C_n(X) \to C_n(X)$ be the chain map which, on a simplex $\sigma$, is defined as
+\[
+\tau(\sigma) = \epsilon_n (\sigma \circ \mathrm{reverse}),
+\]
+where $\mathrm{reverse}$ is the affine map $[v_0,\ldots,v_n] \to
+[v_n,\ldots,v_0]$.
+\end{definition}
+
+\begin{subproblem}
+Verify that $\tau$ is a chain map.
+\end{subproblem}
+
+\begin{subproblem}
+  Verify $\tau^\star \alpha \smallsmile \tau^\star \beta = \pm
+  \,\tau^\star(\beta \smallsmile \alpha)$ and determine the sign.
+\end{subproblem}
+
+\begin{subproblem}
+  Consider $X \times I$ as a simplicial complex; in particular, for
+  $\Delta^n \times I$,
+  \begin{align*}
+    [v_0,\ldots,v_n] &= \Delta^n \times \{0\} \\
+    [w_0,\ldots,w_n] &= \Delta^n \times \{1\} \\
+    \Delta^n \times I &= \bigcup [v_0,\ldots,v_i,w_n,\ldots,w_i].
+    \end{align*}
+    Draw a picture to illustrate the resulting simplicial structure on the prism $\Delta^2 \times I$.
+\end{subproblem}
+
+\begin{subproblem}
+ Recall, from Math~757, the \textbf{prism
+    operator} $P : C_n(X) \to C_{n+1}(X)$ defined via
+  \[
+  P(\sigma) = \sum_i (-1)^i \epsilon_{n-i} (\sigma \circ \projection)
+  |_{[v_0,\ldots,v_i,w_n,\ldots, w_i]},
+  \]
+  where $\mathrm{proj}$ is the projection $\Delta^n \times I \to \Delta^n$.
+  Show that $\partial \circ P + P \circ \partial = \tau - \mathrm{Id}$.
+\end{subproblem}
+
+\begin{subproblem}
+  Conclude that $\smallsmile$ is (graded) commutative.
+\end{subproblem}
+
+\begin{problem}
+  Let $\Sigma_g$ be the oriented surface of genus $g$; describe a
+  four-fold covering map $f : \Sigma_5 \to \Sigma_2$, and explain how
+  the map $f_\star$ maps the ring $H^\star(\Sigma_2)$ to the ring
+  $H^\star(\Sigma_5)$.
+\end{problem}
+
+\begin{problem}
+  For which $i$ and $j$ are there maps $f : \Sigma_i \to \Sigma_j$ and
+  $g : \Sigma_j \to \Sigma_i$ so that $f \circ g$ is the identity?
+\end{problem}
+
+\pagebreak
+\null
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

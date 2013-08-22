@@ -1,0 +1,30 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+%\usepackage{add-copyright}
+
+\title{Almost Trigonometic Functions}
+
+\begin{document}
+
+\section{Almost Trigonometric Functions}
+
+For convenience, define
+$$
+t(n) := \begin{cases}
+1 & \mbox{ if $n$ is divisible by 6, } \\
+-1 & \mbox{ if $n$ has remainder 3 when divided by six, } \\
+0 & \mbox{ otherwise. }
+\end{cases}
+$$
+
+Let's define three functions,
+\begin{eqnarray*}
+f_0(x) &=& \sum_{n=0}^\infty \frac{t(n) \, x^n}{n!} \\
+f_1(x) &=& \sum_{n=0}^\infty \frac{t(n - 1) \, x^n}{n!} \\
+f_2(x) &=& \sum_{n=0}^\infty \frac{t(n - 2) \, x^n}{n!}
+\end{eqnarray*}
+
+
+
+\end{document}

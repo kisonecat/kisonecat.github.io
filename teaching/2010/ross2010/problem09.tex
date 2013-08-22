@@ -1,0 +1,119 @@
+\documentclass[12pt]{pset}
+%\usepackage{add-copyright}
+
+\title{Problem Set 9}
+\course{Piecewise-Linear Topology}
+\author{Jim Fowler}
+\date{Summer 2010}
+
+\newcommand{\defnword}[1]{\textbf{#1}}
+
+\usepackage{stmaryrd}
+\newcommand{\boundary}{\partial}
+\newcommand{\collapses}{\searrow}
+\newcommand{\expands}{\nearrow}
+\newcommand{\she}{\ssearrow\nnearrow}
+\newcommand{\join}{\ast}
+\newcommand{\subdivided}{\triangleleft}
+\geometry{margin=1in}%,top=0.5in,bottom=0.5in}
+\DeclareMathOperator{\st}{st}
+\DeclareMathOperator{\vertices}{vert}
+\DeclareMathOperator{\lk}{lk}
+\DeclareMathOperator{\cl}{cl}
+\DeclareMathOperator{\interior}{int}
+\newcommand{\fullsubcomplex}{\Subset}
+
+\begin{document}
+\maketitle
+
+\subsubsection*{Homology.} Today we begin studying the ``homology'' of
+simplicial complexes, a sort of theory that revolves around a basic
+question: if something looks locally like it bounds something, is it
+actually the boundary of something?
+
+\parskip 0.25\baselineskip
+\parindent 0pt
+
+\begin{definition*}
+  An oriented $n$-simplex is an $n$-simplex with an ordering on the
+  vertices, where two oriented simplexes are the same if the order
+  differs by an even permutation.  Our convention will be that
+  oppositely oriented simplexes are inverses of each other, i.e.,
+  if $\sigma$ is an odd permutation, then
+  $$
+  [v_0,\ldots,v_n] = - [v_{\sigma(0)},\ldots,v_{\sigma(n)}].
+  $$
+
+  An $n$-\textbf{chain} is a formal sum of oriented $n$-simplexes,
+  e.g.,
+  $$
+  \alpha = 17 [v_0,\ldots,v_n] - 13 [w_0,\ldots,w_n], \mbox{ where
+    $v_i$ and $w_i$ are vertices in the complex.}
+  $$
+ The collection of all $n$-chains in a complex $X$ is written
+  $C_n(X)$.  This is an \textbf{abelian group}.  
+
+  The boundary $\partial$ of an oriented $n$-simplex
+  $[v_0,\ldots,v_n]$ is the $(n-1)$-chain
+  $$
+  \sum_{i=0}^n (-1)^i [v_0,\ldots,\hat{v}_i,\ldots,v_n],
+  $$
+  where the hat $\hat{v}_i$ denotes a missing term.  The boundary of a
+  chain is the boundary of each of its terms (i.e., defined by
+  linearity), so we have a function $\partial : C_n(X) \to C_{n-1}(X)$.
+\end{definition*}
+
+\begin{requiredproblem}
+  Show that $\partial \circ \partial = 0$, that is, show that the
+  boundary of the boundary is empty.
+\end{requiredproblem}
+
+\begin{problem}
+  Let $\sigma$ be an oriented $n$-simplex $[v_0,\ldots,\v_n]$, and
+  $\tau = [v_1,v_0,v_2,v_3,\ldots,v_n]$; how do $\partial(\sigma)$
+  and $\partial(\tau)$ relate?
+\end{problem}
+
+\begin{definition*}
+ An $n$-chain $\alpha$ is an $n$-\textbf{cycle} if $\partial \alpha =
+ 0$.  The collection of all $n$-cycles in a complex $X$ is written $Z_n(X)$.
+
+ An $n$-chain $\alpha$ is an $n$-\textbf{boundary} if there is some
+ $(n+1)$-chain $\beta$ with $\partial \beta = \alpha$.  The collection
+ of all $n$-boundaries in a complex $X$ is written $B_n(X)$.  By the
+ previous exercise, \textit{every boundary is a cycle}.
+ 
+ Define the \textbf{homology} of $x$ by $H_n(X) = Z_n(X)/B_n(X)$,
+ meaning that $H_n(X)$ consists of cycles, where two cycles are
+ identified if they differ by a boundary.
+\end{definition*}
+
+\begin{requiredproblem}
+  Show that $H_n(X)$ is an abelian group.  For example, is the sum of
+  two cycles a cycle?  Is addition well-defined after identifying
+  cycles which differ by a boundary?
+\end{requiredproblem}
+
+\begin{requiredproblem}
+Let $X$ be the boundary of the triangle (i.e., the simplicial
+complex with three vertices and three edges, in other words, the
+circle).  Compute $H_0(X)$ and $H_1(X)$.
+\end{requiredproblem}
+
+\begin{requiredproblem}
+ Let $X$ be the triangle (i.e., the simplex $\Delta^2$ regarded as a
+ simplicial complex).  Compute $H_0(X)$ and $H_1(X)$.
+\end{requiredproblem}
+
+\begin{requiredproblem}
+ Let $X$ be a triangulation of the sphere.  Compute $H_n(X)$.
+\end{requiredproblem}
+
+\begin{problem}
+Let $X$ be the boundary of the triangle, and $Y$ be the boundary of
+the square.  Compute $Z_n(X)$, $Z_n(Y)$, $B_n(X)$, $B_n(Y)$, $H_n(X)$
+and $H_n(Y)$ for $n = 0, 1$.  Compare them.
+\end{problem}
+
+\end{document}
+

@@ -1,0 +1,203 @@
+Topology of Piecewise-Linear Manifolds
+Jim Fowler Lecture 2 Summer 2010
+
+Goal
+
+Deﬁnitions?
+
+A simplicial complex K is a collection of ﬁnite sets (called the “simplexes”), with the property that if σ ∈ K , and τ ⊂ σ, then τ ∈ K .
+
+A simplicial complex K is a collection of ﬁnite sets (called the “simplexes”), with the property that if σ ∈ K , and τ ⊂ σ, then τ ∈ K .
+
+This deﬁnition is pure combinatorics, but we will think of this as a geometric object.
+
+Examples
+
+= {∅, {0}, {1}, {0, 1}}
+
+Examples
+
+I = {∅, {0}, {1}, {0, 1}}
+
+Examples
+
+I = {∅, {0}, {1}, {0, 1}} = {∅, {0}, {1}}
+
+Examples
+
+I = {∅, {0}, {1}, {0, 1}} S 0 = {∅, {0}, {1}}
+
+Examples
+
+I = {∅, {0}, {1}, {0, 1}} S 0 = {∅, {0}, {1}} = {∅, {a}, {b}, {c}, {a, b}, {b, c}, {a, c}}
+
+Examples
+
+I = {∅, {0}, {1}, {0, 1}} S 0 = {∅, {0}, {1}} S 1 = {∅, {a}, {b}, {c}, {a, b}, {b, c}, {a, c}}
+
+Examples
+
+I = {∅, {0}, {1}, {0, 1}} S 0 = {∅, {0}, {1}} S 1 = {∅, {a}, {b}, {c}, {a, b}, {b, c}, {a, c}} = {∅, {a}, {b}, {c}, {a, b}, {b, c}}
+
+Examples
+
+I = {∅, {0}, {1}, {0, 1}} S 0 = {∅, {0}, {1}} S 1 = {∅, {a}, {b}, {c}, {a, b}, {b, c}, {a, c}} V = {∅, {a}, {b}, {c}, {a, b}, {b, c}}
+
+Examples
+
+I = {∅, {0}, {1}, {0, 1}} S 0 = {∅, {0}, {1}} S 1 = {∅, {a}, {b}, {c}, {a, b}, {b, c}, {a, c}} V = {∅, {a}, {b}, {c}, {a, b}, {b, c}} Shouldn’t V ∼ I ? =
+
+Non-examples
+
+Non-examples
+
+{∅, {0}, {0, 1}}
+
+Non-examples
+
+{∅, {0}, {0, 1}} {{0}, {1}, {0, 1}}
+
+Examples
+The n-simplex ∆n is a complex: label the n + 1 vertices of ∆n using the set V = {0, 1, 2, . . . , n}, then the simplexes of ∆n are all 2n+1 subsets of V . The n-sphere S n consists of all simplexes in ∆n , except for the top dimensional simplex {0, 1, . . . , n}.
+
+Examples
+The n-simplex ∆n is a complex: label the n + 1 vertices of ∆n using the set V = {0, 1, 2, . . . , n}, then the simplexes of ∆n are all 2n+1 subsets of V . The n-sphere S n consists of all simplexes in ∆n , except for the top dimensional simplex {0, 1, . . . , n}.
+
+Problem
+Calculate χ(S n ).
+
+Simplicial Maps
+A simplicial map f : K → L is a function f : vert(K ) → vert(L) so that, whenever σ ∈ K , then f (σ) ∈ L.
+
+Simplicial Maps
+A simplicial map f : K → L is a function f : vert(K ) → vert(L) so that, whenever σ ∈ K , then f (σ) ∈ L. This can crush simplexes
+
+Simplicial Maps
+A simplicial map f : K → L is a function f : vert(K ) → vert(L) so that, whenever σ ∈ K , then f (σ) ∈ L. This can crush simplexes (e.g., a trivial example?)
+
+Simplicial Maps
+A simplicial map f : K → L is a function f : vert(K ) → vert(L) so that, whenever σ ∈ K , then f (σ) ∈ L. This can crush simplexes (e.g., a trivial example?)
+
+Problem
+Find a simplicial map f : T 2 → S 2 which doesn’t crush any edges (i.e., edges are sent to edges, not to vertices).
+
+Simplicial Maps
+A simplicial map f : K → L is a function f : vert(K ) → vert(L) so that, whenever σ ∈ K , then f (σ) ∈ L. This can crush simplexes (e.g., a trivial example?)
+
+Problem
+Find a simplicial map f : T 2 → S 2 which doesn’t crush any edges (i.e., edges are sent to edges, not to vertices). Think “4-color the vertices of T 2 .”
+
+Conversely. . .
+
+Problem
+Find a simplicial map f : S 2 → T 2 which doesn’t crush any edges.
+
+Conversely. . .
+
+Problem
+Find a simplicial map f : S 2 → T 2 which doesn’t crush any edges. Think “Skewer and fold.”
+
+Problem
+Do there exist simplicial maps f : T 2 → S 2 and g : S 2 → T 2 which are inverses of each other?
+
+Problem
+Do there exist simplicial maps f : T 2 → S 2 and g : S 2 → T 2 which are inverses of each other? No. And why not?
+
+Problem
+Do there exist simplicial maps f : T 2 → S 2 and g : S 2 → T 2 which are inverses of each other? No. And why not? Euler characteristic.
+
+Problem
+Do there exist simplicial maps f : T 2 → S 2 and g : S 2 → T 2 which are inverses of each other? No. And why not? Euler characteristic. Separation via curves.
+
+Problem
+Suppose f : S 1 → S 2 is an injective simplicial map (i.e., distinct vertices are sent to distinct vertices). Does the image of f necessarily separate S 2 into two pieces?
+
+Problem
+Suppose f : S 1 → S 2 is an injective simplicial map (i.e., distinct vertices are sent to distinct vertices). Does the image of f necessarily separate S 2 into two pieces? Yes.
+
+Problem
+Suppose f : S 1 → S 2 is an injective simplicial map (i.e., distinct vertices are sent to distinct vertices). Does the image of f necessarily separate S 2 into two pieces? Yes. Proof
+
+A problem with our deﬁnitions: we want to talk about S 2 , but there are so many simplicial complexes which deserve to be called S 2 . Our notion of simplicial complex is too rigid to be the right notion topologically.
+
+Example
+Let K be a circle with three arcs and L be a circle with four arcs (i.e., the boundary of a square). Then K and L are not simplicially isomorphic.
+
+Fixing the theory
+
+Need to deﬁne a few things ﬁrst. . . star closure link subdivision
+
+Star
+Deﬁnition
+Let K be a complex, and σ ∈ K a simplex. The star of σ in K , written st(σ, K ), is deﬁned by st(σ, K ) = {τ ∈ K : σ < τ }, i.e., the star of σ includes all the simplexes having σ as a face.
+
+Star
+Deﬁnition
+Let K be a complex, and σ ∈ K a simplex. The star of σ in K , written st(σ, K ), is deﬁned by st(σ, K ) = {τ ∈ K : σ < τ }, i.e., the star of σ includes all the simplexes having σ as a face.
+
+Problem
+Is the star of a simplex a complex?
+
+Closure
+Deﬁnition
+Let S be a collection of simplexes in K . The closure of S, written as cl(S), is the smallest subcomplex of K containing the simplexes in S.
+
+Closure
+Deﬁnition
+Let S be a collection of simplexes in K . The closure of S, written as cl(S), is the smallest subcomplex of K containing the simplexes in S.
+
+Problem
+Relate cl(cl(S)) and cl(S).
+
+Link
+Deﬁnition
+Let K be a complex, and σ ∈ K a simplex. The link of σ ∈ K , written lk(σ, K ), consists of those simplexes in K which are in cl(st(σ, K )) but not touching σ; in other words, lk(σ, K ) = {τ ∈ cl(st(σ, K )) : τ ∩ σ = ∅}.
+
+Link
+Deﬁnition
+Let K be a complex, and σ ∈ K a simplex. The link of σ ∈ K , written lk(σ, K ), consists of those simplexes in K which are in cl(st(σ, K )) but not touching σ; in other words, lk(σ, K ) = {τ ∈ cl(st(σ, K )) : τ ∩ σ = ∅}.
+
+Problem
+Is the link of a simplex a complex?
+
+Deﬁnition
+Let K be a complex, and σ ∈ K a simplex. The stellar subdivision of K at σ is a new complex Kσ with: the vertices of K along with a brand new vertex v . the simplexes of K not in st(σ, K ), along with the simplexes in v ∗ (∂σ) ∗ lk(σ, K ). We might say: Kσ := (K − st(σ, K )) ∪ (v ∗ (∂σ) ∗ lk(σ, K ))
+
+Deﬁnition
+Let K be a complex, and σ ∈ K a simplex. The stellar subdivision of K at σ is a new complex Kσ with: the vertices of K along with a brand new vertex v . the simplexes of K not in st(σ, K ), along with the simplexes in v ∗ (∂σ) ∗ lk(σ, K ). We might say: Kσ := (K − st(σ, K )) ∪ (v ∗ (∂σ) ∗ lk(σ, K ))
+
+Problem
+Stellar subdivision of a complex is a complex?
+
+subdivision = repeated stellar subdivision
+Deﬁnition
+Let K , L be complexes. If K can be produced through a (possibly empty) sequence of stellar subdivisions of L, we say that K is a subdivision of L, and write K L.
+
+subdivision = repeated stellar subdivision
+Deﬁnition
+Let K , L be complexes. If K can be produced through a (possibly empty) sequence of stellar subdivisions of L, we say that K is a subdivision of L, and write K L. As we will see, the real deﬁnition of subdivision is more general than this.
+
+Piecewise linear maps
+Deﬁnition
+Let K , K , L, L be complexes, with K K and L L. If f : K → L is a simplicial map, we call f : K → L a piecewise linear map (or a PL map for short). We call f : K → L an underlying simplicial map.
+
+Piecewise linear maps
+Deﬁnition
+Let K , K , L, L be complexes, with K K and L L. If f : K → L is a simplicial map, we call f : K → L a piecewise linear map (or a PL map for short). We call f : K → L an underlying simplicial map. We write f : K → L for a PL map, but such a map does not send simplexes in K to simplexes in L
+
+Piecewise linear maps
+Deﬁnition
+Let K , K , L, L be complexes, with K K and L L. If f : K → L is a simplicial map, we call f : K → L a piecewise linear map (or a PL map for short). We call f : K → L an underlying simplicial map.
+
+The real deﬁnition of PL map is more general than this.
+
+Going back, rethinking everything. . .
+
+Are S 2 and T 2 the same?
+
+Going back, rethinking everything. . .
+
+Are S 2 and T 2 the same?
+We will check that χ is well-deﬁned.
+
+

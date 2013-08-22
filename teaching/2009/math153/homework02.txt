@@ -1,0 +1,11 @@
+Due Monday, October 6, 2008
+1. For each sequence, state whether it is bounded (and if so, above or below) and whether it is monotone (and if so, (non)increasing or (non)decreasing). (a) an = 2n . (b) bn = sin n. 4n . n+1 √ n+1 (d) dn = √ . n (c) cn = (e) en = (−1)n · n!. (f ) fn = cos (g) gn = 17. (h) hn = |5 − n| − n. 2. Suppose an is a bounded sequence. Is the sequence bn = 17 · an also bounded? Why or why not? 3. Suppose an is a bounded sequence, and an = 0. Is the sequence bn = 1/an also bounded? Why or why not? 4. Suppose an is a decreasing sequence. Is the sequence bn = 2an + 3 also decreasing? Why or why not? 5. Suppose an is an increasing sequence. Is the sequence bn = an 2 also increasing? Why or why not? 1 . n
+
+c 2008 Jim Fowler
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Homework 2
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+

@@ -1,0 +1,43 @@
+Lecture 5: Popular limits
+Math 153 Section 57 Wednesday October 8, 2008
+Following chapter 11.4. Theme: important limits Key idea: how mathematics gets done. the deﬁnition. a few easy cases. and then theorems that leverage the easy cases into harder cases. In this section, seven basic limits that we will be able to use over and over again.
+
+1
+
+Divgergence
+
+Example: an = 3 · n diverges. Why? Example: an = (−1)n diverges. Why? Two diﬀerent reasons for divergence.
+
+1.1
+
+Sometimes we get convergence for free.
+
+Theorem: Nondecreasing bounded above sequences converge. Theorem: Nonincreasing bounded below sequences converge. Example: a1 = a2 = 1, an+2 = an+1 + an . Then rn = an+1 /an is bounded above by 2, and √ increasing. So the limit exists, but it is hard to see what it is (turns out to be ( 5 + 1)/2).
+
+1.2
+
+Squeezing
+
+State theorem (and sketch proof). Apply it in some cases.
+
+1.3
+
+The usefulness of these results
+
+Moral: we do not have to resort back to the deﬁnition of limit: by using the squeezing theorem and such, we can make things easier. Maybe laziness can be virtuous (not so moral!), if it inspires us to ﬁnd better proofs, more compelling, more memorable arguments.
+
+1
+
+1.4
+
+Continuous functions
+
+If f : R → R is continuous at L, and lim an = L, then lim f (an ) = f (L). Proof. Either take the limit and apply the function, or apply the function and take the limit. Not true if f is not continuous.
+
+1.5
+
+State the important limits
+
+2
+
+

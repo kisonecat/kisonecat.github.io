@@ -1,13 +1,33 @@
 {
-  "name": "application-name",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "start": "node app.js"
-  },
+    "name": "fowler-homepage",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "node app.js",
+        "postinstall": "./node_modules/bower/bin/bower install"
+    },
   "dependencies": {
+    "bower": "*",
+    "glob": "*",
+    "markdown": "*",
+    "moment": "*",
+    "node-dir": "*",
+    "node-promise": "*",
     "express": "3.3.4",
     "jade": "*",
-    "less-middleware": "*"
+    "bibtex-parser": "*",
+    "underscore": "*",
+    "less-middleware": "*",
+    "grunt": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-less": "latest"
+  },
+  "devDependencies": {
+    "wrench": "~1.5.1",
+    "grunt-latex": "~0.1.1"
   }
 }

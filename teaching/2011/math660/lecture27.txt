@@ -1,0 +1,117 @@
+Lecture 27: Zeroes and poles
+Math 660—Jim Fowler
+
+Wednesday, July 28, 2010
+
+Theorem
+Suppose f and g are analytic functions. If f (z) = g (z) for z ∈ A ⊂ Ω, and A has an accumulation point in Ω, then f = g .
+
+Theorem
+Suppose f and g are analytic functions. If f (z) = g (z) for z ∈ A ⊂ Ω, and A has an accumulation point in Ω, then f = g .
+
+Analytic functions are determined by their values on sets with an accumulation point.
+
+Singularities
+Suppose f (z) is analytic in a neighborhood of a, but perhaps not at a. (I.e., analytic in a region 0 < |z − a| < δ).
+
+Singularities
+Suppose f (z) is analytic in a neighborhood of a, but perhaps not at a. (I.e., analytic in a region 0 < |z − a| < δ). Then a is an isolated singularity of f .
+
+Singularities
+Suppose f (z) is analytic in a neighborhood of a, but perhaps not at a. (I.e., analytic in a region 0 < |z − a| < δ). Then a is an isolated singularity of f . If limz→a f (z) = ∞, then we say that a is a pole of f (z); we can deﬁne the order of a pole by considering 1/f (z), which has a removable singularity at a.
+
+Singularities
+Suppose f (z) is analytic in a neighborhood of a, but perhaps not at a. (I.e., analytic in a region 0 < |z − a| < δ). Then a is an isolated singularity of f . If limz→a f (z) = ∞, then we say that a is a pole of f (z); we can deﬁne the order of a pole by considering 1/f (z), which has a removable singularity at a. Poles are isolated, because zeroes are.
+
+Meromorphic functions
+
+A function f which is analytic in Ω, except at points which are poles, is called meromorphic in Ω.
+
+Meromorphic functions
+
+A function f which is analytic in Ω, except at points which are poles, is called meromorphic in Ω.
+
+Add, subtract, multiply, and divide (by nonzero) meromorphic functions to get new meromorphic functions.
+
+Meromorphic functions
+
+A function f which is analytic in Ω, except at points which are poles, is called meromorphic in Ω.
+
+Add, subtract, multiply, and divide (by nonzero) meromorphic functions to get new meromorphic functions.
+
+Think of a meromorphic function as a holomorphic function from Ω to S 2 , the Riemann sphere.
+
+Singularities
+If limz→a |z − a|α |f (z)| = 0 for some α,
+
+Singularities
+If limz→a |z − a|α |f (z)| = 0 for some α, then the same is true for α replaced by a larger value,
+
+Singularities
+If limz→a |z − a|α |f (z)| = 0 for some α, then the same is true for α replaced by a larger value, so the same is true for α = integer.
+
+Singularities
+If limz→a |z − a|α |f (z)| = 0 for some α, then the same is true for α replaced by a larger value, so the same is true for α = integer.
+
+Then (z − a)m f (z) has a removable singularity,
+
+Singularities
+If limz→a |z − a|α |f (z)| = 0 for some α, then the same is true for α replaced by a larger value, so the same is true for α = integer.
+
+Then (z − a)m f (z) has a removable singularity, so either f (z) ≡ 0 or (z − a)m f (z) has a zero of order k.
+
+Singularities
+If limz→a |z − a|α |f (z)| = 0 for some α, then the same is true for α replaced by a larger value, so the same is true for α = integer.
+
+Then (z − a)m f (z) has a removable singularity, so either f (z) ≡ 0 or (z − a)m f (z) has a zero of order k.
+
+So for all α > m − k, the limit vanishes, and if α < m − k, the limit equals inﬁnity.
+
+If limz→a |z − a|α |f (z)| = ∞ for some α,
+
+If limz→a |z − a|α |f (z)| = ∞ for some α, then the same is true for α replaced by a smaller value,
+
+If limz→a |z − a|α |f (z)| = ∞ for some α, then the same is true for α replaced by a smaller value, so the same is true for α = integer.
+
+If limz→a |z − a|α |f (z)| = ∞ for some α, then the same is true for α replaced by a smaller value, so the same is true for α = integer.
+
+Then (z − a)m f (z) has a removable singularity,
+
+If limz→a |z − a|α |f (z)| = ∞ for some α, then the same is true for α replaced by a smaller value, so the same is true for α = integer.
+
+Then (z − a)m f (z) has a removable singularity, and (z − a)m f (z) has a pole of order ell.
+
+If limz→a |z − a|α |f (z)| = ∞ for some α, then the same is true for α replaced by a smaller value, so the same is true for α = integer.
+
+Then (z − a)m f (z) has a removable singularity, and (z − a)m f (z) has a pole of order ell.
+
+So for all α < m + , the limit equals inﬁnity, and if α > m + , the limit vanishes.
+
+Summarizing
+
+So either f (z) ≡ 0, or there is some h so that if α > h, then limz→a |z − a|α |f (z)| = 0 if α < h, then limz→a |z − a|α |f (z)| = ∞ or maybe neither limit holds for any α.
+
+Algebraic order
+in the second case, the cut-oﬀ α is an integer.
+
+Algebraic order
+in the second case, the cut-oﬀ α is an integer. Apply Taylor’s theorem to (z − a)h f (z), to ﬁnd (z −a)h f (z) = Bh +Bh−1 (z −a)+· · ·+B1 (z −a)h−1 +ϕ(z)(z −a)h with ϕ(z) analytic at z = a.
+
+Algebraic order
+in the second case, the cut-oﬀ α is an integer. Apply Taylor’s theorem to (z − a)h f (z), to ﬁnd (z −a)h f (z) = Bh +Bh−1 (z −a)+· · ·+B1 (z −a)h−1 +ϕ(z)(z −a)h with ϕ(z) analytic at z = a. Divide both sides by (z − a)h , to get f (z) = Bh Bh−1 + + · · · + ϕ(z) h (z − a) (z − a)h−1
+
+The part before ϕ(z) is the singular part of f .
+
+Algebraic order
+in the second case, the cut-oﬀ α is an integer. Apply Taylor’s theorem to (z − a)h f (z), to ﬁnd (z −a)h f (z) = Bh +Bh−1 (z −a)+· · ·+B1 (z −a)h−1 +ϕ(z)(z −a)h with ϕ(z) analytic at z = a. Divide both sides by (z − a)h , to get f (z) = Bh Bh−1 + + · · · + ϕ(z) h (z − a) (z − a)h−1
+
+The part before ϕ(z) is the singular part of f . A pole comes with a well-deﬁned singular part, and if you subtract oﬀ the singular part, you are left with an analytic function.
+
+Essential singularity
+
+If there is no such α satisfying those limits, then we say it is an essential singularity.
+
+Theorem
+An analytic function comes arbitrarily close to every complex value in a neighborhood of an essential singularity.
+
+

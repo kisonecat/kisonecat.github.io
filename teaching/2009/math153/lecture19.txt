@@ -1,0 +1,16 @@
+Lecture 19: Power series
+Math 153 Section 57 Monday November 10, 2008
+Following chapter 12.8.
+
+Some loose ends
+using Taylor series to instantly solve diﬀerential equations dividing series
+
+Power series
+deﬁnition of power series point out that discussing an xn suﬃces, since an (x − a)n is just a slight modiﬁcation.
+
+Convergence
+If an xn converges at c, then it converges absolutely for all x with |x| < |c|. Proof: use limit comparison test. |an xn |/|an cn | converges to zero, and since converges, so does |an xn |. Ask about the set of convergence. The possibilities are • convergence only at zero (radius 0) • converges everywhere (radius ∞) • converges for (−r, r) and diverges for (−∞, −r) ∪ (r, ∞). interval of convergence On the endpoints of the interval, we cannot say anything (examples: xn , (−1)n xn /n, xn /n, xn /n2 ) |an cn |
+
+1
+
+

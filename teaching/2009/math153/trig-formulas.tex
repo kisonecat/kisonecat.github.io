@@ -1,0 +1,110 @@
+\documentclass[12pt]{article}
+\usepackage{add-copyright}
+
+\title{How to remember all trigonometric formulas}
+\author{Jim Fowler}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{nopageno}
+
+\begin{document}
+
+\null\hfill\parbox{5.5in}{
+\begin{verse}
+\textit{Neo:} What are you trying to tell me? That I can memorize all trigonometric formulas? \\
+\textit{Morpheus:} No, Neo. I'm trying to tell you that when you're ready, you won't have to. \\
+\null\hfill ---An approximation to \textit{The Matrix}
+\end{verse}}
+
+\section*{How to remember all trigonometric formulas}
+
+\subsection*{Required Background}
+
+You have to know about complex numbers (e.g., ``$a+bi$'' where $i^2 =
+-1$) and about the rules for exponentiation.
+
+\subsection*{Idea}
+
+For now, we will bravely define
+$$
+e^{i\theta} = \cos \theta + i \sin \theta.
+$$
+We'll see in a couple weeks why this is a true statement (i.e., it
+corresponds with what we already meant by $e^x$, $\sin x$, and $\cos
+x$).  For now, we'll just accept it---accepting also that it is very
+hard to understand what it should mean to raise a number to an
+imaginary power!  Nevertheless, our brave definition gives an
+interpretation.
+
+We will ignore the conceptual concern, and simply manipulate the above
+equation to translate facts about exponentiation to imaginary powers
+into facts about trigonometric functions.  We assume that all the
+usual rules for exponentiation apply.
+
+\subsection*{Theory: A Famous Example}
+
+Some of you might have heard that $e^{i\pi} + 1 = 0$, an equation
+which relates five famous numbers: zero, one, $e$, $\pi$, and $i$.  In
+other words, $e^{i\pi} = -1$, and we can see why by using the above
+equation:
+$$
+e^{i \pi} = \cos \pi + i \sin \pi = -1,
+$$
+because $\cos \pi = -1$ and $\sin \pi = 0$.
+
+\subsection*{Practice: Double-angle formula}
+
+For instance, let's say we want to have a formula for $\cos 2\theta$ in
+terms of $\cos \theta$ and $\sin \theta$.  We use the fact that
+$$
+e^{i\theta} \cdot e^{i\theta} = e^{i\theta + i\theta} = e^{i(\theta + \theta)} = e^{i (2\theta)}
+$$
+because exponents add.  Substitute in our brave definition to get
+$$
+(\cos \theta + i \sin \theta)(\cos \theta + i \sin \theta) = \cos (2\theta) + i \sin (2\theta).
+$$
+But we can expand the left-hand side to find
+$$
+\cos^2 \theta - \sin^2 \theta + 2 i \cos \theta \sin \theta = \cos (2 \theta) + i \sin(2\theta).
+$$
+Since real and imaginary parts must be equal, we then conclude
+\begin{eqnarray*}
+  \cos^2 \theta - \sin^2 \theta &=& \cos (2 \theta), \\
+ 2 \cos \theta \sin \theta &=& \sin(2\theta),
+\end{eqnarray*}
+giving us the double angle formulas.
+
+\subsection*{Difference formula}
+
+You can use this method to get a formula for $\sin (a - b)$ in terms
+of sines and cosines of $a$ and $b$.  We have that
+$$
+e^{ia} \cdot e^{-ib} = e^{i(a-b)},
+$$
+and replacing the exponentials with trigonometric functions gives
+$$
+(\cos a + i \sin a)(\cos (-b) + i \sin (-b)) = \cos(a-b) + i \sin (a-b).
+$$
+Expanding the left-hand side gives
+$$
+\cos a \cos (-b) + i^2 \sin a \sin (-b) + i \sin a \cos (-b) + i \cos a \sin (-b) = \cos (a-b) + i \sin(a-b).
+$$
+But $i^2 = -1$, so
+$$
+\left( \cos a \cos (-b) - \sin a \sin (-b) \right) + i \left( \sin a \cos (-b) + \cos a \sin (-b) \right) = \cos (a-b) + i \sin(a-b).
+$$
+Again, real and imaginary parts must equal, so
+\begin{eqnarray*}
+  \cos a \cos (-b) - \sin a \sin (-b) &=& \cos (a-b), \\
+  \sin a \cos (-b) + \cos a \sin (-b) &=& \sin(a-b).
+\end{eqnarray*}
+Since $\cos (-b) = \cos b$ and $\sin (-b) = -\sin b$, we could also write these as
+\begin{eqnarray*}
+  \cos a \cos b + \sin a \sin b &=& \cos (a-b), \\
+  \sin a \cos b - \cos a \sin b &=& \sin(a-b).
+\end{eqnarray*}
+The moral: memorizing identities is difficult, and while rederiving
+them when needed might be just as complicated, it requires less rote
+memorization---and for some people, this is a huge help.
+
+\end{document}

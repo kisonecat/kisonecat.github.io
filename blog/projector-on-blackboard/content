@@ -1,0 +1,3 @@
+<p>I recently gave a beamer talk, which gave me the chance to point the beamer at my blackboard.</p>
+
+<%= movie('projector.m4v' ) %>

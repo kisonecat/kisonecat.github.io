@@ -1,0 +1,25 @@
+Homework 13
+Due Friday, November 14, 2008
+Nota Bene: The second midterm is scheduled for Monday, November 17. (a) Study for the midterm. Prepare yourself to do your very best.
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+(b) On page 632, in section 12.9, do problems: 4, 14, 22, 28, 44.
+
+(c) Here is another way to get a series equal to π. Geometrically, we know that 1√ π =4· 1 − x2 dx.
+0
+
+We also know that for |x| < 1, √
+∞
+
+1−x=
+n=0
+
+(2n)! xn . 2 4n (1 − 2n) (n!)
+
+Combine these facts to ﬁnd a series converging to π.
+
+c 2008 Jim Fowler
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+

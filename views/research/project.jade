@@ -1,0 +1,24 @@
+extends ../layouts/main
+include helpers
+
+block content
+  mixin breadcrumbs(['/research', project.url],['Research', project.title])
+
+  if project.thumbnail()
+    a.thumbnail.pull-right(href=project.fileWithPath())
+      img(src=project.thumbnail(),width=300)
+
+  if project.joint
+    h1 #{project.title}
+      | 
+      small Joint work with #{project.joint.join( ', ' )}
+  else
+    h1 #{project.title}
+
+  !=project.jade()
+
+  div(style="clear: both;")
+
+  if project.bibtex
+    h3 Bibliographic details
+    mixin bibliographyEntry(project.bibtex)

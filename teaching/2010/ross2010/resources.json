@@ -1,0 +1,161 @@
+[
+  {
+    "title": "Lecture 8",
+    "source": "slides08.tex",
+    "shortname": "slides08",
+    "filename": "slides08.pdf",
+    "description": "",
+    "tags": [
+      "lecture"
+    ]
+  },
+  {
+    "title": "Lecture 5",
+    "source": "slides05.tex",
+    "shortname": "slides05",
+    "filename": "slides05.pdf",
+    "description": "",
+    "tags": [
+      "lecture"
+    ]
+  },
+  {
+    "title": "Problem Set 3",
+    "source": "problem03.tex",
+    "shortname": "problem03",
+    "filename": "problem03.pdf",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Problem Set 7",
+    "source": "problem07.tex",
+    "shortname": "problem07",
+    "filename": "problem07.pdf",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Lecture 3",
+    "source": "slides03.tex",
+    "shortname": "slides03",
+    "filename": "slides03.pdf",
+    "description": "",
+    "tags": [
+      "lecture"
+    ]
+  },
+  {
+    "title": "Lecture 7",
+    "source": "slides07.tex",
+    "shortname": "slides07",
+    "filename": "slides07.pdf",
+    "description": "",
+    "tags": [
+      "lecture"
+    ]
+  },
+  {
+    "title": "Problem Set 5",
+    "source": "problem05.tex",
+    "shortname": "problem05",
+    "filename": "problem05.pdf",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Lecture 6",
+    "source": "slides06.tex",
+    "shortname": "slides06",
+    "filename": "slides06.pdf",
+    "description": "",
+    "tags": [
+      "lecture"
+    ]
+  },
+  {
+    "title": "Lecture 2",
+    "source": "slides02.tex",
+    "shortname": "slides02",
+    "filename": "slides02.pdf",
+    "description": "",
+    "tags": [
+      "lecture"
+    ]
+  },
+  {
+    "title": "Lecture 1",
+    "shortname": "slides01",
+    "filename": "slides01.pdf",
+    "description": "",
+    "tags": [
+      "lecture"
+    ]
+  },
+  {
+    "title": "Problem Set 1",
+    "source": "problem01.tex",
+    "shortname": "problem01",
+    "filename": "problem01.pdf",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Lecture 4",
+    "source": "slides04.tex",
+    "shortname": "slides04",
+    "filename": "slides04.pdf",
+    "description": "",
+    "tags": [
+      "lecture"
+    ]
+  },
+  {
+    "title": "Problem Set 2",
+    "source": "problem02.tex",
+    "shortname": "problem02",
+    "filename": "problem02.pdf",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Problem Set 6",
+    "source": "problem06.tex",
+    "shortname": "problem06",
+    "filename": "problem06.pdf",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Syllabus",
+    "source": "syllabus.tex",
+    "shortname": "syllabus",
+    "filename": "syllabus.pdf",
+    "description": "",
+    "tags": [
+      "syllabus"
+    ]
+  },
+  {
+    "title": "Problem Set 4",
+    "source": "problem04.tex",
+    "shortname": "problem04",
+    "filename": "problem04.pdf",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  }
+]

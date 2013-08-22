@@ -1,0 +1,20 @@
+Problem Set 1
+Summer 2010
+
+Piecewise-Linear Topology
+Jim Fowler
+
+Problem Set 1 is intentionally vague: I want you to think a bit about how you would make these notions precise. Problems marked with a • should be written up. Problem 1. Build a circle S1 by gluing some line segments together along their vertices. How many different ways are there of doing this? Problem 2. Build a sphere S2 by gluing triangles together along their boundaries. How are the various ways of doing this related to each other? Deﬁnition. An object built by gluing together triangles is called a simplicial complex. Problem 3. Build a torus T 2 by gluing triangles together. Deﬁnition. A function f : K → L sending
+
+◦ vertices to vertices, ◦ edges to either edges or vertices, and ◦ triangles to triangles, or to edges, or to vertices
+is called a simplicial map.
+
+a torus
+
+• Problem 4. Find a simplicial map f : T 2 → S1 so that, for every vertex x ∈ S1 , the preimage f −1 ( x ) is a circle. • Problem 5. Let k ∈ N. Find a simplicial map f : T 2 → T 2 so that, for every point x ∈ T 2 , the preimage f −1 ( x ) consists of k points? And consider: what does this even mean when x is not a vertex?
+Remark. You might be worried that, because there are different ways of building T 2 out of triangles, the notion of “simplicial map” is ill-deﬁned. You’re right: we’ll have to ﬁx that. Nevertheless…
+
+• Problem 6. Find a simplicial map f : T 2 → S2 which doesn’t crush any edges (i.e., edges are sent to edges, not to vertices). • Problem 7. Find a simplicial map f : S2 → T 2 which doesn’t crush any edges.
+Problem 8. Suppose f : S1 → S2 is an injective simplicial map (i.e., distinct simplexes are sent to distinct simplexes). Does the image of f necessarily separate S2 into two pieces? Problem 9. Suppose f : S1 → T 2 is an injective simplicial map. Into how many pieces can the image of f separate T 2 ? Problem 10. Do there exist simplicial maps f : T 2 → S2 and g : S2 → T 2 which are inverses of each other? If not, why not?
+
+

@@ -1,0 +1,77 @@
+\documentclass[12pt]{pset}
+%\usepackage{add-copyright}
+
+\title{Problem Set 8}
+\course{Piecewise-Linear Topology}
+\author{Jim Fowler}
+\date{Summer 2010}
+
+\newcommand{\defnword}[1]{\textbf{#1}}
+
+\usepackage{stmaryrd}
+\newcommand{\boundary}{\partial}
+\newcommand{\collapses}{\searrow}
+\newcommand{\expands}{\nearrow}
+\newcommand{\she}{\ssearrow\nnearrow}
+\newcommand{\join}{\ast}
+\newcommand{\subdivided}{\triangleleft}
+\geometry{margin=1in}%,top=0.5in,bottom=0.5in}
+\DeclareMathOperator{\st}{st}
+\DeclareMathOperator{\vertices}{vert}
+\DeclareMathOperator{\lk}{lk}
+\DeclareMathOperator{\cl}{cl}
+\DeclareMathOperator{\interior}{int}
+\newcommand{\fullsubcomplex}{\Subset}
+
+\begin{document}
+\maketitle
+
+\subsubsection*{More things collapse.} Here are a few more problems
+on simplicial collapse.
+
+%\parskip 0.25\baselineskip
+%\parindent 0pt
+
+\begin{requiredproblem}
+  Show that any 1-dimensional complex is simple homotopy equivalent to
+  $S^1 \vee \cdots \vee S^1$, i.e., the union of circles along one point.
+\end{requiredproblem}
+
+\begin{requiredproblem}
+  Find a 2-complex which is not simple homotopy equivalent to a
+  1-dimensional complex (and, of course, provide a proof of the fact
+  that your 2-complex satisfies this property).
+\end{requiredproblem}
+
+\begin{problem}
+  Find a proper embedding $B^1 \subset B^3$ so that $B^3$ does not
+  collapse to $B^1$.  Here, proper means that the boundary is sent to
+  the boundary, and the interior to the interior.
+\end{problem}
+
+\subsection*{Slice knots}
+
+\begin{problem}
+ The trefoil knot $S^1$ sits in $S^3$; find a disk $D^2$
+ properly embedded in $B^4$, so that the boundary of $D^2$ is
+ the trefoil knot in $S^3$.  Here, \textbf{properly} means that the
+ boundary is sent to the boundary, and the interior to the interior.
+\end{problem}
+
+\begin{problem}
+  Find a surface $\Sigma^2$ properly and \textit{locally flatly}
+  embedded in $B^4$, so that the boundary of $\Sigma^2$ is the trefoil
+  knot in $S^3$.  Here, \textbf{locally flatly} means that the link of
+  a vertex of $\Sigma^2$ in the pair $(B^4,\Sigma^2)$ is an unknotted
+  $(S^3,S^1)$.
+\end{problem}
+
+\begin{problem}
+  Do the same for the figure eight knot.  In these cases, what is the
+  genus of the surface that you used?  Can you reduce the genus?  How
+  low can the genus go?
+\end{problem}
+
+
+\end{document}
+

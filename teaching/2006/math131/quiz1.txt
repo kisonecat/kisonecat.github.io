@@ -1,0 +1,11 @@
+Take-Home Quiz 1
+Math 131 Section 22 Due Monday, October 9, 2005
+Problem 1. (2 points). Give the oﬃcial deﬁnition of lim f (x).
+x→c
+
+Problem 2. (2 points). Deﬁne F : R → R by the rule F (x) = (x + 17)3 . and ﬁnd functions f and g so that F = f ◦ g. Problem 3. (2 points). Deﬁne a function f  x √ f (x) = 2  2  x What is limx→0 f (x)? Problem 4. (3 points). Evaluate this limit: x3 − 1 . x→1 x − 1 lim Problem 5. (3 points). Give an ǫ-δ proof of the fact that lim 3x + 2 = 5.
+x→1
+
+: R → R by if x < 0, if x = 0, if x > 0.
+
+

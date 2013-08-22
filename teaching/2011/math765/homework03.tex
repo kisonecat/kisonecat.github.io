@@ -1,0 +1,122 @@
+\documentclass[12pt]{pset}
+
+\course{Math 765}
+\author{Jim Fowler}
+\date{Winter 2011}
+
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\CP}{\mathbb{C}P}
+\newcommand{\RP}{\mathbb{R}P}
+
+\usepackage{enumerate}
+\usepackage{nopageno}
+\usepackage{hyperref}
+
+\DeclareMathOperator{\Vect}{Vect}
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\codim}{codim}
+
+\begin{document}
+\maketitle
+
+\noindent\textbf{This week, we study the smooth maps between manifolds.}
+Please feel comfortable emailing me (\texttt{fowler@math.osu.edu}) if
+you are having trouble with homework problems.  \textit{The exercises
+  below should be handed in on Monday, January 24, 2011.}  These
+exercises are designed to get you to think about
+\textbf{transversality,} among the most powerful tools in the study of
+smooth manifolds.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Lee 8--2]
+
+Let $F : \R^2 \to \R$ be defined by
+$$
+F(x,y) = x^3 + xy + y^3
+$$
+Which level sets of $F$ are embedded submanifolds of $\R^2$?
+
+\end{problem}
+
+\vfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Lee 8--14 and Lee 8--15]
+
+  \begin{description}
+    \item[(8--14)]
+If $S \subset M$ is an embedded submanifold and $\gamma : J \to M$ is
+a smooth curve whose image happens to lie in $S$, show that
+$\gamma'(t)$ is in the subspace $T_{\gamma(t)} S$ of $T_{\gamma(t)} M$
+for all $t \in J$.
+    \item[(8--15)]
+Give a counterexample if $S$ is immersed but not embedded.
+  \end{description}
+
+\end{problem}
+
+\vfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Lee 8--16]
+
+  Suppose $f : M \to N$ is a smooth map and $S \subset N$ is an
+  embedded submanifold.  We say that $f$ is transverse to $S$ if, for
+  every $p \in f^{-1}(S)$, the spaces $T_{f(p)} S$ and $f_\star T_p M$
+  together span $T_{f(p)} N$.
+
+  If $f$ is transverse to $S$, show that $f^{-1}(S)$ is an embedded
+  submanifold of $M$ whose codimension\footnote{The codimension of a
+    submanifold $N \subset M$ is $\dim M - \dim N$.} is equal to $\dim
+  N - \dim S$.
+
+\end{problem}
+
+\vfill
+
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Lee 8--17]
+
+  Let $M$ be a smooth manifold. Two embedded submanifolds $S_1, S_2
+  \subset M$ are said to be \textit{transverse} if, for each $p \in
+  S_1 \cap S_2$, the tangent spaces $T_p S_1$ and $T_p S_2$ together
+  span $T_p M$.
+  \begin{itemize}
+  \item 
+  If $S_1$ and $S_2$ are transverse, show that $S_1 \cap S_2$ is an
+  embedded submanifold of $M$ of dimension $\dim S_1 + \dim S_2 - \dim
+  M$.  [It will be easier to remember this if you think of it as
+  saying $\codim (S_1 \cap S_2) = \codim S_1 + \codim S_2$.]
+  \item
+  Give a counterexample when $S_1$ and $S_2$ are not transverse.
+  \end{itemize}
+  \textit{Hint:} You can invoke the previous problem, and an inclusion
+  map, to make short work of this problem.
+
+\end{problem}
+
+\vspace{1in}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{harderproblem}
+
+  Let $f : \R^2 \to \R$ be a polynomial so that its zero set
+  $f^{-1}(0)$ is a smooth submanifold of $\R^2$.
+
+  Recall that $\RP^1$ parametrizes lines through the origin in $\R^2$;
+  show that for all but finitely many points of $\RP^1$, the
+  corresponding line through the origin intersects $f^{-1}(0)$
+  transversely.
+
+  Is this still true if $f$ is not a polynomial, but merely smooth?
+
+% for [x:y] \in \RP^1, consider f(lambda x, lambda y) = 0; transverse
+% as long as there are no double roots;  p(lambda) = f(lambda,y) may
+% fail to be transverse if the disc vanishes; the disc is itself a
+% polynomial in y, so it has only finitely many zeros.
+
+\end{problem}
+
+\end{document}

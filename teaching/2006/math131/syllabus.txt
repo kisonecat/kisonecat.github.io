@@ -1,0 +1,35 @@
+Syllabus
+
+Math 131, Section 22
+
+Autumn 2005
+
+Welcome to Math 131, the ﬁrst course in a year-long Calculus sequence. This quarter, we will work through limits, derivatives, and their applications.
+
+Instructor
+Class meetings are Mondays, Wednesdays, and Fridays, 9:30–10:20a.m. in Ryerson 358. Name: Oﬃce: Phone: Email: Jim Fowler Math/Stat 102 773–573–5659 jim@uchicago.edu Oﬃce Hours: Monday 4:30–6:30p.m. Thursday 4:30–6:30p.m. or by appointment
+
+Please do come to oﬃce hours; they are a great time to work through problems, review lectures, or just talk about mathematics.
+
+Tutors
+Your tutor will hold a mandatory problem session Tuesdays and Thursdays, 9:00–10:20a.m. • Brian Keto (bketo@uchicago.edu) in Eckhart 207 • Danny Rosenthal (danny@uchicago.edu) in Eckhart 308 • Sara Rezvi (arsinoe@uchicago.edu) in Wieboldt 130 You will be assigned to a tutor on Wednesday, September 28, and the ﬁrst problem session will meet Thursday, September 29. If for some reason you want to switch to a diﬀerent problem session, just talk to Jim Fowler.
+
+Text
+Calculus by Verberg, Purcell, and Bigdon (8th Edition). This course will cover most of chapters 1–3.
+
+Course Website
+For the most up-to-date information, visit http://math.uchicago.edu/~fowler/math131/ We will post announcements, homework assignments, and take-home quizzes on the website. A tentative schedule for lectures has already been posted.
+
+Course Requirements
+There are one thousand points possible in this course, broken down as follows: Daily homework (100 points). Homework will usually be assigned each class period, and due the following class period. You should work on the homework problems together, but you must write up your solutions independently. Stay caught up on the daily homeworks! It is tempting to fall behind, but diﬃcult to catch up again—especially in a mathematics course. 2 midterms (201 points each). The midterms will be in class. The ﬁrst will be on Friday, October 21 (at the end of week 4), and the second will be on Friday, November 18 (at the end of week 8). 8 quizzes (12 points each). Short take-home quizzes will be assigned most weeks. 1 ﬁnal exam (402 points). The ﬁnal exam will be held 8:00–10:00a.m. on Wednesday, December 7, 2005.
+
+Rescheduling a Midterm
+Contact Jim Fowler early in the quarter if you will not be able to take a midterm on the scheduled day; we likely can accomodate you, but we will need plenty of time to prepare.
+
+Department Policy on Final Exams
+It is the policy of the Department of Mathematics that the following rules apply to ﬁnal exams in all undergraduate mathematics courses: 1. The ﬁnal exam must occur at the time and place designated on the College Final Exam Schedule. In particular, no ﬁnal examinations may be given during the tenth week of the quarter, except in the case of graduating seniors. 2. Any student who wishes to depart from the scheduled ﬁnal exam time for the course must receive permission from Paul Sally (oﬃce is Ryerson 350, phone is 2-7388, email is sally@math.uchicago.edu). Instructors are not permitted to excuse students from the scheduled time of the ﬁnal exam except in the cases of an Incomplete.
+
+Important Dates
+First Midterm: Second Midterm: Thanksgiving: Review Session: Final Exam: October November November December December 21, 9:30–10:20a.m. 18, 9:30–10:20a.m. 24–25 2, 9:30–10:20a.m. 7, 8:00–10:00a.m.
+
+

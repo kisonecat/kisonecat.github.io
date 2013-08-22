@@ -1,0 +1,15 @@
+Homework 16
+Due Friday December 5, 2008
+(a) The change in volume of a melting object is proportional to its surface area. The time is 2:22pm, and there are two ice cubes: the ﬁrst has sides of length 2 cm, and the second has sides of length 1 cm. At 2:30pm, the smaller ice cube has melted entirely: at what time will the larger ice cube disappear?
+
+(b) Find the general solution to the diﬀerential equation f (x) = −2 f (x). x+1
+
+(c) Find the general solution to the diﬀerential equation f (x) + f (x) = ex
+
+(d) Find the general solution to the diﬀerential equation x f (x) − 2 f (x) + x = 0. Hint: ﬁnd an “integrating factor.”
+
+(e) Find a solution to the wave equation f (x) = −f (x) with f (0) = 1 and f (0) = 2.
+
+(f ) Find the general solution to the diﬀerential equation f (x) − 6f (x) + 11f (x) − 6f (x) = 0.
+
+

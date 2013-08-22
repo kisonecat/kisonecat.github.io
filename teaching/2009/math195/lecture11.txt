@@ -1,0 +1,18 @@
+Lecture 11: Iterated integrals
+Math 195 Section 91 Wednesday July 15, 2009
+
+1 2 3
+
+describe upcoming midterm Double integrals over rectangles iterated integral
+
+fubini
+
+4
+
+integrating over non-rectangular regions
+
+the book gives two types (if it lies between graphs of functions).
+
+1
+
+

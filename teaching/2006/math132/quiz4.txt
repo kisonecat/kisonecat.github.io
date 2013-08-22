@@ -1,0 +1,43 @@
+Math 132 Section 22 Due Monday, February 6, 2006
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+Problem 1. (2 points). Compute
+
+x2 − 2x + 1 dx. Be sure to show your work! θ2 + cos θ dθ. 3 2x cos(x2 ) dx.
+6
+
+Problem 2. (2 points). Compute
+
+Problem 3. (2 points). Compute
+
+Problem 4. (2 points). Compute
+n=1 17
+
+n − 2.
+
+Problem 5. (2 points). Compute
+n=1 100
+
+(−1)n .
+
+Problem 6. (2 points). Compute
+n=0 9
+
+(n + 1)10 − n10 .
+
+Problem 7. (2 points). Compute
+n=1
+
+n2
+
+1 . Hint: Rewrite the fraction as the +n
+
+diﬀerence of two fractions.
+
+c 2008 Jim Fowler
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Take-Home Quiz 4
+
+

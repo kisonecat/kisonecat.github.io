@@ -1,0 +1,55 @@
+Problem Set 9 (§5.1.2–5.2.4)
+Due Monday, August 22, 2011
+
+Math 660
+Jim Fowler
+
+Diﬀerent problems may be assigned!
+This is probably not the ﬁnal version! The problems assigned on this homework set are subject to change! The ﬁnal version of Problem Set 9 will probably be ready by August 16, 2011.
+
+Problem 1
+Page 184, problem 5 in Ahlfors’ Complex Analysis.
+
+Problem 2
+Page 184, problem 2 in Ahlfors’ Complex Analysis.
+
+Problem 3
+Page 186, problem 4 in Ahlfors’ Complex Analysis.
+
+Problem 4
+Page 186, problem 5 in Ahlfors’ Complex Analysis.
+
+Problem 5
+Page 190, problem 1 in Ahlfors’ Complex Analysis.
+
+Problem 6
+Page 190, problem 5 in Ahlfors’ Complex Analysis.
+
+Problem 7
+Page 190, problem 4 in Ahlfors’ Complex Analysis.
+
+Problem 8
+Page 190, problem 1 in Ahlfors’ Complex Analysis.
+
+Problem 9
+Page 190, problem 4 in Ahlfors’ Complex Analysis.
+
+Problem 10
+Page 193, problem 1 in Ahlfors’ Complex Analysis.
+
+Problem 11
+Page 193, problem 2 in Ahlfors’ Complex Analysis.
+
+Problem 12
+Page 193, problem 5 in Ahlfors’ Complex Analysis.
+
+Problem 13
+Derive various expansions.
+
+Problem 14
+Page 200, problem 2 in Ahlfors’ Complex Analysis.
+
+Problem 15
+Page 200, problem 1 in Ahlfors’ Complex Analysis.
+
+

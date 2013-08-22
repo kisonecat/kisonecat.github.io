@@ -1,0 +1,224 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{add-copyright}
+
+\title{Practice Proof Problems}
+
+\usepackage{amsmath}
+\usepackage[margin=1.25in]{geometry}
+
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemmma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{definition}[theorem]{Definition}
+
+\newtheorem{podsip}[theorem]{Prove or Disprove}
+
+\usepackage{amssymb}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+
+\newcommand{\limn}{\displaystyle\lim_{n \to \infty}}
+
+\begin{document}
+
+\section*{Practice Proof Problems}
+
+Below are a list of statements that you can either prove (if the claim
+is true) or disprove (by exhibiting a counterexample).  These are just
+for fun---statements to ponder if you are looking for more things to think
+about.
+
+Incidentally, there is a pattern (dare I say the beginning of a
+sequence!) to which statements are false, and which statements are
+true.  And by my count, there are eighteen false statements in need of
+counterexamples, and seventeen true statements in need of a proof.
+
+\subsection*{The Statements}
+
+\begin{podsip} % FALSE
+Suppose $a_n$ is a sequence of real numbers, and $\limn n^2 \cdot a_n = 0$.  Then $\limn n \cdot a_n = 0$.
+\end{podsip}
+
+\begin{podsip} % TRUE
+If $a_n$ and $b_n$ are sequences of real numbers, and $\limn a_n = 0$, and $b_n$ is bounded, then $\limn (a_n \cdot b_n) = 0$.
+\end{podsip}
+
+\begin{podsip} % TRUE
+If $a_n$ and $b_n$ are bounded sequences of real numbers, then $c_n = a_n \cdot b_n$ is a bounded sequence.
+\end{podsip}
+
+\begin{podsip} % FALSE
+If $a_n$ is an nondecreasing sequence of real numbers, then $a_n$ has a subsequence which is increasing.
+\end{podsip}
+
+\begin{podsip} % FALSE
+If $a_n$ is a decreasing sequence of real numbers, then $a_n$ is bounded below.
+\end{podsip}
+
+\begin{podsip} % TRUE
+If $a_n$ is an increasing sequence of real numbers, then $b_n = {a_n}^3$ is also increasing.
+\end{podsip}
+
+\begin{podsip} % FALSE
+There exists a sequence $a_n$ of positive numbers, with $\limn a_n < 0$.
+\end{podsip}
+
+\begin{podsip} % TRUE
+If $a_n$ is a decreasing sequence of real numbers, then $a_n$ is bounded above.
+\end{podsip}
+
+\begin{podsip} % TRUE
+There exists a sequence $a_n$ of rational numbers, with $\limn a_n = \sqrt{2}$.
+\end{podsip}
+
+\begin{podsip} % FALSE
+If $a_n$ is a sequence of real numbers, and $\limn \cos a_n = 1$, then $\limn a_n = 0$.
+\end{podsip}
+
+\begin{podsip} % TRUE
+There exists a sequence $a_n$ of irrational numbers, with $\limn a_n = 3$.
+\end{podsip}
+
+\begin{podsip} % TRUE
+If $a_n$ is a sequence of integers, and $\limn a_n = 6$, then for all but finitely many values of $n \in \N$, we have $a_n = 6$.
+\end{podsip}
+
+\begin{podsip} % FALSE
+If $a_n$ is an unbounded sequence, then
+$$
+b_n = \frac{a_{n+1}}{\sqrt{n+1}}
+$$
+is bounded.
+\end{podsip}
+
+\begin{podsip} % FALSE
+If $a_n$ is an unbounded sequence and $a_n \neq 0$ for all $n \in \N$, then
+$$
+b_n = \frac{a_{n+1}}{a_{n}}
+$$
+is bounded.
+\end{podsip}
+
+\begin{podsip} % TRUE
+If $a_n$ is a bounded sequence, then $\limn a_n/n = 0$.
+\end{podsip}
+
+\begin{podsip} % FALSE
+If $a_n$ is a sequence of real numbers, and $\limn {a_n}^2 = 1$, then $\limn a_n = 1$.
+\end{podsip}
+
+\begin{podsip} % FALSE
+If $a_n$ is an unbounded sequence, then $b_n = \cos a_n$ is bounded, but does not converge.
+\end{podsip}
+
+\begin{podsip} % TRUE
+If $a_n$ is a bounded sequence, and $b_n$ is an unbounded sequence, then $\limn a_n/b_n = 0$.
+\end{podsip}
+
+\begin{podsip} % TRUE
+If $a_n$ is a sequence of positive real numbers, and $\limn \log a_n = 0$, then $\limn a_n = 1$.
+\end{podsip}
+
+\begin{podsip} % FALSE
+If $a_n$ is an increasing sequence of positive real numbers, then $b_n = a_{n}/a_{n+1}$ is increasing.
+\end{podsip}
+
+\begin{podsip} % TRUE
+If $a_n$ is a sequence of real numbers, and $\limn {a_n}^2 = 0$, then $\limn a_n = 0$.
+\end{podsip}
+
+\begin{podsip} % FALSE
+Let $a_n$ be a sequence of non-zero numbers, and define $b_n = |a_n| / a_n$.  If $a_n$ converges, then $b_n$ converges.
+\end{podsip}
+
+\begin{podsip} % FALSE
+If $a_n$ and $b_n$ are increasing sequences of positive real numbers, then
+$$
+c_n = \begin{cases}
+a_{n} & \mbox{ if $n$ is even, } \\
+b_{n} & \mbox{ if $n$ is odd. }
+\end{cases}
+$$
+is also increasing.
+\end{podsip}
+
+\begin{podsip} % TRUE
+If $b_n$ is the $n$-th digit of $\pi$, and $a_n = (b_n/10)^n$, then $\limn a_n = 0$.
+\end{podsip}
+
+\begin{podsip} % FALSE
+  If $a_n$ is a sequence of real numbers, and $b_n = a_n/n$ is
+  bounded, then $b_n$ converges.
+\end{podsip}
+
+\begin{podsip} % TRUE
+If $a_n$ is an increasing sequence of positive real numbers, then $b_n = a_{2n}$ is increasing.
+\end{podsip}
+
+\begin{podsip} % TRUE
+If $\limn a_n = L$, and there exists $A$ and $B$ so that for all $n \in \N$, we have $A \leq a_n \leq B$, then $A \leq L \leq B$.
+\end{podsip}
+
+\begin{podsip} % FALSE
+If $a_n$ is an increasing sequence of positive real numbers, then $b_n = a_{n+1} - a_{n}$ is increasing.
+\end{podsip}
+
+\begin{podsip} % FALSE
+There exists a bounded sequence $a_n$ so that $b_n = e^{a_n}$ converges to $0$.
+\end{podsip}
+
+\begin{podsip} % TRUE
+Suppose $\limn a_n = L$, and $\limn b_n = L$.  Define
+$$
+c_n = \begin{cases}
+a_{n} & \mbox{ if $n$ is even, } \\
+b_{n} & \mbox{ if $n$ is odd. }
+\end{cases}
+$$
+Then $\limn c_n = L$.
+\end{podsip}
+
+\begin{podsip} % FALSE
+Define $a_n = n^n$.  Then $b_n = a_n / n!$ converges.
+\end{podsip}
+
+\begin{podsip} % FALSE
+There is a $K \in \N$ so that for every $\epsilon > 0$, if $n \geq K$, then 
+$$
+\left| \frac{1}{n} - 0 \right| < \epsilon.
+$$
+\end{podsip}
+
+\begin{podsip} % TRUE
+  Let $a_n$ be the biggest number that can be written down using $n$
+  letters from the ``alphabet'' containing
+$$
+0, 1, 2, 3, 4, 5, 6, 7, 8,
+  9, +, -, \times.
+$$
+Then $a_n > n$.
+\end{podsip}
+
+\begin{podsip} % FALSE
+There exists a sequence $a_n$ of integers, with $\limn a_n = \pi$.
+\end{podsip}
+
+\begin{podsip} % TRUE
+Let $a_n$ be a sequence of real numbers, and define
+$$
+b_n = \begin{cases}
+a_{n} & \mbox{ if $a_n < 1/n$, } \\
+0 & \mbox{ if $a_n \geq 1/n$. }
+\end{cases}
+$$
+Then $b_n$ converges.
+\end{podsip}
+
+\end{document}

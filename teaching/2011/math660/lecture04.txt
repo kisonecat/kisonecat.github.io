@@ -1,0 +1,205 @@
+Lecture 4: Sequences and series
+Math 660—Jim Fowler Thursday, June 23, 2011
+
+z 5 − 1 = (z − 1)(z − ω)(z − ω 2 )(z − ω 3 )(z − ω 4 )
+
+z 5 − 1 = (z − 1)(z − ω)(z − ω 2 )(z − ω 3 )(z − ω 4 ) ω 3 = ω 2 and ω 4 = ω, so z 5 − 1 = (z − 1)(z − ω)(z − ω)(z − ω 2 )(z − ω 2 ) = (z − 1)(z 2 − (ω + ω)z + 1)(z 2 − (ω 2 + ω 2 )z + 1)
+
+z 5 − 1 = (z − 1)(z − ω)(z − ω 2 )(z − ω 3 )(z − ω 4 ) ω 3 = ω 2 and ω 4 = ω, so z 5 − 1 = (z − 1)(z − ω)(z − ω)(z − ω 2 )(z − ω 2 ) = (z − 1)(z 2 − (ω + ω)z + 1)(z 2 − (ω 2 + ω 2 )z + 1) Can we compute ω + ω and ω 2 + ω 2 ?
+
+z 5 − 1 = (z − 1)(z − ω)(z − ω 2 )(z − ω 3 )(z − ω 4 ) ω 3 = ω 2 and ω 4 = ω, so z 5 − 1 = (z − 1)(z − ω)(z − ω)(z − ω 2 )(z − ω 2 ) = (z − 1)(z 2 − (ω + ω)z + 1)(z 2 − (ω 2 + ω 2 )z + 1) Can we compute ω + ω and ω 2 + ω 2 ? (z − (ω + ω)) z − (ω 2 + ω 2 ) = z 2 + z − 1,
+
+z 5 − 1 = (z − 1)(z − ω)(z − ω 2 )(z − ω 3 )(z − ω 4 ) ω 3 = ω 2 and ω 4 = ω, so z 5 − 1 = (z − 1)(z − ω)(z − ω)(z − ω 2 )(z − ω 2 ) = (z − 1)(z 2 − (ω + ω)z + 1)(z 2 − (ω 2 + ω 2 )z + 1) Can we compute ω + ω and ω 2 + ω 2 ? (z − (ω + ω)) z − (ω 2 + ω 2 ) = z 2 + z − 1, ω+ω = √ 1 −1 + 5 , 2
+
+z 5 − 1 = (z − 1)(z − ω)(z − ω 2 )(z − ω 3 )(z − ω 4 ) ω 3 = ω 2 and ω 4 = ω, so z 5 − 1 = (z − 1)(z − ω)(z − ω)(z − ω 2 )(z − ω 2 ) = (z − 1)(z 2 − (ω + ω)z + 1)(z 2 − (ω 2 + ω 2 )z + 1) Can we compute ω + ω and ω 2 + ω 2 ? (z − (ω + ω)) z − (ω 2 + ω 2 ) = z 2 + z − 1, √ 1 −1 + 5 , 2 So a ﬁfth root of unity is a root of the polynomial √ −1 + 5 z 2 − (ω + ω)z + 1 = z 2 − z + 1, 2 ω+ω =
+
+So by the quadratic equation
+√ 1− 5 − 2
+
++ 2
+
+√ 2 1− 5 2
+
+−4
+
+ω=
+
+So by the quadratic equation
+√ 1− 5 − 2
+
++ 2
+
+√ 2 1− 5 2
+
+−4
+
+ω= which we can simplify to −1 + ω= 4 √ 5
+
++i
+
+√ 1− 5 1− 16
+
+2
+
+So by the quadratic equation
+√ 1− 5 − 2
+
++ 2
+
+√ 2 1− 5 2
+
+−4
+
+ω= which we can simplify to −1 + ω= 4 and further into −1 + ω= 4 √ 5 √ 5
+
++i
+
+√ 1− 5 1− 16 √ 5+ 5 8
+
+2
+
++i
+
+ω2 ω3
+
+ω1
+
+1
+ω4
+
+So we conclude 2π cos 5 2π sin 5 −1 + = 4 = √ 5
+
+√ 5+ 5 8
+
+So we conclude 2π cos 5 2π sin 5 Can we compute cos 2π 7 and sin 2π ? 7 −1 + = 4 = √ 5
+
+√ 5+ 5 8
+
+ω2 ω3 ω4 ω5
+
+ω1
+
+1
+ω6
+
+Rational Functions
+These are quotients of polynomials.
+
+r (z) =
+
+p(z) , for polynomials p and q. q(z)
+
+The zeroes of p are the zeroes of r ; The zeroes of q are the poles of r .
+
+Deﬁne r (∞) = ˜(0), where ˜(z) = r (1/z). r r
+
+We can compute the order of a pole or zero at inﬁnity.
+
+If deg p < deg q, then r has a zero of order deg q − deg p at inﬁnity. If deg p > deg q, then r has a pole of order deg p − deg q at inﬁnity.
+
+The number of poles of a rational function (including a pole at inﬁnity) is the same as the number of zeroes of a rational function (including a zero at inﬁnity). Both are equal to the larger of deg p and deg q. Call this common quantity the order of the rational function.
+
+f (z) = z(z + 1)
+
+1 1 ˜ f (z) = ( + 1) z z
+
+f (z) = z(z + 0.9)/(z − 0.8i)
+
+1 1 1 ˜ f (z) = ( + 0.9)/( − 0.8i) z z z
+
+Section 2.2.1–2.2.3 of the textbook
+
+sequences and series
+Polynomials and rational functions are good. To expand the functions available for consideration, take limits. Heading towards Power series on Friday.
+
+Sequences
+
+an
+
+Limits
+lim an = L means that, for every > 0, there exists N, so that whenever n > N, then |an − L| < .
+n→∞
+
+Usually, we must prove convergence without being able to compute the limit.
+
+Convergent sequence
+
+Not a convergent sequence
+
+A sequence (an )n∈N is Cauchy if, for every > 0, there exists N, so that whenever n, m > N, then |an − am | < .
+
+A sequence (an )n∈N is Cauchy if, for every > 0, there exists N, so that whenever n, m > N, then |an − am | < .
+
+A sequence of real numbers is convergent if and only if it is Cauchy.
+
+Series
+
+To evaluate the series a1 + a2 + · · · + an + · · · we form a sequence sk = a1 + · · · + ak , and deﬁne
+∞
+
+an = lim sk .
+n=1 k→∞
+
+To evaluate the series a1 + a2 + · · · + an + · · · we form a sequence sk = a1 + · · · + ak , and deﬁne
+∞
+
+an = lim sk .
+n=1 k→∞
+
+We call an absolutely convergent if converges.
+
+|an |
+
+To evaluate the series a1 + a2 + · · · + an + · · · we form a sequence sk = a1 + · · · + ak , and deﬁne
+∞
+
+an = lim sk .
+n=1 k→∞
+
+We call an absolutely convergent if converges.
+
+|an |
+
+Formulate a condition on the an so that the sequence sk is Cauchy.
+
+If a series an convergences, then lim an = 0.
+n→∞
+
+If a series an convergences, then lim an = 0.
+n→∞
+The converse is false.
+
+Uniform convergence
+1 0.25 0.5 0.75
+
+0
+
+0.25
+
+0.5
+
+0.75
+
+1
+
+A sequence of functions fn : U → V , converges pointwise to f : U → V if for every x ∈ U, for every > 0, there is an N, so that if n > N, then |fn (x) − f (x)| < . A sequence of functions fn : U → V , converges uniformly to f : U → V if for every > 0, there is an N, so that if n > N, then for every x ∈ U, |fn (x) − f (x)| < .
+
+Why care about uniform convergence?
+
+The limit of a uniformly convergent sequence of continuous functions is itself continuous.
+
+Cauchy sequences of functions?
+A sequence of functions fn : U → V is uniformly Cauchy if for every > 0, there exists N, so that whenever n, m > N, then for all x ∈ U, |fn (x) − fm (x)| < . Uniform convergence iﬀ uniformly Cauchy.
+
+Weierstrass M-test
+The series an majorizes a series if there exists M so that for n suﬃciently large, |fn (x)| ≤ Man . fn (x)
+
+If an converges, then uniformly.
+
+fn (x) converges
+
+Speed of course?
+
+The Goldilocks question: Too fast? Too slow? Just right?
+
+

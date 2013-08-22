@@ -1,0 +1,106 @@
+\documentclass[12pt]{pset}
+%\usepackage{add-copyright}
+
+\title{Problem Set 1}
+\course{Piecewise-Linear Topology}
+\author{Jim Fowler}
+\date{Summer 2010}
+
+\renewcommand{\labelitemi}{$\circ$}
+
+\begin{document}
+\maketitle
+
+\noindent Problem Set 1 is \textit{intentionally} vague: I want you to think a
+bit about how you would make these notions precise.  Problems
+ marked with a $\bullet$ should be written up.
+
+\vfill\begin{problem}
+  Build a circle $S^1$ by gluing some line segments together
+  along their vertices.  How many different ways are there of doing this?
+\end{problem}
+
+\vfill\begin{problem}
+ Build a sphere $S^2$ by gluing triangles together along their
+ boundaries.  How are the various ways of doing this related to each
+ other?
+\end{problem}
+
+\vfill\begin{definition*}
+An object built by gluing together triangles is called a
+\textit{simplicial complex}.
+\end{definition*}
+
+\vfill\begin{problem}
+Build a torus $T^2$ by gluing triangles together.\hfill%
+\raisebox{2ex-\height}[0in][0in]{\parbox{0.25\textwidth}{\includegraphics[width=0.25\textwidth]{torus.pdf} \\ \null\hfill \raisebox{1ex}{a torus}\hfill\null}}
+\end{problem}
+
+\vfill\begin{definition*}
+ A function $f : K \to L$ sending
+\begin{itemize}
+\item vertices to vertices,
+\item edges to either edges or vertices, and
+\item \begin{tabular}[t]{@{}l@{ }l@{ }l}
+    triangles & to & triangles, or \\
+    & to & edges, or \\
+    & to & vertices
+    \end{tabular}
+\end{itemize}
+is called a \textit{simplicial map}.
+\end{definition*}
+
+\vfill\begin{requiredproblem}
+  Find a simplicial map $f : T^2 \to S^1$ so that, for every vertex $x \in
+  S^1$, the preimage $f^{-1}(x)$ is a circle.
+\end{requiredproblem}
+
+\vfill\begin{requiredproblem} Let $k \in \N$.  Find a simplicial map
+  $f : T^2 \to T^2$ so that, for every point $x \in T^2$, the preimage
+  $f^{-1}(x)$ consists of $k$ points?  And consider: what does this
+  even mean when $x$ is not a vertex?
+\end{requiredproblem}
+
+\vfill\begin{remark*}
+You might be worried that, because there are different ways of
+building $T^2$ out of triangles, the notion of ``simplicial map'' is
+ill-defined.  You're right: we'll have to fix that.  Nevertheless\ldots
+\end{remark*}
+
+\vfill\begin{requiredproblem}
+  Find a simplicial map $f : T^2 \to S^2$ which doesn't crush any edges (i.e., edges are sent to edges, not to vertices).
+\end{requiredproblem}
+
+\vfill\begin{requiredproblem}
+  Find a simplicial map $f : S^2 \to T^2$ which doesn't crush any edges.
+\end{requiredproblem}
+
+\vfill\begin{problem}
+  Suppose $f : S^1 \to S^2$ is an injective simplicial map (i.e.,
+  distinct simplexes are sent to distinct simplexes).  Does the image of
+  $f$ necessarily separate $S^2$ into two pieces?
+\end{problem}
+
+\vfill\begin{problem}
+Suppose $f : S^1 \to T^2$ is an injective simplicial map.  Into how many pieces can the image of $f$ separate $T^2$?
+\end{problem}
+
+\vfill\begin{problem} Do there exist simplicial maps $f : T^2 \to S^2$
+  and $g : S^2 \to T^2$ which are inverses of each other?  If not, why
+  not?
+\end{problem}
+
+% \begin{problem}
+% Build a 3-sphere $S^3$ by gluing tetrahedra along their boundaries.
+% \end{problem}
+
+% %\begin{problem}
+% %Build a 3-torus $T^3$ by gluing together tetrahedra; 
+% %\end{problem}
+
+% \begin{problem}
+% Does there exist a map $f : S^3 \to S^2$ so that, for every $x \in S^2$, the preimage $f^{-1}(x)$ is an $S^1$?
+% \end{problem}
+
+\end{document}
+

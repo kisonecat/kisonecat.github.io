@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+
+\usepackage{hyperref}
+\usepackage{fullpage}
+\usepackage{nopageno}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{wasysym}
+\usepackage{add-copyright}
+
+\usepackage{graphicx}
+
+\title{Homework 15}
+\date{Due Monday, December 1, 2008}
+
+\long\def\symbolfootnote[#1]#2{\begingroup%
+\def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+
+\begin{document}
+\maketitle
+
+\begin{description}
+
+\item[(a)] Recall our techniques: integration by parts, two half-angle
+  formulas for exchanging $\sin^2 x$ or $\cos^2 x$ for something
+  involving $\cos (2x)$, and the Pythagorean theorem for trading $\sin^2 x$
+  for $\cos^2 x$ (and vice versa).  Use these techniques to find:
+$$
+\int \cos^5 x \, \sin^5 x \, dx 
+\hspace{1em}
+\mbox{and}
+\hspace{1em}
+\int \cos^4 x \, \sin^4 x \, dx 
+$$
+
+\vfill
+
+\item[(b)] Use the technique of partial fractions to evaluate the following integrals:
+\begin{description}
+\item[(i)] $\displaystyle\int \displaystyle\frac{x+27}{x^2 -9}\,dx $.
+
+\vfill
+
+\item[(ii)]  $\displaystyle\int \displaystyle\frac{8 x - 36}{(x-5)^2}\,dx $.
+
+\vfill
+
+\item[(iii)] $\displaystyle\int \displaystyle\frac{6x^2 + 20x + 9}{x (x^2 + 2x + 1)}\,dx$.
+
+\vfill
+
+\item[(iv)] $\displaystyle\int \displaystyle\frac{2x^3 - 7x^2 + 6x - 21}{(x+1)(x-2)(x-3)}\,dx$.
+
+\vfill
+
+\item[(v)] $\displaystyle\int \displaystyle\frac{x^2 - 3x + 46}{(x+3) \, \left( (x-1)^2 + 16 \right)} \, dx$.
+\end{description}
+
+\vfill
+
+\item[(c)] Find a function $f : \R \to \R$ so that $f'(x) = f(x) \cdot
+  \left( 1 - f(x) \right)$.  \textit{Hint:} Use partial fractions!
+  Divide both sides of $f'(x) = f(x) \cdot
+  \left( 1 - f(x) \right)$ by $f(x) \cdot \left( 1 - f(x) \right)$ and integrate to discover
+$$
+\int \frac{f'(x)}{f(x) \, \left( 1 - f(x) \right)} \, dx = \int 1 \, dx = x + C.
+$$
+Make the substitution $u = f(x)$, evaluate the integral on the left hand side, and then solve for $f(x)$.
+
+\end{description}
+
+
+\end{document}

@@ -1,0 +1,36 @@
+Properties of Limits
+Math 195 July 7, 2009
+What are some rules that we can apply to limits?
+
+1
+1.1
+
+Chiastic rules
+The limit of a sum is the sum of the limits.
+x→a
+
+lim (f (x) + g(x)) = lim f (x) + lim g(x)
+x→a x→a
+
+1.2
+
+The limit of a product is the product of the limits.
+x→a
+
+lim (f (x) · g(x)) = lim f (x) · lim g(x)
+x→a x→a
+
+2
+
+Composition of functions
+
+If f is a continuous function, then
+x→a
+
+lim f (g(x)) = f x→a g(x) . lim
+
+3
+
+Squeeze theorem
+
+

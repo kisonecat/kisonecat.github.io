@@ -1,0 +1,106 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+\newtheorem*{example}{Example}
+\newtheorem*{thm}{Theorem}
+
+\title{Lecture 20: Differentiating and integrating series}
+\author{Math 153 Section 57}
+\date{Wednesday November 12, 2008}
+
+\begin{document}
+\maketitle
+
+Following chapter 12.9.
+
+\section{Differentiating term-by-term}
+
+Define $f : (-r,r) \to R$ by $f(x) = \sum_{n=0}^\infty a_n x^n$.
+
+If $\sum_{n=0}^\infty a_n x^n$ converges on $(-r,r)$, then
+$$
+\sum_{n=1}^\infty a_n \cdot n \cdot x^{n-1}
+$$
+the term-wise derivative, also converges on $(-r,r)$.
+
+Moreover, $f$ is differentiable on $(-r,r)$, and
+$$
+f'(x) = \sum_{n=0}^\infty \frac{d}{dx} \left( a_n x^n \right) = \sum_{n=1}^\infty a_n \cdot n \cdot x^{n-1}
+$$
+
+Consequently: if you plug a power series into the machine that finds a
+Taylor series expansion, you get out the original power series.  This
+is a key point, because if we can produce a power series by some other
+method, then we have found a Taylor series.
+
+\section{Radius of convergence, not same interval}
+
+$\sum_{n=1}^\infty x^n/n^2$ converges on $[-1,1]$, but the dreivative only converges on $[-1,1)$.
+
+\section{Examples}
+
+$\frac{d}{dx} e^x = e^x$
+
+$\frac{d}{dx} \sin x = \cos x$
+
+\section{Integrating term-by-term}
+
+Define $f : (-r,r) \to R$ by a series
+$$
+f(x) = \sum_{n=0}^\infty a_n x^n
+$$
+which converges for $x \in (-r,r)$
+
+Define
+$$
+F(x) = \sum_{n=0}^\infty \frac{a_n \, x^n}{n+1}
+$$
+which also converges for $x \in (-r,r)$, and 
+$$
+\int f(x) \, dx = F(x) + C
+$$
+
+Remember the C.
+
+\section{Logs}
+
+Since $1/(1+x) = \sum_{n=0}^\infty (-1)^n x^n$, we have that
+$$
+\log (1+x) = \sum_{n=0}^\infty \frac{(-1)^n x^{n+1}}{n+1} + C
+$$
+But $C = 0$.
+
+\section{Endpoints}
+
+Abel's theorem: if $\sum_{n=0}^\infty a_n x^n$ converges on $(-r,r)$, and $f(x)$ equals the series there.
+
+If $f$ is left continuous at $r$ and the series converges, then $f(r) = \sum_{n=0}^\infty a_n r^n$.
+
+If $f$ is right continuous at $-r$ and the series converges, then $f(r) = \sum_{n=0}^\infty a_n (-r)^n$.
+
+So endpoints do get filled in correctly by series.
+
+\section{Not a correct argument whatsoever}
+
+$$
+\sin x = \left(1 - x/\pi\right) \left(1 + x/\pi\right) \left(1 - \frac{x}{2\pi}\right) \left( 1 + \frac{x}{2\pi} \right) \cdots
+$$
+Multiply pairs of positive and negative roots, to get
+$$
+\frac{\sin x}{x} = \left(1 - \frac{x^2}{\pi^2}\right) \left(1 - \frac{x^2}{4\pi^2} \right) \cdots
+$$
+Multiply it out?
+$$
+1 - \left(\frac{1}{\pi^2} + \frac{1}{4\pi^2} + \frac{1}{16\pi^2} + \cdots\right) x^2 + \cdots
+$$
+But this should be the same as the Taylor series for $\frac{\sin x}{x}$.  So, maybe
+$$
+\sum_{n=1}^\infty \frac{1}{n^2\,\pi^2} = \frac{1}{3!}
+$$
+So maybe $\sum_{n=1}^\infty 1/n^2 = 1/6$.
+
+Well, no.  We don't have any justification for making these arguments---why should that infinite product be equal to $(\sin x)/x$?
+
+\end{document}

@@ -1,0 +1,573 @@
+\documentclass[12pt]{midterm}
+
+\title{Fake Final}
+\course{Math 345}
+\date{December 2010}
+
+\excludeversion{solutiontext}
+
+\newcommand{\abs}[1]{\left|#1\right|}
+\DeclareMathOperator{\realpart}{Re}
+\DeclareMathOperator{\imagpart}{Im}
+
+\setlength{\introductionwidth}{0.6\paperwidth}
+\introduction{%
+Das Unendliche hat wie keine andere Frage von jeher so tief das
+Gem\"ut der Menschen bewegt. \textit{The infinite, has, like no other
+  question, moved the human mind so deeply.} \\
+\null\hfill---David Hilbert
+}
+
+\instructions{%
+\begin{enumerate}
+\item Write your name above.
+\item Calculators are forbidden.
+\item Look inside the fake exam before taking the real exam.
+\item Justify your answers.
+\item Show your work.
+\item Write your answers down to practice.
+\item Answer all questions.
+\item To prevent fire, do not divide by zero.
+\vfill
+\end{enumerate}
+}
+
+\usepackage{xcolor}
+
+\begin{document}
+\begin{exam}
+
+%  Propositional calculus
+%  Truth tables
+%  De Morgan's laws
+%  Distributive laws
+%  Tautology
+%  Proof by contradiction
+%  Converse of a conditional proposition
+%  Contrapositives
+%  Quantifiers
+%  Bound and free variables
+%  Nested quantifiers
+%  Even and odd numbers
+%  Rational and irrational numbers
+%  Divisibility
+%  Induction
+%  Complete induction
+%  Least elements
+%  Divisibility
+%  Prime numbers
+%  Infinitude of the primes
+%  Telescoping sums
+%  Fibonacci numbers
+%  Pascal's triangle
+%  Patterns in Pascal's triangle
+%  Binomial theorem
+%  Proof of Binomial theorem
+%  $\displaystyle\binom{n+1}{k} = \displaystyle\binom{n}{k-1} + \displaystyle\binom{n}{k}$
+%  Congruences
+%  Set theory
+%  Set builder notation
+%  Intersections, unions, subsets
+%  Set theory and de Morgan's laws
+%  Functions
+%  Surjections, injections, bijections
+%  Inverse functions
+%  Compositions of functions
+%  Families of sets
+%  Binomial coefficients in combinatorics
+%  Infinite sets 
+%  Diagonalization 
+%  Countability 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Functions
+\begin{problem}[350]
+  Let $A$ be the set of English words, and $B$ be the set of words
+  (nonsense or not) made up of (possibly zero!) letters in the Latin
+  alphabet.  Consider the function $f : A \to B$ which sends an
+  English word to the word without its last letter.
+
+  Is $f$ injective?  Is $f$ surjective?
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[350]
+  Let $A$ be the set of all strings of at least 2 letters in the Latin
+  alphabet.  Let $r : A \to A$ be the function which reverses its
+  input (so $r(\mbox{hello}) = \mbox{olleh})$ and $s : A \to A$ be the
+  function which takes the first letter and makes it the last letter (so $s(\mbox{hello})
+  = \mbox{elloh})$).
+
+  By applying $r$ and $s$ repeatedly, is it possible to transform
+  $\mbox{game}$ into $\mbox{mage}$?  Is it possible to transform
+  $\mbox{pets}$ to $\mbox{pest}$?  Is it possible to transform
+  $\mbox{maple}$ into $\mbox{ample}$?
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Even and odd numbersik
+\begin{problem}[350]
+Let $A = \{ x \in \mathbb{Z} : \mbox{$x$ is even} \}$ and $B = \{ x
+\in \mathbb{Z} : \mbox{$x$ is odd} \}$.  Describe a bijection $f : A
+\to B$.
+
+Be sure to justify your answer completely.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Complete induction
+\begin{problem}[350]
+  Use complete induction to prove that every natural number bigger
+  than one is prime or can be written as a product of prime numbers.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Converse of a conditional proposition
+\begin{problem}[350]
+Consider the statement: if $f : A \to A$ is injective, then $f$ is
+surjective.  What is the converse of this statement?  The
+contrapositive of this statement?  If $A$ is a finite set, which of
+these statements are true?
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Quantifiers
+\begin{problem}[350]
+  Let $f : \mathbb{R} \to \mathbb{R}$, and suppose $\exists x \in
+  \mathbb{R}, \forall y \in \mathbb{R} \exists z \in \mathbb{R} f(x +
+  z) = y$.  Does it follow that $f$ is surjective?
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Inverse functions
+\begin{problem}[350]
+Suppose $f : \mathbb{N} \to \mathbb{N}$ is given by
+$$
+f(n) = \begin{cases}
+n+1 & \mbox{if $n$ is odd} \\
+n-1 & \mbox{if $n$ is even}
+\end{cases}
+$$
+Is $f$ bijective?  If so, find an inverse function.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Surjections, injections, bijections
+\begin{problem}[350]
+Suppose $A,B,C$ are sets, and $f : A\to B$ and $g : B \to C$ are
+functions.  If $f$ is surjective, and $g$ is injective, what can you
+say about the composition $g \circ f$?  Need it be injective?  Need it
+be surjective?
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Divisibility
+\begin{problem}[350]
+Suppose $f : \mathbb{N} \to \mathbb{N}$ is a function with the
+properties that
+\begin{itemize}
+\item $f(xy) = f(x) \cdot f(y)$ and
+\item $f(p) = 2$ if $p$ is prime.
+\end{itemize}
+Among two-digit numbers $x$, how large can $f(x)$ be?
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Set theory
+\begin{problem}[350]
+Find three sets of real numbers, $A$, $B$, and $C$, so that $A \cap B
+\neq \varnothing$, and $A \cap C
+\neq \varnothing$, and $B \cap C
+\neq \varnothing$, but $A \cap B \cap C = \varnothing$.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Binomial coefficients in combinatorics
+\begin{problem}[350]
+Let $P_2(A)$ be the set of two element subsets of $A$.  If $A$ is an
+$n$-element set, show that $P_2(A)$ has $\displaystyle\binom{n}{2}$ elements.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Least elements
+\begin{problem}[350]
+Let $A$ be the set of natural numbers which only use the digits $1$
+and $2$.  Define $B$ by
+$$
+\{ n \in \mathbb{N} : 9n \in A \}.
+$$
+Does $B$ have a least element?  % yes, it is 1358!
+% 
+
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Propositional calculus
+\begin{problem}[350]
+Let $A$ be a set.  Suppose $P(n)$ is the proposition $(n \in A)
+\rightarrow ((n+1) \in A)$.  If $P(n)$ is true for all $n$, does it
+follow that $A = \mathbb{N}$?
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  De Morgan's laws
+\begin{problem}[350]
+  Let $P, Q, R, S$ be propositions.
+
+Rewrite $(\neg (P \vee (Q \wedge
+  R))) \wedge S$ in a simpler way.
+
+Also, rewrite $(\neg (P \vee (Q \wedge
+  R))) \wedge P$ in a simpler way.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Fibonacci numbers
+\begin{problem}[350]
+Show that every $k^{\mbox{th}}$ Fibonacci number is a multiple of $F_k$.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Congruences
+\begin{problem}[350]
+For which $n \in \mathbb{Z}$ is there a number $x \in \mathbb{Z}$ so
+that $x^2 \equiv n \pmod 11$?
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Prime numbers
+\begin{problem}[350]
+For which prime numbers $p$ is it possible to find an integer $x$ so
+that $x^2 \equiv -1 \pmod p$?  You might not be able to prove your
+statement, but you will probably be able to come up with enough
+evidence to support your conjecture.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Induction
+\begin{problem}[350]
+This was meant to be an induction problem.
+
+Determine the number of ways of covering a $n \times 2$ chessboard
+with $2 \times 1$ dominoes.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Infinitude of the primes
+\begin{problem}[350]
+Let $A$ be the set 
+$$
+\{ n \in \mathbb{N} : \mbox{$n$ is prime and $n \equiv 3 \pmod 4$}\}.
+$$
+Prove that $A$ is infinite.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Infinitude of the primes
+\begin{problem}[350]
+Let $A$ be the set of prime numbers.  Can you find a million
+consecutive numbers in the set $\mathbb{N} \setminus A$?
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Set builder notation
+\begin{problem}[350]
+Explainw why there is a bijection between $\mathbb{N}$ and $\mathbb{Q}$.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Infinite sets 
+\begin{problem}[350]
+Prove that, if $A$ is an infinite set, then there exists a proper
+subset $B \subset A$ with $B$ equinumerous to $A$.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Distributive laws
+\begin{problem}[350]
+Let $A,B,C$ be sets.  Prove that $A \cap (B \cup C)$ is equal to $(A
+\cap B) \cup (A \cap C)$.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Rational and irrational numbers
+\begin{problem}[350]
+  For $q \in \mathbb{Q}$, let $A_q$ be the interval $(q - \epsilon, q+
+  \epsilon)$.  Prove that $\bigcup_{q \in \mathbb{Q}} A_q = \mathbb{R}$.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Binomial theorem
+\begin{problem}[350]
+Show that $101$ divides $(15 + 17)^{101} - 15 - 17$.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Intersections, unions, subsets
+\begin{problem}[350]
+  Describe a collection of eight sets, any seven of which intersect,
+  but for which all eight do not intersect.
+
+  Describe a collection of $k$ sets, any $(k-1)$ of which intersect,
+  but for which all $k$ do not intersect.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Compositions of functions
+\begin{problem}[350]
+Define functions $f : \mathbb{Z} \to \mathbb{Z}$ and $g : \mathbb{Z}
+\to \mathbb{Z}$ by $f(n) = n+1$ and
+$$
+g(n) = \begin{cases} 1 & \mbox{if $n = 2$}, \\
+2 & \mbox{if $n = 1$}, \\
+n & \mbox{otherwise.}
+\end{cases}
+$$
+Describe a bijective function $h : \mathbb{Z} \to \mathbb{Z}$ which
+cannot be written as a composition of $f$ and $g$ and $f^{-1}$.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Bound and free variables
+\begin{problem}[350]
+In the statement
+$$
+\forall x \in \mathbb{R}\, \left( 
+\left( \exists y \in \mathbb{R}\, (x^2 > y) \right) \vee
+\left( \exists z \in \mathbb{R}\, (z^2 < w) \right) \right),
+$$
+which variables are bound?  Which variables are free?
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Proof of Binomial theorem
+\begin{problem}[350]
+Prove the binomial theorem.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Pascal's triangle
+\begin{problem}[350]
+Show that
+$$
+\sum_{i=0}^n \binom{n}{i}^2 = \binom{2n}{n}.
+$$
+
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Nested quantifiers
+\begin{problem}[350]
+Describe a proposition $P(x,y)$ so that
+$$ \forall x \, \exists y\, P(x,y) $$
+is true, but
+$$ \exists x \, \forall y\, P(x,y) $$
+is false.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Divisibility
+\begin{problem}[350]
+Let $\omega$ be the set of nonnegative integers, and define a function
+$A : \omega \times \omega \to \omega$,
+$$
+ A(m, n) =
+\begin{cases}
+n+1 & \mbox{if } m = 0 \\
+A(m-1, 1) & \mbox{if } m > 0 \mbox{ and } n = 0 \\
+A(m-1, A(m, n-1)) & \mbox{if } m > 0 \mbox{ and } n > 0.
+\end{cases}
+$$
+Compute $A(4,4)$.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Divisibility
+\begin{problem}[350]
+Define a sequence $a_n$ be the rule that $a_0 = 1$ and $a_1 = 2$ and
+$a_{n+2} = 2 a_{n+1} + a_n$.  For which values of $n$ is $a_n$ a
+multiple of 7?
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Countability 
+\begin{problem}[350]
+  Show that the set of functions $f : \mathbb{N} \to \mathbb{N}$ is
+  not countable.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[350]
+  Let $A$ be the set of functions $\mathbb{N} \to \mathbb{N}$, and let
+  $g : \mathbb{N} \to A$ be a function.  Define a function $f :
+  \mathbb{N} \to \mathbb{N}$ by $f(n) = g(n)\left( n \right) + 1$.
+  Does there exists a number $F \in \mathbb{N}$ so that $g(F) = f$?
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+
+
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Families of sets
+\begin{problem}[350]
+  Define $A = \{ x \in x \in \mathbb{R} : 0 \leq x \leq 1 \}$, and
+  suppose $B_x$ is the interval $(x,10)$.  Determine
+$$
+\bigcup_{x \in A} B_x \mbox{ and } \bigcap_{x \in A} B_x \mbox{ and }
+$$
+
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Set theory and de Morgan's laws
+\begin{problem}[350]
+Let $A, B, C$ be three subsets of $\mathbb{R}^2$.  Rewrite
+$$
+\mathbb{R}^2 \setminus ((\mathbb{R}^2 \setminus (A \cup B)) \cap C)
+$$
+in a shorter form.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Diagonalization 
+\begin{problem}[350]
+Let $A$ be the power set of $\mathbb{R}$; show that there is no
+bijection between $A$ and $\mathbb{R}$.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\end{solutiontext}\end{solution}
+
+
+% i'm going to run through the 38 problems on the fake final very
+% quickly, just so you can see the answers if you've been wondering.
+
+% i should say, though, just my philosophy about the fake final: I
+% wrote these questions with the intention that you'd really have to
+% think about them; they're hard questions.   But that's what makes
+% them sort of fun to think through, and some of them are the
+% beginning of whole areas of mathematics.
+
+% so let's start with the first problem.
+
+% we're halfway done.
+
+% that's it; that's the end of the fake final.  i hope you enjoyed %
+% thinking through these problems, and I wish you the very best as you
+% prepare to take the real exam next week.
+
+\end{exam}
+\end{document}

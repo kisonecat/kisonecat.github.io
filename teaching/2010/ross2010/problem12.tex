@@ -1,0 +1,124 @@
+\documentclass[12pt]{pset}
+%\usepackage{add-copyright}
+
+\geometry{margin=0.5in}
+\title{Problem Set 12}
+\course{Piecewise-Linear Topology}
+\author{Jim Fowler}
+\date{Summer 2010}
+
+\usepackage{tikz}
+\usetikzlibrary{matrix}
+
+\newcommand{\defnword}[1]{\textbf{#1}}
+
+\usepackage{stmaryrd}
+\newcommand{\boundary}{\partial}
+\newcommand{\collapses}{\searrow}
+\newcommand{\expands}{\nearrow}
+\newcommand{\she}{\ssearrow\nnearrow}
+\newcommand{\join}{\ast}
+\newcommand{\subdivided}{\triangleleft}
+\geometry{margin=1in,top=0.5in,bottom=0.5in}
+\DeclareMathOperator{\st}{st}
+\DeclareMathOperator{\trace}{trace}
+\DeclareMathOperator{\vertices}{vert}
+\DeclareMathOperator{\lk}{lk}
+\DeclareMathOperator{\cl}{cl}
+\DeclareMathOperator{\interior}{int}
+\DeclareMathOperator{\id}{id}
+\newcommand{\fullsubcomplex}{\Subset}
+
+\usepackage{hyperref}
+
+\begin{document}
+\maketitle
+
+% [[skim:///Users/jim/Papers/MR755006.pdf?page=2][page 2 of MR755006.pdf]]
+
+\subsubsection*{Homeomorphism invariance.} Today, 
+we will see why homology is invariant under subdivision.
+
+%Why does the sequence split?  last time we used the fact that $X
+%\times I$ is the same as $X$ to compute that $H_n(X \times S^1) =
+%H_n(X) \oplus H_{n-1}(X)$.
+
+%\parskip 0.45\baselineskip
+%\parindent 0pt
+
+\begin{definition*}
+  The \textbf{barycentric subdivision} of a complex $K$ is the
+  complex $K'$ where
+  \begin{itemize}
+  \item the vertices of $K'$ are the simplexes of $K$, and
+  \item the $n$-simplexes of $K'$ are chains $\sigma_0 \subsetneq \sigma_1 \subsetneq \cdots \subsetneq \sigma_n$ of simplexes $\sigma_i$ of $K$.
+  \end{itemize}
+
+  \noindent Given a PL map $f : K \to L$, a simplicial map $g : K \to L$ is a
+  \textbf{simplicial approximation} to $f$ provided
+  $$
+  f(\st v) \subset \st g(v) \mbox{ for all vertices $v \in K$.}
+  $$
+  Here, $\st$ denotes the star of a vertex.
+\end{definition*}
+
+% [[skim:///Users/jim/Papers/MR1867354.pdf?page=187][page 187 of
+% MR1867354.pdf]]
+
+\begin{problem}
+  Show that two simplicial approximations $g_1, g_2 : K \to L$ induce
+  isomorphic maps on homology.
+\end{problem}
+
+\begin{theorem*}[The simplicial approximation theorem]
+  If $K$ and $L$ are simplicial complexes, and $f : K \to L$ is a PL
+  map, then there is a simplicial map $g : K^{(n)} \to L$ which is a
+  simplicial approximation to $f$.  Here, $L^{(n)}$ denotes the barycentric subdivision of
+  $L$, iterated $k$ times.
+\end{theorem*}
+
+\begin{problem}
+  Let $f$ be a PL map; show that a simplicial approximation $g$ is
+  homotopic to $f$.
+\end{problem}
+
+\begin{problem}[from lecture]
+  Use the simplicial approximation theorem to prove
+  the Lefschetz fixed point theorem.
+\end{problem}
+
+% [[skim:///Users/jim/Papers/MR755006.pdf?page=54][page 54 of MR755006.pdf]]
+
+%\vfill
+
+\begin{definition*}
+  A chain complex $C_\bullet$ is \textbf{acyclic} if it has trivial
+  homology (to think about ``trivial homology,'' we might prefer to
+  think of $C_\bullet$ as an \textbf{augmented} complex).
+
+  An \textbf{acyclic carrier} from a simplicial complex $K$ to a
+  simplicial complex $L$ is an assignment $\Phi$, associating to each
+  simplex $\sigma \in K$ a subcomplex $\Phi(\sigma)$ of $L$ so that
+  \begin{itemize}
+  \item $\Phi(\sigma) \neq \varnothing$,
+  \item $\Phi(\sigma)$ is acyclic, and
+  \item if $\tau < \sigma$, then $\Phi(\tau) \subset \Phi(\sigma)$.
+  \end{itemize}
+  A chain map $f : C_\bullet(K) \to C_\bullet(L)$ is \textbf{carried} by
+  $\Phi$ if each $f(\sigma)$ is carried by $\Phi(\sigma)$.
+\end{definition*}
+
+\begin{theorem*}[Acyclic carrier theorem]
+  Let $\Phi$ be an acyclic carrier from a simplicial complex $K$ to a
+  simplicial complex $L$.  Then there exists an
+  augmentation-preserving chain map $f : C_\bullet(K) \to C_\bullet(L)$,
+  carried by $\Phi$ and unique up to chain homotopy.
+\end{theorem*}
+
+\begin{problem}[from lecture]
+  Use the acyclic carrier theorem to show that homology is invariant under PL homeomorphism.
+\end{problem}
+
+
+\end{document}
+

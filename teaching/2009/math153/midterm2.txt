@@ -1,0 +1,397 @@
+Problem 1.
+∞
+
+Deﬁne
+n=1
+
+an = L.
+
+Solution.
+∞
+
+The series
+n=1
+
+an converges to L if the sequence of partial sums
+k
+
+sk :=
+n=1
+
+an
+
+converges to L, that is, limk→∞ ak = L. A common problem here was that people mixed up k’s and n’s, or forgot to use a limit. This deﬁnition is conceptually very important (a triumph of mathematics!). Series are not piles of numbers to add up simultaneously—they are lists to be added up in order—and this aﬀects convergence!
+
+Problem 2.
+∞
+
+√ 1+
+
+(a) Does the series
+n=1 ∞
+
+n √
+
+n
+
+converge?
+
+(b) Does the series
+n=3
+
+n2 converge? n4 − 7
+
+Justify your answers. Solution. (a) No, by the n-th term test: lim n 1 √ = lim √ =1=0 n→∞ 1 + 1/ n 1+ n √
+
+n→∞
+
+so the series must diverge. Some people tried to use the limit comparison test (comparing with bn = 1), but this is equivalent to the n-th term test, and makes everything look unnecessarily complicated. (b) Yes, by the limit comparison test (this is the sum of a ratio of polynomials, so the limit comparison test is guaranteed to work). Set an = (n2 )/(n4 − 7) and bn = 1/n2 . Then lim an /bn = lim n4 = 1. n→∞ n4 − 7
+
+n→∞
+
+Since this limit is nonzero, an converges if and only if by the p-series test, so the given series an converges.
+
+bn converges. But
+
+bn converges
+
+Many people fell into a trap that I placed in this problem: you cannot use the more “obvious” comparison test because n2 1 ≤ 2 4−7 n n is not true (try n = 3). The limit comparison test comes in very handy for this.
+
+Problem 3.
+∞
+
+Provide a precise statement of the ratio test for determining whether the series
+n=1
+
+an converges.
+
+Solution. Suppose an > 0 for all n, and that limn→∞ an+1 /an = L. Then, • If L > 1, then • If L < 1, then an diverges. an converges.
+
+• If L = 1, then the test is inconclusive. Some people neglected to write down limn→∞ .
+
+Problem 4.
+For which real numbers x > 0 does the series
+∞
+
+n=1
+
+(−1)n nx
+
+converge absolutely? For which x > 0 does it converge conditionally? Justify your answer. Solution. Andy Chiang pointed out that I should have had n = 1 instead of n = 0; I have corrected that here. This problem is a basically p-series in disguise, so the convergence test will be easy—the hard part is the diﬀerence between absolute and conditional convergence. To check for absolute convergence, note that
+∞
+
+n=1
+
+(−1)n = nx
+
+∞
+
+n=1
+
+1 nx
+
+But this is a p-series, so it converges exactly when x > 1. Thus, the given series converges absolutely provided x > 1. Let an = nx . Then the given series is an alternating series ∞ (−1)n an . For any x, all of the an n=1 are positive, and an is a decreasing sequence, and limn→∞ an = 0, so by the alternating series test, the given series converges for all x > 0. Therefore, it converges conditionally provided 0 < x ≤ 1.
+
+(Some people said that it converges conditionally for all x > 0; yes, the series converges for all x > 0, but to converge conditionally, the series must converge while the series of the absolute values diverges—this only happens when 0 < x ≤ 1).
+
+Problem 5.
+Deﬁne f : R → R by f (x) = cos (sin x) Find the ﬁrst four terms (i.e., up to and including x3 ) of a Taylor series expansion for f around x = 0. Solution. You can do this problem by diﬀerentiating; since cos sin x is an even function, the Taylor series will only involve even degree terms, so you do not need to compute the coeﬃcient on x1 and x3 —they are both automatically zero. This means you only need to compute f (2) (0) which is not so bad. Nevertheless, you can also solve this problem by substituting the series for sin x into the series for cos x, as follows:
+∞
+
+cos (sin x) =
+n=0
+
+(−1)n (2n)! x−
+x3 3!
+
+x3 x5 + − ··· 1− 3! 5! +
+x5 5! 2
+
+2n
+
+− ···
+
+2 x2 = 1− + terms of degree four or more 2
+
+= 1−
+
+(x − · · · )4 + + ··· 4!
+
+Problem 6.
+Consider the function f (x) =
+∞
+
+ex − e−x . 2
+
+Let
+n=0
+
+an xn be a power series for f (x). Compute both an and f (42189) (0).
+
+Solution. This function is “hyperbolic sine” so there is some reason to care about it; you’ll notice in this problem that its Taylor series looks just like the Taylor series for sine, except that there is no (−1)n term. Additionally, since sinh is an odd function, only odd degree terms will appear in its Taylor series. n The Taylor series for ex is ∞ x so n=0 n! ex − e−x 1 = 2 2 = 1 2
+∞
+
+n=0 ∞
+
+xn (−x)n − n! n=0 n! 1 − (−1)n n x n!
+
+∞
+
+n=0
+
+Therefore the coeﬃcient on xn is
+
+1 − (−1)n . n! · 2 Note that this vainshes when n is even, and is equal to 1/n! when n is odd. Since f (n) (0) = n! an , we conclude an = f (42189) (0) = 42189! · 1 − (−1)42189 = 1 − (−1)42189 /2 = 2/2 = 1. 42189! · 2
+
+Many of you neglected to compute an —you lost points for this; I asked for a computation of an to force you to write down the answer in a particular way (I feared that some would suggestively write down the ﬁrst few terms series, some would not simplify it suﬃciently, etc.—to be fair to those who might do more work, I asked for the most speciﬁc thing I could ask for). Additionally, many people wrote down ∞ x2n+1 f (x) = (2n + 1)! n=0 which is true, but this expresion makes it very complicated to see what the coeﬃcient on the xn term should be. One way to express it is like this: a2n+1 = a2n Or you could say, an = 1/n! if n is odd, 0 if n is even. 1 (2n + 1)! = 0
+
+Problem 7.
+Suppose f : R → R is a smooth function. Deﬁne g(x) = f (x) − f (0) − f (0)x − f (0) x2 2
+
+Recall that Taylor’s theorem provides an integral equal to g(x). What is that integral? (Hint: if you have forgetten it or want to check your answer, you might try integration by parts). Solution. By Taylor’s theorem, f (x) = f (0) + f (0) x + Therefore, g(x) = f (x) − f (0) − f (0)x − But, g(x) = R2 (x) = 1 2
+0 x
+
+f (0) x2 + R2 (x). 2 f (0) x2 = R2 (x). 2
+
+f (3) (t) (x − t)2 dt
+
+This problem was designed to test your knowledge of Taylor’s theorem without exactly asking you to just give a statement—you got credit if you wrote down the n = 2 case.
+
+Problem 8.
+Let p : R → R be a smooth function, such that • p(0) = 0 (in other words, my initial position is at the origin), • p (0) = 2000 (in other words, my initial velocity is 2000 m/s), and • |p (t)| < 500 for all t ∈ R (in other words, I will avoid accelerating more than 500 m/s2 ) Use Lagrange’s theorem to bound p(2), my position after two seconds. Solution. By Lagrange’s theorem p(x) = p(0) + p (0) x + R1 (x) and R1 (x) = f (c) x2 /2! for some c ∈ (0, x). In our case, x = 2, so p(2) = p(0) + p (0) 2 + R1 (2) = 2000 · 2 + R1 (2) So p(2) − 4000 = R1 (2). Since |p (t)| < 500, we know |R1 (2)| = |f (c) 22 /2| ≤ 500 · 4/2 = 1000 Consequently, |p(2) − 4000| ≤ 1000, and therefore, 3000 ≤ p(2) ≤ 5000. Take a moment to reﬂect on the reasonableness of this: if you are travelling at a particular speed, and you refuse to accelerate or decelerate too much, then you have to cover a certain distance! This is a physical consequence of Lagrange’s theorem. In problems like this, physical intuition can reassure you that you’ve written down the correct answer.
+
+Problem 9.
+∞
+
+For which real numbers x does the series
+n=1
+
+xn converge? Remember to show your work. 2n n2
+
+Solution. We use the ratio test to check for absolute convergence (this suﬃces for power series, save possibly at the endpoints) lim an+1 xn+1 /(2n+1 (n + 1)2 ) x n2 = lim = lim n→∞ 2 (n + 1)2 n→∞ an xn /(2n n2 )
+
+n→∞
+
+But limn→∞ (n/n+1)2 = 1, so the above limit is equal to |x|/2 By the ratio test, the series converges absolutely provided |x|/2 < 1, i.e., provided −2 < x < 2. We need to check endpoints. At x = 2, the series becomes
+∞
+
+n=1
+
+2n = 2n n2
+
+∞
+
+n=1
+
+1 n2
+
+which is a convergent p-series. At x = −2, the series also converges—even absolutely, since
+∞
+
+n=1
+
+(−2)n = 2n n2
+
+∞
+
+n=1
+
+1 n2
+
+which is a convergent p-series again. Therefore, the series converges exactly when x ∈ [−2, 2].
+
+Problem 10.
+∞
+
+For which real numbers x does
+n=0
+
+n! xn converge? Note: n!! means the factorial of the factorial of n!!
+
+n. Justify your answer. Solution. Yes, it is a power series, so you might be tempted to apply the ratio test; but we’ve had problems about the ratio test already—and more importantly, the ratio test is helpful precisely when taking a ratio will cancel some terms—but here, taking the ratio of n!! and (n + 1)!! doesn’t seem helpful. What we do know is that n!! grows ridiculuosly quickly, which should suggest that a comparison test will be helpful. So let’s apply the comparison test. First, observe that, provided n ≥ 2 n! = 1 · 2 · · · (n − 1) · (n) > (n − 1) · (n) > (n − 1)2 ≥ n2 /4 As a result, n!! > (n!)2 /4. Therefore,
+
+n! xn n! xn 1 xn ≤ = · . n!! (n!)2 /4 4 n!
+∞
+
+But
+
+n=1
+
+1 xn ex = 4 n! 4
+
+converges for all x ∈ R, so by the comparison test, the given series also converges for all x ∈ R. This problem was designed to test your use of the comparison test (since the second problem was more naturally solved using the limit comparison test), but there are surely other ways to solve it. Many of you had the right intuition (and you got points for that), saying that the n!! will grow so much more quickly, etc. This is great! I hope that when you see series like this, you’ll be able to guess the truth right away; but to justify your intuition of “grows very fast” you should use a comparison test.
+
+Problem 11.
+1 1 to ﬁnd a power series an xn for f (x) = . 1−x (1 − x)3 For which x ∈ R does the power series converge to f (x)? Use the power series for Solution. Note that 2 d2 1 = 21−x dx (1 − x)3 d2 dx2
+∞ ∞
+
+Additionally,
+
+xn =
+n=0 n=0
+
+d2 n x = dx2
+
+∞
+
+(n)(n − 1)xn−2 .
+n=2
+
+Putting these facts together gives 1 = (1 − x)3
+∞
+
+n=2
+
+n (n − 1) n−2 x = 2
+
+∞
+
+n=2
+
+n n−2 x 2
+
+Since ∞ xn converges to 1/(1 − x) for all x ∈ (−1, 1), the same is true of the second derivatives n=0 (by the thereom on term-by-term diﬀerentiation). There were many popular mistakes: the most frequent was to argue that 1 = 1 − x3
+∞ ∞
+
+(x ) =
+n=0 n=0
+
+3 n
+
+x3n
+
+which is true. The trouble is that 1/(1 − x)3 is not 1/(1 − x3 ). Many people included an argument that the series they found converged; regardless of whether or not the series you found converges, that does not address the question of whether the series converges to f (x)—for that, you need to either estimate the remainder, or apply a theorem about term-by-term diﬀerentiation.
+
+Problem 12.
+The following questions are for extra credit. Circle your answer.
+∞ ∞
+
+True False If
+n=1 ∞
+
+an converges, then
+n=1 ∞
+
+|an | converges. Counterexample: an = (−1)n /n.
+
+True False If
+n=1
+
+an diverges, then
+n=1
+
+|an | diverges. This is the contrapositive of the theorem
+
+that says absolutely convergent series also converge conditionally.
+∞ ∞
+
+True False If
+n=1
+
+|an | converges, then
+n=1
+
+an converges. This is the theorem that says absolutely
+
+convergent series also converge conditionally.
+
+∞
+
+∞
+
+True False If
+n=1 ∞
+
+|an | diverges, then
+n=1 ∞
+
+an diverges. Counterexample: an = (−1)n /n.
+∞
+
+True False If
+n=1
+
+an diverges and
+n=1
+
+bn diverges, then
+n=1
+
+(2·an +3·bn ) diverges. Counterexample:
+
+an = 3n and bn = −2n.
+∞
+
+∞
+
+∞
+
+True False If
+n=1
+
+an converges and
+n=1
+
+bn converges, then
+n=1
+
+(2 · an + 3 · bn ) converges. Sums of
+
+convergent series converge.
+∞ ∞ ∞
+
+True False If
+n=1
+
+an diverges and
+n=1
+
+bn diverges, then
+n=1
+
+(an · bn ) diverges. Counterexample:
+
+an = bn = 1/n.
+∞ ∞ ∞
+
+True False If
+
+an converges and bn converges, then (an ·bn ) converges. Counterexample: n=1 n=1 √ an = bn = (−1)n / n.
+n=1 ∞ ∞
+
+True False If
+n=1
+
+an converges, then
+n=100 ∞
+
+an converges. Convergence only depends on the tail of
+
+the series.
+∞
+
+True False If
+n=1
+
+an diverges, then
+n=100 ∞
+
+an diverges. Divergence only depends on the tail of the
+
+series.
+∞
+
+True False If
+n=1
+
+an converges, then
+∞ n=2
+
+(an − an−1 ) converges. A shifted convergent series still
+
+converges, so
+n=2
+
+(an − an−1 ) is the diﬀerence of two convergent series.
+
+

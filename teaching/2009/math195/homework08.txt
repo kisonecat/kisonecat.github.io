@@ -1,0 +1,26 @@
+Homework and Quiz 8
+
+Ungraded homework
+Section 15.5, page 943, problems 3, 5, 7, 9, 13, 21, 23, 39, 43. Section 15.6, page 956, problems 7, 9, 11, 13, 15, 19, 21, 23. Are you doing the homework problems? If not, you are in trouble. I can only tell you about the journey you are taking—you must walk the path yourself.
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+For practice, you should try:
+
+Graded Quiz
+(a) Deﬁne functions f (x, y) = xy + y 2 , g(t) = t2 , h(t) = cos t. Compute d f (g(t), h(t)). dt f (x, y) = cos x2 + y , g(s, t) = st, h(s, t) = s2 t. Compute ∂ ∂ f (g(s, t), h(s, t)) and f (g(s, t), h(s, t)). ∂s ∂t f (x, y, z) = xyz, g(s, t, u) = stu, h(s, t, u) = s2 + t2 + u2 . Compute the partial derivatives of f (g (s, t, u) , g (s, t, u) , h (s, t, u)) with respect to s, t, and u. (d) Deﬁne f : R3 → R by x2 + z + 1 . y Find the gradient of f at the point (1, 1, 1). f (x, y, z) =
+
+(b) Deﬁne functions
+
+(c) Deﬁne functions
+
+f (x, y) = sin (xy) at the point (0, 0) and in the direction (2, 3).
+
+c 2009 Jim Fowler
+
+(e) Find the direction derivative of f : R2 → R,
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Due Monday, July 13, 2009
+
+

@@ -1,0 +1,137 @@
+\documentclass[12pt]{pset}
+%\usepackage{add-copyright}
+
+\geometry{margin=0.5in}
+\title{Problem Set 13}
+\course{Piecewise-Linear Topology}
+\author{Jim Fowler}
+\date{Summer 2010}
+
+\usepackage{tikz}
+\usetikzlibrary{matrix}
+
+\newcommand{\defnword}[1]{\textbf{#1}}
+
+\usepackage{stmaryrd}
+\newcommand{\boundary}{\partial}
+\newcommand{\collapses}{\searrow}
+\newcommand{\expands}{\nearrow}
+\newcommand{\she}{\ssearrow\nnearrow}
+\newcommand{\join}{\ast}
+\newcommand{\subdivided}{\triangleleft}
+\geometry{margin=1in}%,top=0.5in,bottom=0.5in}
+\DeclareMathOperator{\st}{st}
+\DeclareMathOperator{\trace}{trace}
+\DeclareMathOperator{\vertices}{vert}
+\DeclareMathOperator{\lk}{lk}
+\DeclareMathOperator{\cl}{cl}
+\DeclareMathOperator{\interior}{int}
+\DeclareMathOperator{\id}{id}
+\newcommand{\fullsubcomplex}{\Subset}
+
+\usepackage{hyperref}
+
+\begin{document}
+\maketitle
+
+% [[skim:///Users/jim/Papers/MR755006.pdf?page=2][page 2 of MR755006.pdf]]
+
+\subsubsection*{More examples of homology.}  Today, we consider what
+sorts of homomorphisms between homology groups are induced by PL maps.
+Additionally, we see that homology can obstruct ``social choice.''
+
+%Why does the sequence split?  last time we used the fact that $X
+%\times I$ is the same as $X$ to compute that $H_n(X \times S^1) =
+%H_n(X) \oplus H_{n-1}(X)$.
+
+%\parskip 0.45\baselineskip
+%\parindent 0pt
+
+\begin{requiredproblem}
+  Find a map $f : T^2 \to T^2$ so that $f^n \not\simeq f^m$ for $n \neq m$.  Here, $f^n$ denotes the $n^{\mbox{\scriptsize th}}$ iterate of $f$ with itself, i.e.,
+$$f^n(x) = (\overbrace{f \circ \cdots \circ f}^{\mbox{$n$ times}})(x)$$
+\end{requiredproblem}
+
+\begin{problem}
+  Given $N$, can you find a map $f : T^2 \to T^2$ so that $f^n \not\simeq f^m$ unless $n \equiv m \pmod N$?
+\end{problem}
+
+\begin{problem}
+  Any map $f : T^2 \to T^2$ induces a map on $H_1(T^2) = \Z^2$ and
+  $H_2(T^2) = \Z$.  The former can be represented as a $2$-by-$2$
+  matrix with integer entries, and the latter can be represented by a
+  single integer.  Which combinations of matrices and integers can be
+  realized by maps $f : T^2 \to T^2$? \vspace{1ex} \\
+  More concretely, is it possible for a map $f : T^2 \to T^2$ to induce an isomorphism on $H_1$ but the zero map on $H_2$? 
+
+\end{problem}
+
+\begin{problem}
+  Any map $f : T^2 \# T^2 \to T^2 \# T^2$ induces a map on $H_1(T^2 \# T^2) = \Z^4$, which can be represented by a $4$-by-$4$ matrix.  Can all $4$-by-$4$ matrices with integer entries arise in this fashion?
+\end{problem}
+
+\begin{problem}
+  Suppose $f : T^2 \# T^2 \to T^2 \# T^2$ induces an isomorphism on homology; is it possible that $f \not\simeq \id$?
+\end{problem}
+
+\subsection*{Fixed points}
+
+\begin{problem}
+  Let $\Sigma_g$ be a surface of genus~$g$.  Is there a fixed point free map $f : \Sigma_g \to \Sigma_g$ with $f^2 = \id$?
+\end{problem}
+
+\begin{requiredproblem}
+  Let $\Sigma_g$ be a surface of genus~$g$, and let $f : \Sigma_g \to \Sigma_g$ be the map which cycles the $g$~handles, so that $f^g = \id$.  Does any map  homotopic to $f$ have a fixed point?
+\end{requiredproblem}
+
+\pagebreak
+\subsection*{Fundamental class}
+
+\begin{requiredproblem}
+  On Problem Set 4, we discussed \textbf{orientations} for
+  $n$-manifolds.  Show that an oriented $n$-manifold $M$ has a
+  well-defined and non-zero homology class $[M] \in H_n(M)$.  The homology
+  class will depend on the orientation, and is called the \textbf{fundamental class}.
+\end{requiredproblem}
+
+\begin{definition*}
+  Given oriented $n$-manifolds $M$ and $N$, the \textbf{degree} of a map $f : M \to N$ is the integer $\deg f$ so that
+  $$
+  f_\star [M] = (\deg f) [N].
+  $$
+\end{definition*}
+
+\begin{problem}
+  For any $n \in \Z$, produce a map $f : S^n \to S^n$ so that $\deg f = n$.
+\end{problem}
+
+\begin{problem}
+  For any oriented $n$-manifold $M$, produce a map $f : M \to S^n$ of degree $1$.
+\end{problem}
+
+\begin{problem}
+  Given an oriented $n$-manifold $M$, is there necessarily a map $f : S^n \to M$ of degree $1$?
+\end{problem}
+
+\subsection*{Topological social choice}
+
+Recall that a \textbf{two-player choice function} for a space $X$ is a function $f : X \times X \to X$ with the properties that
+\begin{itemize}
+\item $f(a,b) = f(b,a)$, i.e., the decision should be impartial,
+\item $f(x,x) = x$, i.e., the decision should respect consensus, and
+\item $f$ is continuous.
+\end{itemize}
+\begin{problem}
+  During lecture, we used homology to show that there is no two-player choice function for $S^1$; come up with a definition of an $n$-player choice function, and show that $S^1$ does not admit an $n$-player choice function (unless $n = 1$).
+\end{problem}
+
+\begin{requiredproblem}
+  Show that the interval $I$ admits two-player choice function.
+\end{requiredproblem}
+
+\begin{problem}
+  Does the two-sphere $S^2$ admit a two-player choice function?
+\end{problem}
+
+\end{document}
+

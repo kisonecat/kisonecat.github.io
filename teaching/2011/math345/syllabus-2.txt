@@ -1,0 +1,32 @@
+Syllabus for the 2:30 section
+Autumn 2010
+
+Math 345
+Jim Fowler
+
+For more than two millenia, humans have been discovering mathematical truths via an axiomatic, deductive method—“proof.” This course, drawing on examples from number theory and set theory, invites you to join this tradition.
+
+Resources
+We present 6 resources to help you to prove things.
+
+Oﬃce hours
+If you have questions, want to work through problems, or just talk about mathematics, please attend oﬃce hours. Name: Oﬃce: Phone: Email: Website: Jim Fowler MW658 Mathematics Tower Oﬃce Hours: (773) 809–5659 fowler@math.osu.edu http://www.math.osu.edu/~fowler/ Mondays through Thursdays 1:30–2:18p.m. and by appointment
+
+Please email me with any concerns you have; the success of this course depends on open communication.
+
+Textbook
+Our text is The Fundamentals of Higher Mathematics, by our very own Professor Falkner. Make sure to use the Autumn 2010 edition. You can purchase this book at • Barnes & Noble on High Street (that is, “Long’s”), • SBX on High Street, and • Barnes & Noble in the Central Classroom Building (that is, the OSU Bookstore).
+
+Website
+Your grades will be posted on Carmen; I will post assignments and handouts on Carmen and at http://www.math.ohio-state.edu/~fowler/teaching/math345/.
+
+Lectures
+We meet Mondays, Tuesdays, Wednesdays, and Thursdays, 2:30–3:18p.m. in Central Classroom 0322 for an interactive lecture. I am going to try to have videos of our lectures available as well.
+
+Tutoring
+The Mathematics and Statistics Learning Center provides free tutoring for Math 345 in Cockins Hall 129, on Mondays and Wednesdays from 11:30a.m.–1:30p.m., and on Tuesdays from 12:30–2:30p.m..
+
+Assessment
+There are 9940 points possible in this course, broken down as follows. 35 problem sets (1740 points; 60 points each). Homework is due during most lectures, and your lowest six homework scores will be dropped, so instead of 35 × 60 = 2100 points possible, there are 1740 points possible. You should work on the homework problems together, but you must write up your solutions independently. You must stay caught up with the homework. It is tempting to fall behind, but diﬃcult to catch up again—this is true of all courses, but especially true of a course in mathematics. That said, I understand your schedules are very busy, so I will not penalize you for infrequently turning in work a day or two late. Do not make a habit of it! Finally, because “the purpose of computing is insight, not numbers,” you must write up your solutions using words and sentences. Your goal is to communicate an idea. 2 midterms (3600 points; 1800 points each). The ﬁrst midterm is Tuesday, October 19; the second midterm is Wednesday, November 10. 1 ﬁnal exam (3500 points). The cumulative ﬁnal exam will be held in our usual classroom at 1:30–3:18p.m. on Wednesday, December 8, 2010. 1 presentation at the blackboard (370 points). During many of the 38 lectures, I will invite someone to come up to the blackboard to present a proof; you will receive 370 points the ﬁrst time you participate in this way, no matter how successful your presentation is. If you are not comfortable speaking in front of the class, we can arrange for you to present a proof on the blackboard privately to me to receive these 370 points. 1 written evaluation of someone else’s writing (370 points). At its heart, this is a writing class, and writing is often taught in a workshop format rather than lecture style. After we ﬁnish Section 6 (around Monday, November 1), you will be invited to (but not required to) submit some homework to an anonymous peer review system. You will receive 370 points for providing written feedback on someone else’s writing. 1 short paper on a topic in mathematics (360 points). Along with your ﬁnal exam, you can turn in a short paper (i.e., three pages) discussing a topic in “higher mathematics” for an additional 360 points.
+
+

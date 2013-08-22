@@ -1,0 +1,17 @@
+Due Wednesday, October 15, 2008
+Remember: October 20 is the date of the ﬁrst midterm! (a) On page 558, section 11.5, do problems: 2, 10, 13, 17, 23, 27.
+
+(b) On page 563, section 11.6, do problems: 3, 9, 14, 15, 21, 31.
+
+(c) Deﬁne two functions as follows: f (x) = x + cos x sin x g(x) = esin x (x + cos x sin x) . f (x) . Since this is the indeterminate form ∞/∞, we apply x→∞ g(x) l’Hˆpital’s rule as follows: o We want to calculate lim f (x) = x→∞ g (x) lim 1 + cos2 x − sin2 x x→∞ esin x cos x (x + sin x cos x + 2 cos x) cos2 x + sin2 x + cos2 x − sin2 x = lim sin x x→∞ e cos x (x + sin x cos x + 2 cos x) 2 cos2 x = lim sin x x→∞ e cos x (x + sin x cos x + 2 cos x) 2 cos x = lim sin x = 0. x→∞ e (x + sin x cos x + 2 cos x) lim
+
+(I left out some steps in computing the derivative of the denominator.) Therefore, by l’Hˆpital’s rule, the limit vanishes. Or. . . does it? Note that g(x) = esin x f (x), hence o f (x) 1 = lim sin x x→∞ g(x) x→∞ e lim which does not exist. Where did I make a mistake?
+
+c 2008 Jim Fowler
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Homework 5
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+

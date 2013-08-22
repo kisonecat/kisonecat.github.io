@@ -1,0 +1,26 @@
+Lecture 22: Sums of squares
+Monday, November 1, 2010
+
+Math 345
+Jim Fowler
+
+Textbook
+This lecture discusses section 6 of the textbook.
+
+Homework
+The homework is due Wednesday, November 3, 2010. From Section 6 of the textbook, do exercises 2 and 3.
+
+Exercise: sums of fourth powers
+Looking at telescoping sums for x4 .
+
+sums of geometric series
+What is
+n k=0
+
+xk ?
+
+Complete induction
+
+1
+
+

@@ -1,0 +1,102 @@
+[
+  {
+    "title": "Goldbach Conjecture",
+    "source": "goldbach.tex",
+    "shortname": "goldbach",
+    "filename": "goldbach.pdf",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Sums of Squares",
+    "source": "sums-of-squares.tex",
+    "shortname": "sums-of-squares",
+    "filename": "sums-of-squares.pdf",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Cows and Chickens (Simultaneous linear equations)",
+    "source": "cows-and-chickens.tex",
+    "shortname": "cows-and-chickens",
+    "filename": "cows-and-chickens.pdf",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Collatz Conjecture (Part 2)",
+    "source": "collatz-2.tex",
+    "shortname": "collatz-2",
+    "filename": "collatz-2.pdf",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Coin flipping (probability)",
+    "source": "coin-flipping.tex",
+    "shortname": "coin-flipping",
+    "filename": "coin-flipping.pdf",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Symmetries of a square",
+    "source": "square-symmetry.tex",
+    "shortname": "square-symmetry",
+    "filename": "square-symmetry.pdf",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Counting without counting (via the Chinese Remainder theorem)",
+    "source": "chinese-remainder.tex",
+    "shortname": "chinese-remainder",
+    "filename": "chinese-remainder.pdf",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Collatz Conjecture (Part 3)",
+    "source": "collatz-3.tex",
+    "shortname": "collatz-3",
+    "filename": "collatz-3.pdf",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Collatz Conjecture (Part 1)",
+    "source": "collatz-1.tex",
+    "shortname": "collatz-1",
+    "filename": "collatz-1.pdf",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Chickens and cages (linear programming problem)",
+    "source": "chicken-inequality.tex",
+    "shortname": "chicken-inequality",
+    "filename": "chicken-inequality.pdf",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  }
+]

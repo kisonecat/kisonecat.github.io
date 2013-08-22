@@ -1,0 +1,17 @@
+Homework and Quiz 5
+Due Wednesday, July 1, 2009 Ungraded homework
+Remember, the midterm will be on Monday, July 6, 2009. Make sure you are wellprepared to perform all the tasks on the review sheet.
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Graded Quiz
+(a) Suppose P1 and P2 are both planes through the origin, with normal vectors n1 and n2 , respectively. Find a point besides the origin which is contained in both P1 and P2 . Hint: ﬁnd the point in terms of n1 and n2 . (b) Let v = (1, 2, 3) and w = (4, 5, 6). Can you write (7, 8, 9) as α · v + β · w, and if you can, do so. Can you do it in more than one way? (c) Let u, v, w be vectors in R3 , and t ∈ R. Find the ﬁrst and second derivative of the vector-valued function f (t) = u × (v + tw). (d) Consider the vector-valued functions
+
+f (t) = (t, t2 , t3 ) and g(t) = (t, t, t).
+
+The graphs of these functions intersect at (1, 1, 1); ﬁnd the cosine of the angle at which they intersect. (e) Consider three planes P1 , P2 , P3 which pairwise intersect. Name the three lines of intersection as follows: L1,2 = P1 ∩ P2 , L2,3 = P2 ∩ P3 , L1,3 = P1 ∩ P3 .
+
+Can you choose the three planes so that L1,2 and L2,3 are skew? Can you choose the three planes so that L1,2 , L2,3 , and L1,3 all intersect in a common point?
+
+c 2009 Jim Fowler
+
+

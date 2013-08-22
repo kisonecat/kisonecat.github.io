@@ -1,0 +1,119 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{nopageno}
+\usepackage{ifthen}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx} 
+\usepackage{version}
+\usepackage{amsthm}
+\usepackage{multicol}
+\usepackage{add-copyright}
+
+\excludeversion{solution}
+
+\DeclareMathOperator{\ft}{ft}
+
+\newcommand{\R}{\mathbb{R}}
+
+\title{Take-Home Quiz 4}
+\author{Math 133 Section 22}
+\date{Due Monday, May 8}
+
+\newcounter{problem}
+\setcounter{problem}{1}
+
+\newenvironment{problem}[1][]
+{\begin{flushleft}\hangindent=1em\hangafter=1\noindent\textbf{Problem \arabic{problem}.}
+\ifthenelse{\equal{#1}{}}{}{
+\textbf{(#1 \ifthenelse{\equal{#1}{1}}{point}{points}).}}
+}
+{\addtocounter{problem}{1}\end{flushleft}}
+
+\begin{document}
+\maketitle
+
+\noindent
+For each of the following series, determine whether or not the series
+converges.  Be sure to mention which test you are using, and to
+describe how you applied the test.
+
+\vfill
+
+\begin{multicols}{2}
+
+\begin{problem}[1]
+$$
+\sum_{n=1}^\infty \frac{1}{n^2}
+$$
+\end{problem}
+
+\vfill
+
+\begin{problem}[1]
+$$
+\sum_{n=1}^\infty \frac{1}{n \cdot \sqrt{n}}
+$$
+\end{problem}
+
+\vfill
+
+\begin{problem}[1]
+$$
+\sum_{n=1}^\infty \frac{1}{n \cdot (n+1)}.
+$$
+\end{problem}
+
+\vfill
+
+\begin{problem}[2]
+$$
+\sum_{n=1}^\infty \frac{1}{2 + \sin^2 n}.
+$$
+\end{problem}
+
+\vfill
+
+\begin{problem}[2]
+$$
+\sum_{n=3}^\infty \frac{2n + 17}{n^2 - 5}
+$$
+\end{problem}
+
+\vfill
+
+\begin{problem}[2]
+$$
+\sum_{n=1}^\infty \frac{n + 2}{2n + 3}
+$$
+\end{problem}
+
+\vfill
+
+\begin{problem}[2]
+$$
+\sum_{n=1}^\infty \frac{4^n + n}{n!}
+$$
+\end{problem}
+
+\vfill
+
+\begin{problem}[2]
+$$
+\sum_{n=1}^\infty \frac{n}{1 + n \cdot 2^n}
+$$
+\end{problem}
+
+\vfill
+
+\begin{problem}[2]
+$$
+\sum_{n=1}^\infty \frac{n!}{n^{15}}
+$$
+\end{problem}
+
+\end{multicols}
+
+\vfill
+
+\end{document}

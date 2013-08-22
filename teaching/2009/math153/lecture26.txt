@@ -1,0 +1,7 @@
+Lecture 26: Partial fractions
+Math 153 Section 57 Wednesday November 26, 2008
+Following chapter 8.5. But ﬁrst, an analogy: diﬀerence calculus.
+
+1
+
+

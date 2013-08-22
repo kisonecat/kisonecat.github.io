@@ -1,0 +1,28 @@
+Problem Set 3
+Winter 2011
+
+Math 765
+Jim Fowler
+
+This week, we study the smooth maps between manifolds. Please feel comfortable emailing me (fowler@math.osu.edu) if you are having trouble with homework problems. The exercises below should be handed in on Monday, January 24, 2011. These exercises are designed to get you to think about transversality, among the most powerful tools in the study of smooth manifolds.
+
+Problem 3.1 (Lee 8–2)
+Let F : R2 → R be deﬁned by F (x, y) = x3 + xy + y 3 Which level sets of F are embedded submanifolds of R2 ?
+
+Problem 3.2 (Lee 8–14 and Lee 8–15)
+(8–14) If S ⊂ M is an embedded submanifold and γ : J → M is a smooth curve whose image happens to lie in S, show that γ (t) is in the subspace Tγ(t) S of Tγ(t) M for all t ∈ J. (8–15) Give a counterexample if S is immersed but not embedded.
+
+Problem 3.3 (Lee 8–16)
+Suppose f : M → N is a smooth map and S ⊂ N is an embedded submanifold. We say that f is transverse to S if, for every p ∈ f −1 (S), the spaces Tf (p) S and f Tp M together span Tf (p) N . If f is transverse to S, show that f −1 (S) is an embedded submanifold of M whose codimension1 is equal to dim N − dim S.
+
+1
+
+The codimension of a submanifold N ⊂ M is dim M − dim N .
+
+Problem 3.4 (Lee 8–17)
+Let M be a smooth manifold. Two embedded submanifolds S1 , S2 ⊂ M are said to be transverse if, for each p ∈ S1 ∩ S2 , the tangent spaces Tp S1 and Tp S2 together span Tp M . • If S1 and S2 are transverse, show that S1 ∩ S2 is an embedded submanifold of M of dimension dim S1 + dim S2 − dim M . [It will be easier to remember this if you think of it as saying codim(S1 ∩ S2 ) = codim S1 + codim S2 .] • Give a counterexample when S1 and S2 are not transverse. Hint: You can invoke the previous problem, and an inclusion map, to make short work of this problem.
+
+KK Problem 3.5
+Let f : R2 → R be a polynomial so that its zero set f −1 (0) is a smooth submanifold of R2 . Recall that RP 1 parametrizes lines through the origin in R2 ; show that for all but ﬁnitely many points of RP 1 , the corresponding line through the origin intersects f −1 (0) transversely. Is this still true if f is not a polynomial, but merely smooth?
+
+

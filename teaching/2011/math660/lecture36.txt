@@ -1,0 +1,131 @@
+Lecture 36: Harmonic functions
+Math 660—Jim Fowler
+
+Tuesday, August 10, 2010
+
+Example
+
+π
+
+log sin θ dθ = −π log 2
+0
+
+Single-valued branch
+
+√ Deﬁne a single-valued branch of 1 − x 2 for any region Ω, so that ±1 are in the same component of C − Ω.
+
+Harmonic functions
+
+Harmonic functions
+
+A function u : R2 → R is harmonic if u is continuous, with continuous seconds partial derivatives, and ∆u = ∂ 2u ∂ 2u + = 0. ∂x 2 ∂y 2
+
+Example of harmonic functions
+
+Example of harmonic functions
+
+u(x, y ) = ax + by .
+
+Example of harmonic functions
+
+u(x, y ) = ax + by . The real part of an analytic function.
+
+Harmonic functions in polar coordinates
+
+Harmonic functions in polar coordinates
+
+r
+
+∂ ∂r
+
+r
+
+∂u ∂r
+
++
+
+∂ 2u =0 ∂θ2
+
+Harmonic functions in polar coordinates
+
+r
+
+∂ ∂r
+
+r
+
+∂u ∂r
+
++
+
+∂ 2u =0 ∂θ2
+
+So if
+
+∂u ∂θ
+
+= 0, then u = a log r + b.
+
+Integrals of harmonic functions
+If u is harmonic, with conjugate harmonic function v ,
+
+Integrals of harmonic functions
+If u is harmonic, with conjugate harmonic function v , then f (x, y ) = u(x, y ) + i v (x, y ) is analytic,
+
+Integrals of harmonic functions
+If u is harmonic, with conjugate harmonic function v , then f (x, y ) = u(x, y ) + i v (x, y ) is analytic, and we can ﬁnd f dz.
+
+Integrals of harmonic functions
+If u is harmonic, with conjugate harmonic function v , then f (x, y ) = u(x, y ) + i v (x, y ) is analytic, and we can ﬁnd f dz. ∂u ∂u dx + dy . ∂y ∂x
+
+dv = −
+
+Integrals of harmonic functions
+If u is harmonic, with conjugate harmonic function v , then f (x, y ) = u(x, y ) + i v (x, y ) is analytic, and we can ﬁnd f dz. ∂u ∂u dx + dy . ∂y ∂x
+
+dv = −
+
+But in practice, there may be no conjugate harmonic function, so we take as a deﬁnition ∗du = − ∂u ∂u dx + dy . ∂y ∂x
+
+Hodge theory
+For any cycle γ, du = 0
+γ
+
+Hodge theory
+For any cycle γ, du = 0
+γ
+
+And if γ is homologous to zero, then f dz = 0
+γ
+
+Hodge theory
+For any cycle γ, du = 0
+γ
+
+And if γ is homologous to zero, then f dz = 0
+γ
+
+And so
+
+γ
+
+∗du = 0 for cycles homologous to zero.
+
+Simply connected regions
+
+In a simply connected regions, γ ∗du = 0 for all cycles, so u has a single-valued conjugate function v .
+
+For every cycle γ homologous to zero, u1 ∗ du2 − u2 ∗ du1 = 0
+γ
+
+For every cycle γ homologous to zero, u1 ∗ du2 − u2 ∗ du1 = 0
+γ
+
+Proof: If conjugate harmonic functions exist (e.g., in a simply connected region like a rectangle), then u1 ∗ du2 − u2 ∗ du1 = u1 dv2 − u2 dv1 = u1 dv2 + v1 du2 − d(u2 v1 ) = (im(u1 + iv1 )(du2 + idv2 )) − d(u2 v1 ),
+
+For every cycle γ homologous to zero, u1 ∗ du2 − u2 ∗ du1 = 0
+γ
+
+Proof: If conjugate harmonic functions exist (e.g., in a simply connected region like a rectangle), then u1 ∗ du2 − u2 ∗ du1 = u1 dv2 − u2 dv1 = u1 dv2 + v1 du2 − d(u2 v1 ) = (im(u1 + iv1 )(du2 + idv2 )) − d(u2 v1 ), so the integral vanishes.
+
+

@@ -1,0 +1,36 @@
+Course Overview
+Autumn 2010 Week 1
+Wednesday, September 22, 2010 Propositional calculus (§2) Thursday, September 23, 2010 Examples with real numbers (§2) Thursday, October 28, 2010
+
+Math 345
+Jim Fowler
+Fibonacci numbers (§5)
+
+Week 7
+Monday, November 1, 2010 Tuesday, November 2, 2010 Wednesday, November 3, 2010 Thursday, November 4, 2010 Sums of squares (§6) Strong induction (§7) Sets (§10) Intersections, unions, subsets (§10)
+
+Week 2
+Monday, September 27, 2010 Tuesday, September 28, 2010 Wednesday, September 29, 2010 Thursday, September 30, 2010 Tautologies (§2) Solving equations (§2) Contradiction, contrapositives (§2) Quantiﬁers (§3)
+
+Week 8
+Monday, November 8, 2010 Tuesday, November 9, 2010 Wednesday, November 10, 2010 Thursday, November 11, 2010 Algebra of set operations (§10) Some practice problems (§10) Midterm 2 Veteran’s Day
+
+Week 3
+Monday, October 4, 2010 Tuesday, October 5, 2010 Wednesday, October 6, 2010 Thursday, October 7, 2010 Bound variables (§3) Nested quantiﬁers (§3) Number theory (§4) Parity (§4)
+
+Week 9
+Monday, November 15, 2010 Tuesday, November 16, 2010 Wednesday, November 17, 2010 Thursday, November 18, 2010 Functions (§11) Surjections, injections (§11) Inverse functions (§11) Families of sets (§12)
+
+Week 4
+Monday, October 11, 2010 Tuesday, October 12, 2010 Wednesday, October 13, 2010 Thursday, October 14, 2010 Irrationality (§4) Divisibility (§4) Congruences (§4) Prime numbers (§4)
+
+Week 10
+Monday, November 22, 2010 Tuesday, November 23, 2010 Wednesday, November 24, 2010 Thursday, November 25, 2010 Friday, November 26, 2010 Counting (§13) Combinatorics (§14) Inﬁnite sets (§15) Thanksgiving Columbus Day
+
+Week 5
+Monday, October 18, 2010 Tuesday, October 19, 2010 Wednesday, October 20, 2010 Thursday, October 21, 2010 Polynomials (§4) Midterm 1 Induction (§5) Induction and divisibility (§5)
+
+Week 11 Week 6
+Monday, October 25, 2010 Tuesday, October 26, 2010 Wednesday, October 27, 2010 Pascal’s triangle (§5) Binomial theorem (§5) More on binomial theorem (§5) Monday, November 29, 2010 Tuesday, November 30, 2010 Wednesday, December 1, 2010 Thursday, December 2, 2010 Bijections (§15) Diagonalization argument (§15) Countability (§16) Continuum hypothesis (§16)
+
+

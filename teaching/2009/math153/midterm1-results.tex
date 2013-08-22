@@ -1,0 +1,152 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{nopageno}
+\usepackage{add-copyright}
+\title{Midterm 1 Results}
+
+\usepackage{amssymb}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+
+\begin{document}
+
+\large
+
+I have finally finished grading the exams.  And I must admit: the exam
+was \textbf{very long}---so long that my compatriots said it could not
+be done!  But we proved them wrong!
+
+You did very well.  To quantify:
+\begin{center}
+25\% of you scored above 220. \\
+50\% of you scored above 210. \\
+75\% of you scored above 200.
+\end{center}
+The median was 210.  The mean was 206.  The standard deviation was 21.
+This means that many of you scored over 90\%, which is very good.
+
+Here is the breakdown per problem:
+\begin{center}
+\begin{tabular}{ll}
+\textbf{Problem} & \textbf{Average Score} \\
+\hline
+Problem 10	& 79\% \\
+Problem 9	& 80\% \\
+Problem 6	& 81\% \\
+Problem 11	& 83\% \\ 
+Problem 4	& 86\% \\
+Problem 1	& 90\% \\
+Problem 8	& 90\% \\
+Problem 2	& 92\% \\
+Problem 5	& 92\% \\
+Problem 3	& 93\% \\
+Problem 12	& 96\% \\
+Problem 7	& 99\%
+\end{tabular}
+\end{center}
+
+\subsection*{Problem 1}
+
+Quanitifiers (those ``for all'' and ``there exists'') are very
+important, and their order matters.  ``For every cat $C$, there is a
+bowl $B$, so that $C$ eats from $B$'' is not the same as ``There is a
+bowl of food $B$, such that for every cat $C$, $C$ eats from $B$'' In
+the first world, every cat has a bowl of food.  In the other, there is
+one bowl of food that all the cats must eat from.
+
+In the same way, ``for every $\epsilon > 0$, there is a $K$\ldots'' is not
+at all the same thing as ``there is a $K$, for every $\epsilon > 0$.''
+
+\subsection*{Problem 2}
+
+Your proofs should begin ``Let $\epsilon > 0$.''  This problem proved tricky because the limit was not equal to one.
+
+\subsection*{Problem 3}
+
+The definition should include for all $n \in \N$.
+
+\subsection*{Problem 4}
+
+I found it difficult to grade this problem, as very few people gave
+convincing arguments for $c_n$ being unbounded above: I was fairly
+generous.
+
+In any case, be careful not to use circular logic (i.e., do not claim
+that $c_n$ diverges because $c_n$ is unbounded, and then claim that
+$c_n$ is unbounded because it diverges).
+
+\subsection*{Problem 5}
+
+You should have shown $d_n > d_{n+1}$ algebraically, or at least
+claimed that $n^2$ is increasing, so $-n^2$ is decreasing, so $20 -
+n^2$ is decreasing.
+
+\subsection*{Problem 6}
+
+Many people failed to notice $\sin(\pi n) = 0$ when $n \in \N$
+(admittedly, it might feel like me tricking you, but this question
+hits at the difference between limits of sequences and of functions).
+
+Many people tried to use l'H\^opital's rule on this sequence---but
+l'H\^opital is only for functions (unless you do something clever to
+explain why the limit of a sequence is equal to the limit of some
+similarly defined function).
+
+\subsection*{Problem 7}
+
+People did very well on this problem.  Be careful to mention that cosine is continuous.
+
+\subsection*{Problem 8}
+
+Some people found fancier things to squeeze between, but
+$\displaystyle\frac{n^4 \pm 1}{n^4}$ works---you don't need to make
+things harder than they already are.
+
+\subsection*{Problem 9}
+
+Many people forgot that additional assumption: that $g'(x) \neq 0$ for
+$x$ near $a$.  The theorem is not true without this assumption.
+
+\subsection*{Problem 10}
+
+This problem turned out to be harder than I expected.  I think many
+people ran out of time; other people seemed to have trouble applying
+the chain rule (though, again, this problem was designed to test that:
+applying the chain rule to $\sin^2 (2x)$ can be tricky).
+
+\subsection*{Problem 11}
+
+One person did a very nice thing by pointing out
+$$
+\lim_{x \to 0^{+}} x^{2x} = \left(\lim_{x \to 0^{+}} x^{x}\right)^2 = 1^2 = 1.
+$$
+Most people just used l'H\^opital to evaluate this limit, but many of you forgot to undo the logarithm at the end:
+$$
+\log \lim_{x \to 0^{+}} x^{2x} = 0 \mbox{ implies } \lim_{x \to 0^{+}} x^{2x} = e^0 = 1.
+$$
+Of course, the problem is designed to lead you into trap (as one of
+you pointed out explicitly!), since the other limit equals $0$.
+
+\subsection*{Problem 12}
+
+People mostly did well on this problem, though I think some of you ran out of time.
+
+\Large
+
+\section*{Overall impressions.}
+
+Your arguments in problems~4 and~5 should have been better.
+
+Many of you can do a better job presenting your answers.  I'm very
+sloppy human being, but mathematics (which comes from the Greek word
+for ``discipline'' or ``disciple'') does demand a certain amount of
+care, lest you make mistakes along the way.  The chain rule, for
+instance, is a powerful tool, and we must be careful not to hurt
+ourselves when wielding such tools.
+
+Additionally, your mathematics should more closely resemble billiards
+than, say, tennis: your goal is to announce your next move clearly,
+and then perform it properly---not to surprise me with fast-moving
+shots precisely aimed to the place I am not looking.
+
+\end{document}

@@ -1,0 +1,11 @@
+extends ../layouts/main
+
+block title
+  | #{tag}
+
+block content
+  mixin breadcrumbs(['/blog',"/blog/tag/#{tag}"],['Blog',"Posts tagged with &ldquo;" + tag + "&rdquo;"])
+
+  .container
+    - each post in posts
+      include includes/postSnippet

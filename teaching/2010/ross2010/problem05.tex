@@ -1,0 +1,178 @@
+\documentclass[12pt]{pset}
+%\usepackage{add-copyright}
+
+\title{Problem Set 5}
+\course{Piecewise-Linear Topology}
+\author{Jim Fowler}
+\date{Summer 2010}
+
+\newcommand{\defnword}[1]{\textbf{#1}}
+
+\usepackage{stmaryrd}
+\newcommand{\boundary}{\partial}
+\newcommand{\collapses}{\searrow}
+\newcommand{\expands}{\nearrow}
+\newcommand{\she}{\ssearrow\nnearrow}
+\newcommand{\join}{\ast}
+\newcommand{\subdivided}{\triangleleft}
+\geometry{margin=1in}%,top=0.5in,bottom=0.5in}
+\DeclareMathOperator{\st}{st}
+\DeclareMathOperator{\vertices}{vert}
+\DeclareMathOperator{\lk}{lk}
+\DeclareMathOperator{\cl}{cl}
+\DeclareMathOperator{\interior}{int}
+\newcommand{\fullsubcomplex}{\Subset}
+
+\begin{document}
+\maketitle
+
+\subsubsection*{\textit{Ceci n'est pas une Problem Set.}} Instead of
+questions, this sheet records the definitions we will be working with;
+here, we leave the realm of abstract simplicial complexes, and embrace
+the geometry---our simplexes are now situated in space.
+
+\parskip 0.5\baselineskip
+\parindent 0pt
+
+\begin{definition*}
+The \textbf{join} of $A, B \subset \R^n$ is $$
+A \join B = \{ \lambda a + \mu b : a
+\in A, \hspace{1em}b \in B, \hspace{1em}\lambda \in [0,1], \hspace{1em}\mu \in [0,1], \hspace{1em}\lambda + \mu = 1 \}
+$$
+Imagine this as connecting $A$ and $B$ by including all line segments
+between points in $A$ and points in $B$.
+
+$A$ and $B$ are \textbf{independent} if each point in $A \join B$ can
+be written uniquely as $\lambda a + \mu b$, for $a \in A$, $b \in B$,
+$\lambda, \mu \in [0,1]$, $\lambda + \mu = 1$.
+\end{definition*}
+
+% \begin{definition*}
+%   A subset $A \subset \R^n$ is \textbf{bounded} if there is some $r
+%   \in \R$ so that
+%   $A \subset \{ v \in \R^n : |v| \leq r \}$.
+% \end{definition*}
+
+\subsection*{Polyhedra}
+
+\begin{definition*}
+  $P \subset \mathbb{R}^n$ is a \textbf{polyhedron} if, for each $p
+  \in P$, there is a neighborhood $N \ni p$, so that $N = p \join L$,
+  with $L$ closed and bounded (in other words, compact).
+  
+  In this case, $N$ is called a \textbf{closed star} around $p$, and
+  $L$ is a \textbf{link} of $p$.
+
+  A \textbf{subpolyhedron} of $P$ is a subset $Q \subset P$ which is
+  also a polyhedron.
+\end{definition*}
+
+\begin{definition*}
+  Let $P, Q$ be polyhedra. Then $f : P \to Q$ is a
+  \textbf{piecewise-linear map} (a PL map, for short) if each point $p
+  \in P$ has a closed star $N = p \join L$ so that $f(\lambda p + \mu
+  x) = \lambda f(p) + \mu f(x)$ for $x \in L$ and $\lambda,\mu \in
+  [0,1]$ with $\lambda + \mu = 1$.  A \textbf{PL homeomorphism} is a
+  PL map with a PL inverse.
+\end{definition*}
+
+\begin{definition*}
+  A PL map $f : P \to Q$ is a \textbf{piecewise linear embedding} if
+  $f(P)$ is a subpolyhedron of $Q$, and $f : P \to f(P)$ is a PL
+  homeomorphism.
+\end{definition*}
+
+\pagebreak
+\subsection*{Manifolds}
+
+\begin{definition*}
+  A polyhedron $P$ is an $n$-dimensional \textbf{PL manifold} if each
+  $p \in P$ has an open neighborhood $N \ni p$ which is PL
+  homeomorphic to an open set in $\R^n$.  In this case, we call $N$
+  with the PL homeomorphism a \textbf{coordinate neighborhood}.
+
+  A polyhedron $P$ is an $n$-dimensional PL manifold \textbf{with
+    boundary} if each point $p \in P$ has an open neighborhood $N \ni
+  p$ which is PL homeomorphic to an open subset of $\R^{n-1} \times
+  \R_{\geq 0}$.  The \textbf{boundary} of $P$ (written $\partial P$)
+  consists of points $p \in P$ which are identified with $\R^{n-1}
+  \times \{ 0 \} \subset \R^{n-1} \times \R_{\geq 0}$.
+
+  A manifold $P$ is \textbf{closed} if $\partial P = \varnothing$ and
+  $P$ is compact.
+\end{definition*}
+
+\begin{definition*}
+  The $n$-ball $B^n$ (sometimes called the $n$-disk $D^n$) is any
+  manifold PL homeomorphic to $[0,1]^n$.  The $n$-sphere is any
+  manifold PL homeomorphic to $\partial [0,1]^{n+1}$.
+\end{definition*}
+
+\subsection*{Cell complexes}
+
+\begin{definition*}
+ A subset $C \in \R^n$ is \textbf{convex} if for any $p,q \in C$, the
+ segment $\{p\} \join \{q\}$ is contained in $C$.
+\end{definition*}
+
+\begin{definition*}
+  A compact convex subset $C \in \R^n$ is a $k$-dimensional
+  \textbf{cell} if it spans a $k$-dimensional subspace.
+
+  For $x \in C$, define $\langle x, C \rangle$ to be the union of
+  $\{x\}$ and all lines $L$ such that $L \cap C$ contains $x$ in its
+  interior.  The subset $C_x = C \cap \langle x, C \rangle$ is the
+  \textbf{face} of $C$ containing $x$. Write $D < C$ if $D$ is a face
+  of $C$.
+\end{definition*}
+
+\begin{definition*}
+  A \textbf{cell complex} is a finite collection $K$ of cells such that
+  \begin{itemize}
+  \item If $C \in K$, and $D < C$, then $D \in K$.
+  \item If $C, D \in K$, then $C \cap D$ is a face of $C$ and $D$.
+  \end{itemize}
+  The \textbf{underlying polyhedron}, $|K|$ is the union of all cells
+  in $K$.
+
+  A \textbf{cellular map} $f : K \to L$ is a PL map $|f| : |K| \to
+  |L|$ which is linear on cells of $K$, and sends cells to cells.
+\end{definition*}
+
+\begin{definition*}
+  A cell complex $L$ is a \textbf{subdivision} of $K$ if $|L| = |K|$
+  and each cell of $L$ is contained in a cell $K$.  We write $L
+  \subdivided K$ if $L$ is a subdivision of $K$.
+\end{definition*}
+
+\pagebreak
+\subsection*{Simplicial complexes}
+
+Our original notion of simplicial complex should now be called an
+\textbf{abstract simplicial complex}, to emphasize the fact that we
+originally did not place our simplexes in $\R^n$.  In an abstract
+simplicial complex, only the relationship between the vertices and the
+faces is recorded.
+
+\begin{definition*}
+  A cell complex is a \textbf{simplicial complex} if each $C \in K$ is
+  a \textbf{simplex} (i.e., an $n$-cell which is the join of $n+1$
+  independent points).  A \textbf{triangulation} of a polyhedron $P$
+  is a simplicial complex $K$ with a PL homeomorphism $f : |K| \to P$.
+\end{definition*}
+
+\begin{definition*}
+  Suppose $L \subset K$ are simplicial complexes.  Define $f : K \to
+  [0,1]$ on vertices by
+  $$
+f(v) = \begin{cases}
+0 & \mbox{ if $v \in L$ } \\
+1 & \mbox{ if $v \not\in L$ } 
+\end{cases}
+  $$
+  and extending linearly to simplexes.  If $L = f^{-1}(0)$ we say $L$
+  is a \textbf{full subcomplex} of $K$, and write $L \fullsubcomplex K$.
+\end{definition*}
+
+\end{document}
+

@@ -1,0 +1,41 @@
+Lecture 5: Power series
+Math 660—Jim Fowler Friday, June 24, 2011
+
+Power series!
+section 2.2.4 of the text
+
+Power series
+
+∞
+
+an z n
+n=0
+
+or
+
+∞
+
+an (z − z0 )n
+n=0
+
+geometric series
+1 − z k+1 z = 1−z n=0
+n k
+
+Provided |z| ≤ 1.
+∞
+
+zn =
+n=0
+
+1 1−z
+
+“radius of convergence”
+
+Radius of convergence
+For a power series an z n , there exists a number R, so that If |z| < R, the series converges absolutely. If ρ < R, then the series converges uniformly for |z| ≤ ρ. If |z| > R, the series diverges. If |z| < R, the series is an analytic function, and the derivative is the sum of the termwise derivatives with the same radius of convergence. Speciﬁcally, 1/R = limn→∞ sup
+n
+
+|an |.
+
+

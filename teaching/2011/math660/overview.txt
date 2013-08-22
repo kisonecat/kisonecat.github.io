@@ -1,0 +1,35 @@
+Course Overview
+Summer 2011 Week 1
+Monday, June 20, 2011 Tuesday, June 21, 2011 Wednesday, June 22, 2011 Thursday, June 23, 2011 Friday, June 24, 2011 Problem set 1 Introduction to complex numbers (§1.1.1) Analytic functions (§2.1.1, 2.1.2) Polynomials and rational functions (§2.1.3, 2.1.4) Sequences and series (§2.2.1, 2.2.2, 2.2.3) Power series (§2.2.4) Problems covering §1.1.1–2.2.4
+
+Math 660
+Jim Fowler
+
+Week 2
+Monday, June 27, 2011 Tuesday, June 28, 2011 Wednesday, June 29, 2011 Thursday, June 30, 2011 Friday, July 1, 2011 Problem set 2 Abel’s limit theorem (§2.2.5) Exponential, trigonometric functions, logarithm (§2.3.1, 2.3.2, 2.3.3, 2.3.4) Metric spaces (§3.1.1, 3.1.2, 3.1.3) Compactness (§3.1.4, 3.1.5, 3.1.6) Closed curves (§3.2.1) Problems covering §2.2.5–3.2.1
+
+Week 3
+Monday, July 4, 2011 Tuesday, July 5, 2011 Wednesday, July 6, 2011 Thursday, July 7, 2011 Friday, July 8, 2011 Problem set 3 Fourth of July Analytic functions in regions (§3.2.3, 3.2.4) Linear transformations (§3.3.1) Cross ratio (§3.3.2) Circles (§3.3.4, 3.3.5) Problems covering §3.2.3–3.3.5
+
+Week 4
+Monday, July 11, 2011 Tuesday, July 12, 2011 Wednesday, July 13, 2011 Thursday, July 14, 2011 Friday, July 15, 2011 Problem set 4 Level curves (§3.4.1) Elementary mappings (§3.4.2) Riemann surfaces (§3.4.3) Line integrals I (§4.1.1) Line integrals II (§4.1.2, 4.1.3) Problems covering §3.4.1–4.1.3
+
+Week 5
+Monday, July 18, 2011 Tuesday, July 19, 2011 Wednesday, July 20, 2011 Thursday, July 21, 2011 Friday, July 22, 2011 Problem set 5 Cauchy’s theorem (§4.1.4, 4.1.5) Index of a point (§4.2.1) Cauchy’s integral formula (§4.2.2) Higher derivatives (§4.2.3) Midterm 1 Problems covering §4.1.4–4.2.3
+
+Week 6
+Monday, July 25, 2011 Tuesday, July 26, 2011 Wednesday, July 27, 2011 Thursday, July 28, 2011 Friday, July 29, 2011 Problem set 6 Removable singularities (§4.3.1) Zeroes and poles (§4.3.2) Local mapping (§4.3.3) The maximum principle (§4.3.4) Homology (§4.4.1, 4.4.2, 4.4.3) Problems covering §4.3.1–4.4.3
+
+Week 7
+Monday, August 1, 2011 Tuesday, August 2, 2011 Wednesday, August 3, 2011 Thursday, August 4, 2011 Friday, August 5, 2011 Problem set 7 Cauchy’s theorem (§4.4.4, 4.4.5) Exact diﬀerentials (§4.4.6, 4.4.7) Residue theorem (§4.5.1) Argument principle (§4.5.2) Evaluation of deﬁnite integrals (§4.5.3) Problems covering §4.4.4–4.5.3
+
+Week 8
+Monday, August 8, 2011 Tuesday, August 9, 2011 Wednesday, August 10, 2011 Thursday, August 11, 2011 Friday, August 12, 2011 Problem set 8 Harmonic functions (§4.6.1) Mean-value property and Poisson’s formula (§4.6.2, 4.6.3) Schwarz’ theorem (§4.6.4) Reﬂection principle (§4.6.5) Weierstrass’ theorem (§5.1.1) Problems covering §4.6.1–5.1.1
+
+Week 9
+Monday, August 15, 2011 Tuesday, August 16, 2011 Wednesday, August 17, 2011 Thursday, August 18, 2011 Friday, August 19, 2011 Problem set 9 Taylor series (§5.1.2) Laurent series (§5.1.3) Partial fractions (§5.2.1) Inﬁnite products (§5.2.2) Gamma function (§5.2.4) Problems covering §5.1.2–5.2.4
+
+Week 10
+Monday, August 22, 2011 Zeta function (§5.4.1)
+
+

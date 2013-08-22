@@ -1,0 +1,86 @@
+\documentclass[12pt]{handout}
+\usepackage{mathpazo}
+\usepackage[no-math]{fontspec}
+\defaultfontfeatures{Mapping=tex-text}
+
+\usepackage{xunicode}% provides unicode character macros
+ \usepackage{xltxtra} % provides some fixes/extras
+\usepackage{xltxtra,xunicode}
+\setmainfont{Palatino}
+\linespread{1.05}      % Palatino needs more space between lines
+
+%\setsansfont{Gill Sans}
+\setmonofont[Scale=0.8]{Monaco}
+
+\newcommand{\peem}{\textsc{p.m.}}
+\newcommand{\ayem}{\textsc{a.m.}}
+
+\geometry{margin=0.7in}
+\usepackage{nopageno}
+
+\usepackage{hyperref}
+\usepackage{enumerate}
+\usepackage{multicol}
+
+\title{Syllabus}
+\course{Piecewise-Linear Topology}
+\author{Jim Fowler}
+\date{Summer 2010}
+
+\begin{document}
+\maketitle
+
+\noindent
+Manifolds are spaces which are locally modeled on Euclidean space, but
+might be globally twisted in some way; two-dimensional examples
+include a sphere or a torus.  In contrast to the usual introduction to
+manifolds based on calculus and charts (that is, smooth manifolds),
+this course will study manifolds as combinatorial objects (that is,
+piecewise-linear manifolds).  Piecewise-linear manifolds are more
+general than smooth manifolds, and because the basic definitions
+involve combinatorics instead of calculus, we will find it easier to
+give rigorous proofs.
+
+\subsection*{Homework}
+Problem sets will be distributed during most lectures.
+
+\subsection*{Website}
+The course website is \url{http://www.math.osu.edu/~fowler/teaching/ross2010/}
+
+\subsection*{Lectures}
+We meet Mondays, Wednesdays, and Fridays,
+1:30\peem--2:30\peem\ in CH240.
+
+\subsection*{Instructor}
+\vspace{1ex}%
+\noindent\parbox{0.5\textwidth}{%
+\noindent\begin{tabular}{@{}llll}
+\textsf{Name:} & Jim Fowler & \textsf{Email:} & \href{mailto:fowler@math.osu.edu}{\texttt{fowler@math.osu.edu}} \\
+\textsf{Office:} & MW658 Mathematics Tower & \textsf{Website:} & \url{http://www.math.osu.edu/~fowler/} \\
+\textsf{Phone:} & (773) 809--5659 & & \\
+\end{tabular}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\pagebreak
+\subsection*{Tentative Schedule}
+
+This is an ambitious schedule, to say the least.  Depending on your
+interest, we can spend more or less time on certain topics.  Let me know.
+%\vfill
+
+\begin{multicols}{2}
+\begin{enumerate}[\bfseries Week 1]
+\item Simplicial complexes and \\ piecewise-linear manifolds
+\item Regular neighborhoods and \\ simplicial collapse
+\item Sunny collapse and unknotting
+\item Simplicial homology
+\item Poincar\'e duality
+\item General position
+\item Embeddings
+\item Handle theory
+\end{enumerate}
+\end{multicols}
+
+
+
+\end{document}

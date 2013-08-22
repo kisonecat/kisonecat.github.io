@@ -1,0 +1,43 @@
+Lecture 4: More about limits
+Math 153 Section 57 Monday October 6, 2008
+Continuing with chapter 11.3.
+
+1
+
+Limits
+
+Repeat the deﬁnition: limn→∞ an = L means for every > 0, there exists K such that n ≥ K implies |an − L| < . This will be on the ﬁrst test. Whether or not a sequence converges will be a big deal to us. Why? The answer to many of life’s problems are be constructed as the limit of a sequence. Give some intuition for what the deﬁnition means.
+
+2
+
+Examples
+
+The sequence an = (−1)n diverges.
+
+3
+
+Useful theorems
+
+Limits are unique: if limn→∞ an = L and also limn→∞ an = M , then L = M . Limits only depend on their tails: if limn→∞ an = L and m ∈ N, then limn→∞ an+m = L.
+
+3.1
+
+Sometimes we get convergence for free.
+
+Theorem: Nondecreasing bounded above sequences converge. Theorem: Nonincreasing bounded below sequences converge. Proofs are tricky: require the “least upper bound” axiom. We will assume that they hold. Example? Let a1 = 2. Let an+1 = an /2 + 1/an . The sequence is decreasing and bounded below, √ and lim an = 2. Easy examples: a1 ∈ (0, 1) and an+1 = an (1 − an ). Very easy dynamics—lim an = 0. Weird examples: a1 ∈ (0, 1) and an+1 = 3.5an (1 − an ). Very complicated dynamics! 1
+
+3.2
+
+Continuity of addition, etc.
+
+If lim an = L and lim bn = M , then lim(an + bn ) = L + M . If lim an = L lim(c · an ) = c · L. If lim an = L and lim bn = M , then lim(an · bn ) = L · M . Example: rational functions. Some poetry: chiastic rules: the limit of the sum is the sum of the limits.
+
+3.3
+
+Squeezing theorem
+
+If there exists a K so that n ≥ K implies an ≤ bn ≤ cn , and if lim an = lim cn = L, then lim bn = L. Proof. limn→∞ 1/n2 = 0.
+
+2
+
+

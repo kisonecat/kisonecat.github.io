@@ -1,0 +1,29 @@
+Syllabus
+Summer 2011
+
+Math 660
+Jim Fowler
+
+This is a beginning graduate course in complex analysis; as such, we study analysis (e.g., the rigorous foundations of calculus) as it applies to functions of a complex variable. The resulting theory is strikingly beautiful.
+
+Resources
+We present 5 resources to help you to learn complex analysis.
+
+Professor’s oﬃce hours
+If you have questions, want to work through problems, or just talk about mathematics, please attend oﬃce hours. Name: Oﬃce: Phone: Email: Website: Jim Fowler MW658 Mathematics Tower Oﬃce Hours: (773) 809–5659 fowler@math.osu.edu http://www.math.osu.edu/~fowler/ Monday 3:30–5:00p.m. Wednesday 3:30–5:00p.m. and by appointment
+
+Please email me with any concerns you have; the success of this course depends on open communication.
+
+Textbook
+Our text is Complex Analysis, 3rd edition, by Lars Ahlfors (ISBN 0070006571); this course covers chapters 1–5.
+
+Website
+The course website is available at http://www.math.osu.edu/~fowler/teaching/math660/.
+
+Lectures
+We meet Mondays, Tuesdays, Wednesdays, Thursdays, and Fridays, 12:30–1:18p.m. in Caldwell Lab 171 for an interactive lecture.
+
+Assessment
+There are 1000 points possible in this course, broken down as follows: 9 problem sets (360 points; 40 points each). Homework is due each Monday. You should work on the homework problems together, but you must write up your solutions independently. To permit electronic grading, I ask that you turn in your homework on the provided paper. You must stay caught up with the homework. It is tempting to fall behind, but diﬃcult to catch up again—this is true of all courses, but especially true of a course in mathematics. That said, I understand your schedules are very busy, so I will not penalize you for infrequently turning in work a day or two late. Do not make a habit of it! Participation (100 points). Each time you present something on the blackboard, you will receive 15 points, and each in-class quiz is worth 5 points; there is a maximum of 100 participation points. 1 midterm (240 points). The midterm is in-class. The midterm is Friday, July 22. 1 ﬁnal exam (300 points). The cumulative ﬁnal exam will be held in our usual classroom at 11:30a.m.–1:18p.m. on Wednesday, August 24, 2010. Calculators are not permitted during any exams.
+
+

@@ -1,0 +1,184 @@
+\documentclass[12pt]{handout}
+\usepackage{nopageno}
+\usepackage{geometry}\geometry{margin=0.5in}
+
+\title{Metric spaces}
+\course{Math 660}
+\author{Jim Fowler}
+\date{Summer 2011}
+
+\newcounter{question}
+\newenvironment{question}{\vspace{1ex}\addtocounter{question}{1}\noindent\textbf{Task
+    \arabic{question}.}}{\vfill}
+
+\DeclareMathOperator{\interior}{Int}
+\DeclareMathOperator{\closure}{Cl}
+
+\begin{document}
+\maketitle
+
+\begin{definition}
+  A set $X$ with a function $d : X \times X \to \R^{\geq 0}$ is a
+  \textbf{metric space} provided
+  \begin{itemize}
+  \item $d(x,y) = 0$ iff $x = y$,
+  \item $d(y,x) = d(x,y)$, and
+  \item $d(x,z) \leq d(x,y) + d(y,z)$.
+  \end{itemize}
+\end{definition}
+
+\begin{question}
+  Let $P_2$ consist of pairs of indistinguishable points on the circle
+  $S^1$; describe a metric space structure for $P_2$.
+\end{question}
+
+\begin{question}
+  Give examples of \textbf{anti-metric spaces}, which are just like
+  metric spaces, except the triangle inequality goes the other way.
+\end{question}
+
+\begin{definition}
+  For $\epsilon > 0$ and $c \in X$, the \textbf{open ball of radius
+    $\mathbf{\epsilon}$ and center $\mathbf{c}$} is
+  $$
+  B_\epsilon(c) = \{ x \in X : d(x,c) < \epsilon \}.
+  $$
+\end{definition}
+
+\begin{definition}
+  A set $N \subset X$ is a \textbf{neighborhood} of $x \in X$ if, for
+  some $\epsilon > 0$, the ball $B_\epsilon(x)$ is contained in $N$.
+\end{definition}
+
+\begin{definition}
+  A set $U \subset X$ is \textbf{open} if it is a neighborhood of each
+  $x \in U$.
+\end{definition}
+
+\begin{question}
+  Show that $B_\epsilon(x)$ is an open set.
+\end{question}
+
+\begin{definition}
+  A set $V$ is \textbf{closed} if its complement is open.
+\end{definition}
+
+\begin{question}
+  Define the interior of $X$, written $\interior X$, to be the union
+  of all open sets contained in $X$.  Show that $\interior X$ is open.
+\end{question}
+
+\begin{question}
+  Define the closure of $X$, written $\closure X$, to be the
+  intersection of all closed sets containing $X$.  Show that $\closure
+  X$ is closed.
+\end{question}
+
+\begin{question}
+  A subset $S$ of $X$ is \textbf{dense} if $\closure S = X$; a metric
+  space $X$ is \textbf{separable} if there is a countable dense
+  subset.  Show that $\C$ is separable.
+\end{question}
+
+\begin{question}
+The boundary (sometimes called the ``frontier'') of $X$, written
+$\partial X$, is $\closure X - \interior X$.  Find a subset $U\subset
+\C$ with $\partial U = \C$.
+\end{question}
+
+\begin{definition}
+  Consider a metric space $X$ and a subset $Y \subset X$; a subset $U
+  \subset Y$ is open if there exists an subset $U' \subset X$ so that
+  \begin{itemize}
+  \item $U'$ is open in $X$, and 
+  \item $U = U' \cap Y$.
+  \end{itemize}
+  We likewise define \textbf{closed} for subsets of $Y$.
+\end{definition}
+
+\begin{definition}
+  A subset of $X$ is \textbf{connected} if there does not exist a
+  disconnection of $X$; a \textbf{disconnection} of $X$ is a pair $U,
+  V \subset X$ of disjoint nonempty open subsets of $X$ with $U \cup V
+  = X$.
+\end{definition}
+
+\begin{question}
+  A function $f : X \to Y$ is \textbf{continuous} provided the
+  pre-image of an open set is open; show that the continuous image of
+  a connected set is connected.
+\end{question}
+
+\begin{question}
+  A \textbf{homeomorphism} is a continuous function with continuous
+  inverse; show that there is no homeomorphism from an $X$-shape to a
+  $Y$-shape.
+\end{question}
+
+\begin{question}
+  Describe the connected subsets of $\R$.
+\end{question}
+
+\begin{question}
+  A closed, bounded, nonempty subset of $\R$ contains its supremum and
+  infinum.
+\end{question}
+
+\begin{question}
+  Show that a convex subset of the plane is connected.
+\end{question}
+
+\begin{question}
+  A nonempty open set in the plane is connected iff it is
+  path-connected.  Such a subset is called a \textbf{region}.
+\end{question}
+
+\begin{question}
+  Every open subset of $\C$ is a countable union of disjoint open
+  sets.
+\end{question}
+
+\begin{question}
+  A nonempty closed set in the plane is connected iff it is
+  path-connected?
+\end{question}
+
+\begin{question}
+  Consider $X = \R - \Q$.  Is $X$ connected?
+\end{question}
+
+\begin{question}
+  Consider $X = \C - \{ a+bi \in C : a, b \in \Q \}$.  Is $X$
+  connected?
+\end{question}
+
+\begin{question}
+  For a metric space $X$ and a open subset $S \subset X$ with
+  $\closure S$ compact, define $n(S,X)$ to be the number of noncompact
+  connected components of $X - S$.  How large can $n(S,\R)$ be?  How
+  large can $n(S,\C)$ be?
+\end{question}
+
+\begin{question}
+  A \textbf{geodesic metric space} is a metric space $X$ so that, for
+  any $x, y \in X$, there exists an isometry $f : [0,d(x,y)] \to X$ with
+  $f(0) = x$ and $f(d(x,y)) = y$.  Is $\C$ a geodesic metric space?
+  Is $\C - \{0\}$ a geodesic metric space?
+\end{question}
+
+% \begin{question}
+%   Given a normed vector space, describe the metric.  Use the theorem
+%   on equivalence of norms for finite dimension vector spaces to show
+%   that there exists a constant $C$ so that for any polynomial $f(x)$ of
+%   degree $2000$, 
+%   $$
+%   f(0) \leq \int_{-1}^{1} |f(x)|^2 \, dx.
+%   $$
+% \end{question}
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

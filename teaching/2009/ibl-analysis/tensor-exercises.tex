@@ -1,0 +1,173 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+
+
+\usepackage{amsmath}
+\DeclareMathOperator{\Alt}{Alt}
+\DeclareMathOperator{\id}{id}
+
+\usepackage{amsthm}
+\newtheorem*{theorem}{Theorem}
+
+\theoremstyle{definition}
+\newtheorem*{quotedefinition}{``Definition''}
+\newtheorem*{definition}{Definition}
+
+\newtheorem*{exercise}{Exercise}
+
+\newcommand{\Tensor}[2]{\mathcal{T}^{#2} #1}
+
+\usepackage{amssymb}
+\newcommand{\R}{\mathbb{R}}
+
+\long\def\symbolfootnote[#1]#2{\begingroup%
+\def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+
+
+\begin{document}
+
+Define an operator $\star$ (called the ``Hodge star''),
+$$
+\star : \bigwedge^k \R^n \to \bigwedge^{n-k} \R^n.
+$$
+defined by
+$$\star \left( e_1 \wedge \cdots \wedge e_k \right) = e_{k+1} \wedge \cdots \wedge
+e_n.$$
+Our definition depends on choosing a basis.
+
+\begin{exercise}
+Compute $\dim \bigwedge^k \R^n$ and $\dim \bigwedge^{n-k} \R^n$.
+\end{exercise}
+
+\begin{exercise}
+Is $\star : \bigwedge^k \R^n \to \bigwedge^{n-k} \R^n$ an isomorphism?
+\end{exercise}
+
+\begin{exercise}
+Can you find a basis-free definition of $\star$?
+\end{exercise}
+
+\begin{exercise}
+Compute $\star \star \omega$ in terms of $\omega$.
+\end{exercise}
+
+explain more here
+
+For $n = 3$, the cross-product of vectors $v$ and $w$ is
+$$
+v \times w := \star \left( v \wedge w \right).
+$$
+The inner product can also be interpreted in this language, as
+$$
+\star \langle v, w \rangle = v \wedge (\star w)
+$$
+
+\subsection*{A certain three tensor.}
+
+Here we define a map that takes three vectors in $\R^3$ and produces a number:
+$$
+\left( a, b, c \right) \mapsto \langle a, b \times c \rangle.
+$$
+\begin{exercise}
+Check that this is trilinear (so it is, in fact, a $3$-tensor).
+\end{exercise}
+We can deduce the true nature of this 3-tensor by using the Hodge
+star.  Note that
+\begin{align*}
+\langle a, b \times c \rangle
+&= \star \left( a \wedge \star \left( b \times c \right) \right) \\
+&= \star \left( a \wedge \star \star \left (b \wedge c \right ) \right) \\
+&= \star \left( a \wedge b \wedge c \right),
+\end{align*}
+and therefore $\langle a, b \times c \rangle$ is antisymmetric in the
+inputs $a,b,c$.  In fact, it is
+$$
+\det \begin{pmatrix}
+a_1 & b_1 & c_1 \\
+a_2 & b_2 & c_2 \\
+a_3 & b_3 & c_3 \\
+\end{pmatrix},
+$$
+which explains a popular method for computing the cross product (by
+taking the determinant of a particular matrix).
+
+\subsection*{A certain four tensor.}
+
+An interesing four tensor on $\R^3$ is 
+$$
+\left( a, b, c, d \right) \mapsto \langle a \times (b \times c), d \rangle.
+$$
+\begin{exercise}
+Check that this is a four tensor.
+\end{exercise}
+In fact, this four tensor can be written in a different way.
+\begin{align*}
+\star \langle a \times (b \times c), d \rangle
+&= \left( \star \left( a \wedge \star \left( b \wedge c \right) \right) \right) \wedge \left( \star d \right) \\
+&= \left( a \wedge \star \left( b \wedge c \right) \right)\wedge d \\
+&= a \wedge \left( \star \left( b \wedge c \right) \right) \wedge d \\
+&= - a \wedge d \wedge \star \left( b \wedge c \right) \\
+&= - \left( \star \star \left ( a \wedge d \right) \right) \wedge \star \left( b \wedge c \right) \\
+&= - \langle a \times d, b \times c \rangle
+\end{align*}
+
+$$
+(a \wedge \star c) \wedge (\star (\star b \wedge d)) 
++
+(a \wedge \star b) \wedge (\star (\star c \wedge d)) 
+$$
+
+
+$$
+\star a \wedge \left( c \cdot \star (b \wedge \star d) - b \cdot \star (c \wedge \star d) \right)
+$$
+
+$$
+\star a \wedge \left( c \cdot \star (\star b \wedge d) - b \cdot \star (\star c \wedge d) \right)
+$$
+
+
+$$
+a \wedge \left( \star c \cdot \star (\star b \wedge d) - \star b \cdot \star (\star c \wedge d) \right)
+$$
+
+$$
+(a \wedge \star c) \cdot \star (\star b \wedge d) - (a \wedge \star b) \cdot \star (\star c \wedge d)
+$$
+
+$$
+(a \wedge \star c) \cdot \star (\star b \wedge d) - (a \wedge \star b) \cdot \star (\star c \wedge d)
+$$
+
+$$
+(a \wedge \star c) (b \wedge \star d) - (a \wedge \star b) (c \wedge \star d)
+$$
+
+\subsection*{reduction}
+
+\begin{align*}
+(\star ((\star b) \wedge (\star c))) \wedge d
+&= 
+c \wedge \star (b \wedge d) +
+b \wedge \star (c \wedge d)
+\end{align*}
+
+\begin{align*}
+(\star (b \wedge c)) \wedge d
+&= 
+(\star c) \wedge \star ((\star b) \wedge d) +
+(\star b) \wedge \star ((\star c) \wedge d)
+\end{align*}
+
+\section*{Birdtracks}
+
+Levi-Civita relation says
+
+$$
+(a,b,c,d) \mapsto \left( \tr (v \mapsto 
+$$
+
+
+
+
+\end{document}

@@ -1,0 +1,14 @@
+Final Review
+Autumn 2010
+This sheet summarizes what sort of content will appear on the ﬁnal examination.
+
+Math 345
+Jim Fowler
+
+Problems
+There will again be ten problems on the midterm, each worth 350 points, for a total of 3500 points. The fake ﬁnal will give you an idea of the sorts of problems you might expect, but the fake ﬁnal is, again, longer than the real ﬁnal.
+
+Possible topics
+The ﬁnal exam is cumulative so the ﬁnal may include material from any part of this course. To help you study, here is a list of possible topics. • • • • • • • • • • • • • • • • • • • • • Propositional calculus Truth tables De Morgan’s laws Distributive laws Tautology Proof by contradiction Converse of a conditional proposition Contrapositives Quantiﬁers Bound and free variables Nested quantiﬁers Even and odd numbers Rational and irrational numbers Divisibility Induction Complete induction Least elements Divisibility Prime numbers Inﬁnitude of the primes Fibonacci numbers • Pascal’s triangle • Patterns in Pascal’s triangle • Binomial theorem • Proof of Binomial theorem n+1 n n • = + k k−1 k • Congruences • Set theory • Set builder notation • Intersections, unions, subsets • Set theory and de Morgan’s laws • Functions • Surjections, injections, bijections • Inverse functions • Compositions of functions • Families of sets • Binomial coeﬃcients in combinatorics • Inﬁnite sets • Diagonalization • Countability
+
+

@@ -1,0 +1,250 @@
+Topology of Piecewise-Linear Manifolds
+Jim Fowler Lecture 6 Summer 2010
+
+Where are we now?
+
+Where are we now?
+
+Objects
+
+Where are we now?
+
+Objects
+polyhedra
+
+Where are we now?
+
+Objects
+polyhedra simplicial complexes
+
+Where are we now?
+
+Objects
+polyhedra simplicial complexes
+
+Maps
+
+Where are we now?
+
+Objects
+polyhedra simplicial complexes
+
+Maps
+PL maps
+
+Where are we now?
+
+Objects
+polyhedra simplicial complexes
+
+Maps
+PL maps simplicial maps
+
+Where are we now?
+
+Objects
+polyhedra simplicial complexes
+
+Maps
+PL maps simplicial maps
+
+Invariants
+
+Where are we now?
+
+Objects
+polyhedra simplicial complexes
+
+Maps
+PL maps simplicial maps
+
+Invariants
+χ
+
+Where are we now?
+
+Objects
+polyhedra simplicial complexes
+
+Maps
+PL maps simplicial maps
+
+Invariants
+χ b0
+
+Where are we now?
+
+Objects
+polyhedra simplicial complexes
+
+Maps
+PL maps simplicial maps
+
+Invariants
+χ b0 w1
+
+Piecewise linear map
+Let P, Q be polyhedra. f : P → Q is a PL map if each point p ∈ P has a closed star N = p ∗ L so that f (λp + (1 − λ)x) = λf (p) + (1 − λ)f (x) for x ∈ L and λ ∈ [0, 1].
+
+It locally maps conical rays to conical rays.
+
+Convexity
+
+Deﬁnition
+A subset C ∈ Rn is convex if for any p, q ∈ C , the segment {p} ∗ {q} is contained in C .
+
+Cells
+A compact convex subset C ∈ Rn is a k-dimensional cell if it spans a k-dimensional subspace.
+
+Cells
+A compact convex subset C ∈ Rn is a k-dimensional cell if it spans a k-dimensional subspace. For x ∈ C , deﬁne x, C to be the union of {x} and all lines L such that L ∩ C contains x in its interior.
+
+Cells
+A compact convex subset C ∈ Rn is a k-dimensional cell if it spans a k-dimensional subspace. For x ∈ C , deﬁne x, C to be the union of {x} and all lines L such that L ∩ C contains x in its interior. The subset Cx = C ∩ x, C is the face of C containing x.
+
+Cells
+A compact convex subset C ∈ Rn is a k-dimensional cell if it spans a k-dimensional subspace. For x ∈ C , deﬁne x, C to be the union of {x} and all lines L such that L ∩ C contains x in its interior. The subset Cx = C ∩ x, C is the face of C containing x. Write D < C if D is a face of C .
+
+Cell complex
+A cell complex is a ﬁnite collection K of cells such that If C ∈ K , and D < C , then D ∈ K . If C , D ∈ K , then C ∩ D is a face of C and D.
+
+Cell complex
+A cell complex is a ﬁnite collection K of cells such that If C ∈ K , and D < C , then D ∈ K . If C , D ∈ K , then C ∩ D is a face of C and D. The underlying polyhedron, |K | is the union of all cells in K .
+
+Cell complex
+A cell complex is a ﬁnite collection K of cells such that If C ∈ K , and D < C , then D ∈ K . If C , D ∈ K , then C ∩ D is a face of C and D. The underlying polyhedron, |K | is the union of all cells in K . A cellular map f : K → L is a PL map |f | : |K | → |L| which is linear on cells of K , and sends cells to cells.
+
+Subdivision
+
+A cell complex L is a subdivision of K if |L| = |K | and each cell of L is contained in a cell K .
+
+Subdivision
+
+A cell complex L is a subdivision of K if |L| = |K | and each cell of L is contained in a cell K .
+
+Write L K if L is a subdivision of K .
+
+Simplicial complexes, not abstract
+A cell complex is a simplicial complex if each C ∈ K is a simplex (i.e., an n-cell which is the join of n + 1 independent points).
+
+A triangulation of a polyhedron P is a simplicial complex K with a PL homeomorphism f : |K | → P.
+
+From now on,
+
+complex means
+simplicial complex, (not abstract)
+
+Simplicial Collapse
+
+Principal Simplexes
+Deﬁnition
+Let K be a complex, and σ ∈ K a simplex. Call σ a principal simplex if the only simplex containing σ is σ itself (i.e., it isn’t contained in a larger simplex).
+
+Principal Simplexes
+Deﬁnition
+Let K be a complex, and σ ∈ K a simplex. Call σ a principal simplex if the only simplex containing σ is σ itself (i.e., it isn’t contained in a larger simplex).
+
+Problem
+Does every complex have a principal simplex?
+
+Free faces
+Deﬁnition
+Let K be a complex, and σ ∈ K a simplex, and τ < σ a face. Call τ a free face of σ if the only simplexes containing τ are τ and σ.
+
+Free faces
+Deﬁnition
+Let K be a complex, and σ ∈ K a simplex, and τ < σ a face. Call τ a free face of σ if the only simplexes containing τ are τ and σ.
+
+Problem
+
+Does every complex have a simplex with a free face?
+
+Free faces
+Deﬁnition
+Let K be a complex, and σ ∈ K a simplex, and τ < σ a face. Call τ a free face of σ if the only simplexes containing τ are τ and σ.
+
+Problem
+
+Does every complex have a simplex with a free face? Does any complex have a simplex with a free face?
+
+Elementary simplicial collapse
+
+Deﬁnition
+Let L and K = L ∪ cl{σ, τ } be complexes If σ is a principal simplex of K , and τ is a free face of σ, then L is an elementary simplicial collapse of K .
+
+Simplicial collapse
+Deﬁnition
+Let K1 , K2 , . . . , Kn be complexes, with Ki+1 an elementary simplicial collapse of Ki . Call Kn a simplicial collapse of K1 , and write K1 Kn . Call K1 a simplicial expansion of Kn , and write Kn K1 .
+
+Simple homotopy equivalence
+Deﬁnition
+K is simple homotopy equivalent to L (sometimes abbreviated s.h.e.) if you can reach transform K into L via a sequence of PL homeomorphisms, simplicial collapses, simplicial expansions. In this case, we write K L.
+
+Full subcomplex
+L ⊂ K are complexes. Deﬁne fL : K → [0, 1] on vertices by fL (v ) = 0 1 if v ∈ L if v ∈ L
+
+and extending linearly to simplexes. If L = fL −1 (0) we say L is a full subcomplex of K , and write L K .
+
+Derived subdivision
+L ⊂ K are complexes. Choose ai ∈ int Ai for each Ai ∈ K with Ai ∈ L. K K is “K derived away from L” is deﬁned inductively over skeleta by Ai = {ai } ∗ ∂Ai Ai if Ai ∈ L, if Ai ∈ L.
+
+L ⊂ K are complexes. Deﬁne the simplicial neighborhood of L in K as N(L, K ) = {A ∈ K : A < B, B ∩ |L| = ∅}. The simplicial complement of L in K is C (L, K ) = {A ∈ K : A ∩ |L| = ∅}.
+
+L ⊂ K are complexes. Deﬁne the simplicial neighborhood of L in K as N(L, K ) = {A ∈ K : A < B, B ∩ |L| = ∅}. The simplicial complement of L in K is C (L, K ) = {A ∈ K : A ∩ |L| = ∅}. K = N(L, K ) ∪ C (L, K )
+
+L ⊂ K are complexes. Deﬁne the simplicial neighborhood of L in K as N(L, K ) = {A ∈ K : A < B, B ∩ |L| = ∅}. The simplicial complement of L in K is C (L, K ) = {A ∈ K : A ∩ |L| = ∅}. K = N(L, K ) ∪ C (L, K ) ∂N(L, K ) := N(L, K ) ∩ C (L, K )
+
+A derived of K near L is obtained by deriving K away from L ∪ C (L, K ), i.e., deriving simplexes meeting |L| but not in L.
+
+A derived of K near L is obtained by deriving K away from L ∪ C (L, K ), i.e., deriving simplexes meeting |L| but not in L.
+
+L
+
+K if K is K derived near L.
+
+Why?
+
+If K is K derived near L, N(L, K ) is a derived neighborhood of L in K .
+
+Theorem
+If K1 and K2 are deriveds of K near L, then s : K1 → K2 throws N(L, K1 ) onto N(L, K2 ) and is the identity on L ∪ C (L, K ).
+
+Regular neighborhoods
+Suppose X ⊂ Y are polyhedra. |K | a neighborhood of X in Y , |L| = X L K K derived of K near L. |N(L, K )| is called a regular neighborhood
+
+Theorem
+If N1 and N2 are regular neighborhoods of X in Y , then there is a homeomorphism h : Y → Y which throws N1 onto N2 , and which is the identity on X and the identity outside a compact subset of Y .
+
+Regular neighborhoods in manifolds
+
+Theorem
+A regular neighborhood N of a polyhedron X in a manifold M is a manifold with boundary.
+
+Theorem (Simplicial neighborhood theorem)
+X a compact polyhedron M a manifold X ⊂ int M N a neighborhood of X in int M. Then N is a regular neighborhood iﬀ N is a compact manifold with boundary there are triangulations (K , L, J) of (N, X , ∂N) with L K , K = N(L, K ) and J = ∂N(L, K ).
+
+Theorem (SNT version 2)
+X a compact polyhedron M a manifold X ⊂ int M N a polyhedral neighborhood of X in int M. Then N is a regular neighborhood iﬀ N is a compact manifold with boundary N X.
+
+Theorem (SNT version 2)
+X a compact polyhedron M a manifold X ⊂ int M N a polyhedral neighborhood of X in int M. Then N is a regular neighborhood iﬀ N is a compact manifold with boundary N X. e.g., if X point, N is a ball.
+
+Theorem (SNT version 2)
+X a compact polyhedron M a manifold X ⊂ int M N a polyhedral neighborhood of X in int M. Then N is a regular neighborhood iﬀ N is a compact manifold with boundary N X. e.g., if X point, N is a ball.
+
+e.g., a collapsible manifold is a ball.
+
+Corollary
+If B n ⊂ S n , then cl(S n − B n ) is a ball.
+
+Corollary
+If B n ⊂ S n , then cl(S n − B n ) is a ball.
+
+Proof.
+S n = ∂∆n+1 . A point p ∈ B n is contained in some ∆n ⊂ ∆n+1 , and both ∆n and B are regular neighborhoods of P. Regular neighborhoods are unique.
+
+next time we will introduce the work of
+
+E. C. Zeeman
+
+

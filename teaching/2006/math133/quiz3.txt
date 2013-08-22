@@ -1,0 +1,42 @@
+Math 133 Section 22 Due Monday, May 1
+Problem 1. (6 points). Using blocks that are each 1 inch wide, I build the following:
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+The rightmost block is 1/2 inch to the right of the block under it; the second block from the top is 1/4 inch to the right of the block underneath it, the third block from the top is 1/6 inch to the right of the block under it. In general, the nth block from the top is 1/(2n) inches to the right of the (n + 1)th block. Part (a) Prove that this structure will not fall over, no matter how many blocks are used. Part (b) As I use more and more blocks, how far to the right of the bottom block will the top block be?
+∞
+
+Problem 2. (3 points). Give an example of sequences {an } and {bn } so that
+∞ ∞ n=1
+
+an
+
+and
+n=1
+
+bn both diverge, but
+n=1
+
+(an + bn ) converges. 3 converge or diverge? Why or why not? n−9 n=10
+∞
+
+Problem 3. (2 points). Does
+
+c 2008 Jim Fowler
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Take-Home Quiz 3
+
+Part (b) Use a trick to compute the answer instantly (i.e., use the speed of the bee, and the time for which the bee is ﬂying, to calculate the value of the geometric series).
+
+c 2008 Jim Fowler
+
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+Part (a) Write down a geometric series giving the total distance the bee travels.
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Problem 4. (4 points). Dramatically, Alice and Bob are driving very slow cars, and they are on a collision course, heading toward each other at the constant speed of 5 mph. Alice and Bob are currently 5 miles apart, when a bee (travelling at 10 mph) begins to ﬂy from Alice’s bumper, to Bob’s bumper, back to Alice’s bumper, back to Bob’s bumper, and so on—until that fateful moment when the bee will be squished. How far will the bee travel in its journey?
+
+

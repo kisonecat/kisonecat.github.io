@@ -1,0 +1,90 @@
+Lecture 11: Analytic functions in regions
+Math 660—Jim Fowler Tuesday, July 5, 2011
+
+Multi-valued functions
+
+How to talk about
+
+√
+
+z? Or log z?
+
+Conformal maps
+
+z
+
+z2
+
+z3
+
+cos z
+
+ez
+
+1/z
+
+√
+
+z
+
+log z
+
+z
+
+z2
+
+z3
+
+cos z
+
+sin z
+
+ez
+
+1/z
+
+log z
+
+Proof that analytic functions are conformal
+
+A converse?
+∂f ∂f Suppose ∂x and ∂y are continuous. Set w (t) = f (z(t)), so
+
+w (t) =
+
+∂f ∂f x (t) + y (t) ∂x ∂y 1 ∂f ∂f 1 = −i z (t) + 2 ∂x ∂y 2
+
+∂f ∂f +i ∂x ∂y
+
+z (t).
+
+If angles are preserved, 1 2 ∂f ∂f −i ∂x ∂y + 1 2 ∂f ∂f +i ∂x ∂y
+∂f ∂x
+
+z (t) . z (t)
+
+has a constant argument, so
+
+∂f + i ∂y = 0.
+
+A converse?
+
+What about if the change in scale is isotropic?
+
+Riemann surfaces
+
+We won’t go into these in any detail, but a bit of thinking about this will help.
+
+Riemann surface for
+
+√
+
+z?
+
+Riemann surface for
+
+√
+
+z 4 − 1?
+
+

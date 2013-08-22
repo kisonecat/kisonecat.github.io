@@ -1,0 +1,19 @@
+Homework and Quiz 7
+Due Friday, July 10, 2009 Ungraded homework
+For practice, you should try: Section 15.3, page 924, problems 15, 19, 21, 27, 31, 37, 41, 51, 53, 61, 67. Section 15.4, page 935, problems 3, 5, 13, 15. Of these, section 15.3 is the more important: knowing how to take partial derivatives is a fundamental skill in multivariable calculus. Section 15.4 will be more important in the years to come.
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Graded Quiz
+The graded quiz contains only a few problems; you should really make sure to do many practice problems involving partial diﬀerentiation. Only through much practice will you develop the skills you need. (a) Find both partial derivatives of f (x, y) = x3 y 2 + 3xy + 2. (b) Deﬁne a function f : R2 → R by f (x, y) = (cos x) · (sin y) . Compute ∂2 ∂2 ∂2 ∂2 f (x, y), f (x, y), f (x, y), and f (x, y). ∂x ∂y ∂y ∂x ∂x ∂x ∂y ∂y
+
+(c) Write down a linear approximation near (x, y) = (0, 0) for the function f : R2 → R given by f (x, y) = cos (yex ) . (d) Suppose f (x, y) is a polynomial. Compute ∂ ∂ ∂ ∂ f (x, y) − f (x, y). ∂x ∂y ∂y ∂x (e) Suppose f : R → R is a diﬀerentiable function. Deﬁne g : R3 → R by
+
+Compute
+
+∂ ∂ ∂ f (x, y, z), f (x, y, z), and f (x, y, z). ∂x ∂y ∂z
+
+c 2009 Jim Fowler
+
+g(x, y, z) = f (x + y 2 + z 3 ).
+
+

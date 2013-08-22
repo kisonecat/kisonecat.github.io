@@ -1,0 +1,131 @@
+\documentclass[12pt]{pset}
+
+\course{Math 765}
+\author{Jim Fowler}
+\date{Winter 2011}
+
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\CP}{\mathbb{C}P}
+\newcommand{\RP}{\mathbb{R}P}
+
+\usepackage{enumerate}
+\usepackage{nopageno}
+\usepackage{hyperref}
+
+\DeclareMathOperator{\Vect}{Vect}
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\SO}{SO}
+\DeclareMathOperator{\codim}{codim}
+\DeclareMathOperator{\Mat}{Mat}
+\DeclareMathOperator{\SymMat}{SymMat}
+\DeclareMathOperator{\Id}{Id}
+\DeclareMathOperator{\Sym}{Sym}
+\newcommand{\Proj}{\mathbb{P}}
+
+\begin{document}
+\maketitle
+
+\noindent\textbf{Tensors and Forms.}  This week, the goal is
+forms---and along the way, we'll have our first glimpse of Riemannian
+metrics and the exterior derivative.  This problem set is pretty heavy
+on the algebra of tensors; please email me with questions at
+\texttt{fowler@math.osu.edu}.  \textit{The exercises below should be
+  handed in on Monday, February 7, 2011.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Veronese surface]
+
+  Let $V = \R^3$, and consider the map $s : V \to \Sym^2 V$ which
+  sends $s(v)$ to $v \cdot v$.
+  \begin{description}
+  \item[(a)] Show that, although $s$ is not a linear map, $s$
+    nonetheless induces a map $\Proj(s) : \Proj(V) \to \Proj(\Sym^2
+    V)$, i.e., $s$ sends lines to lines.
+  \item[(b)] Is $\Proj(s)$ a smooth map?  Compute its derivative
+    $\Proj(s)_\star : T\RP^2 \to T\RP^5$.  You might want to think
+    about a nice way to describe a vector in $T\RP^n$.
+  \item[(c)] Is $\Proj(s)$ a smooth embedding?
+  \end{description}
+
+
+\end{problem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Lee Exercise 12.3]
+
+Show that the wedge product is the unique associative, bilinear, and
+anticommutative map $\Lambda^k(V) \times \Lambda^\ell (V) \to
+\Lambda^{k + \ell}(V)$ satisfying
+$$
+(\omega^1 \wedge \cdots \wedge \omega^k)(X_1,\ldots,X_k) = \det\left(
+\omega^j(X_i) \right)
+$$  
+for covectors $\omega^1, \ldots, \omega^k$ and vectors $X_1, \ldots, X_k$.
+
+\end{problem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Lee 12--6]
+
+  Define a $2$-form $\Omega$ on $\R^3$ by
+$$
+\Omega = x\, dy \wedge dz + y\, dz \wedge dx + z\, dx \wedge dy
+$$
+\begin{description}
+\item[(a)] Compute $\Omega$ in spherical coordinates
+  $(\rho,\varphi,\theta)$ defined by
+$$(x,y,z) = (\rho sin \varphi \cos \theta, \rho \sin \varphi \sin \theta, \rho \cos \varphi).$$
+\item[(b)] Compute $d\Omega$ in both Cartesian and spherical
+  coordinates and verify that both expressions represent the same 3-form. 
+\item[(c)] Compute the restirction $\Omega|_{S^2} = \iota^\star
+  \Omega$ using coordinates $\varphi,\theta)$ on the open subset where
+  these coordinates are defined.
+\item[(d)] Show that $\Omega|_{S^2}$ is nowhere zero.
+\end{description}
+
+\end{problem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Lee 12--5]
+
+A $k$-covector $\eta$ on a finite-dimensional vector space $V$ is said
+to be \textit{decomposable} if it can be written
+$$
+\eta = \omega^1 \wedge \cdots \wedge \omega^k
+$$
+where $\omega^1, \ldots, \omega^k$ are covectors.  For what values of
+$n$ is it true that every $2$-covector on $\R^n$ is decomposable?
+
+\end{problem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Lee 12--17, also known as \textsc{Cartan's Lemma}]
+
+  Let $M$ be a smooth $n$-manifold, and let $\omega^1, \ldots,
+  \omega^k$ be independent smooth $1$-forms on an open subset $U
+  \subset M$.  If $\alpha^1, \ldots, \alpha^k$ are $1$-forms on $U$
+  such that
+$$
+\sum_{i=1}^k \alpha^i \wedge \omega^i = 0
+$$
+show that there are smooth functions $f_{ij}$ so that
+$$
+\alpha^i = \sum_{j=1}^k f_{ij} \omega^j
+$$
+
+\end{problem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}
+
+  There are one line answers to these two questions.
+  \begin{description}
+  \item[(a)] Does every closed manifold $M^n$ admit Riemannian metric?
+  \item[(b)] Does every closed manifold $M^n$ admit a symplectic form?
+  \end{description}
+  If you answer in the affirmative, prove it; if not, give a
+  counterexample.
+
+\end{problem}
+
+\end{document}

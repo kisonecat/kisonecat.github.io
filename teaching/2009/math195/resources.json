@@ -1,0 +1,203 @@
+[
+  {
+    "title": "Final Exam: Frequently Asked Questions",
+    "shortname": "review3",
+    "filename": "review3.pdf",
+    "source": "review3.tex",
+    "description": "",
+    "tags": [
+      "exam",
+      "exam"
+    ]
+  },
+  {
+    "title": "Homework and Quiz 10",
+    "shortname": "homework10",
+    "filename": "homework10.pdf",
+    "source": "homework10.tex",
+    "description": "",
+    "tags": [
+      "quiz"
+    ]
+  },
+  {
+    "title": "Student Survey",
+    "shortname": "survey",
+    "filename": "survey.pdf",
+    "source": "survey.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Homework and Quiz 9",
+    "shortname": "homework09",
+    "filename": "homework09.pdf",
+    "source": "homework09.tex",
+    "description": "",
+    "tags": [
+      "quiz"
+    ]
+  },
+  {
+    "title": "Homework and Quiz 3",
+    "shortname": "homework03",
+    "filename": "homework03.pdf",
+    "source": "homework03.tex",
+    "description": "",
+    "tags": [
+      "quiz"
+    ]
+  },
+  {
+    "title": "Midterm 2: Frequently Asked Questions",
+    "shortname": "review2",
+    "filename": "review2.pdf",
+    "source": "review2.tex",
+    "description": "",
+    "tags": [
+      "exam"
+    ]
+  },
+  {
+    "title": "Homework and Quiz 2",
+    "shortname": "homework02",
+    "filename": "homework02.pdf",
+    "source": "homework02.tex",
+    "description": "",
+    "tags": [
+      "quiz"
+    ]
+  },
+  {
+    "title": "Homework and Quiz 1",
+    "shortname": "homework01",
+    "filename": "homework01.pdf",
+    "source": "homework01.tex",
+    "description": "",
+    "tags": [
+      "quiz"
+    ]
+  },
+  {
+    "title": "Homework and Quiz 5",
+    "shortname": "homework05",
+    "filename": "homework05.pdf",
+    "source": "homework05.tex",
+    "description": "",
+    "tags": [
+      "quiz"
+    ]
+  },
+  {
+    "title": "Midterm 1: Frequently Asked Questions",
+    "shortname": "review1",
+    "filename": "review1.pdf",
+    "source": "review1.tex",
+    "description": "",
+    "tags": [
+      "exam"
+    ]
+  },
+  {
+    "title": "Oral Exam Rubric",
+    "shortname": "rubric",
+    "filename": "rubric.pdf",
+    "source": "rubric.tex",
+    "description": "",
+    "tags": [
+      "exam"
+    ]
+  },
+  {
+    "title": "Homework and Quiz 12",
+    "shortname": "homework12",
+    "filename": "homework12.pdf",
+    "source": "homework12.tex",
+    "description": "",
+    "tags": [
+      "quiz"
+    ]
+  },
+  {
+    "title": "Homework and Quiz 11",
+    "shortname": "homework11",
+    "filename": "homework11.pdf",
+    "source": "homework11.tex",
+    "description": "",
+    "tags": [
+      "quiz"
+    ]
+  },
+  {
+    "title": "Homework and Quiz 7",
+    "shortname": "homework07",
+    "filename": "homework07.pdf",
+    "source": "homework07.tex",
+    "description": "",
+    "tags": [
+      "quiz"
+    ]
+  },
+  {
+    "title": "Properties of Limits",
+    "shortname": "limits",
+    "filename": "limits.pdf",
+    "source": "limits.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Midterm 1",
+    "shortname": "midterm1",
+    "filename": "midterm1.pdf",
+    "source": "midterm1.tex",
+    "description": "",
+    "tags": [
+      "exam"
+    ]
+  },
+  {
+    "title": "Homework and Quiz 4",
+    "shortname": "homework04",
+    "filename": "homework04.pdf",
+    "source": "homework04.tex",
+    "description": "",
+    "tags": [
+      "quiz"
+    ]
+  },
+  {
+    "title": "Homework and Quiz 6",
+    "shortname": "homework06",
+    "filename": "homework06.pdf",
+    "source": "homework06.tex",
+    "description": "",
+    "tags": [
+      "quiz"
+    ]
+  },
+  {
+    "title": "Homework and Quiz 8",
+    "shortname": "homework08",
+    "filename": "homework08.pdf",
+    "source": "homework08.tex",
+    "description": "",
+    "tags": [
+      "quiz"
+    ]
+  },
+  {
+    "title": "Math195 Syllabus",
+    "shortname": "syllabus",
+    "filename": "syllabus.pdf",
+    "source": "syllabus.tex",
+    "description": "",
+    "tags": [
+      "syllabus"
+    ]
+  }
+]

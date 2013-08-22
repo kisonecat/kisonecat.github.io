@@ -1,0 +1,157 @@
+\documentclass[12pt,letterpaper,twocolumn]{article}
+
+\title{Facts about Limits.}
+\author{Jim Fowler}
+
+\usepackage{fullpage}
+\usepackage{nopageno}
+\usepackage{amsmath}
+\usepackage[margin=1cm]{geometry}
+\usepackage{add-copyright}
+
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemmma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{definition}[theorem]{Definition}
+
+\usepackage{amssymb}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+
+\newcommand{\limn}{\displaystyle\lim_{n \to \infty}}
+
+\begin{document}
+
+\section*{Facts about limits.}
+
+\begin{definition}[Formal]
+We say $\limn a_n = L$ if
+\begin{verse}
+  for all $\epsilon > 0$, \\
+  there exists $K \in \N$, \\
+  so that if $n \geq K$, \\
+  then $|a_n - L| < \epsilon$.
+\end{verse}
+\end{definition}
+
+\begin{definition}[Intuitive]
+We say $\limn a_n = L$ if
+\begin{verse}
+  however close we want to be, \\
+  there's a place we can go, \\
+  so that beyond that place, \\
+  we are that close.
+\end{verse}
+\end{definition}
+
+\begin{proposition}[Limits are unique]
+  If $\limn a_n = L$ and $\limn a_n = M$,
+  then $L = M$.
+\end{proposition}
+
+\begin{proposition}
+  If the sequence $a_n$ converges, then $a_n$ is bounded.
+\end{proposition}
+
+\begin{corollary}
+  If the sequence $a_n$ is not bounded, then $a_n$ diverges.
+\end{corollary}
+
+\begin{proposition}
+  If $\limn a_n = L$, and $c \in \R$, then $\lim_{n \to
+    \infty} c \cdot a_n = c \cdot L$.
+\end{proposition}
+
+\begin{proposition}
+  If $\limn a_n = L$ and $\limn b_n = M$,
+  then $\limn a_n + b_n = L + M$.
+\end{proposition}
+
+\begin{proposition}
+  If $\limn a_n = L$ and $\limn b_n = M$,
+  then $\limn a_n \cdot b_n = L \cdot M$.
+\end{proposition}
+
+\begin{proposition}
+  If $\limn a_n = L$ and $\limn b_n = M$, and $b_n \neq 0$ and $M \neq 0$, 
+  then $\limn a_n/b_n = L/M$.
+\end{proposition}
+
+\begin{proposition}
+  If $\limn a_n = L$ and $m \in \N$, then $\limn a_{n+m} = L$.
+\end{proposition}
+
+\begin{proposition}
+  If $\limn a_n = L$, and $b_n$ is a sequence differing from $a_n$ in
+  finitely many terms, then $\limn b_n = L$.
+\end{proposition}
+
+\begin{theorem}
+If $a_n$ is a nondecreasing bounded above sequence, then $a_n$ converges.
+\end{theorem}
+
+\begin{theorem}
+If $a_n$ is a nonincreasing bounded below sequence, then $a_n$ converges.
+\end{theorem}
+
+\begin{theorem}[Squeezing theorem]
+  If $a_n$, $b_n$, and $c_n$ are sequences of real numbers, and for
+  all $n \in \N$, we have $a_n \leq b_n \leq c_n$, and $\limn a_n = L$
+  and $\limn c_n = L$, then $\limn b_n = L$.
+\end{theorem}
+
+\begin{theorem}[Sequences and continuity]
+  If a function $f : \R \to \R$ is continuous at $L$, and $\limn a_n = L$, then
+  $\limn f(a_n) = f(L)$.
+\end{theorem}
+
+\begin{example}
+For a real number $x > 0$,
+$$
+\limn x^{1/n} = 1.
+$$
+\end{example}
+
+\begin{example}
+For a real number $x$ with $-1 < x < 1$,
+$$
+\limn x^n = 0.
+$$
+\end{example}
+
+\begin{example}
+For a real number $x > 0$,
+$$
+\limn \frac{1}{n^x} = 0.
+$$
+\end{example}
+
+\begin{example}
+For $x \in \R$,
+$$
+\limn \frac{x^n}{n!} = 0.
+$$
+\end{example}
+
+\begin{example}
+$\limn \displaystyle\frac{\log n}{n} = 0$.
+\end{example}
+
+\begin{example}
+$\limn n^{1/n} = 0$.
+\end{example}
+
+\begin{example}
+For $x \in \R$,
+$$
+\limn \left( 1 + \frac{x}{n} \right)^n = e^x.
+$$
+\end{example}
+
+\end{document}

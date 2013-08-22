@@ -1,0 +1,30 @@
+Name:
+
+Chickens and cages.
+The Problem.
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+You want to buy x chickens and y cages. But: • You need to buy more cages than chickens. • You only have $12; chickens cost $2 and cages cost $1. You want to have as many chickens as possible. How many chickens and cages should you buy?
+The Solution.
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+The solution has something to do with the following graph:
+16
+
+8
+
+-8
+
+0
+
+8
+
+16
+
+Here’s a hint: • Shade in the region where there are more cages than chickens.
+
+c 2008 Jim Fowler
+
+• Shade in the region where you can aﬀord the combination of chickens and cages.
+
+

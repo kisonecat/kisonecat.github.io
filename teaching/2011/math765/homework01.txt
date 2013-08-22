@@ -1,0 +1,31 @@
+Problem Set 1
+Winter 2011
+
+Math 765
+Jim Fowler
+
+The only way to learn the game is to play the game. The following represents a lower bound on the number of exercises you should be doing; the textbook is full of great exercises, so I encourage you to do as many as possible. The exercises below should be handed in on Monday, January 10, 2011.
+
+Problem 1.1
+For each of the following topological spaces, determine whether or not they can be given the structure of a smooth manifold, and, if so, explain how. (a) The disjoint union of uncountably many copies of R, (b) Two copies of R with all non-zero points identiﬁed (I mean, x in the ﬁrst copy is identiﬁed witih x in the second copy—in other words, the “line with two origins”). (c) RP n , (d) CP n ,
+n times
+
+(e) T = S × · · · × S 1 .
+n 1
+
+Problem 1.2 (Lee 2–10)
+(a) Show that the quotient map π : Cn+1 \ {0} → CP n is smooth. (b) Show that CP 1 is diﬀeomorphic to S 2 .
+
+Problem 1.3
+For every pair of positive integers n and m, ﬁnd inﬁnitely many distinct nonconstant smooth maps from CP n to CP m .
+
+Problem 1.4 (Lee 2-11)
+Let G be a connected Lie group, and let U ⊂ G be any neighborhood of the identity. Show that every g ∈ G can be written as a ﬁnite product of elements of U .
+
+Problem 1.5 (Lee 3–1)
+Suppose M and N are smooth manifolds with M connected, and F : M → N is a smooth map such that F⋆ : Tp M → TF (p) N is the zero map for each p ∈ M . Show that F is a constant map.
+
+Problem 1.6 (Lee 3–3)
+If a nonempty smooth n-manifold is diﬀeomorphic to an m-manifold, prove that n = m.
+
+

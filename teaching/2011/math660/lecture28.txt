@@ -1,0 +1,128 @@
+Lecture 28: Local mapping
+Math 660—Jim Fowler Thursday, July 29, 2010
+
+f (z) = sin(z − i) viewed in a disk
+
+Algebraic order
+in the second case, the cut-oﬀ α is an integer.
+
+Algebraic order
+in the second case, the cut-oﬀ α is an integer. Apply Taylor’s theorem to (z − a)h f (z), to ﬁnd
+
+(z−a)h f (z) = Bh +Bh−1 (z−a)+· · ·+B1 (z−a)h−1 +ϕ(z)(z− with ϕ(z) analytic at z = a. Divide both sides by (z − a)h , to get f (z) = Bh−1 Bh + + · · · + ϕ(z) h (z − a) (z − a)h−1
+
+The part before ϕ(z) is the singular part of f .
+
+Algebraic order
+in the second case, the cut-oﬀ α is an integer. Apply Taylor’s theorem to (z − a)h f (z), to ﬁnd
+
+(z−a)h f (z) = Bh +Bh−1 (z−a)+· · ·+B1 (z−a)h−1 +ϕ(z)(z− with ϕ(z) analytic at z = a. Divide both sides by (z − a)h , to get f (z) = Bh−1 Bh + + · · · + ϕ(z) h (z − a) (z − a)h−1
+
+The part before ϕ(z) is the singular part of f . A pole comes with a well-deﬁned singular part, and if you subtract oﬀ the singular part, you are left with an analytic function.
+
+Essential singularity
+If there is no such α satisfying the limits
+z→a
+
+lim |z − a|α |f (z)| = 0 lim |z − a|α |f (z)| = ∞
+
+z→a
+
+then we say it is an essential singularity.
+
+Theorem
+An analytic function comes arbitrarily close to every complex value in a neighborhood of an essential singularity.
+
+counting the zeroes and poles of an analytic function
+
+Counting zeroes
+Let D 2 = {z ∈ C : |z| < 1} and f : D 2 → C analytic. Assume f (z) ≡ 0.
+
+Counting zeroes
+Let D 2 = {z ∈ C : |z| < 1} and f : D 2 → C analytic. Assume f (z) ≡ 0. Assume f (z) has only ﬁnitely many zeroes, z1 , . . . , zn , with multiplicity.
+
+Counting zeroes
+Let D 2 = {z ∈ C : |z| < 1} and f : D 2 → C analytic. Assume f (z) ≡ 0. Assume f (z) has only ﬁnitely many zeroes, z1 , . . . , zn , with multiplicity. f (z) = (z − z1 ) · · · (z − zn )g (z) for g (z) analytic and nowhere zero.
+
+Counting zeroes
+Let D 2 = {z ∈ C : |z| < 1} and f : D 2 → C analytic. Assume f (z) ≡ 0. Assume f (z) has only ﬁnitely many zeroes, z1 , . . . , zn , with multiplicity. f (z) = (z − z1 ) · · · (z − zn )g (z) for g (z) analytic and nowhere zero. f (z) 1 1 g (z) = + ··· + + f (z) z − z1 z − zn g (z)
+
+Now
+
+g (z) γ g (z)
+
+dz = 0, so f (z) dz = n(γ, z1 ) + · · · + n(γ, zn ) f (z)
+
+1 2πi
+
+γ
+
+Now
+
+g (z) γ g (z)
+
+dz = 0, so f (z) dz = n(γ, z1 ) + · · · + n(γ, zn ) f (z)
+
+1 2πi
+
+γ
+
+In fact, this is true even if there are inﬁntely many zeroes in D 2
+
+Now
+
+g (z) γ g (z)
+
+dz = 0, so f (z) dz = n(γ, z1 ) + · · · + n(γ, zn ) f (z)
+
+1 2πi
+
+γ
+
+In fact, this is true even if there are inﬁntely many zeroes in D 2 —why?
+
+Theorem
+f : D 2 → C analytic with zeroes zi . For closed curves γ not passing through a zero, n(γ, zi ) =
+i
+
+1 2πi
+
+γ
+
+f (z) dz f (z)
+
+Theorem
+f : D 2 → C analytic with zeroes zi . For closed curves γ not passing through a zero, n(γ, zi ) =
+i
+
+1 2πi
+
+γ
+
+f (z) dz f (z)
+
+In particular, if we let Γ = f (γ), then dw = w Γ so n(Γ, 0) =
+i
+
+γ
+
+f (z)dz f (z)
+
+n(γ, zi ).
+
+Local correspondence
+Instead of counting zeroes, count how many times f (z) takes on the value a.
+
+Local correspondence
+Instead of counting zeroes, count how many times f (z) takes on the value a. If γ is a circle and n(Γ, a) = n(Γ, b), then f (z) takes on the value a as many times as the value b inside γ.
+
+Local correspondence
+Instead of counting zeroes, count how many times f (z) takes on the value a. If γ is a circle and n(Γ, a) = n(Γ, b), then f (z) takes on the value a as many times as the value b inside γ.
+
+Theorem
+Suppose f (z) is analytic at z0 , f (z0 ) = w0 ,a nd f (z) − w0 has a zero of order n at z0 . For all suﬃciently small > 0, there exists δ > 0, so that for all a within δ of w0 , the equation f (z) = a has exactly n roots in the disk |z − z0 | < .
+
+Corollary
+A nonconstant analytic function is an open map (meaning it maps open sets to open sets).
+
+

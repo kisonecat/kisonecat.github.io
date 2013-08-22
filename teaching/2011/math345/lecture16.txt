@@ -1,0 +1,31 @@
+Lecture 16: Induction
+Wednesday, October 20, 2010
+
+Math 345
+Jim Fowler
+
+Textbook
+This lecture discusses section 5 of the textbook.
+
+Homework
+The homework is due Monday, October 25, 2010. From Section 5 of the textbook, do exercises 1 and 3.
+
+I will have your exams graded by Thursday
+on Thursday, I will give you a summary of how you did
+
+the principle of math induction
+as an axiom schema: let P (n) be a statement about a natural number n. If P (1) and whenever P (n) then P (n + 1) is true, then P (n) for all n.
+
+examples
+sum of ﬁrst n odd numbers sum of the ﬁrst n numbers sum of the ﬁrst n squares n3 + 2n is divisible by 3. number of ways of covering an n × 2 board with dominoes
+
+bad example
+all horses have the same color
+
+1
+
+induction is what lets us say something about the natural numbers
+
+2
+
+

@@ -1,0 +1,17 @@
+Take-Home Quiz 5
+Math 131 Section 22 Due Monday, November 14, 2005
+The word problems on this quiz are classics—problems which everyone who does calculus ought to see. I hope you will enjoy them. Problem 1. (2 points). I give you an empty tank of water1 ; the tank is cylindrical, with a radius of 10 ft and a height of 3 ft. I am pouring water into your tank at a rate of 50π ft3 / sec. How fast is the water level rising?
+
+Problem 2. (2 points). Everything is dark. Thankfully, there is an 8 ft tall lamp behind you. You are 5 ft tall, and you are walking away from that lamp at a speed of 3 ft / sec. How fast is your shadow growing in length?
+
+1
+
+I also give you an empty box ﬁlled with gold.
+
+Problem 3. (3 points). I have placed my ladder against the side of my house. As I pull the bottom of my ladder away from my house, the top of the ladder slides down the house, as shown. The ladder is 25 ft long, and the bottom of my ladder is currently 15 ft from my house. I am pulling the bottom of the ladder at a speed of 1 ft / sec. How fast is the top of the ladder falling?
+
+Problem 4. (1 point). I keep pulling the ladder in the previous problem. The bottom of the ladder is now 24.99999 ft away from the side of my house, and I am still pulling the bottom of the ladder away from my house at a speed of 1 ft / sec. What sound do I hear? Problem 5. (2 points). Assume that the following equation deﬁnes a diﬀerentiable function of x. Calculate dy/dx using implicit diﬀerentiation: x2 y = 1 + y 2 x. Problem 6. (2 points). Assume that the following equation deﬁnes a diﬀerentiable function of x. Calculate the slope of the tangent line at a point (x, y) satisfying x3 + xy 2 = 2y 2.
+
+LA DD ER
+
+

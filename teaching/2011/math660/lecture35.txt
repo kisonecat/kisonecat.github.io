@@ -1,0 +1,246 @@
+Lecture 35: Some integrals
+Math 660—Jim Fowler Monday, August 9, 2010
+
+Generalizing argument principle
+If g (z) is analytic in Ω, then g (z) f (z) has f (z)
+
+Generalizing argument principle
+f (z) has f (z) residue h g (a) at a zero a of order h If g (z) is analytic in Ω, then g (z)
+
+Generalizing argument principle
+f (z) has f (z) residue h g (a) at a zero a of order h and residue −h g (a) at a pole a of order h. If g (z) is analytic in Ω, then g (z)
+
+Generalizing argument principle
+f (z) has f (z) residue h g (a) at a zero a of order h and residue −h g (a) at a pole a of order h. Therefore, If g (z) is analytic in Ω, then g (z) 1 2πi g (z)
+γ
+
+f (z) dz = f (z)
+
+n(γ, aj )g (aj )−
+j j
+
+n(γ, bk )g (bk )
+
+f (z) = w has n solutions z1 , . . . , zn in disk |z − z0 | < .
+
+f (z) = w has n solutions z1 , . . . , zn in disk |z − z0 | < . zj (w ) =
+j
+
+1 2πi
+
+|z−z0 |=
+
+f (z) z dz f (z) − w )
+
+f (z) = w has n solutions z1 , . . . , zn in disk |z − z0 | < . zj (w ) =
+j
+
+1 2πi 1 2πi
+
+|z−z0 |=
+
+f (z) z dz f (z) − w ) f (z) z m dz f (z) − w )
+
+zj (w )m =
+j
+
+|z−z0 |=
+
+f (z) = w has n solutions z1 , . . . , zn in disk |z − z0 | < . zj (w ) =
+j
+
+1 2πi 1 2πi
+
+|z−z0 |=
+
+f (z) z dz f (z) − w ) f (z) z m dz f (z) − w )
+
+zj (w )m =
+j
+
+|z−z0 |=
+
+so zj (w ) are roots of a polynomial with coeﬃcients depending analytically on w .
+
+Integration tricks!
+
+The integrals we care about are usually over intervals;
+
+The integrals we care about are usually over intervals; our residue technique requires a closed curve;
+
+The integrals we care about are usually over intervals; our residue technique requires a closed curve; need tricks for converting integrals over intervals to integrals over curves.
+
+The integrals we care about are usually over intervals; our residue technique requires a closed curve; need tricks for converting integrals over intervals to integrals over curves. The integrals we care about might be for real-valued functions;
+
+The integrals we care about are usually over intervals; our residue technique requires a closed curve; need tricks for converting integrals over intervals to integrals over curves. The integrals we care about might be for real-valued functions; thankfully, many real integrals are actually of analytic functions.
+
+Rational functions of trig functions
+
+2π
+
+R(cos θ, sin θ) dθ
+0
+
+Rational functions of trig functions
+
+2π
+
+R(cos θ, sin θ) dθ
+0
+
+Make substitution z = e iθ , and get
+
+Rational functions of trig functions
+
+2π
+
+R(cos θ, sin θ) dθ
+0
+
+Make substitution z = e iθ , and get −i unit circle R 1 1 1 z+ , 2 z 2i z− 1 z dz z
+
+Example 1
+
+π 0
+
+dθ for a > 1. a + cos θ
+
+Example 2
+For n even, compute
+2π
+
+cosn θ dθ
+0
+
+Example 2
+For n even, compute
+2π 0 n
+
+1 cos θ dθ = −i circle 2n
+n
+
+1 z+ z
+
+dz z
+
+Example 2
+For n even, compute
+2π 0 n
+
+1 cos θ dθ = −i circle 2n
+n
+
+1 z+ z
+
+dz z
+
+= −i
+
+1 circle 2n
+
+m
+
+n 2m−n−1 z dz m
+
+Example 2
+For n even, compute
+2π 0 n
+
+1 cos θ dθ = −i circle 2n
+n
+
+1 z+ z
+
+dz z
+
+= −i = −i
+
+1 circle 2n
+
+m
+
+n 2m−n−1 z dz m
+
+1 n z −1 dz n n/2 circle 2
+
+Example 2
+For n even, compute
+2π 0 n
+
+1 cos θ dθ = −i circle 2n
+n
+
+1 z+ z
+
+dz z
+
+= −i = −i
+
+1 circle 2n
+
+m
+
+n 2m−n−1 z dz m
+
+1 n z −1 dz n n/2 circle 2 1 n = π n−1 2 n/2
+
+Rational functions
+
+By integrating over large semicircles, compute 1 2πi
+∞
+
+R(x) dx =
+−∞ Im z>0
+
+Res R(z)
+z=a
+
+Rational functions times e iz
+
+By integrating over large semicircles, compute 1 2πi
+∞
+
+R(x) e iz dx =
+−∞ Im z>0
+
+Res R(z)e iz
+z=a
+
+provided R(z) has a zero of order two at inﬁnity.
+
+Rational functions times e iz
+
+Integrate over rectangle with vertices x2 , x2 + iy , −x1 + iy , −x1 . 1 2πi
+∞
+
+R(x) e iz dx =
+−∞ Im z>0
+
+Res R(z)e iz
+z=a
+
+which holds provided R(z) has a zero at inﬁnity.
+
+Powers of z
+
+∞
+
+∞
+
+x R(x) dx = 2
+0 0
+
+α
+
+t 2α+1 R(t 2 ) dt
+
+and then integrate over semicircle minus semicircle.
+
+Example
+
+π
+
+log sin θ dθ
+0
+
+

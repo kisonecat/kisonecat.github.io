@@ -1,0 +1,42 @@
+include includes/helpers
+
+doctype 5
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title
+      if typeof post !== "undefined"
+        | #{post.title} - k = 1 cat - Jim Fowler
+      else
+        if title
+          | #{title} - k = 1 cat - Jim Fowler
+        else
+          block title
+          |  - k = 1 cat - Jim Fowler
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="description",content="Jim Fowler")
+    meta(name="author", content="Jim Fowler")
+    meta(name="keywords", content="mathematics, math, maths, courses, course, research, education, teaching, topology, geometry")
+
+    link(href="/build/css/style.css", rel="stylesheet", media="screen")
+    link(href='http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold',rel='stylesheet',type='text/css')
+    script(type="text/javascript",src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML")
+    script(type="text/x-mathjax-config")
+      | MathJax.Hub.Config({showProcessingMessages: false, tex2jax: { inlineMath: [['$','$'],['\\(','\\)']] } });
+
+    script(type="text/javascript",src="/build/js/min/jquery.min.js")
+    script(type="text/javascript",src="/build/js/min/bootstrap.min.js")
+    script(type="text/javascript",src="/public/javascripts/personal-details.js")
+
+    link(rel="apple-touch-icon",sizes="114x114",href="/public/images/icons/favicon-114x114.png")
+    link(rel="apple-touch-icon",sizes="72x72",href="/public/images/icons/favicon-72x72.png")
+    link(rel="apple-touch-icon",sizes="57x57",href="/public/images/icons/favicon-57x57.png")
+    link(rel="shortcut icon",type="image/x-icon",href="/favicon.ico")
+
+  body
+    include includes/header
+    block carousel
+      div(id="empty-showcase")
+    .container
+      block content
+      include includes/footer

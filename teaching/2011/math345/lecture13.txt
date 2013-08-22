@@ -1,0 +1,57 @@
+Lecture 13: Congruences
+Wednesday, October 13, 2010
+
+Math 345
+Jim Fowler
+
+Textbook
+This lecture discusses section 4 of the textbook.
+
+Homework
+The homework is due Wednesday, October 20, 2010. From Section 4 of the textbook, do exercises 25 and 26.
+
+equivalence relations well-deﬁned hardy and the usefulness of number theory
+Hardy said: “I have never done anything ‘useful’. No discovery of mine has made, or is likely to make, directly or indirectly, for good or ill, the least diﬀerence to the amenity of the world.” This turns out to be false. Number theory is incredibly important to internet commerce. prime numbers are important. factoring numbers is hard. simple example: proving that I wrote a secret document. include the product of two large primes. at a future date, i declare “the huge number on the secret document is the product of p and q” which proves that I must have written the document. public-key cryptosystems
+
+1
+
+341 is pseudoprime
+modulo 11
+341 = 31 × 11. 211 ≡ 2 (mod 11) (mod 11). (mod 11).
+
+231 ≡ 211 · 211 · 29 ≡ 211 ≡ 2 2341 ≡ 231
+11
+
+≡ 211 ≡ 2
+
+modulo 31
+231 ≡ 2 2341 ≡ 211 (mod 31) (mod 31) (mod 31)
+
+211 ≡ 25 · 25 · 2 ≡ (−1) · (−1) · 2 ≡ 2
+
+combining these facts (without yet knowing CRT)
+2341 ≡ 2 (mod 11) and 2341 ≡ 2 (mod 31). since 2341 = 2 + 31k possible residues mod 341: 2, 33, 64, 95, 126, 157, 188, 219, 250, 281, 312 since 2341 = 2 + 11k possible residues mod 341: 2, 13, 24, 35, 46, 57, 68, 79, 90, 101, 112, 123, 134, 145, 156, 167, 178, 189, 200, 211, 222, 233, 244, 255, 266, 277, 288, 299, 310, 321, 332
+
+necklace proof of fermat’s little theorem
+one of many proofs this is the easiest to see, i think.
+
+2
+
+ﬁnd last digit
+Find the last digit of 21000 . 200 21000 ≡ (25 ) ≡ 2200 ≡ 240 ≡ 28 ≡ 1 (mod 5) 21000 ≡ 0 (mod 2) so 21000 ≡ 6 (mod 10)
+
+solving linear equations? solving quadratic equations?
+what about square roots modulo n?
+
+example from hensel’s lemma
+ﬁnd a number x so that . . . x2 ≡ 2 (mod 7). say x = 3 x2 ≡ 2 (mod 49). say x = 3 + 7k, say, x = 10. x2 ≡ 2 (mod 343). say x = 10 + 49k, say, x = 108. x2 ≡ 2 (mod 2401). say x = 108 + 343k, say, x = 794.
+
+better example
+ﬁnd a number x so that x3 ≡ 7 (mod 10). say x = 3. x3 ≡ 7 (mod 100). say x = 3 + 10k = 43. x3 ≡ 7 (mod 1000). say x = 43 + 100k = 543. x3 ≡ 7 (mod 10000). say x = 43 + 100k = 543.
+
+best example
+ﬁnd a number x so that x2 ≡ 3 (mod 11). say x = 6. x2 ≡ 3 (mod 121). say x = 6 + 11k = 6 + 11 · 8 = 94. x2 ≡ 3 (mod 1331). say x = 94 + 121k = 94 + 121 · 4 = 578. x2 ≡ 3 (mod 14641). say x = 578 + 1331k = 578 + 1331 · 2 = 3240.
+
+3
+
+

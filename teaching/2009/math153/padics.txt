@@ -1,0 +1,92 @@
+The reasonableness of the ridiculous.
+If
+∞ n n=0 x
+
+converges to L, then consider the following.
+∞ ∞ ∞
+
+x·L=x·
+n=0
+
+x =
+n=0
+
+n
+
+x
+
+n+1
+
+=
+n=1
+
+xn = L − 1.
+
+∞
+
+10n =
+n=0
+
+Of course, this is incorrect, because the series which it makes sense.
+
+∞ n n=0 10
+
+diverges. But even if this is ridiculous, there is a way in
+
+The 10-adic numbers
+
+We are comfortable with numbers that “go all the way to the right” (i.e., non-terminating decimals like 0.3333 · · · ) so why not numbers that go all the way to the left? I mean, consider a “number” like · · · 999999, meaning ∞ 9·10n . Of course, this is meaningless, but if we ignore n=0 convergence issues and apply the formula for geometric series, we might be fooled into thinking · · · 999999 = −1. After all, · · · 999999 means ∞ 9 · 10n . n=0 This is less ridiculous than it seems, because + · · · 99999999 1 · · · 00000000
+
+This also looks ridiculous, but just apply the usual algorithm for addition: add 9 and 1, get 10, write down the 0 and carry the 1—and repeat. The answer is all zeroes. A number which equal zero when we add 1 to it ought to be given a name: −1. For similar reasons, we might believe · · · 11111111 = −1/9, because if we multiply · · · 11111111 by 9, we get the number for −1. We can show −1 × −1 = 1, because · · · 99999999 × · · · 99999999 · · · 99999991 · · · 99999910 · · · 99999100 · · · 99991000 . . . · · · 00000001
+
+How about one third?
+There are other examples in this crazy world, too. Because × · · · 66666667 3 · · · 00000001
+
+c 2008 Jim Fowler
+
+we decide that · · · 66666667 deserves to be called 1/3, since it is a multiplicative inverse for 3. But there is another reason why · · · 66666667 deserves the name 1/3. After all, if · · · 11111111 = −1/9, then · · · 66666666 is −6/9 = −2/3. And therefore, · · · 66666666 (think “−2/3”) × 1 · · · 66666667 (think “1/3”)
+
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+1 1 =− . 1 − 10 9
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+So we can solve for L, to ﬁnd that L =
+
+1 . Of course, this argument assumes that the series converges. 1−x What if we did this when the series did not converge? We might deduce that
+
+How about other negative numbers?
+What happens if we multiply −1 by 17. We ought to get −17. And indeed, we do: · · · 99999999 × 17 · · · 99999993 + · · · 99999990 · · · 99999983 And of course, if we add 17 to · · · 99999983, we get zero. This trick of handling negative numbers is called two’s complement addition1
+
+How about one seventh?
+
+I wanted to write down 1/7, so I started with a 3 (since 3 × 7 = 21, and this will give me the 1 on the right hand side). The next digit should be a 4, because 4 × 7 = 28, and since I had to carry that 2, I will get 30, which means I will write down a zero. Now I am carrying a 3; but if I put a 1 as the next digit, then 1 × 7 + 3 = 10, so I will write down a zero, and carry a 1. Each time the next digit is chosen so that I write down a zero, and carry something. Continuing in this way, I discover: · · · 2857142857142857142857143 × 7 · · · 0000000000000000000000001 This is a repeating decimal: we might write it as 2857143, though here the digits repeat to the left. This means we could also write it as a series, formally:
+∞
+
+3 + 10 ·
+
+285714 ·
+n=0
+
+1000000n
+
+If we ignore convergence, and apply the formula for geometric series here, where it does not apply, we might be fooled into thinking 1 = 1/7 · · · 2857142857142857143 = 3 + 10 · 285714 · 1 − 1000000
+
+The trouble is that these series do not converge. But if we changed our notion of convergence. . . That is a subject for a future course.
+
+The point of all this?
+
+Many mathematical advances started by taking a ridiculous idea (e.g., negative numbers, imaginary numbers) and making sense of the absurd. The numbers we have described here are called 10-adic numbers, and, I admit, they do not work very well (terrifyingly, there exist two non-zero 10-adic numbers which multiply to give zero); if we instead worked in base p for p a prime, we would get the p-adic numbers, and these numbers turn out to work much better2
+
+1 2
+
+For more, see http://en.wikipedia.org/wiki/Twos_complement For more, see http://en.wikipedia.org/wiki/P-adic_number
+
+c 2008 Jim Fowler
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+

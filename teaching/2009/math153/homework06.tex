@@ -1,0 +1,84 @@
+\documentclass[12pt]{article}
+
+\usepackage{hyperref}
+\usepackage{fullpage}
+\usepackage{nopageno}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\usepackage[margin=1in]{geometry}
+\usepackage{add-copyright}
+
+\usepackage{graphicx}
+
+\title{Homework 6}
+\date{Due Friday, October 17, 2008}
+
+\long\def\symbolfootnote[#1]#2{\begingroup%
+\def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+
+\begin{document}
+\maketitle
+
+\textbf{Remember:} October 20 is the date of the first midterm!
+
+\begin{description}
+
+\item[(a)] On page 571, section 11.7, do problems: 1, 6, 9, 10, 17, 31.
+
+\vfill
+
+\item[(b)] Consider the graph of $f(x) = 1/x$, restricted to $x \in
+  [1,\infty)$.  Rotate this graph around the $x$-axis, to produce
+\begin{center}
+\includegraphics[width=4in]{GabrielHorn.pdf}
+\end{center}
+The surface area of this object is infinite, but what is its volume?
+
+\vfill
+
+\item[(c)] The \textbf{Gamma function} is defined as follows:
+$$
+\Gamma(z) = \int_0^\infty t^{z-1} \, e^{-t} \, dt.
+$$
+Compute $\Gamma(5)$.  \textit{Hint: first compute $\Gamma(1)$, and then integrate by parts to find $\Gamma(z)$ in terms of $\Gamma(z-1)$.}\symbolfootnote[2]{If you are very stuck, look at \texttt{\url{http://en.wikipedia.org/wiki/Gamma_function}}}
+
+\vfill
+
+\item[(d)] Evaluate $\displaystyle\int_0^{\pi/2} \displaystyle\frac{x}{\tan x} \, dx$.
+This is an extremely difficult integral.
+
+\vfill
+
+% http://topologicalmusings.wordpress.com/2008/10/12/solution-to-pow-10-another-hard-integral/
+% http://en.wikipedia.org/wiki/Differentiation_under_the_integral_sign#Other_problems
+
+%\vfill
+%
+%\item[(d)] Evaluate the following improper integral
+%$$
+%\int_0^\infty \frac{\sin x}{x} \, dx
+%$$
+%by using the following trick.  Define
+%$$
+%f(t) = \int_0^\infty e^{-tx} \, \frac{\sin x}{x} \, dx
+%$$
+%But then
+%\begin{eqnarray*}
+%f'(t) &=& \frac{d}{dt} \int_0^\infty e^{-tx} \, \frac{\sin x}{x} \, dx \\
+% &=& \int_0^\infty \frac{d}{dt} e^{-tx} \, \frac{\sin x}{x} \, dx \\
+%&=& \int_0^\infty -x \cdot e^{-tx} \, \frac{\sin x}{x} \, dx \\
+%&=& \int_0^\infty -e^{-tx} \cdot \sin x \, dx \\
+%&=& \frac{1}{1+t^2}.
+%\end{eqnarray*}
+%So $f(t) = \arctan t + C$.  But $\lim_{t \to -\infty} f(t) = 0$, so
+%$f(0) = \pi/2$.
+
+\end{description}
+
+\pagebreak
+\null
+
+\end{document}

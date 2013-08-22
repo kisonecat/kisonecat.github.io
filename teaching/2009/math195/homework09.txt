@@ -1,0 +1,19 @@
+Homework and Quiz 9
+
+Due Wednesday, July 15, 2009
+
+Ungraded homework
+For practice, do Section 15.7, page 966, problems 5, 7, 9, 11, 13, 19, 29, 31, 33, 41, 43. Section 15.8, page 976, problems 3, 5, 7, 9, 11, 19, 21, 25, 41, 45. The very last problem (problem 45 in section 15.8) is a real classic: the AM–GM inequality that relates arithmetic means to geometric means.
+
+Graded Quiz
+(a) Find the local extrema of the function f : R2 → R given by f (x, y) = 2 x3 y + 24 x2 − 16 y.
+
+(b) Deﬁne D = {(x, y) ∈ R2 : x ∈ [0, 4] and y ∈ [0, 5]}. Find the global extrema of the function f : D → R given by f (x, y) = 4x + 6y − x2 + y 2 .
+
+(c) You work for a box company: to save costs, ﬁnd the dimensions of the box with minimal surface area that encloses 103 cubic inches.
+
+(d) Let C = {(x, y) ∈ R2 : x2 + y 2 = 1}. Find the local extrema of the function f : C → R given by f (x, y) = x2 + 2 y 2 .
+
+(e) Use Lagrange multipliers to ﬁnd the global extrema of the function f (x, y, z, w) = x + y + z + w subject to the constraint g(x, y, z, w) = x2 + y 2 + z 2 + w2 = 1.
+
+

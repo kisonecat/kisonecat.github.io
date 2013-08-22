@@ -1,0 +1,42 @@
+Lecture 9: Number theory
+Wednesday, October 6, 2010
+
+Math 345
+Jim Fowler
+
+Textbook
+This lecture discusses section 4 of the textbook.
+
+Homework
+The homework is due Monday, October 11, 2010. From Section 4 of the textbook, do exercises 1 and 2.
+
+number theory
+number theory: study the properties of whole numbers e.g., prime numbers
+
+easy-to-state questions remain open
+perfect numbers
+6=1+2+3 28 = 1 + 2 + 4 + 7 + 14 496 = 1 + 2 + 4 + 8 + 16 + 31 + 62 + 124 + 248 8128 is perfect, too. 47 such numbers are known today. inﬁnitely many perfect numbers? unknown. any odd perfect numbers? unknown. it is known that such a number must have more than 300 digits. Descartes writes in 1638 1 I think I am able to prove that there are no even numbers which are perfect apart from those of Euclid; and that there are no odd perfect numbers, unless they are composed of a single prime number, multiplied by a square whose root is composed of several other prime number. But I can see nothing which would prevent one from ﬁnding numbers of this sort.
+1
+
+http://www-history.mcs.st-andrews.ac.uk/HistTopics/Perfect_numbers.html
+
+1
+
+collatz conjecture
+unknown
+
+deﬁnitions for today
+x is even if there exists k ∈ Z so that x = 2k. x is odd if there exists k ∈ Z so that x = 2k + 1.
+
+example: odd plus odd is even
+what do we need to use? distributivity.
+
+properties you are allowed to use
+two operations (+ and ·) both associative, commutative, with identities. distributivity.
+
+can you prove that an integer is either even or odd?
+no? why not? a deeper reason: there are mathematical systems which satisfy all the properties we can use, but for which “even” and “odd” don’t make sense.
+
+2
+
+

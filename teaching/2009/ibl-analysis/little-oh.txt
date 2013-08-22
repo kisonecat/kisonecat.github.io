@@ -1,0 +1,63 @@
+Math 205
+
+1
+
+Overview
+
+There is no new mathematics in this handout, but there is a slightly diﬀerent perspective. We think of the linear approximation (not the value of the derivative) as the fundamental object.
+
+2
+
+Introduction
+
+Something that can make diﬀerentiation more beautiful is little o notation. Deﬁnition 2.0.1. We say “f is little-oh of h as x approaches x0 ” and write f (x) = o(h(x)) as x → x0 to mean that
+x→x0
+
+lim
+
+f (x) = 0. h(x)
+
+Intuitively, this means f (x) is much smaller than h(x) for x near x0 . Warning. If f (x) = o(h(x)), it is not the case that h(x) = o(f (x)). Example 2.0.1. For instance, • x2 = o(x) as x → 0. • x = o(x2 ) as x → 0. • x − sin x = o(x) as x → 0. • x − sin x = o(x2 ) as x → 0.
+
+c 2009 Jim Fowler
+
+1
+
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+Little o notation
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+• x − sin x = o(x2 ) as x → 0. • x − sin x = o(x3 ) as x → 0.
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+Deﬁnition 2.0.2. For two functions f, g : R → R, we say that f (x) ∼x0 g(x) provided f (x) − g(x) = o(x − x0 ) as x → x0 . Unwrapping the deﬁnitions, this just means that lim f (x) − g(x) =0 x − x0
+
+x→x0
+
+Intuitively, f (x) ∼x0 g(x) means f and g look “linearly” the same around x0 . More formally (or when trying to intimidate others), we might say that the “linear germ of f and g around x0 is the same.” Exercise 2.0.1. Prove that ∼x0 is an equivalence relation. Deﬁnition 2.0.3. A linear approximation for f (x) at x0 is a linear function L(x) = ax + b so that f (x) ∼x0 L(x). Exercise 2.0.2. If ax + b ∼x0 cx + d, then a = c and b = d. Exercise 2.0.3. Let f : (a, b) → R. If f has a linear approximation at c, then it is unique. Exercise 2.0.4. Let f : (a, b) → R. Then f is diﬀerentiable at c if and only if f has a linear approximation at c. Exercise 2.0.5. Let fi be functions, and Li be linear functions, so that f1 ∼x0 L1 and f2 ∼x0 L2 . Then, • f1 + f2 ∼x0 L1 + L2 . • f1 · f2 ∼x0 L1 · L2 .
+
+c 2009 Jim Fowler
+
+2
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Remark 1. The latter “explains” the product rule: f1 (x) ∼x0 f1 (x0 ) (x − x0 ) + f1 (x0 ) f2 (x) ∼x0 f2 (x0 ) (x − x0 ) + f2 (x0 ), and therefore, f1 (x) f2 (x) ∼x0 (f1 (x0 ) (x − x0 ) + f1 (x0 )) (f2 (x0 ) (x − x0 ) + f2 (x0 )) f1 (x) f2 (x) ∼x0 (f1 (x0 )f2 (x0 ) + f1 (x0 )f2 (x0 )) (x − x0 ) + f1 (x0 )f2 (x0 ). You might have noticed that the f1 (x0 )f2 (x0 )(x−x0 )2 term is missing—why are we justiﬁed in ignoring it?
+
+3
+
+Higher derivatives
+
+Deﬁnition 3.0.4. For two functions f, g : R → R, we say that f (x) ∼n0 g(x) x provided f (x) − g(x) = o ((x − x0 )n ) as x → x0 . Intuitively, this means that f and g are the “same” through degree n. Note that, as before, this is an equivalence relation. Deﬁnition 3.0.5. A quadratic approximation for f (x) at x0 is a quadratic function L(x) = ax2 + bx + c so that f (x) ∼2 0 L(x). x Remark 2. The quadratic approximation packages together both the ﬁrst and second derivative of f at x0 . Exercise 3.0.6. Let L1 and L2 be quadratic functions such that L1 ∼2 0 L2 . x Prove L1 = L2 . Exercise 3.0.7. Let f : (a, b) → R. If f has a quadratic approximation at c, then it is unique.
+
+c 2009 Jim Fowler
+
+3
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+

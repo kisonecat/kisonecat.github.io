@@ -1,0 +1,31 @@
+Homework 3
+Due Wednesday, October 8, 2008
+1. State whether the following sequences converge (and, if so, state the limit). (a) an = √ n.
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+1 (b) bn = 2−n + n .
+
+(c) cn = (d) dn =
+
+n+1 . n2 n + (−1)n . n
+
+(e) en = (−1)n · n3 . 1 (f ) fn = cos . n (g) gn = |10 − n| − n. (h) hn = 3n . 4n + 1
+
+(i) in = log (n + 1) − log n. (j) jn = √ n2 + n − n.‡ 3 converges, n
+n→∞
+
+2. Give an -K proof that the sequence an =
+n→∞ n→∞
+
+3. Prove that if lim an = L and lim bn = M , then lim an + bn = L + M . 4. Let an be a sequence of real numbers, and set bn = |an |. If bn converges, does an converge? If so, prove it; if not, provide a counterexample. 5. Let an and bn be sequences of real numbers; suppose lim an = 0. Is it the case that
+n→∞ n→∞
+
+lim an · bn = 0?
+c 2008 Jim Fowler
+
+If so, prove it; if not, provide a counterexample.
+‡
+
+This is rather tricky; if you don’t answer it, you will not be penalized.
+
+

@@ -1,0 +1,144 @@
+\documentclass[12pt]{pset}
+
+\course{Math 765}
+\author{Jim Fowler}
+\date{Winter 2011}
+
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\CP}{\mathbb{C}P}
+\newcommand{\RP}{\mathbb{R}P}
+
+\usepackage{enumerate}
+\usepackage{nopageno}
+\usepackage{hyperref}
+\usepackage{tikz}
+
+\DeclareMathOperator{\Vect}{Vect}
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\SO}{SO}
+\DeclareMathOperator{\codim}{codim}
+\DeclareMathOperator{\Mat}{Mat}
+\DeclareMathOperator{\SymMat}{SymMat}
+\DeclareMathOperator{\Id}{Id}
+\DeclareMathOperator{\Sym}{Sym}
+\newcommand{\Proj}{\mathbb{P}}
+
+\begin{document}
+\maketitle
+
+\noindent\textbf{Stokes' theorem.}  At the end of this week, we'll
+have Stokes' theorem, a beautiful generalization of the fundamental
+theorem of Calculus.  As usual, email me with questions at
+\texttt{fowler@math.osu.edu}.  \textit{The exercises below should be
+  handed in on Monday, February 14, 2011.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Lee 13--3]
+
+  Suppose $M$ and $N$ are oriented smooth manifolds and $F : M \to N$
+  is a local diffeomorphism.  If $M$ is connected, show that $F$ is
+  either orientation-preserving or orientation-reversing.
+
+\end{problem}
+\vfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Lee 14--21]
+
+  Suppose $M$ and $N$ are compact, connected, oriented smooth
+  manifolds and $F, G : M \to N$ are diffeomorphisms.  If $F$ and $G$
+  are homotopic, show that they are either both orientation-preserving
+  or both orientation-reversing.
+
+  \vspace{1ex}\noindent\textit{Hint:} Use Whitney
+  approximation theorem (page 252) and Stokes' theorem on $M
+  \times I$.
+
+\end{problem}
+\vfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Lee 13--6]
+
+  Show that $\RP^n$ is orientable iff $n$ is odd.
+
+\end{problem}
+\vfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Lee 14--5a]
+  
+  Suppose $\tilde{M}$ and $M$ are smooth $n$-manifolds, and $\pi :
+  \tilde{M} \to M$ is a smooth $k$-sheeted covering map.  If
+  $\tilde{M}$ and $M$ are oriented and $\pi$ is
+  orientation-preserving, show that $\int_{\tilde{M}} \pi^\star \omega
+  = k \int_M \omega$ for any compactly supported $n$-form $\omega$ on
+  $M$.
+
+%  \vspace{2ex}\noindent Does $\int_{\tilde{M}} \pi^\star \omega = k \int_M \omega$ hold for
+%  all compactly supported $k$-forms $\omega$ on $M$ when $k < n$?
+  
+\end{problem}
+\vfill
+\vfill
+
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Bicycle chains]
+
+% otherwise known as the Whitney–Graustein theorem
+% 
+
+  \begin{description}
+  \item[(a)] Let $i : S^1 \to \R^2$ be the standard embedding of the
+    circle in the plane, $i(\theta) = \left(\cos \theta, \sin
+      \theta\right)$, and let $j : S^1 \to \R^2$ be the figure eight
+    immersion $$j(\theta) = \left(\cos \theta, \sin (2\theta)\right).$$
+    Can you connect $j$ and $i$ by a smooth family of immersions?  In
+    other words, is there a smooth map $F : S^1 \times I \to \R^2$ so
+    that each $f_t : S^1 \to \R^2$ given by $f_t(\theta) =
+    F(\theta,t)$ is an immersion and $f_0 \equiv i$ and $f_1 \equiv
+    j$?
+
+  \item[(b)] Let $i : S^1 \to \R^2$ be the standard embedding of the
+    circle in the plane, and let $j : S^1 \to \R^2$ be the immersion
+    \begin{center}
+      \begin{tikzpicture}
+        \draw[line width=2pt]
+        (0,0) .. controls ++(-1,0) and ++(0,0) ..
+        (-1,1) .. controls ++(0,1) and ++(0,0) .. 
+        (0,2) .. controls ++(1,0) and ++(0,1) .. 
+        (1,0) .. controls ++(0,-2) and ++(-2,0) ..
+        (3,-3) .. controls ++(2,0) and ++(0,0) .. 
+        (5,0) .. controls ++(0,1) and ++(1,0) .. 
+        (3,2) .. controls ++(-1,0) and ++(0,0) .. 
+        (2,0) .. controls ++(0,-1) and ++(-1,0) .. 
+        (3,-2) .. controls ++(1,0) and ++(1,0) .. 
+        (3,0) .. controls ++(0,0) and ++(0,0) .. 
+        (0,0);
+      \end{tikzpicture}
+    \end{center}
+  Can you connect $j$ and $i$ by a smooth family of immersions?
+  \end{description}
+
+
+\end{problem}
+
+\vfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Lee 14--6]
+
+If $M$ is a compact, smooth, oriented manifold with boundary, show
+that there does not exist a smooth retraction of $M$ onto its boundary.  
+
+\vspace{1ex}\noindent\textit{Hint:} Consider an orientation form on
+$\partial M$.
+
+\end{problem}
+
+\vfill
+\vfill
+
+\end{document}

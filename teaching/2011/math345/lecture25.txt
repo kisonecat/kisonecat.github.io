@@ -1,0 +1,15 @@
+Lecture 25: Intersections, unions, subsets
+Thursday, November 4, 2010
+
+Math 345
+Jim Fowler
+
+Textbook
+This lecture discusses section 10 of the textbook.
+
+Homework
+The homework is due Monday, November 15, 2010. From Section 10 of the textbook, do exercises 9, 10, and 11.
+
+1
+
+

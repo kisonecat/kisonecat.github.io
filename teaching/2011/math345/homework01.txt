@@ -1,0 +1,24 @@
+Problem Set 1
+Due Monday, September 27, 2010
+
+Math 345
+Jim Fowler
+
+On page 5 of the textbook do Exercise 1.
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+On page 7 of the textbook do Exercise 2. On page 8 of the textbook do Exercise 5.
+
+Feel free to do additional problems
+The listed homework is a lower bound on the number of problems you should be doing: doing more homework is a great idea! It is also a good idea to do more than just the problems from the book: try your hand at inventing your own problems! Try to push the limits of the techniques we learn. See what you can do with the mathematical machinery.
+
+Textbook
+Be sure to use The Fundamentals of Higher Mathematics by Neil Falkner, Autumn 2010 edition; other editions will number the problems diﬀerently.
+
+c 2010 Jim Fowler
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+From Section 2 of the textbook
+
+

@@ -1,0 +1,32 @@
+Problem Set 4
+Winter 2011
+
+Math 765
+Jim Fowler
+
+Submanifolds. This week, we study submanifolds, embedded or immersed. I have heard many complaints about the diﬃculty of the problem sets, so I hope you ﬁnd this problem set more concrete and tractable—let me know at fowler@math.osu.edu. The exercises below should be handed in on Monday, January 31, 2011.
+
+Problem 4.1
+Let Matn,n (R) denote n × n matrices with real entries. Show that SO(n) is a smooth submanifold of Matn,n (R) in the following way. Show that the map f : Matn,n (R) → SymMatn,n (R) given by f (A) = AT A has the identity matrix as a regular value. The matrix AT is the transpose of A, and SymMatn,n (R) are symmetric n × n matrices.
+
+Problem 4.2 (Gimbal lock is possible)
+For a nonzero vector v ∈ R3 , let R(v, θ) denote counterclockwise rotation around the axis v. Deﬁne a map f : S 1 × S 1 × S 1 → SO(3) by sending (θ1 , θ2 , θ3 ) ∈ (S 1 )3 to the rotation R(x, θ1 ) ◦ R(y, θ2 ) ◦ R(x, θ3 ) ∈ SO(3). Here, x and y denote the unit vectors (1, 0, 0) and (0, 1, 0), respectively. Show that f is not a submersion. When you are controlling a system, you may have only inﬁnitesimal control over the inputs—and if the function is not a submersion, you then do not have complete (albeit, inﬁnitesimal!) control over the outputs. This problem was experienced by the astronauts of Apollo 11. For bonus points, avoid gimbal lock by adding a fourth gimbal (i.e., describe a map (S 1 )4 → SO(3) which sends the four angles to a product of rotations, and show that your map is a submersion).
+
+Problem 4.3 (Lee 10–5)
+Suppose M is a smooth, compact manifold that admits a nowhere vanishing vector ﬁeld. Show that there exists a smooth map F : M → M that is homotopic to the identity and has no ﬁxed points. [Hint: use the tubular neighborhood theorem.]
+
+Problem 4.4 (Lee 10–3)
+If M ⊂ Rm is an embedded submanifold and ϵ > 0, let Mϵ be the set of points in Rm whose distance from M is less than ϵ. If M is compact, show that for suﬃciently small ϵ, the topological boundary ∂Mϵ is a compact embedded submanifold of Rm , and Mϵ is a smooth manifold with boundary.
+
+Problem 4.5 (Square roots)
+Let Mat2,2 (R) be the four-dimensional vector space of 2×2 matrices; let f : Mat2,2 (R) → Mat2,2 (R) be the function f (A) = A · A. (a) Compute Df −1 (Id). (b) Use part (a) to approximate √[ ] 0.9 0.1 0.1 1.1
+
+(c) When is Df invertible? This will tell us when perturbations of matrices having square roots also have square roots.
+
+Problem 4.6 (Characteristic polynomials)
+Let Matn,n (R) be the n2 -dimensional vector space of n×n matrices; let Pn be the (n+ 1)-dimensional vector space of degree n polynomials in a variable λ. The characteristic polynomial of a matrix A is det(A − λI); let f : Matn,n (R) → Pn be the function sending a matrix to its characteristic polynomial. Is it the case for some polynomials p ∈ Pn that f −1 (p) is a submanifold of Matn,n (R)?
+
+Problem 4.7 (Polynomials with speciﬁed roots)
+Let Pn be the vector space of degree n polynomials in a variable λ. Deﬁne a function f : Rn → Pn given by f (x1 , . . . , xn ) = (λ − x1 ) · · · (λ − xn ) and deﬁne a function g : Pn − {0} → RP n which sends a nonzero polynomial an λn + · · · + a0 to the point [an : · · · : a0 ] ∈ RP n . Consider g ◦ f : Rn → RP n . Show that, for (x1 , . . . , xn ) with xi pairwise distinct, there is an open neighborhood U ∋ (xi ) on which g ◦ f is a diﬀeomorphism.
+
+

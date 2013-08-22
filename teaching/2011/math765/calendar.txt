@@ -1,0 +1,33 @@
+Calendar
+Winter 2011 Week 1
+Monday, January 3, 2011 Wednesday, January 5, 2011 Friday, January 7, 2011 Lecture 1 What is a manifold? Lecture 2 What is a smooth function? Lecture 3 Tangent vectors Lecture 4 The tangent bundle Lecture 5 Vector bundles Lecture 6 The cotangent bundle Lecture 7 Submersions and immersions Lecture 8 Inverse function theorem Lecture 9 Embedded submanifolds Lecture 10 Immersed submanifolds Lecture 11 Whitney embedding theorem Lecture 12 Tensors Lecture 13 Exterior derivative Lecture 14 Orientations
+
+Math 765
+Jim Fowler Week 6
+Monday, February 7, 2011 Wednesday, February 9, 2011 Friday, February 11, 2011 Lecture 15 Orientations Lecture 16 Integration Lecture 17 Stokes’ theorem Lecture 18 Integral curves Lecture 19 Lie derivatives Lecture 20 Applications Lecture 21 Foliations Lecture 22 Frobenius theorem Lecture 23 Poincaré-Hopf index theorem Lecture 24 Partial diﬀerential relations Lecture 25 Smale-Hirsch theorem Lecture 26 h-principle Lecture 27 The Maurer-Cartan form Lecture 28 Curvature via frames
+
+Week 2
+Monday, January 10, 2011 Wednesday, January 12, 2011 Friday, January 14, 2011
+
+Week 7
+Monday, February 14, 2011 Wednesday, February 16, 2011 Friday, February 18, 2011
+
+Week 3
+Wednesday, January 19, 2011 Friday, January 21, 2011
+
+Week 8
+Monday, February 21, 2011 Wednesday, February 23, 2011 Friday, February 25, 2011
+
+Week 4
+Monday, January 24, 2011 Wednesday, January 26, 2011 Friday, January 28, 2011
+
+Week 9
+Monday, February 28, 2011 Wednesday, March 2, 2011 Friday, March 4, 2011
+
+Week 5
+Monday, January 31, 2011 Wednesday, February 2, 2011 Friday, February 4, 2011
+
+Week 10
+Monday, March 7, 2011 Wednesday, March 9, 2011
+
+

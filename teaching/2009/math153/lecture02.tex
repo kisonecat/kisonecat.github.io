@@ -1,0 +1,122 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+\usepackage{amssymb}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+
+\newtheorem*{example}{Example}
+\newtheorem*{thm}{Theorem}
+
+\title{Lecture 2: Sequences}
+\author{Math 153 Section 57}
+\date{Wednesday October  1, 2008}
+
+\begin{document}
+\maketitle
+
+We will be following chapter 11.2.
+
+Here we introduce sequences (some ``nouns''), define some properties
+(bounded above, bounded below, increasing, decreasing, non-decreasing,
+non-increasing; the ``adjectives''), and prove that some sequences
+satisfy some of the properties.
+
+Remember: $\N$ is for the natural numbers, and $\R$ is for the real numbers.
+
+\section{Sequences}
+
+Intuitive definition: a list of numbers that goes on forever.
+
+Precise definition: a function $a : \N \to \R$, but instead of writing $a(n)$, we normally write it with subscripts, like $a_1, a_2, \ldots$.
+
+Some terminology: the numbers in the sequence are ``terms,'' e.g., the first term, second term, third term.
+
+\subsection{Building sequences}
+
+Define a sequence by giving a formula for the $n$-th term.
+
+Examples of sequences: $a_n = n$.  $b_n = 2n$.  $c_n = 2^n$.  $d_n = (-1)^n$.
+
+Modify sequences: $f_n = 17 \cdot a_n$.
+
+Combine sequences: $g_n = b_n + c_n$, or $h_n = c_n \cdot d_n$.  Then $g_n = n + 2n$, and $h_n = (-2)^n$.
+
+\subsection{Why do we care?}
+
+Mathematically: A fun object to play with, sort of like numbers (we
+can add, subtract, multiply, divide).
+
+Practically: sequences come up all the time: $a_n$ might be how much
+money I have on the $n$ day of trading stocks (decreasing), the number
+of rabbits in a field after $n$ generations (unbounded, increasing),
+etc.
+
+\subsection{Boundedness}
+
+A sequence $a_n$ is \textbf{bounded above} if there is a number $b$
+such that $b \geq a_n$ for all $n \in \N$.
+
+A sequence $a_n$ is \textbf{bounded below} if there is a number $b$
+such that $b \leq a_n$ for all $n \in \N$.
+
+A sequence is \textbf{bounded} if it is bounded above, and bounded
+below.
+
+Examples: $a_n = 17$.  $a_n = 2^n$.  $a_n = -n$.  $a_n = (-1)^n$.
+$a_n = (-1)^n \cdot n$.
+
+\subsection{Monotonicity}
+
+Increasing?  Decreasing?  Nonincreasing?  Nondecreasing?
+
+Increasing means for all $n \in \N$ that $a_n < a_{n+1}$.
+
+Decreasing means for all $n \in \N$ that $a_n > a_{n+1}$.
+
+Non-increasing means for all $n \in \N$ that $a_n \geq a_{n+1}$.
+
+Non-decreasing means for all $n \in \N$ that $a_n \leq a_{n+1}$.
+
+Examples of increasing sequences: $a_n = 2n$, $a_n = n^2$.
+
+Proofs.
+
+Example of a decreasing sequence: $a_n = 1/n$.
+
+Example of a decreasing sequence: $a_n = 1/n^2$.
+
+Proofs.
+
+Examples of non-increasing sequences: $a_n = 17$.
+
+Examples of non-decreasing sequences:
+$$
+a_n = \begin{cases}
+(n+1)/2 & \mbox{if $n$ is odd,} \\
+n/2 & \mbox{if $n$ is even,}
+\end{cases}
+$$
+
+Another example: $a_n = (-1)^n + n$.
+
+\subsection{Some remarks}
+
+To prove something is increasing, you must check infinitely many things.
+
+To prove something is not increasing, you need a single counterexample.
+
+``Not increasing is not the same thing as non-increasing.''
+
+\subsection{Some basic theorems.}
+
+The sum of two bounded sequences is bounded.
+
+The sum of two unbounded sequences is unbounded?
+
+\end{document}

@@ -1,0 +1,59 @@
+Jim Fowler. . . and You!
+We should carry with ourselves many examples of metric spaces. So far, we have subsets of R and the discrete metric space.
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+1
+
+One quick example
+dS 1 (x, y) = min {x − y, 2π − (x − y)}
+
+Proposition 1.1. Let S 1 = [0, 2π), with the metric
+
+Then (S 1 , dS 1 ) is a metric space. Remark 1.1.1. Thinking geometrically, S 1 is just the unit circle; the distance between points x and y is the length of the shortest arc joining x and y.
+
+2
+
+Building new spaces from old
+• the product of two metric spaces, • subsets of metric spaces, • rescaling the metric • the union of two metric spaces
+
+There are a few techniques we will introduce here:
+
+Deﬁnition 2.0.1. Let (X, dX ) and (Y, dY ) be metric spaces. The product of X and Y (written X × Y ) is the set of pairs {(x, y) : x ∈ X, y ∈ Y } with the metric dX×Y ((x1 , y1 ), (x2 , y2 )) = max {dX (x1 , x2 ), dY (y1 , y2 )} Proposition 2.1. The space (X × Y, dX×Y ) is a metric space. 1
+
+c 2009 Jim Fowler
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Examples of Metric Spaces
+
+Example 2.1.1. We normally write R × R as R2 . Note that dR×R as deﬁned above is not the usual Euclidean metric. Exercise 2.1.1. What “shape” does a ball of radius R have in the metric space (R×R, dR×R )? Remark 2.1.1. Recall that any subset of a metric space is still a metric space. Proposition 2.2. Let (X, d) be a metric space, and pick > 0. Then (X, · d) is again a metric space (where · d means the metric multipled by ). Proposition 2.4. The metric spaces (S 1 , dS 1 ) and (S 1 , 2dS 1 ) are not isometric, but they are homeomorphic. Deﬁnition 2.4.1. Suppose (X1 , d1 ) and (X2 , d2 ) are metric spaces. The disjoint union X1 X2 is the metric space having points X1 X2 , and metric dX1 dX1 dX1 dX1
+X2 (x1 , y1 )
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Proposition 2.3. The metric spaces (R, d) and (R, 1000d) are isometric.
+
+= d1 (x1 , y1 ) if x1 , y1 ∈ X1 , X2 (x2 , y2 ) = d2 (x2 , y2 ) if x2 , y2 ∈ X2 , X2 (x1 , y2 ) = 1 if x1 ∈ X1 and y2 ∈ X2 , X2 (x2 , y1 ) = 1 if x2 ∈ X2 and y1 ∈ X1 .
+
+We can take the disjoint union of an indexed family of metric spaces: say (Xi , di ) are metric spaces for i ∈ I. Then (Xi , di )
+i∈I
+
+can be deﬁned as the above. Example 2.4.1. Let ({ }, d) be the metric space consisting of a single point. Then ({ }, d)
+i∈I
+
+is the set I with the discrete metric. Deﬁnition 2.4.2. Let (X, d) be a metric space, and suppose ∼ is an equivalence relation on the points of X, such that x ∼ x and y ∼ y ⇒ d(x, y) = d(x , y ). In other words, the equivalence relation is compatible with the metric. Then the quotient space (X/ ∼, d) consists of equivalence classes of points of X, and metric d([x], [y]) = d(x, y), where [x] is the equivalence class containing x. Deﬁnition 2.4.3. Suppose (X1 , d1 ) and (X2 , d2 ) are metric spaces, and fi : (Y, d) → (Xi , d) is an isometry. Then the union of X1 and X2 along Y , written X1 ∪Y X2 is X1 X2 / ∼ where x1 ∼ x2 if there exists y ∈ Y with fi (y) = xi . This deﬁnition makes precise the notion of gluing together two metric spaces. 2
+
+c 2009 Jim Fowler
+
+3
+
+The 2-adic numbers
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Deﬁnition 3.0.4. For p/q ∈ Q, ﬁnd integers a, b, n so that p a = 2n q b so that neither a nor b are divisible by two. Then the 2-adic valuation of p/q, written |p/q|2 is deﬁned to be 2−n . By convention, |0|2 = 0. We think of the 2-adic valuation as measuring how many twos there are in p/q. Numbers containing a lot of twos (like 16) are small. Deﬁnition 3.0.5. For x, y ∈ Q, deﬁne the 2-adic distance between them to be d2 (x, y) = |x − y|2 Deﬁnition 3.0.6. The 2-adics (Q2 , d2 ) are the completion of Q with respect to the 2-adic metric d2 . By construction, Q2 is a complete metric space. Exercise 3.0.1. Find an element of Q2 which is not in Q. Exercise 3.0.2. Is Q2 connected? Remark 3.0.1. There is nothing special about 2—we can similarly deﬁne Qp for any prime p.
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+3
+
+c 2009 Jim Fowler
+
+

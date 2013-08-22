@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{nopageno}
+
+\title{Properties of Limits}
+\author{Math 195}
+\date{July 7, 2009}
+
+\begin{document}
+\maketitle
+
+What are some rules that we can apply to limits?
+
+\section{Chiastic rules}
+
+\subsection{The limit of a sum is the sum of the limits.}
+
+$$
+\lim_{x \to a} \left( f(x) + g(x) \right) = 
+\left( \lim_{x \to a} f(x)  \right)
++ \left( \lim_{x \to a} g(x) \right)
+$$
+
+\subsection{The limit of a product is the product of the limits.}
+
+$$
+\lim_{x \to a} \left( f(x) \cdot g(x) \right) = 
+\left( \lim_{x \to a} f(x)  \right)
+\cdot \left( \lim_{x \to a} g(x) \right)
+$$
+
+\section{Composition of functions}
+
+If $f$ is a continuous function, then
+$$
+\lim_{x \to a} f(g(x)) = 
+f \left( \lim_{x \to a} g(x)\right).
+$$
+
+\section{Squeeze theorem}
+
+\end{document}

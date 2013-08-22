@@ -1,0 +1,102 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+\newtheorem*{example}{Example}
+\newtheorem*{thm}{Theorem}
+
+\title{Lecture 7: More indeterminate forms}
+\author{Math 153 Section 57}
+\date{Monday October 13, 2008}
+
+\begin{document}
+\maketitle
+
+Following chapter 11.6.
+
+\section{Trig formulas}
+
+Introduce $e^{i\theta} = \cos \theta + i \sin \theta$.  Derive
+all the rules for sine and cosine.
+
+With the correct perspective, you need to remember nothing, and derive
+everything.  Practically, in your future lives, you probably wouldn't
+remember tables of sines and cosines and derivatives and blah, but if
+you learn the ideas, then you won't have.
+
+\section{Trig functions and l'H\^opital's rule}
+
+We want to calculate $\lim_{x \to 0} \frac{\sin x}{x}$.  Let's use
+l'H\^opital's rule.
+
+Now we need to know the derivative of sine.  So by definition,
+$$
+\lim_{h \to 0} \frac{\sin (x+h) - \sin x}{h} =
+\lim_{h \to 0} \frac{\sin (h)}{h}
+$$
+I guess now we use l'H\^opital's rule again? Uhm...
+
+\section{What does converge to $\infty$ mean?}
+
+We say $f(x) \to \infty$ as $x \to a$ if for all $N$, there is $\delta$, so that if $0 < |x-a| < \delta$, then $f(x) > N$.
+
+As big as we want $f$ to be, there's a $\delta$ so that if we're $\delta$ close to $a$, then $f(x)$ is that big.
+
+\section{Tips about L'H\^opital's rule}
+
+Only apply it to $0/0$ or $\infty/\infty$.  If you can't do the limit,
+and it isn't in that form, transform it into that form.
+
+Do not apply it to $0/1$ or $1/0$ or $0 / \infty$ or $\infty / 0$.
+
+Sometimes you need to do it more than once: e.g., $\sin^2 x /x^2$ (though here you could use the product formula).
+
+\section{L'H\^opital's rule backwards}
+
+$f(x) = x + \sin x$ and $g(x) = x$.  Then $f(x)/g(x) \to 1$ as $x \to
+\infty$, but $f'(x)/g'(x)$ does not converge.
+
+\section{Review L'H\^opital's rule}
+
+If $f(x) \to \pm \infty$ and $g(x) \to \pm \infty$, and $g'(x) \neq 0$
+for all $x$ near $a$, then if $f'(x) / g'(x) \to L$, then $f(x)/g(x) \to
+L$.
+
+Intuition: limits of fractions measure how fast one is growing
+compared to the other.
+
+Examples: $\log x/x^n \to 0$ as $x \to \infty$.  Think: logrithms grow
+very slowly.
+
+Example: $e^x / x^n \to \infty$.  Apply L'H\^opital many times.
+
+\section{$\infty - \infty$}
+
+Example: $x - \log x = x(1 - \log x /x)$.
+
+\section{$0^0$}
+
+Show $\lim_{x \to 0^{+}} x^x = 1$.  Take logs to do $\lim_{x \to 0^{+}} x \log x = \lim \log x / (1/x) = \lim (1/x)/(-1/x^2) = \lim -x = 0$.
+
+\section{Proof}
+
+Apply mean-value theorem to
+$$
+H(x) = (g(b) - g(a)) ( f(x) - f(a) ) - (g(x) - g(a)) ( f(b) - f(a) )
+$$
+on the interval $(a,b)$.  Get a point where $H'(r) = 0$, which means
+$$
+f'(r)/g'(r) = (f(b) - f(a)) / (g(b) - g(a))
+$$
+
+Suppose $f(a) = 0$ and $g(a) = 0$.  Then on the interval $(a, a+\epsilon)$ we have some number $r \in (a,a+\epsilon)$ so that
+$$
+\frac{f(x)}{g(x)} = \frac{f(x) - f(a)}{g(x) - g(a)} = \frac{f'(r)}{g'(r)}
+$$
+
+\section{The $0^0$ controversy}
+
+What does $0^0$ mean?  Well, what does $0/0$ mean...
+
+\end{document}

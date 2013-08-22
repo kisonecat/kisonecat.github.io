@@ -1,0 +1,518 @@
+\documentclass[14pt]{beamer}
+
+\setbeamertemplate{navigation symbols}{}
+
+\usepackage{pgf}
+\usepackage{amsmath}
+\usepackage{amsthm}
+%\newtheorem*{problem}{Problem}
+\usepackage{amssymb}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+
+\usepackage{stmaryrd}
+\newcommand{\boundary}{\partial}
+\newcommand{\collapses}{\searrow}
+\newcommand{\expands}{\nearrow}
+\newcommand{\she}{\ssearrow\nnearrow}
+\newcommand{\join}{\ast}
+\newcommand{\subdivided}{\triangleleft}
+\newcommand{\fullsubcomplex}{\Subset}
+
+\DeclareMathOperator{\st}{st}
+\DeclareMathOperator{\vertices}{vert}
+\DeclareMathOperator{\lk}{lk}
+\DeclareMathOperator{\cl}{cl}
+\DeclareMathOperator{\interior}{int}
+
+\title{Topology of  \\ Piecewise-Linear Manifolds}
+\author{Jim Fowler}
+\date{Lecture 6 \\ Summer 2010}
+
+\newcommand{\setbackgroundpicture}[1]{%
+\usebackgroundtemplate{
+\begin{pgfpicture}{0in}{0in}{\paperwidth}{\paperheight}
+\pgfputat{\pgfxy(0,0)}{\includegraphics[width=\paperwidth]{#1}}
+\color{white}
+\pgfsetfillopacity{0.8}
+\pgfrect[fill]{\pgfxy(0,0)}{\pgfpoint{\paperwidth}{\paperheight}}
+\end{pgfpicture}
+}
+}
+\newcommand{\clearbackgroundpicture}{\usebackgroundtemplate{}}
+
+\begin{document}
+
+\begin{frame}
+\maketitle
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setbackgroundpicture{A20_Ouest_km143.jpg}
+\begin{frame}
+\frametitle{Where are we now?}
+
+\begin{pgfpicture}{0in}{0in}{\textwidth}{\textheight}
+\pgfsetxvec{\pgfpoint{\textwidth}{0cm}}
+\pgfsetyvec{\pgfpoint{0cm}{\textheight}}
+
+\only<2->{\pgfputat{\pgfxy(0.25,0.80)}{\pgfbox[center,bottom]{\scalebox{1}{\Huge\textcolor{green!50!black}{Objects}}}}}
+
+\only<2->{\pgfputat{\pgfxy(0.25,0.6)}{\pgfbox[center,bottom]{\scalebox{1}{\large\textcolor{green!50!black}{\parbox{0.5\textwidth}{\begin{center}\uncover<3->{polyhedra} \\ \uncover<4->{simplicial complexes}\end{center}}}}}}}
+
+\only<5->{\pgfputat{\pgfxy(0.75,0.80)}{\pgfbox[center,bottom]{\scalebox{1}{\Huge\textcolor{red!50!black}{Maps}}}}}
+
+\only<5->{\pgfputat{\pgfxy(0.75,0.6)}{\pgfbox[center,bottom]{\scalebox{1}{\large\textcolor{red!50!black}{\parbox{0.5\textwidth}{\begin{center}\uncover<6->{PL maps} \\ \uncover<7->{simplicial maps}\end{center}}}}}}}
+
+\only<8->{\pgfputat{\pgfxy(0.5,0.35)}{\pgfbox[center,bottom]{\scalebox{1}{\Huge\textcolor{blue!50!black}{Invariants}}}}}
+
+\only<9->{\pgfputat{\pgfxy(0.25,0.25)}{\pgfbox[center,bottom]{\scalebox{1}{\Large\textcolor{blue!50!black}{$\chi$}}}}}
+
+\only<10->{\pgfputat{\pgfxy(0.5,0.25)}{\pgfbox[center,bottom]{\scalebox{1}{\Large\textcolor{blue!50!black}{$b_0$}}}}}
+
+\only<11->{\pgfputat{\pgfxy(0.75,0.25)}{\pgfbox[center,bottom]{\scalebox{1}{\Large\textcolor{blue!50!black}{$w_1$}}}}}
+
+\end{pgfpicture}
+\end{frame}
+\clearbackgroundpicture
+
+\begin{frame}
+  \frametitle{Piecewise linear map}
+  Let $P, Q$ be polyhedra. \\
+  $f : P \to Q$ is a PL map \\
+  if each point $p \in P$ \\
+  has a closed star $N = p \join L$ \\
+  so that $f(\lambda p + (1-\lambda) x) = \lambda f(p) + (1 - \lambda)
+  f(x)$ \\
+  for $x \in L$ and $\lambda \in [0,1]$.
+
+  \vfill
+
+  It locally maps conical rays to conical rays.
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Convexity}
+  
+  \begin{definition}
+    A subset $C \in \R^n$ is \textbf{convex} \\
+    if for any $p,q \in C$,\\
+    the segment $\{p\} \join \{q\}$\\
+    is contained in $C$.
+  \end{definition}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Cells}
+
+ A compact convex subset $C \in \R^n$ \\
+  is a $k$-dimensional \textbf{cell} \\
+  if it spans a $k$-dimensional subspace.
+
+  \vfill\pause
+
+  For $x \in C$, define $\langle x, C \rangle$ to be \\
+  the union of $\{x\}$ and \\
+  all lines $L$ such that $L \cap C$ contains $x$ in its
+  interior.
+
+  \vfill\pause
+
+  The subset $C_x = C \cap \langle x, C \rangle$ is \\
+  the \textbf{face} of $C$ containing $x$.
+
+  \vfill\pause
+
+  Write $D < C$ if $D$ is a face  of $C$.
+
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Cell complex}
+
+ A \textbf{cell complex} is \\
+  a finite collection $K$ of cells such that
+  \begin{itemize}
+  \item If $C \in K$, and $D < C$, then $D \in K$.
+  \item If $C, D \in K$, then $C \cap D$ is a face of $C$ and $D$.
+  \end{itemize}
+
+  \vfill\pause
+  The \textbf{underlying polyhedron}, $|K|$ is \\
+  the union of all cells in $K$.
+
+  \vfill\pause
+
+  A \textbf{cellular map} $f : K \to L$ is \\
+  a PL map $|f| : |K| \to |L|$ \\
+  which is linear on cells of $K$, \\
+  and sends cells to cells.
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Subdivision}
+
+ A cell complex $L$ is a \textbf{subdivision} of $K$ \\
+  if $|L| = |K|$ \\
+  and each cell of $L$ is contained in a cell $K$. \\
+
+  \vfill\pause
+  Write $L \subdivided K$ if $L$ is a subdivision of $K$.
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Simplicial complexes, not abstract}
+
+ A cell complex is a \textbf{simplicial complex} \\
+  if each $C \in K$ is a \textbf{simplex} \\
+  \quad (i.e., an $n$-cell which is the\\
+  \quad\quad join of $n+1$ independent points).  \\
+  \vfill
+  A \textbf{triangulation} of a polyhedron $P$\\
+  is a simplicial complex $K$ \\
+  with a PL homeomorphism $f : |K| \to P$.
+
+\end{frame}
+
+
+\begin{frame}
+\vfill
+\begin{center}
+ From now on, \\
+ {\Huge complex} \\
+ means \\
+ \textbf{simplicial complex,} \\
+ \textit{(not abstract)}
+\end{center}
+\vfill
+\end{frame}
+
+
+\setbackgroundpicture{collapsedbarn.jpg}
+\begin{frame}
+  \vfill
+  \begin{center}
+    \Huge Simplicial \\
+    Collapse
+  \end{center}
+  \vfill
+\end{frame}
+\clearbackgroundpicture
+
+\begin{frame}
+  \frametitle{Principal Simplexes}
+
+  \begin{definition}
+  Let $K$ be a complex, and \\
+  $\sigma \in K$ a simplex.  \\
+  Call $\sigma$ a \textbf{principal simplex} \\
+  if the only simplex containing $\sigma$ \\
+  is $\sigma$ itself \\
+  \quad (i.e., it isn't contained in a larger simplex).
+  \end{definition} 
+
+  \pause
+  \begin{problem}
+  Does every complex have a principal simplex?
+  \end{problem}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Free faces}
+
+  \begin{definition}
+  Let $K$ be a complex, \\
+  and $\sigma \in K$ a simplex, \\
+  and $\tau < \sigma$ a face. \\
+  \vspace{1ex}Call $\tau$ a \textbf{free face} of $\sigma$ \\
+  if the only simplexes containing $\tau$ \\
+  are $\tau$ and $\sigma$.
+  \end{definition}
+
+  \pause
+  \begin{problem}
+    \begin{tabular}{@{}l@{ }c@{ }l}
+      Does & every & complex have a simplex with a free face? \\\pause
+      Does & any & complex have a simplex with a free face? \\
+   \end{tabular}
+ \end{problem}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Elementary simplicial collapse}
+
+\begin{definition}
+  Let $L$ and $K = L \cup \cl \{ \sigma, \tau \}$ be complexes \\
+
+  \vspace{1ex}If $\sigma$ is a principal simplex of $K$, and \\
+  $\tau$ is a free face of $\sigma$, then \\
+  $L$ is an \textbf{elementary simplicial collapse} of $K$.
+\end{definition}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Simplicial collapse}
+
+\begin{definition}
+  Let $K_1, K_2, \ldots, K_n$ be complexes, with \\
+  $K_{i+1}$ an elementary simplicial collapse of $K_i$.
+
+  \vspace{1ex}Call $K_n$ a \textbf{simplicial collapse} of $K_1$, and \\
+  write $K_1 \collapses K_n$.
+
+  \vspace{1ex}Call $K_1$ a \textbf{simplicial expansion} of $K_n$, and \\
+  write $K_n \expands K_1$.
+\end{definition}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Simple homotopy equivalence}
+
+  \begin{definition}
+    $K$ is \textbf{simple homotopy equivalent} to $L$
+    \quad (sometimes abbreviated s.h.e.) \\
+    if you can reach transform $K$ into $L$ \\
+    via a sequence of
+    \begin{itemize}
+    \item PL homeomorphisms,
+    \item simplicial collapses,
+    \item simplicial expansions.
+    \end{itemize}
+    In this case, we write $K \she L$.
+  \end{definition}
+
+\end{frame}
+
+% \setbackgroundpicture{Grafton.jpg}
+% \begin{frame}
+% \frametitle{Collars}
+
+%   $P \subset Q$ polyhedra.
+
+%   A \textbf{collar} on $P$ in $Q$ \\
+%   is an embedding $c : P \times I \to Q$ \\
+%   throwing $P \times \{ 0 \}$ onto $P$, \\
+%   so that $c(P \times [0,1))$ is an open neighborhood of $P$.
+  
+% \end{frame}
+% \clearbackgroundpicture
+
+\begin{frame}
+  \frametitle{Full subcomplex}
+  
+    $L \subset K$ are complexes.
+
+    \vfill
+    Define $f_L : K \to [0,1]$ on vertices by
+    $$
+    f_L(v) = \begin{cases}
+      0 & \mbox{ if $v \in L$ } \\
+      1 & \mbox{ if $v \not\in L$ } 
+    \end{cases}
+    $$
+    and extending linearly to simplexes. 
+
+    \vfill
+    If $L = {f_L}^{-1}(0)$ \\
+    we say $L$ is a \textbf{full subcomplex} of $K$, \\
+    and write $L \fullsubcomplex K$.
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Derived subdivision}
+
+  $L \subset K$ are complexes.
+
+  \vfill
+
+  Choose $a_i \in \interior A_i$ for each $A_i \in K$ with $A_i
+  \not\in L$.
+
+  \vfill
+  
+  $K' \subdivided K$ is ``K derived away from $L$'' \\
+  is defined inductively over skeleta by
+  $$
+  {A_i}'  = \begin{cases}
+    \{ a_i \} \join \partial {A_i}' & \mbox{ if $A_i \not\in L$, } \\
+    A_i & \mbox{ if $A_i \in L$.}
+    \end{cases}
+  $$
+
+
+\end{frame}
+
+\begin{frame}
+  $L \subset K$ are complexes.
+
+  \vfill
+
+  Define the simplicial neighborhood of $L$ in $K$ as
+  $$N(L,K) = \{ A \in K : A < B, B \cap |L| \neq \varnothing \}.$$
+
+  \vfill
+
+  The \textbf{simplicial complement} of $L$ in $K$ is
+  $$
+C(L,K) = \{ A \in K : A \cap |L| = \varnothing \}.
+  $$
+
+  \vfill\pause
+  $K = N(L,K) \cup C(L,K)$
+  
+  \vfill\pause
+  $\partial N(L,K) := N(L,K) \cap C(L,K)$
+\end{frame}
+
+\begin{frame}
+  A derived of $K$ \textit{near} $L$ \\
+  is obtained by \\
+  deriving $K$ away from $L \cup C(L,K)$, \\
+  i.e., deriving simplexes meeting $|L|$ but not in $L$.
+
+  \vfill\pause
+  $L \fullsubcomplex K'$ if $K'$ is $K$ derived near $L$.
+
+\end{frame}
+
+\begin{frame}
+  \vfill
+  \begin{center}
+    \scalebox{9}{Why?}
+  \end{center}
+  \vfill
+\end{frame}
+
+\begin{frame}
+  If $K'$ is $K$ derived near $L$, \\
+  $N(L,K')$ is a \\
+  \textbf{derived neighborhood} of $L$ in $K$.
+
+  \vfill
+  \begin{theorem}
+    If $K_1$ and $K_2$ are deriveds of $K$ near $L$, \\
+    then $s : K_1 \to K_2$ \\
+    throws $N(L,K_1)$ onto $N(L,K_2)$ \\
+    and is the identity on $L \cup C(L,K)$.
+  \end{theorem}
+
+\end{frame}
+
+\setbackgroundpicture{Bangsar.JPG}
+\begin{frame}
+\frametitle{Regular neighborhoods}
+
+Suppose $X \subset Y$ are polyhedra.
+
+$|K|$ a neighborhood of $X$ in $Y$, \\
+$|L| = X$ \\
+$L \fullsubcomplex K$ \\
+$K'$ derived of $K$ near $L$.
+
+\vfill
+$|N(L,K')|$ is called a \textbf{regular neighborhood} \\
+
+\begin{theorem}
+  If $N_1$ and $N_2$ are regular neighborhoods of $X$ in $Y$,\\
+  then there is a homeomorphism $h : Y \to Y$ \\
+  which throws $N_1$ onto $N_2$, and \\
+  which is the identity on $X$ \\
+  and the identity outside a compact subset of $Y$.
+\end{theorem}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Regular neighborhoods in manifolds}
+
+  \begin{theorem}
+    A regular neighborhood $N$ of \\
+    a polyhedron $X$ in a manifold $M$ \\
+    is a manifold with boundary.
+  \end{theorem}
+\end{frame}
+
+\begin{frame}
+ \begin{theorem}[Simplicial neighborhood theorem]
+    $X$ a compact polyhedron \\
+   $M$ a manifold \\
+   $X \subset \interior M$ \\
+   $N$ a neighborhood of $X$ in $\interior M$. \\
+   Then $N$ is a regular neighborhood iff
+    \begin{itemize}
+      \item $N$ is a compact manifold with boundary
+      \item there are triangulations $(K,L,J)$ of $(N,X,\partial N)$
+        with $L \fullsubcomplex K$, $K = N(L,K)$ and $J = \partial N(L,K)$.
+    \end{itemize}
+  \end{theorem}
+\end{frame}
+
+\begin{frame}
+  \begin{theorem}[SNT version 2]
+    $X$ a compact polyhedron \\
+    $M$ a manifold \\
+    $X \subset \interior M$ \\
+    $N$ a polyhedral neighborhood of $X$ in $\interior M$. \\
+    Then $N$ is a regular neighborhood iff
+    \begin{itemize}
+    \item $N$ is a compact manifold with boundary
+    \item $N \collapses X$.
+    \end{itemize}
+  \end{theorem}
+
+  \vfill\pause
+  e.g., if $X \collapses \mbox{point}$, $N$ is a ball.
+  \vfill\pause
+  e.g., a collapsible manifold is a ball.
+\end{frame}
+
+
+\clearbackgroundpicture
+
+\begin{frame}
+  \begin{corollary}
+    If $B^n \subset S^n$, then \\
+    $\cl(S^n - B^n)$ is a ball.
+  \end{corollary}
+
+  \pause
+  \begin{proof}
+    $S^n = \partial \Delta^{n+1}$. \\
+    A point $p \in B^n$ is contained in some $\Delta^n \subset
+    \Delta^{n+1}$, \\
+    and both $\Delta^n$ and $B$ are regular neighborhoods of $P$. \\
+    Regular neighborhoods are unique.
+  \end{proof}
+\end{frame}
+
+%\setbackgroundpicture{zeeman.pdf}
+\begin{frame}
+ \vfill
+  \begin{center}
+    next time \\
+    we will introduce the work of \\
+    \Huge E. C. Zeeman
+  \end{center}
+  \vfill
+\end{frame}
+%\clearbackgroundpicture
+
+\end{document}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

@@ -1,0 +1,145 @@
+\documentclass[12pt]{pset}
+%\usepackage{add-copyright}
+
+\title{Problem Set 6}
+\course{Piecewise-Linear Topology}
+\author{Jim Fowler}
+\date{Summer 2010}
+
+\newcommand{\defnword}[1]{\textbf{#1}}
+
+\usepackage{stmaryrd}
+\newcommand{\boundary}{\partial}
+\newcommand{\collapses}{\searrow}
+\newcommand{\expands}{\nearrow}
+\newcommand{\she}{\ssearrow\nnearrow}
+\newcommand{\join}{\ast}
+\newcommand{\subdivided}{\triangleleft}
+\geometry{margin=1in}%,top=0.5in,bottom=0.5in}
+\DeclareMathOperator{\st}{st}
+\DeclareMathOperator{\vertices}{vert}
+\DeclareMathOperator{\lk}{lk}
+\DeclareMathOperator{\cl}{cl}
+\DeclareMathOperator{\interior}{int}
+\newcommand{\fullsubcomplex}{\Subset}
+
+\begin{document}
+\maketitle
+
+\subsubsection*{So many exercises.} There are many things that we can
+prove now that we have our new definitions of polyhedra and cell
+complexes.  These exercises are mostly from Rourke and Sanderson's
+textbook, \textit{Introduction to Piecewise-Linear Topology}.
+
+\parskip 0.5\baselineskip
+\parindent 0pt
+
+\subsection*{Polyhedra}
+
+\begin{problem}
+  Is the intersection of finitely many polyhedra a polyhedron?
+\end{problem}
+
+\begin{problem}
+  Is the union of finitely many polyhedra a polyhedron?
+\end{problem}
+
+\begin{problem}
+  Suppose $P \subset \R^n$ is a compact polyhedron; let $v$ be a point in
+  $\R^{n+1} - \R^n$, and show that $v \join P$ is a polyhedron.
+\end{problem}
+
+\begin{requiredproblem}
+  Show that the composition of PL maps is again a PL map.
+\end{requiredproblem}
+
+\begin{requiredproblem}
+  Is the product of an $n$-manifold (with boundary) and an
+  $m$-manifold (with boundary) an $nm$-manifold?
+\end{requiredproblem}
+
+\begin{problem}
+  Show that a compact polyhedron is the finite union of simplexes.
+  Use this to show that the PL image of a compact polyhedron is a
+  polyhedron.
+\end{problem}
+
+\begin{problem}
+  Define the ``dimension'' of a polyhedron, and show that it is
+  invariant under PL homeomorphism.
+\end{problem}
+
+\begin{problem}
+  If $A \join B \cong S^n$, is it the case that $A$ and $B$ are spheres?
+\end{problem}
+
+\subsection*{Cell complexes}
+
+\begin{requiredproblem}
+ Is the intersection of two cells also a cell?
+\end{requiredproblem}
+
+\begin{problem}
+ Is the intersection of two cell complexes also a cell complex?
+\end{problem}
+
+\begin{problem}
+  Is the cone of a cell complex itself a cell complex?
+\end{problem}
+
+\begin{requiredproblem}
+  Show that the product of cell complexes is a cell complex.
+\end{requiredproblem}
+
+\subsection*{Surfaces}
+
+\begin{requiredproblem}
+ The cube $I^4$ can be regarded as a cell complex; find a subcomplex
+ of $I^4$ consisting of squares which is PL homeomorphic to
+ the torus $T^2$.
+\end{requiredproblem}
+
+\begin{problem}
+  Find a subcomplex of $I^5$ (which will consist of squares) which is
+  PL homeomorphic to a genus five surface.
+\end{problem}
+
+\subsection*{Simplicial complexes}
+
+These problems are \textbf{not} about abstract simplicial complexes,
+but rather, the sort of simplicial complexes that sit in $\R^n$.
+
+\begin{problem}
+  Show that a cell complex can be subdivided to a simplicial complex.
+\end{problem}
+
+\begin{problem}
+  Suppose $f : K \to L$ is a simplicial map, and $L' \subdivided L$.
+  Find a subdivision $K' \subdivided K$ so that $f : K' \to L'$ is
+  simplicial.
+\end{problem}
+
+\begin{problem}
+  If $f : |K| \to |K|$ is a PL map, and $f^2$ is the identity, is
+  there a subdivision $K' \subdivided K$ so that $f : K' \to K'$ is
+  simplicial?
+\end{problem}
+
+\begin{problem}
+  Let $K$ and $L$ be simplicial complexes, and $f : |K| \to |L|$ a PL
+  homeomorphism.  For $a \in K$, show that there is a PL homeomorphism
+  $|\lk(a,K)| \cong |\lk(f(a),L)|$.
+\end{problem}
+
+\begin{problem}
+  Show that if $K$ is a simplicial complex, then $|K|$ is an
+  $n$-manifold without boundary if and only if $|\lk(v,K)| \cong
+  S^{n-1}$ for each $v \in K$.
+\end{problem}
+
+\begin{problem}
+  Show that $|K| \times \R$ is a PL manifold if and only if $|K|$ is a manifold.
+\end{problem}
+
+\end{document}
+

@@ -1,0 +1,14 @@
+Take-Home Quiz 4
+Math 131 Section 22 Due Monday, November 7, 2005
+
+I promise to include tanks of water on next week’s quiz, but until then. . . Problem 1. (3 points). Our friend is spending an eternity skiing1 up and down a mountain, and she notes that her height f (t) is related to the current time t by the following function f (t) = x3 − 3x2 − 9x + 2. At what times t are our friend’s skis horizontal? After t = 100, will she be going up or down a hill? Problem 2. (6 points). Deﬁne the function f : (−∞, 1) ∪ (1, ∞) → R by f (x) = x+1 . x−1
+
+(a) Calculate f ′ (x) using the rules of diﬀerentiation. (b) What do you notice about f ′ (x) as x tends to inﬁnity? (In other words, what is limx→±∞ f ′ (x)? (c) Interpret part (b) geometrically. Problem 3. (3 points). Sisyphus is pushing a boulder up a hill. You might expect me to include you in his torment by asking you to diﬀerentiate the boulder’s height with respect to time. However, your pointless punishment will be to diﬀerentiate: f (x) = (x2 − 4)(8x16 + 32) . x10 + 1
+
+The powers of two are nice (e.g., 8 · 16 = 23 · 24 = 27 = 128), but please don’t push the boulder too far by simplifying your answer too much.
+
+1
+
+For fun, ﬁnd another English verb ending in i.
+
+

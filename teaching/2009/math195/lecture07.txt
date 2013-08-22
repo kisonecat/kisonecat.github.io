@@ -1,0 +1,18 @@
+Lecture 7: Midterm
+Math 195 Section 91 Monday July 6, 2009
+
+1 2
+
+Give midterm Functions of several variables
+
+examples of functions of many variables what is the domain? what is the range? the book thinks of domain as “biggest domain possible for the given rule.” This is perhaps not the best way to deﬁne the domain. linear functions; quadratic functions, etc. level curves—what does it mean when they are closer together? level surfaces
+
+3
+
+Limits
+
+deﬁnition of limit and deﬁnition of continuity examples: sin ||v|| =1 lim v→0 ||v||2 x2 − y 2 does not exist. (x,y)→0 x2 + y 2 lim use properties of limits, squeeze theorem,
+
+1
+
+

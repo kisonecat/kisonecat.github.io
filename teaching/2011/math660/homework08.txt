@@ -1,0 +1,54 @@
+Problem Set 8 (§4.6.1–5.1.1)
+Due Monday, August 15, 2011
+
+Math 660
+Jim Fowler
+
+Diﬀerent problems may be assigned!
+This is probably not the ﬁnal version! The problems assigned on this homework set are subject to change! The ﬁnal version of Problem Set 8 will probably be ready by August 9, 2011.
+
+Problem 1
+Suppose f (z) is analytic in the annulus r1 < |z| < r2 and continuous on the closed annulus. If M (r) denotes the maximum of |f (z)| for |z| = r, show that M (r) ≤ M (r1 )α M (r2 )1−α , where log rr2 α= . log r2 r1
+
+Discuss cases of equality.
+
+Problem 2
+Page 166, problem 1 in Ahlfors’ Complex Analysis.
+
+Problem 3
+Page 171, problem 4 in Ahlfors’ Complex Analysis.
+
+Problem 4
+Page 171, problem 2 in Ahlfors’ Complex Analysis.
+
+Problem 5
+Page 171, problem 7 in Ahlfors’ Complex Analysis.
+
+Problem 6
+Page 171, problem 5 in Ahlfors’ Complex Analysis.
+
+Problem 7
+Page 172, problem 8 in Ahlfors’ Complex Analysis.
+
+Problem 8
+Page 174, problem 3 in Ahlfors’ Complex Analysis.
+
+Problem 9
+Page 174, problem 5 in Ahlfors’ Complex Analysis.
+
+Problem 10
+Page 174, problem 5 in Ahlfors’ Complex Analysis.
+
+Problem 11
+Page 174, problem 4 in Ahlfors’ Complex Analysis.
+
+Problem 12
+Page 179, problem 4 in Ahlfors’ Complex Analysis.
+
+Problem 13
+Page 179, problem 5 in Ahlfors’ Complex Analysis.
+
+Problem 14
+Page 178, problem 3 in Ahlfors’ Complex Analysis.
+
+

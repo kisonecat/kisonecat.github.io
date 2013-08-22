@@ -1,0 +1,155 @@
+Lecture 34: Argument principle
+Math 660—Jim Fowler Friday, August 6, 2010
+
+Example 1
+
+f (z) =
+
+1 z4 + 4
+
+Compute center 1.
+
+γ
+
+f dz for γ a circle of radius two and
+
+Counting zeroes
+
+Counting zeroes
+Let D 2 = {z ∈ C : |z| < 1} and f : D 2 → C analytic. Assume f (z) ≡ 0.
+
+Counting zeroes
+Let D 2 = {z ∈ C : |z| < 1} and f : D 2 → C analytic. Assume f (z) ≡ 0. Assume f (z) has only ﬁnitely many zeroes, z1 , . . . , zn , with multiplicity.
+
+Counting zeroes
+Let D 2 = {z ∈ C : |z| < 1} and f : D 2 → C analytic. Assume f (z) ≡ 0. Assume f (z) has only ﬁnitely many zeroes, z1 , . . . , zn , with multiplicity. f (z) = (z − z1 ) · · · (z − zn )g (z) for g (z) analytic and nowhere zero.
+
+Counting zeroes
+Let D 2 = {z ∈ C : |z| < 1} and f : D 2 → C analytic. Assume f (z) ≡ 0. Assume f (z) has only ﬁnitely many zeroes, z1 , . . . , zn , with multiplicity. f (z) = (z − z1 ) · · · (z − zn )g (z) for g (z) analytic and nowhere zero. f (z) 1 1 g (z) = + ··· + + f (z) z − z1 z − zn g (z)
+
+Now
+
+g (z) γ g (z)
+
+dz = 0, so f (z) dz = n(γ, z1 ) + · · · + n(γ, zn ) f (z)
+
+1 2πi
+
+γ
+
+Now
+
+g (z) γ g (z)
+
+dz = 0, so f (z) dz = n(γ, z1 ) + · · · + n(γ, zn ) f (z)
+
+1 2πi
+
+γ
+
+In fact, this is true even if there are inﬁntely many zeroes in D 2 .
+
+Counting zeroes, again
+Theorem ( )
+
+If f (z) is meromorphic in Ω, with zeroes aj and poles bk , then 1 2πi f (z) dz = f (z) n(γ, aj ) −
+j k
+
+n(γ, bk )
+
+γ
+
+for every γ homologous to zero in Ω.
+
+Counting zeroes, again
+Theorem (Argument principle)
+If f (z) is meromorphic in Ω, with zeroes aj and poles bk , then 1 2πi f (z) dz = f (z) n(γ, aj ) −
+j k
+
+n(γ, bk )
+
+γ
+
+for every γ homologous to zero in Ω.
+
+Corollary (Rouch´’s theorem) e
+Suppose γ ∈ Ω with [γ] = [0] ∈ H1 (Ω), and n(γ, a) = 0 or 1 for a ∈ ω. Suppose f (z) and g (z) are analytic in Ω, and satisfy |f (z) − g (z)| < |f (z)| on γ. Then f (z) and g (z) have the same number of zeroes inside γ.
+
+Finding zeroes via Taylor’s theorem
+
+Suppose we want to know how many zeroes f (z) has inside BR (0).
+
+Finding zeroes via Taylor’s theorem
+
+Suppose we want to know how many zeroes f (z) has inside BR (0). Use Taylor’s theorem to write f (z) = p(z) + z n fn (z) for a polynomial p(z) with degree n − 1.
+
+Finding zeroes via Taylor’s theorem
+
+Suppose we want to know how many zeroes f (z) has inside BR (0). Use Taylor’s theorem to write f (z) = p(z) + z n fn (z) for a polynomial p(z) with degree n − 1. If we can prove R n |fn (z)| < |p(z)|, then we need only determine solutions of p(z) = 0.
+
+Example
+
+How many roots does z 7 − 2z 5 + 6z 3 − z + 1 = 0 have inside the disk |z| < 1?
+
+Generalizing argument principle
+If g (z) is analytic in Ω, then g (z) f (z) has f (z)
+
+Generalizing argument principle
+f (z) has f (z) residue h g (a) at a zero a of order h If g (z) is analytic in Ω, then g (z)
+
+Generalizing argument principle
+f (z) has f (z) residue h g (a) at a zero a of order h and residue −h g (a) at a pole a of order h. If g (z) is analytic in Ω, then g (z)
+
+Generalizing argument principle
+f (z) has f (z) residue h g (a) at a zero a of order h and residue −h g (a) at a pole a of order h. Therefore, If g (z) is analytic in Ω, then g (z) 1 2πi g (z)
+γ
+
+f (z) dz = f (z)
+
+n(γ, aj )g (aj )−
+j j
+
+n(γ, bk )g (bk )
+
+f (z) = w has n solutions z1 , . . . , zn in disk |z − z0 | < .
+
+f (z) = w has n solutions z1 , . . . , zn in disk |z − z0 | < . zj (w ) =
+j
+
+1 2πi
+
+|z−z0 |=
+
+f (z) z dz f (z) − w )
+
+f (z) = w has n solutions z1 , . . . , zn in disk |z − z0 | < . zj (w ) =
+j
+
+1 2πi 1 2πi
+
+|z−z0 |=
+
+f (z) z dz f (z) − w ) f (z) z m dz f (z) − w )
+
+zj (w )m =
+j
+
+|z−z0 |=
+
+f (z) = w has n solutions z1 , . . . , zn in disk |z − z0 | < . zj (w ) =
+j
+
+1 2πi 1 2πi
+
+|z−z0 |=
+
+f (z) z dz f (z) − w ) f (z) z m dz f (z) − w )
+
+zj (w )m =
+j
+
+|z−z0 |=
+
+so zj (w ) are roots of a polynomial with coeﬃcients depending analytically on w .
+
+

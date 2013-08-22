@@ -1,0 +1,206 @@
+Lecture 33: Residue theorem
+Math 660—Jim Fowler Thursday, August 5, 2010
+
+Theorem (Cauchy)
+If f (z) is analytic in a region Ω, then n(γ, a) f (a) = 1 2πi f (z) dz z −a
+
+γ
+
+if γ is homologous to zero in Ω.
+
+The residue of f (z) at an isolated singularity a is the complex number R = Res f (z) which makes
+z=a
+
+f (z) −
+
+R = F (z) z −a
+
+for some single-valued analytic function F deﬁned in a small annulus around a.
+
+Suppose Ω is simply connected, and Suppose Ω = Ω − {a1 , . . . , an }.
+
+Suppose Ω is simply connected, and Suppose Ω = Ω − {a1 , . . . , an }. Then for any γ ∈ Ω , [γ] = [c1 γ1 + · · · + cn γn ] ∈ H1 (Ω ) for curves γi around ai , with ci = n(γ, ai ).
+
+1 2πi
+
+f dz
+γ
+
+1 2πi
+
+f dz =
+γ j
+
+cj 2πi
+
+f dz
+γj
+
+1 2πi
+
+f dz =
+γ j
+
+cj 2πi cj 2πi
+
+f dz
+γj z=ai γj
+
+Res f (z) z −a dz
+
+=
+j
+
+1 2πi
+
+f dz =
+γ j
+
+cj 2πi cj 2πi
+z=ai
+
+f dz
+γj z=ai γj
+
+Res f (z) z −a dz
+
+=
+j
+
+=
+j
+
+cj Res f (z)
+
+1 2πi
+
+f dz =
+γ j
+
+cj 2πi cj 2πi
+z=ai
+
+f dz
+γj z=ai γj
+
+Res f (z) z −a dz
+
+=
+j
+
+=
+j
+
+cj Res f (z) n(γ, ai ) · Res f (z)
+j z=ai
+
+=
+
+1 2πi
+
+f dz =
+γ j
+
+cj 2πi cj 2πi
+z=ai
+
+f dz
+γj z=ai γj
+
+Res f (z) z −a dz
+
+=
+j
+
+=
+j
+
+cj Res f (z) n(γ, ai ) · Res f (z)
+j z=ai
+
+=
+
+This is Cauchy’s residue theorem for when there are ﬁnitely many singularities.
+
+If there are inﬁnitely many singularities, still only ﬁnitely many have nonzero winding number with γ,
+
+If there are inﬁnitely many singularities, still only ﬁnitely many have nonzero winding number with γ, and therefore
+
+Theorem (Residue theorem)
+Let f (z) be analytic in Ω, except for isolated singularities aj . Then, 1 2πi f dz =
+γ j
+
+n(γ, aj ) · Res f (z)
+z=ai
+
+for any cycle which is homologous to zero in Ω and does not pass through any of the aj .
+
+If only we had a procedure for computing Res f (z). . .
+z=a
+
+If only we had a procedure for computing Res f (z). . .
+z=a
+
+Wait, we do!
+
+Consider f (z) = bk (z − a)−k + · · · b1 (z − a)−1 + ϕ(z), for ϕ analytic.
+
+Consider f (z) = bk (z − a)−k + · · · b1 (z − a)−1 + ϕ(z), for ϕ analytic. Then Res f (z) = b1 .
+z=a
+
+Consider f (z) = bk (z − a)−k + · · · b1 (z − a)−1 + ϕ(z), for ϕ analytic. Then Res f (z) = b1 . z=a For simple poles, it is even easier: then Res f (z) = lim (z − a) · f (z).
+z=a z→a
+
+Example 1
+
+ez f (z) = with a = b. (z − a)(z − b)
+
+Compute
+
+γ
+
+f dz for a curve around a and b.
+
+Example 2
+
+f (z) =
+
+1 . z2 + z − 1
+
+Compute
+
+γ
+
+f dz for γ = ∂B3 (0).
+
+Example 3
+
+f (z) =
+
+1 sin z
+
+Compute γ f dz for γ a circle of radius one around the origin.
+
+Example 3
+
+f (z) =
+
+1 z4 + 4
+
+Compute center 1.
+
+γ
+
+f dz for γ a circle of radius two and
+
+Example 4
+
+Evaluate
+
+∞ −∞
+
+e −z , dz
+
+2
+
+

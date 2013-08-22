@@ -1,0 +1,9 @@
+{
+    "shortname": "math660",
+    "title": "Complex Analysis",
+    "description": "This is a beginning graduate course in complex analysis; as such, we study analysis (e.g., the rigorous foundations of calculus) as it applies to functions of a complex variable.  The resulting theory is strikingly beautiful.",
+    "logo": "complex-analysis-logo.png",
+    "term": "Summer 2011",
+    "year": 2011,
+    "instructor": "Jim Fowler"
+}

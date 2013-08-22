@@ -1,0 +1,50 @@
+More organized facts about limits
+Bare hands
+Deﬁnition. We say lim an = L if
+n→∞
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+We can give explicit -K arguments to prove 1 = 0, n→∞ n lim and lim xn = 0 if −1 < x < 1.
+n→∞
+
+Algebraic operations
+If lim an = L and lim bn = M , then
+n→∞ n→∞ n→∞
+
+lim (an + bn ) = L + M,
+
+n→∞
+
+lim (an − bn ) = L − M,
+
+n→∞
+
+lim (an · bn ) = L · M,
+
+and if M = 0 and all bn = 0, then lim (an /bn ) = L/M .
+n→∞
+
+Squeezing theorem
+n→∞
+
+If an , bn , and cn are sequences of real numbers, and for all n ∈ N, we have an ≤ bn ≤ cn , and lim an = L and lim cn = L, then lim bn = L.
+n→∞ n→∞
+
+Continuous functions
+If a function f : R → R is continuous at L, and lim an = L, then lim f (an ) = f (L).
+n→∞ n→∞
+
+Subsequences
+If an is a sequence of real numbers, and bn is a subsequence produced from an by throwing away ﬁnitely many terms, then an converges if and only if bn converges. If an is a convergent sequence of real numbers, and bn is a subsequence, then bn converges and lim an = lim bn .
+n→∞ n→∞
+
+Existence without construction
+Theorem. If an is a nondecreasing bounded above sequence, then an converges. Theorem. If an is a nonincreasing bounded below sequence, then an converges.
+
+c 2008 Jim Fowler
+
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+for all > 0, there exists K ∈ N, so that if n ≥ K, then |an − L| < .
+
+

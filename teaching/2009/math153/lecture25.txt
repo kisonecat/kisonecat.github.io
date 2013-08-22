@@ -1,0 +1,89 @@
+Lecture 25: Partial fractions
+Math 153 Section 57 Monday November 24, 2008 Overview
+Recall that the limit comparison test allows us to determine whether polynomial polynomial converges. These quotients of polynomials are called rational functions. Rational functions are maybe the “next simplest” class o f functions after polynomials (which we understand very well). Derivative of a rational function is a rational function, so we can take all the derivatives we would like—no problem! But to antidiﬀerentiate a rational function? For this, we use partial fractions. This is, in fact, how the computers do these integrals.
+
+Theory
+We can integrate polynomials. What are some rational functions we can integrate? 1 log(ax + b) dx = +C ax + b a or somewhat more generally, for n > 1, 1 1 (ax + b)−n+1 dx = · +C (ax + b)n a −n + 1 For quadratics: x2 or even x 1 dx = log x2 + b2 + C 2 +b 2
+
+x−a 1 dx = log (x − a)2 + b2 + C 2 + b2 (x − a) 2 1
+
+We can also do
+
+1 1 dx = arctan 2 + b2 (x − a) b
+
+x−a b
+
++C
+
+We can also do these if the denominators are raised to a power (with more diﬃculty). These functions suﬃce to do all rational functions. But we need a machine for transforming the general rational function into something of this form. What would that be?
+
+Enter partial fractions
+[ “I would like to see a proof of such and such.” “How many alphabets are you familiar with?” ] The theorem. Let f (x) = p(x)/q(x), a ratio of polynomials. We can assume that q’s leading term has a 1 coeﬃcient. The fundamental theorem of algebra: factor denominator as
+m n
+
+q(x) = ·
+i=1
+
+(x − ai ) ·
+i=1
+
+ji
+
+(x2 + bi x + ci )ki
+
+that is, into linear and quadratic terms. Then we can write f (x) as f (x) = p(x) = P (x) + q(x)
+m ji
+
+i=1 r=1
+
+Air + (x − ai )r
+
+n
+
+ki
+
+i=1 r=1
+
+Bir x + Cir (x2 + bi x + ci )r
+
+This seems pretty awful. How can we ever hope to ﬁnd all these constants?
+
+An example
+Suppose C 1 A B + = + 2 (x − 2) 2 (x − 3) x − 3 (x − 3) x−2 The least clever (and most involved) way is to multiply through by the denominator: 1 = A(x − 2)(x − 3) + B(x − 2) + C(x − 3)2 This gives 1 = (A + C)x2 + (−5A + B − 6C)x + (6A − 2B + 9C) So A + C = 0, and −5A + B − 6C = 0, and 6A − 2B + 9C = 1. Solve the three equations in three unknowns (the resulting equations will always have a unique solution). Get A = −C. So 5C + B − 6C = 0, so B − C = 0, so B = C. Then, −6C − 2C + 9C = 1, so C = 1, and therefore A = −1 and B = 1. 2
+
+Check!
+
+1 −1 1 1 = + + 2 (x − 2) 2 (x − 3) x − 3 (x − 3) x−2
+
+This is true. This lets us do the integral 1 dx (x − 3)2 (x − 2) because you can do −1 1 1 + + 2 x − 3 (x − 3) x−2 dx
+
+So many problems
+The problems involved here are many. You are not likely to see (x − 3)2 (x − 2). You are more likely to see x3 − 8x2 + 21x − 18 How are you supposed to solve the factorization problem?
+
+A tool in our toolbox, not a rule for solving all problems!
+It is silly for me to give you lists of rules.
+
+A second example
+f (x) = Do long division 4x2 − 8x + 16 4x2 − 8x + 16 =1+ f (x) = 1 + 3 x − 4x2 + 8x x(x2 − 4x + 8) 4x2 − 8x + 16 A Bx + C = + 2 2 − 4x + 8) x(x x x − 4x + 8 Multiply through by x(x2 − 4x + 8) to get 4x2 − 8x + 16 = A(x2 − 4x + 8) + (Bx + C)x So A = 2. So B = 2. And C = 0. Therefore, f (x) = 1 + 2 1 x + 2 x x − 4x + 8 x3 + 16 x3 − 4x2 + 8x
+
+3
+
+Some tricks
+Multiply the partial fraction decomposition by (x − ai ) and take the limit x → ai . Then only the term Ai,1 survives, so Ai,1 = lim (x − ai )f (x)
+x→ai
+
+In the case of f (x) = this tells us that
+x→2
+
+1 (x − 3)2 (x − 2) 1 =1 (x − 3)2 (x − 2)
+
+lim (x − 2) ·
+
+but of course is useless for to ﬁnd the coeﬃcients on 1/(x − 3) and 1/(x − 3)2 . We can ﬁnd 1 =1 lim (x − 3)2 · x→3 (x − 3)2 (x − 2) to discover that the coeﬃcient on 1/(x − 3)2 is 1. Then we know that 1 A 1 1 + = + 2 (x − 2) 2 (x − 3) x − 2 (x − 3) x−3 We could plug in a value like x = 4 to ﬁnd: A 1 1 1 + = + 2 (4 − 2) 2 (4 − 3) 4 − 2 (4 − 3) 4−3 which becomes so A = −1. 1 1 1 A =− + 2 + 2 2 1 1
+
+Underview
+Some some tricks include: taking limits, and plugging in values.
+
+4
+
+

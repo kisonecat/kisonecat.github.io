@@ -1,0 +1,94 @@
+\documentclass[12pt]{handout}
+\usepackage{nopageno}
+\usepackage{geometry}\geometry{margin=0.5in}
+
+\title{Abel's Theorem for Power Series}
+\course{Math 660}
+\author{Jim Fowler}
+\date{Summer 2011}
+
+\newcounter{question}
+\newenvironment{question}{\vspace{1ex}\addtocounter{question}{1}\noindent\textbf{Task \arabic{question}.}}{\vfill}
+
+\begin{document}
+\maketitle
+
+\noindent Consider the power series $\sum a_n z^n$; set $R = 1/\lim_{n \to
+    \infty} \sup \sqrt[n]{|a_n|}$.  Then,
+\begin{itemize}
+  \item if $|z| < R$, the series converges absolutely;
+  \item if $\rho < R$, then the series converges uniformly for $|z|
+    \leq \rho$;
+  \item if $|z| > R$, the series diverges;
+  \item if $|z| < R$, the series is an analytic function, 
+    and the derivative is the sum of the termwise derivatives 
+    with the same radius of convergence.
+\end{itemize}
+
+\hrule
+
+\begin{question}
+  Find a geometric series which majorizes $\sum a_n z^n$ on a disk of
+  radius $\rho < R$.
+\end{question}
+
+\begin{question}
+  Use the previous task to show that
+  \begin{itemize}
+  \item If $|z| < R$, the series converges absolutely.
+  \item If $\rho < R$, then the series converges uniformly for $|z|
+    \leq \rho$.
+  \end{itemize}
+\end{question}
+
+\begin{question}
+If $|z| > R$, the sequence $a_n z^n$ is unbounded.
+\end{question}
+
+\begin{question}
+  Use the previous task to show that if $|z| > R$, the series diverges.
+\end{question}
+
+\begin{question}
+  Show that $\lim_{n \to \infty} \sqrt[n]{n} = 1$.  \textit{Hint:} use
+  the binomial theorem.
+\end{question}
+
+\begin{question}
+  Use the previous task to show that the series $\sum n a_n z^{n-1}$
+  has the same radius of convergence.
+\end{question}
+
+\pagebreak
+
+\begin{question}
+  Let $s_k(z) = \sum_{n=0}^{k-1} a_n z^n$, and $R_k(z) =
+  \sum_{n=k}^\infty a_n z^n$, and $F(z) = \sum_{n=1}^\infty n a_n
+  z^{n-1}$.
+
+  Use the identity
+$$
+\frac{f(z) - f(z_0)}{z-z_0} - F(z_0) =
+\left( \frac{s_k(z) - s_k(z_0)}{z-z_0} - s'_k(z_0) \right) +
+\left( s'_k(z_0) - F(z_0) \right) +
+\left( \frac{ R_k(z) - R_k(z_0) }{z - z_0} \right)
+$$
+to verify that $F(z)$ is $f'(z)$.
+\end{question}
+
+\begin{question}
+  Conclude that, if $f(z) = \sum a_n z^n$, then $a_n =
+  f^{(n)}(0)/n!$.  In other words, a power series development is
+  unique, if it exists.
+\end{question}
+
+\begin{question}
+  Show that $\lim_{n \to \infty} \sqrt[n]{n!} = \infty$.
+\end{question}
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

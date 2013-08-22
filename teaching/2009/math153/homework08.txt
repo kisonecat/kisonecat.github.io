@@ -1,0 +1,14 @@
+Homework 8
+Due Wednesday, October 29, 2008
+(a) Using blocks that are each 1 inch wide, I build the following structure:
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+The rightmost block is 1/2 inch to the right of the block under it; the second block from the top is 1/4 inch to the right of the block underneath it, the third block from the top is 1/6 inch to the right of the block under it. In general, the nth block from the top is 1/(2n) inches to the right of the (n + 1)th block. Part (i) Prove that this structure will not fall over, no matter how many blocks are used. Part (ii) By using as many blocks as I like, how far to the right of the bottom block can I make the top block?
+
+(b) On page 592, in section 12.3, do problems: 1, 6, 8, 10, 18, 24, 31, 35.
+
+c 2008 Jim Fowler
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+

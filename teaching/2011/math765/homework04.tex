@@ -1,0 +1,163 @@
+\documentclass[12pt]{pset}
+
+\course{Math 765}
+\author{Jim Fowler}
+\date{Winter 2011}
+
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\CP}{\mathbb{C}P}
+\newcommand{\RP}{\mathbb{R}P}
+
+\usepackage{enumerate}
+\usepackage{nopageno}
+\usepackage{hyperref}
+
+\DeclareMathOperator{\Vect}{Vect}
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\SO}{SO}
+\DeclareMathOperator{\codim}{codim}
+\DeclareMathOperator{\Mat}{Mat}
+\DeclareMathOperator{\SymMat}{SymMat}
+\DeclareMathOperator{\Id}{Id}
+
+\begin{document}
+\maketitle
+
+\noindent\textbf{Submanifolds.}  This week, we study submanifolds,
+embedded or immersed.  I have heard many complaints about the
+difficulty of the problem sets, so I hope you find this problem set
+more concrete and tractable---let me know at
+\texttt{fowler@math.osu.edu}.  \textit{The exercises below should be
+  handed in on Monday, January 31, 2011.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}
+  
+  Let $\Mat_{n,n}(\R)$ denote $n \times n$ matrices with real entries.
+  Show that $\SO(n)$ is a smooth submanifold of $\Mat_{n,n}(\R)$ in
+  the following way.  Show that the map $f : \Mat_{n,n}(\R) \to
+  \SymMat_{n,n}(\R)$ given by $f(A) = A^{\textsf{T}} A$ has the
+  identity matrix as a regular value.  The matrix $A^{\textsf{T}}$ is
+  the transpose of $A$, and $\SymMat_{n,n}(\R)$ are symmetric $n
+  \times n$ matrices.
+
+\end{problem}
+
+\vfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Gimbal lock is possible]
+
+  For a nonzero vector $v \in \R^3$, let $R(v,\theta)$ denote
+  counterclockwise rotation around the axis $v$.  Define a map $f :
+  S^1 \times S^1 \times S^1 \to \SO(3)$ by sending
+  $(\theta_1,\theta_2,\theta_3) \in (S^1)^3$ to the rotation
+  $$
+  R(\textbf{x},\theta_1) \circ R(\textbf{y},\theta_2) \circ R(\textbf{x},\theta_3) \in \SO(3).
+  $$
+  Here, $\textbf{x}$ and $\textbf{y}$ denote the unit vectors
+  $(1,0,0)$ and $(0,1,0)$, respectively.  \textit{Show that $f$ is not
+    a submersion.}  When you are controlling a system, you may have
+  only infinitesimal control over the inputs---and if the function is
+  not a submersion, you then do not have complete (albeit,
+  infinitesimal!) control over the outputs.  This problem was
+  experienced by the astronauts of Apollo~11.
+  
+  For bonus points, avoid gimbal lock by adding a fourth gimbal (i.e.,
+  describe a map $(S^1)^4 \to \SO(3)$ which sends the four angles to a
+  product of rotations, and show that your map is a submersion).
+
+\end{problem}
+
+\vfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Lee 10--5]
+
+  Suppose $M$ is a smooth, compact manifold that admits a nowhere
+  vanishing vector field.  Show that there exists a smooth map $F : M
+  \to M$ that is homotopic to the identity and has no fixed points.
+  \textit{[Hint: use the tubular neighborhood theorem.]}
+
+\end{problem}
+
+\vfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Lee 10--3]
+
+  If $M \subset \R^m$ is an embedded submanifold and $\epsilon > 0$,
+  let $M_\epsilon$ be the set of points in $\R^m$ whose distance from
+  $M$ is less than $\epsilon$.  If $M$ is compact, show that for
+  sufficiently small $\epsilon$, the topological boundary $\partial
+  M_\epsilon$ is a compact embedded submanifold of $\R^m$, and
+  $M_\epsilon$ is a smooth manifold with boundary.
+
+\end{problem}
+
+\vfill
+
+\pagebreak
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Square roots]
+
+  Let $\Mat_{2,2}(\R)$ be the four-dimensional vector space of $2
+  \times 2$ matrices; let $f
+: \Mat_{2,2}(\R) \to \Mat_{2,2}(\R)$ be the function $f(A) = A \cdot A$.
+
+\begin{description}
+  \item[(a)] Compute the inverse of $D f(\Id)$.
+    \item[(b)] Use part~(a) to find an approximate
+$$
+\sqrt{ \begin{bmatrix}
+0.9 & 0.1  \\
+0.1 & 1.1
+\end{bmatrix}}
+$$
+\item[(c)] When is $D f$ invertible?  This will tell us when perturbations of
+matrices having square roots also have square roots.
+\end{description}
+
+\end{problem}
+
+\vfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Characteristic polynomials]
+
+  Let $\Mat_{n,n}(\R)$ be the $n^2$-dimensional vector space of $n
+  \times n$ matrices; let $P_n$ be the $(n+1)$-dimensional vector
+  space of degree $n$ polynomials in a variable $\lambda$.  The
+  characteristic polynomial of a matrix $A$ is $\det (A - \lambda I)$;
+  let $f : \Mat_{n,n}(\R) \to P_n$ be the function sending a matrix to
+  its characteristic polynomial.  Is it the case for some polynomials
+  $p \in P_n$ that $f^{-1}(p)$ is a submanifold of $\Mat_{n,n}(\R)$?
+
+\end{problem}
+
+\vfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Polynomials with specified roots]
+
+  Let $P_{n}$ be the vector space of degree $n$ polynomials in a
+  variable $\lambda$.  Define a function $f : \R^n \to P_{n}$ given
+  by
+$$
+f(x_1,\ldots,x_n) = (\lambda - x_1) \cdots (\lambda - x_n)
+$$
+and define a function $g : P_{n} - \{0\} \to \RP^{n}$ which sends a
+nonzero polynomial $a_n \lambda^n + \cdots + a_0$ to the point $[a_n :
+\cdots : a_0] \in \RP^n$.
+
+Consider $g \circ f : \R^n \to \RP^n$.  Show that, for
+$(x_1,\ldots,x_n)$ with $x_i$ pairwise distinct, there is an open
+neighborhood $U \ni (x_i)$ on which $g \circ f$ is a diffeomorphism.
+  
+\end{problem}
+
+\vfill
+
+\end{document}

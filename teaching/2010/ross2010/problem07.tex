@@ -1,0 +1,184 @@
+\documentclass[12pt]{pset}
+%\usepackage{add-copyright}
+
+\title{Problem Set 7}
+\course{Piecewise-Linear Topology}
+\author{Jim Fowler}
+\date{Summer 2010}
+
+\newcommand{\defnword}[1]{\textbf{#1}}
+
+\usepackage{stmaryrd}
+\newcommand{\boundary}{\partial}
+\newcommand{\collapses}{\searrow}
+\newcommand{\expands}{\nearrow}
+\newcommand{\she}{\ssearrow\nnearrow}
+\newcommand{\join}{\ast}
+\newcommand{\subdivided}{\triangleleft}
+\geometry{margin=1in}%,top=0.5in,bottom=0.5in}
+\DeclareMathOperator{\st}{st}
+\DeclareMathOperator{\vertices}{vert}
+\DeclareMathOperator{\lk}{lk}
+\DeclareMathOperator{\cl}{cl}
+\DeclareMathOperator{\interior}{int}
+\newcommand{\fullsubcomplex}{\Subset}
+
+\begin{document}
+\maketitle
+
+\subsubsection*{Regular neighborhoods.} Here we summarize the main
+results on simplicial neighborhoods from the textbook
+\textit{Introduction to Piecewise-Linear Topology}.  We will focus on
+applications of this theory.
+
+%The extra handout
+%for today is a photocopy of the pages from this book, so you can see
+%the proof.
+
+%\parskip 0.25\baselineskip
+%\parindent 0pt
+
+\begin{definition*}[Some neighborhoods]
+  The \textbf{simplicial neighborhood} of $L$ in $K$ is
+  $$N(L,K) = \{ A \in K : A < B, B \cap |L| \neq \varnothing \}.$$
+  The \textbf{simplicial complement} of $L$ in $K$ is
+  $$  C(L,K) = \{ A \in K : A \cap |L| = \varnothing \}. $$
+\end{definition*}
+
+\begin{definition*}[Some subdivisions]
+ Suppose $L \subset K$ are complexes, and $a_i \in \interior A_i$ for each $A_i \in K$ with $A_i \not\in L$.
+ We define a subdivision $K' \subdivided K$ 
+  inductively by
+  $$
+  {A_i}'  = \begin{cases}
+    \{ a_i \} \join \partial {A_i} & \mbox{ if $A_i \not\in L$, } \\
+    A_i & \mbox{ if $A_i \in L$.}
+    \end{cases}
+  $$
+  This is called $K$ \textbf{derived away} from $L$.
+
+  On the other hand, the derived of $K$ \textbf{near} $L$ is obtained
+  by deriving $K$ away from $L \cup C(L,K)$, i.e., subdividing those
+  simplexes meeting $|L|$ but not in $L$.
+
+  If $K'$ is $K$ derived near $L$, then $N(L,K')$ is a \textbf{derived neighborhood} of $L$ in $K$.
+\end{definition*}
+
+\begin{definition*}[Regular neighborhood]
+Suppose $X \subset Y$ are polyhedra.
+\begin{itemize}
+\item $|K|$ a neighborhood of $X$ in $Y$.
+\item $|L| = X$.
+\item $L \fullsubcomplex K$.
+\item $K'$ derived of $K$ near $L$.
+\end{itemize}
+Then $|N(L,K')|$ is called a \textbf{regular neighborhood} of $X$ in $Y$.
+\end{definition*}
+
+\begin{theorem*}
+  If $N_1$ and $N_2$ are regular neighborhoods of $X$ in $Y$, then
+  there is a homeomorphism $h : Y \to Y$, which throws $N_1$ onto
+  $N_2$, and which is the identity on $X$, and the identity outside a compact subset of $Y$.
+\end{theorem*}
+
+\begin{theorem*}
+  A regular neighborhood $N$ of a polyhedron $X$ in a manifold $M$ is a manifold with boundary.
+\end{theorem*}
+
+
+ \begin{theorem*}[Simplicial neighborhood theorem]
+   Suppose $X$ is a compact polyhedron,  $M$ is a manifold, and $X
+   \subset \interior M$.   Then a polyhedral neighborhood $N$ of $X$ in $\interior
+   M$ is a regular neighborhood if and only if
+    \begin{itemize}
+    \item $N$ is a compact manifold with boundary
+    \item there are triangulations $(K,L,J)$ of $(N,X,\partial N)$
+      with $L \fullsubcomplex K$, $K = N(L,K)$ and $J = \partial N(L,K)$.
+    \end{itemize}
+  \end{theorem*}
+
+ \begin{theorem*}
+    As before, suppose $X$ is a compact polyhedron, $M$ is a manifold,
+    and $X \subset \interior M$.
+    Then a polyhedral neighborhood $N$ of $X$ in $\interior
+    M$ is a regular neighborhood if and only if
+   \begin{itemize}
+   \item $N$ is a compact manifold with boundary
+   \item $N \collapses X$.
+   \end{itemize}
+ \end{theorem*}
+
+\begin{corollary*}
+ A collapsible manifold is a ball.
+\end{corollary*}
+
+\subsection*{Regular neighborhoods and Simplicial collapse}
+
+\begin{problem}[From \textit{Introduction to Piecewise-Linear
+    Topology}]  Show that $\mathbb{R}^n$ is PL homeomorphic to $S^n - \mbox{point}$.
+\end{problem}
+
+\begin{problem}
+ Suppose $M^2$ is a 2-manifold, with $\partial M = S^1 \cup S^1$, and
+ $M \collapses S^1 \subset \partial M$.  Identify $M$.
+\end{problem}
+
+\begin{requiredproblem}
+  What are the possible regular neighborhoods of $S^1$ inside a
+  2-manifold?  Use this to describe those surfaces which collapse to a circle.
+\end{requiredproblem}
+
+\begin{problem}
+  Can you find two different 3-manifolds which both collapse to $S^1$?
+  Which both collapse to $S^2$?
+\end{problem}
+
+\begin{requiredproblem}
+ Is a subcomplex of a collapsible complex necessarily collapsible?
+\end{requiredproblem}
+
+\begin{problem}
+  Let $X$ and $Y$ both be $S^1 \vee S^1 \vee S^1$, namely, three
+  circles connected together at a single point; find embeddings of $X$
+  and $Y$ into $T^3$, so that $T^3 - \mbox{regular neighborhood of
+    $X$}$ collapses onto $Y$.
+\end{problem}
+
+\begin{requiredproblem}
+  Show that $T^2 - \mbox{a disk}$ and $S^3 - \mbox{3 disks}$ collapse
+  onto $S^1 \vee S^1$, the union of two circles along one point.
+\end{requiredproblem}
+
+\pagebreak
+\subsection*{Knot theory}
+
+If you want to try your hand at Reidemeister moves, here are some exercises
+to help you to do so.
+
+\begin{problem}
+  Show that the figure eight knot 
+    \raisebox{-0.05\textwidth}{\includegraphics[width=0.1\textwidth]{figure-eight.pdf}} is not the unknot.
+\end{problem}
+
+\begin{problem}
+ Is the trefoil knot identical to its mirror image: is
+  \raisebox{-0.05\textwidth}{\includegraphics[width=0.1\textwidth]{Trefoil_knot_left.pdf}}
+  the same as
+  \raisebox{-0.05\textwidth}{\includegraphics[width=0.1\textwidth]{TrefoilKnot_01.pdf}}?
+\end{problem}
+
+\begin{problem}
+ Is the figure eight knot the same as its mirror image, i.e., is
+ \begin{center}
+   \includegraphics[width=0.1\textwidth]{figure-eight.pdf}\hspace{0.5em}\raisebox{0.05\textwidth}{the same as}\hspace{0.5em}%
+   \includegraphics[width=0.1\textwidth]{figure-eight-flipped.pdf}\raisebox{0.05\textwidth}{?}
+ \end{center}
+\end{problem}
+
+\begin{problem}
+  Suppose $S^1 \subset S^3$ is a knot; show that the suspension $SS^1
+  \subset SS^3$ gives a knotted $S^2$ in $S^4$.
+\end{problem}
+
+\end{document}
+

@@ -1,0 +1,90 @@
+\documentclass[12pt]{article}
+
+\usepackage{hyperref}
+\usepackage{fullpage}
+\usepackage{nopageno}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{wasysym}
+
+\usepackage{graphicx}
+
+\title{Homework 14}
+\date{Due Monday, November 24, 2008}
+
+\long\def\symbolfootnote[#1]#2{\begingroup%
+\def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+  A common question is: what should I choose for $u$?  What should I
+  choose for $dv$?  You should choose something easier to
+  differentiate for $u$, and easy to antidifferentiate for $dv$.
+\end{center}
+
+\begin{description}
+
+\item[(a)] Use integration by parts twice to rewrite 
+$$
+\int \cos (2x) \, \sin (3x) \, dx
+$$
+in terms of itself---and therefore, find an antiderivative.
+
+Such problems as these are usually solved by using a trigonometric
+substitution, but to illustrate the usefulness of integration by
+parts, refrain from using the angle sum formulas.
+
+\vfill
+
+\item[(b)] Here is our first foray into the world of \textbf{Fourier
+    series}.  For real numbers $a_1, a_2, \ldots, a_k$, define
+$$
+f(x) = \sum_{n=1}^k a_n \sin (nx).
+$$
+For each integer $m$ with $1 \leq m \leq k$, compute
+$$
+\frac{1}{\pi} \int_{-\pi}^\pi f(x) \, \sin (mx) \, dx
+$$
+by using the same trick you used in problem~\textbf{(a)}.
+
+\textit{Hint:} you will be helped by first calculating
+$$
+\int_{-\pi}^\pi \sin (nx) \, \sin (mx) \, dx.
+$$
+There's a lovely pattern for you to discover.
+
+\vfill
+
+\item[(c)] Use integration by parts to compute, for each natural
+  number $n \in \N$,
+$$
+\int_{-\pi}^\pi x \, \sin (nx) \, dx.
+$$
+
+\vfill
+
+\item[(d)] Use integration by parts to evaluate
+$$
+\int_0^1 \arctan x \, dx.
+$$
+\textit{Hint:} here you should set $u = \arctan x$, and $dv = dx$.
+
+\vfill
+
+\item[(e)] Replace $\cos^2 x$ with $1 - \sin^2 x$ in order to find
+$$
+\int \cos^5 x \, \sin^4 x \, dx = \int \cos x \, \left( \cos^2 x \right)^2 \, \sin^4 x \, dx.
+$$
+
+\vfill
+
+\end{description}
+
+
+\end{document}

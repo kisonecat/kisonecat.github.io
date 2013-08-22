@@ -1,0 +1,21 @@
+Lecture 23: Integration by parts
+Math 153 Section 57 Wednesday November 19, 2008
+Following chapter 8.2. Jeopardy—integration as an inverse operation. 295927 is 541 times 547. Overview about integration—emphasize again the fundamental theorem and its amazing power antidiﬀerentiation and the challenge of inverse operations u substitution is the chain rule—backwards! parts is the product rule—backwards! not a rule, but a technique—something like a skilled warrior who transforms the situation into something more advantengeous rather than outright solving it what is u? what is v? Try to make choices to have easy antiderivatives. ln x ln x dx = − − 2 x x (1/x)(−1/x) dx. 1 tan x dx. tan x
+
+ln(sin x) dx = ln(sin x) tan x − (cos x)2 x dx = x2 − x dx
+
+so we can ﬁnd an antiderivative for x2 . Same trick works for log x. 1 2 2 x3 ex dx = ex (x2 − 1) + C. 2
+
+Repeated integration
+uv = uv1 − u v2 + u v3 − · · · + (−1)n u(n) vn+1
+
+Integrals of products of sines and cosines
+Do sin(ax) cos(bx) dx
+
+1
+
+by using an angle sum formula? No! Use parts twice. Powers of trig functions? Replace sin2 x with 1 − cos2 x as follows cos3 x sin5 x dx = cos x(1 − sin2 x) sin5 x dx = (1 − u2 ) u5 du =
+
+2
+
+

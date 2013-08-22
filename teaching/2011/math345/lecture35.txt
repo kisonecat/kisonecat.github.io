@@ -1,0 +1,24 @@
+Lecture 35: Bijections
+Monday, November 29, 2010
+
+Math 345
+Jim Fowler
+
+Textbook
+This lecture discusses section 15 of the textbook.
+
+Homework
+The homework is due Thursday, December 2, 2010. From Section 15 of the textbook, do exercises 5, 6, 7, and 8.
+
+Inﬁnite hotel Bijections
+Write A ≈ B if there exists a bijection from A to B. show that [a, b] ≈ [0, 1].
+
+Diagonalization
+a triumph of humanity! there is no bijection from N to R. (there is no bijection from N to P(N).) produce an irrational number by listing rationals, and exhibiting a number not on the list. produce a transcendental number by listing algebraic numbers, and exhibiting a number not on the list.
+
+CH
+CH is the ﬁrst of Hilbert’s twenty-three problems presented in the year 1900.
+
+1
+
+

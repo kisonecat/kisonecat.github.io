@@ -1,0 +1,26 @@
+Lecture 12: Convergence
+Math 153 Section 57 Friday October 24, 2008
+Following chapters 12.2 and 12.3.
+
+Limit of terms of convergent series Convergence by boundedness
+Theorem: series with nonnegative terms converges iﬀ bounded above
+
+Integral test
+If f continuous, positive, decreasing on [1, ∞), then
+∞
+
+f (k)
+k=1
+
+iﬀ
+
+f (x) dx converges (i.e., as an improper integral). Draw some pictures apply integral test to prove harmonic series diverge. prove harmonic series diverges another way. apply integral test to p-series.
+
+∞ 1
+
+Comparison theorem
+if ak ≥ 0 and bk ≥ 0, and for k large, ak ≤ bk
+
+Then bk converges implies ak converges. 2 Example: 1/(2k + 3) Example: 1/ log(k + 5) by compariing with 1/2k. 1
+
+

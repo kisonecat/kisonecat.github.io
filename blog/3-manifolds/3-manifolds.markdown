@@ -1,0 +1,20 @@
+{{{
+  "title": "Orientable 3-manifolds are parallelizable",
+  "tags": ["mathematics"],
+  "date": "2006-03-05T10:02:05+00:00"
+}}}
+
+  Here's a very easy theorem.
+
+\begin{theorem}
+All closed orientable 3-manifolds are parallelizable.  All closed orientable 3-manifolds are the boundary of a 4-manifold.
+\end{theorem}
+
+\begin{proof}
+Let $M$ be an orientable $3$-manifold.  Recall that the Wu class $v$ is the unique cohomology class such that $\langle v \cup x, [M] \rangle = \langle Sq(x), [M] \rangle$, and Wu's theorem says that $w(M) = Sq(v)$.  The up-shot is that Stiefel-Whitney classes are homotopy invariants, even though they are defined using the tangent bundle.
+
+Since $M$ is orientable, we have $w_1(M) = 0$.   Since $\dim M = 3$, the Steenrod squares $Sq^2$ and $Sq^3$ kill everything, so $v_2 = 0$ and $v_3 = 0$.  By Wu's theorem, $w_2(M) = Sq^1(v_1) + v_2 = 0$, and $w_3(M) = Sq^1(v_2) + v_3 = 0$.  In other words, all the Stiefel-Whitney classes vanish.
+\end{proof}
+
+Orientability matters; after all, being orientable is the same thing as $w_1$ vanishing.  For example, $RP^2 \times S^1$ is not parallelizable, since $w_1(RP^2 \times S^1) = w_1(RP^2) + w_1(S^1) \neq 0$.
+

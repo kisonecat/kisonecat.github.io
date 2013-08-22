@@ -1,0 +1,30 @@
+9→
+
+19 →
+
+25 →
+
+80 →
+
+24 →
+
+13 →
+
+128 →
+
+In general? The Problem. I try a couple cases.
+
+c 2008 Jim Fowler
+
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+You try a few cases.
+
+The 3x + 1 problem.
+Name:
+
+5 → 16 → 8 → 4 → 2 → 1 → 4 → 2 → 1 → · · · 7 → 22 → 11 → 34 → 17 → 52 → 26 → 13 → 40 → 20 → 10 → 5 →? If n is odd, multiply by three and add one. If n is even, divide by two. What happens?
+
+

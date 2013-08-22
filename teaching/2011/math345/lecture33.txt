@@ -1,0 +1,21 @@
+Lecture 33: Combinatorics
+Tuesday, November 23, 2010
+
+Math 345
+Jim Fowler
+
+Textbook
+This lecture discusses section 14 of the textbook.
+
+Homework
+The homework is due Monday, November 29, 2010. From Section 14 of the textbook, do exercises 3, 4, and 5.
+
+Homework collection
+Hand in your homework into the separate pile if you want me to distribute it for peer review.
+
+counting
+Let Pk (A) be the collection of k-element subsets of A. interpret |Pk (A)| as a binomial coeﬃcient for ﬁnite sets, 2|A| = |P (A)| and |A × B| = |A| · |B|. And |AB |?
+
+1
+
+

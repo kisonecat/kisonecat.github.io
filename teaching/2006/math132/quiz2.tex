@@ -1,0 +1,88 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{nopageno}
+\usepackage{ifthen}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx} 
+\usepackage{version}
+\usepackage{amsthm}
+\usepackage{multicol}
+\usepackage{add-copyright}
+
+\excludeversion{solution}
+
+\DeclareMathOperator{\ft}{ft}
+
+\newcommand{\R}{\mathbb{R}}
+
+\title{Take-Home Quiz 2}
+\author{Math 132 Section 22}
+\date{Due Wednesday, January 18, 2006}
+
+\newcounter{problem}
+\setcounter{problem}{1}
+
+\newenvironment{problem}[1][]
+{\begin{flushleft}\hangindent=1em\hangafter=1\noindent\textbf{Problem \arabic{problem}.}
+\ifthenelse{\equal{#1}{}}{}{
+\textbf{(#1 \ifthenelse{\equal{#1}{1}}{point}{points}).}}
+}
+{\addtocounter{problem}{1}\end{flushleft}}
+
+\begin{document}
+\maketitle
+
+Do not merely write down an answer---write also something to convince
+the skeptical and foolish reader (namely, Jim) that your answer is
+correct.  Mathematics is not a collection of disconnected truths; it
+is a way to move from one truth to another.
+
+%This quiz is worth 14 points---12 points are for ``correctness'' of
+%answers, but an additional 2 points will be given out for
+%``style''---awarded to answers which are clearly written, easy to
+%follow, etc.
+
+\begin{problem}[2]
+Compute
+$$
+\frac{d}{dx} \left( \sin 3x - \cos 5x \right).
+$$
+\end{problem}
+
+\begin{problem}[2]
+Compute
+$$
+\frac{d}{dx} \left( \frac{\sin 2x}{\cos 3x} \right).
+$$
+\end{problem}
+
+\begin{problem}[2]
+Compute
+$$
+\frac{d}{dx} \left( \frac{ \sin^2 x }{\sin (x^2)} \right).
+$$
+\end{problem}
+
+\begin{problem}[2]
+Recall that $\cos x = \sin (\pi/2 - x)$.  Calculate the derivative of
+$\cos x$ with respect to $x$ by calculating
+$$
+\frac{d}{dx} \sin \left( \frac{\pi}{2} - x \right).
+$$
+\end{problem}
+
+\begin{problem}[3]
+Recall the identity $\sin (2x) = 2 \sin x \cos x$.  Differentiate both
+sides of this equation with respect to $x$ to get another identity.
+\end{problem}
+
+\begin{problem}[3]
+When does
+$$
+\frac{d}{dx} \sin \left( \sin x \right)
+$$
+equal zero?
+\end{problem}
+
+\end{document}

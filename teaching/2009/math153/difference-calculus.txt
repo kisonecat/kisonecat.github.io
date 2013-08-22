@@ -1,0 +1,86 @@
+Calculus of Finite Diﬀerences
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Dictionary
+function f f (x) d derivative dx f (x)
+x
+
+sequence a an diﬀerence (Da)n = an+1 − an
+n
+
+integral F (x) =
+0
+
+f (x) dx
+
+sum bn = (Ia)n =
+k=0
+
+ak
+
+fundamental theorem of Calculus diﬀerential equation
+
+telescoping sum diﬀerence equation
+
+A true statement about functions and their derivatives can be “translated” into a possibly true statement about sequences and their diﬀerences.
+
+Notation
+Sequences have bold names, e.g., a, b, c. The terms of a sequence are indexed by a subscript, e.g., an ; the index may be any integer, e.g., a−23 . Operators, which transform one sequence into another, are denoted by a capital letter. Some operators include: Diﬀerence (Da)n = an+1 − an Sum
+n
+
+Shift ai (Sa)n = an+1 .
+
+(Σa)n =
+i=0
+
+The sum rule
+The “derivative” of a sum is the sum of the “derivatives,” as follows: (D (a + b))n = = = = (a + b)n+1 − (a + b)n an+1 + bn+1 − an − bn (an+1 − an ) + (bn+1 − bn ) (Da)n + (Db)n .
+
+Formally, this resembles (f + g) (x) = f (x) + g (x).
+c 2008 Jim Fowler
+
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+Mathematics is not just about solving problems: it is about analogies (and analogies between analogies). If two things are perfectly analogous, they are exactly the same, so analogies are most interesting when they are imperfect. In this spirit, I present a “dictionary,” the term mathematicians often use when speaking of an analogy between two ﬁelds of study. In this case, the analogy is between functions and sequences, between calculus and “the calculus of ﬁnite diﬀerences.”
+
+The fundamental theorem of Calculus
+Suppose a = Db, so b is an “antiderivative” for a. Then,
+n
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+(Σa)n = (ΣDb)n =
+i=0
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+(bi+1 − bi )
+
+= (bn+1 − bn ) + (bn − bn−1 ) + (bn−1 − bn−2 ) + · · · + (b1 − b0 ) = bn+1 − b0 .
+x
+
+Formally, this resembles the fact that if f (x) = F (x), then
+0
+
+f (x) dx = F (x) − F (0).
+
+The product rule
+We can take successive diﬀerences of the product of two sequences as follows: D (a · b)n = = = = = (a · b)n+1 − (a · b)n an+1 · bn+1 − an · bn an+1 · bn+1 − an · bn+1 + an · bn+1 − an · bn (an+1 − an ) · bn+1 + an · (bn+1 − bn ) (Da)n · bn+1 + an · (Db)n .
+
+Formally, this resembles (f · g) (x) = f (x) · g(x) + f (x) · g (x).
+
+Exercises
+Exercise 1. Let an = n. What is Da? Exercise 2. Let an = n · n. What is Da? Exercise 3. Find a sequence a solving the diﬀerence equation Da = 2. Exercise 4. Find a sequence a solving the diﬀerence equation D2 a = 2. Can you ﬁnd another sequence solving the equation (besides a + C)? Can you ﬁnd a third solution? Exercise 5. Find a nonzero sequence a solving the diﬀerence equation Da = a. Exercise 6. Find a nonzero sequence a solving the diﬀerence equation Da = c · a. Exercise 7. Find a nonzero sequence a solving the diﬀerence equation Da = c · a. Is this always possible? Exercise 8. Find a nonzero sequence a solving the diﬀerence equation D2 a = −a. This is quite interesting; a sequence which begins 2, 2, 0, −4, −8, −8, 0, 16, 32, 32, 0, −64, −128, −128, 0, 256, 512, . . . is a solution—but can you ﬁnd the general pattern?
+
+c 2008 Jim Fowler
+
+Shift equations
+Another equation you might enjoy solving is a “shift equation” (these are usually called recurrence relations): can you ﬁnd a sequence an which solves the equation Sa = 4 · a? The Fibonacci numbers fn are a solution to a shift equation: S 2 f = Sf + f .
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+Solving a shift equation
+As a toy problem to consider, ﬁnd a sequence an which solves S 2 a = 5 · Sa − 6 · a by the following method. Rearrange this equation to have the form S 2 a − 5 · Sa + 6 · a = 0. “Factor” the operators to get (S − 3) (S − 2) a = 0. But (S − 2) kills the sequence an = 2n , and (S − 3) kills the sequence an = 3n . Is it the case that an = α · 2n + β · 3n is a solution to S 2 a = 5 · Sa − 6 · a, for any constants α and β? What happens if you use this same trick on the Fibonacci sequence?
+
+c 2008 Jim Fowler
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+

@@ -1,0 +1,84 @@
+\documentclass[12pt]{handout}
+\usepackage{nopageno}
+\course{Math 758}
+\title{Final Exam}
+\author{Jim Fowler}
+
+\usepackage{amsmath}
+\newtheorem*{theorem*}{Theorem}
+\newtheorem*{corollary*}{Corollary}
+\theoremstyle{definition}
+\newtheorem{question}[theorem]{Question}
+\newtheorem*{remark*}{Remark}
+\newtheorem*{definition*}{Definition}
+\newtheorem*{example*}{Example}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{subproblem}[theorem]{Subproblem}
+\newtheorem{requiredproblem}[theorem]{\makebox[0in][r]{$\bullet$\hspace{0.25em}}Problem}
+
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\CP}{\mathbb{C}P}
+\newcommand{\RP}{\mathbb{R}P}
+\newcommand{\Z}{\mathbb{Z}}
+\DeclareMathOperator{\projection}{proj}
+\DeclareMathOperator{\link}{link}
+\DeclareMathOperator{\SO}{SO}
+
+\begin{document}
+
+\maketitle
+
+Thank you for a great quarter: I hope you've enjoyed cohomology and
+that you'll be able to use (co)homological arguments to do great
+things.  \textit{Here are five problems to write up for next Thursday;
+  each is worth eighty points.}
+
+\begin{problem}
+  Let $\Sigma_2$ be the closed surface of genus~$2$; find a map $f :
+  \Sigma_2 \to \Sigma_2$ which is not homotopic to the identity, but
+  for which $f^\star : H^\star(\Sigma_2) \to H^\star(\Sigma_2)$ is the
+  identity.  This is an element of the \textbf{Torelli group}.
+\end{problem}
+
+\vfill
+
+\begin{problem}
+  Sometimes manifolds have finite covers which are homeomorphic to the
+  original manifolds, e.g., $S^1$ or the $n$-torus.  Is it possible
+  that a closed manifold $M^n$ has an infinite-sheeted cover which is
+  homotopy equivalent to itself?
+\end{problem}
+
+\vfill
+
+\begin{problem}
+  Calculate $H^n(\RP^7 \times S^3 ; R)$ and compare it to
+  $H^n(\SO(5);R)$ for $R = \Z$ and $R = \Z/2$.  Is $\RP^7 \times S^3$
+  homotopy equivalent to $\SO(5)$?
+\end{problem}
+
+\vfill
+
+\begin{problem}
+  Does Alexander duality hold for ``homology spheres''?  Suppose $M^n$
+  is a closed $n$-manifold with $H_\star(M^n) \cong H_\star(S^n)$, and
+  $K$ a compact, locally contractible, nonempty, proper subspace of
+  $M^n$.  Is it true that $\tilde{H}_i(M^n - K) \cong
+  \tilde{H}^{n-i-1}(K)$?
+\end{problem}
+
+\vfill
+
+\begin{problem}
+The \textbf{Segre map} $\sigma : \CP^n \times \CP^m \to \CP^{(n+1)(m+1)-1}$ is defined by
+$$
+\sigma([x_0 : \cdots : x_n],[y_0 : \cdots : y_m]) = [x_0 y_0 : \cdots : x_i y_j : \cdots : x_n y_m].
+$$
+Describe the map of rings $\sigma^\star : H^\star(\CP^{(n+1)(m+1)-1})
+\to H^\star(\CP^n \times \CP^m)$.
+\end{problem}
+
+\pagebreak
+\null
+
+\end{document}

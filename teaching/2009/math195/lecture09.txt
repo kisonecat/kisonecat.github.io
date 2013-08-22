@@ -1,0 +1,31 @@
+Lecture 9: Chain rule
+Math 195 Section 91 Friday July 10, 2009
+Section 15.5 and section 15.6
+
+1
+
+Chain rule
+
+ﬁrst example: diﬀerentiate f (g(t), h(t)). slightly more complicated example: f (g(t, s), h(t, s)). maximally complicated example
+
+2
+
+Directional derivative
+
+deﬁnition relate to partial derivative
+
+3
+
+Gradient vector
+
+deﬁnition relate gradient to directional derivative interpretation: normal to level curve, steepest ascent
+
+4
+
+Next time
+
+optimization: ﬁnding the max, ﬁnding the min.
+
+1
+
+

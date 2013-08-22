@@ -1,0 +1,247 @@
+Fake Midterm 1
+
+Math 345
+October 2010
+
+Music is the pleasure the human soul experiences from counting without being aware that it is counting. —Leibniz
+
+Name: Lecture time (circle one): 12:30–1:18p.m. 2:30–3:18p.m.
+
+1. Do not write your name above. 2. Calculators are forbidden (and useless, anyhow). 3. Look inside the exam before you are instructed to do so. 4. Give yourself have 48 minutes for ﬁve problems on this fake exam. 5. Justify your answers. 6. Show your work. 7. Write your answers down. 8. Answer all questions. 9. To prevent ﬁre, do not divide by zero.
+
+Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Problem Total
+
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
+
+/360 /360 /360 /360 /360 /360 /360 /360 /360 /360 /360 /360 /360 /360 /360 /360 /360 /360 /360 /360 /360 /360 /360 /360 /360 /360 /360 /360 /360 /360 /10800
+
+Problem 1
+Write down a truth table for the proposition (P ∧ (Q ⇒ R)) ⇒ (P ∧ Q ∧ R)
+
+/360
+
+Solution
+
+Problem 2
+Consider the proposition: (P ∨ Q) ⇒ (((P ⇒ R) ∧ (Q ⇒ R)) ⇒ R)
+
+/360
+
+Is the proposition a tautology? If not, explain why not. If it is a tautology, use the method of conditional proof to prove that it is a tautology. Do not use cases, and be careful not to skip any steps.
+
+Solution
+
+Problem 3
+Consider the proposition: ¬ (P ⇒ (¬P )) Is the proposition a tautology? If not, explain why not. If it is a tautology, prove it.
+
+/360
+
+Solution
+
+Problem 4
+Consider the proposition: (P ∨ Q) ⇒ (P ⇒ Q)
+
+/360
+
+Is the proposition a tautology? If not, explain why not. If it is a tautology, use the method of conditional proof to prove that it is a tautology. Do not use cases, and be careful not to skip any steps.
+
+Solution
+
+Problem 5
+Consider the proposition: (P ⇒ (Q ⇒ P )) ⇒ Q
+
+/360
+
+Is the proposition a tautology? If not, explain why not. If it is a tautology, use the method of conditional proof to prove that it is a tautology. Do not use cases, and be careful not to skip any steps.
+
+Solution
+
+Problem 6
+Consider the proposition: (Q ⇒ R) ⇒ ((P ⇒ Q) ⇒ (P ⇒ R))
+
+/360
+
+Is the proposition a tautology? If not, explain why not. If it is a tautology, use the method of conditional proof to prove that it is a tautology. Do not use cases, and be careful not to skip any steps.
+
+Solution
+
+Problem 7
+Consider the proposition: ((P ⇒ Q) ∨ (P ⇒ R)) ⇒ (P ⇒ (Q ∨ R))
+
+/360
+
+Is the proposition a tautology? If not, explain why not. If it is a tautology, use the method of conditional proof to prove that it is a tautology. Do not use cases, and be careful not to skip any steps.
+
+Solution
+
+Problem 8
+Write down the contrapositive of the conditional sentence: If x > 2, then x2 > 4.
+
+/360
+
+Solution
+
+Problem 9
+Write down the contrapositive of the conditional sentence: If x > 2 and x < 17, then x2 > 4 or x2 < 289.
+
+/360
+
+Solution
+
+Problem 10
+Write down the contrapositive of the conditional sentence: (P ∨ Q) ⇒ (R ∧ S).
+
+/360
+
+Solution
+
+Problem 11
+Consider the three propositions P ∧ (Q ∨ ¬(R ∧ S)) (P ∧ Q) ∨ (P ∧ ((¬R) ∨ (¬S))) P ∧ (Q ∨ (¬R) ∨ (¬S))
+
+/360
+(1) (2) (3)
+
+Which of these propositions are logically equivalent to which other propositions? Provide justiﬁcations for any claims you make; in particular, if you claim that two propositions are logically equivalent, you must prove this, and if you claim that they are not equivalent, you must explain why not.
+
+Solution
+
+Problem 12
+Consider the four propositions P ∧ ¬(Q ⇒ R) P ∧ ((¬Q) ∨ R)) P ∧ Q ∧ ¬R (P ∧ (¬Q)) ∨ (P ∧ R)
+
+/360
+(1) (2) (3) (4)
+
+Which of these propositions are logically equivalent to which other propositions? Provide justiﬁcations for any claims you make; in particular, if you claim that two propositions are logically equivalent, you must prove this, and if you claim that they are not equivalent, you must explain why not.
+
+Solution
+
+Problem 13
+Write down a proposition logically equivalent to ¬ ((P ∨ Q) ⇒ (Q ∧ R)) without using the symbol “⇒.”
+
+/360
+
+Solution
+
+Problem 14
+Is the proposition ∃x ∈ R ∀y ∈ R (x + y = 0) true or false? If it is false, give a counterexample. If it is true, give a proof.
+
+/360
+
+Solution
+
+Problem 15
+Is the proposition ∃x ∈ R ∀y ∈ R (xy = 1) true or false? If it is false, give a counterexample. If it is true, give a proof.
+
+/360
+
+Solution
+
+Problem 16
+Is the proposition ∀x ∈ R ∃y ∈ R (xy = 1) true or false? If it is false, give a counterexample. If it is true, give a proof.
+
+/360
+
+Solution
+
+Problem 17
+Is the proposition ∃x ∈ R ∀y ∈ R (x > y) true or false? If it is false, give a counterexample. If it is true, give a proof.
+
+/360
+
+Solution
+
+Problem 18
+Is the proposition ∀x ∈ R ∀y ∈ R ∃z ∈ R ((x < z) ∧ (z < y)) true or false? If it is false, give a counterexample. If it is true, give a proof.
+
+/360
+
+Solution
+
+Problem 19
+Is the proposition ∀x ∈ R ∀y ∈ R ((x < y) ⇒ ∃z ∈ R ((x < z) ∧ (z < y))) true or false? If it is false, give a counterexample. If it is true, give a proof.
+
+/360
+
+Solution
+
+Problem 20
+Is the proposition ∀x ∈ R ∃y ∈ R ∀z ∈ R x + y < z 2
+
+/360
+
+true or false? If it is false, give a counterexample. If it is true, give a proof. You may use the fact that the square of a real number is nonnegative.
+
+Solution
+
+Problem 21
+Let P (x, y) be a proposition with free variables x, y. Is the statement (∃x ∀y P (x, y)) ⇒ (∀y ∃x P (x, y)) true or false? If it is false, give a counterexample. If it is true, give a proof.
+
+/360
+
+Solution
+
+Problem 22
+Consider the following proposition: If x and y are irrational, then x + y is irrational. If the proposition is true, prove it; if not, give a counterexample.
+
+/360
+
+Solution
+
+Problem 23
+Consider the following proposition: If x and y are rational, then x + 2y is rational. If the proposition is true, prove it; if not, give a counterexample.
+
+/360
+
+Solution
+
+Problem 24
+Consider the following proposition: Let a, b, c ∈ Z. If a divides b and a divides c, then a divides 17a + 13b. If the proposition is true, prove it; if not, give a counterexample.
+
+/360
+
+Solution
+
+Problem 25
+Consider the following proposition: Let a ∈ Z. The integer a3 + 3a2 + 2a is divisible by three. If the proposition is true, prove it; if not, give a counterexample.
+
+/360
+
+Solution
+
+Problem 26
+Consider the following proposition: Let a, b ∈ Z. If a and b are both even or both odd, then a + b is odd. If the proposition is true, prove it; if not, give a counterexample.
+
+/360
+
+Solution
+
+Problem 27
+Consider the following proposition: Let a, b ∈ Z. If a and b are both odd, then ab is odd. If the proposition is true, prove it; if not, give a counterexample.
+
+/360
+
+Solution
+
+Problem 28
+Consider the following proposition: Let a ∈ Z. If a is even, then a6 is even. If the proposition is true, prove it; if not, give a counterexample.
+
+/360
+
+Solution
+
+Problem 29
+Consider the following proposition: Let a, b ∈ Z. If a + b is odd, then a is even or b is even. If the proposition is true, prove it; if not, give a counterexample.
+
+/360
+
+Solution
+
+Problem 30
+Let P (x) and Q(x) be propositions, and consider ((∀x P (x)) ∧ (∀x Q(x))) ⇒ (∀x (P (x) ∧ Q(x))) ((∃x P (x)) ∧ (∃x Q(x))) ⇒ (∃x (P (x) ∧ Q(x))) Is (1) true or false? Is (2) true or false? Explain your answer.
+
+/360
+(1) (2)
+
+Solution
+
+

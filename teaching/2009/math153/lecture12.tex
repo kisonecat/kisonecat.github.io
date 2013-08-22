@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+\newtheorem*{example}{Example}
+\newtheorem*{thm}{Theorem}
+
+\title{Lecture 12: Convergence}
+\author{Math 153 Section 57}
+\date{Friday October 24, 2008}
+
+\begin{document}
+\maketitle
+
+Following chapters 12.2 and 12.3.
+
+\section*{Limit of terms of convergent series}
+
+\section*{Convergence by boundedness}
+
+Theorem: series with nonnegative terms converges iff bounded above
+
+\section*{Integral test}
+
+If $f$ continuous, positive, decreasing on $[1,\infty)$, then
+$$
+\sum_{k=1}^\infty f(k)
+$$
+iff $\int_1^\infty f(x) \, dx$ converges (i.e., as an improper integral).
+
+Draw some pictures
+
+apply integral test to prove harmonic series diverge.
+
+prove harmonic series diverges another way.
+
+apply integral test to $p$-series.
+
+\section*{Comparison theorem}
+
+if $a_k \geq 0$ and $b_k \geq 0$, and for $k$ large,
+$$
+\sum a_k \leq \sum b_k
+$$
+Then $\sum b_k$ converges implies $\sum a_k$ converges.
+
+Example: $\sum 1/(2k^2 + 3)$
+
+Example: $\sum 1/\log (k+5)$ by compariing with $1/2k$.
+
+\end{document}

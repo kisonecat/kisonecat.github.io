@@ -1,0 +1,211 @@
+\documentclass[12pt]{pset}
+%\usepackage{add-copyright}
+
+\geometry{margin=0.5in}
+\title{Problem Set 14}
+\course{Piecewise-Linear Topology}
+\author{Jim Fowler}
+\date{Summer 2010}
+
+\usepackage{tikz}
+\usetikzlibrary{matrix}
+
+\newcommand{\defnword}[1]{\textbf{#1}}
+
+\usepackage{stmaryrd}
+\newcommand{\boundary}{\partial}
+\newcommand{\collapses}{\searrow}
+\newcommand{\expands}{\nearrow}
+\newcommand{\she}{\ssearrow\nnearrow}
+\newcommand{\join}{\ast}
+\newcommand{\subdivided}{\triangleleft}
+\geometry{margin=1in}%,top=0.5in,bottom=0.5in}
+\DeclareMathOperator{\st}{st}
+\DeclareMathOperator{\trace}{trace}
+\DeclareMathOperator{\vertices}{vert}
+\DeclareMathOperator{\lk}{lk}
+\DeclareMathOperator{\cl}{cl}
+\DeclareMathOperator{\interior}{int}
+\DeclareMathOperator{\id}{id}
+\newcommand{\fullsubcomplex}{\Subset}
+\newcommand{\cupp}{\smallsmile}
+
+\usepackage{hyperref}
+
+\begin{document}
+\maketitle
+
+% [[skim:///Users/jim/Papers/MR755006.pdf?page=2][page 2 of MR755006.pdf]]
+
+\subsubsection*{Cohomology.} We introduce a dual version of homology,
+called cohomology.  Reversing all the arrows, while not immediately
+evident, is quite useful.
+
+%Why does the sequence split?  last time we used the fact that $X
+%\times I$ is the same as $X$ to compute that $H_n(X \times S^1) =
+%H_n(X) \oplus H_{n-1}(X)$.
+
+\parskip 0.45\baselineskip
+\parindent 0pt
+
+\begin{definition*}
+  An integer-valued \textbf{cochain} is a homomorphism $\alpha :
+  C_n(X) \to \Z$.  We denote the collection of all such homomorphisms
+  by $C^n(X)$.  The \textbf{coboundary} is a map $d : C^n(X) \to
+  C^{n+1}(X)$ defined by $(d \alpha)(\sigma) = \alpha(\partial
+  \sigma)$ for a simplex $\sigma$.  If a cochain has zero coboundary,
+  we call it a \textbf{cocycle}; let $Z^n(X)$ denote the collection of
+  all cocycles.  Let $B^n(X)$ denote the coboundaries, that is,
+  the image of $d : C^{n-1}(X) \to C^n(X)$.
+
+  Just as homology was cycles modulo boundaries, cohomology is
+  cocycles modulo coboundaries; in symbols, $H^n(X) = Z^n(X) / B^n(X)$.
+\end{definition*}
+
+
+\begin{problem}
+  As before, if $X = A \cup B$, then we have a short exact sequence
+  $$
+  0 \to C^\bullet(X) \to C^\bullet(A) \oplus C^\bullet(B) \to C^\bullet(A \cap B) \to 0
+  $$
+  which, by the zig-zag lemma, gives a long exact sequence in
+  cohomology.  Describe this long exact sequence.
+\end{problem}
+
+\begin{problem}
+  Check that a map $f : X \to Y$ induces a homomorphism $H^n(Y) \to
+  H^n(X)$, that is, in the wrong direction!  Because of this, we say
+  that cohomology is \textbf{contravariantly functorial}, whereas
+  homology is \textbf{covariantly functorial}.
+\end{problem}
+
+\begin{requiredproblem}
+  Compute $H^\star(S^1)$.
+\end{requiredproblem}
+
+\begin{problem}
+  Compute the cohomology of $T^2$ as before, by using the fact that
+  cohomology is homotopy invariant, and $S^1 \times I \simeq S^1$.
+  Compare $H^\bullet(T^2)$ with $H_\bullet(T^2)$.
+\end{problem}
+
+\begin{requiredproblem}
+  Compute the cohomology of $\RP^2$.  Compare $H^\bullet(\RP^2)$ with $H_\bullet(\RP^2)$.
+\end{requiredproblem}
+
+\begin{problem}
+  Given $\alpha \in C^n(X)$ and $x \in C_n(X)$, we get an integer
+  $\alpha(x)$.  Does this descend to cohomology and homology?  In other words, if
+  $\alpha \in H^n(X)$ and $x \in H_n(X)$, can you get a well-defined integer?
+  Is it still well-defined if $\alpha \in H^n(X)$ but  $x \in C_n(X)$, or conversely if
+  $\alpha \in C^n(X)$ but $x \in H_n(X)$?
+\end{problem}
+
+\pagebreak
+
+\subsection*{Cup product}
+
+\begin{definition*}
+  For the time being, we replace $\Z$ by $\Q$; just as we can define $C_n(X;\Q)$, we define $C^n(X;\Q)$ by considering homomorphisms from $C_n(X;\Q)$ to $\Q$.  Now suppose $\alpha \in C^n(X;\Q)$ and $\beta \in C^m(X;\Q)$.  Define $\alpha \cupp \beta$ by
+  \begin{align*}
+  & (\alpha \cupp \beta) [v_0,\ldots,v_{n+m+1}] = \\
+  &\quad\quad\quad \frac{1}{(n+m+1)!} \sum_{\sigma \in S_{n+m+1}} (-1)^\sigma \cdot \alpha [v_{\sigma(0)},\ldots,v_{\sigma(n)}] \cdot \beta [v_{\sigma(n)},\ldots,v_{\sigma(n+m+1)}] 
+  \end{align*}
+\end{definition*}
+
+\begin{requiredproblem}
+  If $\alpha \in Z^n(X;\Q)$ and $\beta \in Z^m(X;\Q)$, is it the case that $\alpha \cupp \beta \in Z^{n+m}(X;\Q)$?
+\end{requiredproblem}
+
+\begin{requiredproblem}
+  If $\alpha \in H^n(X;\Q)$ and $\beta \in H^m(X;\Q)$, show that $\alpha
+  \cupp \beta$ a well-defined cohomology class in $H^{n+m}(X;\Q)$.  Thus,
+  we have defined the \textbf{cup product}, making $H^\bullet(X;\Q)$ into
+  a ring, rather than a collection of abelian groups.
+\end{requiredproblem}
+
+\begin{problem}
+  Show that a map $f : X \to Y$ induces a ring map $H^\bullet(Y;\Q) \to H^\bullet(X;\Q)$.
+\end{problem}
+
+\begin{problem}
+  Compute the ring structure of $H^\bullet(T^2;\Q)$.
+\end{problem}
+
+\begin{problem}
+  Is it possible for a map $f : T^2 \to T^2$ to induce an isomorphism
+  on $H^1(T^2;\Q)$ but the zero map on $H^2(T^2;\Q)$?
+\end{problem}
+
+%\pagebreak
+
+\subsection*{Spaces with the homology of a point}
+
+Last time, Tim Campion asked for an example of a non-contractible
+space with the homology of a point.  Here are a few exercises which
+culiminate in the description of such a space.
+
+\begin{problem}
+  As a warm-up exercise, let $X = S^1 \times D^2$ be the solid torus.
+  Because $\partial X = S^1 \times S^1 = T^2$, we can use a
+  homeomorphism $h : T^2 \to T^2$ to glue together two copies of $X$.
+  Let $h$ be the map that ``exchanges the two coordinate axes'' and
+  show that the resulting space $X \cup_{\partial X} X$ is $S^3$.
+\end{problem}
+
+\begin{problem}
+  Let $X$ be $S^3$ after removing a regular neighborhood of a trefoil
+  knot.  Calculate $H_\bullet(X)$.  (Incidentally, what do you get if
+  you perform the same procedure with a different knot?).
+\end{problem}
+
+\begin{problem}
+  Again, let $X$ be $S^3$ after removing a regular neighborhood of a
+  trefoil knot.  Let $P$ be the union of $X$ with the solid torus $S^1
+  \times D^2$, along the common torus boundary, using the map that
+  ``exchanges the two coordinate axes.''  Calculate $H_\bullet(P)$ via Mayer-Vietoris, and show
+  $H_\bullet(P) \cong H_\bullet(S^3)$.
+
+  In fact, what we have produced here is a \textbf{homology sphere}, a
+  space with the homology of a sphere.  This space $P$ is the very
+  same homology sphere that Poincar\'e discovered by gluing together
+  the sides of a dodecahedron.
+
+  The \textbf{Poincar\'e conjecture} asserts that if a manifold $M^n$
+  is homotopy equivalent to $S^n$, then $M$ is homeomorphic to $S^n$;
+  the space $P$, being distinct from $S^n$, shows that the Poincar\'e
+  conjecture is false if the words ``homotopy equivalent to'' were
+  replaced by ``having the homology of.''
+\end{problem}
+
+\begin{problem}
+  Use Mayer-Vietoris to show that $H_\bullet(P - \interior D^3) \cong
+  H_\bullet(\mbox{point})$.  By $P - \interior D^3$, we mean $P$ with the interior
+  of a tetrahedron removed.  If we had studied the
+  \textbf{fundamental group} $\pi_1$, we could further show that $P -
+  \interior D^3 \not\simeq \mbox{point}$.
+
+  Thus, $P - \interior D^3$ is an \textbf{acyclic space}, a space having the
+  same homology as that of a point.
+\end{problem}
+
+\begin{problem}
+  Repeated the previous problem for an arbitrary homology sphere.
+\end{problem}
+
+\begin{requiredproblem}
+  We can make the preceding discussion a bit more concrete:
+  triangulate a dodecahedron, by introducing a vertex at the center of
+  each pentagon and dividing each pentagon into five triangles.  Then,
+  identify opposite pentagons with a $\pi/3$ twist.  The result is a
+  2-dimensional simplicial complex $X$ with 30 triangles and
+  $H_\bullet(X) \cong H_\bullet(\mbox{point})$.
+
+%  The hardest part of this problem, like so many in life, is just
+%  believing that you can do the calculation.  You can!  To help you
+%  get started, notice that any 1-chain is homologous to a 1-chain on
+%  the edges of the original dodecahedron\ldots
+\end{requiredproblem}
+
+\end{document}
+

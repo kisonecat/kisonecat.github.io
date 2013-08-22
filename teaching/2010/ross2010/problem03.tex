@@ -1,0 +1,246 @@
+\documentclass[12pt]{pset}
+%\usepackage{add-copyright}
+
+\title{Problem Set 3}
+\course{Piecewise-Linear Topology}
+\author{Jim Fowler}
+\date{Summer 2010}
+
+\newcommand{\defnword}[1]{\textbf{#1}}
+
+\newcommand{\boundary}{\partial}
+\newcommand{\collapses}{\searrow}
+\newcommand{\expands}{\nearrow}
+\newcommand{\she}{\ssearrow\nnearrow}
+\newcommand{\join}{\ast}
+\newcommand{\subdivided}{\triangleleft}
+\geometry{margin=1in}%,top=0.5in,bottom=0.5in}
+\DeclareMathOperator{\st}{st}
+\DeclareMathOperator{\vertices}{vert}
+\DeclareMathOperator{\lk}{lk}
+\DeclareMathOperator{\cl}{cl}
+\DeclareMathOperator{\interior}{int}
+
+\begin{document}
+\maketitle
+
+\subsubsection*{This is the end of the beginning.} Problem Set 3 introduces
+\textit{manifolds}, and with that, the last of the survey
+topics.  Please submit answers to problems marked with a $\bullet$.
+
+%\parskip 0.5\baselineskip
+%\parindent 0pt
+
+% \begin{requiredproblem}
+%   Suppose $K$ is a simplicial complex, with subdivisions $K_1
+%   \subdivided K$ and $K_2 \subdivided K$.  Is there a subdivision $K'$
+%   so that $K' \subdivided K_1$ and $K' \subdivided K_2$?
+% \end{requiredproblem}
+
+% \begin{problem}
+%   Let $K, L, M$ be complexes.  If $f : K \to L$ and $g : L \to M$ are
+%  PL maps, how should we define the PL map $g \circ f : K \to M$?
+% \end{problem}
+
+\begin{definition*}
+    Let $K$ be a complex, and $\sigma \in K$ a simplex. 
+    The \textbf{stellar subdivision} of $K$ at $\sigma$ is a new complex
+    $K_\sigma$ with:
+    \begin{itemize}
+    \item the vertices of $K$ with a new vertex $v$.
+    \item the simplexes of $K$ not in $\st(\sigma,K)$,\\
+      along with the simplexes in $v \join (\boundary \sigma) \join \lk(\sigma,K)$.
+    \end{itemize}
+    In symbols, we say
+    $$
+    K_\sigma := (K - \st(\sigma,K)) \cup (v \join (\boundary \sigma) \join
+    \lk(\sigma,K))
+    $$
+    If $K$ can be produced through a (possibly
+    empty) sequence of stellar subdivisions of $L$, 
+    we say that $K$ is a   \textbf{subdivision} of $L$, 
+    and write $K \subdivided L$.
+
+    If $K$ and $L$ are complexes, with $K' \subdivided K$ and $L'
+    \subdivided L$, and $K'$ and $L'$ are simplicially isomorphic,
+    then we say that $K$ and $L$ are \textbf{PL homeomorphic}, and
+    write $K \cong L$.
+\end{definition*}
+
+\begin{problem}
+  For $n \geq 3$, let $P_n$ be the boundary of an $n$-gon.  Prove that
+  $P_n \cong P_m$ for $n,m \geq 3$.  Thus, any $P_n$ is topologically
+  an $S^1$.
+\end{problem}
+
+\begin{definition*}
+  A complex $K$ is \defnword{path-connected} if for any two vertices
+  $v, w \in K$, there exists a sequence of edges
+  $$
+  [v,v_0], [v_0,v_1], [v_1,v_2], [v_2,v_3], \ldots, [v_n,w]
+  $$
+  connecting $v$ and $w$.
+\end{definition*}
+
+\begin{problem}
+  Prove that being path-connected is a topological property, meaning
+  that a space which is PL homeomorphic to a path-connected space is
+  itself path-connected.
+\end{problem}
+
+
+\subsection*{Homeomorphisms}
+
+\begin{problem}
+Is PL homeomorphism an equivalence relation?  That is, is it:
+\begin{description}
+\item[\hspace{1em}reflexive,] meaning, is $A$ homeomorphic to $A$,
+\item[\hspace{1em}symmetric,] meaning, if $A \cong B$, is it true that
+  $B \cong A$, and
+\item[\hspace{1em}transitive,] meaning, if $A \cong B$ and $B \cong C$, is it true that $A \cong C$?
+\end{description}
+\end{problem}
+
+\begin{requiredproblem}
+ Is join well-defined with respect to homeomorphism? That is, if we
+ have PL homeomorphic complexes $K \cong K'$ and $L \cong L'$, is it
+ then the case that $K \join L \cong K' \join L'$?
+\end{requiredproblem}
+
+\begin{problem}
+  Let $X_n$ consist of $n$ points.  For which $n \in \N$ is it the
+  case that for every two injective maps $f, g : X_n \to S^1$, there
+  is a homeomorphism $h : S^1 \to S^1$ so that $h \circ f = g$?  For
+  that matter, in what sense can we think of PL homeomorphic spaces as
+  having a ``homeomorphism'' between them?
+\end{problem}
+
+\begin{problem}
+  Let $X_n$ be the disjoint union of $n$ circles (e.g., $X_3 = S^1
+  \cup S^1 \cup S^1$).  For this problem, call two maps $f, g : X_n
+  \to S^2$ ``equivalent'' if there exists a homeomorphism $h : S^2 \to
+  S^2$ so that $h \circ f = g$.  Count the equivalence classes of maps
+  from $X_5$ to $S^2$?
+\end{problem}
+
+\noindent\parbox{0.50\textwidth}{%
+\begin{problem}
+To the right, three curves are pictured on $T^2 \# T^2$, which is our
+notation for a two-holed surface.  For which pairs of curves $\alpha$ and $\beta$ does there exist a homeomorphism $$f : T^2 \# T^2 \to T^2 \# T^2$$ so that $f(\alpha) = \beta$?
+\end{problem}}%
+\hspace{5pt}%
+\parbox{0.50\textwidth}{%
+\includegraphics[width=0.50\textwidth-5pt]{genus-two-surface-with-curves.pdf}%
+}
+
+
+\subsection*{Manifolds}
+
+\begin{definition*}
+  A complex $M$ is an $n$-dimensional \textbf{PL manifold} (for short,
+an $n$-manifold) if for every vertex $v$ of $M$, we have that
+$\lk(v,M)$ is PL homeomorphic to $S^{n-1}$.
+\end{definition*}
+
+\begin{problem}
+  List all of the $0$-manifolds.
+\end{problem}
+\begin{requiredproblem}
+ Show that any $1$-manifold is a disjoint union of circles.
+\end{requiredproblem}
+\begin{problem}
+  Show that there are infinitely many path-connected $2$-manifolds.
+\end{problem}
+\begin{requiredproblem}
+  If $M$ is a manifold, and $N \cong M$, is $N$ a manifold?  In other
+  words, is ``being a manifold'' preserved by PL homeomorphisms?
+\end{requiredproblem}
+
+\begin{problem}
+If $\sigma$ is a $k$-simplex in an $n$-manifold $M$, show that
+$\lk(\sigma,M) \cong S^{n - k - 1}$.
+\end{problem}
+
+\begin{problem}
+  Suppose $M^m$ is an $m$-manifold, and $N^n$ is an $n$-manifold.  Is
+  their join, $M \join N$, a manifold?
+\end{problem}
+
+\begin{requiredproblem}
+  Identify the manifold $S^n \join S^m$.
+\end{requiredproblem}
+
+\begin{definition*}
+  If a complex $N$ is a subcomplex of a complex $M$, and both $N$ and
+  $M$ are also manifolds, then we say that $N$ is a
+  \textbf{submanifold} of $M$.
+\end{definition*}
+
+\begin{problem}
+ Suppose $f : M \to N$ is a simplicial map between manifolds, $M$ and $N$.
+ If $K$ is a submanifold of $M$, is $f(K)$ a submanifold of $N$?
+\end{problem}
+
+\begin{problem}
+ Suppose $f : M \to N$ is a simplicial map between manifolds, $M$ and $N$.
+ Is it always the case, for a vertex $v \in N$, that $f^{-1}(v)$ a
+ submanifold of $M$?  Is that never the case?
+\end{problem}
+
+\begin{problem}
+Suppose $M$ is a 3-manifold.  Calculate $\chi(M)$.
+\end{problem}
+
+\begin{problem}
+  If you glue together $\Delta^n$ and $\Delta^n$ using a homeomorphism
+  between their boundaries, do you necessarily get $S^n$?  (You
+  probably can't answer this question yet, but I think it is worth
+  considering).
+\end{problem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Manifolds with boundary}
+
+\begin{definition*}
+  A complex $M$ is an $n$-dimensional \textbf{PL manifold with
+    boundary} (for short, and confusingly, also called an
+  $n$-manifold) if, for every vertex $v$ of $M$, we have that
+  $\lk(v,M)$ is PL homeomorphic to either $S^{n-1}$ or to $\Delta^{n-1}$.
+
+  The \textbf{boundary} of an $n$-manifold $M^n$ is the closure of
+  the set of $(n-1)$-simplexes $\sigma \in M$, for which there is a
+  unique $n$-simplex $\tau \in M$ with $\sigma < \tau$.
+%$$
+%  \lk(\sigma, M) \cong \Delta^{n-m-1}.
+%$$
+We write $\boundary M$ for the boundary of $M$.  Finally, we say that
+$M^n$ is a \defnword{manifold without boundary} if $\boundary M =
+\varnothing$, i.e., if the link of every vertex is a sphere.
+\end{definition*}
+
+\begin{problem}
+  Show that $\boundary$ is well-defined (up to PL homeomorphism---in
+  other words, why is $\boundary M \cong \boundary N$ for PL
+  homeomorphic manifolds $M$ and $N$?).
+\end{problem}
+
+%\begin{problem}
+% Prove that $\boundary M$ is a subcomplex of $M$.
+%\end{problem}
+\begin{problem}
+Prove that $\boundary M$ is a submanifold of $M$, and that $\boundary \boundary M = \varnothing$.
+\end{problem}
+\begin{problem}
+  Suppose $M$ and $N$ are $n$-manifolds with PL homeomorphic
+  boundaries.  Define what one might mean by gluing $M$ and $N$ along
+  their common boundary---is the result a manifold?
+\end{problem}
+
+\begin{problem}
+  Does there exist a complex $K$ and a number $n$ so that, for every vertex $v$ of $K$, $\lk(\{v\}, M) \cong \Delta^{n-1}$?
+\end{problem}
+
+
+
+\end{document}
+

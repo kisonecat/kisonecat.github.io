@@ -1,0 +1,37 @@
+Homework and Quiz 11
+Due Monday, July 20, 2009 Ungraded homework
+For practice, do Section Section Section Section 16.4, 16.5, 16.6, 16.7, page page page page 1014, 1024, 1034, 1040, problems problems problems problems 7, 3, 3, 3, 9, 11, 15, 19, 21, 29. 5. 5, 7, 9, 11, 15, 19, 21, 29. 9, 15, 17, 27.
+
+I am not going to emphasize the material in section 16.5. On the other hand, section 16.4 is extremely important (as it is the ﬁrst example of change of coordinates).
+
+Graded Quiz
+(a) Evaluate the integral
+1 x=−1 √ 1−x2
+
+√ y=− 1−x2
+
+xy dy dx
+
+by converting it into polar coordinates. (b) Find the volume of the region R = {(x, y, z) ∈ R3 : 0 ≤ z ≤ 18 − 2x2 − 2y 2 }. (c) Let S = {(x, y, z) ∈ R3 : x2 + y 2 + z 2 ≤ R}, and H = {(x, y, z) ∈ R3 : x2 + y 2 ≥ r}. Compute the volume of S ∩ H. Your answer will depend on R and r. (d) Evaluate the following:
+1 x=0 2 y=0 3
+
+xyz dz dy dx
+z=0
+
+(e) Evaluate a =
+
+R
+
+x dV , b =
+
+R
+
+y dV , and c =
+
+R
+
+z dV where
+
+R = {(x, y, z) ∈ R3 : x ≥ 0, y ≥ 0, z ≥ 0, 2x + 2y + z ≤ 4}. Then the point (a, b, c) is the center of mass of the tetrahedron R.
+
+

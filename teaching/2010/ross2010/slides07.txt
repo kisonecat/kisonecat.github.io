@@ -1,0 +1,423 @@
+Topology of Piecewise-Linear Manifolds
+Jim Fowler Lecture 7 Summer 2010
+
+Regular neighborhoods
+
+Suppose X ⊂ M.
+
+Regular neighborhoods
+
+Suppose X ⊂ M. The polyhedron X might have many neighborhoods in M.
+
+Regular neighborhoods
+
+Suppose X ⊂ M. The polyhedron X might have many neighborhoods in M. But there is an “essentially unique” regular neighborhood.
+
+E. C. Zeeman
+
+E. C. Zeeman
+Goal: “Unknotting combinatorial balls”
+
+E. C. Zeeman
+Goal: “Unknotting combinatorial balls” a paper in the Annals
+
+Main result
+Theorem
+
+Any embedding S p ⊂ S q is unknotted, if q − p ≥ 3.
+
+Main result
+Theorem
+
+Any embedding S p ⊂ S q is unknotted, if q − p ≥ 3.
+Corollary
+
+Any embedding S 1 ⊂ S 4 is unknotted.
+
+Some background
+
+Can S 1 be knotted in S 3 ?
+
+Some background
+
+Can S 1 be knotted in S 3 ?
+
+What does knotted even mean?
+
+One point compactiﬁcation
+R1 ∼ S 1 − point =
+
+One point compactiﬁcation
+R1 ∼ S 1 − point =
+
+R2 ∼ S 2 − point =
+
+One point compactiﬁcation
+R1 ∼ S 1 − point =
+
+R2 ∼ S 2 − point =
+
+R3 ∼ S 3 − point =
+
+One point compactiﬁcation
+R1 ∼ S 1 − point =
+
+R2 ∼ S 2 − point =
+
+R3 ∼ S 3 − point = So we can draw S 1 ⊂ S 3 as if the circle were in R3 .
+
+Reidemeister Move—Type I
+
+Reidemeister Move—Type II
+
+Reidemeister Move—Type III
+
+Reidemeister Moves
+
+Knots
+
+Theorem Two knots are the same if a diagram for the one can be transformed into the other via Reidemeister moves.
+
+High dimensional knots?
+
+Are there “Reidemeister moves” for S 2’s in S 4?
+
+Pairs
+Deﬁnition
+“(p, q)-sphere pair” means S q ⊂ S p . We sometimes write (S p , S q ). “(p, q)-ball pair” means B q ⊂ B p , with B q properly embedded in B p , meaning ∂B q ⊂ ∂B p and int B q ⊂ int B p . We sometimes write (B p , B q ).
+
+Pairs
+Deﬁnition
+“(p, q)-sphere pair” means S q ⊂ S p . We sometimes write (S p , S q ). “(p, q)-ball pair” means B q ⊂ B p , with B q properly embedded in B p , meaning ∂B q ⊂ ∂B p and int B q ⊂ int B p . We sometimes write (B p , B q ). “Pair” means either a ball-pair or sphere-pair.
+
+Pairs
+Deﬁnition
+“(p, q)-sphere pair” means S q ⊂ S p . We sometimes write (S p , S q ). “(p, q)-ball pair” means B q ⊂ B p , with B q properly embedded in B p , meaning ∂B q ⊂ ∂B p and int B q ⊂ int B p . We sometimes write (B p , B q ). “Pair” means either a ball-pair or sphere-pair. ∂(B p , B q ) = (S p−1 , S q−1 ).
+
+Joins of pairs
+(S p , S q ) ∗ S k is a
+
+Joins of pairs
+(S p , S q ) ∗ S k is a sphere pair.
+
+Joins of pairs
+(S p , S q ) ∗ S k is a sphere pair. (S p , S q ) ∗ B k is a
+
+Joins of pairs
+(S p , S q ) ∗ S k is a sphere pair. (S p , S q ) ∗ B k is a ball pair.
+
+Joins of pairs
+(S p , S q ) ∗ S k is a sphere pair. (S p , S q ) ∗ B k is a ball pair. (B p , B q ) ∗ S k is a
+
+Joins of pairs
+(S p , S q ) ∗ S k is a sphere pair. (S p , S q ) ∗ B k is a ball pair. (B p , B q ) ∗ S k is a ball pair.
+
+Joins of pairs
+(S p , S q ) ∗ S k is a sphere pair. (S p , S q ) ∗ B k is a ball pair. (B p , B q ) ∗ S k is a ball pair. (B p , B q ) ∗ B k is a
+
+Joins of pairs
+(S p , S q ) ∗ S k is a sphere pair. (S p , S q ) ∗ B k is a ball pair. (B p , B q ) ∗ S k is a ball pair. (B p , B q ) ∗ B k is a ball pair.
+
+Joins of pairs
+(S p , S q ) ∗ S k is a sphere pair. (S p , S q ) ∗ B k is a ball pair. (B p , B q ) ∗ S k is a ball pair. (B p , B q ) ∗ B k is a ball pair.
+
+Joins of pairs
+(S p , S q ) ∗ S k is a sphere pair. (S p , S q ) ∗ B k is a ball pair. (B p , B q ) ∗ S k is a ball pair. (B p , B q ) ∗ B k is a ball pair. We’ll call the join of a pair and a point a cone pair.
+
+Subpairs
+X = (X p , X q ) and Y = (Y r , Y s ) are pairs we say Y is a subpair of X (written Y ⊂ X or X ⊃ Y ) if Y r ⊂ X p and T s = X q ∩ Y r .
+
+Subpairs
+X = (X p , X q ) and Y = (Y r , Y s ) are pairs we say Y is a subpair of X (written Y ⊂ X or X ⊃ Y ) if Y r ⊂ X p and T s = X q ∩ Y r . If P = (S p , S q ) ⊃ Q = (B p , B q ), then P − int Q = (S p − int B p , S q − int B q ) is a ball pair (via regular neighborhood machinery).
+
+Faces of pairs
+If Q = (B p−1 , B q−1 ) is contained in the boundary of Q = (B p , B q ), we call Q a face of Q.
+
+Faces of pairs
+If Q = (B p−1 , B q−1 ) is contained in the boundary of Q = (B p , B q ), we call Q a face of Q.
+
+Theorem
+If ball pairs intersect in their common boundary, their union is a sphere pair.
+
+Faces of pairs
+If Q = (B p−1 , B q−1 ) is contained in the boundary of Q = (B p , B q ), we call Q a face of Q.
+
+Theorem
+If ball pairs intersect in their common boundary, their union is a sphere pair.
+
+Theorem
+If ball pairs intersect in a face, their union is a ball pair.
+
+Standard pairs
+Γp,q = (S p−q ∆q , ∆q ) is the standard (p, q)-ball pair. ∂Γp+1,q+1 is the standard (p, q)-sphere pair.
+
+Standard pairs
+Γp,q = (S p−q ∆q , ∆q ) is the standard (p, q)-ball pair. ∂Γp+1,q+1 is the standard (p, q)-sphere pair.
+
+A pair is unknotted if it is homeomorphic to a standard pair.
+
+Theorem (BallThmp,q )
+If p − q ≥ 3, then any (p, q)-ball pair is unknotted.
+
+Theorem (SphereThmp,q )
+If p − q ≥ 3, then any (p, q)-sphere pair is unknotted.
+
+Theorem (BallThmp,q )
+If p − q ≥ 3, then any (p, q)-ball pair is unknotted.
+
+Theorem (SphereThmp,q )
+If p − q ≥ 3, then any (p, q)-sphere pair is unknotted.
+
+Proof.
+By induction.
+
+Overview of the induction
+
+Prove BallThmp,0 by hand.
+
+Overview of the induction
+
+Prove BallThmp,0 by hand. BallThmp,q implies SphereThmp,q .
+
+Overview of the induction
+
+Prove BallThmp,0 by hand. BallThmp,q implies SphereThmp,q . BallThmp−1,q−1 and SphereThmp−1,q−1 together imply BallThmp,q .
+
+Base case
+Lemma
+BallThmp,0 is true.
+
+Base case
+Lemma
+BallThmp,0 is true.
+
+Proof.
+A ball B p with a marked point B 0 is homeomorphic to any other such (via regular neighborhood theory).
+
+Overview of the induction
+
+Prove BallThmp,0 by hand. BallThmp,q implies SphereThmp,q . BallThmp−1,q−1 and SphereThmp−1,q−1 together imply BallThmp,q .
+
+Overview of the induction
+
+Prove BallThmp,0 by hand. BallThmp,q implies SphereThmp,q . BallThmp−1,q−1 and SphereThmp−1,q−1 together imply BallThmp,q .
+
+Lemma
+BallThmp,q ⇒ SphereThmp,q
+
+Lemma
+BallThmp,q ⇒ SphereThmp,q
+
+Proof.
+P = (S p , S q ). Choose vertex x ∈ S q .
+
+Lemma
+BallThmp,q ⇒ SphereThmp,q
+
+Proof.
+P = (S p , S q ). Choose vertex x ∈ S q . P = Q ∪ {x} ∗ ∂Q,
+
+Lemma
+BallThmp,q ⇒ SphereThmp,q
+
+Proof.
+P = (S p , S q ). Choose vertex x ∈ S q . P = Q ∪ {x} ∗ ∂Q, where Q = (S p − st(x, S p ), S q − st(x, S q )).
+
+Lemma
+BallThmp,q ⇒ SphereThmp,q
+
+Proof.
+P = (S p , S q ). Choose vertex x ∈ S q . P = Q ∪ {x} ∗ ∂Q, where Q = (S p − st(x, S p ), S q − st(x, S q )). Extend Q ∼ Γp,q to = a homeomorphism P ∼ ∂Γp+1,q+1 . =
+
+Overview of the induction
+
+Prove BallThmp,0 by hand. BallThmp,q implies SphereThmp,q . BallThmp−1,q−1 and SphereThmp−1,q−1 together imply BallThmp,q .
+
+Overview of the induction
+
+Prove BallThmp,0 by hand. BallThmp,q implies SphereThmp,q . BallThmp−1,q−1 and SphereThmp−1,q−1 together imply BallThmp,q .
+
+The last step
+BallThmp−1,q−1 and SphereThmp−1,q−1 ⇓ BallThmp,q
+
+This will require more machinery, building on simplicial collapse and regular neighborhoods.
+
+BallThmp−1,q−1 and SphereThmp−1,q−1 ⇓ BallThmp,q
+
+BallThmp−1,q−1 and SphereThmp−1,q−1 ⇓ BallThmp,q
+
+Lemma
+Assuming BallThmp−1,q−1 and SphereThmp−1,q−1 , (B p , B q ) with p − q ≥ 3 is unknotted provided B p B q.
+
+BallThmp−1,q−1 and SphereThmp−1,q−1 ⇓ BallThmp,q
+
+Lemma
+Assuming BallThmp−1,q−1 and SphereThmp−1,q−1 , (B p , B q ) with p − q ≥ 3 is unknotted provided B p B q.
+
+Lemma
+If p − q ≥ 3 and (B p , B q ) is any ball pair, then B p B q.
+
+But ﬁrst. . .
+
+Before we can proceed, we will prove a couple of helpful lemmas.
+
+Lemma
+Q1 and Q2 are unknotted (p, q)-ball pairs. ∼ = Any homeomorphism h : ∂Q1 −→ ∂Q2 ∼ = extends to a homeomorphism h : Q1 −→ Q2 .
+
+Lemma
+Q1 and Q2 are unknotted (p, q)-ball pairs. ∼ = Any homeomorphism h : ∂Q1 −→ ∂Q2 ∼ = extends to a homeomorphism h : Q1 −→ Q2 .
+
+Proof (via Alexander trick).
+y = point in interior of ∆q ; then since Qi is unknotted, we have maps ∼ = fi : Qi −→ {y } ∗ ∂Γp,q
+
+Lemma
+Q1 and Q2 are unknotted (p, q)-ball pairs. ∼ = Any homeomorphism h : ∂Q1 −→ ∂Q2 ∼ = extends to a homeomorphism h : Q1 −→ Q2 .
+
+Proof (via Alexander trick).
+y = point in interior of ∆q ; then since Qi is unknotted, we have maps ∼ = fi : Qi −→ {y } ∗ ∂Γp,q
+1 2 g : ∂Γp,q −→ ∂Q1 −→ ∂Q2 −→ ∂Γp,q
+
+f
+
+−1
+
+h
+
+f
+
+Lemma
+Q1 and Q2 are unknotted (p, q)-ball pairs. ∼ = Any homeomorphism h : ∂Q1 −→ ∂Q2 ∼ = extends to a homeomorphism h : Q1 −→ Q2 .
+
+Proof (via Alexander trick).
+y = point in interior of ∆q ; then since Qi is unknotted, we have maps ∼ = fi : Qi −→ {y } ∗ ∂Γp,q
+1 2 g : ∂Γp,q −→ ∂Q1 −→ ∂Q2 −→ ∂Γp,q 1 2 h : Q1 −→ {y } ∗ ∂Γp,q −→ {y } ∗ ∂Γp,q −→ Q2 In short, radial extension.
+
+f
+
+−1
+
+h
+
+f
+
+f
+
+cone g
+
+f
+
+−1
+
+Lemma (assume BallThmp−1,q−1)
+If Q1 , Q2 are unknotted (p, q)-ball pairs, and Q3 = Q1 ∩ Q2 is a face, then Q1 ∪ Q2 is unknotted.
+
+Lemma (assume BallThmp−1,q−1)
+If Q1 , Q2 are unknotted (p, q)-ball pairs, and Q3 = Q1 ∩ Q2 is a face, then Q1 ∪ Q2 is unknotted.
+
+Proof.
+
+Choose Q3 −→ Γp−1,q−1 , extend over ∂Q1 − int Q3 ∼ = to h : ∂Q1 −→ Γp−1,q−1 ∪ C ∂Γp−1,q−1 ,
+
+∼ =
+
+Lemma (assume BallThmp−1,q−1)
+If Q1 , Q2 are unknotted (p, q)-ball pairs, and Q3 = Q1 ∩ Q2 is a face, then Q1 ∪ Q2 is unknotted.
+
+Proof.
+
+Choose Q3 −→ Γp−1,q−1 , extend over ∂Q1 − int Q3 ∼ = to h : ∂Q1 −→ Γp−1,q−1 ∪ C ∂Γp−1,q−1 , h extends to Q1 → C Γp−1,q−1
+
+∼ =
+
+Lemma (assume BallThmp−1,q−1)
+If Q1 , Q2 are unknotted (p, q)-ball pairs, and Q3 = Q1 ∩ Q2 is a face, then Q1 ∪ Q2 is unknotted.
+
+Proof.
+
+Choose Q3 −→ Γp−1,q−1 , extend over ∂Q1 − int Q3 ∼ = to h : ∂Q1 −→ Γp−1,q−1 ∪ C ∂Γp−1,q−1 , h extends to Q1 → C Γp−1,q−1 Similarly produce Q2 → C Γp−1,q−1
+
+∼ =
+
+Lemma (assume BallThmp−1,q−1)
+If Q1 , Q2 are unknotted (p, q)-ball pairs, and Q3 = Q1 ∩ Q2 is a face, then Q1 ∪ Q2 is unknotted.
+
+Proof.
+
+Choose Q3 −→ Γp−1,q−1 , extend over ∂Q1 − int Q3 ∼ = to h : ∂Q1 −→ Γp−1,q−1 ∪ C ∂Γp−1,q−1 , h extends to Q1 → C Γp−1,q−1 Similarly produce Q2 → C Γp−1,q−1 Glue together Q1 ∪ Q2 ∼ SΓp−1,q−1 . =
+
+∼ =
+
+Regular neighborhoods
+M, an n-manifold, X ⊂ M a polyhedron a regular neighborhood of X in M is a subpolyhedron N ⊂ M such that N is a closed neighborhood of X N is an n-manifold N X.
+
+Theorem
+If N1 and N2 are regular neighborhoods of X ⊂ M, there’s a homeomorphism N1 → N2 keeping X ﬁxed.
+
+Lemma
+Assuming BallThmp−1,q−1 and SphereThmp−1,q−1 , (B p , B q ) with p − q ≥ 3 is unknotted provided B p B q.
+
+Lemma
+Assuming BallThmp−1,q−1 and SphereThmp−1,q−1 , (B p , B q ) with p − q ≥ 3 is unknotted provided B p B q.
+
+Warning: The lemma is false if p − q = 2. If (B 4 , B 2 ) = cone(S 3 , S 1 ), then B 4 B 2 because cones collapse to a subcone
+
+Lemma
+Bp B q ⇒ (B p , B q ) unknotted
+
+Lemma
+Bp B q ⇒ (B p , B q ) unknotted Pick regular neighborhood N of B q ;
+
+Lemma
+Bp B q ⇒ (B p , B q ) unknotted Pick regular neighborhood N of B q ; then (B p , B q ) ∼ (N, B q ). =
+
+Lemma
+Bp B q ⇒ (B p , B q ) unknotted Pick regular neighborhood N of B q ; then (B p , B q ) ∼ (N, B q ). = q B = Kk Kk−1 ··· K0 = {x}
+
+Lemma
+Bp B q ⇒ (B p , B q ) unknotted Pick regular neighborhood N of B q ; then (B p , B q ) ∼ (N, B q ). = q B = Kk Kk−1 ··· K0 = {x} Qi = simplicial neighborhood of Ki in (B p , B q ).
+
+Lemma
+Bp B q ⇒ (B p , B q ) unknotted Pick regular neighborhood N of B q ; then (B p , B q ) ∼ (N, B q ). = q B = Kk Kk−1 ··· K0 = {x} Qi = simplicial neighborhood of Ki in (B p , B q ). Proceed by induction.
+
+Lemma
+Bp B q ⇒ (B p , B q ) unknotted Pick regular neighborhood N of B q ; then (B p , B q ) ∼ (N, B q ). = q B = Kk Kk−1 ··· K0 = {x} Qi = simplicial neighborhood of Ki in (B p , B q ). Proceed by induction. Q0 = {x} ∗ L where L = (lk(x, B p ), lk(x, B q )),
+
+Lemma
+Bp B q ⇒ (B p , B q ) unknotted Pick regular neighborhood N of B q ; then (B p , B q ) ∼ (N, B q ). = q B = Kk Kk−1 ··· K0 = {x} Qi = simplicial neighborhood of Ki in (B p , B q ). Proceed by induction. Q0 = {x} ∗ L where L = (lk(x, B p ), lk(x, B q )), and L is unknotted by either BallThmp−1,q−1 or SphereThmp−1,q−1 .
+
+Suppose Qi−1 is unknotted.
+
+Suppose Qi−1 is unknotted. Ki − Ki−1 consists of a principal simplex A with a free face C .
+
+Suppose Qi−1 is unknotted. Ki − Ki−1 consists of a principal simplex A with a free face C . Pick a ∈ int A and c ∈ int C .
+
+Suppose Qi−1 is unknotted. Ki − Ki−1 consists of a principal simplex A with a free face C . Pick a ∈ int A and c ∈ int C . Qa = {a} ∗ (lk(a, B p ), lk(a, B q )) is unknotted.
+
+Suppose Qi−1 is unknotted. Ki − Ki−1 consists of a principal simplex A with a free face C . Pick a ∈ int A and c ∈ int C . Qa = {a} ∗ (lk(a, B p ), lk(a, B q )) is unknotted. Qc = {c} ∗ (lk(c, B p ), lk(c, B q )) is unknotted.
+
+Suppose Qi−1 is unknotted. Ki − Ki−1 consists of a principal simplex A with a free face C . Pick a ∈ int A and c ∈ int C . Qa = {a} ∗ (lk(a, B p ), lk(a, B q )) is unknotted. Qc = {c} ∗ (lk(c, B p ), lk(c, B q )) is unknotted. Qi = Qi−1 ∪ Qa ∪ Qc is union of unknotted ball pairs along faces; therefore, Qi is unknotted.
+
+Suppose Qi−1 is unknotted. Ki − Ki−1 consists of a principal simplex A with a free face C . Pick a ∈ int A and c ∈ int C . Qa = {a} ∗ (lk(a, B p ), lk(a, B q )) is unknotted. Qc = {c} ∗ (lk(c, B p ), lk(c, B q )) is unknotted. Qi = Qi−1 ∪ Qa ∪ Qc is union of unknotted ball pairs along faces; therefore, Qi is unknotted.
+
+All that remains
+If we could prove
+
+Lemma
+If p − q ≥ 3 and (B p , B q ) is any ball pair, then B p B q. we would ﬁnish the argument.
+
+All that remains
+If we could prove
+
+Lemma
+If p − q ≥ 3 and (B p , B q ) is any ball pair, then B p B q. we would ﬁnish the argument. Hitherto, no use of the codimension assumption.
+
+All that remains
+If we could prove
+
+Lemma
+If p − q ≥ 3 and (B p , B q ) is any ball pair, then B p B q. we would ﬁnish the argument. Hitherto, no use of the codimension assumption.
+
+Proof Technique.
+Sunny collapse.
+
+

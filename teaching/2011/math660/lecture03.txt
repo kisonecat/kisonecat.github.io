@@ -1,0 +1,131 @@
+Lecture 3: Polynomials and rational functions
+Math 660—Jim Fowler Wednesday, June 22, 2011
+
+Review
+
+Provided the limit exists, the derivative f (z) is f (z + h) − f (z) h→0 h lim
+
+Why the Cauchy-Riemann equations?
+Compute limit in two diﬀerent directions, lim versus lim f (z + i ) − f (z) f (z + i ) − f (z) = lim −i →0 →0 i f (z + ) − f (z) = ∂f (z) ∂x
+
+→0
+
+and therefore ∂f ∂f (z) = −i (z). ∂x ∂y
+
+Cauchy-Riemann ⇒ analytic
+Suppose f (z) = 0, and f : R2 → R2 is diﬀerentiable at zero. Then ∂f ∂f (0) x + (0) y + c(z) z, f (z) = ∂x ∂y where c(z) → 0 as z → 0. Now z + z = 2x and ¯ z − z = 2iy , so f (z) equals ¯
+∂f ∂x
+
+(0) − 2
+
+∂f ∂y
+
+(0) i z+ ∂f ∂z
+
+∂f ∂x
+
+(0) + 2
+
+∂f ∂y
+
+(0) i z +c(z) z ¯
+
+so f (z) = z (0) + ∂f z ¯ (0) · + c(z) ∂¯ z z
+
+Analytic refers to power series. Holomorphic refers to diﬀerentiability. A theorem relates the two notions.
+
+More on complex derivatives
+f : C → C gives rise to f : R2 → R2 . i : R2 → R2 is the “rotate by π/4” map.
+∂f1 ∂x ∂f2 ∂x ∂f1 ∂y ∂f2 ∂y
+
+Df =
+
+.
+
+If f is holomorphic, then Df ◦ i = i ◦ Df . If f is holomorphic, then Df is a combination of rotation and scaling.
+
+∂f ∂f = −i ∂y ∂x ∂f ∂f i ∂x = ∂y
+
+Diﬀerent, or the same?
+∂u ∂x ∂v f (z) = ∂y ∂u f (z) = ∂x ∂v f (z) = ∂y f (z) = ∂v ∂x ∂v +i ∂x ∂u −i ∂y ∂u −i ∂y +i
+
+Diﬀerent, or the same?
+∂u ∂x ∂v f (z) = ∂y ∂u f (z) = ∂x ∂v f (z) = ∂y f (z) = ∂v ∂x ∂v +i ∂x ∂u −i ∂y ∂u −i ∂y +i
+
+All the same by the Cauchy-Riemann equations.
+
+Cauchy-Riemann equations
+Write a function f : C → C in terms of z and z. 1 ∂f = ∂z 2 ∂f 1 = ∂z 2 ∂f ∂f −i ∂x ∂y ∂f ∂f +i ∂x ∂y
+
+“Analytic means f doesn’t depend on z.”
+
+Analytic or not?
+
+Analytic or not?
+
+f (z) = z 2 .
+
+Analytic or not?
+
+f (z) = z 2 . f (a + bi) = e a (cos b + i sin b).
+
+Analytic or not?
+
+f (z) = z 2 . f (a + bi) = e a (cos b + i sin b). f (z) = real part of z.
+
+Analytic or not?
+
+f (z) = z 2 . f (a + bi) = e a (cos b + i sin b). f (z) = real part of z. f (z) = 17i.
+
+Analytic or not?
+
+f (z) = z 2 . f (a + bi) = e a (cos b + i sin b). f (z) = real part of z. f (z) = 17i. f (z) = z.
+
+Analytic or not?
+
+f (z) = z 2 . f (a + bi) = e a (cos b + i sin b). f (z) = real part of z. f (z) = 17i. f (z) = z. f (z) = sin z + i cos imag z.
+
+A formal method
+Goal: Given u, ﬁnd v so that f = u + iv is analytic. f (z) is a function of z. f (x + iy ) + f (x − iy ) . 2 Substitute in x = z/2 and y = −iz/2. Guess u(x, y ) = f (z) = 2u(z/2, iz/2). Example: u(x, y ) = x 2 − y 2 ; then f (z) = z 2 .
+
+Section 2.1.3 and 2.1.4
+
+polynomials and rational functions
+
+Polynomials
+
+p(z) = cn z n + · · · + c1 z + c0
+
+Theorem (Fund. Theorem of Algebra)
+Let p(z) be a polynomial. Then there exists z ∈ C so that f (z) = 0.
+
+Theorem
+Every polynomial p(z) can be written as p(z) = λ(z − a1 )(z − a2 ) · · · (z − an ) for complex numbers λ, a1 , a2 , . . . , an .
+
+Zeroes of a polynomial
+A polynomial p has a zero of order n at w if p(w ) = 0, p (w ) = 0, . . . , p (n−1) (w ) = 0 but p (n) (w ) = 0.
+
+Equivalently, (z − w )n divides p(z).
+
+Theorem (Gauss–Lucas)
+Let p(z) be a polynomial; if all zeroes of p lie in a half plane, then all zeroes of p lie in the same half plane.
+
+Proof
+p(z) = λ(z − a1 )(z − a2 ) · · · (z − an ). p (z) 1 1 = + ··· + p(z) z − a1 z − an Let H = {z ∈ C : imag(z − a)/b < 0}. If ak ∈ H but z ∈ H, then z − ak z −a ak − a = imag − imag >0 b b b so imag b/(z − ak ) < 0. So imag imag b p (z) = p(z) imag b/(z − ak ) < 0,
+
+and p (z) = 0.
+
+As a consequence of the preceding theorem:
+
+Theorem
+Let p(z) be a polynomial; the convex hull of the zeroes of p contains the zeroes of p . Vaguely, the zeroes of p are between the zeroes of p, like in Rolle’s theorem.
+
+a polynomial with four roots
+
+the derivative
+
+the second derivative
+
+the third derivative
+
+

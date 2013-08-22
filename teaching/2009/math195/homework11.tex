@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+
+\usepackage{fullpage}
+\usepackage{nopageno}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\newcommand{\R}{\mathbb{R}}
+%\usepackage{add-copyright} these problems come from the book
+\usepackage{geometry}
+\geometry{top=0.25in,bottom=0.50in}
+
+\title{Homework and Quiz 11}
+\date{Due Monday, July 20, 2009}
+
+\begin{document}
+\maketitle
+
+\subsection*{Ungraded homework}
+
+For practice, do
+\begin{quote}
+  Section 16.4, page 1014, problems 7, 9, 11, 15, 19, 21, 29. \\
+  Section 16.5, page 1024, problems 3, 5. \\
+  Section 16.6, page 1034, problems 3, 5, 7, 9, 11, 15, 19, 21, 29. \\
+  Section 16.7, page 1040, problems 3, 9, 15, 17, 27. 
+\end{quote}
+I am not going to emphasize the material in section 16.5.  On the
+other hand, section 16.4 is extremely important (as it is the first
+example of \textit{change of coordinates}).
+\vfill
+
+\subsection*{Graded Quiz}
+
+\begin{description}
+\item[(a)] Evaluate the integral
+$$
+\int_{x = -1}^{1} \int_{y = -\sqrt{1 - x^2}}^{\sqrt{1-x^2}} xy \, dy \, dx
+$$
+by converting it into polar coordinates.
+\vfill
+\item[(b)] Find the volume of the region
+$$
+R = \{ (x,y,z) \in \R^3 : 0 \leq z \leq 18 - 2x^2 - 2y^2 \}.
+$$
+\vfill
+\item[(c)] Let $S = \{ (x,y,z) \in \R^3 : x^2 + y^2 + z^2 \leq R \}$, and
+$$
+H = \{ (x,y,z) \in \R^3 : x^2 + y^2 \geq r \}.
+$$
+Compute the volume of $S \cap H$.  Your answer will depend on $R$ and $r$.
+\vfill
+\item[(d)] Evaluate the following:
+$$
+\int_{x = 0}^1 \int_{y = 0}^2 \int_{z = 0}^3 xyz \,\, dz \, dy \, dx
+$$
+\vfill
+\item[(e)] Evaluate $a = \iiint_R x\, dV$, $b = \iiint_R y\, dV$, and $c = \iiint_R z\, dV$ where 
+$$
+R = \{(x,y,z) \in \R^3 : x \geq 0, y \geq 0, z \geq 0, 2x + 2y + z \leq 4 \}.
+$$
+Then the point $(a,b,c)$ is the center of mass of the tetrahedron $R$.
+\vfill
+\end{description}
+
+\end{document}

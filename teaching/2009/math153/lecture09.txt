@@ -1,0 +1,46 @@
+Lecture 9: More improper integrals
+Math 153 Section 57 Friday October 17, 2008
+Continuing in chapter 11.7. Also, review for the test.
+
+1
+
+Insuﬃciently impressed with logarithms?
+
+How about quartersquares?
+
+2 3
+
+Review for the test Existence without computation
+
+Sometimes we can show that an improper integral converges without actually doing the calculation. This is the comparison test. ∞ If f and g are cts on [a, ∞) and 0 ≤ f (x) ≤ g(x), then a g(x) dx converges implies ∞ f (x) dx converges. And the contrapositive. a √ ∞ Example: 1 dx/ 1 + x100 converges because √ 1 < 1/x50 1 + x100
+
+as long as x ≥ 1. √ ∞ Example: 1 dx/ 1 + x100 + sin2 x converges because √ 1 1 + x100 + sin x
+2
+
+<√
+
+1 1 + x100
+
+as long as x ≥ 1. ∞ Example: 2 dx/ x2 − sin2 x diverges because 1 < x 1 x2 − sin2 x 1
+
+4
+
+If only I could l’Hˆpital sequences. . . o
+
+Now you can! The following might be called a “l’Hˆpital’s rule for sequences.” Here, the diﬀerences of o successive terms take the place of the derivative: Theorem (Stolz-Ces`ro). Let an and bn be sequences of real numbers, both unbounded. a Assume bn is positive and increasing. If
+n→∞
+
+lim
+
+an+1 − an =L bn+1 − bn
+
+then lim an /bn = L.
+n→∞
+
+5
+
+Review -K proofs
+
+2
+
+

@@ -1,0 +1,101 @@
+\documentclass{article}
+
+\begin{document}
+
+\section{Bernoulli numbers}
+
+Show that the Laurent development of
+$$ \frac{1}{e^z - 1} $$
+at the origin is of the form
+$$ \frac{1}{z} - \frac{1}{2} + \sum_{k=1}^\infty (-1)^{k-1} \frac{B_k}{(2k)!} z^{2k-1}, $$
+where the numbers $B_k$ are known as Bernoulli numbers.  Calculate $B_1, B_2, B_3$.
+
+The singular part of $1/(e^z - 1)$ at $z = 0$ is easily computed to be $1/z$, so we consider $1/(e^z - 1) - 1/z$.  Then this function is analytic in a disk around the origin, so we can Taylor expand.
+
+We clever let
+$$ f(z) = \frac{1}{e^z - 1} - \frac{1}{z} + \frac{1}{2}. $$
+Then compute $f(z) + f(-z)$ to get that
+\begin{eqnarray*}
+f(z) + f(-z) &=& \frac{1}{e^z - 1} - \frac{1}{z} + \frac{1}{2} + \frac{1}{e^{-z} - 1} - \frac{1}{-z} + \frac{1}{2} \\
+&=& 1 + \frac{(e^{-z} - 1) + (e^z - 1)}{(e^z - 1)(e^{-z} - 1)} \\
+&=& 1 + \frac{(e^{-z} - 1) + (e^z - 1)}{1 + 1 - e^{-z} - e^{z}} \\
+&=& 1 + \frac{e^{-z} + e^z - 2}{2 - e^{-z} - e^{z}} = 0, \\
+\end{eqnarray*}
+so $f(z) = -f(-z)$.  Since the function is odd, all of the even terms vanish.  Thus, we have
+$$ f(z) = \sum_{k=1}^\infty a_{2k-1} z^{2k-1}. $$
+Thus, we have that for some numbers $B_k$ where $a_{2k-1} = (-1)^{k-1} B_k/(2k)!$,
+$$ \frac{1}{e^z - 1} = \frac{1}{z} - \frac{1}{2} + \sum_{k=1}^\infty \frac{(-1)^{k-1}}{(2k)!} B_k z^{2k-1}. $$
+
+We compute the first few terms of this series just by differentiating,
+$$ f(z) = \frac{z}{12} - \frac{z^3}{720} + \frac{z^5}{30240} + [z^7]. $$
+Thus, the coefficient on the first term must be,
+$$ \frac{1}{12} = \frac{(-1)^{1-1}}{2!} B_1, $$
+so $B_1 = 1/6$.  Furthermore,
+$$ -\frac{1}{720} = \frac{(-1)^{2-1}}{4!} B_2, $$
+so $B_2 = 1/30$.  Finally,
+$$ \frac{1}{30240} = \frac{(-1)^{3-1}}{6!} B_3, $$
+so $B_3 = 1/42$.
+
+$B_1 = 1/6$, $B_2 = −1/30$, $B_3 = 1/42$, $B_4 = −1/30$, $B_5 = 5/66$,
+$B_6 = −691/2730$, $B_7 = 7/6$, \ldots
+
+
+\section{Tangent and cotangent}
+
+Express the Taylor development of $\tan z$ and the Laurent development of $\cot z$ in terms of the Bernoulli numbers.
+
+We recall that
+$$ \sin x = \frac{1}{2i} (e^{ix} - e^{-ix}), \mbox{ and } \cos x = \frac{1}{2} (e^{-ix} + e^{ix}). $$
+But $\cot z = \cos z / \sin z$, so
+$$ \cot x = i \frac{e^{-ix} + e^{ix}}{e^{ix} - e^{-ix}}. $$
+Multiplying the numerator and denominator by $e^{ix}$ to get,
+$$ \cot x = i \frac{1 + e^{2ix}}{e^{2ix} - 1}. $$
+Expand the numerator to get
+$$ \cot x = \frac{i}{e^{2ix} - 1} + \frac{ie^{2ix}}{e^{2ix} - 1}, $$
+which simplifies furhter into
+$$ \cot x = \frac{i}{e^{2ix} - 1} + \frac{-i}{e^{-2ix} - 1}. $$
+Substituting in the answer from the previous problem, now that we have them in the right form, gives
+\begin{eqnarray*}
+\cot x &=& i\left(\frac{1}{2ix} - \frac{1}{2} + \sum_{k=1}^\infty (-1)^{k-1} \frac{B_k}{(2k)!} (2ix)^{2k-1}\right) - \\ &\null&  i\left(\frac{1}{-2ix} - \frac{1}{2} + \sum_{k=1}^\infty (-1)^{k-1} \frac{B_k}{(2k)!} (-2ix)^{2k-1}\right)
+\end{eqnarray*}
+We distribute
+\begin{eqnarray*}
+\cot x &=& \frac{1}{2x} - \frac{i}{2} + i \sum_{k=1}^\infty (-1)^{k-1} \frac{B_k}{(2k)!} (2ix)^{2k-1} + \\ &\null& \frac{1}{2x} + \frac{i}{2} - i \sum_{k=1}^\infty (-1)^{k-1} \frac{B_k}{(2k)!} (-2ix)^{2k-1},
+\end{eqnarray*}
+and then cancel the terms
+$$
+\cot x = \frac{1}{x} + i \sum_{k=1}^\infty (-1)^{k-1} \frac{B_k}{(2k)!} (2ix)^{2k-1} - i \sum_{k=1}^\infty (-1)^{k-1} \frac{B_k}{(2k)!} (-2ix)^{2k-1}
+$$
+Now make the sums look the same:
+$$
+\cot x = \frac{1}{x} + i \sum_{k=1}^\infty (-1)^{k-1} \frac{B_k}{(2k)!} (2ix)^{2k-1} + i \sum_{k=1}^\infty (-1)^{k-1} \frac{B_k}{(2k)!} (2ix)^{2k-1},
+$$
+so we can combine them
+$$
+\cot x = \frac{1}{x} + 2i \sum_{k=1}^\infty (-1)^{k-1} \frac{B_k}{(2k)!} (2ix)^{2k-1}.
+$$
+Expand further to get
+$$
+\cot x = \frac{1}{x} + i \sum_{k=1}^\infty 2^{2k} (-1)^{k-1} \frac{B_k}{(2k)!} (ix)^{2k-1},
+$$
+and observe that $i^{2k-1} = (-1)^{k+1} i$, so
+\begin{eqnarray*}
+\cot x &=& \frac{1}{x} + i \sum_{k=1}^\infty 2^{2k} (-1)^{k-1} (-1)^{k+1} i \frac{B_k}{(2k)!} x^{2k-1} \\
+&=& \frac{1}{x} - \sum_{k=1}^\infty 2^{2k} \frac{B_k}{(2k)!} x^{2k-1},
+\end{eqnarray*}
+which is the desired expansion.
+
+For tangent, we recall the obscure trigonometric identity, $\cot z - 2 \cot (2z) = \tan z$.  The singular part of the Laurent expansion above vanishes, and we're just left with the Taylor series.  Explicitly,
+\begin{eqnarray*}
+\tan z &=& \cot z - 2 \cot (2z) \\
+&=& \left(\frac{1}{z} - \sum_{k=1}^\infty 2^{2k} \frac{B_k}{(2k)!} z^{2k-1}\right) - 2 \left(\frac{1}{2z} - \sum_{k=1}^\infty 2^{2k} \frac{B_k}{(2k)!} (2z)^{2k-1}\right) \\
+&=& - \sum_{k=1}^\infty 2^{2k} \frac{B_k}{(2k)!} z^{2k-1} + 2  \sum_{k=1}^\infty 2^{2k} \frac{B_k}{(2k)!} (2z)^{2k-1} \\
+&=& - \sum_{k=1}^\infty 2^{2k} \frac{B_k}{(2k)!} z^{2k-1} + \sum_{k=1}^\infty 2^{4k} \frac{B_k}{(2k)!} z^{2k-1} \\
+&=& \sum_{k=1}^\infty (2^{4k} - 2^{2k}) \frac{B_k}{(2k)!} z^{2k-1}
+\end{eqnarray*}
+
+
+
+\end{document}
+
+

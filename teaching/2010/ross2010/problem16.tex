@@ -1,0 +1,118 @@
+\documentclass[12pt]{pset}
+%\usepackage{add-copyright}
+
+\geometry{margin=0.5in}
+\title{Problem Set 16}
+\course{Piecewise-Linear Topology}
+\author{Jim Fowler}
+\date{Summer 2010}
+
+\usepackage{tikz}
+\usetikzlibrary{matrix}
+\usepackage{enumerate}
+
+\newcommand{\defnword}[1]{\textbf{#1}}
+
+\usepackage{stmaryrd}
+\newcommand{\boundary}{\partial}
+\newcommand{\collapses}{\searrow}
+\newcommand{\expands}{\nearrow}
+\newcommand{\she}{\ssearrow\nnearrow}
+\newcommand{\join}{\ast}
+\newcommand{\subdivided}{\triangleleft}
+\geometry{margin=1in}%,top=0.5in,bottom=0.5in}
+\DeclareMathOperator{\st}{st}
+\DeclareMathOperator{\trace}{trace}
+\DeclareMathOperator{\vertices}{vert}
+\DeclareMathOperator{\lk}{lk}
+\DeclareMathOperator{\cl}{cl}
+\DeclareMathOperator{\interior}{int}
+\DeclareMathOperator{\id}{id}
+\newcommand{\fullsubcomplex}{\Subset}
+\newcommand{\cupp}{\smallsmile}
+\newcommand{\Ct}{C_{\mbox{\scriptsize ord}}}
+\newcommand{\Chaint}{C^{\mbox{\scriptsize ord}}}
+
+\usepackage{hyperref}
+
+\begin{document}
+\maketitle
+
+% [[skim:///Users/jim/Papers/MR755006.pdf?page=2][page 2 of MR755006.pdf]]
+
+\subsubsection*{High dimensional knots.}  We show that there exist
+locally flat embeddings of $S^n$ in $S^{n+2}$ which are knotted.  In
+this way, we have come full-circle: we saw (via sunny collapse) that
+any embedding of $S^n \subset S^{\geq n+3}$ is unknotted (in the PL
+sense), and now we see that in codimension two, knotting is possible.
+
+\begin{definition*}
+  An embedding $X^n \subset Y^{m}$ is \textbf{locally flat} if for
+  each vertex $v \in X$, the embedding
+  $$
+  \lk(v,X) = S^{n-1} \subset \lk(v,Y) = S^{m-1}
+  $$
+  is an unknotted embedding of $S^{n-1} \subset S^{m-1}$.
+\end{definition*}
+
+\begin{problem}[from Problem Set 7]
+  Suppose $S^1 \subset S^3$ is a knot; show that the suspension $SS^1
+  \subset SS^3$ gives a knotted $S^2$ in $S^4$.  How can we see this?
+  The easiest way to show that the $S^2 \subset S^4$ is knotted is to
+  show that the embedding is not locally flat!
+\end{problem}
+
+\begin{requiredproblem}
+  Find a proper, locally flat embedding $D^2 \subset D^4$, with
+  boundary $\partial D^2 \subset S^3$ given by the stevedore knot.  The
+  following sequence of pictures might be inspirational:
+  \begin{center}
+  \begin{tabular}{ccc}
+    \includegraphics[width=0.25\textwidth]{stevedore.pdf} &
+    \includegraphics[width=0.25\textwidth]{stevedore2.pdf} &
+    \includegraphics[width=0.25\textwidth]{stevedore3.pdf} \\
+    stevedore knot &
+    stevedore knot &
+    two unlinked circles
+  \end{tabular}
+\end{center}
+\end{requiredproblem}
+
+\begin{problem}
+  Let $K \subset S^3$ be the stevedore knot; then the suspension $SK
+  \subset S^4$ is not locally flat around the cone points.  Explain
+  why it is possible to replace neighborhoods of the cone points with
+  the locally flat embedding $D^2 \subset D^4$ we constructed in the
+  previous problem.
+\end{problem}
+
+\begin{problem}
+  Find another proper, locally flat embedding $D^2 \subset D^4$, with
+  boundary $\partial D^2 \subset S^3$ neither the unknot nor the
+  stevedore knot.  Such knots are called \textbf{topologically slice}.
+\end{problem}
+
+\begin{definition*}
+  Here we describe a procedure called \textbf{spinning a knot}.  Start
+  with a knotted, properly embedded arc $K \subset D^3$.  Then $K
+  \times S^1 \subset D^3 \times S^1 \subset S^4$, because
+  $$S^4 = \partial D^5 = \partial(D^3 \times D^2) = (D^3
+  \times S^1) \cup (S^2 \times D^2).$$
+  The boundary of $K \times S^1$
+  consists of two circles, which we can cap off with two disks.  This
+  produces a locally flat embedding of $S^2 \subset S^4$.
+
+  There are quite a few variations on this basic technique (e.g.,
+  Zeeman's ``twist-spinning'' which involves, well, twisting the arc
+  $K \subset D^3$ while it spins around the $S^1$).
+\end{definition*}
+
+\begin{requiredproblem}
+  Spin a knotted arc $K \subset B^3$ to produce a locally flat
+  embedding $S^2 \subset S^4$ so that the pair $(S^4,S^2)$ is not
+  homeomorphic to the standard sphere pair.  Can you find a way to use
+  (co)homology to distinguish this sphere pair from the unknot?
+\end{requiredproblem}
+
+\end{document}
+

@@ -1,0 +1,258 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{add-copyright}
+
+\title{Group actions on tensor products}
+\author{Math 205}
+\date{May 12, 2009}
+
+\usepackage{amsmath}
+\DeclareMathOperator{\Alt}{Alt}
+\DeclareMathOperator{\id}{id}
+
+\usepackage{amsthm}
+\newtheorem*{theorem}{Theorem}
+
+\theoremstyle{definition}
+\newtheorem*{quotedefinition}{``Definition''}
+\newtheorem*{definition}{Definition}
+
+\newtheorem*{exercise}{Exercise}
+
+\newcommand{\Tensor}[2]{\mathcal{T}^{#2} #1}
+
+\usepackage{amssymb}
+\newcommand{\R}{\mathbb{R}}
+
+\long\def\symbolfootnote[#1]#2{\begingroup%
+\def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+
+\usepackage{rotating}
+\usepackage{xypic}
+
+\newcommand{\AN}{\mathbf{e}}
+\newcommand{\AX}{\mathbf{X}}
+\newcommand{\AY}{\mathbf{Y}}
+\newcommand{\AR}{\mathbf{R}}
+
+\newcommand{\squareN}{\framebox{\raisebox{0in}[0.3in][0.3in]{\parbox{0.6in}{\hfill\textsf{FRONT}\hfill\null\vspace{1ex}\\\null\hfill{\Huge$\uparrow$}\hfill\null}}}}
+
+\newcommand{\squareF}{\framebox{\raisebox{0in}[0.3in][0.3in]{\parbox{0.6in}{\hfill\textsf{BACK}\hfill\null\vspace{1ex}\\\null\hfill{\Huge$\uparrow$}\hfill\null}}}}
+
+\newcommand{\squareRR}{\begin{turn}{180}\framebox{\raisebox{0in}[0.3in][0.3in]{\parbox{0.6in}{\hfill\textsf{FRONT}\hfill\null\vspace{1ex}\\\null\hfill{\Huge$\uparrow$}\hfill\null}}}\end{turn}}
+
+\newcommand{\squareFRR}{\begin{turn}{180}\framebox{\raisebox{0in}[0.3in][0.3in]{\parbox{0.6in}{\hfill\textsf{BACK}\hfill\null\vspace{1ex}\\\null\hfill{\Huge$\uparrow$}\hfill\null}}}\end{turn}}
+
+\newcommand{\squareRRR}{\raisebox{-3.5pt}{\raisebox{-0.3in}{\begin{turn}{90}\framebox{\raisebox{0in}[0.3in][0.3in]{\parbox{0.6in}{\hfill\textsf{FRONT}\hfill\null\vspace{1ex}\\\null\hfill{\Huge$\uparrow$}\hfill\null}}}\end{turn}}}}
+
+\newcommand{\squareFRRR}{\raisebox{-3.5pt}{\raisebox{-0.3in}{\begin{turn}{90}\framebox{\raisebox{0in}[0.3in][0.3in]{\parbox{0.6in}{\hfill\textsf{BACK}\hfill\null\vspace{1ex}\\\null\hfill{\Huge$\uparrow$}\hfill\null}}}\end{turn}}}}
+
+\newcommand{\squareR}{\raisebox{3.5pt}{\raisebox{0.3in}{\begin{turn}{270}\framebox{\raisebox{0in}[0.3in][0.3in]{\parbox{0.6in}{\hfill\textsf{FRONT}\hfill\null\vspace{1ex}\\\null\hfill{\Huge$\uparrow$}\hfill\null}}}\end{turn}}}}
+
+\newcommand{\squareFR}{\raisebox{3.5pt}{\raisebox{0.3in}{\begin{turn}{270}\framebox{\raisebox{0in}[0.3in][0.3in]{\parbox{0.6in}{\hfill\textsf{BACK}\hfill\null\vspace{1ex}\\\null\hfill{\Huge$\uparrow$}\hfill\null}}}\end{turn}}}}
+
+\begin{document}
+
+\maketitle
+
+The footnotes in this document are only for flavor.
+
+\subsection*{Left and right group actions}
+
+One thing we have not really paid much attention to yet is that a
+group acts from either the left, or from the right.
+\begin{definition}
+  A left action of a group $G$ on a set $X$ is a map $G \times X \to
+  X$, which we write as $g \cdot x$, with the property that
+$$
+g \cdot (h \cdot x) = (gh) \cdot x.
+$$
+\end{definition}
+\noindent
+On the other hand (and I mean that literally),
+\begin{definition}
+  A right action of a group $G$ on a set $X$ is a map $X \times G \to
+  X$, which we write as $x \cdot g$, with the property that
+$$
+(x \cdot g) \cdot h = x \cdot (gh).
+$$
+\end{definition}
+These look similar, but they are not at all the same---in a left
+action, the meaning of ``$gh$'' is ``do $h$, then do $g$.''  In a
+right action, ``$gh$'' means ``do $g$, then do $h$.''  It is perhaps
+significant to reflect on my use of the word ``means''---it is
+precisely the group action that gives a meaning to a group element.
+
+Philosophically, a \textbf{group is a symmetric thing without the
+  thing}---only the symmetry\symbolfootnote[1]{that is, the beauty} remains.  A
+group action is what glues this abstract symmetry back to something in
+the real world.  The handedness, this choice of a left or a right
+action, gives an interpretation of the group operation: does it mean
+``first do this, then do that'' or does it mean ``first do that, then
+do this''?  These are not the same.
+
+Yet, they are not so different.  You can always turn a left action
+into a right action (and vice versa) with a trick: if $G$ acts on the
+left on a set $X$, then $G$ acts on the right after taking inverses.
+Specifically, define the right action $x \cdot g$ to be $g^{-1} \cdot
+x$.
+\begin{exercise}
+Check that this is a right action.
+\end{exercise}
+\noindent
+Very concretely, what this says is this: if you want to read a
+sequence of commands backwards, you should interpret each command as
+an ``undo.''
+
+\subsection*{Group action example}
+
+All this theory is useless without something concrete, so here is an
+example: a group\symbolfootnote[1]{A popular application of this group
+  is to the ancient problem of \textit{square mattress flipping}.  One
+  would like a single group element (e.g., $\AR \AX$) which, as it is
+  applied repeatedly to the mattress, produces each of the 8 possible
+  configurations of the square mattress.  This would be helpful
+  because you could decide ``every month I will apply $\AR\AX$ to my
+  square mattress'' and over the course of 8 months you would have
+  rotated your mattress through all configurations.
+
+  Tragically, it turns out that there is no such an element---or in
+  more intimidating language ``the group of symmetries of the square
+  is not cyclic.''  It is therefore a rather complicated matter to
+  flip one's square mattress through all 8 configurations.  This
+  remains problematic even in the smaller group of symmetries of
+  rectangular mattresses.} acting on a square piece of paper with a
+front and a back side.
+
+The group has eight elements, which are
+$$
+\AN = \AX^2,\hspace{1em} \AR,\hspace{1em} \AR^2,\hspace{1em} \AR^3,\hspace{1em} \AX,\hspace{1em} \AX\AR = \AR^3\AX,\hspace{1em} \AX\AR^2 = \AR^2\AX,\hspace{1em} \AX\AR^3 = \AR\AX
+$$
+You can do calculations in this group, like
+$$
+\AR \AX \AR = \AR \AR^3 \AX = \AR^4 \AX = \AX.
+$$
+This group \textit{acts} on the set of configurations of a piece of
+square paper.
+\begin{align*}
+\mbox{$\AR$ acts by rotating clockwise by $90^\circ$,} &\mbox{ turning \squareN\ into \squareR}. \\
+\mbox{$\AX$ acts by flipping across the $x$-axis,} &\mbox{ turning \squareN\ into \squareFRR}.
+%\item[Y-Flipping,] written $\AY$, flipping across the $y$-axis,\hfill turning \squareN\ into \squareF
+\end{align*}
+Once you decide whether to read the list of instructions from
+left-to-right (or from right-to-left), you will have decided that this
+is a right (or a left) action, respectively.
+
+For English readers, you might scoff and say ``Why would I want to
+read the instructions from right to left?''  Let me remind you that
+you already know any example of such a situation!  The notation $f
+\circ g$ means ``first apply $g$, then apply $f$'' which is arguably
+backwards from what you might have wanted\symbolfootnote[4]{This is
+  why I would be happier putting the arguments to functions on the
+  left hand side---i.e., we should all be writing $(x)f$ instead of
+  $f(x)$.}.
+
+\subsection*{Actions on tensors}
+
+The goal is to prove the following.
+\begin{theorem}
+  Let $S \in \Tensor{V}{k}$ and $T \in \Tensor{V}{\ell}$.  If $\Alt S
+  = 0$, then $\Alt (S \otimes T) = 0$.
+\end{theorem}
+To prove this, we will define an additional concept (namely, an action
+of the symmetric group $S_k$ on $\Tensor{V}{k}$) which should make it
+clearer what exactly is happening.
+
+Recall that an element $S \in \Tensor{V}{k}$ is a $k$-linear functional
+$$
+S : \overbrace{V \times \cdots \times V}^{\mbox{\scriptsize $k$ times}} \to \R
+$$
+A permutation $\sigma \in S_k$ will \textit{act} on $S \in
+\Tensor{V}{k}$ to produce a new $k$-linear functional, $\sigma^\star S
+\in \Tensor{V}{k}$.  But how?  How do we define this?
+\begin{quotedefinition}
+  Let $S \in \Tensor{V}{k}$ and $\sigma \in S_k$.  Then define
+$$
+\left(\sigma^\star S\right)\left(v_1,\ldots,v_k\right) =
+S\left(v_{\sigma(1)}, v_{\sigma(2)}, \ldots, v_{\sigma(k)}\right).
+$$
+\end{quotedefinition}
+I put this in quotation marks not because it isn't a definition (it
+will be the definition we will use, as it agrees with what we have
+been using thus far), but because it is more of a convention---there
+ar other choices that are (arguably) better.
+
+A good thing about the action of $S_k$ on $\Tensor{V}{k}$ is a
+concise definition of our friend $\Alt$.
+\begin{definition}
+$\Alt S = \displaystyle\frac{1}{k!} \displaystyle\sum_{\sigma \in S_k} (-1)^{\sigma} \, \sigma^\star S$.
+\end{definition}
+Here I have used a convention that $(-1)^{\sigma}$ means the sign of
+the permutation $\sigma$.  I think this makes the formulas nicer
+looking (and, as good notation ought, suggests that this is a
+homomorphism).
+
+A bad thing about our ``definition'' is shown in the next pair of
+exercises.
+\begin{exercise}
+Show that $\left(\sigma \tau\right)^\star S \neq \sigma^\star \tau^\star S$.
+\end{exercise}
+\begin{exercise}
+Show that $\left(\sigma \tau\right)^\star S = \tau^\star \sigma^\star S$.
+\end{exercise}
+In fact, the whole reason I put the little stars as a superscript
+instead of as a subscript is because of this fact: the superscript
+star reminds me that something contravariant (``backwards'') is taking
+place.  In other words, what we have built is actually a \textit{right
+  action} of the symmetric group $S_k$ on tensors $\Tensor{V}{k}$.  If
+we want a left action, we could take inverses---but in order to keep
+consistent with the conventions we have already chosen, we will not do
+this.
+
+\begin{exercise}
+The action of $S_k$ on $\Tensor{V}{k}$ is by linear maps, that is,
+$$
+\sigma^\star ( S + T ) = \sigma^\star S + \sigma^\star T
+$$
+for $\sigma \in S_k$ and $S, T \in \Tensor{V}{k}$.
+\end{exercise}
+
+I want to define another operation: a sort of ``tensor product'' on
+the symmetric group.
+\begin{definition}
+The operation $\otimes : S_k \times S_\ell \to S_{k + \ell}$ is defined by\ldots
+\end{definition}
+\noindent
+I will let you complete the definition appropriately; using the
+$\otimes$ symbol is merely suggestive---of course this isn't a tensor
+product at all.
+
+We are now ready to ``prove'' the theorem.
+\begin{align*}
+(k + \ell)! \cdot \Alt(S \otimes T)
+&= \sum_{\sigma \in S_{k + \ell}} (-1)^{\sigma} \, \sigma^\star (S \otimes T) \\
+&= \sum_{\tau} \sum_{\sigma} (-1)^{\sigma \tau} \, (\sigma \tau)^\star  (S \otimes T) \\
+&= \sum_{\tau} \sum_{\sigma} (-1)^{\sigma} \, (-1)^{\tau} \, \tau^\star \sigma^\star (S \otimes T) \\
+&= \sum_{\tau} (-1)^{\tau} \, \tau^\star \left( \sum_{\sigma} (-1)^{\sigma} \, \sigma^\star (S \otimes T) \right) \\
+&= \sum_{\tau} (-1)^{\tau} \, \tau^\star \left( \sum_{\sigma \in S_k} (-1)^{\sigma \otimes \id} \, (\sigma \otimes \id)^\star (S \otimes T) \right) \\
+&= \sum_{\tau} (-1)^{\tau} \, \tau^\star \left( \sum_{\sigma \in S_k} (-1)^{\sigma} \, (\sigma^\star S) \otimes \id^\star T \right) \\
+&= \sum_{\tau} (-1)^{\tau} \, \tau^\star \left( \sum_{\sigma \in S_k} (-1)^{\sigma} \, (\sigma^\star S) \otimes T \right) \\
+&= \sum_{\tau} (-1)^{\tau} \, \tau^\star \left( \left( \sum_{\sigma \in S_k} (-1)^{\sigma} \, \sigma^\star S \right) \otimes T \right) \\
+&= \sum_{\tau} (-1)^{\tau} \, \tau^\star \left( k! \cdot \Alt S \otimes T \right) \\
+&= \sum_{\tau} (-1)^{\tau} \, \tau^\star \left( 0 \otimes T \right) = 0.
+\end{align*}
+I have supressed exactly what we are summing over (i.e., where do
+$\tau$ and $\sigma$ take values?).  I hope you will take a moment to
+reflect on this notation---its benefits, its drawbacks.  There is a
+great discussion to be had about the purpose of
+proof
+%\symbolfootnote[1]{Do not ask ``how do I prove this?'' but ``for
+%  whom do I prove this?''  Your audience matters.} 
+and excessive machinery and such.
+
+There is also a theme illustrated here: we have worked with the
+tensors directly, without considering their inputs.  This
+technique---reasoning about things which take parameters without
+referring to the parameters---can be quite powerful.
+
+\end{document}

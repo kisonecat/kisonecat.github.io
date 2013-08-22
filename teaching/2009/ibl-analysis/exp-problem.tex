@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage{nopageno}
+\usepackage{fullpage}
+
+\begin{document}
+
+\section*{Nonconstant, but having the same germ as the zero function}
+
+Here is a nice way to get that result about $e^{-1/x^2}$.  We want to show that for small $x$ and all natural numbers $n$,
+$$
+0 \leq e^{-1/x^2} \leq x^{2n}.
+$$
+Equivalently, for small $x$ and all $n$,
+$$
+(1/x^2)^n \leq e^{1/x^2}
+$$
+Equivalently, for large $y$ and all $n$,
+$$
+y^n \leq e^{y}
+$$
+Now here we apply l'H\^opital's rule $n$ times to find $\lim_{y \to
+  \infty} e^y/y^n > 1$, thereby deducing the above fact for large $y$.
+But my disdain for l'H\^opital runs deep!  Let's say something else.
+
+To show that $y^n \leq e^y$, use Taylor's theorem to say
+$$
+e^y \geq \frac{y^{n+1}}{(n+1)!} \geq y^n \cdot \frac{y}{(n+1)!} \geq y^n
+$$
+provided $y > (n+1)!$.
+
+This is perhaps better, because it is also \textit{quantitative}---it says
+that, yes, exponentials grow faster than polynomials, but only when
+looking far out: $n^2$ is bigger than $1.0000001^n$ for
+reasonably sized values of $n$.  Specifically,
+$$
+1.0000001^{395935000} < 395935000^2 \mbox{ but } 
+1.0000001^{395936000} > 395936000^2.
+$$
+
+\end{document}

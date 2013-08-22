@@ -1,0 +1,77 @@
+Lecture 29: The maximum principle
+Math 660—Jim Fowler Friday, July 30, 2010
+
+Corollary
+A nonconstant analytic function is an open map (meaning it maps open sets to open sets).
+
+The maximum principle
+Theorem
+If f (z) is analytic and non-constant in a region Ω, then |f (z)| does not attain a maximum in Ω.
+
+The maximum principle
+Theorem
+If f (z) is analytic and non-constant in a region Ω, then |f (z)| does not attain a maximum in Ω.
+
+Proof.
+A nonconstant analytic function is an open map.
+
+The maximum principle
+Theorem
+If f (z) is analytic and non-constant in a region Ω, then |f (z)| does not attain a maximum in Ω.
+
+Proof.
+A nonconstant analytic function is an open map. Note that the maximum principle holds generally for open maps.
+
+The maximum principle, version two
+
+Theorem
+If f (z) is continuous on the closed, bounded set Ω, and analytic in the region Ω, then the maximum of |f (z)| is attained somewhere on ∂Ω.
+
+Analytic proof
+
+Analytic proof
+Apply Cauchy’s theorem, get 1 f (a) = 2π
+2π
+
+f (a + re iθ ) dθ
+0
+
+Analytic proof
+Apply Cauchy’s theorem, get 1 f (a) = 2π so |f (a)| ≤ 1 2π
+0 2π
+
+f (a + re iθ ) dθ
+0 2π
+
+|f (a + re iθ )| dθ
+
+Analytic proof
+Apply Cauchy’s theorem, get 1 f (a) = 2π so |f (a)| ≤
+2π
+
+f (a + re iθ ) dθ
+0
+
+2π 1 |f (a + re iθ )| dθ 2π 0 and the theorem follows.
+
+Lemma of Schwarz
+Theorem
+Suppose f (z) is analytic in the unit disk, and |f (z)| ≤ 1, and f (0) = 0. Then |f (z)| ≤ |z| and |f (0)| ≤ 1.
+
+Lemma of Schwarz
+Theorem
+Suppose f (z) is analytic in the unit disk, and |f (z)| ≤ 1, and f (0) = 0. Then |f (z)| ≤ |z| and |f (0)| ≤ 1. In fact, if |f (z)| = |z| for some z or if |f (0)| = 1, then f (z) = λz for |λ| = 1.
+
+Lemma of Schwarz
+Theorem
+Suppose f (z) is analytic in the unit disk, and |f (z)| ≤ 1, and f (0) = 0. Then |f (z)| ≤ |z| and |f (0)| ≤ 1. In fact, if |f (z)| = |z| for some z or if |f (0)| = 1, then f (z) = λz for |λ| = 1. Apply maximum principle to F (z) = f (z)/z.
+
+Lemma of Schwarz
+Theorem
+Suppose f (z) is analytic in the unit disk, and |f (z)| ≤ 1, and f (0) = 0. Then |f (z)| ≤ |z| and |f (0)| ≤ 1. In fact, if |f (z)| = |z| for some z or if |f (0)| = 1, then f (z) = λz for |λ| = 1. Apply maximum principle to F (z) = f (z)/z. On the circle |z| = r , then |F (z)| ≤ 1/r , so |F (z)| ≤ 1 for all |z| ≤ 1.
+
+Lemma of Schwarz
+Theorem
+Suppose f (z) is analytic in the unit disk, and |f (z)| ≤ 1, and f (0) = 0. Then |f (z)| ≤ |z| and |f (0)| ≤ 1. In fact, if |f (z)| = |z| for some z or if |f (0)| = 1, then f (z) = λz for |λ| = 1. Apply maximum principle to F (z) = f (z)/z. On the circle |z| = r , then |F (z)| ≤ 1/r , so |F (z)| ≤ 1 for all |z| ≤ 1. If F (z) attains its maximum, F (z) is a constant, so f (z) = F (0)z.
+
+

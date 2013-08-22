@@ -1,0 +1,24 @@
+extends ../layouts/main
+include helpers
+
+block content
+  mixin breadcrumbs(['/teaching', course.url, resource.url],['Teaching', course.title, resource.title])
+
+  .row
+    .col-lg-7
+      h1 #{resource.title}
+        | 
+        small #{resource.course.term} 
+      p #{resource.description}
+      .btn-toolbar
+        .btn-group
+          a.btn.btn-primary(href=resource.filename) <i class="icon-file-text-alt"></i>&nbsp;Download PDF
+        if resource.source
+          .btn-group
+            a.btn.btn-default(href=resource.source) <i class="icon-download"></i>&nbsp;Download TeX source
+    .col-lg-5
+      a.thumbnail(href=resource.filename)
+        img(src=resource.preview)
+
+
+

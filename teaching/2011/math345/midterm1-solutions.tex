@@ -1,0 +1,355 @@
+\documentclass[12pt]{midterm}
+
+\title{Midterm 1 Solution Set}
+\course{Math 345}
+\date{October 2010}
+
+\newcommand{\abs}[1]{\left|#1\right|}
+\DeclareMathOperator{\realpart}{Re}
+\DeclareMathOperator{\imagpart}{Im}
+
+\settowidth{\introductionwidth}{\widthof{We often hear that mathematics consists mainly of ``proving theorems.''}}
+\introduction{%
+We often hear that mathematics consists mainly of ``proving theorems.'' \\
+Is a writer's job mainly that of ``writing sentences?'' \\
+\null\hfill---Gian-Carlo Rota
+}
+
+\instructions{%
+\begin{enumerate}
+\item Write your name above.
+\item Calculators are forbidden (and useless, anyhow).
+\item Do not look inside the exam until instructed to do so.
+\item You have \textbf{48 minutes} for this exam.
+\item Justify your answers for full credit.
+\item Show your work for generous partial credit.
+\item Write your answers on the included pages, or request additional paper.
+\item Answer all questions asked.
+\item To prevent fire, do not divide by zero.
+\vfill
+\end{enumerate}
+}
+
+\newtheorem*{claim}{Claim}
+
+\usepackage{xcolor}
+
+%\usepackage{graphicx}
+%\usepackage{eso-pic}
+
+%\newcommand\BackgroundPicture[1]{%
+%  \setlength{\unitlength}{1pt}%
+%  \put(0,792){%
+%  \parbox[t][\paperheight]{\paperwidth}{%
+%     \vfill
+%     \centering\includegraphics{#1}
+%     \vfill
+%}}} %
+%\AddToShipoutPicture{\BackgroundPicture{barcode.pdf}}
+
+\begin{document}
+\begin{exam}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% this comes straight from the fake exam
+\begin{problem}[360]
+  Consider the proposition:
+  $$
+  \left(Q \Rightarrow R\right) \Rightarrow \left( (P \Rightarrow Q) \Rightarrow (P \Rightarrow R) \right)
+  $$
+  Is the proposition a tautology?  If not, explain why not.  If it is
+  a tautology, use the method of conditional proof to prove that it is
+  a tautology.  Do not use cases, and be careful not to skip any
+  steps.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+
+\begin{claim}
+  The given proposition is a tautology.
+\end{claim}
+\begin{proof}
+
+Assume $Q \Rightarrow R$.\hfill (A1) \\
+We want to prove that $(P \Rightarrow Q) \Rightarrow (P \Rightarrow R)$.
+
+\vspace{1ex}%
+\noindent%
+\setlength{\leftskip}{0.5in}%
+To prove this latter statement, we will assume $P \Rightarrow Q$.\hfill (A2) \\
+we want to prove $P \Rightarrow R$.
+
+\vspace{1ex}%
+\noindent%
+\setlength{\leftskip}{1in}%
+To prove this final statement, we will assume $P$.\hfill (A3) \\
+We want to prove $R$.
+
+\vspace{1ex}%
+\noindent%
+Assumptions (A3) and (A2) are that $P$ is true and that $P \Rightarrow Q$\\
+so by modus ponens, $Q$ is true.
+
+\vspace{1ex}%
+\noindent%
+But assumption (A1) is that $Q \Rightarrow R$, \\
+so by modus ponens, $R$ is true.
+
+\vspace{1ex}%
+\noindent%
+We have proved $R$ is true, which is what we wanted to prove.
+\end{proof}
+
+\color{magenta!50!black}
+\vfill
+\setlength{\leftskip}{0in}
+\subsection*{Commentary}
+
+Many people submitted solutions for this problem that were much more
+complicated than the proof I offer above; the problem text asks you
+not to split into cases.  The structure of the proof is modeled on the
+structure of the proposition: the proof begins by considering the
+outermost implication arrow, which involves proving another
+implication, which itself involves proving an implication.
+
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[360]
+  Let $x$ be an integer. %You may assume for this problem that if an integer is not even, it is odd, and if it is not odd, it is even.
+
+  \vspace{1ex}
+
+  \noindent Write down the \textbf{contrapositive} of the conditional sentence
+  \begin{quote}
+    If $x$ is even, then $x^2$ is even.
+  \end{quote}
+  Is this a true statement?  Is the contrapositive a true statement? \\
+  If yes, prove it.  If not, find a counterexample.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+    Let $P$ be the proposition ``$x$ is even'' and $Q$ be the
+    proposition ``$x^2$ is even.''  The contrapositive of $P
+    \Rightarrow Q$ is $(\neg Q) \Rightarrow (\neg P)$, so the
+    contrapositive of the given statement is ``If $x^2$ is not even, then $x$ is not even.''
+
+    \vspace{1ex}\noindent%
+    The original statement is true.
+    \begin{claim}
+      If $x$ is even, then $x^2$ is even.
+    \end{claim}
+    \begin{proof}
+      Assume $x$ is even. \\
+      Then there exists an integer $k$ so that $x = 2k$, \\
+      and so $x^2 = (2k)^2 = 4k^2$.
+
+      \vspace{1ex}\noindent%
+      But $4k^2 = 2(2k^2)$, \\
+      so $x^2$ is also twice an integer, and therefore even.
+    \end{proof}
+
+    \vspace{1ex}\noindent%
+    The contrapositive is also true \\
+    (because an implication holds if and only if the contrapositive of the implication holds).
+
+\color{magenta!50!black}
+\vfill
+\setlength{\leftskip}{0in}
+\subsection*{Commentary}
+
+Many people submitted separate proofs for the original statement and
+the contrapositive: this is unnecessary.  It is easier to prove the
+original statement than the contrapositive in my opinion.
+
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[360]
+  Consider the four propositions
+  \begin{eqnarray}
+    & & P \vee (Q \wedge R), \label{prop1} \\
+    & & (P \wedge Q) \Rightarrow R, \label{prop2} \\
+    & & (\neg P) \vee (\neg Q) \vee R, \mbox{ and } \label{prop3} \\
+    & & (P \vee Q) \wedge (P \vee R). \label{prop4}
+  \end{eqnarray}
+  Exactly which of these propositions are logically equivalent to
+  which other propositions?
+  \vspace{1ex}
+
+  \noindent Provide justification for all the claims
+  you make; in particular, if you claim that two propositions are
+  logically equivalent, you must prove this, and if you claim that
+  they are \textit{not} equivalent, you must explain why not.
+  \vspace{1ex}
+
+  \noindent I prefer arguments that don't involve cases.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+I claim that (\ref{prop1}) and (\ref{prop4}) are equivalent, and (\ref{prop2}) and (\ref{prop3}) are equivalent, but 
+neither (\ref{prop1}) nor (\ref{prop4}) are equivalent to (\ref{prop2}) or (\ref{prop3}).
+
+\begin{claim}
+  $\mbox{(\ref{prop1})} \equiv \mbox{(\ref{prop4})}$.
+\end{claim}
+\begin{proof}
+This is precisely the distributive law.
+\end{proof}
+
+\begin{claim}
+  $\mbox{(\ref{prop2})} \equiv \mbox{(\ref{prop3})}$.
+\end{claim}
+\begin{proof}
+  \begin{align*}
+    \mbox{(\ref{prop2})}
+    &\equiv (P \wedge Q) \Rightarrow R \\
+    &\equiv \left( \neg \left(P \wedge Q\right) \right) \vee R && \text{(definition of $\Rightarrow$)} \\
+    &\equiv \left( \left( \neg P \right) \vee \left( \neg Q\right) \right) \vee R && \text{(de Morgan's law)} \\
+    &\equiv \mbox{(\ref{prop3})}. \\
+  \end{align*}
+\end{proof}
+
+\begin{claim}
+  $\mbox{(\ref{prop1})} \not\equiv \mbox{(\ref{prop3})}$.
+\end{claim}
+\begin{proof}
+  If $P$ is true, $Q$ is true, and $R$ is false, then (\ref{prop3}) is
+  false, but (\ref{prop1}) is true.  So $\mbox{(\ref{prop1})}
+  \not\equiv \mbox{(\ref{prop3})}$.  Providing a specific example is the
+  quickest way to verify this.
+\end{proof}
+
+\color{magenta!50!black}
+\vfill
+\setlength{\leftskip}{0in}
+\subsection*{Commentary}
+
+A complete solution to this problem requires proving three statements
+(namely that $\mbox{(\ref{prop1})} \equiv \mbox{(\ref{prop4})}$, that
+$\mbox{(\ref{prop2})} \equiv \mbox{(\ref{prop3})}$, and that
+$\mbox{(\ref{prop1})} \not\equiv \mbox{(\ref{prop3})}$).  You received
+120 points for each claim you proved.  Many people failed to discuss
+why $\mbox{(\ref{prop1})} \not\equiv \mbox{(\ref{prop3})}$ and lost
+points because of this; the problem text asks ``exactly which''
+propositions are equivalent, so you must discuss both which are
+equivalent and which are inequivalent.
+
+\end{solutiontext}\end{solution}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[360]
+  Let $x$ and $y$ be real numbers, and consider the following
+  proposition:
+  \begin{quote}
+    If $x$ is rational and $y$ is irrational, then $x + 2y$ is irrational.
+  \end{quote}
+  If the proposition is true, prove it; if not, give a counterexample.
+
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+This is a true proposition.
+
+\begin{claim}
+    If $x$ is rational and $y$ is irrational, then $x + 2y$ is irrational.
+\end{claim}
+\begin{proof}
+  Assume that $x$ is rational, $y$ is irrational.  For a contradiction,
+  we assume that $x+2y$ is rational.
+
+  Since the difference of rational numbers is rational, $(x+2y) - x$ is
+  rational, so $2y$ is rational.  But $1/2$ is rational, and since the
+  product of rational numbers is rational, $(1/2) \cdot 2y = y$ is
+  rational.  But this is a contradiction---$y$ is irrational.
+\end{proof}
+
+\vspace{1ex}\noindent%
+For completeness, I include proofs of two results that I used.
+\begin{claim}
+The difference of rational numbers is rational.
+\end{claim}
+\begin{proof}
+Assume $x, y \in \mathbb{Q}$.  Then there exist integers $a,b,c,d \in \mathbb{Z}$ with $b, d \neq 0$ so that
+$$
+x = \frac{a}{b} \mbox{ and } y = \frac{c}{d}
+$$
+and, combining denominators,
+$$
+x - y = \frac{ad - bc}{bd}
+$$
+is a rational number, since $ad - bc \in \mathbb{Z}$, $bd \in \mathbb{Z}$, and $bd \neq 0$.
+\end{proof}
+
+\begin{claim}
+The product of rational numbers is rational.
+\end{claim}
+\begin{proof}
+Assume $x, y \in \mathbb{Q}$.  Then there exist integers $a,b,c,d \in \mathbb{Z}$ with $b, d \neq 0$ so that
+$$
+x = \frac{a}{b} \mbox{ and } y = \frac{c}{d}
+$$
+and, multiplying,
+$$
+xy = \frac{ac}{bd}
+$$
+is a rational number, since $ac, bd \in \mathbb{Z}$ and $bd \neq 0$.
+\end{proof}
+
+\color{magenta!50!black}
+\vfill
+\setlength{\leftskip}{0in}
+\subsection*{Commentary}
+
+A number of people stated that $2y$ is irrational by claiming that a
+rational number times an irrational number is irrational; this is not
+a true statement (consider when the rational number is zero).
+
+\end{solutiontext}\end{solution}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% something with quantifiers
+\begin{problem}[360]
+  Is the statement
+  $$
+  \forall x \in \mathbb{R} \, \left( \exists y \in \mathbb{R}\, \left( y^2 < x \right) \right)
+  $$
+  true or false?  For full credit, justify your answer.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+    The proposition is false. \\
+    I claim that the negation of $\forall x \in \mathbb{R} \, \left( \exists y \in
+      \mathbb{R}\, \left( y^2 < x \right) \right)$ is true, namely
+    \begin{claim}
+      $\exists x \in \mathbb{R} \, \left( \forall y \in
+      \mathbb{R}\, \left( y^2 \geq x \right) \right)$
+    \end{claim}
+    \begin{proof}
+      Set $x = -1$. \\
+      Let $y$ be a real number. \\
+      Then $y^2 \geq 0$, so $y^2 \geq 0 > -1 = x$, which is what I wanted to prove.
+    \end{proof}
+
+\color{magenta!50!black}
+\vfill
+\setlength{\leftskip}{0in}
+\subsection*{Commentary}
+
+Many students gave a specific choice of $x$ and $y$ for which $y^2
+\not< x$; this is not enough; you need to explain why there is a
+value of $x$ for which no value of $y$ will satisfy $y^2 < x$.
+
+\end{solutiontext}\end{solution}
+
+
+\end{exam}
+
+\pagebreak
+
+\vfill
+\null
+
+\end{document}

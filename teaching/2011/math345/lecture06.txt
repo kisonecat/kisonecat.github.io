@@ -1,0 +1,20 @@
+Lecture 6: Quantiﬁers
+Thursday, September 30, 2010
+
+Math 345
+Jim Fowler
+
+Textbook
+This lecture discusses section 3 of the textbook.
+
+Homework
+The homework is due Tuesday, October 5, 2010. From Section 3 of the textbook, do exercise 1.
+
+quantiﬁers
+how to prove statements with quantiﬁers how to disprove a statement with a quantifer!
+
+bound and free variables
+
+1
+
+

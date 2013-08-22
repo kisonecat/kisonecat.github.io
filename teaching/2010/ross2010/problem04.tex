@@ -1,0 +1,219 @@
+\documentclass[12pt]{pset}
+%\usepackage{add-copyright}
+
+\title{Problem Set 4}
+\course{Piecewise-Linear Topology}
+\author{Jim Fowler}
+\date{Summer 2010}
+
+\newcommand{\defnword}[1]{\textbf{#1}}
+
+\usepackage{stmaryrd}
+\newcommand{\boundary}{\partial}
+\newcommand{\collapses}{\searrow}
+\newcommand{\expands}{\nearrow}
+\newcommand{\she}{\ssearrow\nnearrow}
+\newcommand{\join}{\ast}
+\newcommand{\subdivided}{\triangleleft}
+\geometry{margin=1in}%,top=0.5in,bottom=0.5in}
+\DeclareMathOperator{\st}{st}
+\DeclareMathOperator{\vertices}{vert}
+\DeclareMathOperator{\lk}{lk}
+\DeclareMathOperator{\cl}{cl}
+\DeclareMathOperator{\interior}{int}
+
+\begin{document}
+\maketitle
+
+\subsubsection*{A new equivalence.} Problem Set 4 introduces
+\textit{simple homotopy equivalence}, an equivalence relation between
+simplicial complexes which is coarser than simplicial isomorphism or PL
+homeomorphism; Please write down answers to problems labeled
+  with $\bullet$.
+
+%\parskip 0.5\baselineskip
+%\parindent 0pt
+
+ \begin{definition*}
+   Let $K$ be a complex, and $\sigma \in K$ a simplex. Call $\sigma$ a
+   \textbf{principal simplex} if the only simplex containing $\sigma$
+   is $\sigma$ itself (i.e., it isn't contained in a larger simplex).
+
+   For a simplex $\sigma \in K$, call $\tau < \sigma$ a \textbf{free
+     face} of $\sigma$ if the only simplexes containing $\tau$ are
+   $\tau$ and $\sigma$.
+
+   If $L$ and $K = L \sqcup \{ \sigma, \tau \}$ are simplicial
+   complexes, and $\sigma$ is a principal simplex of $K$, and $\tau$
+   is a free face of $\sigma$, then $L$ is an \textbf{elementary
+     simplicial collapse} of $K$.  If $K_1, K_2, \ldots, K_n$ are
+   complexes, with $K_{i+1}$ an elementary simplicial collapse of
+   $K_i$, then $K_n$ is a \textbf{simplicial collapse} of $K_1$,
+   denoted $K_1 \collapses K_n$; conversely, $K_1$ a
+   \textbf{simplicial expansion} of $K_n$, denoted $K_n \expands K_1$.
+
+   Finally, $K$ is \textbf{simple homotopy equivalent} to $L$ if you can reach transform $K$ into $L$ via a sequence of
+    \begin{itemize}
+    \item PL homeomorphisms,
+    \item simplicial collapses,
+    \item simplicial expansions.
+    \end{itemize}
+    In this case, we write $K \she L$.
+\end{definition*}
+
+\begin{requiredproblem}
+  Find two manifolds with boundary which are simple homotopy
+  equivalent, but not PL homeomorphic.
+\end{requiredproblem}
+
+\begin{definition*}
+  Let $K$ be a complex.  If $K \collapses \Delta^0$, i.e., it
+  collapses to a point, then we call the complex \textbf{collapsible}.
+\end{definition*}
+
+\begin{requiredproblem}
+ Prove that the complex $\Delta^n$ is collapsible.
+\end{requiredproblem}
+
+\begin{problem}
+  Construct infinitely many collapsible complexes, no two of which are
+  PL homeomorphic.
+\end{problem}
+
+\noindent\parbox{0.75\textwidth}{%
+\begin{problem}
+Show that \textit{Bing's House with Two Rooms,} as shown on the right,
+is simple homotopy equivalent to a point, but is not collapsible.
+\end{problem}}%
+\hspace{5pt}%
+\parbox{0.25\textwidth}{%
+\includegraphics[width=0.25\textwidth-5pt]{bings-house.pdf}%
+}
+
+\begin{problem}
+  Show that the \textit{dunce cap} is not collapsible,
+  but is simple homotopy equivalent to a point; the dunce cap is
+  constructed by starting with triangle $ABC$, and identifying edge
+  $AB$ with edge $AC$, and also with edge $CB$.
+\end{problem}
+
+\begin{requiredproblem}
+  Is $\chi(K) = \chi(L)$ if $K$ and $L$ are simple homotopy equivalent?
+\end{requiredproblem}
+
+\begin{definition*}
+  The \textbf{cone} of a complex $K$ (written $CK$) is $K \join
+  \Delta^0$, i.e., the join of $K$ with a point.
+\end{definition*}
+
+\begin{requiredproblem}
+  Show that the cone of any complex is collapsible.
+\end{requiredproblem}
+
+\begin{definition*}
+  The \textbf{suspension} of a complex $K$ (written $SK$) is $K \join
+  S^0$, where $S^0 = \boundary \Delta^1$, that is, two disjoint
+  points.  In this notation, $SS^n \cong S^{n+1}$.
+\end{definition*}
+
+\begin{requiredproblem}
+  Find a complex $K$ so that $SK \she K$.
+\end{requiredproblem}
+
+\begin{problem}
+  Is $K$ (non-)collapsible precisely when $SK$ is (non-)collapsible?
+\end{problem}
+
+\begin{problem}
+ Is the join of collapsible complexes necessarily collapsible?
+\end{problem}
+
+\begin{problem}
+  Is join well-defined on simple homotopy types?  That is, if $K \she
+  K'$ and $L \she L'$, is it then the case that $K \join L \she K'
+  \join L'$?
+\end{problem}
+
+\subsection*{3-manifolds}
+
+\begin{problem}
+  Prove that there exist two distinct 3-manifolds.
+\end{problem}
+
+\begin{problem}
+  Find a copy of $T^2 \# T^2 \# T^2$ inside $T^3$, which divides $T^3$
+  into two components, homeomorphic to each other.
+\end{problem}
+
+\begin{problem}
+ Let $f : T^2 \to T^2$ be a homeomorphism, and use $f$ to glue
+ together two copies of $S^1 \times \Delta^2$.  Describe 
+ two distinct $3$-manifolds that can result from this procedure
+ (though it might be hard to prove that they are distinct, given what
+ we know thus far!).
+\end{problem}
+
+
+\subsection*{Connected sum}
+
+\begin{problem}
+  Given $n$-manifolds $M$ and $N$, compute $\chi(M \# N)$ in terms of
+  $\chi(M)$ and $\chi(N)$.
+\end{problem}
+
+\begin{requiredproblem}
+Show that $T^2$ and $T^2 \# T^2$ are not PL homeomorphic.
+\end{requiredproblem}
+
+\begin{problem}
+ Let $K$ be the Klein bottle; determine whether $K \# K$ and $T^2 \#
+ K$ are PL homeomorphic.
+\end{problem}
+
+\begin{problem}[Hard]
+  Suppose that $M \# N = M$.  Does it follow that $N$ is a sphere?
+\end{problem}
+
+
+\subsection*{Orientability}
+
+\begin{requiredproblem}
+  Construct an orientation on $S^n$.
+\end{requiredproblem}
+
+\begin{problem}
+  Does there exist a connected 2-manifold $M^2$ with
+  $$\chi(M) > 0 \mbox{ and } w_1(M) = 1. $$
+\end{problem}
+
+\begin{problem}
+  Give an example of a non-orientable $3$-manifold $M^3$.
+\end{problem}
+
+\begin{problem}
+  Let $K$ be the Klein bottle; is there an orientation on the
+  4-manifold $K \times K$?
+\end{problem}
+
+\begin{problem}
+  Consider how $w_1(M \times N)$ might relate to $w_1(M)$ and
+  $w_1(N)$.
+\end{problem}
+
+
+\subsection*{Products}
+
+\begin{problem}
+  Show that if $M$ is a manifold, then $M \times S^1$ is a manifold.  What does $M \times S^1$ even mean?
+\end{problem}
+
+\begin{problem}
+  Compute $\chi(K \times L)$ in terms of $\chi(K)$ and $\chi(L)$.
+\end{problem}
+
+\begin{problem}
+  Show that there exist infinitely many distinct 4-manifolds.
+\end{problem}
+
+\end{document}
+

@@ -1,0 +1,24 @@
+Vocab for Diﬀerential Equations
+• A diﬀerential equation is ordinary if the unknown function is a real-valued function of a single independent variable. Partial diﬀerential equations may include functions of many variables. • The order of a diﬀerential equation is the highest derivative that appears in the equation. Example. For instance, f (x) = −f (x) is second-order, while f (17) (x) = ex is seventeenth order. • An ordinary diﬀerential equation for the function f (x) is linear if it is of the form an (x) f (n) (x) + · · · + a1 (x) f (x) + a0 (x) f (x) = g(x) for functions ai (x) and a function g(x). • An ordinary diﬀerential equation for f (x) is homogeneous if f (x) (or a derivative thereof) appears in each term. A diﬀerential equation is inhomogeneous if there is a term without f or its derivatives. Example. For instance, a linear ordinary diﬀerential equation is homogeneous precisely when g(x) = 0 in equation (∗). • An integrating factor is something you multiply a diﬀerential equation by in order to make it solvable. Example. For instance, to solve a ﬁrst-order inhomogeneous linear ordinary diﬀerential equation, namely, f (x) + a0 (x) f (x) = g(x) you should multiply by e e and then
+R R a0 (x) dx
+
+(∗)
+
+so that
+R a0 (x) dx
+
+a0 (x) dx
+
+f (x) + e
+
+a0 (x) f (x) = e
+
+R
+
+a0 (x) dx
+
+g(x)
+
+R R d e a0 (x) dx f (x) = e a0 (x) dx g(x). dx Now you can antidiﬀerentiate the right-hand side to ﬁnd an equation for f (x).
+
+

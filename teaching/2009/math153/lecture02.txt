@@ -1,0 +1,53 @@
+Lecture 2: Sequences
+Math 153 Section 57 Wednesday October 1, 2008
+We will be following chapter 11.2. Here we introduce sequences (some “nouns”), deﬁne some properties (bounded above, bounded below, increasing, decreasing, non-decreasing, non-increasing; the “adjectives”), and prove that some sequences satisfy some of the properties. Remember: N is for the natural numbers, and R is for the real numbers.
+
+1
+
+Sequences
+
+Intuitive deﬁnition: a list of numbers that goes on forever. Precise deﬁnition: a function a : N → R, but instead of writing a(n), we normally write it with subscripts, like a1 , a2 , . . .. Some terminology: the numbers in the sequence are “terms,” e.g., the ﬁrst term, second term, third term.
+
+1.1
+
+Building sequences
+
+Deﬁne a sequence by giving a formula for the n-th term. Examples of sequences: an = n. bn = 2n. cn = 2n . dn = (−1)n . Modify sequences: fn = 17 · an . Combine sequences: gn = bn + cn , or hn = cn · dn . Then gn = n + 2n, and hn = (−2)n .
+
+1.2
+
+Why do we care?
+
+Mathematically: A fun object to play with, sort of like numbers (we can add, subtract, multiply, divide). Practically: sequences come up all the time: an might be how much money I have on the n day of trading stocks (decreasing), the number of rabbits in a ﬁeld after n generations (unbounded, increasing), etc.
+
+1
+
+1.3
+
+Boundedness
+
+A sequence an is bounded above if there is a number b such that b ≥ an for all n ∈ N. A sequence an is bounded below if there is a number b such that b ≤ an for all n ∈ N. A sequence is bounded if it is bounded above, and bounded below. Examples: an = 17. an = 2n . an = −n. an = (−1)n . an = (−1)n · n.
+
+1.4
+
+Monotonicity
+
+Increasing? Decreasing? Nonincreasing? Nondecreasing? Increasing means for all n ∈ N that an < an+1 . Decreasing means for all n ∈ N that an > an+1 . Non-increasing means for all n ∈ N that an ≥ an+1 . Non-decreasing means for all n ∈ N that an ≤ an+1 . Examples of increasing sequences: an = 2n, an = n2 . Proofs. Example of a decreasing sequence: an = 1/n. Example of a decreasing sequence: an = 1/n2 . Proofs. Examples of non-increasing sequences: an = 17. Examples of non-decreasing sequences: an = (n + 1)/2 if n is odd, n/2 if n is even,
+
+Another example: an = (−1)n + n.
+
+1.5
+
+Some remarks
+
+To prove something is increasing, you must check inﬁnitely many things. To prove something is not increasing, you need a single counterexample. “Not increasing is not the same thing as non-increasing.”
+
+1.6
+
+Some basic theorems.
+
+The sum of two bounded sequences is bounded. The sum of two unbounded sequences is unbounded?
+
+2
+
+

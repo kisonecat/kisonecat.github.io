@@ -1,0 +1,97 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+\newtheorem*{example}{Example}
+\newtheorem*{thm}{Theorem}
+
+\title{Lecture 11: Series}
+\author{Math 153 Section 57}
+\date{Wednesday October 22, 2008}
+
+\begin{document}
+\maketitle
+
+Following chapters 12.1 and 12.2.
+
+\section*{Sigma notation}
+
+Write
+$$
+\sum_{n=0}^N f_n
+$$
+or
+$$
+\sum_{n=a}^b f_n
+$$
+Draw an analogy with integration.
+
+Some properties:
+$$
+\sum_{n=a}^b (\alpha f_n + \beta g_n) = \alpha \sum_{n=a}^b f_n + \beta \sum_{n=a}^b g_n
+$$
+and
+$$
+\sum_{n=a}^b f_n + \sum_{n=b+1}^c f_n = \sum_{n=a}^c f_n
+$$
+
+Classic example: $\sum_{n=1}^b n = (b)(b+1)/2$
+
+\section*{Infinite series}
+
+Consider a series $\sum_{k=0}^\infty a_n$.
+
+A partial sum is
+$$
+s_n = \sum_{k=0}^n a_n.
+$$
+If $\lim_{n \to \infty} s_n = L$, then we write
+$$
+\sum_{k=0}^\infty a_k = L
+$$
+We call $L$ the sum of the series.
+
+This is not the same as ``adding up all the terms in the sequence.''
+
+\subsection*{Example}
+
+The series $\sum_{n=1}^\infty 1$ diverges.
+
+The series $\sum_{n=1}^\infty 1/2^n$ converges to 1 (show the
+picture).  Mention Zeno's paradox, and the Singularity.
+
+The series $\sum_{n=1}^\infty (-1)^n$ diverges.  Thompson's Lamp
+(every interval, the lamp switches on or off).
+
+\subsection*{The most important example}
+
+Geometric series.
+
+If $-1 < x < 1$, then $\sum_{n=1}^\infty x^n = 1/(1-x)$.  For other values of $x$, the series diverges.
+
+Proof: compute $s_k = \sum_{n=1}^k x^n$.  Multiply by $(1-x)$ to get $(1-x) s_k = 1 - x^{k+1}$, so
+$$
+s_k = \frac{1-x^{k+1}}{1-x}
+$$
+And take the limt as $k \to \infty$.
+
+\subsection*{Application}
+
+$\sum_{n=1}^\infty \frac{9}{10^n} = 1$.
+
+\subsection*{Wrong applications}
+
+$\sum_{n=0}^\infty 2^n = -1$?  Uhm, no.
+
+\section*{Theorems}
+
+Sum of convergent series are convergent.
+
+Products of convergent series by a constant are convergent.
+
+\section*{Simplest criterion}
+
+If $\sum_{k=0}^\infty a_k$ converges, then $\lim a_k = 0$.
+
+\end{document}

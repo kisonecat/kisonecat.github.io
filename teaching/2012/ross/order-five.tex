@@ -1,0 +1,126 @@
+\documentclass{article}
+\usepackage{fullpage}
+\usepackage{geometry}
+\geometry{margin=0.3in,left=1in,right=1in}
+\usepackage{nopageno}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\DeclareMathOperator{\SL}{SL}
+\DeclareMathOperator{\trace}{trace}
+\DeclareMathOperator{\Id}{Id}
+\newcommand{\Z}{\mathbb{Z}}
+\title{No elements of order five in $\SL_2(\Z)$}
+\author{Jim Fowler}
+
+\begin{document}
+
+\maketitle
+
+Here are various methods by which one can see there are no elements of
+order five in $\SL_2(\Z)$.  Morally, the ``reason'' is that pentagons
+don't tile the plane.
+
+\section*{Cayley--Hamilton theorem}
+
+If $A \in \SL_2(\Z)$, then the characteristic polynomial for $A$ is
+$\lambda^2 - (\trace A)\lambda + 1$ and the trace is an integer.  By
+the Cayley--Hamilton theorem,
+\[
+A^2 - n\, A + \Id = 0 \mbox{ where $n = \trace A$.}
+\]
+And also $A^5 = \Id$.  So
+\begin{align*}
+A^5 &= (A^2)^2 A \\
+&= \left(n A - \Id\right)^2 A \\
+%&= (n^2 A^2 - 2 n A + \Id\right) A \\
+&= n^2 A^3 - 2 n A^2 + A \\
+%&= n^2 (n A - \Id) A - 2 n (n A - \Id) + A \\
+%&= n^3 A^2 - 3n^2 A + 2n \Id + A
+%&= n^3 (n A - \Id) - 3n^2 A + 2n \Id + A \\
+&= (n^4 - 3 n^2 + 1)A + (2n - n^3) \Id = \Id.
+\end{align*}
+In order to ensure $A$ is not a multiple of the identity, $n = \trace
+A \in \Z$ must satisfy
+\[
+n^4 - 3 n^2 + 1 = 0
+\]
+but there are no integer solutions to that polynomial.
+
+\section*{No regular pentagon with vertexes on lattice points}
+
+If there is a matrix $M \in \SL_2(\Z)$ of order five, then for a vector $v \in \Z^2$ the five points
+\[
+v,\hspace{1em}
+Mv,\hspace{1em}
+MMv,\hspace{1em}
+MMMv,\hspace{1em}
+MMMMv
+\]
+are also lattice points.  These five points form a regular pentagon,
+but there is no regular pentagon with vertices on lattice points
+(e.g., by a \textit{shrinking} argument).
+
+\section*{Trigonometry}
+
+\section*{Orbifolds}
+
+There are no five-fold covers of the modular surface.
+
+\section*{Finding a free kernel}
+
+The abelianization map $\SL_2(\Z) \to \Z/12\Z$ has kernel a free
+group.  So the orders of elements of $\SL_2(\Z)$ divide 12.
+
+\section*{Recognizing it is as an amalgamated product}
+
+The group $\SL_2(\Z)$ is $\Z/6\Z \star_{\Z/2\Z} \Z/4\Z$.  Serre's book
+\textit{Trees} would help here.
+
+\section*{Counting modulo powers of two}
+
+The special linear group over the field with two elements is
+$$
+\SL_2(\Z/2\Z) = \left\{
+\left(\begin{array}{rr}
+0 & 1 \\
+1 & 0
+\end{array}\right), \left(\begin{array}{rr}
+0 & 1 \\
+1 & 1
+\end{array}\right), \left(\begin{array}{rr}
+1 & 0 \\
+0 & 1
+\end{array}\right), \left(\begin{array}{rr}
+1 & 0 \\
+1 & 1
+\end{array}\right), \left(\begin{array}{rr}
+1 & 1 \\
+0 & 1
+\end{array}\right), \left(\begin{array}{rr}
+1 & 1 \\
+1 & 0
+\end{array}\right) \right\}.
+$$
+Note that there are six elements.  By more careful counting,
+$|\SL_2(\Z/2^n \Z)| = 3 \cdot 2^{3n-2}$, so there are no elements of
+order five in $\SL_2(\Z/2^n \Z)$.  If $M \in \SL_2(\Z)$ had order
+five, then by choosing $n$ so large that the image of $M$ in
+$\SL_2(\Z/2^n \Z)$ is nontrivial, we would have a contradiction.
+
+\section*{Counting modulo primes}
+
+The group $\SL_2(\Z/p\Z)$ has $(p-1)(p)(p+1)$ elements.  There are
+infinitely many primes so that $p \not\equiv \pm 1 \pmod 5$.  For any
+$M \in \SL_2(\Z)$, one can choose $p$ large enough so that $M \bmod p$
+is nontrivial, and so that $5$ does not divide $(p-1)(p)(p+1)$.  Then
+$M$ cannot have order five.
+
+
+
+\end{document}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

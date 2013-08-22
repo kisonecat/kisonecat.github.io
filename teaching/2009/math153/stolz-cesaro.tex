@@ -1,0 +1,83 @@
+\documentclass[11pt,letterpaper]{article}
+
+\title{A cool trick for limits of sequences}
+\author{Jim Fowler}
+
+\usepackage{fullpage}
+\usepackage{nopageno}
+\usepackage{amsmath}
+\usepackage[margin=1in]{geometry}
+\usepackage{add-copyright}
+
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}
+\newtheorem*{theorem*}{Theorem}
+\newtheorem*{slogan*}{Slogan}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemmma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\begin{document}
+
+\section*{A cool trick for limits of sequences}
+
+\begin{slogan*}
+  Taking successive differences of the terms in a sequence is vaguely
+  like differentiating a function.
+\end{slogan*}
+Taking this slogan seriously, the following might be called a
+``l'H\^opital's rule for sequences.''  Here, the differences of
+successive terms take the place of the derivative:
+\begin{theorem*}[Stolz-Ces\`aro]
+  Let $a_n$ and $b_n$ be sequences of real numbers, both unbounded.
+  Assume $b_n$ is positive and increasing.  If
+$$
+\lim_{n \to \infty} \frac{a_{n+1} - a_n}{b_{n+1} - b_n} = L
+$$
+then $\displaystyle\lim_{n\to\infty} a_n/b_n = L$.
+\end{theorem*}
+
+\section*{A cleaner proof to an old problem}
+
+You might remember
+$$
+L = \lim_{x \to 0} \left( \frac{1}{\sin^2 x} - \frac{1}{x^2} \right).
+$$
+This problem, done in the straightforward way, required four
+applications of l'H\^opital to increasingly ugly denominators.  There
+is a trick---it doesn't require any less differentiation, but the
+differentiation is much easier.  Since
+$$
+\lim_{x \to 0} \frac{\sin x}{x} = 1
+$$
+we can multiply the above by this, without changing the limit $L$.  So
+$$
+L = \lim_{x \to 0} \left( \frac{\sin^2 x}{x^2} \right) \cdot \left( \frac{1}{\sin^2 x} - \frac{1}{x^2} \right)
+$$
+Gathering these terms together gives
+$$
+L = \lim_{x \to 0} \left( \frac{1}{x^2} - \frac{\sin^2 x}{x^4} \right),
+$$
+which we put over a common denominator
+$$
+L = \lim_{x \to 0} \frac{x^2 - \sin^2 x}{x^4}.
+$$
+But this is pretty easy to apply l'H\^opital to:
+$$
+L = \lim_{x \to 0} \frac{2 x - 2 \sin x \cos x}{4 x^3} = 
+\lim_{x \to 0} \frac{2 x - \sin (2x)}{4 x^3}.
+$$
+And again,
+$$
+L = \lim_{x \to 0} \frac{2 - 2 \cos (2x)}{12 x^2}.
+$$
+And again,
+$$
+L = \lim_{x \to 0} \frac{4 \sin (2x)}{24 x}.
+$$
+And once more,
+$$
+L = \lim_{x \to 0} \frac{8 \cos (2x)}{24} = \frac{8}{24} = \frac{1}{3}.
+$$
+
+\end{document}

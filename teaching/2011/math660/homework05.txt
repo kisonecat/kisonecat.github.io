@@ -1,0 +1,26 @@
+Problem Set 5 (§4.1.4–4.2.3)
+Due Monday, July 25, 2011
+
+Math 660
+Jim Fowler
+
+Midterm Reminder
+Midterm 1 is scheduled for Friday, July 22, 2011. The best way to prepare for the midterm is to do more homework problems. And ask yourself: are you doing the homework? If not, you are in big trouble! I can only point you in the direction you should travel: you must make the journey yourself.
+
+Problem 1
+Page 120, problem 3 in Ahlfors’ Complex Analysis.
+
+Problem 2
+Let M be the Riemann surface for w = (z(z − 1)2 ) 3 obtained by taking three copies of the Riemann sphere, each with the slit [0, 1] deleted, and identifying appropriate sides √ 1 2 π −1 of the slits. For 0 ≤ ≤ 2 let P be the point of M where z = 2 and w = 2 3 e 3 . Let C be the closed curve in M which starts with P , goes around z = 1 one and a √ √ quarter times (i.e., 2π + π radians) to z = 1 + −1, goes from z = 1 + −1 in a 2 √ straight line to z = −1, goes around z = 0 one and a half times (i.e., 3π radians) √ √ to z = − −1, goes in a straight to z = 1 − −1, goes around z = 1 a quarter times (i.e., π radians) back to P . 2 Evaluate the integrals, and compute the dimension.
+1
+
+Problem 3
+Page 120, problem 2 in Ahlfors’ Complex Analysis.
+
+Problem 4
+Page 123, problem 2 in Ahlfors’ Complex Analysis.
+
+Problem 5
+Page 123, problem 1 in Ahlfors’ Complex Analysis.
+
+

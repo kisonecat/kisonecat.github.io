@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+\newtheorem*{example}{Example}
+\newtheorem*{thm}{Theorem}
+
+\title{Lecture 21: Differentiating and integrating series}
+\author{Math 153 Section 57}
+\date{Friday November 14, 2008}
+
+\begin{document}
+\maketitle
+
+\subsection*{Stirling's formula}
+
+Try to estimate $k!$ by
+$$
+\log (k!) = \sum_{n=1}^k \log n \approx \int_1^k \log x \, dx
+$$
+But this integral we can do
+$$
+\log (k!) \approx k \log k - k + 1
+$$
+so this means that
+$$
+k! = e^{\log (k!)} \approx e^{k \log k - k + 1} \approx = (k/e)^k
+$$
+A better estimate:
+$$
+k! \approx \sqrt{2 \pi k} (k/e)^k
+$$
+For example,
+$$
+270! \approx \sqrt{540 \pi} (270/e)^{270} \approx \sqrt{1600} (100)^{270} \approx 40 \cdot 10^{540} \approx 4 \cdot 10^{541}
+$$
+The true value is about $6 \cdot 10^{540}$.
+
+\subsection*{Limits do not commute}
+
+$$
+\frac{1}{2} = \lim_{x \to 0} \lim_{y \to 0} \frac{x + 2y}{2x + y}
+\neq \lim_{y \to 0} \lim_{x \to 0} \frac{x + 2y}{2x + y} = 2
+$$
+
+\subsection*{}
+
+
+
+\end{document}

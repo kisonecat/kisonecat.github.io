@@ -1,0 +1,617 @@
+\documentclass[12pt]{article}
+
+\usepackage{fullpage}
+\usepackage{fancyhdr}
+\usepackage{nopageno}
+\usepackage{ifthen}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{multicol}
+\usepackage{version}
+\usepackage{graphicx}
+\usepackage{psfrag}
+\usepackage{amssymb}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+
+\usepackage[margin=0.75in]{geometry}
+\usepackage{nopageno}
+\newcommand{\HasSolutions}{true}
+\excludeversion{titlepage}
+\excludeversion{filler}
+
+%\newcommand{\HasSolutions}{false}
+%\includeversion{titlepage}
+%\includeversion{filler}
+
+\ifthenelse{\equal{\HasSolutions}{true}}{\includeversion{solutiontext}}{\excludeversion{solutiontext}}
+
+\newenvironment{solution}{\subsubsection*{Solution.}}{}
+
+\title{Midterm 2}
+\author{Math 153 Section 57}
+\date{November 17, 2008}
+
+\newcounter{problem}
+\setcounter{problem}{1}
+
+\newcounter{totalpoints}
+\setcounter{totalpoints}{0}
+
+\makeatletter
+\def\inputtoc{%
+    \makeatletter
+    \@input{\jobname.toc}%
+    \if@filesw
+      \expandafter\newwrite\csname tf@toc\endcsname
+      \immediate\openout \csname tf@toc\endcsname \jobname.toc\relax
+    \fi
+    \@nobreakfalse
+    }
+\makeatother
+
+\newenvironment{problem}[1][]%
+{\ifthenelse{\equal{\HasSolutions}{true}}{}{\pagebreak}%
+\addtocounter{totalpoints}{#1}%
+%\ifthenelse{\equal{\HasSolutions}{true}}{}{\rfoot{\fbox{\Huge\hspace{2em}/#1}}}
+\ifthenelse{\equal{\HasSolutions}{true}}{\vspace{3ex}\noindent\makebox[0in]{\vspace{5ex}\hspace{-1em}\rule{1ex}{3ex}\raisebox{2ex}{\rule{2ex}{1ex}}}\vspace{-6ex}}{}%
+\subsection*{Problem \arabic{problem}.%
+\addtocontents{toc}{Problem \arabic{problem} \protect& \hspace{2em} \protect& /#1 \protect\\ \protect\hline}%
+\ifthenelse{\equal{\HasSolutions}{true}}{}{\hfill\fbox{\Huge\hspace{2em}/#1}}
+}}%
+{%
+\addtocounter{problem}{1}%
+%\ifthenelse{\equal{\HasSolutions}{true}}{}{\vfill\fbox{\Huge\hspace{2em}/#1}}%
+}%
+
+\renewcommand{\headrulewidth}{0in}
+
+\cfoot{}
+
+\newcommand{\answerbox}[1]{\ifthenelse{\equal{\HasSolutions}{true}}{\fbox{#1}}{#1}}
+
+\newcommand{\TrueChoice}{\answerbox{True} False}
+\newcommand{\FalseChoice}{True \answerbox{False}}
+
+\begin{document}
+
+\setlength{\headheight}{30pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Cover Page
+%\markboth{}{\hfill\textbf{Name:} \underline{Solution Set} \\}
+
+\begin{titlepage}
+\maketitle
+
+\begin{center}
+$$
+\int \frac{1}{\mbox{cabin}} \, d\mbox{cabin} = \log \mbox{cabin} + \mbox{sea}.
+$$
+\end{center}
+\vfill
+\vfill
+
+\noindent
+\hspace{1in}
+\textbf{Name: } \hrulefill
+\hspace{1in}
+
+\vfill
+
+\begin{multicols}{2}
+\begin{enumerate}
+\item Write your name above.
+\item Do not look inside the exam until instructed to do so.
+\item You have \textbf{50 minutes} for this exam.
+\item Justify your answers for full credit.
+\item Show your work for generous partial credit.
+\item Calculators are forbidden.
+\item Write your answers on the included pages, or request additional paper.
+\item Answer all questions asked.
+\item \textbf{The final question is for extra credit.}
+\vfill
+\end{enumerate}
+
+\begin{center}
+\large
+\begin{tabular}{|lrl|}
+\hline
+\inputtoc
+\\ \hline
+\end{tabular}
+\end{center}
+
+\end{multicols}
+
+\vfill
+\vfill
+%\markboth{}{\hfill\textbf{Name:} \hrulefill \\}
+\end{titlepage}
+
+\pagebreak
+\null
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Problems
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \item Define $\displaystyle\sum_{n=1}^\infty a_n = L$.
+% timeguess 2
+\begin{problem}[15]
+Define $\displaystyle\sum_{n=1}^{\infty} a_n = L$.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+    The series $\displaystyle\sum_{n=1}^{\infty} a_n$ converges to $L$
+    if the sequence of partial sums
+$$
+s_k := \sum_{n=1}^k a_n
+$$
+converges to $L$, that is, $\lim_{k \to \infty} a_k = L$.
+
+A common problem here was that people mixed up $k$'s and $n$'s, or
+forgot to use a limit.
+
+This definition is conceptually very important (a triumph of
+mathematics!).  Series are \textit{not} piles of numbers to add up
+simultaneously---they are lists to be added up \textbf{in order}---and
+this affects convergence!
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \item Determine whether a series converges by using...
+% limit comparison test, or comparison test
+% timeguess 5
+\begin{problem}[25]
+\begin{description}
+\item[(a)] Does the series $\displaystyle\sum_{n=1}^\infty \displaystyle\frac{\sqrt{n}}{1 + \sqrt{n}}$ converge?
+\item [(b)] Does the series $\displaystyle\sum_{n=3}^\infty \displaystyle\frac{n^2}{n^4 - 7}$ converge?
+\end{description}
+Justify your answers.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+\begin{description}
+\item[(a)] No, by the $n$-th term test:
+$$
+\lim_{n \to \infty} \frac{\sqrt{n}}{1 + \sqrt{n}} = \lim_{n \to \infty} \frac{1}{1 + 1/\sqrt{n}} = 1 \neq 0
+$$
+so the series must diverge.  Some people tried to use the limit
+comparison test (comparing with $b_n = 1$), but this is equivalent to
+the $n$-th term test, and makes everything look unnecessarily
+complicated.
+\item[(b)] Yes, by the limit comparison test (this is the sum of a
+  ratio of polynomials, so the limit comparison test is guaranteed to
+  work).  Set $a_n = (n^2)/(n^4 - 7)$ and $b_n = 1/n^2$.  Then
+$$
+\lim_{n \to \infty} a_n/b_n = \lim_{n \to \infty} \frac{n^4}{n^4 - 7} = 1.
+$$
+Since this limit is nonzero, $\sum a_n$ converges if and only if $\sum
+b_n$ converges.  But $\sum b_n$ converges by the $p$-series test, so
+the given series $\sum a_n$ converges.
+
+Many people fell into a trap that I placed in this problem: you cannot
+use the more ``obvious'' comparison test because
+$$
+\frac{n^2}{n^4 - 7} \leq \frac{1}{n^2}
+$$
+is not true (try $n = 3$).  The limit comparison test comes in very
+handy for this.
+\end{description}
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \item Provide statements of the preceeding tests.
+% timeguess 3
+\begin{problem}[15]
+Provide a precise statement of the \textbf{ratio test} for determining whether the series $\displaystyle\sum_{n=1}^\infty a_n$ converges.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+Suppose $a_n > 0$ for all $n$, and that $\lim_{n\to\infty} a_{n+1}/a_n = L$.  Then,
+\begin{itemize}
+\item If $L > 1$, then $\sum a_n$ diverges.
+\item If $L < 1$, then $\sum a_n$ converges.
+\item If $L = 1$, then the test is inconclusive.
+\end{itemize}
+Some people neglected to write down $\lim_{n \to \infty}$.
+
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \item Determine whether a series converges absolutely; determine whether a series conditionally.
+% timeguess 6
+\begin{problem}[20]
+For which real numbers $x > 0$ does the series
+$$
+\sum_{n=1}^\infty \frac{(-1)^n}{n^x}
+$$
+converge absolutely?  For which $x > 0$ does it converge conditionally?  Justify your answer.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+    Andy Chiang pointed out that I should have had $n = 1$ instead of
+    $n = 0$; I have corrected that here.  This problem is a basically
+    $p$-series in disguise, so the convergence test will be easy---the
+    hard part is the difference between absolute and conditional
+    convergence.
+
+    To check for absolute convergence, note that
+$$
+\sum_{n=1}^\infty \left| \frac{(-1)^n}{n^x} \right| = 
+\sum_{n=1}^\infty \frac{1}{n^x} 
+$$
+But this is a $p$-series, so it converges exactly when $x > 1$.  Thus, the
+given series \textbf{converges absolutely} provided $x > 1$.
+
+Let $a_n = n^x$.  Then the given series is an alternating series
+$\sum_{n=1}^\infty (-1)^n a_n$.  For any $x$, all of the $a_n$ are
+positive, and $a_n$ is a decreasing sequence, and $\lim_{n \to \infty}
+a_n = 0$, so by the alternating series test, the given series
+converges for all $x > 0$.  Therefore, it converges conditionally
+provided $0 < x \leq 1$.
+
+(Some people said that it converges conditionally for all $x > 0$;
+yes, the series \textbf{converges} for all $x > 0$, but to converge
+\textbf{conditionally}, the series must converge while the series of
+the absolute values diverges---this only happens when $0 < x \leq 1$).
+
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \item Given a function, write down the first few terms of its Taylor series (around $0$ or around another point $a$)
+% timeguess 8
+\begin{problem}[25]
+Define $f : \R \to \R$ by
+$$
+f(x) = \cos \left( \sin x \right)
+$$
+Find the first four terms (i.e., up to and including $x^3$) of a Taylor series expansion for $f$ around $x = 0$.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+
+    You can do this problem by differentiating; since $\cos \sin x$ is
+    an \textit{even} function, the Taylor series will only involve
+    even degree terms, so you do not need to compute the coefficient
+    on $x^1$ and $x^3$---they are both automatically zero.  This means
+    you only need to compute $f^{(2)}(0)$ which is not so bad.
+
+    Nevertheless, you can also solve this problem by substituting the
+    series for $\sin x$ into the series for $\cos x$, as follows:
+\begin{eqnarray*}
+\cos \left( \sin x \right) &=&
+\sum_{n=0}^\infty \frac{(-1)^n}{(2n)!} \left(
+1 - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots \right)^{2n}\\
+&=& 1 - \frac{\left( x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots \right)^2}{2} + \frac{\left( x - \cdots \right)^4}{4!} + \cdots \\
+&=& 1 - \frac{x^2}{2} + \mbox{terms of degree four or more}
+\end{eqnarray*}
+
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \item Given a function, write down its Taylor series.
+% timeguess 5
+\begin{problem}[30]
+Consider the function
+$$
+f(x) = \frac{e^x - e^{-x}}{2}.
+$$
+Let $\displaystyle\sum_{n=0}^\infty a_n x^n$ be a power series for $f(x)$.
+Compute both $a_n$ and $f^{(42189)}(0)$.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+    This function is ``hyperbolic sine'' so there is some reason to
+    care about it; you'll notice in this problem that its Taylor
+    series looks just like the Taylor series for sine, except that
+    there is no $(-1)^n$ term.  Additionally, since $\sinh$ is an odd
+    function, only odd degree terms will appear in its Taylor series.
+
+The Taylor series for $e^x$ is $\sum_{n=0}^\infty \frac{x^n}{n!}$ so
+\begin{eqnarray*}
+\frac{e^x - e^{-x}}{2}
+&=& \frac{1}{2} \left( \sum_{n=0}^\infty \frac{x^n}{n!} - \sum_{n=0}^\infty \frac{(-x)^n}{n!} \right) \\
+&=& \frac{1}{2} \left( \sum_{n=0}^\infty \frac{1 - (-1)^n}{n!} x^n \right)
+\end{eqnarray*}
+Therefore the coefficient on $x^n$ is
+$$
+a_n = \frac{1 - (-1)^n}{n! \cdot 2}.
+$$
+Note that this vainshes when $n$ is even, and is equal to $1/n!$ when
+$n$ is odd.
+
+Since $f^{(n)}(0) = n!\, a_n$, we conclude
+$$
+f^{(42189)}(0) = 42189! \cdot \frac{1 - (-1)^{42189}}{42189! \cdot 2} = \left( 1 - (-1)^{42189} \right) / 2 = 2 / 2 = 1.
+$$
+
+Many of you neglected to compute $a_n$---you lost
+points for this; I asked for a computation of $a_n$ to force you to write down the answer in a particular way (I feared that some would suggestively write down the first few terms series, some would not simplify it sufficiently, etc.---to be fair to those who might do more work, I asked for the most specific thing I could ask for).  Additionally, many people wrote down
+$$
+f(x) = \sum_{n=0}^\infty \frac{x^{2n+1}}{(2n+1)!}
+$$
+which is true, but this expresion makes it very complicated to see
+what the coefficient on the $x^n$ term should be.  One way to express
+it is like this:
+\begin{eqnarray*}
+a_{2n+1} &=& \frac{1}{(2n+1)!} \\
+a_{2n} &=& 0 
+\end{eqnarray*}
+Or you could say,
+$$
+a_n = \begin{cases}
+1/n! & \mbox{if $n$ is odd}, \\
+0 & \mbox{if $n$ is even.}
+\end{cases}
+$$
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \item State Taylor's theorem and Lagrange's theorem.
+% timeguess 6
+\begin{problem}[15]
+Suppose $f : \R \to \R$ is a smooth function.  Define
+$$
+g(x) = f(x) - f(0) - f'(0) x - \frac{f''(0) \, x^2}{2}
+$$
+Recall that \textbf{Taylor's theorem} provides an integral equal to
+$g(x)$.  What is that integral?  (Hint: if you have forgetten it or
+want to check your answer, you might try integration by parts).
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+
+
+By Taylor's theorem,
+$$
+f(x) = f(0) + f'(0) \, x + \frac{f''(0) \, x^2}{2} + R_2(x).
+$$
+Therefore,
+$$
+g(x) = f(x) - f(0) - f'(0) x - \frac{f''(0) \, x^2}{2} = R_2(x).
+$$
+But,
+$$
+g(x) = R_2(x) = \frac{1}{2} \int_0^x f^{(3)}(t) \, (x-t)^2 \, dt
+$$
+This problem was designed to test your knowledge of Taylor's theorem
+without exactly asking you to just give a statement---you got credit
+if you wrote down the $n = 2$ case.
+
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \item Approximate a Taylor series and estimate the error in your approximation.
+% timeguess 5
+\begin{problem}[20]
+  Let $p : \R \to \R$ be a smooth function, such that
+\begin{itemize}
+\item $p(0) = 0$ (in other words, my initial position is at the origin),
+\item $p'(0) = 2000$ (in other words, my initial velocity is $2000\,\mbox{m}/\mbox{s}$), and
+\item $|p''(t)| < 500$ for all $t \in \R$ (in other words,  I will avoid accelerating more than $500\,\mbox{m}/\mbox{s}^2$)
+\end{itemize}
+Use \textbf{Lagrange's theorem} to bound $p(2)$, my position after two seconds.
+
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+By Lagrange's theorem
+$$
+p(x) = p(0) + p'(0) \, x + R_1(x)
+$$
+and $R_1(x) = f''(c) \, x^2/2!$ for some $c \in (0,x)$.  
+
+In our case, $x = 2$, so
+$$
+p(2) = p(0) + p'(0) \, 2 + R_1(2) = 2000 \cdot 2 + R_1(2)
+$$
+So $p(2) - 4000 = R_1(2)$.
+
+Since $|p''(t)| < 500$, we know
+$$
+|R_1(2)| = |f''(c) \, 2^2/2| \leq 500 \cdot 4 / 2 = 1000
+$$
+Consequently, $|p(2) - 4000| \leq 1000$, and therefore,
+$$
+3000 \leq p(2) \leq 5000.
+$$
+Take a moment to reflect on the reasonableness of this: if you are
+travelling at a particular speed, and you refuse to accelerate or
+decelerate too much, then you have to cover a certain distance!  This
+is a physical consequence of Lagrange's theorem.  In problems like
+this, physical intuition can reassure you that you've written down the
+correct answer.
+
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \item Determine the interval on which a power series converges
+% timeguess 
+\begin{problem}[20]
+  For which real numbers $x$ does the series
+  $\displaystyle\sum_{n=1}^\infty \displaystyle\frac{x^n}{2^n \, n^2}$
+  converge?  Remember to show your work.
+
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+    We use the ratio test to check for absolute convergence (this
+    suffices for power series, save possibly at the endpoints)
+$$
+\lim_{n \to \infty} \left|\frac{a_{n+1}}{a_n}\right| = 
+\lim_{n \to \infty} \left|\frac{x^{n+1} / (2^{n+1} (n+1)^2)}{x^n / (2^n n^2)}\right| = \lim_{n \to \infty} \left|\frac{x \, n^2}{2 \,(n+1)^2} \right|
+$$
+But $\lim_{n \to \infty} (n/n+1)^2 = 1$, so the above limit is equal to $|x|/2$  By the ratio test, the series converges absolutely provided $|x|/2 < 1$, i.e., provided $-2 < x < 2$.
+
+We need to check endpoints.  At $x = 2$, the series becomes
+$$
+\sum_{n=1}^\infty \frac{2^n}{2^n \, n^2} = \sum_{n=1}^\infty \frac{1}{n^2}
+$$
+which is a convergent $p$-series.
+
+At $x = -2$, the series also converges---even absolutely, since
+$$
+\sum_{n=1}^\infty \left| \frac{(-2)^n}{2^n \, n^2} \right| = \sum_{n=1}^\infty \frac{1}{n^2}
+$$
+which is a convergent $p$-series again.
+
+Therefore, the series converges exactly when $x \in [-2,2]$.
+
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \item Determine the interval on which a power series converges.
+% timeguess 7
+\begin{problem}[20]
+  For which real numbers $x$ does $\displaystyle\sum_{n=0}^\infty
+  \displaystyle\frac{n! \, x^n}{n!!}$ converge?  Note: $n!!$ means the
+  factorial of the factorial of $n$.  Justify your answer.
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+    Yes, it is a power series, so you might be tempted to apply the
+    ratio test; but we've had problems about the ratio test
+    already---and more importantly, the ratio test is helpful
+    precisely when taking a ratio will cancel some terms---but here,
+    taking the ratio of $n!!$ and $(n+1)!!$ doesn't seem helpful.
+
+    What we do know is that $n!!$ grows ridiculuosly quickly, which
+    should suggest that a comparison test will be helpful.  So let's
+    apply the comparison test.  First, observe that, provided $n \geq
+    2$
+$$
+n! = 1 \cdot 2 \cdots (n-1) \cdot (n) > (n-1) \cdot (n) > (n-1)^2 \geq n^2/4
+$$
+As a result, $n!! > (n!)^2 / 4$.
+
+Therefore,
+$$
+\frac{n! \, x^n}{n!!} \leq \frac{n! \, x^n}{(n!)^2 / 4} = \frac{1}{4} \cdot \frac{x^n}{n!}.
+$$
+But
+$$
+\sum_{n=1}^\infty \frac{1}{4} \frac{x^n}{n!} = \frac{e^x}{4}
+$$
+converges for all $x \in \R$, so by the comparison test, the given series also converges for all $x \in \R$.
+
+This problem was designed to test your use of the comparison test
+(since the second problem was more naturally solved using the limit
+comparison test), but there are surely other ways to solve it.  Many
+of you had the right intuition (and you got points for that), saying
+that the $n!!$ will grow so much more quickly, etc.  This is great!  I
+hope that when you see series like this, you'll be able to guess the
+truth right away; but to justify your intuition of ``grows very fast''
+you should use a comparison test.
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \item Differentiate and integrate a power series term-by-term.
+% timeguess 3
+\begin{problem}[20]
+Use the power series for $\displaystyle\frac{1}{1-x}$ to find a power series $\displaystyle\sum a_n x^n$ for $f(x) = \displaystyle\frac{1}{(1-x)^3}$.
+
+\noindent
+For which $x \in \R$ does the power series converge to $f(x)$?
+\end{problem}
+
+\begin{solution}\begin{solutiontext}
+
+Note that
+$$
+\frac{d^2}{dx^2} \frac{1}{1-x} = \frac{2}{(1-x)^3}
+$$
+Additionally,
+$$
+\frac{d^2}{dx^2} \sum_{n=0}^\infty x^n = 
+\sum_{n=0}^\infty \frac{d^2}{dx^2} x^n = 
+\sum_{n=2}^\infty (n)(n-1) x^{n-2}.
+$$
+Putting these facts together gives
+$$
+\frac{1}{(1-x)^3} = \sum_{n=2}^\infty \frac{n \, (n-1)}{2} x^{n-2} = \sum_{n=2}^\infty \binom{n}{2} x^{n-2}
+$$
+Since $\sum_{n=0}^\infty x^n$ converges to $1/(1-x)$ for all $x \in
+(-1,1)$, the same is true of the second derivatives (by the thereom on
+term-by-term differentiation).
+
+There were many popular mistakes: the most frequent was to argue that
+$$
+\frac{1}{1-x^3} = \sum_{n=0}^\infty (x^3)^n = \sum_{n=0}^\infty x^{3n}
+$$
+which is true.  The trouble is that $1/(1-x)^3$ is not $1/(1-x^3)$.
+
+    Many people included an argument that the series they found
+    converged; regardless of whether or not the series you found
+    converges, that does not address the question of whether the
+    series converges to $f(x)$---for that, you need to either estimate
+    the remainder, or apply a theorem about term-by-term
+    differentiation.
+
+\end{solutiontext}\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% bonus true/false questions
+\begin{problem}[0]
+  The following questions are for extra credit.  \textbf{Circle your
+    answer.}
+
+\begin{description}
+%\vfill
+\item[\FalseChoice] If $\displaystyle\sum_{n=1}^\infty a_n$ converges, then $\displaystyle\sum_{n=1}^\infty |a_n|$ converges.
+Counterexample: $a_n = (-1)^n/n$.
+%\vfill
+\item[\TrueChoice] If $\displaystyle\sum_{n=1}^\infty a_n$ diverges, then $\displaystyle\sum_{n=1}^\infty |a_n|$ diverges.
+This is the contrapositive of the theorem that says absolutely convergent series also converge conditionally.
+%\vfill
+\item[\TrueChoice] If $\displaystyle\sum_{n=1}^\infty |a_n|$ converges, then $\displaystyle\sum_{n=1}^\infty a_n$ converges.
+This is the theorem that says absolutely convergent series also converge conditionally.
+%\vfill
+\item[\FalseChoice] If $\displaystyle\sum_{n=1}^\infty |a_n|$ diverges, then $\displaystyle\sum_{n=1}^\infty a_n$ diverges.
+Counterexample: $a_n = (-1)^n/n$.
+%\vfill
+\item[\FalseChoice] If $\displaystyle\sum_{n=1}^\infty a_n$ diverges and $\displaystyle\sum_{n=1}^\infty b_n$ diverges, then $\displaystyle\sum_{n=1}^\infty (2 \cdot a_n + 3 \cdot b_n)$ diverges.
+Counterexample: $a_n = 3n$ and $b_n =  - 2n$.
+%\vfill
+\item[\TrueChoice] If $\displaystyle\sum_{n=1}^\infty a_n$ converges and $\displaystyle\sum_{n=1}^\infty b_n$ converges, then $\displaystyle\sum_{n=1}^\infty (2 \cdot a_n + 3 \cdot b_n)$ converges.
+Sums of convergent series converge.
+%\vfill
+\item[\FalseChoice] If $\displaystyle\sum_{n=1}^\infty a_n$ diverges and $\displaystyle\sum_{n=1}^\infty b_n$ diverges, then $\displaystyle\sum_{n=1}^\infty (a_n \cdot b_n)$ diverges.
+Counterexample: $a_n = b_n = 1/n$.
+%\vfill
+\item[\FalseChoice] If $\displaystyle\sum_{n=1}^\infty a_n$ converges and $\displaystyle\sum_{n=1}^\infty b_n$ converges, then $\displaystyle\sum_{n=1}^\infty (a_n \cdot b_n)$ converges.
+Counterexample: $a_n = b_n = (-1)^n / \sqrt{n}$.
+%\vfill
+\item[\TrueChoice] If $\displaystyle\sum_{n=1}^\infty a_n$ converges, then $\displaystyle\sum_{n=100}^\infty a_n$ converges.
+Convergence only depends on the tail of the series.
+%\vfill
+\item[\TrueChoice] If $\displaystyle\sum_{n=1}^\infty a_n$ diverges, then $\displaystyle\sum_{n=100}^\infty a_n$ diverges.
+Divergence only depends on the tail of the series.
+%\vfill
+\item[\TrueChoice] If $\displaystyle\sum_{n=1}^\infty a_n$ converges, then $\displaystyle\sum_{n=2}^\infty \left(a_n - a_{n-1}\right)$ converges.
+A shifted convergent series still converges, so $\displaystyle\sum_{n=2}^\infty \left(a_n - a_{n-1}\right)$ is the difference of two convergent series.
+%\vfill
+\null
+\end{description}
+
+\end{problem}
+
+\ifthenelse{\equal{\HasSolutions}{true}}{}{%
+\pagebreak%
+\section*{Extra Paper}%
+\pagebreak%
+\null%
+\pagebreak%
+\null%
+\pagebreak%
+\null%
+\pagebreak%
+\null%
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\addtocontents{toc}{\textbf{Total} \protect& \protect& /\arabic{totalpoints}}
+
+\end{document}

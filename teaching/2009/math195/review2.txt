@@ -1,0 +1,31 @@
+Math 195 Section 91 Wednesday July 15, 2009
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+What will the exam be like?
+The oral exam will last between thirty and sixty minutes, and again, will be worth 225 points. If you have not yet emailed me your preferences, please do so today. During the exam, you will stand at the chalkboard; I will invite you to demonstrate various pieces of mathematics (e.g., “Write down a polynomial; ﬁnd the partial derivative of it with respect to x”). As you do so, I will ask additional questions. Ideally, we will complete around six problems together.
+
+Can I use my calculator?
+Calculators are forbidden but feel free to ask me questions during the oral exam if you get stuck.
+
+What might I have to do on this exam?
+I may be asking you to: • Diﬀerentiate a vector-valued function • Graph a vector-valued function • Discuss functions of several variables • Compute a limit of a function of several variables • Convert a limit in cartesian coordinates to polar coordinates • Deﬁne continuity for functions of several variables • Give an example of a limit that does not exist • Compute partial derivatives • Compute higher partial derivatives • Give an example in which mixed partials commute • Describe what a partial derivative is measuring
+
+c 2009 Jim Fowler
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Midterm 2: Frequently Asked Questions
+
+• Write down a linear approximation to a function • Find the tangent plane to a function at a point • Compute partial derivatives with the chain rule • Compute the gradient of a function • Interpret the gradient as “steepest ascent” • Compute directional derivatives
+
+• Deﬁne global maximum and global minimum
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+• Deﬁne local maximum and local minimum • Find critical points
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+• Find maximum and minimum values over a given region • Apply the second derivative test • Optimize a function given a constraint with Lagrange multipliers
+
+c 2009 Jim Fowler
+
+

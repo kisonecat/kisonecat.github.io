@@ -1,0 +1,473 @@
+[
+  {
+    "title": "Midterm 2 Results",
+    "shortname": "midterm2-results",
+    "filename": "midterm2-results.pdf",
+    "source": "midterm2-results.tex",
+    "description": "",
+    "tags": [
+      "exam"
+    ]
+  },
+  {
+    "title": "Virtual Review Session for Midterm 2",
+    "shortname": "virtual-review",
+    "filename": "virtual-review.pdf",
+    "source": "virtual-review.tex",
+    "description": "",
+    "tags": [
+      "exam"
+    ]
+  },
+  {
+    "title": "Solution Set 1",
+    "shortname": "solution01",
+    "filename": "solution01.pdf",
+    "source": "solution01.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Homework 10",
+    "shortname": "homework10",
+    "filename": "homework10.pdf",
+    "source": "homework10.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Calculus of Finite Differences",
+    "shortname": "difference-calculus",
+    "filename": "difference-calculus.pdf",
+    "source": "difference-calculus.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Infinite Bridge Kit",
+    "shortname": "infinite-bridge",
+    "filename": "infinite-bridge.pdf",
+    "source": "infinite-bridge.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Student Survey",
+    "shortname": "survey",
+    "filename": "survey.pdf",
+    "source": "survey.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "How to remember all trigonometric formulas",
+    "shortname": "trig-formulas",
+    "filename": "trig-formulas.pdf",
+    "source": "trig-formulas.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Homework 9",
+    "shortname": "homework09",
+    "filename": "homework09.pdf",
+    "source": "homework09.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Homework 3",
+    "shortname": "homework03",
+    "filename": "homework03.pdf",
+    "source": "homework03.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Homework 13",
+    "shortname": "homework13",
+    "filename": "homework13.pdf",
+    "source": "homework13.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Midterm 2 Review Sheet",
+    "shortname": "review2",
+    "filename": "review2.pdf",
+    "source": "review2.tex",
+    "description": "",
+    "tags": [
+      "exam"
+    ]
+  },
+  {
+    "title": "Homework 16",
+    "shortname": "homework16",
+    "filename": "homework16.pdf",
+    "source": "homework16.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Almost Trigonometic Functions",
+    "shortname": "almost-trig-functions",
+    "filename": "almost-trig-functions.pdf",
+    "source": "almost-trig-functions.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Homework 2",
+    "shortname": "homework02",
+    "filename": "homework02.pdf",
+    "source": "homework02.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Homework 14",
+    "shortname": "homework14",
+    "filename": "homework14.pdf",
+    "source": "homework14.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Homework 1",
+    "shortname": "homework01",
+    "filename": "homework01.pdf",
+    "source": "homework01.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Solution Set 2",
+    "shortname": "solution04",
+    "filename": "solution04.pdf",
+    "source": "solution04.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Practice Proof Problems",
+    "shortname": "sample-proofs",
+    "filename": "sample-proofs.pdf",
+    "source": "sample-proofs.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Homework 5",
+    "shortname": "homework05",
+    "filename": "homework05.pdf",
+    "source": "homework05.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Midterm 1 Review Sheet",
+    "shortname": "review1",
+    "filename": "review1.pdf",
+    "source": "review1.tex",
+    "description": "",
+    "tags": [
+      "exam"
+    ]
+  },
+  {
+    "title": "Homework 12",
+    "shortname": "homework12",
+    "filename": "homework12.pdf",
+    "source": "homework12.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Recitation Sessions",
+    "shortname": "recitations",
+    "filename": "recitations.pdf",
+    "source": "recitations.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "What now?  What do I do next?",
+    "shortname": "what-now",
+    "filename": "what-now.pdf",
+    "source": "what-now.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "A cool trick for limits of sequences",
+    "shortname": "stolz-cesaro",
+    "filename": "stolz-cesaro.pdf",
+    "source": "stolz-cesaro.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Frequently Asked Questions about and on Final Exams",
+    "shortname": "final-review",
+    "filename": "final-review.pdf",
+    "source": "final-review.tex",
+    "description": "",
+    "tags": [
+      "exam",
+      "exam"
+    ]
+  },
+  {
+    "title": "Point nine repeating",
+    "shortname": "repeating",
+    "filename": "repeating.pdf",
+    "source": "repeating.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Facts about Limits",
+    "shortname": "organized-facts",
+    "filename": "organized-facts.pdf",
+    "source": "organized-facts.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Homework 11",
+    "shortname": "homework11",
+    "filename": "homework11.pdf",
+    "source": "homework11.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Facts about Limits.",
+    "shortname": "limit-facts",
+    "filename": "limit-facts.pdf",
+    "source": "limit-facts.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Homework 7",
+    "shortname": "homework07",
+    "filename": "homework07.pdf",
+    "source": "homework07.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "The 10-adic numbers",
+    "shortname": "padics",
+    "filename": "padics.pdf",
+    "source": "padics.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "End of the World",
+    "shortname": "end-of-the-world",
+    "filename": "end-of-the-world.pdf",
+    "source": "end-of-the-world.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Midterm 1 Results",
+    "shortname": "midterm1-results",
+    "filename": "midterm1-results.pdf",
+    "source": "midterm1-results.tex",
+    "description": "",
+    "tags": [
+      "exam"
+    ]
+  },
+  {
+    "title": "Some interesting sequences",
+    "shortname": "logistic-map",
+    "filename": "logistic-map.pdf",
+    "source": "logistic-map.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Homework 3",
+    "shortname": "solution03",
+    "filename": "solution03.pdf",
+    "source": "solution03.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Solution Set 2",
+    "shortname": "solution02",
+    "filename": "solution02.pdf",
+    "source": "solution02.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Midterm 2",
+    "shortname": "midterm2",
+    "filename": "midterm2.pdf",
+    "source": "midterm2.tex",
+    "description": "",
+    "tags": [
+      "exam"
+    ]
+  },
+  {
+    "title": "Homework 4",
+    "shortname": "homework04",
+    "filename": "homework04.pdf",
+    "source": "homework04.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Homework 6",
+    "shortname": "homework06",
+    "filename": "homework06.pdf",
+    "source": "homework06.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Differential Equation Vocabulary",
+    "shortname": "diffequ-vocab",
+    "filename": "diffequ-vocab.pdf",
+    "source": "diffequ-vocab.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Taylor Series You Should Know",
+    "shortname": "taylor-series-to-know",
+    "filename": "taylor-series-to-know.pdf",
+    "source": "taylor-series-to-know.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Homework 8",
+    "shortname": "homework08",
+    "filename": "homework08.pdf",
+    "source": "homework08.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Quartersquares: an old-fashioned way to multiply",
+    "shortname": "quartersquares",
+    "filename": "quartersquares.pdf",
+    "source": "quartersquares.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Facts about series",
+    "shortname": "series-facts",
+    "filename": "series-facts.pdf",
+    "source": "series-facts.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Math153 Syllabus",
+    "shortname": "syllabus",
+    "filename": "syllabus.pdf",
+    "source": "syllabus.tex",
+    "description": "",
+    "tags": [
+      "syllabus"
+    ]
+  },
+  {
+    "title": "Homework 15",
+    "shortname": "homework15",
+    "filename": "homework15.pdf",
+    "source": "homework15.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  }
+]

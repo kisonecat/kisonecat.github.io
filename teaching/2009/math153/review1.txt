@@ -1,0 +1,67 @@
+I wonder—what will the exam be like?
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+• There will be 13 questions on the exam and it will last 50 minutes. The ﬁrst question will ask you to give the -K deﬁnition of the limit of a sequence. • Calculators are forbidden.
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+• There will be one improper integral on the exam; it will not involve a challenging integral: I would rather that you make sure you are extremely comfortable with diﬀerentiation on this exam, so you can handle the questions involving l’Hˆpital’s o rule—future exams will give us plenty of practice with the fancier techniques of integration. • The last question will be extra credit with true/false questions. I think these are terribly enjoyable! They will ask you to agree and disagree with statements of theorems, slightly modiﬁed statements of theorems, existence of sequences exhibiting certain kinds of phenomena, etc. • You will lose points if you surround an otherwise convincing argument with false statements (after all, once I have proved 2 = 1, I can prove anything!). Erase or cross-out untrue statements for full credit. • Style matters: if you are taking a limit, write lim. Do not use an “=” between two expressions unless they are, in fact, equal. Do not under any circumstances divide by zero during the exam. • You can refer to our friend the “natural logarithm” by any nickname you prefer.
+
+I wonder—what must I do on this “exam”?
+• Give the deﬁnition of lim an = L.
+n→∞
+
+• Prove that a sequence converges by providing an -K proof. • Give the deﬁnition for a sequence to be bounded above, bounded below, increasing, decreasing, non-increasing, non-decreasing • Recognize when a sequence is bounded • Recognize when a sequence is monotone • Find limits by using algebraic manipulation • Use lim f (an ) = f ( lim an ) provided f n→∞ n→∞ is continuous.
+
+• Find limits by squeezing sequences between sequences with a common, known limit • Give the statement of l’Hˆpital’s rule o for indeterminate forms 0/0 and ∞/∞ • Use l’Hˆpital’s rule to compute limits o (sometimes it takes more than one application!) • Handle indeterminate forms 00 , ∞ − ∞ • Compute an improper integrals by taking limits of deﬁnite integrals (and do so carefully, noting where you are taking limits)
+
+c 2008 Jim Fowler
+
+How should I write down my answers?
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+You are not giving answers: you are giving an explanation. For full credit, you must justify your arguments and show the steps you took: if the central issue in the problem is that the limit of the sum is the sum of the limits, you should be sure to point that out.
+
+Example. For x ∈ R, x > 0, lim x1/n = 1.
+n→∞
+
+Example. lim
+
+Example. For x ∈ R with −1 < x < 1, lim xn = 0.
+n→∞
+
+log n = 0. n→∞ n
+
+Example. For x ∈ R, x > 0, lim
+
+1 = 0. n→∞ nx
+
+Example. lim n1/n = 1.
+n→∞
+
+xn Example. For x ∈ R, lim = 0. n→∞ n!
+
+Example. For x ∈ R, lim
+
+n→∞
+
+1+
+
+x n
+
+n
+
+= ex .
+
+You must know the following trigonometric facts
+sin(2x) = 2 sin x cos x cos(2x) = cos2 x − sin2 x If additional identities are needed, I will provide them (but be warned: when you are one day stranded on desert island, you will have wished you knew as many trigonometric identities as possible—or at least, how to derive them from eiθ ). You should know the derivatives of sin, cos, and tan (which you can remember with the d mnemonic “you’ll tan in two seconds using this product” for tan x = sec2 x). dx
+
+You must be able to give -K proofs to show
+• lim • lim • lim • lim 1 = 0. n→∞ n 1+n = 1. n→∞ n 1 = 0. n→∞ n2 3 = 0. n→∞ n2 (−1)n = 0. n→∞ n cos n • lim = 0. n→∞ n • lim • lim • lim cos (n3 ) = 0. n→∞ n 2 + 3n = 0. n→∞ n2
+
+c 2008 Jim Fowler
+
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+You must know the following limits
+
+

@@ -1,0 +1,93 @@
+\documentclass[12pt,letterpaper]{article}
+
+\title{Facts about Limits}
+\author{Jim Fowler}
+
+\usepackage{fullpage}
+\usepackage{nopageno}
+\usepackage{amsmath}
+\usepackage[margin=1in]{geometry}
+\usepackage{add-copyright}
+
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}
+\newtheorem*{theorem*}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemmma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem*{definition*}{Definition}
+
+\usepackage{amssymb}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+
+\newcommand{\limn}{\displaystyle\lim_{n \to \infty}}
+
+\begin{document}
+
+\section*{More organized facts about limits}
+
+\subsection*{Bare hands}
+
+\begin{definition*}
+We say $\limn a_n = L$ if
+\begin{verse}
+  for all $\epsilon > 0$, there exists $K \in \N$, \\
+  so that if $n \geq K$, then $|a_n - L| < \epsilon$.
+\end{verse}
+\end{definition*}
+We can give explicit $\epsilon$-K arguments to prove
+$$
+\lim_{n \to \infty} \frac{1}{n} = 0, \hspace{1em} \mbox{ and }
+\lim_{n \to \infty} x^n = 0 \mbox{ if $-1 < x < 1$}.
+$$
+
+\subsection*{Algebraic operations}
+
+If $\limn a_n = L$ and $\limn b_n = M$, then 
+$$
+\limn \left( a_n + b_n \right) = L + M, \hspace{1em}
+\limn \left( a_n - b_n \right) = L - M, \hspace{1em}
+\limn \left( a_n \cdot b_n \right) = L \cdot M, 
+$$
+and if $M \neq 0$ and all $b_n \neq 0$, then $\limn \left( a_n / b_n
+\right) = L / M$.
+
+\subsection*{Squeezing theorem}
+
+If $a_n$, $b_n$, and $c_n$ are sequences of real numbers, and for all
+$n \in \N$, we have $a_n \leq b_n \leq c_n$, and $\limn a_n = L$ and
+$\limn c_n = L$, then $\limn b_n = L$.
+
+\subsection*{Continuous functions}
+
+If a function $f : \R \to \R$ is continuous at $L$, and $\limn a_n =
+L$, then $\limn f(a_n) = f(L)$.
+
+\subsection*{Subsequences}
+
+If $a_n$ is a sequence of real numbers, and $b_n$ is a subsequence
+produced from $a_n$ by throwing away finitely many terms, then $a_n$
+converges if and only if $b_n$ converges.
+
+\vspace{1ex}
+\noindent
+If $a_n$ is a convergent sequence of real numbers, and $b_n$ is a
+subsequence, then $b_n$ converges and $\limn a_n = \limn b_n$.
+
+\subsection*{Existence without construction}
+
+\begin{theorem*}
+If $a_n$ is a nondecreasing bounded above sequence, then $a_n$ converges.
+\end{theorem*}
+
+\begin{theorem*}
+If $a_n$ is a nonincreasing bounded below sequence, then $a_n$ converges.
+\end{theorem*}
+
+\end{document}

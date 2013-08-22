@@ -1,0 +1,123 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+\newtheorem*{example}{Example}
+\newtheorem*{thm}{Theorem}
+
+\title{Lecture 29: More differential equations}
+\author{Math 153 Section 57}
+\date{Wednesday December  3, 2008}
+
+\begin{document}
+\maketitle
+
+Following chapter 9.2.
+
+It is the end.
+
+Gottfried Leibniz and Isaac Newton's epic battle---commemorated in cookies.
+
+Review sheet for differential equations.
+
+% http://en.wikipedia.org/wiki/Examples_of_differential_equations
+
+Solution curves for first order equations
+
+Symmetries in solving differential equations:
+
+\subsection*{Factoring the operator}
+
+What about something like
+$$
+f''(x) - 2 f'(x) + f(x) = 0
+$$
+This is $(\frac{d}{dx} - 1) \, f(x) = 0$, so $e^x$ is a solution.  But
+is there another?
+
+Yes!  $x \, e^x$.
+
+In general, an $n$-th order linear homogeneous equation has $n$
+``distinct'' solutions.
+
+Factor the operator---do not fear this.  This is just taking a
+complicated procedure, and breaking it up into pieces, each of which
+can be done in order (and, in fact, in any order!).
+
+Factors of the form $( \frac{d}{dx} - r )$ contribute a $e^{rx}$.
+
+Factors of the form $( \frac{d}{dx} - r )^n$ contribute a $e^{rx}$, and $x e^{rx}$, $x^2 e^{rx}$, through $x^{n-1} e^{rx}$.
+
+Knowing that this is everything requires some fancier stuff
+(``determinants, Wronksians, linear algebra'').
+
+\subsection*{Encoding Fibonacci numbers}
+
+Shift operator
+$$
+(S^2 - S - 1) f_n = 0
+$$
+But $x^2 - x - 1$ has solutions $x = (1 \pm \sqrt{5})/2$.  Call
+these $A \approx -0.62$ and $B \approx 1.62$.
+
+So we can write this as
+$$
+(S - A)(S - B) f_n = 0
+$$
+What sorts of sequences have $(S - A) f_n = 0$?  Have $(S-B) f_n = 0$?  
+
+So $C A^n + D B^n = f_n$.
+
+If $f_0 = 1$, then we want $C + D = 1$.
+
+If $f_1 = 1$, then we want $CA + DB = 1$.  But $A = 1 - B$ and $C = 1 - D$, so
+$$
+(1-D)(1-B) + DB = 1
+$$
+so
+$$
+D = \frac{1}{\sqrt{5}} \rho
+$$
+and so
+$$
+f_n = (1 - \sqrt{5} \rho) (1-\rho)^n - \frac{1}{\sqrt{5}} \rho \rho^n
+$$
+
+\subsection*{Qualitative questions about solutions}
+
+Suppose $f''(x) = -f(x)$.
+
+Can you tell that $f$ is periodic?  That $f$ is bounded?
+
+Find a conserved quantity!
+
+$f'(x)^2 + f(x)^2$ is constant.  How do we know?  Differentiate!
+$$
+\frac{d}{dx} \left( f'(x)^2 + f(x)^2 \right) = 2 f''(x) f'(x) + 2 f'(x) f(x) = 0
+$$
+More than studying solutions: we know that $f$ must be bounded.  We
+have discovered conservation of energy---as a consequence of the
+equation.
+
+More importantly, we have discovered that sine and cosine are related
+by the Pythagorean identity!  At last, the ``circle'' is closed.
+
+\subsection*{More complicated example}
+
+% taylor series as a solution
+
+% bibliography for other books you might want to look at
+% Fourier Series by Korner
+% Rudin's analysis
+% GEneratingfunctionology
+
+\subsection*{What next?}
+
+Hand out.
+
+\subsection*{Course evaluations}
+
+\subsection*{Farewell}
+
+\end{document}

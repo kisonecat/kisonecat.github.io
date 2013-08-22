@@ -1,0 +1,17 @@
+Due Friday, November 7, 2008
+(a) On page 601, in section 12.5, do problems: 5, 6, 14, 20, 22.
+
+(b) Find a ﬁfth-degree Taylor polynomial (i.e., up to and including an x5 term) for each of the following functions: (i) f (x) = sin x + cos x. (ii) g(x) = cos (x2 ). (iii) h(x) = tan x. (iv) u(x) = log cos x. You can ﬁnd these polynomials using tricks—for example, try substituting x2 into a Taylor polynomial for cos x to ﬁnd a polynomial for g(x).
+
+(c) Consider a function p : R → R deﬁned by a polynomial p(x) = an xn + an−1 xn−1 + · · · + a1 x + a0 . What is the Taylor series for p(x)? Justify your answer.
+
+(d) Consider the function f : R → R deﬁned by f (x) = 1/(1 − x). Find the Taylor series ∞ n n=0 an x for this function, and determine for which values of x the series converges to f (x).
+
+c 2008 Jim Fowler
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Homework 10
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+

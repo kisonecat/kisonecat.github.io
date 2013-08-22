@@ -1,0 +1,41 @@
+Problem Set 5
+Winter 2011
+
+Math 765
+Jim Fowler
+
+Tensors and Forms. This week, the goal is forms—and along the way, we’ll have our ﬁrst glimpse of Riemannian metrics and the exterior derivative. This problem set is pretty heavy on the algebra of tensors; please email me with questions at fowler@math.osu.edu. The exercises below should be handed in on Monday, February 7, 2011.
+
+Problem 5.1 (Veronese surface)
+Let V = R3 , and consider the map s : V → Sym2 V which sends s(v) to v · v. (a) Show that, although s is not a linear map, s nonetheless induces a map P(s) : P(V ) → P(Sym2 V ), i.e., s sends lines to lines. (b) Is P(s) a smooth map? Compute its derivative P(s) : T RP 2 → T RP 5 . You might want to think about a nice way to describe a vector in T RP n . (c) Is P(s) a smooth embedding?
+
+Problem 5.2 (Lee Exercise 12.3)
+Show that the wedge product is the unique associative, bilinear, and anticommutative map Λk (V ) × Λ (V ) → Λk+ (V ) satisfying (ω 1 ∧ · · · ∧ ω k )(X1 , . . . , Xk ) = det ω j (Xi ) for covectors ω 1 , . . . , ω k and vectors X1 , . . . , Xk .
+
+Problem 5.3 (Lee 12–6)
+Deﬁne a 2-form Ω on R3 by Ω = x dy ∧ dz + y dz ∧ dx + z dx ∧ dy (a) Compute Ω in spherical coordinates (ρ, ϕ, θ) deﬁned by (x, y, z) = (ρsinϕ cos θ, ρ sin ϕ sin θ, ρ cos ϕ). (b) Compute dΩ in both Cartesian and spherical coordinates and verify that both expressions represent the same 3-form. (c) Compute the restirction Ω|S 2 = ι Ω using coordinates ϕ, θ) on the open subset where these coordinates are deﬁned. (d) Show that Ω|S 2 is nowhere zero.
+
+Problem 5.4 (Lee 12–5)
+A k-covector η on a ﬁnite-dimensional vector space V is said to be decomposable if it can be written η = ω1 ∧ · · · ∧ ωk where ω 1 , . . . , ω k are covectors. For what values of n is it true that every 2-covector on Rn is decomposable?
+
+Problem 5.5 (Lee 12–17, also known as Cartan’s Lemma)
+Let M be a smooth n-manifold, and let ω 1 , . . . , ω k be independent smooth 1-forms on an open subset U ⊂ M . If α1 , . . . , αk are 1-forms on U such that
+k
+
+αi ∧ ω i = 0
+i=1
+
+show that there are smooth functions fij so that
+k
+
+α =
+j=1
+
+i
+
+fij ω j
+
+Problem 5.6
+There are one line answers to these two questions. (a) Does every closed manifold M n admit Riemannian metric? (b) Does every closed manifold M n admit a symplectic form? If you answer in the aﬃrmative, prove it; if not, give a counterexample.
+
+

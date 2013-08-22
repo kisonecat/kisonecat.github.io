@@ -1,0 +1,121 @@
+\documentclass[12pt]{handout}
+\usepackage{nopageno}
+\course{Math 758}
+\title{Poincar\'e Duality}
+\author{Jim Fowler}
+
+\usepackage{amsmath}
+\newtheorem*{theorem*}{Theorem}
+\newtheorem*{corollary*}{Corollary}
+\theoremstyle{definition}
+\newtheorem{question}[theorem]{Question}
+\newtheorem*{remark*}{Remark}
+\newtheorem*{definition*}{Definition}
+\newtheorem*{example*}{Example}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{subproblem}[theorem]{Subproblem}
+\newtheorem{requiredproblem}[theorem]{\makebox[0in][r]{$\bullet$\hspace{0.25em}}Problem}
+
+\DeclareMathOperator{\projection}{proj}
+\DeclareMathOperator{\Hom}{Hom}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\RP}{\mathbb{R}P}
+
+\begin{document}
+
+\maketitle
+
+\begin{problem}
+  The \textbf{Euler characteristic} of a space $X$ with finite dimensional homology is
+  $$
+  \chi(X) = \sum_{n} (-1)^n \, \dim H_n(X;\Q).
+  $$
+  If $X$ is a finite simplicial complex, show that this is the same as
+  $$
+  \chi(X) = \sum_{n} (-1)^n \, \dim C_n(X;\Q),
+  $$
+  where $C_n(M;\Q)$ is the $n$-dimensional simplicial chain groups with rational coefficients.
+\end{problem}
+
+\begin{problem}
+  Let $M^3$ be a closed oriented 3-manifold with a given PL
+  triangulation (so the \textbf{link} of each vertex is a sphere);
+  show, by using the formula for $\chi$ in terms of chains, that
+  $\chi(M) = 0$.
+\end{problem}
+
+\begin{problem}
+  If $M$ is an odd-dimensional closed oriented manifold, show that
+  $\chi(M) = 0$.
+\end{problem}
+
+
+\begin{problem}
+  Let $M^n$ be an oriented closed $n$-manifold.  Show that the pairing
+  $$
+  \smallsmile : H^k(M;\Q) \times H^{n-k}(M;\Q) \to H^n(M;\Q) = \Q
+  $$
+  is nonsingular form by considering the adjoint map
+  $$
+  H^k(M;\Q) \to \Hom(H^{n-k}(M;\Q), H^n(M;\Q)).
+  $$
+\end{problem}
+
+
+\begin{problem}
+  Suppose $M^{6}$ is an oriented closed $6$-manifold.  Show that the pairing
+$$
+\smallsmile : H^{3}(M;\Q) \to H^{3}(M;\Q) \to H^{6}(M;\Q)
+$$
+is a nonsingular skew-symmetric bilinear form over $\Q$.  What does this imply about $\dim H^3(M;\Q)$?
+\end{problem}
+
+
+\begin{problem}
+  Use Poincar\'e duality to compute the cup product structure on
+$$
+H^\star(\RP^m;\Z/2).
+$$
+\end{problem}
+
+
+\begin{problem}
+  Let $X$ and $Y$ be simplicial complexes with disjoint sets of
+  vertices; in what follows, we regard a simplicial complex as simply
+  a set of subsets of a vertex set, closed under taking of subsets.
+
+  The \textbf{join} of $X$ and $Y$ is denoted by $X \star Y$, and is
+  defined as follows
+  $$
+  X \star Y = \{ \sigma \cup \tau : \sigma \in X \mbox{ and } \tau \in Y
+  \},
+  $$
+  If $X$ is homeomorphic to the $n$-sphere $S^n$ and $Y$ is homeomorphic
+  to the $m$-sphere $S^m$, describe the homeomorphism type of $X \star
+  Y$.
+\end{problem}
+
+
+\begin{problem}
+  Consider a $\Z/5$ action on $S^1$; by taking the join of $S^1$ with
+  itself, produce a $\Z/5$ action on $S^{2n+1}$.  The quotient of this
+  sphere by the $\Z/5$ action is a \textbf{lens space} $L^{2n+1}$.
+
+  Pick a generator $\alpha \in H^1(L^{2n+1};\Z/5)$ and a generator $\beta \in
+  H^2(L^{2n+1};\Z/5)$.  Show that $\alpha$ and $\beta$ generate $H^\star(L^{2n+1};\Z/5)$ as a ring.
+\end{problem}
+
+\begin{problem}
+  Exhibit two noncompact surfaces which are not homeomorphic.
+\end{problem}
+
+\pagebreak
+\null
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

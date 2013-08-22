@@ -1,0 +1,22 @@
+Final Exam: Frequently Asked Questions
+Math 195 Section 91 Wednesday July 22, 2009
+
+What will the ﬁnal exam be like?
+There will be 18 questions on the exam and it will last 120 minutes. It will be worth 400 points. As on the ﬁrst exam, the ﬁnal question will be extra credit with true/false questions.
+
+Should I bring a calculator?
+Absolutely not. Calculators are forbidden. You may bring the oﬃcial Math 195 Paper Slide Rule, if you really want to.
+
+How should I write down my answers?
+Your task is not merely to ﬁnd an answer—it is to provide an explanation. You will lose points if you surround an otherwise convincing argument with false statements (after all, once I have proved 2 = 1, I can prove anything!). Erase untrue statements for full credit.
+
+Is the exam cumulative?
+Yes; the ﬁnal exam will cover—and combine!—everything we have done so far. I have provided little boxes so you can check oﬀ the tasks that you feel prepared to do. Find the slope of a tangent line to a curve Find the slope of a tangent line to a curve given in polar coordinates Find distance between points in R2 , R3 , and Rn Write vectors as a linear combination of other vectors Compute dot products Determine when vectors are orthogonal Find the angle between two vectors
+
+Normalize a vector Compute the norm of a vector Compute the cross product of two vectors in R3 Find an equation for a line through a given point and in a given direction Find an equation for a plane through a given point and with a given normal vector Determine whether two lines intersect, are parallel, or are skew Find the point of intersection between a line and a plane Diﬀerentiate and valued functions integrate vector-
+
+Write down a linear approximation to a function Find the tangent plane to a function at a point Compute partial derivatives with the chain rule Compute the gradient of a function Compute directional derivatives Find critical points Find maximum and minimum values Use the second derivative test Optimize a function given a constraint with Lagrange multipliers Evaluate double and triple integrals Integrate a function over a rectangular region Integrate a function over a general region Apply Fubini’s theorem Convert polar coordinates to cartesian coordinates. Evaluate integrals using polar coordinates Use cylindrical coordinates Convert cartesian coordinates to spherical coordinates. Use spherical coordinates Compute a Jacobian Find the area of a given region Compute the volume of a 3-dimensional region
+
+Caclulate unit tangent vectors to a curve Find the angle of intersection between curves Diﬀerentiate a vector-valued function Compute a limit of a function of several variables Convert a limit from cartesian coordinates to polar coordinates Deﬁne continuity for functions of several variables Give an example of a limit that does not exist Compute partial derivatives Compute higher partial derivatives Give an example in which mixed partials commute
+
+

@@ -1,0 +1,158 @@
+Lecture 37: More on Harmonic functions
+Math 660—Jim Fowler Wednesday, August 11, 2010
+
+Harmonic functions in polar coordinates
+
+Harmonic functions in polar coordinates
+
+r
+
+∂ ∂r
+
+r
+
+∂u ∂r
+
++
+
+∂ 2u =0 ∂θ2
+
+Harmonic functions in polar coordinates
+
+r
+
+∂ ∂r
+
+r
+
+∂u ∂r
+
++
+
+∂ 2u =0 ∂θ2
+
+So if
+
+∂u ∂θ
+
+= 0, then u = a log r + b.
+
+Integrals of harmonic functions
+If u is harmonic, with conjugate harmonic function v ,
+
+Integrals of harmonic functions
+If u is harmonic, with conjugate harmonic function v , then f (x, y ) = u(x, y ) + i v (x, y ) is analytic,
+
+Integrals of harmonic functions
+If u is harmonic, with conjugate harmonic function v , then f (x, y ) = u(x, y ) + i v (x, y ) is analytic, and we can ﬁnd f dz.
+
+Integrals of harmonic functions
+If u is harmonic, with conjugate harmonic function v , then f (x, y ) = u(x, y ) + i v (x, y ) is analytic, and we can ﬁnd f dz. dv = − ∂u ∂u dx + dy . ∂y ∂x
+
+Integrals of harmonic functions
+If u is harmonic, with conjugate harmonic function v , then f (x, y ) = u(x, y ) + i v (x, y ) is analytic, and we can ﬁnd f dz. dv = − ∂u ∂u dx + dy . ∂y ∂x
+
+But in practice, there may be no conjugate harmonic function, so we take as a deﬁnition ∗du = − ∂u ∂u dx + dy . ∂y ∂x
+
+Hodge theory
+For any cycle γ, du = 0
+γ
+
+Hodge theory
+For any cycle γ, du = 0
+γ
+
+And if γ is homologous to zero, then f dz = 0
+γ
+
+Hodge theory
+For any cycle γ, du = 0
+γ
+
+And if γ is homologous to zero, then f dz = 0
+γ
+
+And so
+
+γ
+
+∗du = 0 for cycles homologous to zero.
+
+Simply connected regions
+
+In a simply connected regions, γ ∗du = 0 for all cycles, so u has a single-valued conjugate function v .
+
+For every cycle γ homologous to zero, u1 ∗ du2 − u2 ∗ du1 = 0
+γ
+
+For every cycle γ homologous to zero, u1 ∗ du2 − u2 ∗ du1 = 0
+γ
+
+Proof: If conjugate harmonic functions exist (e.g., in a simply connected region like a rectangle), then u1 ∗ du2 − u2 ∗ du1 = u1 dv2 − u2 dv1 = u1 dv2 + v1 du2 − d(u2 v1 ) = (im(u1 + iv1 )(du2 + idv2 )) − d(u2 v1
+
+For every cycle γ homologous to zero, u1 ∗ du2 − u2 ∗ du1 = 0
+γ
+
+Proof: If conjugate harmonic functions exist (e.g., in a simply connected region like a rectangle), then u1 ∗ du2 − u2 ∗ du1 = u1 dv2 − u2 dv1 = u1 dv2 + v1 du2 − d(u2 v1 ) = (im(u1 + iv1 )(du2 + idv2 )) − d(u2 v1 so the integral vanishes.
+
+For every cycle γ homologous to zero, u1 ∗ du2 − u2 ∗ du1 = 0
+γ
+
+Apply this to u1 = log r and u2 = u.
+
+Mean-value property
+
+Suppose u is harmonic in a punctured disk; then the arithmetic mean of u over concentric circles is a linear function of log r , 1 2π u dθ = a log r + β
+|z|=r
+
+and if u is harmonic in the whole disk, then a = 0.
+
+Maximum principle
+
+A nonconstant harmonic function has neither a maximum nor a minimum in the interior of a disk; the maximum and minimum on a closed bounded set occur on the boundary.
+
+Poisson’s formula
+If u(z) is continuous on a closed bounded set E , and harmonic in the interior of E , then it is uniquely determined by its values on the boundary.
+
+Poisson’s formula
+If u(z) is continuous on a closed bounded set E , and harmonic in the interior of E , then it is uniquely determined by its values on the boundary.
+
+Can we get a formula for the function on the interior, given the values on the boundary?
+
+Recall u(0) =
+
+1 2π
+
+u(re iθ ) dθ
+|z|=r
+
+Recall u(0) =
+
+1 2π
+
+u(re iθ ) dθ
+|z|=r
+
+Consider Sa (z) =
+
+R(R z+a) R+az .
+
+Recall u(0) =
+
+1 2π
+
+u(re iθ ) dθ
+|z|=r
+
+Consider Sa (z) =
+
+R(R z+a) R+az .
+
+u(a) =
+
+1 2π
+
+u(Sa (e iθ )) dθ.
+|z|=1
+
+

@@ -1,0 +1,30 @@
+Lecture 3: Vector products
+Math 195 Section 91 Friday June 26, 2009
+Goal: section 13.3 and 13.4
+
+Dot product
+deﬁnition properties: • v · v = |v|2 • v · (w + u) = v · w + v · u • 0 · v = 0. • v·w =w·v • (αv) · w = α · (v · w) = v · (αw). use dot product to ﬁnd length. deﬁne unit vector. what does it measure: the angle v · w = |v| · |w| · cos θ. how to ﬁnd the angle prop: vectors v and w are orthognoal if v · w = 0. especially fun to ﬁnd angle with i, j, k.
+
+0.1
+
+Projection
+
+project w onto v. use projection to write w as a combination of u and v.
+
+0.2
+
+higher dimensions!
+
+we can do dot products in any dimension! can you compute the angle between two four dimensional vectors?
+
+1
+
+0.3
+
+Cross product
+
+cross product is something special about 3-dimensions—takes two vectors and gives another vector deﬁne cross product using the “circle ijk”. mention that the book uses determinants, but that we won’t do this. theorem: a × b is perpendicular to a and b. proof? dot products! theorem: |a × b| = |a| · |b| · sin θ. This is the same asthe area of the parallelogram. interactively deduce the varous properties of cross products commutative? associative?
+
+2
+
+

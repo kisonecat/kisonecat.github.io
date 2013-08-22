@@ -1,0 +1,82 @@
+Midterm 1 Solution Set
+
+Math 345
+October 2010
+
+We often hear that mathematics consists mainly of “proving theorems.” Is a writer’s job mainly that of “writing sentences?” —Gian-Carlo Rota
+
+Name: Lecture time (circle one): 12:30–1:18p.m. 2:30–3:18p.m.
+
+1. Write your name above. 2. Calculators are forbidden (and useless, anyhow). 3. Do not look inside the exam until instructed to do so. 4. You have 48 minutes for this exam. 5. Justify your answers for full credit. 6. Show your work for generous partial credit. 7. Write your answers on the included pages, or request additional paper. 8. Answer all questions asked. 9. To prevent ﬁre, do not divide by zero.
+
+Problem Problem Problem Problem Problem Total
+
+1 2 3 4 5
+
+/360 /360 /360 /360 /360 /1800
+
+Problem 1
+Consider the proposition: (Q ⇒ R) ⇒ ((P ⇒ Q) ⇒ (P ⇒ R))
+
+/360
+
+Is the proposition a tautology? If not, explain why not. If it is a tautology, use the method of conditional proof to prove that it is a tautology. Do not use cases, and be careful not to skip any steps.
+
+Solution
+Claim. The given proposition is a tautology. Proof. Assume Q ⇒ R. We want to prove that (P ⇒ Q) ⇒ (P ⇒ R). To prove this latter statement, we will assume P ⇒ Q. we want to prove P ⇒ R. To prove this ﬁnal statement, we will assume P . We want to prove R. Assumptions (A3) and (A2) are that P is true and that P ⇒ Q so by modus ponens, Q is true. But assumption (A1) is that Q ⇒ R, so by modus ponens, R is true. We have proved R is true, which is what we wanted to prove. (A1) (A2) (A3)
+
+Commentary
+Many people submitted solutions for this problem that were much more complicated than the proof I oﬀer above; the problem text asks you not to split into cases. The structure of the proof is modeled on the structure of the proposition: the proof begins by considering the outermost implication arrow, which involves proving another implication, which itself involves proving an implication.
+
+Problem 2
+Let x be an integer. Write down the contrapositive of the conditional sentence If x is even, then x2 is even. Is this a true statement? Is the contrapositive a true statement? If yes, prove it. If not, ﬁnd a counterexample.
+
+/360
+
+Solution
+Let P be the proposition “x is even” and Q be the proposition “x2 is even.” The contrapositive of P ⇒ Q is (¬Q) ⇒ (¬P ), so the contrapositive of the given statement is “If x2 is not even, then x is not even.” The original statement is true. Claim. If x is even, then x2 is even. Proof. Assume x is even. Then there exists an integer k so that x = 2k, and so x2 = (2k)2 = 4k 2 . But 4k 2 = 2(2k 2 ), so x2 is also twice an integer, and therefore even. The contrapositive is also true (because an implication holds if and only if the contrapositive of the implication holds).
+
+Commentary
+Many people submitted separate proofs for the original statement and the contrapositive: this is unnecessary. It is easier to prove the original statement than the contrapositive in my opinion.
+
+Problem 3
+Consider the four propositions P ∨ (Q ∧ R), (P ∧ Q) ⇒ R, (¬P ) ∨ (¬Q) ∨ R, and (P ∨ Q) ∧ (P ∨ R). Exactly which of these propositions are logically equivalent to which other propositions?
+
+/360
+(1) (2) (3) (4)
+
+Provide justiﬁcation for all the claims you make; in particular, if you claim that two propositions are logically equivalent, you must prove this, and if you claim that they are not equivalent, you must explain why not. I prefer arguments that don’t involve cases.
+
+Solution
+I claim that (1) and (4) are equivalent, and (2) and (3) are equivalent, but neither (1) nor (4) are equivalent to (2) or (3). Claim. (1) ≡ (4). Proof. This is precisely the distributive law. Claim. (2) ≡ (3). Proof. (2) ≡ (P ∧ Q) ⇒ R ≡ (¬ (P ∧ Q)) ∨ R ≡ ((¬P ) ∨ (¬Q)) ∨ R ≡ (3).
+
+(deﬁnition of ⇒) (de Morgan’s law)
+
+Claim. (1) ≡ (3). Proof. If P is true, Q is true, and R is false, then (3) is false, but (1) is true. So (1) ≡ (3). Providing a speciﬁc example is the quickest way to verify this.
+
+Commentary
+A complete solution to this problem requires proving three statements (namely that (1) ≡ (4), that (2) ≡ (3), and that (1) ≡ (3)). You received 120 points for each claim you proved. Many people failed to discuss why (1) ≡ (3) and lost points because of this; the problem text asks “exactly which” propositions are equivalent, so you must discuss both which are equivalent and which are inequivalent.
+
+Problem 4
+Let x and y be real numbers, and consider the following proposition: If x is rational and y is irrational, then x + 2y is irrational. If the proposition is true, prove it; if not, give a counterexample.
+
+/360
+
+Solution
+This is a true proposition. Claim. If x is rational and y is irrational, then x + 2y is irrational. Proof. Assume that x is rational, y is irrational. For a contradiction, we assume that x+2y is rational. Since the diﬀerence of rational numbers is rational, (x + 2y) − x is rational, so 2y is rational. But 1/2 is rational, and since the product of rational numbers is rational, (1/2) · 2y = y is rational. But this is a contradiction—y is irrational. For completeness, I include proofs of two results that I used. Claim. The diﬀerence of rational numbers is rational. Proof. Assume x, y ∈ Q. Then there exist integers a, b, c, d ∈ Z with b, d = 0 so that x= and, combining denominators, ad − bc bd is a rational number, since ad − bc ∈ Z, bd ∈ Z, and bd = 0. x−y = Claim. The product of rational numbers is rational. Proof. Assume x, y ∈ Q. Then there exist integers a, b, c, d ∈ Z with b, d = 0 so that x= and, multiplying, xy = is a rational number, since ac, bd ∈ Z and bd = 0. a c and y = b d ac bd c a and y = b d
+
+Commentary
+A number of people stated that 2y is irrational by claiming that a rational number times an irrational number is irrational; this is not a true statement (consider when the rational number is zero).
+
+Problem 5
+Is the statement ∀x ∈ R ∃y ∈ R y 2 < x true or false? For full credit, justify your answer.
+
+/360
+
+Solution
+The proposition is false. I claim that the negation of ∀x ∈ R (∃y ∈ R (y 2 < x)) is true, namely Claim. ∃x ∈ R (∀y ∈ R (y 2 ≥ x)) Proof. Set x = −1. Let y be a real number. Then y 2 ≥ 0, so y 2 ≥ 0 > −1 = x, which is what I wanted to prove.
+
+Commentary
+Many students gave a speciﬁc choice of x and y for which y 2 < x; this is not enough; you need to explain why there is a value of x for which no value of y will satisfy y 2 < x.
+
+

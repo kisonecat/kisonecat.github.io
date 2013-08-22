@@ -1,0 +1,656 @@
+\documentclass[14pt]{beamer}
+
+\setbeamertemplate{navigation symbols}{}
+
+\usepackage{pgf}
+\usepackage{amsmath}
+\usepackage{amsthm}
+%\newtheorem*{problem}{Problem}
+\usepackage{amssymb}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+
+\usepackage{wasysym}
+\usepackage{stmaryrd}
+\newcommand{\boundary}{\partial}
+\newcommand{\collapses}{\searrow}
+\newcommand{\sunnycollapses}{\searrow\hspace{-12pt}\mbox{\raisebox{5pt}{\sun}}\hspace{2pt}}
+\newcommand{\expands}{\nearrow}
+\newcommand{\she}{\ssearrow\nnearrow}
+\newcommand{\join}{\ast}
+\newcommand{\subdivided}{\triangleleft}
+\newcommand{\fullsubcomplex}{\Subset}
+\newcommand{\BallThm}[1]{\mbox{$\textcolor{green!50!black}{\mbox{\textbf{BallThm}}_{#1}}$}}
+\newcommand{\SphereThm}[1]{\mbox{$\textcolor{green!50!black}{\mbox{\textbf{SphereThm}}_{#1}}$}}
+
+\DeclareMathOperator{\st}{st}
+\DeclareMathOperator{\vertices}{vert}
+\DeclareMathOperator{\lk}{lk}
+\DeclareMathOperator{\cl}{cl}
+\DeclareMathOperator{\cone}{cone}
+\DeclareMathOperator{\interior}{int}
+
+\title{Topology of  \\ Piecewise-Linear Manifolds}
+\author{Jim Fowler}
+\date{Lecture 8 \\ Summer 2010}
+
+\newcommand{\setbackgroundpicture}[1]{%
+\usebackgroundtemplate{
+\begin{pgfpicture}{0in}{0in}{\paperwidth}{\paperheight}
+\pgfputat{\pgfxy(0,0)}{\includegraphics[width=\paperwidth]{#1}}
+\color{white}
+\pgfsetfillopacity{0.8}
+\pgfrect[fill]{\pgfxy(0,0)}{\pgfpoint{\paperwidth}{\paperheight}}
+\end{pgfpicture}
+}
+}
+\newcommand{\clearbackgroundpicture}{\usebackgroundtemplate{}}
+
+\begin{document}
+
+\begin{frame}
+\maketitle
+\end{frame}
+
+\setbackgroundpicture{problem07.pdf}
+\begin{frame}
+  \frametitle{Knotting $S^2$ in $S^4$}
+
+  \begin{problem}
+    Suppose $S^1 \subset S^3$ is a knot; \\
+    show that the suspension \\
+    gives a knotted $S^2$ in $S^4$.
+  \end{problem}
+  \pause
+  \begin{proof}
+    Links are preserved.
+  \end{proof}
+  \pause
+  \begin{problem}
+    Find a knotted $S^2 \subset S^4$ which is \textit{locally flat}.
+  \end{problem}
+\end{frame}
+\clearbackgroundpicture
+
+\setbackgroundpicture{Aristotle_Altemps_Inv8575.jpg}
+\begin{frame}
+  \frametitle{Philosophy}
+
+  {\large Why is unknotting easier than knotting?} \\
+  \quad (Why is it easier to show that a pair is unknotted \\
+  \quad\quad than to show that it is knotted?)
+
+  \vfill
+  \pause
+
+  {\large\textbf{ Existential versus universal quantifiers}}
+
+\end{frame}
+\clearbackgroundpicture
+
+%\setbackgroundpicture{zeeman.pdf}
+\begin{frame}
+ \vfill
+  \begin{center}
+   \Huge E. C. Zeeman \\
+   \vfill
+   {\normalsize \textbf{Goal:} \textit{``Unknotting combinatorial balls''}
+     \\
+     a paper in the \textbf{Annals}
+     }
+  \end{center}
+  \vfill
+\end{frame}
+%\clearbackgroundpicture
+
+\setbackgroundpicture{Nf_knots.png}
+\begin{frame}
+  \frametitle{Main result}
+
+\Large
+  \begin{theorem}
+    Any embedding $S^p \subset S^q$ \\is unknotted, if $q - p \geq 3$.
+  \end{theorem}
+\pause
+  \begin{corollary}
+        Any embedding $S^1 \subset S^{4}$ \\is unknotted.
+  \end{corollary}
+
+\end{frame}
+\clearbackgroundpicture
+
+\setbackgroundpicture{bulldozer.jpg}
+\begin{frame}
+ \frametitle{Advertisement}
+
+ There are now other ways to prove Zeeman's result.
+
+ \vfill
+
+ The technical lemmas do some ``heavy lifting'' \\
+ and I am curious if there are other applications \\
+ of the machinery in Zeeman's paper.
+
+ \vfill
+
+\end{frame}
+\clearbackgroundpicture
+
+
+\setbackgroundpicture{two-giraffes-871277133292IxUu.jpg}
+\begin{frame}
+  \frametitle{Pairs}
+
+  \begin{definition}
+    ``$(p,q)$-sphere pair'' means $S^q \subset S^p$. \\
+    We sometimes write $(S^p,S^q)$.
+
+    \vspace{1ex}
+    ``$(p,q)$-ball pair'' means $B^q \subset B^p$, \\
+    with $B^q$ properly embedded in $B^p$, \\
+    meaning $\partial B^q \subset \partial B^p$ 
+    and $\interior B^q \subset \interior B^p$. \\
+    We sometimes write $(B^p,B^q)$.
+  \end{definition}
+
+  \vfill
+ ``Pair'' means either a ball-pair or sphere-pair.
+
+  \vfill
+  $\partial (B^p,B^q) = (S^{p-1},S^{q-1})$.
+
+\end{frame}
+\clearbackgroundpicture
+
+\setbackgroundpicture{wedding.jpg}
+\begin{frame}
+  \frametitle{Joins of pairs}
+
+  $(S^p,S^q) \join S^k$ is a  sphere pair.
+
+  \vfill
+
+  $(S^p,S^q) \join B^k$ is a  ball pair.
+
+  \vfill
+
+  $(B^p,B^q) \join S^k$ is a  ball pair.
+
+  \vfill
+
+  $(B^p,B^q) \join B^k$ is a  ball pair.
+
+  \vfill
+
+  We'll call the join of a pair and a point a \textbf{cone pair}.
+
+\end{frame}
+\clearbackgroundpicture
+
+\setbackgroundpicture{ALVIN_submersible.jpg}
+\begin{frame}
+  \frametitle{Subpairs}
+
+  $X = (X^p,X^q)$ and $Y = (Y^r,Y^s)$ are pairs \\
+  we say $Y$ is a subpair of $X$ \\
+  \quad (written $Y \subset X$ or $X \supset Y$) \\
+  if $Y^r \subset X^p$ and $T^s = X^q \cap Y^r$.
+
+ \vfill
+
+  If $P = (S^p,S^q) \supset Q = (B^p,B^q)$, then
+  $$ P - \interior Q = (S^p - \interior B^p, S^q - \interior B^q)$$
+  is a ball pair (via regular neighborhood machinery).
+
+\end{frame}
+
+\clearbackgroundpicture
+
+\setbackgroundpicture{Mona_Lisa_headcrop.jpg}
+\begin{frame}
+  \frametitle{Faces of pairs}
+
+  If $Q' = (B^{p-1},B^{q-1})$ is\\
+  contained in the boundary of $Q = (B^p,B^q)$,\\
+  we call $Q'$ a \textbf{face} of $Q$.
+
+ \vfill
+
+  \begin{theorem}
+   If ball pairs intersect in their common boundary, \\
+   their union is a sphere pair.
+ \end{theorem}
+
+ \vfill\pause
+
+  \begin{theorem}
+   If ball pairs intersect in a face, \\
+   their union is a ball pair.
+ \end{theorem}
+
+\end{frame}
+\clearbackgroundpicture
+
+\setbackgroundpicture{two-giraffes-871277133292IxUu.jpg}
+\begin{frame}
+  \frametitle{Standard pairs}
+
+  $\Gamma^{p,q} = (S^{p-q} \Delta^q, \Delta^q)$ is the standard
+  $(p,q)$-ball pair. \\
+  $\partial \Gamma^{p+1,q+1}$ is the standard $(p,q)$-sphere pair.
+
+  \vfill
+  A pair is \textbf{unknotted} \\
+  if it is homeomorphic to a standard pair.
+
+\end{frame}
+\clearbackgroundpicture
+
+\setbackgroundpicture{marble-ball.jpg}
+\begin{frame}
+
+  \begin{theorem}[\BallThm{p,q}]
+    If $p - q \geq 3$, then any $(p,q)$-ball pair \\
+    is unknotted.
+  \end{theorem}
+
+  \vfill
+
+  \begin{theorem}[\SphereThm{p,q}]
+    If $p - q \geq 3$, then any $(p,q)$-sphere pair \\
+    is unknotted.
+  \end{theorem}
+
+  \vfill\pause
+  \begin{proof}
+    By induction.
+  \end{proof}
+\end{frame}
+\clearbackgroundpicture
+
+\setbackgroundpicture{Fermilab_-_400_MeV_Lambertson_Magnet.jpg}
+\begin{frame}<1-5>[label=overview]
+  \frametitle{Overview of the induction}
+
+  \vfill
+
+  \uncover<4->{\checkmark\hspace{0.25em} }Prove $\BallThm{p,0}$ by hand.\\
+  \vspace{1ex}
+  \uncover<5->{\checkmark\hspace{0.25em} }\uncover<2->{$\BallThm{p,q}$
+    implies $\SphereThm{p,q}$.}\\
+  \vspace{1ex}
+  \uncover<6->{\checkmark\hspace{0.25em} }\uncover<3->{$\BallThm{p-1,q-1}$ and $\SphereThm{p-1,q-1}$ \\
+    \quad\quad\quad together imply $\BallThm{p,q}$.}
+
+  \vfill
+
+\end{frame}
+\clearbackgroundpicture
+
+\begin{frame}
+\frametitle{The last step}
+
+  \begin{center}
+ $\BallThm{p-1,q-1} \mbox{ and } \SphereThm{p-1,q-1}$ \\
+ $\Downarrow$ \\
+ $\BallThm{p,q}$
+\end{center}
+
+  \vfill
+  \begin{center}
+    This will require more machinery, \\
+    building on simplicial collapse \\
+    and regular neighborhoods.
+  \end{center}
+  \vfill
+
+\end{frame}
+\clearbackgroundpicture
+
+\begin{frame}
+  \begin{center}
+ $\BallThm{p-1,q-1} \mbox{ and } \SphereThm{p-1,q-1}$ \\
+ $\Downarrow$ \\
+ $\BallThm{p,q}$
+\end{center}
+\vfill\pause
+\begin{lemma}
+ Assuming $\BallThm{p-1,q-1}$ and $\SphereThm{p-1,q-1}$, \\
+ $(B^p,B^q)$ with $p-q \geq 3$ is unknotted \\
+ provided $B^p \collapses B^q$.
+\end{lemma}
+\vfill\pause
+\begin{lemma}
+ If $p - q \geq 3$ and $(B^p,B^q)$ is any ball pair, \\
+ then $B^p \collapses B^q$.
+\end{lemma}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{But first\ldots}
+
+  \vfill\large
+  Before we can proceed, \\
+  we will prove a couple of helpful lemmas.
+  \vfill
+
+\end{frame}
+
+\begin{frame}
+  \begin{lemma}
+    $Q_1$ and $Q_2$ are unknotted $(p,q)$-ball pairs. \\
+    Any homeomorphism $h : \partial Q_1 \stackrel{\cong}{\longrightarrow} \partial Q_2$ \\
+    extends to a homeomorphism $h' : Q_1 \stackrel{\cong}{\longrightarrow} Q_2$.
+  \end{lemma}
+  \pause
+  \begin{proof}[Proof (via \textit{Alexander trick}).]
+    $y = $ point in interior of $\Delta^q$; \\
+    then since $Q_i$ is unknotted, we have maps \\
+    $f_i : Q_i \stackrel{\cong}{\longrightarrow} \{y\} \join \partial
+    \Gamma^{p,q}$ \\  \pause
+    \vspace{1ex}$g : \partial \Gamma^{p,q} \stackrel{{f_1}^{-1}}{\longrightarrow} \partial Q_1 \stackrel{h}{\longrightarrow} \partial Q_2
+    \stackrel{f_2}{\longrightarrow} \partial \Gamma^{p,q}$ \\  \pause
+    \vspace{1ex}$h' : Q_1 \stackrel{f_1}{\longrightarrow} \{y\} \join \partial
+    \Gamma^{p,q} \stackrel{\cone g}{\longrightarrow} \{y\} \join \partial
+    \Gamma^{p,q} \stackrel{{f_2}^{-1}}{\longrightarrow} Q_2$
+\end{proof}
+In short, \textbf{radial extension}.
+\end{frame}
+
+\begin{frame}
+  \begin{lemma}[assume $\BallThm{p-1,q-1}$] 
+    If $Q_1, Q_2$ are unknotted $(p,q)$-ball pairs, \\
+    and $Q_3 = Q_1 \cap Q_2$ is a face, \\
+    then $Q_1 \cup Q_2$ is unknotted.
+ \end{lemma}
+\pause
+ \begin{proof}
+%   $Q_4 = \partial Q_1 - \interior Q_3$ \hfill $Q_5 = \partial Q_2 -
+%   \interior Q_3$ \\
+%   $Q_3$, $Q_4$, $Q_5$ are unknotted \\
+%   $\partial Q_3 = \partial Q_4 = \partial Q_5$ \\
+   Choose $Q_3 \stackrel{\cong}{\longrightarrow} \Gamma^{p-1,q-1}$,
+   extend over $\partial Q_1 - \interior Q_3$ to $h : \partial Q_1
+   \stackrel{\cong}{\longrightarrow} \Gamma^{p-1,q-1} \cup
+   C\partial \Gamma^{p-1,q-1}$, \\\pause
+   \vspace{1ex}$h$ extends to $Q_1 \to C\Gamma^{p-1,q-1}$ \\\pause
+   Similarly produce $Q_2 \to C\Gamma^{p-1,q-1}$ \\\pause
+   \vspace{1ex}Glue together $Q_1 \cup Q_2 \cong S\Gamma^{p-1,q-1}$.
+\end{proof}
+\end{frame}
+
+\setbackgroundpicture{Bangsar.JPG}
+\begin{frame}
+  \frametitle{Regular neighborhoods}
+
+   $M$, an $n$-manifold, $X \subset M$ a polyhedron \\
+    a \textbf{regular neighborhood} of $X$ in $M$ \\
+    is a subpolyhedron $N \subset M$ such that
+    \begin{itemize}
+      \item $N$ is a closed neighborhood of $X$ 
+      \item $N$ is an $n$-manifold 
+      \item $N \collapses X$.
+    \end{itemize}
+
+  \begin{theorem}
+    If $N_1$ and $N_2$ are regular neighborhoods of $X \subset M$, \\
+    there's a homeomorphism $N_1 \to N_2$ keeping $X$ fixed.
+  \end{theorem}
+\end{frame}
+\clearbackgroundpicture
+
+\begin{frame}
+\begin{lemma}
+ Assuming $\BallThm{p-1,q-1}$ and $\SphereThm{p-1,q-1}$, \\
+ $(B^p,B^q)$ with $p-q \geq 3$ is unknotted \\
+ provided $B^p \collapses B^q$.
+\end{lemma}
+
+\vfill
+\pause
+
+\textcolor{red!50!black}{\textbf{Warning:}} The lemma is false if $p-q = 2$.\\
+If $(B^4,B^2) = \cone (S^3,S^1)$, \\
+then $B^4 \collapses B^2$ because cones collapse to a subcone \\
+
+\end{frame}
+
+\begin{frame}
+  \begin{lemma}
+  $B^p \collapses B^q \Rightarrow (B^p,B^q) \mbox{ unknotted}$ \\    
+  \end{lemma}
+ \pause
+   Pick regular neighborhood $N$ of $B^q$; \\\pause
+   then $(B^p,B^q) \cong (N,B^q)$.\\\pause
+   $B^q = K_k \collapses K_{k-1} \collapses \cdots \collapses K_0 =
+   \{x\}$\\\pause
+   $Q_i = $ simplicial neighborhood of $K_i$ in $(B^p,B^q)$. \\\pause
+   \vfill
+   Proceed by induction.\\\pause
+   \vfill
+   $Q_0 = \{x\} \join L$ where $L = (\lk(x,B^p),\lk(x,B^q))$, \\\pause
+   and $L$ is unknotted by either $\BallThm{p-1,q-1}$ or $\SphereThm{p-1,q-1}$.
+
+\end{frame}
+
+\begin{frame}
+  Suppose $Q_{i-1}$ is unknotted. \\\pause
+  \vfill
+  $K_i - K_{i-1}$ consists of a principal simplex $A$ \\with a free face
+  $C$. \\\pause
+  Pick $a \in \interior A$ and $c \in \interior C$. \\\pause
+  \vfill
+  $Q_a = \{a\} \join (\lk(a,B^p),\lk(a,B^q))$ is unknotted. \\\pause
+  $Q_c = \{c\} \join (\lk(c,B^p),\lk(c,B^q))$ is unknotted. \\\pause
+  \vfill
+  $Q_i = Q_{i-1} \cup Q_a \cup Q_c$ is union of unknotted ball pairs
+  along faces; therefore, $Q_i$ is unknotted. \pause\hfill\qed
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{All that remains}
+  
+  \textcolor{red!50!black}{\textbf{If we could prove}}
+  \begin{lemma}
+    If $p - q \geq 3$ and $(B^p,B^q)$ is any ball pair, \\
+    then $B^p \collapses B^q$.
+  \end{lemma}
+  \textcolor{red!50!black}{\textbf{we would finish the argument.}}
+
+  \pause\vfill
+  \textbf{Note:} we haven't used the fact $p - q \geq 3$ yet.
+  \pause\vfill
+  \begin{proof}[Proof Technique.]
+    Sunny collapse.
+  \end{proof}
+  \vfill\pause
+\end{frame}
+
+% [[skim:///Users/jim/Papers/MR160218.pdf?page=10][page 10 of MR160218.pdf]]
+
+\setbackgroundpicture{stop-sign.jpg}
+\begin{frame}
+\pause
+\vfill
+\begin{center}
+  Stop and back up a bit.
+\end{center}
+\end{frame}
+\clearbackgroundpicture
+
+\setbackgroundpicture{trees-with-shadows.jpg}
+\begin{frame}
+  \frametitle{Shadows}
+
+  $I^p = I^{p-1} \times I$, \\
+  thinking of $I^{p-1}$ as horizontal \\
+  and $I$ as vertical.
+
+  \vfill
+  $X$ a polyhedron, $X \subset I^p$. \\
+  a point $y \in I^p$ lies in the \textbf{shadow} of $X$, if $y$ lies
+  below a point of $X$.
+\end{frame}
+
+\begin{frame}
+  \begin{definition}
+    $X$ a polyhedron, $X \subset I^p$. \\
+    $X^\ast =$ closure of points in $X$ \\
+    which lie on the same vertical line as some other point of $X$.
+  \end{definition}
+  \vfill\pause
+  ($X^\star$ are points that are in shadow or \\
+  \quad doing the overshadowing)
+  \vfill\pause
+  \begin{lemma}
+    $X^\star$ is a subpolyhedron of $X$.
+  \end{lemma}
+\end{frame}
+
+\begin{frame}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+  \begin{lemma}
+    If $X$ is a polyhedron, $X \subset I^p$, \\
+    $\dim X = q \leq p$, and \\
+    $\dim (X \cap \partial I^p) < p - 1$, \\
+    then there exists
+    $h : I^p \stackrel{\cong}{\longrightarrow} I^p$, \\
+    $h(X) = X$, \\
+    $h(X) \cap \left( I^{p-1} \times \{1\} \right) = \varnothing $, \\
+    $h(X) \cap \left( I^{p-1} \times \{0\} \right) = \varnothing $, \\
+    $h(X) \cap \mbox{vertical line} = \mbox{finite set}$, and \\
+    $\dim h(X)^\star \leq 2q - p + 1$.
+  \end{lemma}
+  \end{column}
+  \begin{column}{0.5\textwidth}
+    \pause
+    \begin{proof}
+      Since $\partial I^p \not\subset X$, \\
+      pick vertical
+      top-dim face $I^{p-2} \times I$ of $I^p$. \\
+      Throw $X
+      \cap \partial I^p$ into the interior of this face.
+
+\pause
+      \vspace{1ex} Shift vertices into general position.\pause
+    \end{proof}
+  \end{column}
+  \end{columns}
+\end{frame}
+\clearbackgroundpicture
+
+\setbackgroundpicture{sunny-street.jpg}
+\begin{frame}
+  \frametitle{Sunny collapse}
+
+  $Y \subset X \subset I^p$. \\
+  An elementary collapse $X \collapses Y$ is \textbf{sunny} \\
+  if no point of $X - Y$ is in the shadow of $X$.
+
+  \vfill A \textbf{sunny collapse} is a sequence of sunny elementary
+  collapses.  \pause Write $X \sunnycollapses Y$.
+
+  \vfill If $X \sunnycollapses \mbox{pt}$, call $X$ sunny collapsible.
+\end{frame}
+\clearbackgroundpicture
+
+% warn them about polyhedral collapse?
+
+\begin{frame}
+  \frametitle{All that remains}
+  
+  \textcolor{red!50!black}{\textbf{If we could prove}}
+  \begin{lemma}
+    If $p - q \geq 3$ and $(B^p,B^q)$ is any ball pair, \\
+    then $B^p \collapses B^q$.
+  \end{lemma}
+  \textcolor{red!50!black}{\textbf{we would finish the argument.}}
+
+  \pause
+  \begin{lemma}
+    Suppose $(I^p,X)$ is a $(p,q)$-ball pair,\\
+    $p - q \geq 3$ \\
+    $X \cap \left( I^{p-1} \times \{1\} \right) = \varnothing $, \\
+    $X \cap \left( I^{p-1} \times \{0\} \right) = \varnothing $, \\
+    $X \cap \mbox{vertical line} = \mbox{finite set}$, and \\
+    $\dim X^\star \leq 2q - p + 1$. \\
+    \textbf{Then} $X \sunnycollapses \mbox{point}$.
+  \end{lemma}
+\end{frame}
+
+\begin{frame}
+\large
+\vfill
+ \begin{center}
+   Sunny collapse in codimension two \\
+   can be obstructed
+ \end{center}
+ \vfill
+\end{frame}
+
+\setbackgroundpicture{clock.jpg}
+\begin{frame}
+\large
+\vfill
+\begin{center}
+  Proof postponed.
+\end{center}
+\vfill  
+\end{frame}
+\clearbackgroundpicture
+
+\setbackgroundpicture{puzzle.jpg}
+\begin{frame}
+\large
+\vfill
+\begin{center}
+  Putting together all the pieces.
+\end{center}
+\vfill  
+\end{frame}
+\clearbackgroundpicture
+
+\begin{frame}
+  If $X \subset I^p$, define $X^\sharp$ to be all points in $I^p$
+  lying in shadow of $X$.
+
+  \vfill
+  \pause
+  $M = \left(I^{p-1} \times \{0\}\right) \cup X^\sharp$.
+
+\vfill
+\pause
+First show $I^p \collapses M$.
+\end{frame}
+
+\begin{frame}
+ \includegraphics[width=\textwidth]{sunny-step-one-bad.pdf}
+\end{frame}
+
+\begin{frame}
+  If $X \subset I^p$ and $X \sunnycollapses \mbox{point}$, then
+$$
+X = X_0 \sunnycollapses X_1 \sunnycollapses \cdots \sunnycollapses K_n
+= \mbox{point}.
+$$\pause
+Define $M_i = \left(I^{p-1} \times \{0\}\right) \cup X \cup
+{X_i}^\sharp$.
+
+\vfill
+\pause
+\textbf{Goal: } $I^p \collapses M_0 \collapses \cdots \collapses M_n
+\collapses X$.
+\end{frame}
+
+\begin{frame}
+ \includegraphics[width=\textwidth]{sunny-step-two-bad.pdf}
+\end{frame}
+
+
+\end{document}
+
+
+

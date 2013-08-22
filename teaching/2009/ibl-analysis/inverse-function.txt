@@ -1,0 +1,92 @@
+IBL Analysis May 27, 2009
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+1
+
+Nodal singularity
+
+Consider the function f : R2 → R given by f (x, y) = xy. Draw a picture of the level set where f (x, y) = 0. For which (x, y) does the implicit function theorem apply? What (not so terribly) terrifying event happens at (x, y) = (0, 0)?
+
+2
+
+Cuspidal singularity
+
+Consider the function f : R2 → R given by f (x, y) = x3 − y 2 . Draw a picture of the level set where f (x, y) = 0. For which (x, y) does the implicit function theorem apply? What truly terrifying event happens at (x, y) = (0, 0)?
+
+3
+
+Lines
+f : R2 × R → R2
+
+Consider the function given by f (x, y, t) = (xt, y(1 − t)) That is, f sends (x, y, t) to the point in R2 which is t of the way between (x, 0) and (0, y). Qualitatively describe f −1 (x, y) using the implicit function theorem. Are there choices of (x, y) with drastically diﬀerent behavior?
+
+4
+
+Polar coordinates
+f (r, θ) = (r cos θ, r sin θ).
+
+Consider the function f : R2 → R2 given by
+
+For which (r, θ) is f locally bijective? 1
+c 2009 Jim Fowler
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Inverse Function Theorem
+
+5
+
+Polynomials
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Let Pn−1 be the (vector) space of degree n−1 polynomials in a variable t; note that dim Pn = n. Deﬁne a function f : Rn → Pn−1 given by f (x1 , . . . , xn ) = (t − x1 ) · · · (t − xn ) − tn
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+So f takes n points in R to a polynomial having those points as its roots (well, that polynomial minus tn ). Find points (xi ) ∈ Rn for which there exists a neighborhood U (xi ) with f (U ) open. Our goal can can be described more colorfully: we are seeking polynomals with n roots, which, when wiggled, still have n roots. For concreteness, it will help tremendously to explore the special cases f : R2 → P1 and then f : R3 → P2 .
+
+6
+
+How to (not) ﬂatten a sphere
+D2 = {v ∈ R2 : ||v|| < 1}.
+
+Write D2 for the open unit disk, i.e.,
+
+A function from the sphere S 2 to X is given by a pair of functions f : D2 → X and g : D2 → X so that 3 − ||v|| 1 v for 2 < ||v|| < 1 f (v) = g 2 ||v|| You should think of f as deﬁning the function on a bit more than the top hemisphere, and g as deﬁning the function on a bit more than the bottom hemisphere; the functions must agree on the overlap. Does there exist a function S 2 → R2 with everywhere nonvanishing derivative? (Equivalently, is it possible to put coordinates on the Earth so that at every point, four “cardinal directions” are deﬁned?)
+
+7
+
+Square roots
+
+Let M2 be the four-dimensional space of two-by-two matrices; let f : M2 → M2 be the function f (A) = A · A. Compute Df −1 (I). Use this to approximate 0.9 0.1 0.1 1.1 For extra fun, when is Df invertible? This will tell us when perturbations of matrices having square roots also have square roots. 2
+
+c 2009 Jim Fowler
+
+8
+
+Orthogonal matrices
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+9
+
+Segre variety
+f (v1 , v2 , w1 , w2 ) = (v1 w1 , v1 w2 , v2 w1 , v2 w2 ).
+
+Consider f : R2 × R2 → R4 given by
+
+For the linear algebra cognoscenti, this is a special case of a certain (nonlinear!) function V ⊕ W → V ⊗ W. Globally, f is not injective—after all, f (0, 0, w1 , w2 ) = (0, 0, 0, 0). But are there points for which f is locally bijective?
+
+10
+
+Characteristic polynomials
+
+Let M2 be the four-dimensional vector space of two-by-two matrices; let P2 be the threedimensional vector space of degree two polynomials in a variable λ. The characteristic polynomial of a matrix A is det(A − λI); let f : M2 → P2 be the function sending a matrix to its characteristic polynomial. (If you are very fancy, you might have learned that the roots of the characteristic polynomial are the eigenvalues of the matrix). Tell me a interesting story involving the implicit function theorem and the function f .
+
+3
+
+c 2009 Jim Fowler
+
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+Recall that a matrix is orthogonal if A · AT = I. Let M3 be the nine-dimensional vector space of 3-by-3 matrices; let S3 be the sixdimensional vector space of symmetric 3-by-3 matrices. Deﬁne a function f : M3 → S3 by f (A) = A · AT . A matrix is orthogonal if it is in f −1 (I). Note that f (I) = I; along how many degrees of freedom may we perturb I and still have an orthogonal matrix? (You will have to compute Df (I) to analyze this). Repeat this problem for the analogously deﬁned function M2 → S2 to show that, in two dimensions, there is only one degree of freedom for rotation. For rotations in four dimensions, how many degrees of freedom do you have? (It would indeed be very confusing to be tumbling in four dimensionsal space).
+
+

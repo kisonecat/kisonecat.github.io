@@ -1,0 +1,7 @@
+In seminar today, Okun pointed out the following interesting observation; for any finitely generated group $G$, you can define its growth series $G(t) = \sum_{g \in G} t^{\ell(g)}$, where $\ell(g)$ is the length of the shortest word for $g$.  The first observation is that $G(t)$ is often a rational function, in which case $G(1)$ makes sense.  The second observation is that $G(1)$ is "often" equal to $\chi(G)$.  This is an example of weighted $L^2$ cohomology.
+
+Grigorchuk's group (and generally any group with intermediate (i.e., subexponential but not polynomial) growth) does *not* have a rational growth function; the coefficients in a power series for a rational function grow either polynomially or exponentially.  This observation appears in
+
+> MR1408557
+
+More significantly, this paper constructs groups which, being nilpotent, have polynomial growth, but nonetheless have generating sets for which that the corresponding growth series is not rational.

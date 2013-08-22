@@ -1,0 +1,37 @@
+Problem Set 2
+Winter 2011
+
+Math 765
+Jim Fowler
+
+You have long understood a single vector space; now you will study vector spaces parametrized by a manifold—a bundle. Please feel comfortable emailing me (fowler@math.osu.edu) if you are having trouble with homework problems. The exercises below should be handed in on Monday, January 17, 2011—but that’s a Holiday, so let’s make the deadline Wednesday, January 19, 2011, instead.
+
+Problem 2.1 (Lee 4–3)
+Let M be a nonempty manifold of dimension n ≥ 1. Show that Vect(M ) is inﬁnite dimensional [as an R-vector space].
+
+Problem 2.2 (Lee 4–9)
+Let F : M → N be a local diﬀeomorphism. Show that for every Y ∈ Vect(N ), there is a unique smooth vector ﬁeld on M that is F -related to Y .
+
+Problem 2.3
+Show that T S 1 ∼ S 1 × R and T S 3 ∼ S 3 × R3 . = =
+
+Problem 2.4
+Describe a nontrivial vector bundle over S 1 .
+
+K Problem 2.5
+Show that T S 2 ̸∼ S 2 × R2 . =
+
+Problem 2.6 (Parallel parking is possible)
+Consider M = S 1 ×R2 ; a point (θ, x) ∈ M corresponds to a position of the automobile x ∈ R2 , and the angle θ of its wheels. Describe two vector ﬁelds on M : “drive in direction of wheels” and “turn steering wheel.” What, in words, is the Lie bracket of these two vector ﬁelds?
+
+Problem 2.7 (Lee 5–5)
+Let π : E → M and π : E → M be two smooth rank-k vector bundles over a smooth ˜ ˜ ˜ manifold M . Suppose {Uα }α∈A is an open cover of M such that both E and E admit smooth local trivializations over Uα . Let {ταβ } and {˜αβ } denote the transition funcctions determined by the given τ ˜ local trivializations of E and E, respectively. ˜ Show that E and E are smoothly isomorphic over M if and only if for each α ∈ A there exists a smooth map σα : Uα → GL(k, R) such that ταβ (p) = σα (p)−1 ταβ (p)σβ (p), ˜ p ∈ Uα ∩ Uβ .
+
+Problem 2.8 (Lee 6–9)
+Suppose F : M → N is a smooth map, ω is a smooth covector ﬁeld, and γ a piecewise smooth curve segment in M . Show that ∫ ∫ ⋆ ω. F ω=
+γ F ◦γ
+
+Problem 2.9 (Lee 6–13)
+(a) If M is a compact manifold, show that every exact covector ﬁeld on M vanishes at least at two points. (b) Is there a smooth covector ﬁeld on S 2 that vanishes at exactly one point?
+
+

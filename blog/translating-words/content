@@ -1,0 +1,53 @@
+Given a text in two languages, is it possible to uncover the meaning of individual words?
+
+The Bible is a particularly easy text to work with, since corresponding sentences are marked (i.e., with the same chapter and verse numbers).  I downloaded a copy of the Hebrew Bible and the King James' Version, and looked at Deuteronomy 6:4.
+
+For each word in Hebrew, I found all the other verses with that word, and gathered together all the corresponding English verses; by picking the most popular word from those English verses (ignoring "the" and "and" and such), I found a pretty good translation of the original Hebrew word.  In short, I picked the most popular English word in all those verses containing the non-English word.
+
+So here's Deuteronomy 6:4, with the top six English words underneath each Hebrew word:
+<table><tr>
+<td>&#1488;&#1462;&#1495;&#1464;&#1469;&#1491;</td>
+<td>&#1497;&#1456;&#1492;&#1493;&#1464;&#1445;&#1492;</td>
+<td>&#1488;&#1457;&#1500;&#1465;&#1492;&#1461;&#1430;&#1497;&#1504;&#1493;&#1468;</td>
+<td>&#1497;&#1456;&#1492;&#1493;&#1464;&#1445;&#1492;</td>
+<td>&#1497;&#1460;&#1513;&#1474;&#1456;&#1512;&#1464;&#1488;&#1461;&#1425;&#1500;</td>
+<td>&#1513;&#1473;&#1456;&#1502;&#1463;&#1430;&#1506;</td>
+</tr><tr>
+<td><b>one</b><br>king<br>for<br>side<br>all<br>with</td>
+<td><b>Lord</b><br>God<br>thy<br>for<br>thou<br>thee</td>
+<td><b>our</b><br><b>God</b><br>Lord<br>for<br>which<br>not</td>
+<td><b>Lord</b><br>God<br>thy<br>for<br>thou<br>thee</td>
+<td><b>Israel</b><br>Lord<br>children<br>all<br>his<br>for</td>
+<td>not<br>Lord<br>will<br><b>heard</b><br>them<br>voice</td>
+</tr></table>
+Remember to read this from left-to-right.  Pretty impressive--it didn't quite get the verb &#1513;&#1473;&#1456;&#1502;&#1463;&#1430;&#1506; but it did well enough anyway.
+
+It also works in Greek.  Here's Galatians 3:26 with the most popular English words underneath each Greek word.
+<table><tr>
+<td>&#960;&#940;&#957;&#964;&#949;&#962;</td>
+<td>&#947;&#8048;&#961;</td>
+<td>&#965;&#7985;&#959;&#8054;</td>
+<td>&#952;&#949;&#959;&#8166;</td>
+<td>&#7952;&#963;&#964;&#949;</td>
+<td>&#948;&#953;&#8048;</td>
+<td>&#964;&#8134;&#962;</td>
+<td>&#960;&#943;&#963;&#964;&#949;&#969;&#962;</td>
+<td>&#7952;&#957;</td>
+<td>&#967;&#961;&#953;&#963;&#964;&#8182;</td>
+<td>&#7984;&#951;&#963;&#959;&#8166;.</td>
+</tr><tr>
+<td><b>all</b><br>that<br>they<br>him<br>for<br>are</td>
+<td><b>for</b><br>that<br>not<br>him<br>but<br>unto</td>
+<td><b>children</b><br>shall<br>are<br>them<br>your<br>they</td>
+<td><b>God</b><br>that<br>for<br>unto<br>not<br>but</td>
+<td><b>are</b><br>you<br>for<br>that<br>not<br>shall</td>
+<td>for<br>that<br>not<br>unto<br>God<br>which</td>
+<td>that<br>for<br>unto<br>his<br>which<br>was</td>
+<td><b>faith</b><br>that<br>for<br>God<br>but<br>Christ</td>
+<td>that<br>unto<br>for<br>him<br>not<br>which</td>
+<td><b>Christ</b><br>Jesus<br>are<br>that<br>which<br>God</td>
+<td><b>Jesus</b><br>unto<br>that<br>him<br>Christ<br>said</td>
+</tr></table>
+It didn't quite figure out &#948;&#953;&#8048; is <b>by</b> or <b>through</b>.
+
+In the end, this isn't shocking, but it's surprising how easy it is: the Ruby program to do this is only 150 lines long (which includes the code to print out those nice HTML tables with Unicode).

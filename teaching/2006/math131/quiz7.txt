@@ -1,0 +1,5 @@
+Take-Home Quiz 7
+Math 131 Section 22 Due Monday, November 28, 2005
+I wish you a wonderful Thanksgiving! Problem 1. (4 points). Use diﬀerentials to estimate (1.02)20 . Problem 2. (4 points). I give you an orange with a diameter of 4 inches. The rind is 0.2 inches thick. Using diﬀerentials, estimate the volume of the rind. √ √ Problem 3. (4 points). Recall that 4 81 = 3. Use diﬀerentials to estimate 4 80.
+
+

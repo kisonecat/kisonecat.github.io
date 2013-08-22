@@ -1,0 +1,7 @@
+Lecture 6: Indeterminate forms
+Math 153 Section 57 Friday October 10, 2008
+Following chapter 11.5. When you fail to plan, you plan to fail. Statement of l’Hopital’s. f (x) → 0 and g(x) → 0, and if f (x)/g (x) → γ, then f (x)/g(x) → γ. Don’t get overzealous: try to apply it to x/(x + cos x) and you will be wrong!
+
+1
+
+

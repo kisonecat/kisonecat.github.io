@@ -1,0 +1,18 @@
+Midterm 1 Review
+Autumn 2010
+
+Math 345
+Jim Fowler
+
+This sheet summarizes what sort of content will appear on the midterm. Calculators are not permitted and would be useless anyhow.
+
+Possible topics
+The ﬁrst midterm may include material through lecture 12 (“divisibility”). In particular, congruences a ≡ b (mod c) and prime numbers will not appear on the ﬁrst midterm (but will deﬁnitely appear on future exams!). • Propositional calculus • Truth tables • De Morgan’s laws • Distributive laws • Tautology • Proof by contradiction • Converse of a conditional proposition • Contrapositives • Quantiﬁers • Bound and free variables • Nested quantiﬁers • Even and odd numbers • Rational and irrational numbers • Divisibility
+
+Inspired by the homework
+The problems will be inspired by (but exactly the same as) homework problems, so looking back over the homework problems is probably the most eﬃcient way to prepare for the exam. One big diﬀerence, however, is that most of the exam problems will present you with a proposition, ask you whether it is true or false, and have you prove it if it true, and provide a counterexample if it is false. This sort of question can be tricky, but I think it forces you to wrestle with the mathematics, which is good.
+
+Problems
+There will be ﬁve problems on the midterm, each worth 360 points, for a total of 1800 points. The fake midterm will give you a vague idea of the sorts of problems you might expect, but the fake midterm is much, much longer than the real midterm.
+
+

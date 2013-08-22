@@ -1,0 +1,46 @@
+Lecture 1: Welcome
+Math 153 Section 57 Monday September 29, 2008
+
+1
+
+Hand out syllabus and survey
+
+A very brief overview of the course, and an inspirational message. Problem session scheduling. Grading system for homework. Final grades.
+
+2
+2.1
+
+Review
+Numbers
+
+Natural numbers. Integers. Rationals. Reals.
+
+2.2
+
+Sets
+
+The ∈ symbol. How to deﬁne a set?
+
+2.3
+
+Intervals
+
+Open intervals. Closed intervals. Half-open intervals.
+
+2.4
+
+Bounds
+
+A number b is an upper bound of a set A if for all a ∈ A, a ≤ b. A number b is a lower bound of a set A if for all a ∈ A, b ≤ a. Example: (0, 5). (−∞, 12). (2, ∞). [0, 5]. Example: {0, 1, 2, 3, 4, . . .}. Example: {0, 0.9, 0.99, 0.999, 0.9999, . . .}. There may be many upper bounds; there may be none. A set is bounded above if it has an upper bound. 1
+
+A set is bounded below if it has a lower bound. A set is bounded if it has both a lower bound and an upper bound.
+
+3
+
+Least upper bound axiom
+
+Axiom: every nonempty set of real numbers bounded above has a least upper bound. Example: [0, 3]. (0, 3). Example: {0, 0.9, 0.99, 0.999, 0.9999, . . .}. Example: rational numbers?
+
+2
+
+

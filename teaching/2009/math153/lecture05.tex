@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+\newtheorem*{example}{Example}
+\newtheorem*{thm}{Theorem}
+
+\usepackage{amssymb}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+
+\title{Lecture 5: Popular limits}
+\author{Math 153 Section 57}
+\date{Wednesday October  8, 2008}
+
+\begin{document}
+\maketitle
+
+Following chapter 11.4.
+
+Theme: important limits
+
+Key idea: how mathematics gets done.  the definition.  a few easy cases.  and then theorems that leverage the easy cases into harder cases.
+
+In this section, seven basic limits that we will be able to use over
+and over again.
+
+\section{Divgergence}
+
+Example: $a_n = 3\cdot n$ diverges.  Why?
+
+Example: $a_n = (-1)^n$ diverges.  Why?
+
+Two different reasons for divergence.
+
+\subsection{Sometimes we get convergence for free.}
+
+Theorem: Nondecreasing bounded above sequences converge.
+
+Theorem: Nonincreasing bounded below sequences converge.
+
+Example: $a_1 = a_2 = 1$, $a_{n+2} = a_{n+1} + a_n$.  Then $r_n =
+a_{n+1} / a_n$ is bounded above by $2$, and increasing.  So the limit
+exists, but it is hard to see what it is (turns out to be $(\sqrt{5} +
+1)/2$).
+
+\subsection{Squeezing}
+
+State theorem (and sketch proof).
+
+Apply it in some cases.
+
+\subsection{The usefulness of these results}
+
+Moral: we do not have to resort back to the definition of limit: by
+using the squeezing theorem and such, we can make things easier.
+
+Maybe laziness can be virtuous (not so moral!), if it inspires us to
+find better proofs, more compelling, more memorable arguments.
+
+\subsection{Continuous functions}
+
+If $f : \R \to \R$ is continuous at $L$, and $\lim a_n = L$, then
+$\lim f(a_n) = f(L)$.
+
+Proof.
+
+Either take the limit and apply the function, or apply the function
+and take the limit.
+
+Not true if $f$ is not continuous.
+
+\subsection{State the important limits}
+
+\end{document}

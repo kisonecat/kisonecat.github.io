@@ -1,0 +1,79 @@
+Lecture 30: Chains and cycles
+Math 660—Jim Fowler Monday, August 2, 2010
+
+Homology
+
+Replace integrals over arcs by integrals over chains.
+
+What is a chain?
+
+Cycles
+If a chain is a sum of closed curves, we call it a cycle.
+
+Cycles
+If a chain is a sum of closed curves, we call it a cycle.
+
+Theorem
+γ
+
+dF = 0 if γ is a cycle.
+
+Cycles
+If a chain is a sum of closed curves, we call it a cycle.
+
+Theorem
+γ
+
+dF = 0 if γ is a cycle.
+
+Deﬁne winding number of cycles.
+
+Simply connected
+A region in C is simply connected if its complement is connected.
+
+Simply connected
+A region in C is simply connected if its complement is connected.
+
+This deﬁnition is only valid for the plane!
+
+Simply connected
+A region in C is simply connected if its complement is connected.
+
+This deﬁnition is only valid for the plane!
+
+Examples?
+
+Theorem
+A region Ω is simply connected if and only if n(γ, a) for all cycles in Ω and all points a ∈ Ω.
+
+Homology
+A cycle in a region Ω is homologous to zero inside Ω if n(γ, a) for all a ∈ Ω.
+
+Homology
+A cycle in a region Ω is homologous to zero inside Ω if n(γ, a) for all a ∈ Ω. We write [γ1 ] = [0] ∈ H1 (Ω).
+
+Homology
+A cycle in a region Ω is homologous to zero inside Ω if n(γ, a) for all a ∈ Ω. We write [γ1 ] = [0] ∈ H1 (Ω). We write [γ1 ] = [γ2 ] ∈ H1 (Ω) if [γ1 − γ2 ] = [0].
+
+Cauchy’s theorem
+Theorem
+If f (z) is analytic in Ω, then f (z) dz = 0
+γ
+
+for every cycle γ which is homologus to zero in Ω.
+
+Cauchy’s theorem
+Theorem
+If f (z) is analytic in Ω, then f (z) dz = 0
+γ
+
+for every cycle γ which is homologus to zero in Ω. In other words, if the property holds for 1/(z − a) with a ∈ Ω, then it holds for all analytic f .
+
+By Cauchy’s theorem, there exists a single-valued analytic function F (z) so that F (z) = f (z).
+
+By Cauchy’s theorem, there exists a single-valued analytic function F (z) so that F (z) = f (z). Then,
+
+Corollary
+If f (z) is analyic and nonzero in a simply connected region Ω, then it is possible to deﬁne single valued analytic branches of log f (z) and n f (z).
+
+

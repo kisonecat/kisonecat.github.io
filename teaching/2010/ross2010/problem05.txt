@@ -1,0 +1,35 @@
+Problem Set 5
+Summer 2010
+
+Piecewise-Linear Topology
+Jim Fowler
+
+Ceci n’est pas une Problem Set. Instead of questions, this sheet records the deﬁnitions we will be working with; here, we leave the realm of abstract simplicial complexes, and embrace the geometry—our simplexes are now situated in space. Deﬁnition. The join of A, B ⊂ R n is
+
+A ∗ B = {λa + µb : a ∈ A,
+
+b ∈ B,
+
+λ ∈ [0, 1],
+
+µ ∈ [0, 1],
+
+λ + µ = 1}
+
+Imagine this as connecting A and B by including all line segments between points in A and points in B.
+
+A and B are independent if each point in A ∗ B can be written uniquely as λa + µb, for a ∈ A, b ∈ B, λ, µ ∈ [0, 1], λ + µ = 1.
+
+Polyhedra
+Deﬁnition. P ⊂ R n is a polyhedron if, for each p ∈ P, there is a neighborhood N ∋ p, so that N = p ∗ L, with L closed and bounded (in other words, compact). In this case, N is called a closed star around p, and L is a link of p. A subpolyhedron of P is a subset Q ⊂ P which is also a polyhedron. Deﬁnition. Let P, Q be polyhedra. Then f : P → Q is a piecewise-linear map (a PL map, for short) if each point p ∈ P has a closed star N = p ∗ L so that f (λp + µx ) = λ f ( p) + µ f ( x ) for x ∈ L and λ, µ ∈ [0, 1] with λ + µ = 1. A PL homeomorphism is a PL map with a PL inverse. Deﬁnition. A PL map f : P → Q is a piecewise linear embedding if f ( P) is a subpolyhedron of Q, and f : P → f ( P) is a PL homeomorphism.
+
+Manifolds
+Deﬁnition. A polyhedron P is an n-dimensional PL manifold if each p ∈ P has an open neighborhood N ∋ p which is PL homeomorphic to an open set in R n . In this case, we call N with the PL homeomorphism a coordinate neighborhood. A polyhedron P is an n-dimensional PL manifold with boundary if each point p ∈ P has an open neighborhood N ∋ p which is PL homeomorphic to an open subset of R n−1 × R ≥0 . The boundary of P (written ∂P) consists of points p ∈ P which are identiﬁed with R n −1 × { 0 } ⊂ R n −1 × R ≥0 . A manifold P is closed if ∂P = ∅ and P is compact. Deﬁnition. The n-ball Bn (sometimes called the n-disk D n ) is any manifold PL homeomorphic to [0, 1]n . The n-sphere is any manifold PL homeomorphic to ∂[0, 1]n+1 .
+
+Cell complexes
+Deﬁnition. A subset C ∈ R n is convex if for any p, q ∈ C, the segment { p} ∗ {q} is contained in C. Deﬁnition. A compact convex subset C ∈ R n is a k-dimensional cell if it spans a kdimensional subspace. For x ∈ C, deﬁne ⟨ x, C ⟩ to be the union of { x } and all lines L such that L ∩ C contains x in its interior. The subset Cx = C ∩ ⟨ x, C ⟩ is the face of C containing x. Write D < C if D is a face of C. Deﬁnition. A cell complex is a ﬁnite collection K of cells such that • If C ∈ K, and D < C, then D ∈ K. • If C, D ∈ K, then C ∩ D is a face of C and D. The underlying polyhedron, |K | is the union of all cells in K. A cellular map f : K → L is a PL map | f | : |K | → | L| which is linear on cells of K, and sends cells to cells. Deﬁnition. A cell complex L is a subdivision of K if | L| = |K | and each cell of L is contained in a cell K. We write L ▹ K if L is a subdivision of K.
+
+Simplicial complexes
+Our original notion of simplicial complex should now be called an abstract simplicial complex, to emphasize the fact that we originally did not place our simplexes in R n . In an abstract simplicial complex, only the relationship between the vertices and the faces is recorded. Deﬁnition. A cell complex is a simplicial complex if each C ∈ K is a simplex (i.e., an n-cell which is the join of n + 1 independent points). A triangulation of a polyhedron P is a simplicial complex K with a PL homeomorphism f : |K | → P. Deﬁnition. Suppose L ⊂ K are simplicial complexes. Deﬁne f : K → [0, 1] on vertices by { 0 if v ∈ L f (v) = 1 if v ̸∈ L and extending linearly to simplexes. If L = f −1 (0) we say L is a full subcomplex of K, and write L K.
+
+

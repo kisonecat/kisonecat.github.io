@@ -1,0 +1,38 @@
+Facts about series
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+which we see by adding 9+1, getting 10, writing down a 0 and carrying the 1—and repeating. A number which vanishes when we add 1 to it ought to be called “-1.” For similar reasons, we might believe · · · 11111111 = −1/9, because if we multiply · · · 11111111 by 9, we get the number for −1. We can show −1 × −1 = 1, because · · · 99999999 × · · · 99999999 · · · 99999991 · · · 99999910 · · · 99999100 · · · 99991000 . . . · · · 00000001
+
+How about one third?
+There are fancier examples in this crazy world, too. Because · · · 66666667 × 3 · · · 00000001 so · · · 66666667 deserves to be called 1/3, since it is a multiplicative inverse for 3. But there is another reason why · · · 66666667 = 1/3. After all, if · · · 11111111 = −1/9, then · · · 66666666 is −6/9 = −2/3. And therefore, × · · · 66666666 (“−2/3”) 1 · · · 66666667 (“1/3”)
+
+c 2010 Jim Fowler
+
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+We are comfortable with numbers that “go all the way to the right” (i.e., non-terminating decimals like 0.3333 · · ·) so why not numbers that go all the way to the left? I mean, consider a “number” like · · · 999999, meaning ∞ 9 · 10n . Of course, this is n=0 meaningless, but if we ignore convergence issues and apply the formula for geometric series, we might be fooled into thinking · · · 999999 = −1. This is possibly less ridiculous than it seems, because · · · 99999999 + 1 · · · 00000000
+
+How about one seventh?
+I wanted to write down 1/7, so I started with a 3 (since 3 × 7 = 21, and this will give me the 1 on the right hand side). The next digit should be a 4, because 4 × 7 = 28, and since I had to carry that 2, I will get 30, which means I will write down a zero. Now I am carrying a 3; but if I put a 1 as the next digit, then 1 × 7 + 3 = 10, so I will write down a zero, and carry a 1. Each time the next digit is designed so that I write down a zero, and carry something. I discover: · · · 2857142857142857142857143 × 7 · · · 0000000000000000000000001 This is a repeating decimal: we might write it as 2857143, though here the digits repeat to the left. This means we could also write it as a series, formally: 3 + 10 · 285714 ·
+∞ n=0
+
+1000000n
+
+If we ignore convergence, and apply the formula for geometric series here, where it does not apply, we might be fooled into thinking 3 + 10 · 285714 · 1 = 1/7 1 − 1000000
+
+And even though this series does not converge, it does have the appearance of being equal to 1/7.
+
+How about
+
+√
+
+3?
+· · · 2857142857142857142857143 × ···7 · · · 0000000000000000000000001
+
+c 2010 Jim Fowler
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+

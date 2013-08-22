@@ -1,0 +1,15 @@
+extends ../layouts/main
+include helpers
+
+block content
+  mixin breadcrumbs(['/teaching','/teaching/statement'],['Teaching','Teaching Statement'])
+  .row
+    .col-lg-9
+      h2 Teaching Statement
+      !=teachingStatement
+    .col-lg-3
+      .thumbnail
+        img(src="/teaching/statement/teaching-statement.png")
+        .caption
+          p My teaching statement is also available as a PDF.
+          p <a href="/teaching/statement/teaching-statement.pdf" class="btn btn-primary"><i class="icon-download"></i>&nbsp;Download PDF</a>

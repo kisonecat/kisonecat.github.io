@@ -1,0 +1,11 @@
+Wednesday, October 1, 2008
+1. For each of the following sets, ﬁnd the least upper bound (if it exists) and the greatest lower bound (if it exists). (a) (3, 5). The least upper bound is 5. The greatest lower bound is 3. (b) [−4, 17). The least upper bound is 17. The greatest lower bound is -4. (c) [0, ∞). There is no upper bound. The greatest lower bound is 0. (d) {x ∈ R : x < 6}. The least upper bound is 6. There is no lower bound. (e) {x ∈ R : x2 < 2}. √ √ The least upper bound is 2. The greatest lower bound is − 2. (f ) {x ∈ R : |x − 1| < 3}. The least upper bound is 4. The greatest lower bound is −2. 2. Which of the sets in Problem 1 are bounded? Only the sets in parts (a), (b), (e), and (f ) are bounded. 3. Suppose S is a bounded set of real numbers, and T is a subset of S. Is T also bounded? Why or why not? Yes: if S is bounded, and T is a subset of S, then T is bounded. Why? Because an upper (or lower) bound for S is also an upper (or lower) bound for T . Suppose b is a upper bound for S; by deﬁnition, this means that for all s ∈ S, we have b ≥ s. But T is a subset of S, so for all t ∈ T , we also have t ∈ S; since b is bigger than (or equal to) everything in S, we have b ≥ t. We conclude that for all t ∈ T , we have b ≥ t. This is what we mean when we say that b is an upper bound for T , so T is bounded above. A similar argument shows that a lower bound for S is also a lower bound for T .
+
+c 2008 Jim Fowler
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Solution Set 1
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+

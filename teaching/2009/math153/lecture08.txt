@@ -1,0 +1,76 @@
+Lecture 8: Improper integrals
+Math 153 Section 57 Wednesday October 15, 2008
+Following chapter 11.7.
+
+1
+
+Reminder about integrals
+
+The importance of the fundamental theorem.
+
+2
+
+Logarithms
+a
+
+Deﬁne log a = 1 dx/x. What is lima→∞ log a? This is an improper integral. Incidentally, why is log a + log b = log(ab)? On the second integral in
+a 1
+
+dx + x
+
+b 1
+
+dx x
+
+do a substitution: u = ax. Then dx = u/a and x = u/a, so dx/x = du/u. But
+ab ab dx du dx + = x u x a 1 1 Hand out slide rules to demonstrate the power of this fact. a
+
+3
+
+Two bad things
+
+Either unbounded width, or unbounded height. Both are “improper.”
+
+4
+
+Unbounded intervals
+∞ b
+
+When we write a we mean limb→∞ a . If the limit exists, the improper integral converges. If not, it “diverges.” ∞ ∞ ∞ Examples: 1 dx/x. 1 dx/x2 . 0 sin x dx. Diﬀerent reasons for why these integrals diverge. ∞ Remark: 1 dx/xp converges if p > 1, and diverges if 0 < p ≤ 1. 1
+
+5
+
+Unbounded on both sides
+∞ −∞
+
+When we write
+
+we mean limb→∞
+b . −b
+
+∞ 0
+
++ limb→−∞
+
+0 . b
+
+This is not the same as limb→∞
+
+Example: sin x.
+
+6
+
+Unbounded integrand
+b a b
+
+If f is continuous on [a, b) but not deﬁned at b, we can still integrate, by deﬁning f (x) dx = lim −
+c→b
+
+f (x) dx
+a
+
+Because for each number c < b, the integral over [a, c] ⊂ [a, b) makes sense. 2 Example: 0 dx/x.
+
+2
+
+

@@ -1,0 +1,318 @@
+Lecture 1: Introduction to complex numbers
+Math 660—Jim Fowler Monday, June 20, 2011
+
+Syllabus
+Syllabus
+Summer 2011
+
+Math 660
+Jim Fowler
+
+This is a beginning graduate course in complex analysis; as such, we study analysis (e.g., the rigorous foundations of calculus) as it applies to functions of a complex variable. The resulting theory is strikingly beautiful.
+
+Resources
+We present 5 resources to help you to learn complex analysis.
+
+Professor’s oﬃce hours
+If you have questions, want to work through problems, or just talk about mathematics, please attend oﬃce hours. Name: Oﬃce: Phone: Email: Website: Jim Fowler MW658 Mathematics Tower Oﬃce Hours: (773) 809–5659 fowler@math.osu.edu http://www.math.osu.edu/~fowler/ Monday 3:30–5:00p.m. Wednesday 3:30–5:00p.m. and by appointment
+
+Please email me with any concerns you have; the success of this course depends on open communication.
+
+Today’s Goal
+Chapter 1 of Complex Analysis We’re going to move fast—some details won’t be justiﬁed entirely for a while.
+
+i=
+
+−1
+
+i=
+i2 =
+
+−1
+
+i=
+i2 =
+−1
+
+−1
+
+i=
+i2 =
+−1
+
+−1
+(−i)2 =
+
+i=
+i2 =
+−1
+
+−1
+(−i)2 = −1
+
+a + bi ∈ C
+a, b ∈ R
+
+The Complex Field
+
+(a + bi) + (c + di) = (a + c) + (b + d) i
+
+The Complex Field
+
+(a + bi) + (c + di) = (a + c) + (b + d) i (a + bi) − (c + di) = (a − c) + (b − d) i
+
+The Complex Field
+
+(a + bi) + (c + di) = (a + c) + (b + d) i (a + bi) − (c + di) = (a − c) + (b − d) i (a + bi) · (c + di) = (ac − bd) + (ad + bc) i
+
+The Complex Field
+
+(a + bi) + (c + di) = (a + c) + (b + d) i (a + bi) − (c + di) = (a − c) + (b − d) i (a + bi) · (c + di) = (ac − bd) + (ad + bc) i a + bi ac + bd bc − ad + = c + di c2 + d2 c2 + d2
+
+i
+
+Dividing Complex Numbers
+
+a + bi = c + di
+
+Putting complex numbers in order
+If i > 0, then i 2 > 0, meaning −1 > 0.
+
+Putting complex numbers in order
+If i > 0, then i 2 > 0, meaning −1 > 0. If i < 0, then i 2 > 0, meaning −1 > 0.
+
+Putting complex numbers in order
+If i > 0, then i 2 > 0, meaning −1 > 0. If i < 0, then i 2 > 0, meaning −1 > 0.
+
+Something is wrong. . .
+
+Putting complex numbers in order
+If i > 0, then i 2 > 0, meaning −1 > 0. If i < 0, then i 2 > 0, meaning −1 > 0.
+
+Something is wrong. . . The complex numbers aren’t ordered.
+
+√ Why write i? Why not −1?
+√ √ √ a b = ab
+
+√ Why write i? Why not −1?
+√ √ √ a b = ab But what if a = −1 and b = −1. . . ?
+
+√ Why write i? Why not −1?
+√ √ √ a b = ab But what if a = −1 and b = −1. . . ? √ √ −1 −1 = − (−1) · (−1)
+
+There are two square roots. This is confusing. Choose one of them, and call it i.
+
+Complex Conjugation
+Deﬁnition
+Deﬁne a + bi = a − bi. z = z. a + b = a + b. ab = a · b.
+
+Complex Conjugation
+Deﬁnition
+Deﬁne a + bi = a − bi. z = z. a + b = a + b. ab = a · b.
+
+Could you tell the diﬀerence between a world in which i was replaced by −i?
+
+Absolute Value
+Deﬁnition
+|z|2 = z · z.
+
+Absolute Value
+Deﬁnition
+|z|2 = z · z.
+
+|z| ≥ 0, where |z| = 0 iﬀ z = 0.
+
+Absolute Value
+Deﬁnition
+|z|2 = z · z.
+
+|z| ≥ 0, where |z| = 0 iﬀ z = 0. |z + w | ≤ |z| + |w |.
+
+Absolute Value
+Deﬁnition
+|z|2 = z · z.
+
+|z| ≥ 0, where |z| = 0 iﬀ z = 0. |z + w | ≤ |z| + |w |. |z · w | = |z| · |w |.
+
+Absolute Value
+Deﬁnition
+|z|2 = z · z.
+
+|z| ≥ 0, where |z| = 0 iﬀ z = 0. |z + w | ≤ |z| + |w |. |z · w | = |z| · |w |. By Pythagoras’ theorem, |a + bi| = √ a2 + b 2
+
+Argument
+z = a + bi
+
+C
+Theorem
+
+|z |
+
+arg z
+
+arg(z1 z2 ) ≡ arg z1 + arg z2 mod 2π.
+
+Absolute value and argument
+
+z = |z| · (cos arg z + i sin arg z) .
+
+Absolute value and argument
+
+z = |z| · (cos arg z + i sin arg z) .
+
+zw = |z| · |w | · ((cos arg z cos arg w − sin arg z sin arg w ) + (cos arg z sin arg w + sin arg z cos arg w )i). zw = |z| · |w | · (cos(arg z + arg w ) + i sin(arg z + arg w ))
+
+Complex numbers as vectors
+
+a+b b
+
+a
+
+Complex numbers as vectors
+
+a b
+
+a−b
+
+Complex numbers as vectors
+
+a b ab
+
+Complex numbers as vectors
+
+a b b a
+
+Complex numbers as vectors
+
+b ab
+
+a
+
+Complex numbers as vectors
+
+a b
+
+ab
+
+Complex numbers as vectors
+
+a1
+
+Complex numbers as vectors
+
+a2
+
+a1
+
+Complex numbers as vectors
+
+a2 a3
+
+a1
+
+Complex numbers as vectors
+
+a2 a3 a4
+
+a1
+
+Complex numbers as vectors
+
+a2 a3 a4 5 a
+
+a1
+
+Complex numbers as vectors
+
+a2 a3 a4 5 6 aa
+
+a1
+
+Complex numbers as vectors
+
+a2 a3 a4 5 6 aa
+
+a1
+
+Complex numbers as vectors a1
+
+a2 a
+
+a5 a4 3
+
+Complex numbers as vectors
+
+Binomial theorem
+z = r (cos θ + i sin θ).
+
+Binomial theorem
+z = r (cos θ + i sin θ). z n = r n (cos(nθ) + i sin(nθ))
+
+Binomial theorem
+z = r (cos θ + i sin θ). z n = r n (cos(nθ) + i sin(nθ)) √ √ θ θ n z = n r cos + i sin n n
+
+Binomial theorem
+z = r (cos θ + i sin θ). z n = r n (cos(nθ) + i sin(nθ)) √ √ θ θ n z = n r cos + i sin n n √ √ θ + k · 2π θ + k · 2π n z = n r cos + i sin n n for k ∈ {0, . . . , n − 1}.
+
+,
+
+Binomial theorem
+z = r (cos θ + i sin θ). z n = r n (cos(nθ) + i sin(nθ)) √ √ θ θ n z = n r cos + i sin n n √ √ θ + k · 2π θ + k · 2π n z = n r cos + i sin n n for k ∈ {0, . . . , n − 1}.
+
+,
+
+So nth roots exist; they form vertices of a regular polygon.
+
+Roots of unity
+
+ω1 ω0 ω2
+
+Roots of unity
+
+ω1 ω2 ω3 ω0
+
+Roots of unity
+
+ω2 ω3
+
+ω1 ω0 ω4
+
+Roots of unity
+
+ω2 ω3 ω4
+
+ω1 ω0 ω5
+
+Roots of unity
+
+ω2 ω3 ω4 ω5
+
+ω1 ω0 ω6
+
+Roots of unity
+
+ω3 ω4 ω5
+
+ω2
+
+ω1 ω0
+
+ω6
+
+ω7
+
+Powers of a complex number
+
+We can now compute z p/q . By continuity, we could deﬁne z x for x ∈ R. What about, say, z i ? This will have to wait.
+
+Stereographic projection
+Extend C to C ∪ {∞}. Consider S 2 = {(x1 , x2 , x3 ) ∈ R3 : Deﬁne f : S 2 → C ∪ {∞} by z = x + iy = f (x1 , x2 , x3 ) = x1 + ix2 1 − x3
+i
+
+xi 2 = 1},
+
+The points (0, 0, 1), (x, y , 0), and (x1 , x2 , x3 ) are collinear.
+
+Powers on the Riemann sphere
+
+

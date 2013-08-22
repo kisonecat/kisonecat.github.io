@@ -1,0 +1,12 @@
+#! /bin/bash
+echo '<html><head><title>Undergraduate Lie Theory Seminar</title></head>'
+echo '<body>'
+echo '<h1>Undergraduate Lie Theory Seminar</h1>'
+echo '<ul>'
+for file in $*
+do
+PDF=$(echo $file | sed 's/tex$/pdf/')
+echo '<li><a href='$PDF'>'$(grep '^\\title' $file | sed 's/.*{//' | sed 's/}.*//')'</a></li>'
+done
+echo '</ul>'
+echo '</body></html>'

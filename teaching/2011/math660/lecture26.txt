@@ -1,0 +1,181 @@
+Lecture 26: Removable singularities
+Math 660—Jim Fowler Tuesday, July 27, 2010
+
+Congratulations
+
+I should have the midterms graded by tomorrow. Your homework, however, might be a bit delayed (another faculty member is grading it—sorry).
+
+Removable singularities
+
+Think back to the theorems we proved for analytic functions with ﬁnitely many exceptional points.
+
+Assuming limz→a (z − a)f (z) = 0, we could still make progress.
+
+Suppose Ω is a region, and Ω = Ω − point. Suppose f is analytic in Ω There exists an analytic function in Ω extending f if and only if limz→a (z − a)f (z) = 0.
+
+Suppose Ω is a region, and Ω = Ω − point. Suppose f is analytic in Ω There exists an analytic function in Ω extending f if and only if limz→a (z − a)f (z) = 0.
+
+Such singularities are called removable
+
+Proof
+Such an extension is unique by continuity.
+
+Proof
+Such an extension is unique by continuity. “only if” by computing the limit.
+
+Proof
+Such an extension is unique by continuity. “only if” by computing the limit. But why does the “if” direction follow?
+
+Proof
+Such an extension is unique by continuity. “only if” by computing the limit. But why does the “if” direction follow? Cauchy’s theorem applies, so f (z) = 1 2πi f (ζ)dζ ζ −z
+
+C
+
+for all z = a inside of the circle C .
+
+Proof
+Such an extension is unique by continuity. “only if” by computing the limit. But why does the “if” direction follow? Cauchy’s theorem applies, so f (z) = 1 2πi f (ζ)dζ ζ −z
+
+C
+
+for all z = a inside of the circle C . But this integral deﬁnes an analytic function even at z = a.
+
+Proof
+Such an extension is unique by continuity. “only if” by computing the limit. But why does the “if” direction follow? Cauchy’s theorem applies, so f (z) = 1 2πi f (ζ)dζ ζ −z
+
+C
+
+for all z = a inside of the circle C . But this integral deﬁnes an analytic function even at z = a.
+
+Application: Taylor’s theorem
+Apply the previous method to F (z) = f (z) − f (a) z −a
+
+to deﬁne an analytic function (called f1 ) extending this deﬁnition of F .
+
+Application: Taylor’s theorem
+Apply the previous method to F (z) = f (z) − f (a) z −a
+
+to deﬁne an analytic function (called f1 ) extending this deﬁnition of F . f1 (a) = f (a).
+
+Application: Taylor’s theorem
+Apply the previous method to F (z) = f (z) − f (a) z −a
+
+to deﬁne an analytic function (called f1 ) extending this deﬁnition of F . f1 (a) = f (a). Repeat: f1 (z) = f1 (a) + (z − a)f2 (z), and so forth. . .
+
+Application: Taylor’s theorem
+Apply the previous method to F (z) = f (z) − f (a) z −a
+
+to deﬁne an analytic function (called f1 ) extending this deﬁnition of F . f1 (a) = f (a). Repeat: f1 (z) = f1 (a) + (z − a)f2 (z), and so forth. . . f (z) = f (a)+(z−a)f1 (a)+· · ·+(z−a)n−1 fn−1 (a)+(z−a)n fn
+
+Taylor’s theorem
+Since f (n) (a) = n!fn (a), we have proved
+
+Theorem (Taylor’s theorem)
+If f (z) is analytic in a region Ω a, we can write f (z) = f (a)+(z−a)f1 (a)+· · ·+(z−a)n−1 fn−1 (a)+(z−a)n fn for a function fn (z) analytic in Ω.
+
+We can say more about fn (z).
+
+We can say more about fn (z). Since fn (z) = 1 2πi fn (ζ)dζ ζ −z
+
+C
+
+we can substitute fn (ζ), which involves f (ζ) and many terms of the form dζ =0 (ζ − a)m (ζ − z) 1 2πi f (ζ) (ζ − a)n (ζ − z)
+
+C
+
+so fn (z) =
+
+C
+
+Zeroes and poles
+
+Now we proceed to study the zeroes and poles of an analytic function.
+
+Zeroes of inﬁnite order
+Suppose f (n) (a) = 0 for all n.
+
+Zeroes of inﬁnite order
+Suppose f (n) (a) = 0 for all n. By Taylor’s theorem, f (z) = fn (z)(z − a)n for any n.
+
+Zeroes of inﬁnite order
+Suppose f (n) (a) = 0 for all n. By Taylor’s theorem, f (z) = fn (z)(z − a)n for any n.Since 1 f (ζ) fn (z) = 2πi C (ζ − a)n (ζ − z) We have that M |fn (z)| ≤ n−1 R (R − |z − a|)
+
+Zeroes of inﬁnite order
+Suppose f (n) (a) = 0 for all n. By Taylor’s theorem, f (z) = fn (z)(z − a)n for any n.Since 1 f (ζ) fn (z) = 2πi C (ζ − a)n (ζ − z) We have that M |fn (z)| ≤ n−1 R (R − |z − a|) but we can relate fn and f , so |f (z)| ≤ |z − a| R
+n
+
+·
+
+MR R − |z − a|
+
+Zeroes of inﬁnite order
+Suppose f (n) (a) = 0 for all n. By Taylor’s theorem, f (z) = fn (z)(z − a)n for any n.Since 1 f (ζ) fn (z) = 2πi C (ζ − a)n (ζ − z) We have that M |fn (z)| ≤ n−1 R (R − |z − a|) but we can relate fn and f , so |f (z)| ≤ |z − a| R
+n
+
+·
+
+MR R − |z − a|
+
+and therefore f (z) = 0 inside of the circle C .
+
+Zeroes of inﬁnite order
+In fact, f (z) ≡ 0 in the entire region.
+
+Zeroes of inﬁnite order
+In fact, f (z) ≡ 0 in the entire region. E1 = set on which all derivatives vanish. E2 = set on which some derivative is nonzero.
+
+Zeroes of inﬁnite order
+In fact, f (z) ≡ 0 in the entire region. E1 = set on which all derivatives vanish. E2 = set on which some derivative is nonzero.
+
+Both E1 and E2 are open. And E1 = ∅. So E1 = Ω because Ω is connected.
+
+Order of zeroes
+
+If f (n) (a) = 0 for n < h, then we say a is a zero of order h.
+
+Order of zeroes
+
+If f (n) (a) = 0 for n < h, then we say a is a zero of order h.
+
+Theorem
+There are no zeroes of inﬁnite order.
+
+Zeroes are isolated
+If a is a zero of order h, then write f (z) = (z − a)h fh (z) for fh analytic and fh (a) = 0.
+
+Zeroes are isolated
+If a is a zero of order h, then write f (z) = (z − a)h fh (z) for fh analytic and fh (a) = 0. But since fh is analytic, fh is continuous, so fh (z) = 0 if z is in a neighborhood of a.
+
+Zeroes are isolated
+If a is a zero of order h, then write f (z) = (z − a)h fh (z) for fh analytic and fh (a) = 0. But since fh is analytic, fh is continuous, so fh (z) = 0 if z is in a neighborhood of a. So f (z) has isolated zeroes.
+
+Theorem
+Suppose f and g are analytic functions. If f (z) = g (z) for z ∈ A ⊂ Ω, and A has an accumulation point in Ω, then f = g .
+
+Theorem
+Suppose f and g are analytic functions. If f (z) = g (z) for z ∈ A ⊂ Ω, and A has an accumulation point in Ω, then f = g .
+
+Analytic functions are determined by their values on sets with an accumulation point.
+
+Singularities
+Suppose f (z) is analytic in a neighborhood of a, but perhaps not at a. (I.e., analytic in a region 0 < |z − a| < δ).
+
+Singularities
+Suppose f (z) is analytic in a neighborhood of a, but perhaps not at a. (I.e., analytic in a region 0 < |z − a| < δ). Then a is an isolated singularity of f .
+
+Singularities
+Suppose f (z) is analytic in a neighborhood of a, but perhaps not at a. (I.e., analytic in a region 0 < |z − a| < δ). Then a is an isolated singularity of f . If limz→a f (z) = ∞, then we say that a is a pole of f (z); we can deﬁne the order of a pole by considering 1/f (z), which has a removable singularity at a.
+
+Singularities
+Suppose f (z) is analytic in a neighborhood of a, but perhaps not at a. (I.e., analytic in a region 0 < |z − a| < δ). Then a is an isolated singularity of f . If limz→a f (z) = ∞, then we say that a is a pole of f (z); we can deﬁne the order of a pole by considering 1/f (z), which has a removable singularity at a. Poles are isolated, because zeroes are.
+
+Meromorphic functions
+A function f which is analytic in Ω, except at points which are poles, is called meromorphic in Ω.
+
+Meromorphic functions
+A function f which is analytic in Ω, except at points which are poles, is called meromorphic in Ω. Add, subtract, multiply, and divide (by nonzero) meromorphic functions to get new meromorphic functions.
+
+Meromorphic functions
+A function f which is analytic in Ω, except at points which are poles, is called meromorphic in Ω. Add, subtract, multiply, and divide (by nonzero) meromorphic functions to get new meromorphic functions. Think of a meromorphic function as a holomorphic function from Ω to S 2 , the Riemann sphere.
+
+

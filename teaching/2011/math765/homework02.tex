@@ -1,0 +1,120 @@
+\documentclass[12pt]{pset}
+
+\course{Math 765}
+\author{Jim Fowler}
+\date{Winter 2011}
+
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\CP}{\mathbb{C}P}
+\newcommand{\RP}{\mathbb{R}P}
+
+\usepackage{enumerate}
+\usepackage{nopageno}
+\usepackage{hyperref}
+
+\DeclareMathOperator{\Vect}{Vect}
+\DeclareMathOperator{\GL}{GL}
+
+\begin{document}
+\maketitle
+
+\noindent\textbf{You have long understood a single vector space; now
+  you will study vector spaces parametrized by a manifold---\textit{a bundle}.}
+Please feel comfortable emailing me (\texttt{fowler@math.osu.edu}) if
+you are having trouble with homework problems.  \textit{The exercises
+  below should be handed in on Monday, January 17, 2011---but that's a
+  Holiday, so let's make the deadline Wednesday, January 19, 2011,
+  instead.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Lee 4--3]
+
+Let $M$ be a nonempty manifold of dimension $n \geq 1$.  Show that
+$\Vect(M)$ is infinite dimensional [as an $\R$-vector space].
+
+\end{problem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Lee 4--9]
+
+Let $F : M \to N$ be a local diffeomorphism.  Show that for every $Y
+\in \Vect(N)$, there is a unique smooth vector field on $M$ that is
+$F$-related to $Y$.
+
+\end{problem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}
+  Show that $TS^1 \cong S^1 \times \R$ and $TS^3 \cong S^3 \times
+  \R^3$.
+\end{problem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}
+Describe a nontrivial vector bundle over $S^1$.
+\end{problem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{hardproblem}
+Show that $TS^2 \not\cong S^2 \times \R^2$.
+\end{hardproblem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Parallel parking is possible]
+
+  Consider $M = S^1 \times \R^2$; a point $(\theta,x) \in M$
+  corresponds to a position of the automobile $x \in \R^2$, and the
+  angle $\theta$ of its wheels.
+
+  Describe two vector fields on $M$: ``drive in direction of wheels''
+  and ``turn steering wheel.''  What, in words, is the Lie bracket of
+  these two vector fields?
+
+\end{problem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Lee 5--5]
+
+Let $\pi : E \to M$ and $\tilde{\pi} : \tilde{E} \to M$ be two smooth
+rank-$k$ vector bundles over a smooth manifold $M$.  Suppose $\{
+U_\alpha \}_{\alpha \in A}$ is an open cover of $M$ such that both $E$
+and $\tilde{E}$ admit smooth local trivializations over $U_\alpha$.
+
+Let $\{ \tau_{\alpha \beta} \}$ and $\{ \tilde{\tau}_{\alpha \beta}
+\}$ denote the transition funcctions determined by the given local
+trivializations of $E$ and $\tilde{E}$, respectively.
+
+Show that $E$ and $\tilde{E}$ are smoothly isomorphic over $M$ if and
+only if for each $\alpha \in A$ there exists a smooth map
+$\sigma_\alpha : U_\alpha \to \GL(k,\R)$ such that
+$$
+\tilde{\tau}_{\alpha \beta}(p) = \sigma_\alpha(p)^{-1} \tau_{\alpha
+  \beta}(p) \sigma_\beta(p), \hspace{1em} p \in U_\alpha \cap U_\beta.
+$$
+
+\end{problem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Lee 6--9]
+
+Suppose $F : M \to N$ is a smooth map, $\omega$ is a smooth covector
+field, and $\gamma$ a piecewise smooth curve segment in $M$.  Show
+that
+$$
+\int_{\gamma} F^\star \omega = \int_{F \circ \gamma} \omega.
+$$
+
+\end{problem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Lee 6--13]
+
+\begin{enumerate}[(a)]
+\item If $M$ is a compact manifold, show that every exact covector
+  field on $M$ vanishes at least at two points.
+\item Is there a smooth covector field on $S^2$ that vanishes at
+  exactly one point?
+\end{enumerate}
+\end{problem}
+
+\end{document}

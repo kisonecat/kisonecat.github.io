@@ -1,0 +1,69 @@
+extends ../layouts/main
+include helpers
+
+block carousel
+  div.splash-teaching(id="showcase")
+    div(id="leftshowcase")
+      h1 Taking a math course?
+      h2 Here are some resources from courses I have taught.
+
+block content
+  - var displayedCourses = courses;
+  .row.front-page
+    .col-lg-4
+      h4 <a href="/teaching/statement">Teaching Statement</a>
+      p I love to teach. As an instructor, I set high standards, and then commit myself to serving you with whatever means necessary to help you meet those standards.
+    .col-lg-4
+      h4 <a href="/teaching/videos">Videos</a>
+      p You can see a some of the videos I have made.  More are available on my <a href="http://www.youtube.com/kisonecat">YouTube channel</a>, at <a href="https://itunes.apple.com/us/course/calculus-one/id660718824">iTunes U</a>, or in my Coursera course, <a href="https://www.coursera.org/course/sequence">Sequences and Series</a>.
+    .col-lg-4
+      h4 Office hours
+      include ../office-hours
+  hr
+  .row.front-page
+    - var link = '/teaching/2014/calculus-two/';
+    .col-lg-7
+      - displayedCourses = _.without( displayedCourses, _.find( displayedCourses, function(course) { return course.shortname == 'calculus-two'; } ) );
+      h3 <a href="#{link}">Calculus Two: Sequences and Series</a>
+      p Sequences and Series will challenge us to think very carefully about "infinity."  What does it mean to add up an unending list of numbers? How can an infinite task result in a finite answer?  These questions lead us to some very deep concepts—but also to some powerful computational tools which are used not only in math but in many quantitative disciplines.
+      p This course is a first introduction to sequences, infinite series, convergence tests, and Taylor series.  It is suitable for someone who has seen just a bit of calculus before.
+      p
+        a.btn.btn-primary.btn-lg(href="https://www.coursera.org/course/sequence") Enroll in my Coursera Course
+    .col-lg-5
+      a.thumbnail(href=link)
+        img(src="/public/images/logos/calculus-two.png")
+  hr
+  .row.front-page
+    - var link = '/teaching/2013/calculus-one/';
+    .col-lg-4
+      a.thumbnail(href=link)
+        img(src="/public/images/logos/calculus-one.png")
+    .col-lg-8
+      - displayedCourses = _.without( displayedCourses, _.find( displayedCourses, function(course) { return course.shortname == 'math1151'; } ) );
+      h3 <a href="#{link}">Calculus One</a>
+      p Calculus is about the very large, the very small, and how things change.  The surprise is that something seemingly so abstract ends up explaining the real world.  Calculus plays a starring role in the biological, physical, and social sciences.  This online course is a first and friendly introduction to calculus, suitable for someone who has never seen the subject before, or for someone who has seen some calculus but wants to review the concepts and practice applying those concepts to solve problems.
+
+  hr
+  - var list = _.filter( displayedCourses, function(course) { return course.logo; } );
+  - displayedCourses = _.without.apply( this, [displayedCourses].concat( list ) );
+  - var rowCount = 4;
+  - var i = -rowCount;
+  while i <= list.length
+    - i += rowCount;
+    .row.front-page
+      each course in list.slice(i, i+rowCount)
+        .col-lg-3
+           mixin courseThumbnail( course )
+
+  - var list = _.sortBy( displayedCourses, 'year' ).reverse();
+  - var rowCount = 4;
+  - var i = -rowCount;
+  while i <= list.length
+    - i += rowCount;
+    if list.slice(i, i+rowCount).length > 0
+      hr
+    .row.front-page
+      each course in list.slice(i, i+rowCount)
+        .col-lg-3
+           mixin courseThumbnail( course )
+

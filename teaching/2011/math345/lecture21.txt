@@ -1,0 +1,23 @@
+Lecture 21: Fibonacci numbers
+Thursday, October 28, 2010
+
+Math 345
+Jim Fowler
+
+Textbook
+This lecture discusses section 5 of the textbook.
+
+Homework
+The homework is due Tuesday, November 2, 2010. From Section 5 of the textbook, do exercise 22.
+
+ﬁbonacci numbers
+every third ﬁbonnaci number is odd. more generally, every k-th number is a multiple of Fk periodic mod n. every number can be written as a sum of ﬁbonacci numbers, using each number at most once Fk is the number of sequences of 1s and 2s that add up to k − 1. F2n = Fn+1 2 − Fn−1 2 . Fibonacci primes with thousands of digits have been found, but it is not known whether there are inﬁnitely many. 144 is the only nontrivial square Fibonacci number.
+
+connection to pascal’s triangle?
+
+calculus of ﬁnite diﬀerences
+a dictionary for translating calculus to sums and back again. e.g., how to compute n k 2 via the calculus of ﬁnite diﬀerences. k=0
+
+1
+
+

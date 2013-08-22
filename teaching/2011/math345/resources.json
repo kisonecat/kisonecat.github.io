@@ -1,0 +1,492 @@
+[
+  {
+    "title": "Problem Set 33",
+    "shortname": "homework33",
+    "filename": "homework33.pdf",
+    "source": "homework33.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Midterm 1 Review",
+    "shortname": "midterm1-review",
+    "filename": "midterm1-review.pdf",
+    "source": "midterm1-review.tex",
+    "description": "",
+    "tags": [
+      "exam"
+    ]
+  },
+  {
+    "title": "Fake Final",
+    "shortname": "fake-final",
+    "filename": "fake-final.pdf",
+    "source": "fake-final.tex",
+    "description": "",
+    "tags": [
+      "exam"
+    ]
+  },
+  {
+    "title": "Problem Set 10",
+    "shortname": "homework10",
+    "filename": "homework10.pdf",
+    "source": "homework10.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Syllabus for the 2:30 section",
+    "shortname": "syllabus-2",
+    "filename": "syllabus-2.pdf",
+    "source": "syllabus-2.tex",
+    "description": "",
+    "tags": [
+      "syllabus"
+    ]
+  },
+  {
+    "title": "Problem Set 18",
+    "shortname": "homework18",
+    "filename": "homework18.pdf",
+    "source": "homework18.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Problem Set 9",
+    "shortname": "homework09",
+    "filename": "homework09.pdf",
+    "source": "homework09.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Problem Set 19",
+    "shortname": "homework19",
+    "filename": "homework19.pdf",
+    "source": "homework19.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Problem Set 3",
+    "shortname": "homework03",
+    "filename": "homework03.pdf",
+    "source": "homework03.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Problem Set 13",
+    "shortname": "homework13",
+    "filename": "homework13.pdf",
+    "source": "homework13.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Problem Set 25",
+    "shortname": "homework25",
+    "filename": "homework25.pdf",
+    "source": "homework25.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Problem Set 16",
+    "shortname": "homework16",
+    "filename": "homework16.pdf",
+    "source": "homework16.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Midterm 2 Solution Set",
+    "shortname": "midterm2-solutions",
+    "filename": "midterm2-solutions.pdf",
+    "source": "midterm2-solutions.tex",
+    "description": "",
+    "tags": [
+      "exam"
+    ]
+  },
+  {
+    "title": "Problem Set 2",
+    "shortname": "homework02",
+    "filename": "homework02.pdf",
+    "source": "homework02.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Problem Set 30",
+    "shortname": "homework30",
+    "filename": "homework30.pdf",
+    "source": "homework30.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Fake Midterm 1",
+    "shortname": "fake-midterm1",
+    "filename": "fake-midterm1.pdf",
+    "source": "fake-midterm1.tex",
+    "description": "",
+    "tags": [
+      "exam"
+    ]
+  },
+  {
+    "title": "Problem Set 14",
+    "shortname": "homework14",
+    "filename": "homework14.pdf",
+    "source": "homework14.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Problem Set 31",
+    "shortname": "homework31",
+    "filename": "homework31.pdf",
+    "source": "homework31.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Problem Set 1",
+    "shortname": "homework01",
+    "filename": "homework01.pdf",
+    "source": "homework01.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Problem Set 32",
+    "shortname": "homework32",
+    "filename": "homework32.pdf",
+    "source": "homework32.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Midterm 2 Scores",
+    "shortname": "scores-midterm2",
+    "filename": "scores-midterm2.pdf",
+    "source": "scores-midterm2.tex",
+    "description": "",
+    "tags": [
+      "exam"
+    ]
+  },
+  {
+    "title": "Problem Set 5",
+    "shortname": "homework05",
+    "filename": "homework05.pdf",
+    "source": "homework05.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Midterm 1 Scores",
+    "shortname": "scores-midterm1",
+    "filename": "scores-midterm1.pdf",
+    "source": "scores-midterm1.tex",
+    "description": "",
+    "tags": [
+      "exam"
+    ]
+  },
+  {
+    "title": "Syllabus for the 12:30 section",
+    "shortname": "syllabus-1",
+    "filename": "syllabus-1.pdf",
+    "source": "syllabus-1.tex",
+    "description": "",
+    "tags": [
+      "syllabus"
+    ]
+  },
+  {
+    "title": "Problem Set 12",
+    "shortname": "homework12",
+    "filename": "homework12.pdf",
+    "source": "homework12.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Problem Set 34",
+    "shortname": "homework34",
+    "filename": "homework34.pdf",
+    "source": "homework34.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Problem Set 17",
+    "shortname": "homework17",
+    "filename": "homework17.pdf",
+    "source": "homework17.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Problem Set 29",
+    "shortname": "homework29",
+    "filename": "homework29.pdf",
+    "source": "homework29.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Problem Set 21",
+    "shortname": "homework21",
+    "filename": "homework21.pdf",
+    "source": "homework21.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Problem Set 35",
+    "shortname": "homework35",
+    "filename": "homework35.pdf",
+    "source": "homework35.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Short Paper Instructions",
+    "shortname": "short-paper-instructions",
+    "filename": "short-paper-instructions.pdf",
+    "source": "short-paper-instructions.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Problem Set 11",
+    "shortname": "homework11",
+    "filename": "homework11.pdf",
+    "source": "homework11.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Point nine repeating",
+    "shortname": "point-nine-repeating",
+    "filename": "point-nine-repeating.pdf",
+    "source": "point-nine-repeating.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  },
+  {
+    "title": "Problem Set 7",
+    "shortname": "homework07",
+    "filename": "homework07.pdf",
+    "source": "homework07.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Problem Set 28",
+    "shortname": "homework28",
+    "filename": "homework28.pdf",
+    "source": "homework28.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Fake Midterm 2",
+    "shortname": "fake-midterm2",
+    "filename": "fake-midterm2.pdf",
+    "source": "fake-midterm2.tex",
+    "description": "",
+    "tags": [
+      "exam"
+    ]
+  },
+  {
+    "title": "Midterm 1 Solution Set",
+    "shortname": "midterm1-solutions",
+    "filename": "midterm1-solutions.pdf",
+    "source": "midterm1-solutions.tex",
+    "description": "",
+    "tags": [
+      "exam"
+    ]
+  },
+  {
+    "title": "Problem Set 24",
+    "shortname": "homework24",
+    "filename": "homework24.pdf",
+    "source": "homework24.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Problem Set 36",
+    "shortname": "homework36",
+    "filename": "homework36.pdf",
+    "source": "homework36.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Midterm 2 Review",
+    "shortname": "midterm2-review",
+    "filename": "midterm2-review.pdf",
+    "source": "midterm2-review.tex",
+    "description": "",
+    "tags": [
+      "exam"
+    ]
+  },
+  {
+    "title": "Problem Set 26",
+    "shortname": "homework26",
+    "filename": "homework26.pdf",
+    "source": "homework26.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Problem Set 20",
+    "shortname": "homework20",
+    "filename": "homework20.pdf",
+    "source": "homework20.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Problem Set 4",
+    "shortname": "homework04",
+    "filename": "homework04.pdf",
+    "source": "homework04.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Problem Set 27",
+    "shortname": "homework27",
+    "filename": "homework27.pdf",
+    "source": "homework27.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Problem Set 6",
+    "shortname": "homework06",
+    "filename": "homework06.pdf",
+    "source": "homework06.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Problem Set 22",
+    "shortname": "homework22",
+    "filename": "homework22.pdf",
+    "source": "homework22.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Problem Set 8",
+    "shortname": "homework08",
+    "filename": "homework08.pdf",
+    "source": "homework08.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Problem Set 23",
+    "shortname": "homework23",
+    "filename": "homework23.pdf",
+    "source": "homework23.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  },
+  {
+    "title": "Problem Set 15",
+    "shortname": "homework15",
+    "filename": "homework15.pdf",
+    "source": "homework15.tex",
+    "description": "",
+    "tags": [
+      "homework"
+    ]
+  }
+]

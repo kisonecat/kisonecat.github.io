@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+\newtheorem*{example}{Example}
+\newtheorem*{thm}{Theorem}
+
+\title{Lecture 23: Integration by parts}
+\author{Math 153 Section 57}
+\date{Wednesday November 19, 2008}
+
+\begin{document}
+\maketitle
+
+Following chapter 8.2.
+
+Jeopardy---integration as an inverse operation.  295927 is 541 times 547.
+
+Overview about integration---emphasize again the fundamental theorem
+and its amazing power
+
+antidifferentiation and the challenge of inverse operations
+
+$u$ substitution is the chain rule---backwards!
+
+parts is the product rule---backwards!  not a rule, but a
+technique---something like a skilled warrior who transforms the
+situation into something more advantengeous rather than outright solving it
+
+what is $u$?  what is $v$?  Try to make choices to have easy
+antiderivatives.
+
+$$
+\int \frac{\ln x}{x^2}\, dx = -\frac{\ln x}{x} - \int (1/x)(-1/x)\, dx.
+$$
+$$
+\int \frac{\ln(\sin x)}{(\cos x)^2}\, dx = \ln(\sin x)\tan x - \int \frac{1}{\tan x} \tan x\, dx.
+$$
+
+$$
+\int x\, dx = x^2 - \int x\, dx
+$$
+so we can find an antiderivative for $x^2$.  Same trick works for $\log x$.
+
+$$
+\int x^3e^{x^2}\, dx=\frac{1}{2}e^{x^2}(x^2-1)+C.
+$$
+
+\subsection*{Repeated integration}
+
+$$\int uv = u v_1 - u' v_2 + u'' v_3 - \cdots + (-1)^{n}\ u^{(n)} \ v_{n+1}
+$$
+
+\subsection*{Integrals of products of sines and cosines}
+
+Do
+$$
+\int \sin(ax) \, \cos(bx) \, dx
+$$
+by using an angle sum formula? No!  Use parts twice.
+
+Powers of trig functions?  Replace $\sin^2 x$ with $1 - \cos^2 x$ as follows
+$$
+\int \cos^3 x \, \sin^5 x \, dx = 
+\int \cos x (1 - \sin^2 x) \, \sin^5 x \, dx = 
+\int  (1 - u^2) \, u^5 \, du = 
+$$
+
+\end{document}

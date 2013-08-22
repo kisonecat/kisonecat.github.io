@@ -1,0 +1,28 @@
+Problem Set 6
+Summer 2010
+
+Piecewise-Linear Topology
+Jim Fowler
+
+So many exercises. There are many things that we can prove now that we have our new deﬁnitions of polyhedra and cell complexes. These exercises are mostly from Rourke and Sanderson’s textbook, Introduction to Piecewise-Linear Topology.
+
+Polyhedra
+Problem 1. Is the intersection of ﬁnitely many polyhedra a polyhedron? Problem 2. Is the union of ﬁnitely many polyhedra a polyhedron? Problem 3. Suppose P ⊂ R n is a compact polyhedron; let v be a point in R n+1 − R n , and show that v ∗ P is a polyhedron.
+
+• Problem 4. Show that the composition of PL maps is again a PL map. • Problem 5. Is the product of an n-manifold (with boundary) and an m-manifold (with boundary) an nm-manifold?
+Problem 6. Show that a compact polyhedron is the ﬁnite union of simplexes. Use this to show that the PL image of a compact polyhedron is a polyhedron. Problem 7. Deﬁne the “dimension” of a polyhedron, and show that it is invariant under PL homeomorphism. Problem 8. If A ∗ B ∼ Sn , is it the case that A and B are spheres? =
+
+Cell complexes
+• Problem 9. Is the intersection of two cells also a cell?
+Problem 10. Is the intersection of two cell complexes also a cell complex? Problem 11. Is the cone of a cell complex itself a cell complex?
+
+• Problem 12. Show that the product of cell complexes is a cell complex.
+
+Surfaces
+• Problem 13. The cube I 4 can be regarded as a cell complex; ﬁnd a subcomplex of I 4 consisting of squares which is PL homeomorphic to the torus T 2 .
+Problem 14. Find a subcomplex of I 5 (which will consist of squares) which is PL homeomorphic to a genus ﬁve surface.
+
+Simplicial complexes
+These problems are not about abstract simplicial complexes, but rather, the sort of simplicial complexes that sit in R n . Problem 15. Show that a cell complex can be subdivided to a simplicial complex. Problem 16. Suppose f : K → L is a simplicial map, and L′ ▹ L. Find a subdivision K ′ ▹ K so that f : K ′ → L′ is simplicial. Problem 17. If f : |K | → |K | is a PL map, and f 2 is the identity, is there a subdivision K ′ ▹ K so that f : K ′ → K ′ is simplicial? Problem 18. Let K and L be simplicial complexes, and f : |K | → | L| a PL homeomorphism. For a ∈ K, show that there is a PL homeomorphism | lk( a, K )| ∼ | lk( f ( a), L)|. = Problem 19. Show that if K is a simplicial complex, then |K | is an n-manifold without boundary if and only if | lk(v, K )| ∼ Sn−1 for each v ∈ K. = Problem 20. Show that |K | × R is a PL manifold if and only if |K | is a manifold.
+
+

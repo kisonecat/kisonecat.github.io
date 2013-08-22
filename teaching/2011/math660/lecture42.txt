@@ -1,0 +1,31 @@
+Lecture 42: Laurent series
+Math 660—Jim Fowler Wednesday, August 18, 2010
+
+Taylor series, Fourier series
+A Fourier series decomposes a 2π-periodic function f : S 1 → R into a trigonometric polynomial (i.e., a sum of sin(nx) and cos(nx)).
+
+Taylor series, Fourier series
+A Fourier series decomposes a 2π-periodic function f : S 1 → R into a trigonometric polynomial (i.e., a sum of sin(nx) and cos(nx)). Poisson’s integral formula gives a relationship between Taylor series and Fourier series.
+
+Taylor series, Fourier series
+A Fourier series decomposes a 2π-periodic function f : S 1 → R into a trigonometric polynomial (i.e., a sum of sin(nx) and cos(nx)). Poisson’s integral formula gives a relationship between Taylor series and Fourier series. The Taylor series around the center of the disk expresses the boundary function as trigonometric polynomial.
+
+Laurent series
+A Laurent series is one of the form
+∞
+
+an z n .
+n=−∞
+
+The series is convergent if the parts consisting of nonnegative powers and negative powers are separately convergent.
+
+Laurent series
+A Laurent series is one of the form
+∞
+
+an z n .
+n=−∞
+
+The series is convergent if the parts consisting of nonnegative powers and negative powers are separately convergent. Convergence occurs in an annulus.
+
+

@@ -1,0 +1,21 @@
+1
+
+Almost Trigonometric Functions
+
+For convenience, deﬁne  1 if n is divisible by 6,  t(n) := −1 if n has remainder 3 when divided by six,   0 otherwise. Let’s deﬁne three functions,
+∞
+
+f0 (x) =
+n=0 ∞
+
+t(n) xn n! t(n − 1) xn n! t(n − 2) xn n!
+
+f1 (x) =
+n=0 ∞
+
+f2 (x) =
+n=0
+
+1
+
+

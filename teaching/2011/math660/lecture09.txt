@@ -1,0 +1,8 @@
+Lecture 9: Compactness
+Math 660—Jim Fowler Thursday, June 30, 2011
+
+All All All All
+
+functions are bounded. functions attain their maximum. covers have ﬁnite subcovers. sequences have convergent subsequences.
+
+

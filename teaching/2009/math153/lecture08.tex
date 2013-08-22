@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+\newtheorem*{example}{Example}
+\newtheorem*{thm}{Theorem}
+
+\title{Lecture 8: Improper integrals}
+\author{Math 153 Section 57}
+\date{Wednesday October 15, 2008}
+
+\begin{document}
+\maketitle
+
+Following chapter 11.7.
+
+\section{Reminder about integrals}
+
+The importance of the fundamental theorem.
+
+\section{Logarithms}
+
+Define $\log a = \int_1^a dx/x$.  What is $\lim_{a \to \infty} \log
+a$?  This is an improper integral.
+
+Incidentally, why is $\log a + \log b = \log (ab)$?  On the second
+integral in
+$$
+\int_1^a \frac{dx}{x} + \int_1^b \frac{dx}{x}
+$$
+do a substitution: $u = ax$.  Then $dx = u/a$ and $x = u/a$, so $dx/x
+= du/u$.  But
+$$
+\int_1^a \frac{dx}{x} + \int_{a}^{ab} \frac{du}{u} = \int_1^{ab} \frac{dx}{x}
+$$
+Hand out slide rules to demonstrate the power of this fact.
+
+\section{Two bad things}
+
+Either unbounded width, or unbounded height.  Both are ``improper.''
+
+\section{Unbounded intervals}
+
+When we write $\int_a^\infty$ we mean $\lim_{b \to \infty} \int_a^b$.
+
+If the limit exists, the improper integral converges.
+
+If not, it ``diverges.''
+
+Examples: $\int_1^\infty dx/x$.  $\int_1^\infty dx/x^2$.  $\int_0^\infty \sin x\, dx$.  Different reasons for why these integrals diverge.
+
+Remark: $\int_1^\infty dx / x^p$ converges if $p > 1$, and diverges if $0 < p \leq 1$.
+
+\section{Unbounded on both sides}
+
+When we write $\int_{-\infty}^\infty$ we mean $\lim_{b \to \infty} \int_0^\infty + \lim_{b \to -\infty} \int_{b}^0$.
+
+This is not the same as $\lim_{b \to \infty} \int_{-b}^b$.  Example: $\sin x$.
+
+\section{Unbounded integrand}
+
+If $f$ is continuous on $[a,b)$ but not defined at $b$, we can still
+integrate, by defining
+$$
+\int_{a}^b f(x) \, dx = \lim_{c \to b^{-}} \int_a^b f(x) \, dx
+$$
+Because for each number $c < b$, the integral over $[a,c] \subset
+[a,b)$ makes sense.
+
+Example: $\int_0^2 dx / x$.
+
+
+\end{document}

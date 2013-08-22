@@ -1,0 +1,26 @@
+Lecture 29: More diﬀerential equations
+Math 153 Section 57 Wednesday December 3, 2008
+Following chapter 9.2. It is the end. Gottfried Leibniz and Isaac Newton’s epic battle—commemorated in cookies. Review sheet for diﬀerential equations. Solution curves for ﬁrst order equations Symmetries in solving diﬀerential equations:
+
+Factoring the operator
+What about something like f (x) − 2f (x) + f (x) = 0
+d This is ( dx − 1) f (x) = 0, so ex is a solution. But is there another? Yes! x ex . In general, an n-th order linear homogeneous equation has n “distinct” solutions. Factor the operator—do not fear this. This is just taking a complicated procedure, and breaking it up into pieces, each of which can be done in order (and, in fact, in any order!). d Factors of the form ( dx − r) contribute a erx . d Factors of the form ( dx − r)n contribute a erx , and xerx , x2 erx , through xn−1 erx . Knowing that this is everything requires some fancier stuﬀ (“determinants, Wronksians, linear algebra”).
+
+Encoding Fibonacci numbers
+Shift operator (S 2 − S − 1)fn = 0 √ But x2 − x − 1 has solutions x = (1 ± 5)/2. Call these A ≈ −0.62 and B ≈ 1.62. So we can write this as (S − A)(S − B)fn = 0 What sorts of sequences have (S − A)fn = 0? Have (S − B)fn = 0? So CAn + DB n = fn . If f0 = 1, then we want C + D = 1. 1
+
+If f1 = 1, then we want CA + DB = 1. But A = 1 − B and C = 1 − D, so (1 − D)(1 − B) + DB = 1 so 1 D=√ ρ 5 fn = (1 − √ 1 5ρ)(1 − ρ)n − √ ρρn 5
+
+and so
+
+Qualitative questions about solutions
+Suppose f (x) = −f (x). Can you tell that f is periodic? That f is bounded? Find a conserved quantity! f (x)2 + f (x)2 is constant. How do we know? Diﬀerentiate! d f (x)2 + f (x)2 = 2f (x)f (x) + 2f (x)f (x) = 0 dx More than studying solutions: we know that f must be bounded. We have discovered conservation of energy—as a consequence of the equation. More importantly, we have discovered that sine and cosine are related by the Pythagorean identity! At last, the “circle” is closed.
+
+More complicated example What next?
+Hand out.
+
+Course evaluations Farewell
+
+2
+
+

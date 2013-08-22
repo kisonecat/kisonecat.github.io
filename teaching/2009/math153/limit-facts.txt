@@ -1,0 +1,59 @@
+Facts about limits.
+Deﬁnition 1 (Formal). We say lim an = L if
+n→∞
+
+Theorem 15 (Sequences and continuity). If a function f : R → R is continuous at L, and lim an = L,
+n→∞
+
+then lim f (an ) = f (L).
+n→∞
+
+n→∞
+
+Deﬁnition 2 (Intuitive). We say lim an = L if
+n→∞
+
+Example 17. For a real number x with −1 < x < 1,
+n→∞
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+however close we want to be, there’s a place we can go, so that beyond that place, we are that close.
+
+lim xn = 0.
+
+Example 18. For a real number x > 0, 1 = 0. n→∞ nx lim
+
+Proposition 3 (Limits are unique). If lim an = L n→∞ and lim an = M , then L = M . Example 19. For x ∈ R, n→∞ Proposition 4. If the sequence an converges, then an is bounded. lim
+
+xn = 0. n→∞ n!
+
+Corollary 5. If the sequence an is not bounded, then log n Example 20. lim = 0. an diverges. n→∞ n Proposition 6. If lim an = L, and c ∈ R, then Example 21. lim n1/n = 0. n→∞ n→∞ limn→∞ c · an = c · L. Example 22. For x ∈ R, Proposition 7. If lim an = L and lim bn = M , n→∞ n→∞ x then lim an + bn = L + M . lim 1 + n→∞ n→∞ n Proposition 8. If lim an = L and lim bn = M , n→∞ n→∞ then lim an · bn = L · M .
+n→∞
+
+n
+
+= ex .
+
+Proposition 9. If lim an = L and lim bn = M , and
+n→∞ n→∞
+
+bn = 0 and M = 0, then lim an /bn = L/M .
+n→∞
+
+n→∞
+
+Proposition 10. If lim an = L and m ∈ N, then n→∞ lim an+m = L. Proposition 11. If lim an = L, and bn is a sen→∞ quence diﬀering from an in ﬁnitely many terms, then lim bn = L.
+n→∞
+
+Theorem 12. If an is a nondecreasing bounded above sequence, then an converges. Theorem 13. If an is a nonincreasing bounded below sequence, then an converges. Theorem 14 (Squeezing theorem). If an , bn , and cn are sequences of real numbers, and for all n ∈ N, we have an ≤ bn ≤ cn , and lim an = L and lim cn = L, n→∞ n→∞ then lim bn = L.
+n→∞
+
+c 2008 Jim Fowler
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+for all > 0, there exists K ∈ N, so that if n ≥ K, then |an − L| < .
+
+Example 16. For a real number x > 0, lim x1/n = 1.
+
+

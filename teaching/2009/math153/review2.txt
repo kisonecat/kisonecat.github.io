@@ -1,0 +1,66 @@
+The Second Midterm
+• There will be 12 questions on the exam and it will last 50 minutes. • The ﬁrst question will ask you to explain what
+n=1
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+∞
+
+an = L means (i.e., give a deﬁnition
+
+of the limit of an inﬁnite series, by invoking partial sums). • The last question will be an extra credit problem, with some true/false questions. • I was very impressed with your performance on the ﬁrst midterm, and will be expecting greatness. Do not be lulled into a false sense of security.
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+Topics covered on the exam
+∞
+
+• Deﬁne
+n=1
+
+an = L.
+
+• Determine whether a series converges absolutely; determine whether a series conditionally. • Given a function, write down the ﬁrst few terms of its Taylor series (around 0 or around another point a) • Given a function, write down its Taylor series. • Approximate an alternating series and estimate the error in your approximation. • Approximate a Taylor series and estimate the error in your approximation. • State Taylor’s theorem and Lagrange’s theorem. • Determine the interval on which a power series converges. • Diﬀerentiate and integrate a power series term-by-term.
+
+• Determine whether a series converges by using – the nth term test, – the integral test, – comparison test, – limit comparison test, – p-series test, – geometric series test, – harmonic series test, – the root test, – the ratio test, – alternating series test. A wise student may infer that I am not likely to ask about the integral test, or the root test. • Provide statements of the preceeding tests.
+
+c 2008 Jim Fowler
+
+What should I write for an answer?
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+You should not merely give the answer: you should give an explanation. For full credit, you must justify you argument. In particular, if you are claiming that a series converges, you must state which test you are applying.
+
+1 = 1−x ex =
+
+∞
+
+xn = 1 + x + x2 + x3 + · · ·
+n=0 ∞
+
+(when −1 < x < 1)
+
+n=0 ∞
+
+xn x2 x3 =1+x+ + + ··· n! 2! 3! (−1)n 2n+1 x (2n + 1)! (−1)n 2n x (2n)! =x− x3 x5 + − ··· 3! 5!
+
+sin x =
+n=0 ∞
+
+cos x =
+n=0 ∞
+
+=1−
+
+x2 x4 + − ··· 2! 4! (when 0 < x ≤ 2)
+
+log x =
+n=1
+
+(−1)n+1 (x − 1)n (x − 1)2 (x − 1)3 = (x − 1) − + − ··· n 2 3
+
+c 2008 Jim Fowler
+
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+Memorize the following series
+
+

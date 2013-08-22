@@ -1,0 +1,197 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+\newtheorem*{example}{Example}
+\newtheorem*{thm}{Theorem}
+
+\title{Lecture 25: Partial fractions}
+\author{Math 153 Section 57}
+\date{Monday November 24, 2008}
+
+\begin{document}
+\maketitle
+
+\subsection*{Overview}
+
+Recall that the limit comparison test allows us to determine whether
+$$
+\sum \frac{\mbox{polynomial}}{\mbox{polynomial}}
+$$
+converges.  These quotients of polynomials are called rational
+functions.
+
+Rational functions are maybe the ``next simplest'' class o f functions
+after polynomials (which we understand very well).
+
+Derivative of a rational function is a rational function, so we can
+take all the derivatives we would like---no problem!
+
+But to antidifferentiate a rational function?  For this, we use
+\textbf{partial fractions}.  This is, in fact, how the computers do
+these integrals.
+
+\subsection*{Theory}
+
+We can integrate polynomials.
+
+What are some rational functions we can integrate?
+$$
+\int \frac{1}{ax + b} \, dx = \frac{\log (a x + b)}{a} + C
+$$
+or somewhat more generally, for $n > 1$,
+$$
+\int \frac{1}{(ax + b)^n} \, dx = \frac{1}{a} \cdot \frac{(a x + b)^{-n+1}}{-n+1} + C
+$$
+For quadratics:
+$$
+\int \frac{x}{x^2 + b^2} \, dx = \frac{1}{2} \log \left(x^2 + b^2\right) + C
+$$
+or even
+$$
+\int \frac{x - a}{(x-a)^2 + b^2} \, dx = \frac{1}{2} \log \left((x-a)^2 + b^2\right) + C
+$$
+We can also do
+$$
+\int \frac{1}{(x-a)^2 + b^2} \, dx = \frac{1}{b} \arctan \left(\frac{x-a}{b}\right) + C
+$$
+We can also do these if the denominators are raised to a power (with
+more difficulty).
+
+\textbf{These functions suffice to do all rational functions}.  But we
+need a machine for transforming the general rational function into
+something of this form.  What would that be?
+
+\subsection*{Enter partial fractions}
+
+[ ``I would like to see a proof of such and such.''  ``How many
+alphabets are you familiar with?'' ]
+
+The theorem.  Let $f(x) = p(x)/q(x)$, a ratio of polynomials.  We can
+assume that $q$'s leading term has a $1$ coefficient.
+
+The fundamental theorem of algebra: factor denominator as
+$$
+q(x) =  \cdot \prod_{i=1}^m (x-a_i)^{j_i} \cdot \prod_{i=1}^n (x^2 + b_i x + c_i)^{k_i}
+$$
+that is, into linear and quadratic terms.
+
+Then we can write $f(x)$ as
+$$
+f(x) = \frac{p(x)}{q(x)} = P(x) + \sum_{i=1}^m\sum_{r=1}^{j_i} \frac{A_{ir}}{(x-a_i)^r} + \sum_{i=1}^n\sum_{r=1}^{k_i} \frac{B_{ir}x+C_{ir}}{(x^2+b_ix+c_i)^r}
+$$
+
+This seems pretty awful.  How can we ever hope to find all these constants?
+
+\subsection*{An example}
+
+Suppose
+$$
+\frac{1}{(x-3)^2 (x-2)} = \frac{A}{x-3} + \frac{B}{(x-3)^2} + \frac{C}{x-2}
+$$
+The least clever (and most involved) way is to multiply through by the denominator:
+$$
+1 = A(x-2)(x-3) + B(x-2) + C(x-3)^2
+$$
+This gives
+$$
+1 = (A+C) x^2 + (-5 A + B - 6 C)x+(6 A-2 B+9 C)
+$$
+So $A + C = 0$, and $-5A + B - 6C = 0$, and $6A - 2B + 9C = 1$.
+Solve the three equations in three unknowns (the resulting equations
+will always have a unique solution).
+Get $A = -C$.  So $5C + B - 6C = 0$, so $B - C = 0$, so $B = C$.
+Then, $-6C - 2C + 9C = 1$, so $C = 1$, and therefore $A = -1$ and $B = 1$.
+
+Check!
+$$
+\frac{1}{(x-3)^2 (x-2)} = \frac{-1}{x-3} + \frac{1}{(x-3)^2} + \frac{1}{x-2}
+$$
+This is true.
+
+This lets us do the integral
+$$
+\int \frac{1}{(x-3)^2 (x-2)} \, dx
+$$
+because you can do
+$$
+\int \left( \frac{-1}{x-3} + \frac{1}{(x-3)^2} + \frac{1}{x-2} \right) \, dx
+$$
+
+\subsection*{So many problems}
+
+The problems involved here are many.
+
+You are not likely to see $(x-3)^2 (x-2)$.  You are more likely to see
+$$
+x^3-8 x^2+21 x-18
+$$
+How are you supposed to \textbf{solve the factorization problem}?
+
+\subsection*{A tool in our toolbox, not a rule for solving all problems!}
+
+It is silly for me to give you lists of rules.
+
+\subsection*{A second example}
+
+$$
+f(x)=\frac{x^3+16}{x^3-4x^2+8x}
+$$
+Do long division
+$$
+f(x)=1+\frac{4x^2-8x+16}{x^3-4x^2+8x}=1+\frac{4x^2-8x+16}{x(x^2-4x+8)}
+$$
+$$
+\frac{4x^2-8x+16}{x(x^2-4x+8)}=\frac{A}{x}+\frac{Bx+C}{x^2-4x+8}
+$$
+Multiply through by $x(x^2-4x+8)$ to get
+$$
+4x^2 - 8x + 16 = A (x^2 - 4x + 8) + (Bx + C)x
+$$
+So $A = 2$.  So $B = 2$.  And $C = 0$.  Therefore,
+$$
+f(x)=1+2\left(\frac{1}{x}+\frac{x}{x^2-4x+8}\right)
+$$
+
+\subsection*{Some tricks}
+
+Multiply the partial fraction decomposition by $(x - a_i)$ and take the limit $x \to a_i$.  Then only the term $A_{i,1}$ survives, so
+$$
+A_{i,1} = \lim_{x \to a_i} (x - a_i) f(x)
+$$
+In the case of
+$$
+f(x) = \frac{1}{(x-3)^2 (x-2)}
+$$
+this tells us that 
+$$
+\lim_{x \to 2} (x-2) \cdot \frac{1}{(x-3)^2 (x-2)} = 1
+$$
+but of course is useless for to find the coefficients on $1/(x-3)$ and $1/(x-3)^2$.
+
+We can find
+$$
+\lim_{x \to 3} (x-3)^2 \cdot \frac{1}{(x-3)^2 (x-2)} = 1
+$$
+to discover that the coefficient on $1/(x-3)^2$ is $1$.
+
+Then we know that
+$$
+\frac{1}{(x-3)^2 (x-2)} = \frac{1}{x-2} + \frac{1}{(x-3)^2} + \frac{A}{x-3}
+$$
+We could plug in a value like $x = 4$ to find:
+$$
+\frac{1}{(4-3)^2 (4-2)} = \frac{1}{4-2} + \frac{1}{(4-3)^2} + \frac{A}{4-3}
+$$
+which becomes
+$$
+\frac{1}{2} = - \frac{1}{2} + \frac{1}{1^2} + \frac{A}{1}
+$$
+so $A = -1$.
+
+\subsection*{Underview}
+
+Some some tricks include: taking limits, and plugging in values.
+
+\end{document}

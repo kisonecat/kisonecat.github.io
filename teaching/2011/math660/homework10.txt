@@ -1,0 +1,64 @@
+Problem Set 10 (§5.2.2–5.4.4)
+Due Monday, August 30, 2010
+
+Math 660
+Jim Fowler
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Remember to start reviewing for the ﬁnal exam
+The ﬁnal examination is cumulative, so make sure that you start reviewing all the material in the course.
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+Diﬀerent problems may be assigned!
+This is probably not the ﬁnal version! The problems assigned on this homework set are subject to change! The ﬁnal version of Problem Set 10 will probably be ready by August 24, 2010.
+
+Problem 1
+Page 193, problem 1 in Ahlfors’ Complex Analysis.
+
+Problem 2
+Page 193, problem 2 in Ahlfors’ Complex Analysis.
+
+Problem 3
+Page 193, problem 5 in Ahlfors’ Complex Analysis.
+
+Problem 4
+Derive various expansions.
+
+Problem 5
+Page 197, problem 1 in Ahlfors’ Complex Analysis.
+
+c 2010 Jim Fowler
+
+Problem 6
+Page 197, problem 2 in Ahlfors’ Complex Analysis.
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Problem 7
+Page 198, problem 3 in Ahlfors’ Complex Analysis.
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+Problem 8
+Page 198, problem 4 in Ahlfors’ Complex Analysis.
+
+Problem 9
+Page 198, problem 5 in Ahlfors’ Complex Analysis.
+
+Problem 10
+Obtain the representation Γ(z) =
+∞ n=0 ∞ t=1
+
+(−1)n + n! (z + n)
+
+tz−1 e−t dt,
+
+for every complex number z which is not a nonpositive integer.
+
+Problem 11
+Page 200, problem 2 in Ahlfors’ Complex Analysis.
+
+Problem 12
+Page 200, problem 1 in Ahlfors’ Complex Analysis.
+
+c 2010 Jim Fowler
+
+

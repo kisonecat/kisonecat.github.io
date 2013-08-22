@@ -1,0 +1,22 @@
+{{{
+  "title": "National Bingo Night.",
+  "tags": ["personal"],
+  "date": "2007-05-30T00:59:19+00:00"
+}}}
+
+  National Bingo Night (which seems to me to be very silly, but ignoring that...) has a "play along at home" game, where you print out a bingo card.
+
+How would I design this?  I had hoped that the website generated a Bingo card, digitally signed it, and then sent the signed card to the user.  If it had been designed that way, ABC wouldn't even need to remember which cards had been generated, as long as their private key wasn't compromised.
+
+How many Bingo cards are there?  The first two and last two columns of a Bingo card are a sequence of 5 numbers drawn from 15 possible numbers, and the middle column has a "free" square, so it consists of only 4 numbers from 15 possible numbers.  Anyway, this is $(15 \cdots 11)^4 \cdot (15 \cdots 12)$, which is a big number.  In base 36, it is 18 digits long.
+
+But the base 36 number below the National Bingo Night cards is only 10 digits long.  Thus, this 10 digit number can't encode the whole Bingo card--there are too many cards.
+
+The <a href="http://abc.go.com/primetime/nationalbingonight/index?pn=officialrules">official rules</a> make this totally clear:
+
+> "ABC's National Bingo Night" (the "Show") Home Viewer Sweepstakes (June 2007) (the "Sweepstakes") is a seeded instant win game. Unlike bingo, where selected numbers are drawn live before an audience of players who have purchased or otherwise obtained randomized cards, in this Sweepstakes the relevant numbers are known to Sponsor ahead of time, due to the nature of the recording schedule of the Show. Based upon the numbers drawn during prior in-studio tapings of the Show, Sponsor then randomly distributes a specific, predetermined number of potentially winning Sweepstakes "Game Cards."
+
+So they already know who will win, because the numbers have already been drawn.  The serial number only has to encode "Winner" and "Loser."  Not so interesting.
+
+I wonder, though, if there are other web games that actually use digitally signed objects for fun purposes?
+

@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Quarter Overview",
+    "filename": "overview.pdf",
+    "source": "overview.tex",
+    "description": "Plan for the quarter",
+    "tags": [
+      "syllabus"
+    ]
+  },
+  {
+    "title": "Root Systems and Coxeter Groups",
+    "filename": "coxeter.pdf",
+    "source": "coxeter.tex",
+    "description": "",
+    "tags": [
+      "handout"
+    ]
+  }
+]

@@ -1,0 +1,88 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{nopageno}
+\usepackage{ifthen}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx} 
+\usepackage{version}
+\usepackage{amsthm}
+\usepackage{multicol}
+\usepackage{add-copyright}
+
+\excludeversion{solution}
+
+\DeclareMathOperator{\ft}{ft}
+
+\newcommand{\R}{\mathbb{R}}
+
+\title{Take-Home Quiz 2}
+\author{Math 133 Section 22}
+\date{Due Monday, April 17}
+
+\newcounter{problem}
+\setcounter{problem}{1}
+
+\newenvironment{problem}[1][]
+{\begin{flushleft}\hangindent=1em\hangafter=1\noindent\textbf{Problem \arabic{problem}.}
+\ifthenelse{\equal{#1}{}}{}{
+\textbf{(#1 \ifthenelse{\equal{#1}{1}}{point}{points}).}}
+}
+{\addtocounter{problem}{1}\end{flushleft}}
+
+\begin{document}
+\maketitle
+
+\begin{problem}[3]
+Compute the following:
+$$
+\int \frac{\ln x}{x} \, dx.
+$$
+\end{problem}
+
+\begin{problem}[3]
+Compute the following:
+$$
+\int (\ln x)^2 \, dx.
+$$
+\end{problem}
+
+\begin{problem}[3]
+Consider the integral $\displaystyle\int \displaystyle\frac{1}{x} \, dx$.  I will perform integration by parts, by setting
+$$
+\begin{array}{rclclcrcl}
+\vspace{2ex}
+u & = & & \displaystyle\frac{1}{x} & & \hspace{1em} & v & = & x \\
+du & = & & \makebox[0in][r]{$-$} \displaystyle\frac{1}{x^2} \makebox[0in][l]{$\, dx$} & & \hspace{1em} & dv & = & dx
+\end{array}
+$$
+This gives
+$$
+\int \frac{1}{x} \, dx = \frac{1}{x} \cdot x - \int x \cdot \frac{-1}{x^2} \, dx.
+$$
+Simplifying gives
+$$
+\int \frac{1}{x} \, dx = 1 + \int \frac{1}{x} \, dx.
+$$
+Canceling the integrals on both sides yields
+$$
+0 = 1,
+$$
+which is ridiculous!  Where did I make a mistake?
+\end{problem}
+
+\begin{problem}[3]
+Evaluate the limit:
+$$
+\lim_{x \to 0^{+}} (\sin x)^x
+$$
+\end{problem}
+
+\begin{problem}[3]
+Evaluate the limit:
+$$
+\lim_{x \to 0} \left( \frac{1}{\sin x} - \frac{1}{x + x^2} \right).
+$$
+\end{problem}
+
+\end{document}

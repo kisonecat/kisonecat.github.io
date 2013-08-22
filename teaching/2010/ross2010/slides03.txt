@@ -1,0 +1,421 @@
+Topology of Piecewise-Linear Manifolds
+Jim Fowler Lecture 3 Summer 2010
+
+A simplicial complex joke
+Deﬁne the complex Food so that vertices are edible objects objects k1 , . . . , kn comprise a simplex if they taste good together.
+
+A simplicial complex joke
+Deﬁne the complex Food so that vertices are edible objects objects k1 , . . . , kn comprise a simplex if they taste good together. Inside Food, ﬁnd ∂∆n which doesn’t extend to ∆n .
+
+A simplicial complex joke
+Deﬁne the complex Food so that vertices are edible objects objects k1 , . . . , kn comprise a simplex if they taste good together. Inside Food, ﬁnd ∂∆n which doesn’t extend to ∆n . Three foods, any two of which taste good together, but the three aren’t tasty altogether.
+
+A simplicial complex which isn’t funny
+Deﬁne the complex Market so that vertices are securities (e.g., stocks, bonds, currencies) objects k1 , . . . , kn comprise a simplex if they can be traded for each other
+
+Move your money through the vertices. Come back to where you started with more!
+
+The torus
+
+T2 =
+
+Klein Bottle
+
+K=
+
+Klein Bottle
+
+Look at 3 × 3 pixel subsets
+
+Look at 3 × 3 pixel subsets Get points in R9
+
+Figure 2: 3 by 3 patches parametrized by the Klein bottle
+
+From a paper of Gunnar Carlsson and Tigran Ishkhanov
+
+I’m a cheerleader for geometry!
+Dynamics Biology Chemistry Physics Neurology Economics Engineering Astronomy Linguistics and and and and and and and and and mixing taﬀy yeast isomers symmetry Klein bottles “least action” robots the shape of space document clustering
+
+Triangulate a torus
+
+1 ￿￿ 2 ￿￿ ￿￿￿￿3 ￿￿￿ 1 ￿￿ ￿￿￿ ￿￿ ￿￿ ￿￿￿￿￿￿￿ ￿ ￿￿ ￿￿￿￿ ￿￿ 4 ￿ ￿￿￿￿￿ 4 ￿￿ ￿ 7 ￿￿￿￿￿ ￿￿ ￿ ￿￿￿￿ 6 ￿￿￿ ￿ ￿￿ ￿￿ 5 ￿￿ ￿￿￿￿￿ 5 ￿ ￿ ￿￿ ￿￿￿ ￿￿￿￿￿ ￿￿ ￿ ￿￿ 1 2 3 1
+
+Simplicial Complex
+
+A simplicial complex K is a collection of ﬁnite sets (called the “simplexes”), with the property that if σ ∈ K , and τ ⊂ σ, then τ ∈ K .
+
+Star
+Deﬁnition
+Let K be a complex, and σ ∈ K a simplex. The star of σ in K , written st(σ, K ), is deﬁned by st(σ, K ) = {τ ∈ K : σ < τ }, i.e., the star of σ includes all the simplexes having σ as a face.
+
+Closure
+
+Deﬁnition
+Let S be a collection of simplexes in K . The closure of S, written as cl(S), is the smallest subcomplex of K containing the simplexes in S.
+
+Link
+Deﬁnition
+Let K be a complex, and σ ∈ K a simplex. The link of σ ∈ K , written lk(σ, K ), consists of those simplexes in K which are in cl(st(σ, K )) but not touching σ; in other words, lk(σ, K ) = {τ ∈ cl(st(σ, K )) : τ ∩ σ = ∅}.
+
+Stellar Subdivision
+Deﬁnition
+Let K be a complex, and σ ∈ K a simplex. The stellar subdivision of K at σ is a new complex Kσ with: the vertices of K with a new vertex v . the simplexes of K not in st(σ, K ), along with the simplexes in v ∗ (∂σ) ∗ lk(σ, K ). We might say: Kσ := (K − st(σ, K )) ∪ (v ∗ (∂σ) ∗ lk(σ, K ))
+
+subdivision = repeated stellar subdivision
+
+Deﬁnition
+Let K , L be complexes. If K can be produced through a (possibly empty) sequence of stellar subdivisions of L, we say that K is a subdivision of L, and write K L.
+
+Piecewise linear maps
+Deﬁnition
+Let K , K , L, L be complexes, with K K and L L. If f : K → L is a simplicial map, we call f : K → L a piecewise linear map (or a PL map for short). We call f : K → L an underlying simplicial map.
+
+Piecewise linear maps
+Deﬁnition
+Let K , K , L, L be complexes, with K K and L L. If f : K → L is a simplicial map, we call f : K → L a piecewise linear map (or a PL map for short). We call f : K → L an underlying simplicial map. As we will see, the real deﬁnition of subdivision is more general than this.
+
+Problem Set 2
+Summer 2010
+
+Piecewise-Linear Topology
+Jim Fowler
+
+Goal. Problem Set 2 introduces abstract simplicial complexes, the main object of study. You should be warned that what follows is not the only way to formalize our intuition. As usual, problems marked with a • should be written up and handed in.
+
+Deﬁnition. Geometrically, an n-dimensional simplex (written ∆n , and usually called an nsimplex for short) is the n-dimensional analog of a triangle; just as a triangle is the smallest convex set containing 3 points which do not lie on a line, the n-simplex ∆n is the smallest convex set containing n + 1 points in “general position.” But for us, the important feature of a simplex is the relationship between the faces. Indeed, topologically, we do not care about the size of the simplexes, or where they are sitting in space—so we will abstract away the geometry, leaving only the combinatorics behind. A simplex A is a face of a simplex B if the vertices determining A are a subset of the vertices determining B. We write A < B if A is a face of B. Speciﬁcally, some v for which {v} ∈ B is called a vertex of B.
+
+A simplicial complex K is a collection of ﬁnite sets (called the “simplexes”), with the property that if σ ∈ K, and τ < σ (i.e., if τ ⊂ σ when thought of as ﬁnite sets), then τ ∈ K.
+
+In words, a simplicial complex is a collection of simplexes, where any face of a simplex is also in the complex. We can think of a simplicial complex as a geometric object by gluing together actual simplexes along their faces (the so-called “geometric realization”) by following the pattern of the combinatorial data encoded by the ﬁnite sets.
+
+• Problem 1. Find an injective simplicial map)f : K7 → T 2 ; here, T 2 is the torus, and K7 ( 7 denotes 7 points connected in pairs by all = 21 edges. Use this to triangulate T 2 as a 2 simplicial complex with as few triangles as possible.
+Problem 2. Does there exist an injective map f : K3,3 → S2 ? What about f : K3,3 → T 2 ? Here, K3,3 denotes six points, connected by nine lines, as shown on the right.
+
+Anytime we deﬁne a mathematical object, we must also describe the maps between such objects. Let K and L be complexes. A simplicial map f : K → L is a function f : vert(K ) → vert( L) with the property that if σ ∈ K, then f (σ ) ∈ L.
+
+homework
+
+from the last
+
+Subcomplexes
+Deﬁnition. If K and L are complexes, and every simplex in K is a simplex of L, then we write K ⊂ L and say that K is a subcomplex of L.
+
+Example. The n-dimensional skeleton (usually called the n-skeleton) of a complex K consists of all those simplexes which contain n + 1 or fewer points (i.e., are at most n-dimensional). Write K (n) for the n-skeleton. We say that a complex K is an n-complex if K = K (n) .
+
+• Problem 3. Prove that the n-skeleton of a simplicial complex K is still a simplicial complex.
+
+Joins
+Deﬁnition
+Let K and L be complexes with disjoint sets of vertices (we call such complexes joinable). Deﬁne a new complex, the join of K and L, by K ∗ L := {σ ∪ τ : σ ∈ K , τ ∈ L}.
+
+Joins
+Deﬁnition
+Let K and L be complexes with disjoint sets of vertices (we call such complexes joinable). Deﬁne a new complex, the join of K and L, by K ∗ L := {σ ∪ τ : σ ∈ K , τ ∈ L}.
+
+Problem
+What is S 0 ∗ S 0 ?
+
+Joins
+Deﬁnition
+Let K and L be complexes with disjoint sets of vertices (we call such complexes joinable). Deﬁne a new complex, the join of K and L, by K ∗ L := {σ ∪ τ : σ ∈ K , τ ∈ L}.
+
+Problem
+What is S 0 ∗ S 0 ?
+
+Problem
+What is S n ∗ S m ?
+
+Problem Set 3
+Summer 2010
+
+Piecewise-Linear Topology
+Jim Fowler
+
+This is the end of the beginning. Problem Set 3 introduces manifolds, and with that, the last of the introductory topics; Please submit answers to problems marked with a •.
+
+• Problem 1. Suppose K is a simplicial complex, with subdivisions K1 ▹ K and K2 ▹ K. Is there a subdivision K ′ so that K ′ ▹ K1 and K ′ ▹ K2 ?
+Problem 2. Let K, L, M be complexes. If f : K → L and g : L → M are PL maps, how should we deﬁne the PL map g ◦ f : K → M?
+
+Problem 3. For n ≥ 3, let Pn be the boundary of an n-gon. Prove that Pn ∼ Pm for n, m ≥ 3. = Thus, any Pn is topologically an S1 . Deﬁnition. A complex K is path-connected if for any two vertices v, w ∈ K, there exists a map f : ∆1 → K sending the boundary of ∆1 to v and w.
+
+on today’s
+
+Problem 4. Prove that being path-connected is a topological property, meaning it is preserved under PL homeomorphisms.
+
+Homeomorphisms
+
+Problem 5. Is PL homeomorphism an equivalence relation? That is, is it: reﬂexive, meaning, is A homeomorphic to A,
+
+homework
+
+symmetric, meaning, if A ∼ B, is it true that B ∼ A, and = = transitive, meaning, if A ∼ B and B ∼ C, is it true that A ∼ C? = = =
+
+• Problem 6. Is join well-deﬁned with respect to homeomorphism? That is, if we have PL homeomorphic complexes K ∼ K ′ and L ∼ L′ , is it then the case that K ∗ L ∼ K ′ ∗ L′ ? = = =
+Problem 7. Let Xn consist of n points. For which n ∈ N is it the case that for every two injective maps f , g : Xn → S1 , there is a homeomorphism h : S1 → S1 so that h ◦ f = g? Problem 8. Let Xn be the disjoint union of n circles (e.g., X3 = S1 ∪ S1 ∪ S1 ). For this problem, call two maps f , g : Xn → S2 “equivalent” if there exists a homeomorphism h : S2 → S2 so that h ◦ f = g. Count the equivalence classes of maps from X5 to S2 ? Problem 9. To the right, three curves are pictured on T 2 #T 2 , which is our notation for a two-holed surface. For which pairs of curves α and β does there exist a homeomorphism
+
+f : T 2 #T 2 → T 2 #T 2
+so that f (α) = β?
+
+PL Homeomorphism
+Deﬁnition
+A piecewise linear homeomorphism (a PL homeomorphism for short) is a PL map f : K → L with a PL inverse.
+
+PL Homeomorphism
+Deﬁnition
+A piecewise linear homeomorphism (a PL homeomorphism for short) is a PL map f : K → L with a PL inverse. If there exists a homeomorphism between A and B, then A and B are homeomorphic. Write A ∼ B if A and B are homeomorphic. =
+
+PL Manifold
+A complex M is an n-dimensional PL manifold (for short, an n-manifold) if for every vertex v of M, lk(v , M) is PL homeomorphic to S n−1 .
+
+PL Manifold
+A complex M is an n-dimensional PL manifold (for short, an n-manifold) if for every vertex v of M, lk(v , M) is PL homeomorphic to S n−1 .
+
+Problem
+Is S 2 a manifold?
+
+PL Manifold
+A complex M is an n-dimensional PL manifold (for short, an n-manifold) if for every vertex v of M, lk(v , M) is PL homeomorphic to S n−1 .
+
+Problem
+Is S 2 a manifold?
+
+Problem
+Is T 2 a manifold?
+
+Going back, rethinking everything. . .
+
+Is there a PL homeomorphism between S 2 and T 2 ?
+∼ = ?
+
+Going back, rethinking everything. . .
+
+Is there a PL homeomorphism between S 2 and T 2 ?
+∼ = ?
+
+Check χ is unchanged after stellar subdivision (we must also check more general subdivisions!)
+
+Euler characteristic
+
+Kσ := (K − st(σ, K )) ∪ (v ∗ (∂σ) ∗ lk(σ, K )) Need to check χ(K ) = χ(Kσ ).
+
+Euler characteristic and join
+pK (x) = 1/x + k0 + k1 x + · · · + kn x n
+
+Euler characteristic and join
+pK (x) = 1/x + k0 + k1 x + · · · + kn x n pL (x) = 1/x + 0 + 1 x + · · · + m x m
+
+Euler characteristic and join
+pK (x) = 1/x + k0 + k1 x + · · · + kn x n pL (x) = 1/x + 0 + 1 x + · · · + m x m pK ∗L (x) = pK (x) · pL (x) · x
+
+Euler characteristic and join
+pK (x) = 1/x + k0 + k1 x + · · · + kn x n pL (x) = 1/x + 0 + 1 x + · · · + m x m pK ∗L (x) = pK (x) · pL (x) · x Since χ(K ) = pK (−1) + 1,
+
+Euler characteristic and join
+pK (x) = 1/x + k0 + k1 x + · · · + kn x n pL (x) = 1/x + 0 + 1 x + · · · + m x m pK ∗L (x) = pK (x) · pL (x) · x Since χ(K ) = pK (−1) + 1, χ(K ∗ L) = pK ∗L (−1) + 1
+
+Euler characteristic and join
+pK (x) = 1/x + k0 + k1 x + · · · + kn x n pL (x) = 1/x + 0 + 1 x + · · · + m x m pK ∗L (x) = pK (x) · pL (x) · x Since χ(K ) = pK (−1) + 1, χ(K ∗ L) = pK ∗L (−1) + 1 = (χ(K ) − 1) (χ(L) − 1) · (−1) + 1
+
+Euler characteristic and join
+pK (x) = 1/x + k0 + k1 x + · · · + kn x n pL (x) = 1/x + 0 + 1 x + · · · + m x m pK ∗L (x) = pK (x) · pL (x) · x Since χ(K ) = pK (−1) + 1, χ(K ∗ L) = pK ∗L (−1) + 1 = (χ(K ) − 1) (χ(L) − 1) · (−1) + 1 = χ(K ) + χ(L) − χ(K )χ(L).
+
+More joins!
+
+χ(K ∗ L ∗ M)
+
+More joins!
+
+χ(K ∗ L ∗ M) = χ(K ∗ L) + χ(M) − χ(K ∗ L)χ(M)
+
+More joins!
+
+χ(K ∗ L ∗ M) = χ(K ∗ L) + χ(M) − χ(K ∗ L)χ(M) = χ(K ) + χ(L) − χ(K )χ(L) + χ(M)− (χ(K ) + χ(L) − χ(K )χ(L)) χ(M)
+
+More joins!
+
+χ(K ∗ L ∗ M) = χ(K ∗ L) + χ(M) − χ(K ∗ L)χ(M) = χ(K ) + χ(L) − χ(K )χ(L) + χ(M)− (χ(K ) + χ(L) − χ(K )χ(L)) χ(M) = χ(K ) + χ(L) + χ(M) − χ(K )χ(L) − χ(K )χ(M) − χ(L)χ(M) + χ(K )χ(L)χ(M)
+
+Euler characteristic and union
+
+The usual inclusion-exclusion business gives χ(K ∪ L) = χ(K ) + χ(L) − χ(K ∩ L)
+
+Euler characteristic
+χ(Kσ )
+
+= χ(K ).
+
+Euler characteristic
+χ(Kσ ) = χ ((K − st(σ, K )) ∪ (v ∗ (∂σ) ∗ lk(σ, K )))
+
+= χ(K ).
+
+Euler characteristic
+χ(Kσ ) = χ ((K − st(σ, K )) ∪ (v ∗ (∂σ) ∗ lk(σ, K ))) = χ (K − st(σ, K )) + χ (v ∗ (∂σ) ∗ lk(σ, K )) − χ (lk(σ, K ))
+
+= χ(K ).
+
+Euler characteristic
+χ(Kσ ) = χ ((K − st(σ, K )) ∪ (v ∗ (∂σ) ∗ lk(σ, K ))) = χ (K − st(σ, K )) + χ (v ∗ (∂σ) ∗ lk(σ, K )) − χ (lk(σ, K )) = χ (K − st(σ, K )) + χ (v ∗ (∂σ)) − χ (v ∗ (∂σ)) · χ (lk(σ, K ))
+
+= χ(K ).
+
+Euler characteristic
+χ(Kσ ) = χ ((K − st(σ, K )) ∪ (v ∗ (∂σ) ∗ lk(σ, K ))) = χ (K − st(σ, K )) + χ (v ∗ (∂σ) ∗ lk(σ, K )) − χ (lk(σ, K )) = χ (K − st(σ, K )) + χ (v ∗ (∂σ)) − χ (v ∗ (∂σ)) · χ (lk(σ, K )) = χ (K − st(σ, K )) + 1 − χ (lk(σ, K )) = χ(K ).
+
+Euler characteristic
+χ(Kσ ) = χ ((K − st(σ, K )) ∪ (v ∗ (∂σ) ∗ lk(σ, K ))) = χ (K − st(σ, K )) + χ (v ∗ (∂σ) ∗ lk(σ, K )) − χ (lk(σ, K )) = χ (K − st(σ, K )) + χ (v ∗ (∂σ)) − χ (v ∗ (∂σ)) · χ (lk(σ, K )) = χ (K − st(σ, K )) + 1 − χ (lk(σ, K )) = χ (K − st(σ, K )) + χ(cl(st(σ, K ))) − χ (lk(σ, K )) = χ(K ).
+
+Upshot
+
+Upshot
+
+χ(S 2 ) = 2 but χ(T 2 ) = 0, and χ is a PL homeo invariant, so S 2 ∼ T 2 . =
+
+Upshot
+
+χ(S 2 ) = 2 but χ(T 2 ) = 0, and χ is a PL homeo invariant, so S 2 ∼ T 2 . =
+
+Haiku
+
+Upshot
+
+χ(S 2 ) = 2 but χ(T 2 ) = 0, and χ is a PL homeo invariant, so S 2 ∼ T 2 . =
+
+Haiku
+
+The sphere and torus, what with their diﬀering χ, are not the same space.
+
+The torus versus the Klein bottle
+Since χ(T 2 ) = χ(K ) = 0,
+
+The torus versus the Klein bottle
+Since χ(T 2 ) = χ(K ) = 0, and . . . um . . .
+
+The torus versus the Klein bottle
+Since χ(T 2 ) = χ(K ) = 0, and . . . um . . .
+
+χ is not a complete invariant.
+
+χ
+Let’s think about Euler characteristic
+
+χ(K ∪ L) = χ(K ) + χ(L) − χ(K ∩ L)
+
+∪
+union
+
+A new invariant
+We want a new invariant. Call it F .
+
+A new invariant
+We want a new invariant. Call it F . Since I ∼ V , we must have F (I ) = F (V ). =
+
+A new invariant
+We want a new invariant. Call it F . Since I ∼ V , we must have F (I ) = F (V ). = If our invariant is additive, we should have F (V ) = F (I ) + F (I ) − F (point).
+
+A new invariant
+We want a new invariant. Call it F . Since I ∼ V , we must have F (I ) = F (V ). = If our invariant is additive, we should have F (V ) = F (I ) + F (I ) − F (point). So F (I ) = F (point).
+
+A new invariant
+Since ∆2 ∪I ∆2 ∼ ∆2 , = we must have F (∆2 ∪I ∆2 ) = F (∆2 ).
+
+A new invariant
+Since ∆2 ∪I ∆2 ∼ ∆2 , = we must have F (∆2 ∪I ∆2 ) = F (∆2 ). If our invariant is additive, we should have F (∆2 ∪I ∆2 ) = F (∆2 ) + F (∆2 ) − F (I ).
+
+A new invariant
+Since ∆2 ∪I ∆2 ∼ ∆2 , = we must have F (∆2 ∪I ∆2 ) = F (∆2 ). If our invariant is additive, we should have F (∆2 ∪I ∆2 ) = F (∆2 ) + F (∆2 ) − F (I ). So F (∆2 ) = F (I ).
+
+A new invariant
+Since ∆2 ∪I ∆2 ∼ ∆2 , = we must have F (∆2 ∪I ∆2 ) = F (∆2 ). If our invariant is additive, we should have F (∆2 ∪I ∆2 ) = F (∆2 ) + F (∆2 ) − F (I ). So F (∆2 ) = F (I ). Similarly, F (∆n ) = F (I ).
+
+A “new” invariant
+Congratulations!
+
+A “new” invariant
+Congratulations! You have invented F ,
+
+A “new” invariant
+Congratulations! You have invented F , a rescaled version of the Euler characteristic.
+
+A “new” invariant
+Congratulations! You have invented F , a rescaled version of the Euler characteristic.
+
+Theorem
+An additive topological invariant is, up to rescaling, the Euler characteristic.
+
+A “new” invariant
+Congratulations! You have invented F , a rescaled version of the Euler characteristic.
+
+Theorem
+An additive topological invariant is, up to rescaling, the Euler characteristic. New invariants cannot be precisely additive.
+
+Connected components
+Deﬁne b0 (K ) to be the number of connected components of K .
+
+Connected components
+Deﬁne b0 (K ) to be the number of connected components of K . Vertices v , w of K belong to the same component if there exists a PL map f : I → K so that f (0) = v and f (1) = w .
+
+Connected components
+Deﬁne b0 (K ) to be the number of connected components of K . Vertices v , w of K belong to the same component if there exists a PL map f : I → K so that f (0) = v and f (1) = w .
+
+Problem
+Is “belong to the same component” an equivalence relation on the vertices of K ?
+
+Connected components
+
+three
+
+Connected components
+
+three + one
+
+Connected components
+
+three + one − three
+
+Connected components
+
+three + one − three = one
+
+b0 (K ∪ L) = b0 (K ) + b0 (L) − b0 (K ∩ L)?
+
+Connected components
+
+four
+
+Connected components
+
+four + two
+
+Connected components
+
+four + two − four
+
+Connected components
+
+four + two − four = two
+
+Connected components
+
+four
+
+Connected components
+
+four + four
+
+Connected components
+
+four + four − eight
+
+Connected components
+
+four + four − eight = zero = one
+
+We will invent new invariants. These invariants will not quite be additive. The failure of additivity gives a new invariant, itself not quite additive. The failure will be captured by a deeper invariant, itself not quite additive. The failure will be captured by . . .
+
+This is homology.
+
+The end of the beginning
+What’s next? manifolds simplicial collapse simple homotopy equivalence knots unknotting theorems return to (co)homology
+
+

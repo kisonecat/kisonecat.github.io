@@ -1,0 +1,819 @@
+\documentclass[14pt]{beamer}
+
+\setbeamertemplate{navigation symbols}{}
+
+\usepackage{pgf}
+\usepackage{amsmath}
+\usepackage{amsthm}
+%\newtheorem*{problem}{Problem}
+\usepackage{amssymb}
+\newcommand{\N}{\mathbb{N}}
+
+\newcommand{\boundary}{\partial}
+\newcommand{\collapses}{\searrow}
+\newcommand{\expands}{\nearrow}
+\newcommand{\she}{\ssearrow\nnearrow}
+\newcommand{\join}{\ast}
+\newcommand{\subdivided}{\triangleleft}
+
+\DeclareMathOperator{\st}{st}
+\DeclareMathOperator{\vertices}{vert}
+\DeclareMathOperator{\lk}{lk}
+\DeclareMathOperator{\cl}{cl}
+\DeclareMathOperator{\interior}{int}
+
+\title{Topology of  \\ Piecewise-Linear Manifolds}
+\author{Jim Fowler}
+\date{Lecture 3 \\ Summer 2010}
+
+\newcommand{\setbackgroundpicture}[1]{%
+\usebackgroundtemplate{
+\begin{pgfpicture}{0in}{0in}{\paperwidth}{\paperheight}
+\pgfputat{\pgfxy(0,0)}{\includegraphics[keepaspectratio=true,width=\paperwidth,height=\paperheight]{#1}}
+\color{white}
+\pgfsetfillopacity{0.8}
+\pgfrect[fill]{\pgfxy(0,0)}{\pgfpoint{\paperwidth}{\paperheight}}
+\end{pgfpicture}
+}
+}
+\newcommand{\clearbackgroundpicture}{\usebackgroundtemplate{}}
+
+\begin{document}
+
+\begin{frame}
+\maketitle
+\end{frame}
+
+\setbackgroundpicture{apples-and-pears.jpg}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{A simplicial complex joke}
+
+Define the complex \textbf{Food} so that
+\begin{itemize}
+\item vertices are edible objects
+\item objects $k_1, \ldots, k_n$ comprise a simplex if they taste good together.
+\end{itemize}
+
+\pause
+\vfill 
+
+Inside \textbf{Food}, find $\partial \Delta^n$ \\
+which doesn't extend to $\Delta^n$.\\
+
+\pause
+\vfill
+
+Three foods, \\
+\quad any two of which taste good together, \\
+\quad but the three aren't tasty altogether.
+
+\end{frame}
+\clearbackgroundpicture{}
+
+\setbackgroundpicture{hundred-dollar-bill.jpg}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{A simplicial complex which isn't funny}
+
+Define the complex \textbf{Market} so that
+\begin{itemize}
+\item vertices are securities \\
+  (e.g., stocks, bonds, currencies)
+\item objects $k_1, \ldots, k_n$ comprise a simplex \\
+  if they can be traded for each other
+\end{itemize}
+
+\vfill 
+
+Move your money through the vertices. \\
+Come back to where you started with more! \\
+
+\end{frame}
+\clearbackgroundpicture
+
+
+\begin{frame}
+\frametitle{The torus}
+\begin{center}
+\raisebox{0.4\textheight}{$T^2 = $}
+\begin{pgfpicture}{0in}{0in}{0.8\textheight}{0.8\textheight}
+  \pgfsetxvec{\pgfpoint{0.8\textheight}{0cm}}
+  \pgfsetyvec{\pgfpoint{0cm}{0.8\textheight}}
+
+  \pgfsetlinewidth{3pt}
+
+  \color[rgb]{0.5,0.85,0.5}
+  \pgfrect[fill]{\pgfxy(0.1,0.1)}{\pgfxy(0.8,0.8)}
+  \color{black}
+  \pgfrect[stroke]{\pgfxy(0.1,0.1)}{\pgfxy(0.8,0.8)}
+
+  \pgfsetlinewidth{3pt}
+
+  \pgfsetendarrow{\pgfarrowto}
+  \pgfmoveto{\pgfxy(0.1,0.45)}
+  \pgflineto{\pgfxy(0.1,0.50)}
+  \pgfstroke
+
+  \pgfsetendarrow{\pgfarrowto}
+  \pgfmoveto{\pgfxy(0.9,0.45)}
+  \pgflineto{\pgfxy(0.9,0.50)}
+  \pgfstroke
+
+  \pgfsetendarrow{\pgfarrowto}
+  \pgfmoveto{\pgfxy(0.45,0.1)}
+  \pgflineto{\pgfxy(0.50,0.1)}
+  \pgfstroke
+  \pgfsetendarrow{\pgfarrowto}
+  \pgfmoveto{\pgfxy(0.50,0.1)}
+  \pgflineto{\pgfxy(0.54,0.1)}
+  \pgfstroke
+
+  \pgfsetendarrow{\pgfarrowto}
+  \pgfmoveto{\pgfxy(0.45,0.9)}
+  \pgflineto{\pgfxy(0.50,0.9)}
+  \pgfstroke
+  \pgfsetendarrow{\pgfarrowto}
+  \pgfmoveto{\pgfxy(0.50,0.9)}
+  \pgflineto{\pgfxy(0.54,0.9)}
+  \pgfstroke
+\end{pgfpicture}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Klein Bottle}
+\begin{center}
+\raisebox{0.4\textheight}{$K = $}
+\begin{pgfpicture}{0in}{0in}{0.8\textheight}{0.8\textheight}
+  \pgfsetxvec{\pgfpoint{0.8\textheight}{0cm}}
+  \pgfsetyvec{\pgfpoint{0cm}{0.8\textheight}}
+
+  \pgfsetlinewidth{3pt}
+
+  \color[rgb]{0.85,0.5,0.5}
+  \pgfrect[fill]{\pgfxy(0.1,0.1)}{\pgfxy(0.8,0.8)}
+  \color{black}
+  \pgfrect[stroke]{\pgfxy(0.1,0.1)}{\pgfxy(0.8,0.8)}
+
+  \pgfsetlinewidth{3pt}
+
+  \pgfsetendarrow{\pgfarrowto}
+  \pgfmoveto{\pgfxy(0.1,0.50)}
+  \pgflineto{\pgfxy(0.1,0.45)}
+  \pgfstroke
+
+  \pgfsetendarrow{\pgfarrowto}
+  \pgfmoveto{\pgfxy(0.9,0.45)}
+  \pgflineto{\pgfxy(0.9,0.50)}
+  \pgfstroke
+
+  \pgfsetendarrow{\pgfarrowto}
+  \pgfmoveto{\pgfxy(0.45,0.1)}
+  \pgflineto{\pgfxy(0.50,0.1)}
+  \pgfstroke
+  \pgfsetendarrow{\pgfarrowto}
+  \pgfmoveto{\pgfxy(0.50,0.1)}
+  \pgflineto{\pgfxy(0.54,0.1)}
+  \pgfstroke
+
+  \pgfsetendarrow{\pgfarrowto}
+  \pgfmoveto{\pgfxy(0.45,0.9)}
+  \pgflineto{\pgfxy(0.50,0.9)}
+  \pgfstroke
+  \pgfsetendarrow{\pgfarrowto}
+  \pgfmoveto{\pgfxy(0.50,0.9)}
+  \pgflineto{\pgfxy(0.54,0.9)}
+  \pgfstroke
+\end{pgfpicture}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Klein Bottle}
+\vfill
+\begin{center}
+\includegraphics[height=0.8\textheight]{klein-bottle.pdf}
+\end{center}
+\vfill
+\end{frame}
+
+
+\usebackgroundtemplate{%
+\begin{pgfpicture}{0in}{0in}{\paperwidth}{\paperheight}
+\pgfputat{\pgfxy(0,0)}{\includegraphics[,width=\paperwidth,height=\paperheight]{sampleMerry_0043_Lasalle.jpg}}
+\end{pgfpicture}}
+\begin{frame}
+\end{frame}
+\usebackgroundtemplate{%
+\begin{pgfpicture}{0in}{0in}{\paperwidth}{\paperheight}
+\pgfputat{\pgfxy(0,0)}{\includegraphics[,width=\paperwidth,height=\paperheight]{samplepippin0053.jpg}}
+\end{pgfpicture}}
+\begin{frame}
+\end{frame}
+\usebackgroundtemplate{%
+\begin{pgfpicture}{0in}{0in}{\paperwidth}{\paperheight}
+\pgfputat{\pgfxy(0,0)}{\includegraphics[,width=\paperwidth,height=\paperheight]{samplepippin0053-gray.jpg}}
+\end{pgfpicture}}
+\begin{frame}
+\end{frame}
+\usebackgroundtemplate{%
+\begin{pgfpicture}{0in}{0in}{\paperwidth}{\paperheight}
+\pgfputat{\pgfxy(0,0)}{\includegraphics[,width=\paperwidth,height=\paperheight]{samplepippin0053-zoomed.jpg}}
+\end{pgfpicture}}
+\begin{frame}
+\huge
+\pause
+\vfill
+\textcolor{white}{Look at $3 \times 3$ pixel subsets}
+\vfill
+\pause
+\textcolor{white}{Get points in $\mathbf{R}^9$}
+\vfill
+\end{frame}
+\usebackgroundtemplate{}
+
+\begin{frame}
+  \includegraphics[width=\textwidth]{space-of-natural-images.pdf} \\
+  \hfill\scriptsize {From a paper of Gunnar Carlsson and Tigran Ishkhanov}
+\end{frame}
+
+\begin{frame}
+\frametitle{I'm a cheerleader for geometry!}
+
+\setbeamersize{description width=0.25\textwidth}
+\begin{description}
+\item[Dynamics] and mixing taffy
+\item[Biology] and yeast
+\item[Chemistry] and isomers
+\item[Physics] and symmetry
+\item[Neurology] and Klein bottles
+\item[Economics] and ``least action''
+\item[Engineering] and robots
+\item[Astronomy] and the shape of space
+\item[Linguistics] and document clustering
+\end{description}
+\end{frame}
+
+\setbackgroundpicture{torus.png}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Triangulate a torus}
+\begin{center}
+\includegraphics[height=0.8\textheight]{k7-on-torus/torus.pdf}
+\end{center}
+\end{frame}
+\clearbackgroundpicture
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setbackgroundpicture{Simplicial_complex_example.pdf}
+\begin{frame}
+\frametitle{Simplicial Complex}
+\vfill
+  A \textbf{simplicial complex} $K$ is \\
+  a collection of finite sets (called the ``simplexes''), \\
+  with the property that \\
+  \begin{center}
+  if $\sigma \in K$, and $\tau \subset \sigma$, \quad then $\tau \in K$.
+  \end{center}
+\vfill
+\end{frame}
+\clearbackgroundpicture{}
+
+\setbackgroundpicture{star.pdf}
+\begin{frame}
+\frametitle{Star}
+
+\begin{definition}
+Let $K$ be a complex, and $\sigma \in K$ a simplex.\\
+The \textbf{star} of $\sigma$ in $K$, \\
+\quad written $\st(\sigma,K)$, \\
+is defined by
+$$
+\st(\sigma,K) = \{ \tau \in K : \sigma < \tau \},
+$$
+i.e., the star of $\sigma$ includes all the simplexes having $\sigma$
+as a face.
+\end{definition}
+\end{frame}
+\clearbackgroundpicture
+
+\setbackgroundpicture{closed-star.pdf}
+\begin{frame}
+\frametitle{Closure}
+\begin{definition}
+Let $S$ be a collection of simplexes in $K$.  \\
+The \textbf{closure} of $S$, \\
+\quad written as $\cl(S)$, \\
+is the smallest subcomplex of $K$ \\
+containing the simplexes in $S$.
+\end{definition}
+\end{frame}
+\clearbackgroundpicture
+
+\setbackgroundpicture{link.pdf}
+\begin{frame}
+\frametitle{Link}
+
+\begin{definition}
+Let $K$ be a complex, and $\sigma \in K$ a simplex.  \\
+The \textbf{link} of $\sigma \in K$, \\
+\quad written $\lk(\sigma,K)$, \\
+consists of those simplexes in $K$ which are in $\cl(\st(\sigma,K))$
+but not touching $\sigma$; in other words,
+$$
+\lk(\sigma,K) = \{ \tau \in \cl(\st(\sigma,K)) : \tau \cap \sigma =
+\varnothing \}.
+$$
+\end{definition}
+\end{frame}
+\clearbackgroundpicture
+
+\begin{frame}
+\frametitle{Stellar Subdivision} 
+
+\begin{definition}
+  Let $K$ be a complex, and $\sigma \in K$ a simplex.  \\
+  The \textbf{stellar subdivision} of $K$ at $\sigma$ is a new complex
+  $K_\sigma$ with:
+\begin{itemize}
+\item the vertices of $K$ with a new vertex $v$.
+\item the simplexes of $K$ not in $\st(\sigma,K)$,\\
+  along with the simplexes in $v \join (\boundary \sigma) \join \lk(\sigma,K)$.
+\end{itemize}
+We might say:
+$$
+K_\sigma := (K - \st(\sigma,K)) \cup (v \join (\boundary \sigma) \join
+\lk(\sigma,K))
+$$
+\end{definition}
+\end{frame}
+
+\begin{frame}
+\frametitle{subdivision = repeated stellar subdivision}
+
+\begin{definition}
+  Let $K, L$ be complexes.  \\
+  If $K$ can be produced through a (possibly
+  empty) sequence of stellar subdivisions of $L$, \\
+  we say that $K$ is a   \textbf{subdivision} of $L$, \\
+  and write $K \subdivided L$.
+\end{definition}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Piecewise linear maps}
+
+\begin{definition}
+  Let $K, K', L, L'$ be complexes, \\
+  \quad with $K' \subdivided K$ and $L' \subdivided L$.  \\
+  \vspace{1ex}
+  If $f : K' \to L'$ is a simplicial map, \\
+  we call $f : K \to L$ a \textbf{piecewise linear map} \\
+  \quad (or a \textbf{PL map} for short). \\
+  \vspace{1ex}
+  We call $f : K' \to L'$ an \textbf{underlying simplicial map}.
+  
+  \uncover<2>{\alert<2>{As we will see, the \textit{real} definition of
+      subdivision is more general than this.}}
+\end{definition}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setbackgroundpicture{problem02.pdf}
+\begin{frame}
+\vfill
+\begin{center}
+from the last \\
+\scalebox{4}{homework}
+\end{center}
+\vfill
+\end{frame}
+\clearbackgroundpicture
+
+\begin{frame}
+  \frametitle{Joins}
+
+  \begin{definition}
+Let $K$ and $L$ be complexes\\
+with disjoint sets of vertices\\
+\quad (we call such complexes \textbf{joinable}).\\
+Define a new complex, the \textbf{join} of $K$ and $L$, by 
+$$
+K \join L := \{ \sigma \cup \tau : \sigma \in K, \tau \in L \}.
+$$
+\end{definition}
+\pause
+
+\begin{problem}
+What is $S^0 \join S^0$?
+\end{problem}
+
+\pause
+\begin{problem}
+What is $S^n \join S^m$?
+\end{problem}
+
+\end{frame}
+
+\setbackgroundpicture{problem03.pdf}
+\begin{frame}
+\vfill
+\begin{center}
+on today's \\
+\scalebox{4}{homework} \\
+\includegraphics[width=0.5\textwidth]{genus-two-surface-with-curves.pdf}
+\end{center}
+\vfill
+\end{frame}
+\clearbackgroundpicture
+
+\begin{frame}
+\frametitle{PL Homeomorphism}
+\begin{definition}
+  A \textbf{piecewise linear homeomorphism} \\
+  \quad (a \textbf{PL homeomorphism} for short)\\
+  is a PL map $f : K \to L$ \\
+  with a PL inverse.
+\end{definition}
+
+\pause
+If there exists a homeomorphism between $A$ and $B$, \\
+then $A$ and $B$ are \textbf{homeomorphic}.  \\
+Write $A \cong B$ if $A$ and $B$ are homeomorphic.
+% \pause
+% \begin{problem}
+% Is this the same as having a PL map $f$ so that an underlying
+% simplicial map is an isomorphism?
+% \end{problem}
+
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{PL Manifold}
+  
+    A complex $M$ is an $n$-dimensional \textbf{PL manifold}\\
+    \quad(for short, an $n$-manifold)\\
+    if for every vertex $v$ of $M$, \\
+    $\lk(v,M)$ is PL homeomorphic to $S^{n-1}$.
+
+    \pause
+   \vfill
+
+   \begin{problem}
+     Is $S^2$ a manifold?
+   \end{problem}
+
+   \pause
+   \vfill
+
+   \begin{problem}
+     Is $T^2$ a manifold?
+   \end{problem}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Going back, rethinking everything\ldots}
+
+\begin{center}
+\scalebox{1.76}{Is there a PL homeomorphism} \\
+\scalebox{1.76}{between $S^2$ and $T^2$?}
+\end{center}
+\begin{center}
+\includegraphics[height=0.25\textheight]{torus.png} \raisebox{0.125\textheight}{$\cong$}
+\includegraphics[height=0.25\textheight]{sphere.png}\raisebox{0.125\textheight}{?}
+\end{center}
+\pause
+Check $\chi$ is unchanged after stellar subdivision \\
+(we must also check more general subdivisions!)
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Euler characteristic}
+
+$$
+K_\sigma := (K - \st(\sigma,K)) \cup (v \join (\boundary \sigma) \join
+\lk(\sigma,K))
+$$
+Need to check $\chi(K) = \chi(K_\sigma)$.
+
+%Invariants should respect $\cup$ and $\join$.
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Euler characteristic and join}
+
+\begin{align*}
+p_K(x) &= 1/x + k_0 + k_1 x + \cdots + k_n x^n \\
+\uncover<2->{p_L(x) &= 1/x + \ell_0 + \ell_1 x + \cdots + \ell_m x^m} \\
+\uncover<3->{p_{K \join L}(x) &= p_K(x) \cdot p_L(x) \cdot x}
+\end{align*}
+\uncover<4->{Since $\chi(K) = p_K(-1) + 1$,} \\
+\begin{align*}
+\uncover<5->{\chi(K \join L) &= p_{K \join L}(-1) + 1} \\
+\uncover<6->{&= \left( \chi(K) - 1 \right)\left( \chi(L) - 1 \right) \cdot \left(-1\right) + 1} \\
+\uncover<7->{&= \chi(K) + \chi(L) - \chi(K) \chi(L).}
+\end{align*}
+\end{frame}
+
+\begin{frame}
+\frametitle{More joins!}
+
+\begin{align*}
+\chi( K \join L \join M )
+\uncover<2->{&= \chi( K \join L ) + \chi(M) - \chi(K \join L) \chi(M)} \\
+\uncover<3->{&= \chi(K) + \chi(L) - \chi(K) \chi(L) + \chi(M) - \\
+& \quad\left( \chi(K) + \chi(L) - \chi(K) \chi(L) \right) \chi(M)} \\
+\uncover<4->{&= \chi(K) + \chi(L) + \chi(M) \\
+&\quad- \chi(K) \chi(L) - \chi(K) \chi(M) - \chi(L) \chi(M) \\
+&\quad+\chi(K) \chi(L) \chi(M)} \\
+\end{align*}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Euler characteristic and union}
+  
+\vfill
+The usual inclusion-exclusion business gives
+$$
+\chi(K \cup L) = \chi(K) + \chi(L) - \chi(K \cap L)
+$$
+\vfill
+\end{frame}
+
+\begin{frame}
+  \frametitle{Euler characteristic}
+
+$\chi(K_\sigma)$
+\begin{align*}
+\uncover<2->{&= \chi \left( (K - \st(\sigma,K)) \cup (v \join (\boundary \sigma) \join
+\lk(\sigma,K)) \right)} \\
+\uncover<3->{&= \chi \left( K - \st(\sigma,K) \right) \\
+&\quad+ \chi\left( v \join (\boundary \sigma) \join
+\lk(\sigma,K) \right) \\
+&\quad- \chi\left( \lk(\sigma,K) \right)} \\
+\uncover<4->{&= \chi \left( K - \st(\sigma,K) \right) + \chi\left( v \join
+ (\boundary \sigma) \right) \\
+&\quad- 
+\chi\left( v \join (\boundary \sigma) \right) \cdot \chi\left( \lk(\sigma,K) \right)} \\
+\uncover<5->{&= \chi \left( K - \st(\sigma,K) \right) + 1 - \chi\left( \lk(\sigma,K) \right)} \\
+\uncover<6->{&= \chi \left( K - \st(\sigma,K) \right) + \chi(\cl(\st(\sigma,K))) - \chi\left( \lk(\sigma,K) \right)} \\
+&= \chi(K).
+\end{align*}
+
+\end{frame}
+
+
+\begin{frame}
+\begin{pgfpicture}{0in}{0in}{\textwidth}{\textheight}
+\pgfsetxvec{\pgfpoint{\textwidth}{0cm}}
+\pgfsetyvec{\pgfpoint{0cm}{\textheight}}
+
+\only<1->{\pgfputat{\pgfxy(0.2,0.75)}{\pgfbox[center,center]{\scalebox{1}{\Huge\textcolor{green!50!black}{Upshot}}}}}
+\only<3->{\pgfputat{\pgfxy(0.2,0.25)}{\pgfbox[center,center]{\scalebox{1}{\Huge\textcolor{green!50!black}{Haiku}}}}}
+
+\only<4->{\pgfputat{\pgfxy(0.75,0.25)}{\pgfbox[center,center]{\parbox{0.75\textwidth}{\begin{center}
+The sphere and torus, \\
+what with their differing $\chi$, \\
+are not the same space.
+\end{center}
+}}}}
+
+\only<2->{\pgfputat{\pgfxy(0.75,0.75)}{\pgfbox[center,center]{\parbox{0.75\textwidth}{\begin{center}
+$\chi(S^2) = 2$ but $\chi(T^2) = 0$, \\ 
+and $\chi$ is a PL homeo invariant, \\ 
+so $S^2 \not\cong T^2$. 
+\end{center}
+}}}}
+\end{pgfpicture}
+\end{frame}
+
+\begin{frame}
+  \frametitle{The torus versus the Klein bottle}
+
+Since $\chi(T^2) = \chi(K) = 0$, \\
+\pause
+and \ldots  um \ldots
+
+\vfill
+\pause
+$\chi$ is not a complete invariant.
+
+\vfill
+
+\end{frame}
+
+\begin{frame}
+\vfill
+\vfill
+\begin{center}
+\scalebox{15}{$\chi$} \\
+\vfill
+Let's think about Euler characteristic
+\end{center}
+\vfill
+\vfill
+\end{frame}
+
+\setbackgroundpicture{AdhesivesForHouseUse004.jpg}
+\begin{frame}
+  \begin{center}
+\scalebox{9}{$\cup$} \\
+union
+\end{center}
+\vfill
+\begin{center}
+\scalebox{1.25}{$\chi(K \cup L) = \chi(K) + \chi(L) - \chi(K \cap L)$}
+\end{center}
+\vfill
+\end{frame}
+
+\clearbackgroundpicture{}
+
+\begin{frame}
+  \frametitle{A new invariant}
+
+  We want a new invariant. \\
+  Call it $F$.
+  \pause
+  
+  Since $I \cong V$, we must have $F(I) = F(V)$.
+  \pause
+
+  If our invariant is additive, we should have
+  $$
+  F(V) = F(I) + F(I) - F(\mbox{point}).
+  $$
+  \pause
+
+  So $F(I) = F(\mbox{point})$.
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{A new invariant}
+
+  Since $\Delta^2 \cup_I \Delta^2 \cong \Delta^2$, \\
+  we must have $F(\Delta^2 \cup_I \Delta^2 ) = F(\Delta^2)$.
+  \pause
+
+  If our invariant is additive, we should have
+  $$
+  F(\Delta^2 \cup_I \Delta^2) = F(\Delta^2) + F(\Delta^2) - F(I).
+  $$
+  \pause
+
+  So $F(\Delta^2) = F(I)$. \\
+  \pause
+
+  Similarly, $F(\Delta^n) = F(I)$.
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{A \textcolor{red!50!black}{``new''} invariant}
+
+  Congratulations!  \pause You have invented $F$, \pause\\
+  a rescaled version of the Euler characteristic.
+  \pause
+  \vfill
+  \begin{theorem}
+    An additive topological invariant is, \\
+    up to rescaling, \\
+    the Euler characteristic.
+  \end{theorem}
+  \pause
+  \vfill
+
+  New invariants cannot be precisely additive.
+
+  \vfill
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Connected components}
+
+Define $b_0(K)$ to be the \\
+number of connected components of $K$.
+
+\vfill
+\pause
+Vertices $v, w$ of $K$ belong to the same component \\
+if there exists a PL map $f : I \to K$ \\
+so that $f(0) = v$ and $f(1) = w$.
+
+\vfill
+\pause
+
+\begin{problem}
+Is ``belong to the same component'' \\
+an equivalence relation \\
+on the vertices of $K$?
+\end{problem}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Connected components}
+\only<1>{\includegraphics[height=0.8\textheight]{components-1.png}}%
+\only<2>{\includegraphics[height=0.8\textheight]{components-2.png}}%
+\only<3>{\includegraphics[height=0.8\textheight]{components-3.png}}%
+\only<4>{\includegraphics[height=0.8\textheight]{components-4.png}}%
+$$
+\mbox{\textcolor{red!50!black}{three}}
+\uncover<2->{+ \mbox{\textcolor{blue!50!black}{one}}}
+\uncover<3->{- \mbox{\textcolor{green!50!black}{three}}}
+\uncover<4->{= \mbox{\textcolor{magenta!50!black}{one}}}
+$$
+\end{frame}
+
+\begin{frame}
+\vfill
+$$
+b_0(K \cup L) = b_0(K) + b_0(L) - b_0(K \cap L)?
+$$
+\vfill
+\end{frame}
+
+\begin{frame}
+\frametitle{Connected components}
+\only<1>{\includegraphics[height=0.8\textheight]{two-components-1.png}}%
+\only<2>{\includegraphics[height=0.8\textheight]{two-components-2.png}}%
+\only<3>{\includegraphics[height=0.8\textheight]{two-components-3.png}}%
+\only<4>{\includegraphics[height=0.8\textheight]{two-components-4.png}}%
+$$
+\mbox{\textcolor{red!50!black}{four}}
+\uncover<2->{+ \mbox{\textcolor{blue!50!black}{two}}}
+\uncover<3->{- \mbox{\textcolor{green!50!black}{four}}}
+\uncover<4->{= \mbox{\textcolor{magenta!50!black}{two}}}
+$$
+\end{frame}
+
+\begin{frame}
+\frametitle{Connected components}
+\only<1>{\includegraphics[height=0.8\textheight]{circle-components-1.png}}%
+\only<2>{\includegraphics[height=0.8\textheight]{circle-components-2.png}}%
+\only<3>{\includegraphics[height=0.8\textheight]{circle-components-3.png}}%
+\only<4>{\includegraphics[height=0.8\textheight]{circle-components-4.png}}%
+$$
+\mbox{\textcolor{red!50!black}{four}}
+\uncover<2->{+ \mbox{\textcolor{blue!50!black}{four}}}
+\uncover<3->{- \mbox{\textcolor{green!50!black}{eight}}}
+\uncover<4->{= \mbox{zero} \neq \mbox{\textcolor{magenta!50!black}{one}}}
+$$
+\end{frame}
+
+\begin{frame}
+
+  We will invent new invariants. \\
+  These invariants will not \textit{quite} be additive. \\
+  The failure of additivity gives a new invariant, \\
+  \quad itself not quite additive. \\
+  The failure will be captured by a deeper invariant, \\
+  \quad itself not quite additive. \\
+  The failure will be captured by \ldots
+
+  \vfill
+
+  This is \textbf{homology}.
+ 
+\end{frame}
+
+\begin{frame}
+\frametitle{The end of the beginning}
+
+What's next?
+\begin{itemize}
+\item manifolds
+\item simplicial collapse
+\item simple homotopy equivalence
+\item knots
+\item unknotting theorems
+\item return to (co)homology
+\end{itemize}
+
+\end{frame}
+
+% for instance, try to define H_0...
+% H_1(A cup B) -> H_0(A cap B) -> H_0(A) + H_0(B) -> H_0(A cup B) -> 0
+
+\end{document}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

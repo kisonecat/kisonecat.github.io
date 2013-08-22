@@ -1,0 +1,11 @@
+Short Paper Instructions
+Autumn 2010
+
+Math 345
+Jim Fowler
+
+Right before you take the ﬁnal exam, you can turn in a short paper on a mathematical topic. This is worth 360 points. The paper should be at least two pages long. As is usually the case, writing your paper will require ﬁrst reading other sources. You should cite sources that you use. The paper should discuss a topic that we didn’t cover in the course. Since a couple pages might not be enough to prove a theorem, you could instead describe a mathematical object, give some examples, and state a theorem. Here are some possible topics: • Apollonian gasket • Arrow’s impossibility theorem • Banach-Tarski paradox • Bernoulli numbers • Bezout’s theorem • Braid group • Buﬀon’s needle problem • Busy Beaver function • Cantor set • Cardinal arithmetic • Catalan numbers • Category theory • Cayley graphs • Chebyshev polynomials • Computable functions • Conﬁguration spaces • Curves on surfaces • Desargues’ theorem • Elliptic curves • Equidecomposability • Error correcting codes • Euler characteristic • Fermat’s little theorem • Finite ﬁelds • Gödel’s theorem incompleteness • Origami • Pappus’ theorem • Pascal’s mystic hexagon • Planar graphs • Polyhedra • Primality testing • Prime number theorem • Projective geometry • Public-key cryptography • Quadratic reciprocity • Quaternions • Ramsey theory • Random walks • Reﬂections in sides of triangle • Sperner’s lemma • Stable marriage problem • Sums of two squares • Surfaces • Möbius strip • Napoleon’s theorem • Non-Euclidean geometry • Nonabelian groups • Ordinals • Symmetries of platonic solids • Three utilities problem • Tilings of the plane • Voting theory
+
+• Game of Nim • Game theory • Generating functions • Geometric group theory • Graph colorings • Graph theory • Graphs on surfaces • Hyperbolic plane • ISBN codes • Inversive geomtery • Klein bottle • Knot theory • Latin squares • Linkages
+
+

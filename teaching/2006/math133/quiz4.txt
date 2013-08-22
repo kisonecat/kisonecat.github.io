@@ -1,0 +1,72 @@
+Math 133 Section 22 Due Monday, May 8
+For each of the following series, determine whether or not the series converges. Be sure to mention which test you are using, and to describe how you applied the test. Problem 1. (1 point).
+∞
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+Problem 6. (2 points).
+∞
+
+n=1
+
+1 n2
+
+n=1
+
+n+2 2n + 3
+
+Problem 2. (1 point).
+∞
+
+n=1
+
+n·
+
+1 √
+
+Problem 7. (2 points). n
+∞
+
+Problem 3. (1 point).
+∞
+
+n=1
+
+4n + n n!
+
+n=1
+
+1 . n · (n + 1) Problem 8. (2 points).
+∞
+
+Problem 4. (2 points).
+∞
+
+n=1
+
+1 . 2 + sin2 n
+
+n=1
+
+n 1 + n · 2n
+
+Problem 5. (2 points).
+∞
+
+Problem 9. (2 points).
+∞
+
+n=3
+
+2n + 17 n2 − 5
+
+n=1
+
+n! n15
+
+c 2008 Jim Fowler
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Take-Home Quiz 4
+
+

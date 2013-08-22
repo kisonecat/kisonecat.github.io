@@ -1,0 +1,49 @@
+Problem Set 3 (§3.2.3–3.3.5)
+Due Monday, July 11, 2011
+
+Math 660
+Jim Fowler
+
+As they say, mathematics is not a spectator sport. Stay involved by doing the homework. Have fun trying to craft your own problems!
+
+Show Work
+When you “solve” a problem, the goal is not merely to give a correct answer! Each problem has a story, and you should tell the story by clearly explaining your argument.
+
+Problem 1
+Page 72, problem 3 in Ahlfors’ Complex Analysis.
+
+Problem 2
+Page 72, problem 1 in Ahlfors’ Complex Analysis.
+
+Problem 3
+Page 78, problem 4 in Ahlfors’ Complex Analysis.
+
+Problem 4
+Page 78, problem 3 in Ahlfors’ Complex Analysis.
+
+Problem 5
+Page 80, problem 4 in Ahlfors’ Complex Analysis.
+
+Problem 6
+Page 83, problem 8 in Ahlfors’ Complex Analysis.
+
+Problem 7
+Page 83, problem 5 in Ahlfors’ Complex Analysis.
+
+Problem 8
+Page 83, problem 6 in Ahlfors’ Complex Analysis.
+
+Problem 9
+Let k ≥ 3 be an integer. Let 0 ≤ ≤ k be an integer. Prove that it is possible to deﬁne a branch f (z) of the function z
+k−1 k
+
+(z − 1) k
+
+1
+
+deﬁned on the z-plane minus the real closed interval [0, 1]. Suppose the value of f (z) k−1 2πi at z = 2 is equal to e k 2 k . Find the value of f (z) at i.
+
+Problem 10
+Page 83, problem 4 in Ahlfors’ Complex Analysis.
+
+

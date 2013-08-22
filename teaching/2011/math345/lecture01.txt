@@ -1,0 +1,44 @@
+Lecture 1: Propositional calculus
+Wednesday, September 22, 2010
+
+Math 345
+Jim Fowler
+
+Go through names Syllabus
+Inspirational message about the history of mathematics.
+
+Textbook
+This lecture discusses section 2 of the textbook.
+
+Homework
+The homework is due Monday, September 27, 2010. From Section 2 of the textbook, do exercises 1, 2, and 5.
+
+Logic
+Assign truth values to sentences not all sentences have a truth value
+
+Propositional calculus
+assign truth values to compound sentences, based on truth values of simpler sentences
+
+Symbols
+¬ ∧ ∨ ⇒ ⇔
+
+1
+
+Not
+double negation logical equivalence (denoted by ≡, which is not a symbol of the propositional calculus)
+
+Conjunction ∧
+make truth table
+
+Disjunction ∨
+make truth table compare this to English
+
+DeMorgan’s laws
+¬(P ∧ Q) ≡ ¬P ∨ ¬Q ¬(P ∨ Q) ≡ ¬P ∧ ¬Q Proof via truth table proof via words which is better?
+
+Distributive laws
+P ∧ (Q ∨ R) ≡ (P ∧ Q) ∨ (P ∧ R) P ∨ (Q ∧ R) ≡ (P ∨ Q) ∧ (P ∨ R)
+
+2
+
+

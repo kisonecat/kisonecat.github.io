@@ -1,0 +1,17 @@
+\item Taylor's theorem,
+\item Lagrange's theorem.
+
+%\item the root test,
+%\item the integral test.
+
+find limits
+\item find limit by algebraic manipulation,
+
+\item Use the Taylor series to find the values of derivatives of the function.
+
+\item Given an alternating series, find an approximate value and estimate the error.
+\item Given a Taylor series, find an approximate value and estimate the error.
+
+\item Evaluate improper integrals,
+\item Compute $\int \sin(ax) \, \cos(bx) \, dx$ by using integration by parts,
+\item Solve homogeneous second-order linear differential equations by factoring the derivative.

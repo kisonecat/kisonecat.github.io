@@ -1,0 +1,35 @@
+Lecture 12: Iterated integrals
+Math 195 Section 91 Friday July 17, 2009
+16.3, 16.4 16.5, 16.6
+
+1
+
+polar coordinates (16.4)
+
+reminder about polar coordinates shape of “polar rectangle” area of “polar rectangle” example: ﬁnd the volume bounded by the plane z = 0 and the paraboloid z = 1 − x2 + y 2 example: ﬁnd the volume of a sphere.
+
+2
+
+applications? (16.5)
+
+imagine an “applied literature” course, or an “applied art” course. average value center of mass
+
+3
+
+triple integrals (16.6)
+
+deﬁnition “rectangles” in R3 . fubini still works example: integrate a polynomial over a box example: integrate the “1” function over the tetrahedron
+
+4
+
+cylindrical coordinates (16.7)
+
+a combination of polar and cartesian coordinates x = r cos θ, y = r sin θ and z = z. draw a picture
+
+1
+
+volume of a cylinder ﬁnd the volume of the solid that lies within both the cylidner x2 + y 2 = 1 and the sphere x2 + y 2 + z 2 = 4.
+
+2
+
+

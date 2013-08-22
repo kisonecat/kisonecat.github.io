@@ -1,0 +1,18 @@
+Lecture 13: Integrals and coordinate systems
+Math 195 Section 91 Monday July 20, 2009
+
+1
+
+spherical coordinates (16.8)
+
+x = ρ sin ϕ cos θ, y = ρ sin ϕ sin θ, z = ρ cos ϕ. dV = ρ2 sin ϕdρdϕdθ.
+
+2
+
+chain of variables (16.9)
+
+examples: cylindrical, spherical, polar coordinates “transformations” and images, injective (1 to 1), bijective, etc. assume the “transformations” to be C 1 . inverse transformations Jacobian matrix triple integrals (three-by-three determinants)
+
+1
+
+

@@ -1,0 +1,59 @@
+\documentclass[12pt]{handout}
+
+\title{Lecture 7: Bound variables}
+\author{Jim Fowler}
+\course{Math 345}
+\date{Monday, October  4, 2010}
+
+
+
+\begin{document}
+\maketitle
+
+\section*{Textbook}
+
+This lecture discusses section 3 of the textbook.
+
+\section*{Homework} 
+
+The homework is due Wednesday, October  6, 2010.
+
+From Section 3 of the textbook, do exercises 2, 4, and 7.
+
+\section*{Have some people come up and present solutions to homework from before}
+
+\section*{Bound and free variables}
+
+In the statement $P(x)$, the variable $x$ is free.
+
+In the statement $\forall x \, P(x)$, the variable $x$ is bound.  In other words, ``$\forall x \, P(x)$'' is not a statement about $x$.
+
+Possible (but poor style) to use the same variable name for a bound variable and a free variable.
+
+The scope of a quantifier is the part of the proposition it applies to.
+
+\section*{Example}
+
+For all integers $x$, $x$ is even or odd.
+
+(For all integers $x$, $x$ is even) or (For all integers $x$, $x$ is odd).
+
+\section*{Nested quantifiers}
+
+Does the order of quantifiers matter?
+
+$P(x,y)$ means ``$x$ wants to date $y$.''
+
+Then, $\exists y \forall x P(y,x)$ means there is someone who wants to date everybody.
+
+Then, $\forall x \exists y P(y,x)$ means everybody has someone interested in them.
+
+These are different.
+
+How does $\forall x \exists y$ differ from $\exists y \forall x$?  The latter implies the former.
+
+\section*{Algebraic example}
+
+think about sum and products
+
+\end{document}

@@ -1,0 +1,90 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+\newtheorem*{example}{Example}
+\newtheorem*{thm}{Theorem}
+
+\title{Lecture 14: Root and ratio tests}
+\author{Math 153 Section 57}
+\date{Wednesday October 29, 2008}
+
+\begin{document}
+\maketitle
+
+Following chapter 12.4.
+
+\subsection*{Ratio Test}
+
+This is a test I do like, and it is easy to apply!
+
+If $a_n > 0$, and $\lim a_{n+1}/a_n = L$, then if $L < 1$, $\sum a_n$
+converges, if $L > 1$, then $\sum a_n$ diverges, and if $L = 1$, the
+test is inconclusive.
+
+Proof: If $L < 1$, choose $\epsilon$ so small that $L + \epsilon < 1$.  Then there exists $K$ so that for $n \geq K$, we have $| a_{n+1}/a_n - L | < \epsilon$.  In other words, $a_{n+1} / a_n < L + \epsilon < 1$.
+
+So $a_{n+1} < (L + \epsilon) \cdot a_n$.  Therefore, $a_{n+k} < (L +
+\epsilon)^n {a_k}$.  But $\sum (L + \epsilon)^n a_k$ converges, and
+therefore, by comparison, so does $\sum_{n=k}^\infty a_n$.
+
+\subsection{Best use of the ratio test}
+
+We know that $\sum 1/n!$ converges, because for $n$ large
+$$
+\frac{1}{n!} < \frac{1}{n \cdot (n-1)} < \frac{1}{(n-1)^2}
+$$
+But we can also check this using the ratio test.
+
+Set $a_n = 1/n!$.  Then $a_{n+1}/a_n = 1/(n+1)$ which converges to
+zero, and we are done.
+
+What do we know about $\sum 1/n!$?  It equals $e$.  We'll see that soon.
+
+Anti-example: $\sum n^{n}/n!$.  But we already knew that since $\lim n^{n}/n! = \infty$.
+
+Example: $\sum n^{n/2}/n!$.  Apply ratio test:
+$$
+\frac{\sqrt{(n+1)^{n+1}}}{(n+1)!} \cdot \frac{n!}{\sqrt{n^n}} =
+\frac{\sqrt{n+1} \cdot \sqrt{(\frac{n+1}{n})^n}}{n+1} = 
+\frac{\sqrt{(\frac{n+1}{n})^n}}{\sqrt{n+1}}
+$$
+which converges.
+
+\subsection{Bad uses of the ratio test}
+
+example: $\sum 1/(3n + 17)$.
+
+\subsection{Sometuimes we have a parameter}
+
+\subsection*{Which test to apply?}
+
+$\lim a_n = 0$ is always a good thing to check!
+
+Integral test is good for things you can integrate.
+
+Root test is really only good for things with a powers of $n$.
+
+Limit comparison takes care of all rational functions (i.e., polynomial
+over polynomial).
+
+Ratio test is good for factorials.
+
+\subsection*{Absolute and conditional convergence}
+
+Sometimes series have both positive and negative terms.
+
+Theorem: If $\sum |a_n|$ converges, then $\sum a_n$ converges.
+
+Proof: If $\sum |a_n|$, then $\sum 2|a_n|$ conv, then $\sum a_n + |a_n|$ conv, so $\sum a_n = \sum (a_n + |a_n|) - \sum |a_n|$ conv.
+
+The proof doesn't work backwards!
+
+Definition: $\sum a_n$ is absolutely convergent if $\sum |a_n|$ conv.
+
+Absolute convergence implies convergence, but it is not the same.
+
+Example: alternating series.
+
+\end{document}

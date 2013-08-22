@@ -1,0 +1,39 @@
+Math 195 Section 91 Wednesday July 1, 2009
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+What will the exam be like?
+There will be 11 questions on the exam and it will last 60 minutes. It will be worth 225 points. The last question will be extra credit with true/false questions. I think these are fun; I will ask you to agree and disagree with mathematical statements.
+
+Can I use my calculator?
+Calculators are forbidden; I will write the exam in such a way that calculators will not be necessary.
+
+How should I write down my answers?
+You are not giving answers: you are giving an explanation. For full credit, justify your arguments by showing the steps you took: if the central issue in the problem is that the derivative of the sum is the sum of the derivatives, you should be sure to point that out. Style matters is important: do not surround an otherwise convincing argument with false statements. Do not use an “=” between two expressions unless they are, in fact, equal. Do not under any circumstances divide by zero during the exam.
+
+What might I have to do on this exam?
+I could ask you about anything we have covered thus far, and that covers a lot of mathematics! • Sketch a graph of a curve by ﬁnding a few points and diﬀerentiating. • Find the slope of a tangent line to a curve given in terms of a parameter. • Find the arc length of a curve. • Convert polar coordinates to cartesian coordinates. • Find the slope of a tangent line to a
+
+c 2009 Jim Fowler
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Midterm 1: Frequently Asked Questions
+
+curve given in polar coordinates. • Find distance between points in R2 , R3 , and Rn . • Given an equation for a sphere, ﬁnd its center and radius. • Write vectors as a linear combination of other vectors. • Give a geometric interpretation of adding, subtracting, and scaling vectors. • Compute the dot product of two vectors. • Perform algebra with the dot product. • Interpret the dot product geometrically. • Normalize a vector (so that it has unit length). • Find the length of a vector. • Determine whether vectors are orthogonal. • Find the angle between two vectors.
+
+• Compute the cross product of two vectors in R3 .
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+• Interpret the cross product as the area of a parallelogram. • Find an equation for a line through a given point and in a given direction. • Find an equation for a plane through a given point and with a given normal vector. • Determine whether two lines intersect, are parallel, or are skew. • Find the point of intersection between a line and a plane. • Sketch the graph of a vector-valued function. • Diﬀerentiate and valued functions. integrate vectorThis work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+• Caclulate unit tangent vectors to a curve. • Find the angle of intersection between curves.
+
+Can you give me a hint?
+Here is a hint: I will not ask you to sketch any graphs on this exam (sketching a graph takes a long time!), but I will ask you to identify the graph of a function from among a collection of graphs.
+
+What trigonometric formulas should I memorize?
+You will not need to memorize any trigonometric formulas; you should know, however, that d sin x = cos x, dx and that sin2 x + cos2 x = 1. d cos x = − cos x, dx
+
+c 2009 Jim Fowler
+
+

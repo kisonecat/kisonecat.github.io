@@ -1,0 +1,77 @@
+Lecture 16: Taylor series
+Math 153 Section 57 Monday November 3, 2008
+Following chapter 12.6.
+
+0.1
+
+Administrative stuﬀ
+
+Many thanks to those who ﬁlled out an online anonymous survey; very helpful! I especially noticed a consensus on doing trickier problems during lecture.
+
+0.2
+
+Recall
+
+Series are not piles of numbers that we add up—they are lists of numbers that we add up, in order.
+
+0.3
+
+Overview
+
+We have paid a high price (limits, series) and now we reap the rewards (Taylor series).
+
+0.4
+
+Taylor series
+
+Goal: approximate ex (really, any function) by a polynomial. p0 (x) = 1 is a good approximation (gets the value correct at 0). p1 (x) = 1 + x is better approximation (gets the value and ﬁrst derivative correct at 0). p2 (x) = 1 + x + x2 /2 is yet better approximation (gets the value and ﬁrst and second derivative correct at 0). p3 (x) = 1 + x + x2 /2 + x3 /6 is even yet a better approximation (gets the value and ﬁrst and second and third derivative correct at 0). n General pattern: pk (x) = k x . n=0 n! Very generally: k f (n) (0) xn pk (x) = n! n=0
+
+1
+
+0.5
+
+Is this useful?
+
+Approximations are useless without error estimates. People often say π ≈ 3.14, but without knowing how good or bad an approximation this is, it is useless. I could just as well say π ≈ 5.
+
+0.6
+
+Theorem
+1 Rn (x) = n!
+x
+
+If f (x) : (−a, a) → R, with n + 1 cts derivatives, then f (x) = pn (x) + Rn (x), where f (n+1) (t) (x − t)n dt
+0
+
+This is the exact error term—and if we know the error exactly, it isn’t much of an error—if we could calculate Rn (x) we could calculate the function.
+
+0.7
+
+Bounding the remainder
+Rn (x) = f (n+1) (c) n+1 x (n + 1)!
+
+Lagrange’s theorem:
+
+where c is some number between 0 and x.
+
+0.8
+
+Remainder vanishes for large n
+
+For instance, for f (x) = ex , the remainder looks like ec · xn+1 /(n + 1)!, which goes to zero. Consequence: ex = ∞ xn /n! for all x. n=0
+
+0.9
+
+Other functions
+
+We can ﬁnd series for sin x and cos x—and these series converge to the corresponding function for all x.
+
+0.10
+
+Horrible truth
+
+For any smooth function, we can write down a Taylor series—but we can’t be sure that it will converge unless we can show that the remainder term gets small. Example: f (x) = 1/(1 − x).
+
+2
+
+

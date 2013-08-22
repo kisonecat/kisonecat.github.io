@@ -1,0 +1,59 @@
+\documentclass[12pt]{pset}
+
+\course{Math 758}
+\author{Jim Fowler}
+\date{Spring 2012}
+
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\CP}{\mathbb{C}P}
+\newcommand{\RP}{\mathbb{R}P}
+
+\usepackage{enumerate}
+\usepackage{nopageno}
+\usepackage{hyperref}
+
+\begin{document}
+\maketitle
+
+\noindent\textit{The exercises below should be handed in on Monday.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Surfaces]
+Let $\Sigma_g$ be the closed surface of genus~$g$; compute the ring structure on $H^\star(\Sigma_g)$.
+\end{problem}
+
+\begin{problem}[Surface automorphisms]
+  A homeomorphism $f : \Sigma_g \to \Sigma_g$ induces a map $f^\star :
+  H^1(\Sigma_g) \to H^1(\Sigma_g)$; can every automorphism of the
+  abelian groups $H^1(\Sigma_g)$ be realized as $f^\star$ for some
+  homeomorphism $f$?
+\end{problem}
+
+\begin{problem}[Not a wedge]
+  Show that $\CP^2 \not\simeq S^4 \vee S^2$ by using cup products.
+\end{problem}
+
+\begin{problem}[Hatcher page 229, problem 4]
+  Use the Lefschetz fixed point theorem (did you do this last
+  quarter?) to show that every map $f : \CP^n \to \CP^n$ has a fixed
+  point if $n$ is even, using the fact that $f^\star$ is a ring
+  isomorphism; when $n$ is odd, show that there is a fixed point
+  unless $f^\star(\alpha) = -\alpha$ for $\alpha$ a generator of
+  $H^2(\CP^n)$.
+\end{problem}
+
+\begin{problem}[Hatcher page 229 problem 6]
+  Use cup products to compute the map $f^\star : H^\star(\CP^n) \to
+  H^\star(\CP^n)$ induced by the map $f : \CP^n \to \CP^n$ which is
+  the quotient of the map $\CC^{n+1} \to \CC^{n+1}$ given by raising
+  each coordinate to the $d$th power.
+\end{problem}
+
+\begin{problem}[Suspension kills cup products]
+  Let $\Sigma X$ be the suspension of $X$ (recall this is the union of
+  two cones on $X$ glued together along $X$); for $\alpha \in
+  H^a(\Sigma X)$ and $\beta \in H^b(\Sigma X)$, show that $a \smile b$
+  vanishes.
+\end{problem}
+
+\end{document}

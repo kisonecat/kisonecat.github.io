@@ -1,0 +1,358 @@
+\documentclass[14pt]{beamer}
+
+\setbeamertemplate{navigation symbols}{}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+%\newtheorem*{problem}{Problem}
+\usepackage{amssymb}
+\newcommand{\N}{\mathbb{N}}
+
+\newcommand{\boundary}{\partial}
+\newcommand{\collapses}{\searrow}
+\newcommand{\expands}{\nearrow}
+\newcommand{\she}{\ssearrow\nnearrow}
+\newcommand{\join}{\ast}
+\newcommand{\subdivided}{\triangleleft}
+
+\DeclareMathOperator{\st}{st}
+\DeclareMathOperator{\vertices}{vert}
+\DeclareMathOperator{\lk}{lk}
+\DeclareMathOperator{\cl}{cl}
+\DeclareMathOperator{\interior}{int}
+
+\title{Topology of  \\ Piecewise-Linear Manifolds}
+\author{Jim Fowler}
+\date{Lecture 2 \\ Summer 2010}
+
+\begin{document}
+
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}
+\frametitle{Goal}
+
+\begin{center}
+\scalebox{4}{Definitions?}
+\end{center}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\begin{center}
+\vspace{-1ex}
+\includegraphics[height=\textheight]{Stereographic_polytope_8cell.png}
+\end{center}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\begin{center}
+\includegraphics[height=\textheight]{Stereographic_polytope_5cell.png}
+\end{center}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  A \textbf{simplicial complex} $K$ is \\
+  a collection of finite sets (called the ``simplexes''), \\
+  with the property that \\
+  \begin{center}
+  if $\sigma \in K$, and $\tau \subset \sigma$, \quad then $\tau \in K$.
+  \end{center}
+
+  \vfill
+  \pause
+  
+  This definition is pure combinatorics, \\
+  but we will think of this as a geometric object.
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Examples}
+
+\begin{align*}
+\vspace{1ex}\uncover<2->{I} &= \left\{ \varnothing, \{0\}, \{1\}, \{0,1\} \right\} \\
+\vspace{1ex}\uncover<4->{S^0} &\uncover<3->{= \left\{ \varnothing, \{0\}, \{1\} \right\}} \\
+\vspace{1ex}\uncover<6->{S^1} &\uncover<5->{= \left\{ \varnothing, \{a\}, \{b\}, \{c\}, \{a,b\},\{b,c\},\{a,c\} \right\}} \\
+\vspace{1ex}\uncover<8->{V} &\uncover<7->{= \left\{ \varnothing, \{a\}, \{b\}, \{c\}, \{a,b\},\{b,c\} \right\}}
+\end{align*}
+\uncover<9->{Shouldn't $V \cong I$?}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Non-examples}
+
+\pause
+$$ \left\{ \varnothing, \{0\}, \{0,1\} \right\} $$
+
+\pause
+$$ \left\{ \{0\}, \{1\}, \{0,1\} \right\} $$
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Examples}
+
+The $n$-simplex $\Delta^n$ is a complex: label the $n+1$ vertices of $\Delta^n$ using the set $V = \{ 0, 1, 2, \ldots, n \}$, then the simplexes of $\Delta^n$ are all $2^{n+1}$ subsets of $V$.
+
+\vfill
+
+The $n$-sphere $S^n$ consists of all simplexes in $\Delta^n$, except for the top dimensional simplex $\{0,1,\ldots,n\}$.
+
+\vfill
+\pause
+
+\begin{problem}
+Calculate $\chi(S^n)$.
+\end{problem}
+
+\vfill
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Simplicial Maps}
+  A \textbf{simplicial map} $f : K \to L$ is a function $f : \vertices(K) \to \vertices(L)$ so that, \\
+  whenever $\sigma \in K$, then $f(\sigma) \in L$.
+
+  \vspace{1ex}
+  \pause
+  This can crush simplexes \pause (e.g., a trivial example?)
+  \pause
+
+  \begin{problem}
+    Find a simplicial map $f : T^2 \to S^2$ which doesn't crush any edges (i.e., edges are sent to edges, not to vertices).
+  \end{problem}
+  \pause
+  Think ``4-color the vertices of $T^2$.''
+\end{frame}
+
+\begin{frame}
+\frametitle{Conversely\ldots}
+
+\begin{problem}
+  Find a simplicial map $f : S^2 \to T^2$ which doesn't crush any edges.
+\end{problem}
+\pause
+Think ``Skewer and fold.''
+
+\end{frame}
+
+\begin{frame}
+\begin{problem}
+ Do there exist simplicial maps $f : T^2 \to S^2$ and $g : S^2 \to T^2$ which are inverses of each other?
+\end{problem}
+
+\pause
+
+No.  \textbf{And why not?}
+
+\pause
+\begin{itemize}
+\item Euler characteristic.
+\pause\item Separation via curves.
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\begin{problem}
+  Suppose $f : S^1 \to S^2$ is an injective simplicial map (i.e.,
+  distinct vertices are sent to distinct vertices).  Does the image of
+  $f$ necessarily separate $S^2$ into two pieces?
+\end{problem}
+\pause
+\textbf{Yes.}\\
+\pause
+\textit{Proof}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+A problem with our definitions: we want to talk about $S^2$, but there are so many simplicial complexes which deserve to be called $S^2$.
+\vfill
+Our notion of simplicial complex is too rigid to be the right notion topologically.
+\vfill
+\begin{example}
+  Let $K$ be a circle with three arcs \\
+  and $L$ be a circle with four arcs \\
+  \quad(i.e., the boundary of a square). \\
+  Then $K$ and $L$ are not simplicially isomorphic.
+\end{example}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Fixing the theory}
+
+Need to define a few things first\ldots
+\begin{itemize}
+\item star
+\item closure
+\item link
+\item subdivision
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Star}
+
+\begin{definition}
+Let $K$ be a complex, and $\sigma \in K$ a simplex.\\
+The \textbf{star} of $\sigma$ in $K$, \\
+\quad written $\st(\sigma,K)$, \\
+is defined by
+$$
+\st(\sigma,K) = \{ \tau \in K : \sigma < \tau \},
+$$
+i.e., the star of $\sigma$ includes all the simplexes having $\sigma$
+as a face.
+\end{definition}
+\pause
+\begin{problem}
+Is the star of a simplex a complex?
+\end{problem}
+\end{frame}
+
+\begin{frame}
+\frametitle{Closure}
+\begin{definition}
+Let $S$ be a collection of simplexes in $K$.  \\
+The \textbf{closure} of $S$, \\
+\quad written as $\cl(S)$, \\
+is the smallest subcomplex of $K$ \\
+containing the simplexes in $S$.
+\end{definition}
+\pause
+\begin{problem}
+Relate $\cl(\cl(S))$ and $\cl(S)$.
+\end{problem}
+\end{frame}
+
+\begin{frame}
+\frametitle{Link}
+
+\begin{definition}
+Let $K$ be a complex, and $\sigma \in K$ a simplex.  \\
+The \textbf{link} of $\sigma \in K$, \\
+\quad written $\lk(\sigma,K)$, \\
+consists of those simplexes in $K$ which are in $\cl(\st(\sigma,K))$
+but not touching $\sigma$; in other words,
+$$
+\lk(\sigma,K) = \{ \tau \in \cl(\st(\sigma,K)) : \tau \cap \sigma =
+\varnothing \}.
+$$
+\end{definition}
+\pause
+\begin{problem}
+Is the link of a simplex a complex?
+\end{problem}
+\end{frame}
+
+\begin{frame}
+\begin{definition}
+  Let $K$ be a complex, and $\sigma \in K$ a simplex.  \\
+  The \textbf{stellar subdivision} of $K$ at $\sigma$ is a new complex
+  $K_\sigma$ with:
+\begin{itemize}
+\item the vertices of $K$ along with a brand new vertex $v$.
+\item the simplexes of $K$ not in $\st(\sigma,K)$, along with the
+  simplexes in $v \join (\boundary \sigma) \join \lk(\sigma,K)$.
+\end{itemize}
+We might say:
+$$
+K_\sigma := (K - \st(\sigma,K)) \cup (v \join (\boundary \sigma) \join
+\lk(\sigma,K))
+$$
+\end{definition}
+\pause
+\begin{problem}
+  Stellar subdivision of a complex is a complex?
+\end{problem}
+\end{frame}
+
+\begin{frame}
+\frametitle{subdivision = repeated stellar subdivision}
+
+\begin{definition}
+  Let $K, L$ be complexes.  \\
+  If $K$ can be produced through a (possibly
+  empty) sequence of stellar subdivisions of $L$, \\
+  we say that $K$ is a   \textbf{subdivision} of $L$, \\
+  and write $K \subdivided L$.
+\end{definition}
+
+\uncover<2>{\alert<2>{As we will see, the \textit{real} definition of
+  subdivision is more general than this.}}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Piecewise linear maps}
+
+\begin{definition}
+  Let $K, K', L, L'$ be complexes, with $K' \subdivided K$ and $L'
+  \subdivided L$.  \\
+  If $f : K' \to L'$ is a simplicial map, we call $f
+  : K \to L$ a \textbf{piecewise linear map} (or a \textbf{PL map}
+  for short).  We call $f : K' \to L'$ an \textbf{underlying
+    simplicial map}.
+\end{definition}
+
+\uncover<2>{\alert<2>{We write $f : K \to L$ for a PL map, but such a map
+does not send simplexes in $K$ to simplexes in $L$}}
+
+\uncover<3>{\alert<3>{The \textit{real} definition of PL map is more
+   general than this.}}
+
+\end{frame}
+
+% \begin{frame}
+% \frametitle{Homeomorphism}
+% \begin{definition}
+%   A \textbf{piecewise linear homeomorphism} \\
+%   \quad (a \textbf{PL homeomorphism} for short)\\
+%   is a PL map $f : K \to L$ for which the underlying
+%   simplicial map $f : K' \to L'$ is a simplicial isomorphism.
+% \end{definition}
+
+% If there exists a homeomorphism between $A$ and $B$, then we say that
+% $A$ and $B$ are \textbf{homeomorphic}.  We write $A \cong B$ if $A$
+% and $B$ are homeomorphic.
+% \pause
+% \begin{problem}
+% Is this the same as having a PL map with a PL inverse?
+% \end{problem}
+
+% \end{frame}
+
+\begin{frame}
+\frametitle{Going back, rethinking everything\ldots}
+
+\begin{center}
+\scalebox{2}{Are $S^2$ and $T^2$ the same?}
+\end{center}
+
+\pause
+We will check that $\chi$ is well-defined.
+\end{frame}
+
+
+\end{document}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

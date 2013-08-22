@@ -1,0 +1,29 @@
+Lecture 28: Functions
+Monday, November 15, 2010
+
+Math 345
+Jim Fowler
+
+Textbook
+This lecture discusses section 11 of the textbook.
+
+Homework
+The homework is due Wednesday, November 17, 2010. From Section 11 of the textbook, do exercises 4 and 5.
+
+Midterm results
+You should have received an email with your midterm. The average score on Midterm 2 was 1471/1800, with a standard deviation of 319. The median score on Midterm 2 was 1585/1800.
+
+power set functions
+not a rule, not an algorithm. when are two functions the same? domain range (the textbook uses range for what I would call image, so let’s go with “codomain”)
+
+examples
+identity function function with empty domain constant function
+
+1
+
+composition functions as input to other functions?
+the power set of X as the collection of functions X → 2.
+
+2
+
+

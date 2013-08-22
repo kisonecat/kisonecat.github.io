@@ -1,0 +1,57 @@
+\documentclass[12pt]{pset}
+
+\course{Math 758}
+\author{Jim Fowler}
+\date{Spring 2012}
+
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\CP}{\mathbb{C}P}
+\newcommand{\RP}{\mathbb{R}P}
+\DeclareMathOperator{\SO}{SO}
+
+\usepackage{enumerate}
+\usepackage{nopageno}
+\usepackage{hyperref}
+
+\begin{document}
+\maketitle
+
+This week's theme is $H$-spaces, spaces $X$ with a multiplication map
+$X \times X \to X$ and a two-sided ``homotopy'' identity.  \textit{The
+  exercises below should be handed in on Monday.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Hatcher exercise 2 page 291]
+Show that a retract of an $H$-space is an $H$-space if it contains the identity element.
+\end{problem}
+
+\begin{problem}[Hatcher exercise 5 page 291]
+Show that if $(X,e)$ is an $H$-space, then $\pi_1(X,e)$ is abelian.
+\end{problem}
+
+\begin{problem}[Hatcher exercise 7 page 291]
+What are the primitive elements of the Hopf alegebra $\Z_p[x]$ for $p$ prime?
+\end{problem}
+
+\begin{problem}[Hatcher exercise 10 page 291--292]
+  (This is a sort of \textbf{fundamental theorem of algebra} for
+  quaternions.)  Let $X$ be a path-connected $H$-space with
+  $H^\star(X;R)$ free and finitely generated in each dimension.  For
+  maps $f, g : X \to X$, the product $fg : X \to X$ is defined by
+  $(fg)(x) = f(x)\, g(x)$ using the $H$-space product.
+\begin{itemize}
+\item Show that $(fg)^\star(\alpha) = f^\star(\alpha) + g^\star(\alpha)$ for primitive $\alpha \in H^\star(X;R)$.
+\item Deduce that the $k$-th power map $x \mapsto x^k$ induces the map $\alpha \mapsto k\alpha$ on primitive elements $\alpha$.  In particular, show that the quaternionic $k$-th power map $S^3 \to S^3$ has degree $k$.
+\item Show that every polynomial $a_n x^n b_n + \cdots + a_1 x b_1 + a_0$ of nonzero degree with coefficients in $\mathbb{H}$ has a root in $\mathbb{H}$.
+\end{itemize}
+\end{problem}
+
+\begin{problem}[Hatcher exercise 3 page 302]
+Compute the Pontrjagin ring structure in $H_\star(\SO(5);\Z)$.
+\end{problem}
+
+\pagebreak
+\null
+
+\end{document}

@@ -1,0 +1,53 @@
+Lecture 40: Weierstrass’ theorem
+Math 660—Jim Fowler Monday, August 16, 2010
+
+Pictures of harmonic functions
+
+The Poisson integral produces a harmonic function, given values on the boundary.
+
+Pictures of harmonic functions
+
+The Poisson integral produces a harmonic function, given values on the boundary.
+
+Let’s see some examples!
+
+Power series
+
+Power series
+
+Holomorphic means complex diﬀerentiable.
+
+Power series
+
+Holomorphic means complex diﬀerentiable.
+
+Analytic means has a power series.
+
+Power series
+
+Holomorphic means complex diﬀerentiable.
+
+Analytic means has a power series.
+
+Now we show that holomorphic implies analytic.
+
+Convergence of analytic functions
+Suppose fn (z) is analytic in Ωn and fn (z) → f (z) in a region Ω, uniformly on compact subsets of Ω. Then f (z) is analytic in Ω, and fn (z) → f (z) uniformly on compact subsets.
+
+Convergence of analytic functions
+Suppose fn (z) is analytic in Ωn and fn (z) → f (z) in a region Ω, uniformly on compact subsets of Ω. Then f (z) is analytic in Ω, and fn (z) → f (z) uniformly on compact subsets.
+
+Proof:
+
+Convergence of analytic functions
+Suppose fn (z) is analytic in Ωn and fn (z) → f (z) in a region Ω, uniformly on compact subsets of Ω. Then f (z) is analytic in Ω, and fn (z) → f (z) uniformly on compact subsets.
+
+Proof: Morera’s theorem.
+
+Zeroes and convergence
+
+If fn (z) = 0 in a region Ω, and fn (z) → f (z) uniformly on compact subsets of Ω then f (z) is either everywhere or nowhere zero.
+
+Taylor series
+
+

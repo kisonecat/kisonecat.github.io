@@ -1,0 +1,53 @@
+Syllabus
+
+Math 153, Section 57
+
+Fall 2008
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+This course covers sequences, series, techniques of integration, and diﬀerential equations.
+
+Resources
+We present six resources to help you to learn Calculus.
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+Oﬃce Hours
+If you have questions, want to work through problems, or just talk about mathematics, I invite you to come to my oﬃce hours. Name: Oﬃce: Email: Jim Fowler Math/Stat 102 jim@uchicago.edu Oﬃce Hours: Tuesday 5:00–7:00p.m. Thursday 5:00–6:00p.m. and by appointment
+
+Please email me with any concerns you have; the success of this course depends on open communication. The VIGRE Course Assistant, Brooke Ullery (bullery@uchicago.edu), will also oﬃce hours on Wednesdays from 6:00–7:00p.m. in the C-Shop.
+
+Textbook
+Our text is Calculus by Salas, Hille, and Etgen (10th Edition).
+
+Website
+The website is on chalk; we will post assignments, notes, and handouts.
+
+Lectures
+We meet Mondays, Wednesdays, and Fridays, 12:30–1:20p.m. in Kent 101 for an interactive lecture.
+
+Recitation Sessions
+We meet Thursdays, 6:00–7:00p.m. in Eckhart 312 for an interactive recitation session.
+
+Homework Assignments
+Your homework will be graded by Brooke Ullery and Jim Fowler.
+
+c 2008 Jim Fowler
+
+Requirements
+There are one thousand points possible in this course, broken down as follows: Daily homework (150 points). Homework is assigned after most lectures. You should start homework promptly. You should work on the homework problems together, but you must write up your solutions independently.
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+2 midterms (225 points each). The midterms are in class. The ﬁrst midterm is on Monday, October 20, at the beginning of week 4; the second midterm is on Monday, November 17, at the beginning of week 8. 1 ﬁnal exam (400 points). The ﬁnal exam will be held 4:00–6:00p.m. on Tuesday, December 9, 2008.
+
+Department Policy on Final Exams
+It is the policy of the Department of Mathematics that the following rules apply to ﬁnal exams in all undergraduate mathematics courses: 1. The ﬁnal exam must occur at the time and place designated on the College Final Exam Schedule. In particular, no ﬁnal examinations may be given during the tenth week of the quarter, except in the case of graduating seniors. 2. Any student who wishes to depart from the scheduled ﬁnal exam time for the course must receive permission from Paul Sally (oﬃce is Ryerson 350, phone is 2-7388, email is sally@math.uchicago.edu). Instructors are not permitted to excuse students from the scheduled time of the ﬁnal exam except in the cases of an Incomplete.
+
+Rescheduling a Midterm
+Contact Jim Fowler early in the quarter if you will not be able to take a midterm on the scheduled day; we likely can accomodate you, but we will need time to prepare.
+
+Late Homework
+You must stay caught up. It is tempting to fall behind, but diﬃcult to catch up again—this is true of all courses, but especially true of a course in mathematics. That said, I understand your schedules are very busy, so I will not penalize you for infrequently turning in work a day or two late. Do not make a habit of it!
+
+c 2008 Jim Fowler
+
+

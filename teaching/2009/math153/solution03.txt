@@ -1,0 +1,129 @@
+Homework 3
+Due Wednesday, October 8, 2008
+1. State whether the following sequences converge (and, if so, state the limit). (a) an = √ n. Since an is not bounded above, it diverges. 1 = 0 + 0 = 0. n→∞ n
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Jim Fowler
+
+1 (b) bn = 2−n + n . n→∞ n→∞
+
+lim bn = lim 2−n + lim
+
+(c) cn =
+
+n+1 . n2
+n→∞
+
+lim cn = lim
+
+n+1 = lim n→∞ n2 n→∞
+
+1 n + 2 2 n n
+
+= lim
+
+n→∞
+
+1 1 + 2 n n
+
+= 0 + 0 = 0.
+
+(d) dn =
+
+n + (−1)n . n
+n→∞
+
+lim dn = lim
+
+n + (−1)n = lim n→∞ n→∞ n
+
+n (−1)n + n n
+
+= lim
+
+n→∞
+
+1+
+
+(−1)n n
+
+= 1.
+
+(e) en = (−1)n · n3 . Since en is not bounded (because, for instance, e2n > 2n), en diverges. 1 (f ) fn = cos . Because cos is continuous, n
+n→∞
+
+lim fn = lim cos
+n→∞
+
+1 = cos n
+
+1 n→∞ n lim
+
+= cos 0 = 1.
+
+(g) gn = |10 − n| − n. If n > 10, then 10 − n < 0, so |10 − n| = n − 10. But then gn = (n − 10) − n = −10. So for large values of n, gn = −10, and therefore, lim gn = −10.
+n→∞
+
+3n (h) hn = n . We can use squeezing here. For all n ∈ N, 4 +1 0≤ 3n 3n ≤ n = 4n + 1 4 3 4
+n
+
+But the left-hand and right-hand sequences both converge to zero, so lim hn = 0.
+n→∞
+
+c 2010 Jim Fowler
+
+(i) in = log (n + 1) − log n. Note that lim log 1 = 0. Since
+
+n+1 = 1. But log is continuous, so lim log n→∞ n→∞ n n+1 n ,
+
+n+1 n
+
+=
+
+in = log (n + 1) − log n = log we may conclude limn→∞ in = 0.
+
+(j) jn =
+
+√
+
+n2 + n − n.‡ The limit is 1/2, which I will prove by squeezing. First, for all n ∈ N, jn = √ n2 +n−n< n2 + n + 1/4 − n = 1 n+ 2
+2
+
+−n=n+
+
+1 1 −n= . 2 2
+
+On the other hand, √ √
+
+n→∞
+
+lim jn = =
+
+n→∞ n→∞
+
+lim lim
+
+n2 + n − n n2 + n − n
+
+2. Give an -K proof that the sequence an =
+n→∞ n→∞
+
+3 converges, n
+n→∞
+
+3. Prove that if lim an = L and lim bn = M , then lim an + bn = L + M . 4. Let an be a sequence of real numbers, and set bn = |an |. If bn converges, does an converge? If so, prove it; if not, provide a counterexample. 5. Let an and bn be sequences of real numbers; suppose lim an = 0. Is it the case that
+n→∞ n→∞
+
+lim an · bn = 0?
+c 2010 Jim Fowler
+
+If so, prove it; if not, provide a counterexample.
+‡
+
+This is rather tricky; if you don’t answer it, you will not be penalized.
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+

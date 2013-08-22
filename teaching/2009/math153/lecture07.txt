@@ -1,0 +1,70 @@
+Lecture 7: More indeterminate forms
+Math 153 Section 57 Monday October 13, 2008
+Following chapter 11.6.
+
+1
+
+Trig formulas
+
+Introduce eiθ = cos θ + i sin θ. Derive all the rules for sine and cosine. With the correct perspective, you need to remember nothing, and derive everything. Practically, in your future lives, you probably wouldn’t remember tables of sines and cosines and derivatives and blah, but if you learn the ideas, then you won’t have.
+
+2
+
+Trig functions and l’Hˆpital’s rule o
+
+o We want to calculate limx→0 sin x . Let’s use l’Hˆpital’s rule. x Now we need to know the derivative of sine. So by deﬁnition, sin(x + h) − sin x sin(h) = lim h→0 h→0 h h lim I guess now we use l’Hˆpital’s rule again? Uhm... o
+
+3
+
+What does converge to ∞ mean?
+
+We say f (x) → ∞ as x → a if for all N , there is δ, so that if 0 < |x − a| < δ, then f (x) > N . As big as we want f to be, there’s a δ so that if we’re δ close to a, then f (x) is that big.
+
+4
+
+Tips about L’Hˆpital’s rule o
+
+Only apply it to 0/0 or ∞/∞. If you can’t do the limit, and it isn’t in that form, transform it into that form. Do not apply it to 0/1 or 1/0 or 0/∞ or ∞/0. Sometimes you need to do it more than once: e.g., sin2 x/x2 (though here you could use the product formula). 1
+
+5
+
+L’Hˆpital’s rule backwards o
+
+f (x) = x + sin x and g(x) = x. Then f (x)/g(x) → 1 as x → ∞, but f (x)/g (x) does not converge.
+
+6
+
+Review L’Hˆpital’s rule o
+
+If f (x) → ±∞ and g(x) → ±∞, and g (x) = 0 for all x near a, then if f (x)/g (x) → L, then f (x)/g(x) → L. Intuition: limits of fractions measure how fast one is growing compared to the other. Examples: log x/xn → 0 as x → ∞. Think: logrithms grow very slowly. Example: ex /xn → ∞. Apply L’Hˆpital many times. o
+
+7
+
+∞−∞
+
+Example: x − log x = x(1 − log x/x).
+
+8
+
+00
+
+Show limx→0+ xx = 1. Take logs to do limx→0+ x log x = lim log x/(1/x) = lim(1/x)/(−1/x2 ) = lim −x = 0.
+
+9
+
+Proof
+H(x) = (g(b) − g(a))(f (x) − f (a)) − (g(x) − g(a))(f (b) − f (a))
+
+Apply mean-value theorem to
+
+on the interval (a, b). Get a point where H (r) = 0, which means f (r)/g (r) = (f (b) − f (a))/(g(b) − g(a)) Suppose f (a) = 0 and g(a) = 0. Then on the interval (a, a + ) we have some number r ∈ (a, a + ) so that f (x) f (x) − f (a) f (r) = = g(x) g(x) − g(a) g (r)
+
+10
+
+The 00 controversy
+
+What does 00 mean? Well, what does 0/0 mean...
+
+2
+
+

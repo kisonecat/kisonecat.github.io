@@ -1,0 +1,975 @@
+\documentclass[11pt]{handout}
+%\usepackage{add-copyright}
+
+\title{Calendar}
+\course{Math 1181H}
+\date{Autumn 2012}
+\author{Jim Fowler}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{hyperref}
+
+\newcommand{\peem}{\textsc{p.m.}}
+\newcommand{\ayem}{\textsc{a.m.}}
+
+\titleformat{\section}[wrap]{\sffamily\bfseries}
+{\large\thesection}{1em}{\large}%[{\titlerule[0.5pt]}]
+\titlespacing*{\section}{1in}{*1.05}{*0.1}
+
+\titleformat{\subsection}[drop]{\sffamily}
+{\thesubsection}{1em}{}%[{\titlerule[0.5pt]}]
+\titlespacing*{\subsection}{2.2in}{*0.05}{*0.05}
+
+\usepackage{nopageno}
+\usepackage{multicol}
+\geometry{margin=1cm}
+%\geometry{landscape,margin=0.25in,bottom=0.25in,left=0.5in,right=0.5in}
+\usepackage{tabularx}
+\usepackage{rotating}
+
+\setlength{\parindent}{0in}
+\setlength{\parskip}{0in}
+\usepackage{calc}
+
+\begin{document}
+\maketitle
+
+\vspace{-2ex}
+
+\newlength{\wednesday}
+\settowidth{\wednesday}{\textsf{Wednesday}}
+
+\newlength{\monthwidth}
+\settowidth{\monthwidth}{\textsf{September}}
+
+\newlength{\daywidth}
+\settowidth{\daywidth}{\textsf{99,}}
+
+\newlength{\yearwidth}
+\settowidth{\yearwidth}{\textsf{9999}}
+
+\newlength{\weekwidth}
+\newlength{\weekheight}
+\settoheight{\weekheight}{\textsf{\textbf{Week 99}}}
+
+\newlength{\remaining}
+\setlength{\remaining}{\textwidth-\weekheight}
+
+
+
+      
+    %    \section*{Week 1}
+
+        \settowidth{\weekwidth}{\textsf{\textbf{Week 1}}}
+    \raisebox{-\weekwidth}[0in][0in]{\rotatebox{90}{\textsf{\textbf{Week 1}}}}
+            \nopagebreak
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+                  \textsf{Wednesday} &
+\textsf{August} &
+\hfill\textsf{22,} &
+\textsf{2012} &
+      \textsection1.5 The Concept of a Function & pg.~22 \\
+                
+    
+
+
+                  \textsf{Thursday} &
+\textsf{August} &
+\hfill\textsf{23,} &
+\textsf{2012} &
+      \textsection1.6 Graphs of Functions & pg.~30 \\
+                
+    
+
+
+                  \textsf{Friday} &
+\textsf{August} &
+\hfill\textsf{24,} &
+\textsf{2012} &
+      \textsection1.7 Introductory Trigonometry: The Functions $\sin \theta$ and $\cos \theta$ & pg.~37 \\
+                
+    
+
+
+        \end{tabularx}
+     \hrule     
+    \vspace{0.25ex}
+
+    
+    %    \section*{Week 2}
+
+        \settowidth{\weekwidth}{\textsf{\textbf{Week 2}}}
+    \raisebox{-\weekwidth}[0in][0in]{\rotatebox{90}{\textsf{\textbf{Week 2}}}}
+            \nopagebreak
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+                  \textsf{Monday} &
+\textsf{August} &
+\hfill\textsf{27,} &
+\textsf{2012} &
+      \textsection2.3 The Definition of the Derivative & pg.~58 \\
+                
+    
+
+
+                  \textsf{Tuesday} &
+\textsf{August} &
+\hfill\textsf{28,} &
+\textsf{2012} &
+      \textsection2.4 Velocity and Rates of Change & pg.~62 \\
+                
+    
+
+
+                  \textsf{Wednesday} &
+\textsf{August} &
+\hfill\textsf{29,} &
+\textsf{2012} &
+      \textsection2.5 The Concept of a Limit: Two Trigonometric Limits & pg.~68 \\
+                
+    
+
+
+                  \textsf{Thursday} &
+\textsf{August} &
+\hfill\textsf{30,} &
+\textsf{2012} &
+      \textsection2.6 Continuous Functions: The Mean Value Theorem & pg.~74 \\
+                
+    
+
+
+                  \textsf{Friday} &
+\textsf{August} &
+\hfill\textsf{31,} &
+\textsf{2012} &
+      \textsection3.1 Derivatives of Polynomials & pg.~83 \\
+                
+    
+
+
+        \end{tabularx}
+     \hrule     
+    \vspace{0.25ex}
+
+    
+    %    \section*{Week 3}
+
+        \settowidth{\weekwidth}{\textsf{\textbf{Week 3}}}
+    \raisebox{-\weekwidth}[0in][0in]{\rotatebox{90}{\textsf{\textbf{Week 3}}}}
+            \nopagebreak
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+    \textsf{Monday} &
+\textsf{September} &
+\hfill\textsf{ 3,} &
+\textsf{2012} &
+    \textit{Labor Day} & \\
+      
+
+
+                  \textsf{Tuesday} &
+\textsf{September} &
+\hfill\textsf{ 4,} &
+\textsf{2012} &
+      \textsection3.2 The Product and Quotient Rules & pg.~88 \\
+                
+    
+
+
+                  \textsf{Wednesday} &
+\textsf{September} &
+\hfill\textsf{ 5,} &
+\textsf{2012} &
+      \textsection3.3 Composite Functions and the Chain Rule & pg.~92 \\
+                
+    
+
+
+                  \textsf{Thursday} &
+\textsf{September} &
+\hfill\textsf{ 6,} &
+\textsf{2012} &
+      \textsection3.4 Some Trigonometric Derivatives & pg.~98 \\
+             & & & & 
+      \textsection3.5 Implicit Functions and Fractional Exponents & pg.~102 \\
+                
+    
+
+
+                  \textsf{Friday} &
+\textsf{September} &
+\hfill\textsf{ 7,} &
+\textsf{2012} &
+      \textsection3.6 Derivatives of Higher Order & pg.~107 \\
+                
+    
+
+
+        \end{tabularx}
+     \hrule     
+    \vspace{0.25ex}
+
+    
+    %    \section*{Week 4}
+
+        \settowidth{\weekwidth}{\textsf{\textbf{Week 4}}}
+    \raisebox{-\weekwidth}[0in][0in]{\rotatebox{90}{\textsf{\textbf{Week 4}}}}
+            \nopagebreak
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+                  \textsf{Monday} &
+\textsf{September} &
+\hfill\textsf{10,} &
+\textsf{2012} &
+      \textsection4.1 Increasing and Decreasing Functions: Maxima and Minima & pg.~115 \\
+             & & & & 
+      \textsection4.2 Concavity and Points of Inflection & pg.~120 \\
+                
+    
+
+
+                  \textsf{Tuesday} &
+\textsf{September} &
+\hfill\textsf{11,} &
+\textsf{2012} &
+      \textsection4.3 Applied Maximum and Minimum Problems & pg.~123 \\
+                
+    
+
+
+                  \textsf{Wednesday} &
+\textsf{September} &
+\hfill\textsf{12,} &
+\textsf{2012} &
+      \textsection4.4 More Maximum-Minimum Problems & pg.~131 \\
+                
+    
+
+
+                  \textsf{Thursday} &
+\textsf{September} &
+\hfill\textsf{13,} &
+\textsf{2012} &
+      \textsection4.5 Related Rates & pg.~139 \\
+                
+    
+
+
+                  \textsf{Friday} &
+\textsf{September} &
+\hfill\textsf{14,} &
+\textsf{2012} &
+      \textsection4.6 Newtons Method for Solving Equations & pg.~143 \\
+                
+    
+
+
+        \end{tabularx}
+     \hrule     
+    \vspace{0.25ex}
+
+    
+    %    \section*{Week 5}
+
+        \settowidth{\weekwidth}{\textsf{\textbf{Week 5}}}
+    \raisebox{-\weekwidth}[0in][0in]{\rotatebox{90}{\textsf{\textbf{Week 5}}}}
+            \nopagebreak
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+                  \textsf{Monday} &
+\textsf{September} &
+\hfill\textsf{17,} &
+\textsf{2012} &
+      \textsection5.1 Introduction to Indefinite Integrals & pg.~163 \\
+             & & & & 
+      \textsection5.2 Differentials and Tangent Line Approximations & pg.~163 \\
+                
+    
+
+
+                  \textsf{Tuesday} &
+\textsf{September} &
+\hfill\textsf{18,} &
+\textsf{2012} &
+      \textsection5.3 Indefinite Integrals: Integration by Substitution & pg.~170 \\
+                
+    
+
+
+                  \textsf{Wednesday} &
+\textsf{September} &
+\hfill\textsf{19,} &
+\textsf{2012} &
+      \textsection5.4 Differential Equations: Separation of Variables & pg.~178 \\
+                
+    
+
+
+                  \textsf{Thursday} &
+\textsf{September} &
+\hfill\textsf{20,} &
+\textsf{2012} &
+      \textsection5.5 Motion Under Gravity: Escape Velocity and Black Holes & pg.~181 \\
+                
+    
+
+
+         \textsf{Friday} &
+\textsf{September} &
+\hfill\textsf{21,} &
+\textsf{2012} &
+     \textbf{Midterm 1 } & \\
+      
+    
+
+
+        \end{tabularx}
+     \hrule     
+    \vspace{0.25ex}
+
+    
+    %    \section*{Week 6}
+
+        \settowidth{\weekwidth}{\textsf{\textbf{Week 6}}}
+    \raisebox{-\weekwidth}[0in][0in]{\rotatebox{90}{\textsf{\textbf{Week 6}}}}
+            \nopagebreak
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+                  \textsf{Monday} &
+\textsf{September} &
+\hfill\textsf{24,} &
+\textsf{2012} &
+      \textsection6.1 Introduction to Definite Integrals & pg.~190 \\
+             & & & & 
+      \textsection6.2 The Problem of Areas & pg.~191 \\
+                
+    
+
+
+                  \textsf{Tuesday} &
+\textsf{September} &
+\hfill\textsf{25,} &
+\textsf{2012} &
+      \textsection6.3 The Sigma Notation and Certain Special Sums & pg.~194 \\
+             & & & & 
+      \textsection6.4 The Area Under a Curve: Definite Integrals & pg.~197 \\
+                
+    
+
+
+                  \textsf{Wednesday} &
+\textsf{September} &
+\hfill\textsf{26,} &
+\textsf{2012} &
+      \textsection6.5 The Computation of Areas as Limits & pg.~203 \\
+                
+    
+
+
+                  \textsf{Thursday} &
+\textsf{September} &
+\hfill\textsf{27,} &
+\textsf{2012} &
+      \textsection6.6 The Fundamental Theorem of Calculus & pg.~206 \\
+                
+    
+
+
+                  \textsf{Friday} &
+\textsf{September} &
+\hfill\textsf{28,} &
+\textsf{2012} &
+      \textsection6.7 Properties of Definite Integrals & pg.~213 \\
+                
+    
+
+
+        \end{tabularx}
+     \hrule     
+    \vspace{0.25ex}
+
+    
+    %    \section*{Week 7}
+
+        \settowidth{\weekwidth}{\textsf{\textbf{Week 7}}}
+    \raisebox{-\weekwidth}[0in][0in]{\rotatebox{90}{\textsf{\textbf{Week 7}}}}
+            \nopagebreak
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+                  \textsf{Monday} &
+\textsf{October} &
+\hfill\textsf{ 1,} &
+\textsf{2012} &
+      \textsection7.1 The Intuitive Meaning of Integration & pg.~221 \\
+             & & & & 
+      \textsection7.2 The Area between Two Curves & pg.~222 \\
+             & & & & 
+      \textsection7.3 Volumes: The Disk Method & pg.~225 \\
+                
+    
+
+
+                  \textsf{Tuesday} &
+\textsf{October} &
+\hfill\textsf{ 2,} &
+\textsf{2012} &
+      \textsection7.4 Volumes: The Method of Cylindrical Shells & pg.~231 \\
+                
+    
+
+
+                  \textsf{Wednesday} &
+\textsf{October} &
+\hfill\textsf{ 3,} &
+\textsf{2012} &
+      \textsection7.5 Arc Length & pg.~236 \\
+                
+    
+
+
+                  \textsf{Thursday} &
+\textsf{October} &
+\hfill\textsf{ 4,} &
+\textsf{2012} &
+      \textsection7.6 The Area of a Surface of Revolution & pg.~240 \\
+             & & & & 
+      \textsection7.7 Work and Energy & pg.~244 \\
+                
+    
+
+
+                  \textsf{Friday} &
+\textsf{October} &
+\hfill\textsf{ 5,} &
+\textsf{2012} &
+      \textsection7.8 Hydrostatic Force & pg.~252 \\
+                
+    
+
+
+        \end{tabularx}
+     \hrule     
+    \vspace{0.25ex}
+
+    
+    %    \section*{Week 8}
+
+        \settowidth{\weekwidth}{\textsf{\textbf{Week 8}}}
+    \raisebox{-\weekwidth}[0in][0in]{\rotatebox{90}{\textsf{\textbf{Week 8}}}}
+            \nopagebreak
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+                  \textsf{Monday} &
+\textsf{October} &
+\hfill\textsf{ 8,} &
+\textsf{2012} &
+      \textsection8.1 Introduction to Exponential and Logarithm Functions & pg.~260 \\
+             & & & & 
+      \textsection8.2 Review of Exponents and Logarithms & pg.~261 \\
+                
+    
+
+
+                  \textsf{Tuesday} &
+\textsf{October} &
+\hfill\textsf{ 9,} &
+\textsf{2012} &
+      \textsection8.3 The Number e and the Function $y = e^x$ & pg.~264 \\
+                
+    
+
+
+                  \textsf{Wednesday} &
+\textsf{October} &
+\hfill\textsf{10,} &
+\textsf{2012} &
+      \textsection8.4 The Natural Logarithm Function $y = \log x$ & pg.~269 \\
+                
+    
+
+
+                  \textsf{Thursday} &
+\textsf{October} &
+\hfill\textsf{11,} &
+\textsf{2012} &
+      \textsection8.5 Applications: Population Growth and Radioactive Decay & pg.~277 \\
+                
+    
+
+
+                  \textsf{Friday} &
+\textsf{October} &
+\hfill\textsf{12,} &
+\textsf{2012} &
+      \textsection8.6 More Applications & pg.~287 \\
+             & & & & 
+      \textsection9.1 Review of Trigonometry & pg.~292 \\
+                
+    
+
+
+        \end{tabularx}
+     \hrule     
+    \vspace{0.25ex}
+
+    
+    %    \section*{Week 9}
+
+        \settowidth{\weekwidth}{\textsf{\textbf{Week 9}}}
+    \raisebox{-\weekwidth}[0in][0in]{\rotatebox{90}{\textsf{\textbf{Week 9}}}}
+            \nopagebreak
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+                  \textsf{Monday} &
+\textsf{October} &
+\hfill\textsf{15,} &
+\textsf{2012} &
+      \textsection9.2 The Derivatives of the Sine and Cosine & pg.~301 \\
+                
+    
+
+
+                  \textsf{Tuesday} &
+\textsf{October} &
+\hfill\textsf{16,} &
+\textsf{2012} &
+      \textsection9.3 The Integrals of the Sine and Cosine & pg.~306 \\
+                
+    
+
+
+                  \textsf{Wednesday} &
+\textsf{October} &
+\hfill\textsf{17,} &
+\textsf{2012} &
+      \textsection9.4 The Derivatives of the Other Four Functions & pg.~310 \\
+                
+    
+
+
+                  \textsf{Thursday} &
+\textsf{October} &
+\hfill\textsf{18,} &
+\textsf{2012} &
+      \textsection9.5 The Inverse Trigonometric Functions & pg.~313 \\
+                
+    
+
+
+         \textsf{Friday} &
+\textsf{October} &
+\hfill\textsf{19,} &
+\textsf{2012} &
+     \textbf{Midterm 2 } & \\
+      
+    
+
+
+        \end{tabularx}
+     \hrule     
+    \vspace{0.25ex}
+
+    
+    %    \section*{Week 10}
+
+        \settowidth{\weekwidth}{\textsf{\textbf{Week 10}}}
+    \raisebox{-\weekwidth}[0in][0in]{\rotatebox{90}{\textsf{\textbf{Week 10}}}}
+            \nopagebreak
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+                  \textsf{Monday} &
+\textsf{October} &
+\hfill\textsf{22,} &
+\textsf{2012} &
+      \textsection9.6 Simple Harmonic Motion & pg.~324 \\
+                
+    
+
+
+                  \textsf{Tuesday} &
+\textsf{October} &
+\hfill\textsf{23,} &
+\textsf{2012} &
+      \textsection9.7 Hyperbolic Functions & pg.~330 \\
+             & & & & 
+      \textsection10.1 Introduction to Methods of Integration & pg.~334 \\
+                
+    
+
+
+                  \textsf{Wednesday} &
+\textsf{October} &
+\hfill\textsf{24,} &
+\textsf{2012} &
+      \textsection10.2 The Method of Substitution & pg.~337 \\
+             & & & & 
+      \textsection10.3 Certain Trigonometric Integrals & pg.~340 \\
+                
+    
+
+
+                  \textsf{Thursday} &
+\textsf{October} &
+\hfill\textsf{25,} &
+\textsf{2012} &
+      \textsection10.4 Trigonometric Substitutions & pg.~344 \\
+             & & & & 
+      \textsection10.5 Completing the Square & pg.~348 \\
+                
+    
+
+
+                  \textsf{Friday} &
+\textsf{October} &
+\hfill\textsf{26,} &
+\textsf{2012} &
+      \textsection10.6 The Method of Partial Fractions & pg.~351 \\
+                
+    
+
+
+        \end{tabularx}
+     \hrule     
+    \vspace{0.25ex}
+
+    
+    %    \section*{Week 11}
+
+        \settowidth{\weekwidth}{\textsf{\textbf{Week 11}}}
+    \raisebox{-\weekwidth}[0in][0in]{\rotatebox{90}{\textsf{\textbf{Week 11}}}}
+            \nopagebreak
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+                  \textsf{Monday} &
+\textsf{October} &
+\hfill\textsf{29,} &
+\textsf{2012} &
+      \textsection10.7 Integration by Parts & pg.~357 \\
+                
+    
+
+
+                  \textsf{Tuesday} &
+\textsf{October} &
+\hfill\textsf{30,} &
+\textsf{2012} &
+      \textsection10.8 A Mixed Bag & pg.~362 \\
+                
+    
+
+
+                  \textsf{Wednesday} &
+\textsf{October} &
+\hfill\textsf{31,} &
+\textsf{2012} &
+      \textsection10.9 Numerical Integration & pg.~369 \\
+                
+    
+
+
+                  \textsf{Thursday} &
+\textsf{November} &
+\hfill\textsf{ 1,} &
+\textsf{2012} &
+      \textsection11.1 The Center of Mass of a Discrete System & pg.~384 \\
+             & & & & 
+      \textsection11.2 Centroids & pg.~386 \\
+                
+    
+
+
+                  \textsf{Friday} &
+\textsf{November} &
+\hfill\textsf{ 2,} &
+\textsf{2012} &
+      \textsection11.3 The Theorems of Pappus & pg.~391 \\
+             & & & & 
+      \textsection11.4 Moment of Inertia & pg.~393 \\
+                
+    
+
+
+        \end{tabularx}
+     \hrule     
+    \vspace{0.25ex}
+
+    
+    %    \section*{Week 12}
+
+        \settowidth{\weekwidth}{\textsf{\textbf{Week 12}}}
+    \raisebox{-\weekwidth}[0in][0in]{\rotatebox{90}{\textsf{\textbf{Week 12}}}}
+            \nopagebreak
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+                  \textsf{Monday} &
+\textsf{November} &
+\hfill\textsf{ 5,} &
+\textsf{2012} &
+      \textsection12.1 The Mean Value Theorem Revisited & pg.~398 \\
+             & & & & 
+      \textsection12.2 The Interminate Form $0/0$. L'Hospital's Rule & pg.~400 \\
+                
+    
+
+
+                  \textsf{Tuesday} &
+\textsf{November} &
+\hfill\textsf{ 6,} &
+\textsf{2012} &
+      \textsection12.3 Other Interminate Forms & pg.~404 \\
+                
+    
+
+
+                  \textsf{Wednesday} &
+\textsf{November} &
+\hfill\textsf{ 7,} &
+\textsf{2012} &
+      \textsection12.4 Improper Integrals & pg.~409 \\
+             & & & & 
+      \textsection12.5 The Normal Distribution & pg.~414 \\
+                
+    
+
+
+                  \textsf{Thursday} &
+\textsf{November} &
+\hfill\textsf{ 8,} &
+\textsf{2012} &
+      \textsection13.1 What is an Infinite Series? & pg.~427 \\
+                
+    
+
+
+         \textsf{Friday} &
+\textsf{November} &
+\hfill\textsf{ 9,} &
+\textsf{2012} &
+     \textbf{Midterm 3 } & \\
+      
+    
+
+
+        \end{tabularx}
+     \hrule     
+    \vspace{0.25ex}
+
+    
+    %    \section*{Week 13}
+
+        \settowidth{\weekwidth}{\textsf{\textbf{Week 13}}}
+    \raisebox{-\weekwidth}[0in][0in]{\rotatebox{90}{\textsf{\textbf{Week 13}}}}
+            \nopagebreak
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+    \textsf{Monday} &
+\textsf{November} &
+\hfill\textsf{12,} &
+\textsf{2012} &
+    \textit{Veteran's Day} & \\
+      
+
+
+                  \textsf{Tuesday} &
+\textsf{November} &
+\hfill\textsf{13,} &
+\textsf{2012} &
+      \textsection13.2 Convergent Sequences & pg.~432 \\
+                
+    
+
+
+                  \textsf{Wednesday} &
+\textsf{November} &
+\hfill\textsf{14,} &
+\textsf{2012} &
+      \textsection13.3 Convergent and Divergent Series & pg.~439 \\
+                
+    
+
+
+                  \textsf{Thursday} &
+\textsf{November} &
+\hfill\textsf{15,} &
+\textsf{2012} &
+      \textsection13.4 General Properties of Convergent Series & pg.~445 \\
+                
+    
+
+
+                  \textsf{Friday} &
+\textsf{November} &
+\hfill\textsf{16,} &
+\textsf{2012} &
+      \textsection13.5 Series on Nonnegative Terms: Comparison Tests & pg.~451 \\
+                
+    
+
+
+        \end{tabularx}
+     \hrule     
+    \vspace{0.25ex}
+
+    
+    %    \section*{Week 14}
+
+        \settowidth{\weekwidth}{\textsf{\textbf{Week 14}}}
+    \raisebox{-\weekwidth}[0in][0in]{\rotatebox{90}{\textsf{\textbf{Week 14}}}}
+            \nopagebreak
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+                  \textsf{Monday} &
+\textsf{November} &
+\hfill\textsf{19,} &
+\textsf{2012} &
+      \textsection13.6 The Integral Test & pg.~455 \\
+                
+    
+
+
+                  \textsf{Tuesday} &
+\textsf{November} &
+\hfill\textsf{20,} &
+\textsf{2012} &
+      \textsection13.7 The Ratio Test and Root Test & pg.~461 \\
+             & & & & 
+      \textsection13.8 The Alternating Series Test & pg.~465 \\
+                
+    
+
+
+    \textsf{Wednesday} &
+\textsf{November} &
+\hfill\textsf{21,} &
+\textsf{2012} &
+    \textit{Thanksgiving Break} & \\
+      
+
+
+    \textsf{Thursday} &
+\textsf{November} &
+\hfill\textsf{22,} &
+\textsf{2012} &
+    \textit{Thanksgiving Day} & \\
+      
+
+
+    \textsf{Friday} &
+\textsf{November} &
+\hfill\textsf{23,} &
+\textsf{2012} &
+    \textit{Columbus Day} & \\
+      
+
+
+        \end{tabularx}
+     \hrule     
+    \vspace{0.25ex}
+
+    
+    %    \section*{Week 15}
+
+        \settowidth{\weekwidth}{\textsf{\textbf{Week 15}}}
+    \raisebox{-\weekwidth}[0in][0in]{\rotatebox{90}{\textsf{\textbf{Week 15}}}}
+            \nopagebreak
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+                  \textsf{Monday} &
+\textsf{November} &
+\hfill\textsf{26,} &
+\textsf{2012} &
+      \textsection14.1 Introduction to Power Series & pg.~483 \\
+             & & & & 
+      \textsection14.2 The Interval of Convergence & pg.~484 \\
+                
+    
+
+
+                  \textsf{Tuesday} &
+\textsf{November} &
+\hfill\textsf{27,} &
+\textsf{2012} &
+      \textsection14.3 Differentiation and Integration of Power Series & pg.~489 \\
+                
+    
+
+
+                  \textsf{Wednesday} &
+\textsf{November} &
+\hfill\textsf{28,} &
+\textsf{2012} &
+      \textsection14.4 Taylor Series and Taylor's Formula & pg.~494 \\
+                
+    
+
+
+                  \textsf{Thursday} &
+\textsf{November} &
+\hfill\textsf{29,} &
+\textsf{2012} &
+      \textsection14.5 Computations Using Taylor's Formula & pg.~504 \\
+                
+    
+
+
+                  \textsf{Friday} &
+\textsf{November} &
+\hfill\textsf{30,} &
+\textsf{2012} &
+      \textsection14.6 Applications to Differential Equations & pg.~509 \\
+                
+    
+
+
+        \end{tabularx}
+     \hrule     
+    \vspace{0.25ex}
+
+    
+    %    \section*{Week 16}
+
+        \settowidth{\weekwidth}{\textsf{\textbf{Week 16}}}
+    \raisebox{-\weekwidth}[0in][0in]{\rotatebox{90}{\textsf{\textbf{Week 16}}}}
+            \nopagebreak
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+                  \textsf{Monday} &
+\textsf{December} &
+\hfill\textsf{ 3,} &
+\textsf{2012} &
+      \textsection14.7 Operations on Power Series & pg.~514 \\
+                
+    
+
+
+                  \textsf{Tuesday} &
+\textsf{December} &
+\hfill\textsf{ 4,} &
+\textsf{2012} &
+      \textsection14.8 Complex Numbers and Euler's Formula & pg.~521 \\
+                
+    
+
+
+        \end{tabularx}
+        
+    \vspace{0.25ex}
+
+    
+    %    \section*{Week 17}
+
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+         \textsf{Monday} &
+\textsf{December} &
+\hfill\textsf{10,} &
+\textsf{2012} &
+     \textbf{Final Exam at 12:00 } & \\
+      
+    
+
+\end{tabularx}
+\end{document}

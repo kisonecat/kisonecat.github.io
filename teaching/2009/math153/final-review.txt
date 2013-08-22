@@ -1,0 +1,333 @@
+Frequently Asked Questions about the Final Exam
+When is the ﬁnal exam?
+The exam is on Tuesday, December 9, 2008. The exam starts at 4:00pm, and ends at 6:00pm, providing for 120 minutes of examination.
+
+Where is the exam?
+The exam will be in the usual lecture location, namely Kent 101.
+
+What are some questions that will be on the ﬁnal exam?
+These questions will absolutely appear on the exam. What is the deﬁnition of the limit of a sequence, lim an = L?
+n→∞ ∞
+
+What is the deﬁnition of the limit of a series,
+n=1
+
+an = L? converges.
+
+Use an -K argument to prove that the sequence What letter grade do you believe you have earned this quarter? There will, as usual, be extra credit questions at the end.
+
+What do these boxes mean?
+I have drawn boxes next to everything you should know, so you can easily check things oﬀ when you believe you know it.
+
+How ought I to write down my answers?
+You must not merely write down the answer; you must give the whole story, showing all the steps you took to arrive at your answer. You must justify the arguments you make in order to receive full credit.
+
+What deﬁnitions must I know?
+You may be asked to give deﬁnitions of the following terms: bounded below, bounded above, increasing, decreasing, non-increasing, non-decreasing, conditional convergence, absolute convergence, 1 Taylor’s theorem, Lagrange’s theorem.
+
+What convergence tests must I know?
+You must be able to both apply and state precise descriptions of the following tests: the nth term test, comparison test, limit comparison test, p-series test, geometric series test, Use the limit comparison test to determine whether harmonic series test, the ratio test, alternating series test, the root test, the integral test. polynomial converges. polynomial
+
+What must I determine about sequences on the exam?
+You must be able to determine whether a sequence is bounded, and monotone.
+
+How will I evaluate limits on the exam?
+In addition to giving an -K proof in certain cases, you must be able to evaluate limits by using algebraic manipulation, composition with continuous functions— i.e., lim f (an ) = f ( lim an ),
+n→∞ n→∞
+
+squeezing, l’Hˆpital’s rule. o
+
+In particular, you must be able to evaluate limits having the following indeterminate forms:
+0 , 0 ∞ , ∞ 0 · ∞, 00 , 1∞ , ∞0 , ∞−∞
+
+What must I do with series on the exam?
+Given a series you must be able to do the following: Determine whether the series converges absolutely, Determine whether the series converges conditionally,
+∞
+
+Evaluate the series in certain cases, like
+n=0
+
+xn =
+
+1 provided |x| < 1. 1−x
+
+Given a power series, you must be able to: Find the interval on which the power series converges, Diﬀerentiate and integrate the power series term-by-term. 2
+
+With Taylor series, what must I be able to do?
+Given a function f : R → R, you must be able to: Write down the ﬁrst few terms of the Taylor series for f around 0, Write down the ﬁrst few terms of the Taylor series for f around a = 0, Find terms in a Taylor series using tricks like substitution, Find the Taylor series for f —i.e., if f (x) =
+∞ n=0
+
+an xn , ﬁnd a formula for an ,
+
+Use the Taylor series to ﬁnd the values of derivatives of the function. There may be problems about approximation. Given an alternating series, ﬁnd an approximate value and estimate the error. Given a Taylor series, ﬁnd an approximate value and estimate the error.
+
+What sorts of integration must I perform?
+There will be integrals and diﬀerential equations on the ﬁnal exam. You must: Evaluate improper integrals, Compute Compute sin(ax) cos(bx) dx by using integration by parts, sinn (x) cosm (x) dx for natural numbers n and m, polynomial , polynomial
+
+Use partial fractions to compute
+
+Solve inhomogeneous ﬁrst-order linear diﬀerential equations by using an integrating factor, Solve homogeneous second-order linear diﬀerential equations by factoring the derivative.
+
+3
+
+Frequently Asked Questions on the Final Exam
+Question 1. Give an -K argument to prove that lim Question 2. Give an -K argument to prove that lim Question 3. Give an -K argument to prove that lim 4 = 0. n→∞ n 4 = 0. n→∞ n2
+
+(−1)n = 0. n→∞ n2 4 + 2 n2 = 2. n→∞ n2 1 + 2 n + 3 n2 = 3. n→∞ n2
+
+Question 4. Give an -K argument to prove that lim
+
+Question 5. Give an -K argument to prove that lim
+
+Question 6. Is the sequence an = n2 bounded? Is the sequence monotone? Question 7. Is the sequence an = n cos n bounded? Is the sequence monotone? Question 8. Is the sequence an = cos(πn) bounded? Is the sequence monotone? Question 9. Is the sequence an = n cos2 n + n sin2 n bounded? Is the sequence monotone? Question 10. Is the sequence an = sin(πn) bounded? Is the sequence monotone? Question 11. Is the sequence an = sin(πn) bounded? Is the sequence monotone? Question 12. Is the sequence an = sin
+1 n
+
+bounded? Is the sequence monotone?
+
+Question 13. Suppose an and bn are bounded sequences. Is the sequence cn = an + bn necessarily bounded? Question 14. Suppose an and bn are bounded sequences. Is the sequence cn = an · bn necessarily bounded? Question 15. Suppose an and bn are monotone sequences. Is the sequence cn = an +bn necessarily monotone? √ n+ n . Question 16. Evaluate lim n→∞ 1 + n2 Question 17. Evaluate lim n2 + sin n + n cos n . n→∞ (1 + n)3 − n3
+n→∞
+
+Question 18. Evaluate lim cos (sin (1/nn )). Question 19. Evaluate lim cos
+n→∞
+
+1+
+
+1 n
+
+n
+
+.
+
+Question 20. Evaluate lim (π/4)1/n .
+n→∞
+
+4
+
+Question 21. Evaluate lim (1/2)n .
+n→∞
+
+Question 22. Evaluate lim (sin(1/n))n .
+n→∞
+
+Question 23. Evaluate lim (sin(1/n) + 1)n .
+n→∞
+
+Question 24. Evaluate lim sin2 (1/n) + 1 .
+n→∞
+
+n
+
+Question 25. Evaluate lim sin2 (1/n) + 2 sin(1/n) + 1 .
+n→∞
+
+n
+
+Question 26. Evaluate lim
+
+n→∞
+
+log 123456789 1+ n 1+
+
+n
+
+. 50 log 10 n
+2n
+
+Question 27. Search for the value of lim
+
+n→∞
+
+on the Internet.
+
+1 Question 28. Evaluate lim √ . n→∞ n √ n √ . Question 29. Evaluate lim √ n→∞ n+ 3n n  1010 ) 10(  10 Question 30. Evaluate lim
+n→∞
+
+n!  100
+100(
+100100
+
+. ) n 
+
+Question 31. Evaluate lim Question 32. Evaluate lim
+
+n→∞
+
+√ n!
+
+.
+
+log n . n→∞ n
+n→∞
+
+Question 33. Evaluate lim (2n)3/n . Question 34. For each of the seven indeterminate forms: 0 ∞ , , 0 · ∞, 00 , 1∞ , ∞0 , ∞ − ∞ 0 ∞ ﬁnd a limit exhibiting the form. Question 35. Evaluate lim cos n + sin n + sin2 n 4
+n
+
+n→∞
+
+.
+
+5
+
+Question 36. By Taylor’s theorem, sin (1/2)3 23 1 = (1/2) − + R3 (1/2) = + R3 (1/2) 2 3! 48
+
+I have built a right triangle, having a hypotenuse 48 cm, and height 23 cm. Use Lagrange’s theorem to bound R3 (1/2), and thereby justify that this is a good way to build a triangle having an angle of 1/2 radians. Question 37. Use Taylor’s theorem to show that log 2 ≈ 7/12 and estimate the error. Question 38. Recall that (as you should have memorized for the exam)
+∞
+
+log(1 + x) =
+n=1
+
+(−1)n+1 xn . n
+
+Musically, an important fact is that 219 ≈ 312 . Let’s see if we can show this using Taylor series. Taking logarithms, we ﬁnd 19 · log 2 ≈ 12 · log 3 But log 3 = log 1.5 + log 2, so 19 · log 2 ≈ 12 · (log 1.5 + log 2) which means that 7 · log 2 ≈ 12 · log 1.5 or by the Taylor series above 7 (1 − 1/2 + 1/3 + R3 (1)) ≈ 12 (1/2) − (1/2)2 /2 + (1/2)2 /3 + R3 (1/2) . Use a theorem on alternating series to bound R3 (1) and R3 (1/2) to show that this is possible.
+∞
+
+Question 39. Does the series
+n=1 ∞
+
+n4 /4n converge?
+
+Question 40. Does the series
+n=1 ∞
+
+n! converge?
+
+Question 41. Does the series
+n=1 ∞
+
+(n + 1)/(n) converge?
+
+Question 42. Does the series
+n=1 ∞
+
+(n! + 1)/(n!) converge?
+
+Question 43. Does the series
+n=1
+
+(1/3)n converge?
+
+6
+
+∞
+
+Question 44. Does the series
+n=1 ∞
+
+((1/3)n + (1/4)n ) converge?
+
+Question 45. Does the series
+n=1
+
+(1/3)n + (1/3)n−1 (n/4) + (1/4)n converge? For a very diﬀer-
+
+ent method, try comparison with ((1/3) + (1/4))n .
+∞
+
+Question 46. Does the series
+n=1
+
+(n (1/3)n ) converge? Did you do it without using the ratio test?
+
+Can you estimate its limit?
+∞
+
+Question 47. Does the series
+n=1 ∞
+
+n2 + n + 1 converge? n3 + n + 1 4 n10 + n + 1 converge? (n2 + 1)6 n n + 10
+n
+
+Question 48. Does the series
+n=1 ∞
+
+Question 49. Does the series
+n=1 ∞
+
+converge?
+
+Question 50. Does the series
+n=1 ∞
+
+n+1 converge? n! 3 n6 + n4 converge? (n!)2 (2n)! converge? (3n)! (2n)! + 13 converge? (3n)! + 12 (2n)! − 13 converge? (3n)! + 12 1 converge? n 1 converge? n
+
+Question 51. Does the series
+n=1 ∞
+
+Question 52. Does the series
+n=1 ∞
+
+Question 53. Does the series
+n=1 ∞
+
+Question 54. Does the series
+n=1 ∞
+
+Question 55. Does the series
+n=1 ∞
+
+Question 56. Does the series
+n=1
+
+Question 57. If an converges absolutely, does an converge?
+∞
+
+Question 58. Does the series
+n=1
+
+(1/n! − 1/n) converge absolutely? Converge conditionally? 7
+
+∞
+
+Question 59. Does the series
+n=1 ∞
+
+2−n converge absolutely? Converge conditionally?
+
+Question 60. Does the series
+n=1 ∞
+
+(−2)−n converge absolutely? Converge conditionally?
+
+Question 61. Does the series
+n=1 ∞
+
+(−1)n /n converge absolutely? Converge conditionally? log n converge absolutely? Converge conditionally? n
+
+Question 62. Does the series
+n=1 ∞
+
+(−1)n
+
+Question 63. Does the series
+n=1 ∞
+
+√ (−1)n / n converge absolutely? Converge conditionally?
+
+Question 64. Does the series
+n=1 ∞
+
+(−1)n /n2 converge absolutely? Converge conditionally?
+
+Question 65. Does the series
+n=1
+
+(sin n) /n2 converge absolutely? Converge conditionally?
+
+Question 66. What are the ﬁrst ﬁve terms of the Taylor series for f (x) = sin x cos x around zero? Question 67. What are the ﬁrst four terms of the Taylor series for f (x) = esin x around zero? Question 68. What are the ﬁrst ﬁve terms of the Taylor series for f (x) = cos2 x around π? Question 69. Find the Taylor series for f (x) = e3x around x = 0. Question 70. Find the Taylor series for f (x) = ex − e−x around x = 0. Question 71. Find the Taylor series for f (x) = ex − e−x around x = 0. Question 72. Find the Taylor series for f (x) = (1 + x)2 around x = 0. Question 73. Find the Taylor series for f (x) = (1 + x)100 around x = 0. Question 74. Find the Taylor series for f (x) = −x cos x + sin x around x = 0. Question 75. Find the Taylor series for f (x) = −x cos x + sin x around x = 0. Question 76. Find the Taylor series for f (x) = cos2 x sin3 x around x = 0. Question 77. What are the ﬁrst ﬁve terms of the Taylor series for f (x) = sin x cos x around π? Question 78. Evaluate the integral
+3 ∞
+
+dx (1 − x)2 8
+
+Question 79. Evaluate the integral 1 dx x2 − 9x + 20 Question 80. Evaluate the integral x3 − 1 dx 1 + x + x2 Question 81. Evaluate the integral x3 − 2 dx 1 + x + x2 Question 82. Evaluate the integral sin(3x) cos(3x) dx. Question 83. Evaluate the integral sin3 x cos10 x dx. Question 84. Evaluate the integral sin5 x cos5 x dx. Question 85. Find a two nonconstant polynomials p(x) and q(x) so that
+1 1
+
+p(x) (1 + x2 )dx = 0 and
+0 0
+
+q(x) (1 + x2 )dx = 0
+
+and p(x) is not a multiple of q(x). Question 86. Find the general solution to the diﬀerential equation 1 f (x) + f (x) = sin x x Question 87. Find the general solution to the diﬀerential equation f (x) − tan xf (x) = sin x
+
+9
+
+

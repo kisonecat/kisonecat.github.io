@@ -1,0 +1,37 @@
+Problem Set 2
+Summer 2010
+
+Piecewise-Linear Topology
+Jim Fowler
+
+Goal. Problem Set 2 introduces abstract simplicial complexes, formalizing the intuitive ideas suggested by Problem Set 1. You should be warned that what follows is not the only way to formalize our intuition. As usual, problems marked with a • should be written up. Deﬁnition. Geometrically, an n-dimensional simplex (written ∆n , and usually called an nsimplex for short) is the n-dimensional analog of a triangle; just as a triangle is the smallest convex set containing 3 points which do not lie on a line, the n-simplex ∆n is the smallest convex set containing n + 1 points in “general position.” But for now, the important feature of a simplex is the relationship between the faces. Indeed, topologically, we do not care about the size of the simplexes, or where they are sitting in space—so we will abstract away the geometry, leaving only the combinatorics behind. A simplex A is a face of a simplex B if the vertices determining A are a subset of the vertices determining B. We write A < B if A is a face of B. Speciﬁcally, some v for which {v} ∈ B is called a vertex of B. A simplicial complex K is a collection of ﬁnite sets (called the “simplexes”), with the property that if σ ∈ K, and τ < σ (i.e., if τ ⊂ σ when thought of as ﬁnite sets), then τ ∈ K. In words, a simplicial complex is a collection of simplexes, where any face of a simplex is also in the complex. We can think of a simplicial complex as a geometric object by gluing together actual simplexes along their faces (the so-called “geometric realization”) by following the pattern of the combinatorial data encoded by the ﬁnite sets. Anytime we deﬁne a mathematical object, we must also describe the maps between such objects. Let K and L be complexes. A simplicial map f : K → L is a function f : vert(K ) → vert( L) with the property that if σ ∈ K, then f (σ ) ∈ L.
+
+• Problem 1. Find an injective simplicial map)f : K7 → T 2 ; here, T 2 is the torus, and K7 ( 7 denotes 7 points connected in pairs by all = 21 edges. Use this to triangulate T 2 as a 2 simplicial complex with as few triangles as possible.
+Problem 2. Does there exist an injective map f : K3,3 → S2 ? What about f : K3,3 → T 2 ? Here, K3,3 denotes six points, connected by nine lines, as shown on the right.
+
+Subcomplexes
+Deﬁnition. If K and L are complexes, and every simplex in K is a simplex of L, then we write K ⊂ L and say that K is a subcomplex of L. Example. The n-dimensional skeleton (usually called the n-skeleton) of a complex K consists of all those simplexes which contain n + 1 or fewer points (i.e., are at most n-dimensional). Write K (n) for the n-skeleton. We say that a complex K is an n-complex if K = K (n) .
+
+• Problem 3. Prove that the n-skeleton of a simplicial complex K is still a simplicial complex.
+
+Joins
+One way to get a new complex from two old complexes is to take their join. Geometrically, the join of two complexes K and L is the complex K ∗ L consisting of all line segments from a point in K to a point in L. Deﬁnition. Let K and L be complexes with disjoint sets of vertices (we call such complexes joinable). We deﬁne a new complex called the join of K and L, written
+
+K ∗ L := {σ ∪ τ : σ ∈ K, τ ∈ L}.
+
+• Problem 4. Prove that if K and L are joinable complexes, then K ∗ L is also a complex.
+Problem 5. If K, L, and M are joinable complexes, then (K ∗ L) ∗ M = K ∗ ( L ∗ M ) and K ∗ L = L ∗ K. Problem 6. Prove that ∆0 ∗ ∆n = ∆n+1 , and therefore that ∆n ∗ ∆m = ∆n+m+1 . (In this problem, it looks as if ∆0 and ∆n ought not be joinable, since they both have a vertex labeled 0. In this case, we tacitly rename vertices to make the two complexes joinable. But then, what does that equal sign really mean?)
+
+Euler characteristic
+Deﬁnition. For a complex K, the Euler characteristic χ(K ) is
+
+∑(−1)n cn , where cn is the number of n-simplexes in K.
+n
+
+• Problem 7. Can you calculate χ(K ∗ L) in terms of χ(K ) and χ( L)? • Problem 8. Can you calculate χ(K1 ∪ K2 ) in terms of χ(K1 ) and χ(K2 )? • Problem 9. Calculate χ(Sn ), χ(∆n ), χ( T 2 ), and χ( T 3 ). But consider: what does this mean? There are distinct simplicial complexes which we want to refer to as Sn and T n …
+Problem 10. Let K and L be surfaces. Suppose f : K → L is a simplicial map, so that the preimage of every vertex in L consists of two vertices in K, the preimage of every edge in L consists of two disjoint edges in K, the preimage of every triangle in L consists of two disjoint triangles in K. First, relate χ( L) and χ(K ). Then ﬁnd an example of surfaces K and L and such a “doubling” map f : K → L.
+
+Products of complexes
+Problem 11. Describe the n-cube I n as a simplicial complex, by building a simplicial complex K with n coordinate maps f i : K → I = ∆1 . Show that each point x ∈ K is uniquely determined by its image under the n coordinate maps. Problem 12. Describe the n-torus T n as a simplicial complex, by building a simplicial complex K with n coordinate maps f i : K → S1 , so that each point x ∈ K is determined by its image under these coordinate maps.
+
+

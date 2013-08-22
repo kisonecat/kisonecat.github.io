@@ -1,0 +1,20 @@
+Lecture 34: Inﬁnite sets
+Wednesday, November 24, 2010
+
+Math 345
+Jim Fowler
+
+Textbook
+This lecture discusses section 15 of the textbook.
+
+Homework
+The homework is due Tuesday, November 30, 2010. From Section 15 of the textbook, do exercise 2.
+
+Example
+Show that the interval A = [1, ∞) is equinumerous to the interval B = (1, ∞) by giving an example of a bijection from A to B.
+
+Banach-Tarski paradox
+
+1
+
+

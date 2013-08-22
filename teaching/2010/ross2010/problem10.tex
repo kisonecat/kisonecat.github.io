@@ -1,0 +1,241 @@
+\documentclass[12pt]{pset}
+%\usepackage{add-copyright}
+
+\geometry{margin=0.5in}
+\title{Problem Set 10}
+\course{Piecewise-Linear Topology}
+\author{Jim Fowler}
+\date{Summer 2010}
+
+\usepackage{tikz}
+\usetikzlibrary{matrix}
+
+\newcommand{\defnword}[1]{\textbf{#1}}
+
+\usepackage{stmaryrd}
+\newcommand{\boundary}{\partial}
+\newcommand{\collapses}{\searrow}
+\newcommand{\expands}{\nearrow}
+\newcommand{\she}{\ssearrow\nnearrow}
+\newcommand{\join}{\ast}
+\newcommand{\subdivided}{\triangleleft}
+\geometry{margin=1in}%,top=0.5in,bottom=0.5in}
+\DeclareMathOperator{\st}{st}
+\DeclareMathOperator{\vertices}{vert}
+\DeclareMathOperator{\lk}{lk}
+\DeclareMathOperator{\cl}{cl}
+\DeclareMathOperator{\interior}{int}
+\newcommand{\fullsubcomplex}{\Subset}
+
+\usepackage{hyperref}
+
+\begin{document}
+\maketitle
+
+\subsubsection*{Homology, continued.} Today we continue studying
+homology of simplicial complexes.  In particular, we introduce a
+computational tool, the \textit{Mayer--Vietoris sequence.}
+
+\parskip 0.45\baselineskip
+\parindent 0pt
+
+%Last time, Max Rabinovich asked the very good question of whether
+%there were (say, compact) subsets of $\R^3$ having torsion in $H_1$.
+%The answer is no: you can find a discussion of this question at
+%\url{http://mathoverflow.net/questions/4478/}.
+
+\begin{requiredproblem}
+  Compute $H_n(CX)$, where $CX$ is the cone on a simplicial complex $X$.
+\end{requiredproblem}
+
+\begin{problem}
+  Show that $H_n(A \sqcup B) = H_n(A) \oplus H_n(B)$.
+\end{problem}
+
+\begin{problem}
+  If $X$ is path-connected (see Problem Set 3), show that $H_0(X) = \Z$.
+\end{problem}
+
+\begin{definition*}
+  A \textbf{chain complex} is a sequence of abelian groups $C_n$ and
+  homomorphisms $\partial : C_n \to C_{n-1}$, so that $\partial
+  \circ \partial = 0$.  In particular, chains on a simplicial complex
+  $X$ is an example of a chain complex.
+
+  A map $A_\bullet \to B_\bullet$ of chain complexes, called a \textbf{chain
+    map}, is a collection of homomorphisms $f_n : A_n \to B_n$
+  intertwining with the boundary, i.e., $\partial \circ f_n = f_{n-1}
+  \circ \partial$.
+\end{definition*}
+
+\begin{requiredproblem}
+  Show that a chain map sends boundaries to boundaries and cycles to
+  cycles, and therefore induces a map on homology.
+\end{requiredproblem}
+
+\begin{problem}
+  Show that a simplicial map $f : X \to Y$ induces a chain map $C_\bullet(f) :
+  C_\bullet(X) \to C_\bullet(Y)$, and therefore a map $H_\bullet(f) : H_\bullet(X)
+  \to H_\bullet(Y)$.  Usually, $H_\bullet(f)$ is written $f_\star$, but I
+  like to emphasize the \textbf{functoriality}.
+
+  Be careful to describe what happens if $f$ crushes some simplexes.
+\end{problem}
+
+\begin{definition*}
+  A sequence of abelian groups and homomorphisms 
+  $$\cdots \to A \stackrel{f}{\longrightarrow} B
+  \stackrel{g}{\longrightarrow} C \to \cdots$$ is \textbf{exact} at
+  $B$ if the image of $f$ equals the kernel of $g$ (in other words,
+  the kernel is ``exactly'' the image).
+
+  If we say ``a sequence is exact'' we mean it is exact at each group
+  in the sequence.  An exact sequence $0 \to A \to B \to C \to 0$ is
+  usually called a \textbf{short exact sequence}.
+
+  We can also talk about exact sequences of chain complexes, e.g., a
+  short exact sequence $0 \to A_\bullet \to B_\bullet \to C_\bullet \to 0$ of
+  chain complexes and chain maps.
+\end{definition*}
+
+\begin{requiredproblem}
+  Suppose $X = A \cup B$.  Find chain maps so that
+  $$
+  0 \to C_\bullet(A \cap B) \to C_\bullet(A) \oplus C_\bullet(B) \to C_\bullet(A
+  \cup B) \to 0
+  $$
+  is a short exact sequence of chain complexes.  \textit{Warning:} there is more than one way to do this.
+\end{requiredproblem}
+
+\begin{problem}
+  Show that a short exact sequence of chain complexes yields a long
+  exact sequence in homology; this is the \textbf{Zig-zag lemma},
+  which transforms
+
+\begin{tikzpicture}
+    \matrix (m) [matrix of math nodes,row sep=3em,column sep=0.8em]
+    {
+               & \vdots  & \vdots & \vdots & \\
+        0 & A_{n+1} & B_{n+1} & C_{n+1} & 0 \\
+        0 & A_{n} & B_{n} & C_{n} & 0 \\
+        0 & A_{n-1} & B_{n-1} & C_{n-1} & 0 \\
+              & \vdots  & \vdots & \vdots & \\
+   };
+   \draw[->] (m-2-1) edge (m-2-2);
+   \draw[->] (m-2-2) edge (m-2-3);
+   \draw[->] (m-2-3) edge (m-2-4);
+   \draw[->] (m-2-4) edge (m-2-5);
+
+   \draw[->] (m-3-1) edge (m-3-2);
+   \draw[->] (m-3-2) edge (m-3-3);
+   \draw[->] (m-3-3) edge (m-3-4);
+   \draw[->] (m-3-4) edge (m-3-5);
+
+   \draw[->] (m-4-1) edge (m-4-2);
+   \draw[->] (m-4-2) edge (m-4-3);
+   \draw[->] (m-4-3) edge (m-4-4);
+   \draw[->] (m-4-4) edge (m-4-5);
+
+   \draw[->] (m-1-2) edge (m-2-2);
+   \draw[->] (m-2-2) edge (m-3-2);
+   \draw[->] (m-3-2) edge (m-4-2);
+   \draw[->] (m-4-2) edge (m-5-2);
+
+   \draw[->] (m-1-3) edge (m-2-3);
+   \draw[->] (m-2-3) edge (m-3-3);
+   \draw[->] (m-3-3) edge (m-4-3);
+   \draw[->] (m-4-3) edge (m-5-3);
+
+   \draw[->] (m-1-4) edge (m-2-4);
+   \draw[->] (m-2-4) edge (m-3-4);
+   \draw[->] (m-3-4) edge (m-4-4);
+   \draw[->] (m-4-4) edge (m-5-4);
+\end{tikzpicture}
+\raisebox{10em}{into}
+\hspace{-5em}
+\begin{tikzpicture}
+    \matrix (m) [matrix of math nodes,row sep=3em,column sep=0.8em]
+   {
+              & & \cdots \\
+             H_{n+1}(A_\bullet) & H_{n+1}(B_\bullet) & H_{n+1}(C_\bullet)  \\
+             H_{n}(A_\bullet) & H_{n}(B_\bullet) & H_{n}(C_\bullet)  \\
+             H_{n-1}(A_\bullet) & H_{n-1}(B_\bullet) & H_{n-1}(C_\bullet)  \\
+             \cdots  & &  \\
+   };
+
+   \draw[->] (m-1-3) edge[out=0,in=180] (m-2-1);
+
+   \draw[->] (m-2-1) edge (m-2-2);
+   \draw[->] (m-2-2) edge (m-2-3);
+   \draw[->] (m-2-3) edge[out=0,in=180] (m-3-1);
+
+   \draw[->] (m-3-1) edge (m-3-2);
+   \draw[->] (m-3-2) edge (m-3-3);
+   \draw[->] (m-3-3) edge[out=0,in=180] (m-4-1);
+
+  \draw[->] (m-4-1) edge (m-4-2);
+  \draw[->] (m-4-2) edge (m-4-3);
+  \draw[->] (m-4-3) edge[out=0,in=180] (m-5-1);
+
+\end{tikzpicture}
+\end{problem}
+
+\begin{problem}
+  Combine the previous problems to discover the \textbf{Mayer--Vietoris
+    sequence}, a long exact sequence
+$$
+\cdots \to H_{n+1}(A \cup B) \to H_n(A \cap B) \to H_n(A) \oplus H_n(B) \to H_n(A
+\cup B) \to H_{n-1}(A \cap B) \to \cdots
+$$
+One can think of this long exact sequence as a generalization of
+inclusion-exclusion.
+\end{problem}
+
+\begin{requiredproblem}
+  Use the Mayer--Vietoris sequence to compare $H_n(SX)$ with $H_{n-1}(X)$.
+\end{requiredproblem}
+
+\begin{problem}
+  Assuming $H_n(S^1 \times I) = H_n(S^1)$, use the Mayer--Vietoris
+  sequence to compute $H_n(T^2)$ by building $T^2$ by gluing together
+  two copies of $S^1 \times I$.
+\end{problem}
+
+\begin{problem}
+  Compute $H_n(M \times S^1)$ in terms of $H_n(M)$.
+\end{problem}
+
+\begin{requiredproblem}
+  Calculate $H_n(T^2 - D^2)$ by using the Mayer--Vietoris sequence.
+  Here, $T^2 - D^2$ denotes $T^2$ with the interior of a $2$-simplex
+  removed.
+\end{requiredproblem}
+
+\begin{problem}
+ Calculate $H_n(S^2 - 3D^2)$, i.e., the homology of $S^2$ with 3 (open) disks removed.
+\end{problem}
+
+\begin{requiredproblem}
+Calculate $H_n(T^2 \# T^2)$ by gluing together two copies of $T^2 - D^2$.
+\end{requiredproblem}
+
+\begin{problem}
+  Can you calculate $H_n(M \# N)$ in terms of $H_n(M)$ and $H_n(N)$?
+\end{problem}
+
+\begin{problem}
+  Show that $H_n(\mbox{M\"obius band}) \cong H_n(S^1)$.
+\end{problem}
+
+\begin{requiredproblem}
+Calculate $H_n(\RP^2)$; recall that $\RP^2$ is a M\"obius band attached to a disk along their common circle boundary.
+\end{requiredproblem}
+
+\begin{problem}
+  Calculate $H_n(K)$, where $K$ is the Klein bottle.  Recall that the
+  Klein bottle consists of two copies of the M\"obius band, attached
+  along their boundary.
+\end{problem}
+
+\end{document}
+

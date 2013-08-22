@@ -1,0 +1,90 @@
+\documentclass[12pt]{pset}
+
+\course{Math 765}
+\author{Jim Fowler}
+\date{Winter 2011}
+
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\CP}{\mathbb{C}P}
+\newcommand{\RP}{\mathbb{R}P}
+
+\usepackage{enumerate}
+\usepackage{nopageno}
+\usepackage{hyperref}
+\usepackage{tikz}
+
+\DeclareMathOperator{\Vect}{Vect}
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\SO}{SO}
+\DeclareMathOperator{\so}{\mathfrak{so}}
+\DeclareMathOperator{\codim}{codim}
+\DeclareMathOperator{\Mat}{Mat}
+\DeclareMathOperator{\SymMat}{SymMat}
+\DeclareMathOperator{\Id}{Id}
+\DeclareMathOperator{\Sym}{Sym}
+\newcommand{\Proj}{\mathbb{P}}
+\newcommand{\LL}{\mathcal{L}}
+
+\newcommand{\HH}{H}
+\newcommand{\hh}{\mathfrak{h}}
+
+\DeclareMathOperator{\Imm}{Imm}
+\DeclareMathOperator{\Mono}{Mono}
+\usepackage{amsthm}
+\newtheorem*{theorem*}{Theorem}
+
+\begin{document}
+\maketitle
+
+\noindent\textbf{Immersion theory.}  This week, we'll study
+$\Imm(M,N)$, the space of immersions from $M$ to $N$.  The most
+important result is
+
+\begin{theorem*}[Smale--Hirsch]
+  Let $M^m$ be a closed smooth manifold, and $N^n$ a smooth manifold,
+  and $m < n$.
+  Then map $\Imm(M,N) \to \Mono(TM,TN)$ which sends $f$ to $Df$ is a
+  homotopy equivalence.  Here, $\Mono(TM,TN)$ consists of pairs of
+  continuous maps $f : M \to N$ and a smooth bundle map $TM \to
+  f^{\star}TN$ which is fiberwise injective.  Note that an element of
+  $\Mono(TM,TN)$ need not arise from an immersion and its derivative.
+\end{theorem*}
+
+\noindent
+Email me with questions at \texttt{fowler@math.osu.edu}.  \textit{The
+  exercises below should be handed in on Monday, March 7, 2011.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Bicycle chain redux]
+
+  Compute $\pi_0(\Mono(TS^1, T\R^2))$, and use this result to say
+  something about (regular homotopy\footnote{A \textit{regular
+      homotopy} is a homotopy through immersions which extends
+    continuously to a homotopy of the tangent bundles.} classes of)
+  immersions of the circle in the plane.
+
+\end{problem}
+
+\vfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}[Sphere eversion is possible]
+
+Let $i : S^2 \to \R^3$ be the standard inclusion, and let $r : S^2 \to
+S^2$ be the map given by $r(v) = -v$.  Show that the immersions $i$
+and $i \circ r$ are homotopic through immersions.
+
+For a bonus point, for which $S^n \hookrightarrow \R^{n+1}$ is sphere
+eversion possible?
+
+\end{problem}
+
+\vfill
+\vfill
+\vfill
+
+\pagebreak
+
+\null
+
+\end{document}

@@ -1,0 +1,17 @@
+Lecture 26: Algebra of set operations
+Monday, November 8, 2010
+
+Math 345
+Jim Fowler
+
+Textbook
+This lecture discusses section 10 of the textbook.
+
+Homework
+The homework is due Monday, November 15, 2010. From Section 10 of the textbook, do exercises 12, 13, 15, and 16. Write up this homework nicely, as you will be submitting it to the anonymous peer review system.
+
+How do you prove that two sets are the same? De Morgan’s Laws for Sets Distributivity
+
+1
+
+

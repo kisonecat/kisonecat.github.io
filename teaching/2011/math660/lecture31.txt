@@ -1,0 +1,189 @@
+Lecture 31: Homology
+Math 660—Jim Fowler Tuesday, August 3, 2010
+
+Theorem
+A region Ω is simply connected if and only if n(γ, a) = 0 for all cycles γ in Ω and all points a ∈ Ω.
+
+Homology
+A cycle in a region Ω is homologous to zero inside Ω if n(γ, a) for all a ∈ Ω.
+
+Homology
+A cycle in a region Ω is homologous to zero inside Ω if n(γ, a) for all a ∈ Ω. We write [γ1 ] = [0] ∈ H1 (Ω).
+
+Homology
+A cycle in a region Ω is homologous to zero inside Ω if n(γ, a) for all a ∈ Ω. We write [γ1 ] = [0] ∈ H1 (Ω). We write [γ1 ] = [γ2 ] ∈ H1 (Ω) if [γ1 − γ2 ] = [0].
+
+Cauchy’s theorem
+Theorem
+If f (z) is analytic in Ω, then f (z) dz = 0
+γ
+
+for every cycle γ which is homologus to zero in Ω.
+
+Cauchy’s theorem
+Theorem
+If f (z) is analytic in Ω, then f (z) dz = 0
+γ
+
+for every cycle γ which is homologus to zero in Ω. In other words, if the property holds for 1/(z − a) with a ∈ Ω, then it holds for all analytic f .
+
+Theorem
+If f (z) is analytic in Ω, then f (z) dz = 0
+γ
+
+for every cycle γ which is homologus to zero in Ω.
+
+Theorem
+Suppose f (z) is analytic in Ω, a simply connected region.
+
+Theorem
+If f (z) is analytic in Ω, then f (z) dz = 0
+γ
+
+for every cycle γ which is homologus to zero in Ω.
+
+Theorem
+Suppose f (z) is analytic in Ω, a simply connected region. Then f (z) dz = 0
+γ
+
+for every cycle γ in Ω.
+
+By Cauchy’s theorem, there exists a single-valued analytic function F (z) so that F (z) = f (z).
+
+By Cauchy’s theorem, there exists a single-valued analytic function F (z) so that F (z) = f (z). Then,
+
+Corollary
+If f (z) is analyic and nonzero in a simply connected region Ω, then it is possible to deﬁne single valued analytic branches of log f (z) and n f (z).
+
+Proof of Cauchy’s theorem
+Suppose Ω is a bounded region.
+
+Proof of Cauchy’s theorem
+Suppose Ω is a bounded region. Cover C by squares of side length δ.
+
+Proof of Cauchy’s theorem
+Suppose Ω is a bounded region. Cover C by squares of side length δ. Let {Qj }j∈J be squares inside Ω.
+
+Proof of Cauchy’s theorem
+Suppose Ω is a bounded region. Cover C by squares of side length δ. Let {Qj }j∈J be squares inside Ω. Γδ = ∂Qj .
+
+Proof of Cauchy’s theorem
+Suppose Ω is a bounded region. Cover C by squares of side length δ. Let {Qj }j∈J be squares inside Ω. Γδ = ∂Qj . Ωδ = int j∈J Qj .
+
+Proof of Cauchy’s theorem
+Suppose Ω is a bounded region. Cover C by squares of side length δ. Let {Qj }j∈J be squares inside Ω. Γδ = ∂Qj . Ωδ = int j∈J Qj . Suppose γ with [γ] = [0] ∈ H1 (Ω).
+
+Proof of Cauchy’s theorem
+Suppose Ω is a bounded region. Cover C by squares of side length δ. Let {Qj }j∈J be squares inside Ω. Γδ = ∂Qj . Ωδ = int j∈J Qj . Suppose γ with [γ] = [0] ∈ H1 (Ω). Choose δ small so that γ ∈ Ωδ .
+
+Proof of Cauchy’s theorem
+Suppose Ω is a bounded region. Cover C by squares of side length δ. Let {Qj }j∈J be squares inside Ω. Γδ = ∂Qj . Ωδ = int j∈J Qj . Suppose γ with [γ] = [0] ∈ H1 (Ω). Choose δ small so that γ ∈ Ωδ . Check that n(γ, a) = 0 if a ∈ Γδ .
+
+Suppose f is analytic in Ω.
+
+Suppose f is analytic in Ω. If z ∈ int Qj , then f (z) = 1 2πi f (ζ) dζ ζ −z
+
+Γδ
+
+Suppose f is analytic in Ω. If z ∈ int Qj , then f (z) = 1 2πi f (ζ) dζ ζ −z
+
+Γδ
+
+and by continuity, this holds for all z ∈ Ωδ .
+
+Suppose f is analytic in Ω. If z ∈ int Qj , then f (z) = 1 2πi f (ζ) dζ ζ −z
+
+Γδ
+
+and by continuity, this holds for all z ∈ Ωδ . Therefore, f (z) dz =
+γ γ
+
+1 2πi
+
+f (ζ) dζ ζ −z
+
+dz
+
+Suppose f is analytic in Ω. If z ∈ int Qj , then f (z) = 1 2πi f (ζ) dζ ζ −z
+
+Γδ
+
+and by continuity, this holds for all z ∈ Ωδ . Therefore, f (z) dz =
+γ γ
+
+1 2πi
+
+f (ζ) dζ ζ −z
+
+dz
+
+and reversing the order of integration, f (z) dz =
+γ Γδ
+
+1 2πi
+
+γ
+
+dz ζ −z
+
+f (ζ)dζ
+
+Suppose f is analytic in Ω. If z ∈ int Qj , then f (z) = 1 2πi f (ζ) dζ ζ −z
+
+Γδ
+
+and by continuity, this holds for all z ∈ Ωδ . Therefore, f (z) dz =
+γ γ
+
+1 2πi
+
+f (ζ) dζ ζ −z
+
+dz
+
+and reversing the order of integration, f (z) dz =
+γ Γδ
+
+1 2πi
+
+γ
+
+dz ζ −z
+
+f (ζ)dζ
+
+and the integral vanishes.
+
+If Ω is unbounded?
+If Ω is unbounded, consider Ω = Ω ∩ BR (0)
+
+If Ω is unbounded?
+If Ω is unbounded, consider Ω = Ω ∩ BR (0)for R large enough that BR (0) ⊃ γ.
+
+If Ω is unbounded?
+If Ω is unbounded, consider Ω = Ω ∩ BR (0)for R large enough that BR (0) ⊃ γ. Then n(γ, a) = 0 for all a ∈ BR (0) or a ∈ Ω,
+
+If Ω is unbounded?
+If Ω is unbounded, consider Ω = Ω ∩ BR (0)for R large enough that BR (0) ⊃ γ. Then n(γ, a) = 0 for all a ∈ BR (0) or a ∈ Ω,so [γ] = [0] ∈ H1 (Ω ).
+
+If Ω is unbounded?
+If Ω is unbounded, consider Ω = Ω ∩ BR (0)for R large enough that BR (0) ⊃ γ. Then n(γ, a) = 0 for all a ∈ BR (0) or a ∈ Ω,so [γ] = [0] ∈ H1 (Ω ). Thus, γ f (z) dz = 0, so the theorem holds for arbitrary Ω.
+
+If Ω is unbounded?
+If Ω is unbounded, consider Ω = Ω ∩ BR (0)for R large enough that BR (0) ⊃ γ. Then n(γ, a) = 0 for all a ∈ BR (0) or a ∈ Ω,so [γ] = [0] ∈ H1 (Ω ). Thus, γ f (z) dz = 0, so the theorem holds for arbitrary Ω.
+
+Theorem
+If f (z) is analytic in Ω, then f (z) dz = 0
+γ
+
+for every cycle γ which is homologus to zero in Ω.
+
+Theorem
+Suppose f (z) is analytic in Ω, a simply connected region. Then f (z) dz = 0
+γ
+
+for every cycle γ in Ω.
+
+Locally exact diﬀerentials
+
+

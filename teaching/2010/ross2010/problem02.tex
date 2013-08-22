@@ -1,0 +1,245 @@
+\documentclass[12pt]{pset}
+%\usepackage{add-copyright}
+
+\title{Problem Set 2}
+\course{Piecewise-Linear Topology}
+\author{Jim Fowler}
+\date{Summer 2010}
+
+\newcommand{\defnword}[1]{\textbf{#1}}
+
+\newcommand{\boundary}{\partial}
+\newcommand{\collapses}{\searrow}
+\newcommand{\expands}{\nearrow}
+\newcommand{\she}{\ssearrow\nnearrow}
+\newcommand{\join}{\ast}
+\newcommand{\subdivided}{\triangleleft}
+\geometry{margin=1in}%,top=0.5in,bottom=0.4in}
+\DeclareMathOperator{\st}{st}
+\DeclareMathOperator{\vertices}{vert}
+\DeclareMathOperator{\lk}{lk}
+\DeclareMathOperator{\cl}{cl}
+\DeclareMathOperator{\interior}{int}
+
+\begin{document}
+\maketitle
+
+\subsubsection*{Goal.} Problem Set 2 introduces \textit{abstract
+  simplicial complexes,} formalizing the intuitive ideas suggested by
+Problem Set 1.  You should be warned that what follows is not the only
+way to formalize our intuition.  As usual, problems marked
+  with a $\bullet$ should be written up.
+
+\parskip 0.25\baselineskip
+\parindent 0pt
+
+\begin{definition*}
+  Geometrically, an $n$-dimensional \defnword{simplex} (written
+  $\Delta^n$, and usually called an $n$-simplex for short) is the
+  $n$-dimensional analog of a triangle; just as a triangle is the
+  smallest convex set containing 3~points which do not lie on a line,
+  the $n$-simplex $\Delta^n$ is the smallest convex set containing
+  $n+1$~points in ``general position.''
+%\end{definition*}
+
+  But for now, the important feature of a simplex is the relationship
+  between the faces.  Indeed, topologically, we do not care about the
+  size of the simplexes, or where they are sitting in space---so we
+  will abstract away the geometry, leaving only the combinatorics
+  behind.
+
+%\begin{definition*}
+  A simplex $A$ is a \defnword{face} of a simplex $B$ if the vertices
+  determining $A$ are a subset of the vertices determining $B$.  We
+  write $A < B$ if $A$ is a face of $B$.  Specifically, some $v$ for which $\{v\}
+  \in B$ is called a \defnword{vertex} of $B$.
+%\end{definition*}
+
+%\begin{definition*}
+%  We allow the \defnword{empty simplex}, which is determined
+%  by no points at all, and might call it the $(-1)$-simplex (after all,
+%  $-1 + 1 = 0$ points).  Note that the $(-1)$-simplex is a face of every
+%  simplex.
+%\end{definition*}
+
+%\begin{definition*}
+
+  A \defnword{simplicial complex} $K$ is a collection of finite sets
+ (called the ``simplexes''), with the property that if $\sigma \in
+ K$, and $\tau < \sigma$ (i.e., if $\tau \subset \sigma$ when thought
+ of as finite sets), then $\tau \in K$.
+
+  In words, a simplicial complex is a collection of simplexes, where
+  any face of a simplex is also in the complex.  We can think of a
+  simplicial complex as a geometric object by gluing together actual
+  simplexes along their faces (the so-called ``geometric
+  realization'') by following the pattern of the combinatorial data
+  encoded by the finite sets.
+
+  Anytime we define a mathematical object, we must also describe the
+  maps between such objects.  Let $K$ and $L$ be complexes.  A
+  \defnword{simplicial map} $f : K \to L$ is a function $f :
+  \vertices(K) \to \vertices(L)$ with the property that if $\sigma \in
+  K$, then $f(\sigma) \in L$.
+\end{definition*}
+
+\begin{requiredproblem}
+  Find an injective simplicial map $f : K_7 \to T^2$; here, $T^2$ is
+  the torus, and $K_7$ denotes $7$ points connected in pairs by all
+  $\displaystyle\binom{7}{2} = 21$ edges.  Use this to triangulate
+  $T^2$ as a simplicial complex with as few triangles as possible.
+\end{requiredproblem}
+
+\noindent\parbox{0.85\textwidth}{%
+\begin{problem}
+ Does there exist an injective map $f : K_{3,3} \to S^2$?  What about
+$f : K_{3,3} \to T^2$?  Here, $K_{3,3}$ denotes six points,
+connected by nine lines, as shown on the right.
+\end{problem}}%
+\hspace{10pt}%
+\parbox{0.15\textwidth}{%
+\includegraphics[width=0.15\textwidth-10pt]{bipartite-graph.pdf}%
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Subcomplexes}
+
+\begin{definition*}
+  If $K$ and $L$ are complexes, and every simplex in $K$ is a simplex
+  of $L$, then we write $K \subset L$ and say that $K$ is a
+  \defnword{subcomplex} of $L$.
+\end{definition*}
+%Here is an example of a subcomplex.
+\begin{example*}
+  The $n$-dimensional \defnword{skeleton} (usually called the
+  $n$-skeleton) of a complex $K$ consists of all those simplexes which
+  contain $n+1$ or fewer points (i.e., are at most $n$-dimensional).
+  Write $K^{(n)}$ for the $n$-skeleton.  We say that a complex $K$ is
+  an $n$-complex if $K = K^{(n)}$.
+\end{example*}
+\begin{requiredproblem}
+  Prove that the $n$-skeleton of a simplicial complex $K$ is still a
+  simplicial complex.
+\end{requiredproblem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \subsection*{Spheres and balls}
+
+% \begin{example*}
+% We regard $n$-simplex $\Delta^n$ itself as an example of a simplicial
+% complex.  If we label the $n+1$ vertices of $\Delta^n$ using the set
+% $V = \{ 0, 1, 2, \ldots, n \}$, then the simplexes of $\Delta^n$ are
+% all $2^{n+1}$ subsets of $V$.
+
+% When thinking of the $n$-simplex as a complex, we will usually call it
+% $B^n$, thinking of it as the $n$-dimensional \defnword{ball}.
+% \end{example*}
+
+% \begin{example*}
+% The \defnword{boundary} of a simplex $\sigma$ (written $\boundary \sigma$) is
+% the complex consisting of all faces of $\sigma$ except $\sigma$
+% itself.
+
+% The $n$-dimensional boundary of the $(n+1)$-simplex $\Delta^{n+1}$
+% is the $n$-dimensional \defnword{sphere} $S^n$.
+% \end{example*}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Joins}
+
+One way to get a new complex from two old complexes is to take their
+join.  Geometrically, the join of two complexes $K$ and $L$ is the
+complex $K \join L$ consisting of all line segments from a point in
+$K$ to a point in $L$.
+
+\begin{definition*}
+Let $K$ and $L$ be complexes with disjoint sets of vertices (we call
+such complexes \defnword{joinable}).  We define a new complex called
+the \defnword{join} of $K$ and $L$, written
+$$
+K \join L := \{ \sigma \cup \tau : \sigma \in K, \tau \in L \}.
+$$
+\end{definition*}
+
+\begin{requiredproblem}
+Prove that if $K$ and $L$ are joinable complexes, then $K \join L$ is
+also a complex.
+\end{requiredproblem}
+
+\begin{problem}
+If $K$, $L$, and $M$ are joinable complexes, then $(K \join
+L) \join M = K \join (L \join M)$ and $K \join L = L \join K$.
+\end{problem}
+
+\begin{problem}
+  Prove that $\Delta^0 \join \Delta^n = \Delta^{n+1}$, and therefore
+  that $\Delta^n \join \Delta^m = \Delta^{n+m+1}$.  (In this problem,
+  it looks as if $\Delta^0$ and $\Delta^n$ ought not be joinable,
+  since they both have a vertex labeled $0$.  In this case, we
+  tacitly rename vertices to make the two complexes joinable.  But
+  then, what does that equal sign really mean?)
+\end{problem}
+
+\pagebreak
+
+\subsection*{Euler characteristic}
+
+\begin{definition*}
+For a complex $K$, the Euler characteristic $\chi(K)$ is
+$$
+\sum_{n} (-1)^n c_n, \mbox{ where $c_n$ is the number of $n$-simplexes
+  in $K$.}
+$$
+\end{definition*}
+
+\begin{requiredproblem}
+Can you calculate $\chi(K \join L)$ in terms of $\chi(K)$ and $\chi(L)$?
+\end{requiredproblem}
+
+\begin{requiredproblem}
+Can you calculate $\chi(K_1 \cup K_2)$ in terms of $\chi(K_1)$ and
+$\chi(K_2)$?%  What other information do you need?
+\end{requiredproblem}
+
+\begin{requiredproblem}
+  Calculate $\chi(S^n)$, $\chi(\Delta^n)$, $\chi(T^2)$, and
+  $\chi(T^3)$.  But consider: what does this mean?  There are distinct
+  simplicial complexes which we want to refer to as $S^n$ and
+  $T^n$\ldots
+\end{requiredproblem}
+
+\begin{problem}
+  Let $K$ and $L$ be surfaces.  Suppose $f : K \to L$ is a simplicial
+  map, so that
+\begin{center}
+\begin{tabular}{l@{ }l@{ }l@{ }l@{ }l}
+the preimage of every & vertex & in $L$ consists of two & vertices & in $K$, \\
+the preimage of every & edge & in $L$ consists of two & disjoint edges & in $K$, \\
+the preimage of every & triangle & in $L$ consists of two & disjoint triangles & in $K$.
+\end{tabular}
+\end{center}
+First, relate $\chi(L)$ and $\chi(K)$.  Then find an example of surfaces $K$
+and $L$ and such a ``doubling'' map $f : K \to L$.
+\end{problem}
+
+\subsection*{Products of complexes}
+
+\begin{problem}
+  Describe the $n$-cube $I^n$ as a simplicial complex, by building a
+  simplicial complex $K$ with $n$ coordinate maps $f_i : K \to I =
+  \Delta^1$.  Show that each point $x \in K$ is uniquely determined by
+  its image under the $n$ coordinate maps.
+\end{problem}
+
+\begin{problem}
+  Describe the $n$-torus $T^n$ as a simplicial complex, by building a
+  simplicial complex $K$ with $n$ coordinate maps $f_i : K \to S^1$,
+  so that each point $x \in K$ is determined by its image under these
+  coordinate maps.
+\end{problem}
+
+
+\end{document}
+

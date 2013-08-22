@@ -1,0 +1,135 @@
+\documentclass[11pt]{article}
+\usepackage{fullpage}
+\usepackage{nopageno}
+\usepackage{ifthen}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx} 
+\usepackage{version}
+\usepackage{amsthm}
+%\usepackage{add-copyright}
+
+\excludeversion{solution}
+
+\newcommand{\R}{\mathbb{R}}
+
+\title{Take-Home Quiz 4}
+\author{Math 131 Section 22}
+\date{Due Monday, November 7, 2005}
+
+\newcounter{problem}
+\setcounter{problem}{1}
+
+\newenvironment{problem}[1][]
+{\begin{flushleft}\hangindent=1em\hangafter=1\noindent\textbf{Problem \arabic{problem}.}
+\ifthenelse{\equal{#1}{}}{}{
+\textbf{(#1 \ifthenelse{\equal{#1}{1}}{point}{points}).}}
+}
+{\addtocounter{problem}{1}\end{flushleft}}
+
+\begin{document}
+\maketitle
+
+\noindent
+I promise to include tanks of water on next week's quiz, but until then\ldots
+
+\begin{problem}[3]
+Our friend is spending an eternity skiing\footnote{For fun, find
+another English verb ending in $i$.} up and down a mountain, and she
+notes that her height $f(t)$ is related to the current time $t$ by the
+following function
+$$
+f(t) = x^3 - 3x^2 - 9x + 2.
+$$ At what times $t$ are our friend's skis horizontal?  After $t =
+100$, will she be going up or down a hill?
+\end{problem}
+
+\begin{solution}
+\subsubsection*{Solution}
+
+The slope of our friend's skis equals the derivative, so we want to
+find $t \in \R$ so that
+$$
+f'(t) = 0.
+$$
+So we calculate,
+\begin{eqnarray*}
+f'(t)
+&=& D_t \left( t^3 - 3t^2 - 9t + 2 \right) \\
+&=& D_t \left( t^3 \right) - D_t \left( 3t^2 \right) - D_t \left( 9t \right) + D_t \left( 2 \right) \\
+&=& D_t \left( t^3 \right) - 3 D_t \left( t^2 \right) - 9 D_t \left( t \right) +0 \\
+&=& 3t^2 - 6t - 9 \\
+&=& 3 \left( t^2 - 2t - 3 \right) \\
+&=& 3 \left( t - 1 \right) \left( t + 3 \right),
+\end{eqnarray*}
+thus her skis will be horizontal when $t = 1$ and $t = -3$, but for the
+rest of eternity, she will be going up or down a hill.
+
+We also note that if $t \geq 100$, the derivative $f'(t) > 0$, so after 100 units if time, she will, unfortunately, spend the rest of eternity skiing uphill.
+\end{solution}
+
+\begin{problem}[6]
+Define the function $f : (-\infty,1) \cup (1,\infty) \to \R$ by
+$$
+f(x) = \frac{x+1}{x-1}.
+$$
+\begin{description}
+\item[(a)] Calculate $f'(x)$ using the rules of differentiation.
+\item[(b)] What do you notice about $f'(x)$ as $x$ tends to infinity?  (In other words, what is $\lim_{x \to \pm \infty} f'(x)$?
+\item[(c)] Interpret part~(b) geometrically.
+\end{description}
+\end{problem}
+
+\begin{solution}
+\subsubsection*{Solution}
+
+\begin{description}
+\item[(a)] We differentiate $f$ using the quotient rule
+$$
+f'(x) = \frac{(x-1) - (x+1)}{(x-1)^2} = \frac{-2}{(x-1)^2}.
+$$
+\item[(b)] We calculate
+$$
+\lim_{x \to \infty} \frac{-2}{(x-1)^2} = \lim_{x \to \infty} \frac{-2}{(x-1)^2} = 0
+$$
+because the denominator is tending to $\infty$ while the numerator is constant.
+\item[(c)] As you head to $\pm \infty$, the graph gets closer and closer to a horizontal line..
+\end{description}
+\end{solution}
+
+\begin{problem}[3]
+Sisyphus is pushing a boulder up a hill.  You might expect me to
+include you in his torment by asking you to differentiate the
+boulder's height with respect to time.  However, your pointless
+punishment will be to differentiate:
+$$
+f(x) = \frac{(x^2 - 4)(8x^{16} + 32)}{x^{10} + 1}.
+$$
+The powers of two are nice (e.g., $8 \cdot 16 = 2^3 \cdot 2^4 = 2^7
+= 128$), but please don't push the boulder too far by simplifying your
+answer too much.
+\end{problem}
+
+\begin{solution}
+\subsubsection*{Solution}
+
+Here we go:
+\begin{eqnarray*}
+f'(x)
+&=& D_x \left( \frac{(x^2 - 4)(8x^{16} + 32)}{x^{10} + 1} \right) \\
+&=& \frac{(x^{10} + 1) D_x \left( (x^2 - 4)(8x^{16} + 32) \right) -
+(x^2 - 4)(8x^{16} + 32) D_x \left( x^{10} + 1 \right)}{\left(x^{10} + 1\right)^2} \\
+&=& \frac{(x^{10} + 1) \left( (x^2-4) D_x (8x^{16} + 32) + (8x^{16} + 32) D_x (x^2 - 4) \right) -
+(x^2 - 4)(8x^{16} + 32) \left( D_x (x^{10}) + D_x 1 \right)}{\left(x^{10} + 1\right)^2} \\
+&=& \frac{(x^{10} + 1) \left( (x^2-4) D_x (8x^{16}) + (8x^{16} + 32) D_x (x^2) \right) -
+(x^2 - 4)(8x^{16} + 32)(10 x^9) }{\left(x^{10} + 1\right)^2} \\
+&=& \frac{(x^{10} + 1) \left( (x^2-4) 128 x^{15} + (8x^{16} + 32) (2x) \right) -
+(x^2 - 4)(8x^{16} + 32)(10 x^9) }{\left(x^{10} + 1\right)^2}.
+\end{eqnarray*}
+which I really don't feel like simplifying.
+\end{solution}
+
+
+
+
+\end{document}

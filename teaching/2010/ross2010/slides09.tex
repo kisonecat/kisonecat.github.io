@@ -1,0 +1,647 @@
+\documentclass[14pt]{beamer}
+
+\setbeamertemplate{navigation symbols}{}
+
+\usepackage{pgf}
+\usepackage{amsmath}
+\usepackage{amsthm}
+%\newtheorem*{problem}{Problem}
+\usepackage{amssymb}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+
+\usepackage{wasysym}
+\usepackage{stmaryrd}
+\newcommand{\boundary}{\partial}
+\newcommand{\collapses}{\searrow}
+\newcommand{\sunnycollapses}{\searrow\hspace{-12pt}\mbox{\raisebox{5pt}{\sun}}\hspace{2pt}}
+\newcommand{\expands}{\nearrow}
+\newcommand{\she}{\ssearrow\nnearrow}
+\newcommand{\join}{\ast}
+\newcommand{\subdivided}{\triangleleft}
+\newcommand{\fullsubcomplex}{\Subset}
+\newcommand{\BallThm}[1]{\mbox{$\textcolor{green!50!black}{\mbox{\textbf{BallThm}}_{#1}}$}}
+\newcommand{\SphereThm}[1]{\mbox{$\textcolor{green!50!black}{\mbox{\textbf{SphereThm}}_{#1}}$}}
+
+\DeclareMathOperator{\st}{st}
+\DeclareMathOperator{\vertices}{vert}
+\DeclareMathOperator{\lk}{lk}
+\DeclareMathOperator{\cl}{cl}
+\DeclareMathOperator{\cone}{cone}
+\DeclareMathOperator{\interior}{int}
+
+\title{Topology of  \\ Piecewise-Linear Manifolds}
+\author{Jim Fowler}
+\date{Lecture 9 \\ Summer 2010}
+
+\newcommand{\setbackgroundpicture}[1]{%
+\usebackgroundtemplate{
+\begin{pgfpicture}{0in}{0in}{\paperwidth}{\paperheight}
+\pgfputat{\pgfxy(0,0)}{\includegraphics[width=\paperwidth]{#1}}
+\color{white}
+\pgfsetfillopacity{0.8}
+\pgfrect[fill]{\pgfxy(0,0)}{\pgfpoint{\paperwidth}{\paperheight}}
+\end{pgfpicture}
+}
+}
+\newcommand{\clearbackgroundpicture}{\usebackgroundtemplate{}}
+
+\begin{document}
+
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}
+\frametitle{Elementary simplicial collapse}
+
+\begin{definition}
+  Let $L$ and $K = L \cup \cl \{ \sigma, \tau \}$ be complexes \\
+
+  \vspace{1ex}If $\sigma$ is a principal simplex of $K$, and \\
+  $\tau$ is a free face of $\sigma$, then \\
+  $L$ is an \textbf{elementary simplicial collapse} of $K$.
+\end{definition}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Simplicial collapse}
+
+\begin{definition}
+  Let $K_1, K_2, \ldots, K_n$ be complexes, with \\
+  $K_{i+1}$ an elementary simplicial collapse of $K_i$.
+
+  \vspace{1ex}Call $K_n$ a \textbf{simplicial collapse} of $K_1$, and \\
+  write $K_1 \collapses K_n$.
+
+  \vspace{1ex}Call $K_1$ a \textbf{simplicial expansion} of $K_n$, and \\
+  write $K_n \expands K_1$.
+\end{definition}
+
+\end{frame}
+
+\setbackgroundpicture{problem07.pdf}
+\begin{frame}
+  \frametitle{Collapse onto a graph}
+
+  \begin{problem}
+    Show that $T^2 - D^2$ and $S^3 - 3D^2$ \\
+    collapse onto $S^1 \vee S^1$, \\
+    the union of two circles along one point.
+\end{problem}
+  \pause
+  Start with an explicit triangulation. \\\pause
+  Incidentally, what is $\chi$?
+\end{frame}
+\clearbackgroundpicture
+
+\setbackgroundpicture{Bangsar.JPG}
+\begin{frame}
+  \frametitle{Regular neighborhoods}
+
+   $M$, an $n$-manifold, $X \subset M$ a polyhedron \\
+    a \textbf{regular neighborhood} of $X$ in $M$ \\
+    is a subpolyhedron $N \subset M$ such that
+    \begin{itemize}
+      \item $N$ is a closed neighborhood of $X$ 
+      \item $N$ is an $n$-manifold 
+      \item $N \collapses X$.
+    \end{itemize}
+
+  \begin{theorem}
+    If $N_1$ and $N_2$ are regular neighborhoods of $X \subset M$, \\
+    there's a homeomorphism $N_1 \to N_2$ keeping $X$ fixed.
+  \end{theorem}
+\end{frame}
+\clearbackgroundpicture
+
+\setbackgroundpicture{problem07.pdf}
+\begin{frame}
+  \frametitle{Possible neighborhoods}
+  \vfill
+  \begin{problem}
+    What are the possible regular neighborhoods of $S^1$ inside a
+    2-manifold?  \\
+    Which surfaces collapse to a circle?
+ \end{problem}
+ \vfill
+\end{frame}
+\clearbackgroundpicture
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setbackgroundpicture{zeeman.pdf}
+\begin{frame}
+ \vfill
+ \begin{center}
+   Today is the last lecture covering the work of  \\
+   \Huge E. C. Zeeman \\
+   \vfill
+   {\normalsize \textbf{Goal:} \textit{``Unknotting combinatorial balls''}
+     \\
+     a paper in the \textbf{Annals}
+     }
+  \end{center}
+  \vfill
+  \pause
+  \begin{center}
+  {\textbf{Wednesday:} (co)homology}
+  \end{center}
+\end{frame}
+\clearbackgroundpicture
+
+\setbackgroundpicture{Nf_knots.png}
+\begin{frame}
+  \frametitle{Main result}
+
+\vfill
+
+\Large
+  \begin{theorem}
+    Any embedding $S^p \subset S^q$ \\is unknotted, if $q - p \geq 3$.
+  \end{theorem}
+
+\vfill
+
+\end{frame}
+\clearbackgroundpicture
+
+\setbackgroundpicture{two-giraffes-871277133292IxUu.jpg}
+\begin{frame}
+  \frametitle{Pairs}
+
+  \begin{definition}
+    ``$(p,q)$-sphere pair'' means $S^q \subset S^p$. \\
+    We sometimes write $(S^p,S^q)$.
+
+    \vspace{1ex}
+    ``$(p,q)$-ball pair'' means $B^q \subset B^p$, \\
+    with $B^q$ properly embedded in $B^p$, \\
+    meaning $\partial B^q \subset \partial B^p$ 
+    and $\interior B^q \subset \interior B^p$. \\
+    We sometimes write $(B^p,B^q)$.
+  \end{definition}
+
+  \vfill
+ ``Pair'' means either a ball-pair or sphere-pair.
+
+  \vfill
+  $\partial (B^p,B^q) = (S^{p-1},S^{q-1})$.
+
+\end{frame}
+\clearbackgroundpicture
+
+\setbackgroundpicture{Mona_Lisa_headcrop.jpg}
+\begin{frame}
+  \frametitle{Faces of pairs}
+
+  If $Q' = (B^{p-1},B^{q-1})$ is\\
+  contained in the boundary of $Q = (B^p,B^q)$,\\
+  we call $Q'$ a \textbf{face} of $Q$.
+
+ \vfill
+
+  \begin{theorem}
+   If ball pairs intersect in their common boundary, \\
+   their union is a sphere pair.
+ \end{theorem}
+
+ \vfill\pause
+
+  \begin{theorem}
+   If ball pairs intersect in a face, \\
+   their union is a ball pair.
+ \end{theorem}
+
+\end{frame}
+\clearbackgroundpicture
+
+\setbackgroundpicture{two-giraffes-871277133292IxUu.jpg}
+\begin{frame}
+  \frametitle{Standard pairs}
+
+  $\Gamma^{p,q} = (S^{p-q} \Delta^q, \Delta^q)$ is the standard
+  $(p,q)$-ball pair. \\
+  $\partial \Gamma^{p+1,q+1}$ is the standard $(p,q)$-sphere pair.
+
+  \vfill
+  A pair is \textbf{unknotted} \\
+  if it is homeomorphic to a standard pair.
+
+\end{frame}
+\clearbackgroundpicture
+
+\setbackgroundpicture{marble-ball.jpg}
+\begin{frame}
+
+  \begin{theorem}[\BallThm{p,q}]
+    If $p - q \geq 3$, then any $(p,q)$-ball pair \\
+    is unknotted.
+  \end{theorem}
+
+  \vfill
+
+  \begin{theorem}[\SphereThm{p,q}]
+    If $p - q \geq 3$, then any $(p,q)$-sphere pair \\
+    is unknotted.
+  \end{theorem}
+
+  \vfill\pause
+  \begin{proof}
+    By induction.
+  \end{proof}
+\end{frame}
+\clearbackgroundpicture
+
+\setbackgroundpicture{Fermilab_-_400_MeV_Lambertson_Magnet.jpg}
+\begin{frame}<4-6>[label=overview]
+  \frametitle{Overview of the induction}
+
+  \vfill
+
+  \uncover<4->{\checkmark\hspace{0.25em} }Prove $\BallThm{p,0}$ by hand.\\
+  \vspace{1ex}
+  \uncover<5->{\checkmark\hspace{0.25em} }\uncover<2->{$\BallThm{p,q}$
+    implies $\SphereThm{p,q}$.}\\
+  \vspace{1ex}
+  \uncover<6->{\checkmark\hspace{0.25em} }\uncover<3->{$\BallThm{p-1,q-1}$ and $\SphereThm{p-1,q-1}$ \\
+    \quad\quad\quad together imply $\BallThm{p,q}$.}
+
+  \vfill
+
+\end{frame}
+\clearbackgroundpicture
+
+\begin{frame}
+  \begin{center}
+ $\BallThm{p-1,q-1} \mbox{ and } \SphereThm{p-1,q-1}$ \\
+ $\Downarrow$ \\
+ $\BallThm{p,q}$
+\end{center}
+\vfill\pause
+\begin{lemma}
+ Assuming $\BallThm{p-1,q-1}$ and $\SphereThm{p-1,q-1}$, \\
+ $(B^p,B^q)$ with $p-q \geq 3$ is unknotted \\
+ provided $B^p \collapses B^q$.
+\end{lemma}
+\vfill\pause
+\begin{lemma}
+ If $p - q \geq 3$ and $(B^p,B^q)$ is any ball pair, \\
+ then $B^p \collapses B^q$.
+\end{lemma}
+
+\end{frame}
+
+\begin{frame}
+  \begin{lemma}[assume $\BallThm{p-1,q-1}$] 
+    If $Q_1, Q_2$ are unknotted $(p,q)$-ball pairs, \\
+    and $Q_3 = Q_1 \cap Q_2$ is a face, \\
+    then $Q_1 \cup Q_2$ is unknotted.
+ \end{lemma}
+ \vfill
+ We proved this last time.
+ \vfill
+\end{frame}
+
+\begin{frame}
+\begin{lemma}
+ Assuming $\BallThm{p-1,q-1}$ and $\SphereThm{p-1,q-1}$, \\
+ $(B^p,B^q)$ with $p-q \geq 3$ is unknotted \\
+ provided $B^p \collapses B^q$.
+\end{lemma}
+
+\end{frame}
+
+\begin{frame}
+  \begin{lemma}
+  $B^p \collapses B^q \Rightarrow (B^p,B^q) \mbox{ unknotted}$ \\    
+  \end{lemma}
+ \pause
+   Pick regular neighborhood $N$ of $B^q$; \\\pause
+   then $(B^p,B^q) \cong (N,B^q)$.\\\pause
+   $B^q = K_k \collapses K_{k-1} \collapses \cdots \collapses K_0 =
+   \{x\}$\\\pause
+   $Q_i = $ simplicial neighborhood of $K_i$ in $(B^p,B^q)$. \\\pause
+   \vfill
+   $Q_0 = \{x\} \join L$ where $L = (\lk(x,B^p),\lk(x,B^q))$, \\\pause
+   and $L$ is unknotted by either $\BallThm{p-1,q-1}$ or $\SphereThm{p-1,q-1}$.
+
+\end{frame}
+
+\begin{frame}
+  Suppose $Q_{i-1}$ is unknotted. \\\pause
+  \vfill
+  $K_i - K_{i-1}$ consists of a principal simplex $A$ \\with a free face
+  $C$. \\\pause
+  Pick $a \in \interior A$ and $c \in \interior C$. \\\pause
+  \vfill
+  $Q_a = \{a\} \join (\lk(a,B^p),\lk(a,B^q))$ is unknotted. \\\pause
+  $Q_c = \{c\} \join (\lk(c,B^p),\lk(c,B^q))$ is unknotted. \\\pause
+  \vfill
+  $Q_i = Q_{i-1} \cup Q_a \cup Q_c$ is union of unknotted ball pairs
+  along faces; therefore, $Q_i$ is unknotted. \pause\hfill\qed
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{All that remains}
+  
+  \textcolor{red!50!black}{\textbf{If we could prove}}
+  \begin{lemma}
+    If $p - q \geq 3$ and $(B^p,B^q)$ is any ball pair, \\
+    then $B^p \collapses B^q$.
+  \end{lemma}
+  \textcolor{red!50!black}{\textbf{we would finish the argument.}}
+
+  \pause\vfill
+  \textbf{Note:} we haven't used the fact $p - q \geq 3$ yet.
+  \pause\vfill
+  \begin{proof}[Proof Technique.]
+    Sunny collapse.
+  \end{proof}
+  \vfill\pause
+\end{frame}
+
+% [[skim:///Users/jim/Papers/MR160218.pdf?page=10][page 10 of MR160218.pdf]]
+
+\setbackgroundpicture{stop-sign.jpg}
+\begin{frame}
+\pause
+\vfill
+\begin{center}
+  Reminder about sunny collapse.
+\end{center}
+\end{frame}
+\clearbackgroundpicture
+
+\setbackgroundpicture{trees-with-shadows.jpg}
+\begin{frame}
+  \frametitle{Shadows}
+
+  $I^p = I^{p-1} \times I$, \\
+  thinking of $I^{p-1}$ as horizontal \\
+  and $I$ as vertical.
+
+  \vfill
+  $X$ a polyhedron, $X \subset I^p$. \\
+  a point $y \in I^p$ lies in the \textbf{shadow} of $X$, if $y$ lies
+  below a point of $X$.
+\end{frame}
+
+\begin{frame}
+  \begin{definition}
+    $X$ a polyhedron, $X \subset I^p$. \\
+    $X^\ast =$ closure of points in $X$ \\
+    which lie on the same vertical line as some other point of $X$.
+  \end{definition}
+  \vfill\pause
+  ($X^\star$ are points that are in shadow or \\
+  \quad doing the overshadowing)
+  \vfill\pause
+  \begin{lemma}
+    $X^\star$ is a subpolyhedron of $X$.
+  \end{lemma}
+\end{frame}
+
+\begin{frame}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+  \begin{lemma}
+    If $X$ is a polyhedron, $X \subset I^p$, \\
+    $\dim X = q \leq p$, and \\
+    $\dim (X \cap \partial I^p) < p - 1$, \\
+    then there exists
+    $h : I^p \stackrel{\cong}{\longrightarrow} I^p$, \\
+    $h(X) = X$, \\
+    $h(X) \cap \left( I^{p-1} \times \{1\} \right) = \varnothing $, \\
+    $h(X) \cap \left( I^{p-1} \times \{0\} \right) = \varnothing $, \\
+    $h(X) \cap \mbox{vertical line} = \mbox{finite set}$, and \\
+    $\dim h(X)^\star \leq 2q - p + 1$.
+  \end{lemma}
+  \end{column}
+  \begin{column}{0.5\textwidth}
+    \pause
+    \begin{proof}
+      Since $\partial I^p \not\subset X$, \\
+      pick vertical
+      top-dim face $I^{p-2} \times I$ of $I^p$. \\
+      Throw $X
+      \cap \partial I^p$ into the interior of this face.
+
+\pause
+      \vspace{1ex} Shift vertices into general position.\pause
+    \end{proof}
+  \end{column}
+  \end{columns}
+\end{frame}
+\clearbackgroundpicture
+
+\setbackgroundpicture{sunny-street.jpg}
+\begin{frame}
+  \frametitle{Sunny collapse}
+
+  $Y \subset X \subset I^p$. \\
+  An elementary collapse $X \collapses Y$ is \textbf{sunny} \\
+  if no point of $X - Y$ is in the shadow of $X$.
+
+  \vfill A \textbf{sunny collapse} is a sequence of sunny elementary
+  collapses.  \pause Write $X \sunnycollapses Y$.
+
+  \vfill If $X \sunnycollapses \mbox{pt}$, call $X$ sunny collapsible.
+\end{frame}
+\clearbackgroundpicture
+
+\begin{frame}
+\large
+\vfill
+ \begin{center}
+   Sunny collapse in codimension two \\
+   can be obstructed
+ \end{center}
+ \vfill
+\end{frame}
+
+% warn them about polyhedral collapse?
+
+\begin{frame}
+  \frametitle{All that remains}
+  
+  \textcolor{red!50!black}{\textbf{If we could prove}}
+  \begin{lemma}
+    If $p - q \geq 3$ and $(B^p,B^q)$ is any ball pair, \\
+    then $B^p \collapses B^q$.
+  \end{lemma}
+  \textcolor{red!50!black}{\textbf{we would finish the argument.}}
+
+  \pause
+  \begin{lemma}
+    Suppose $(I^p,X)$ is a $(p,q)$-ball pair,\\
+    $p - q \geq 3$ \\
+    $X \cap \left( I^{p-1} \times \{1\} \right) = \varnothing $, \\
+    $X \cap \left( I^{p-1} \times \{0\} \right) = \varnothing $, \\
+    $X \cap \mbox{vertical line} = \mbox{finite set}$, and \\
+    $\dim X^\star \leq 2q - p + 1$. \\
+    \textbf{Then} $X \sunnycollapses \mbox{point}$.
+  \end{lemma}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Producing a sunny collapse}
+
+  $Y_0 \subset \cdots \subset Y_q$ \\
+  $Z_0 \subset \cdots \subset Z_q$ \\
+  and $f_i : CY_i \to Z_i$ \\
+  so that
+  \begin{itemize}
+  \item $Y_i$ is $(q-i-1)$-dimensional 
+  \item $\dim {Z_i}^\star \leq q-i-2$ \\
+  \item ${f_i}^{-1}({Z_i}^\star)$ doesn't meet cone point, \\
+    \quad meets cone pieces finitely
+  \item ${Z_i} \sunnycollapses {Z_{i-1}}$
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Start the induction}
+  
+  $Y_0 = \partial \Delta^q$ \hfill $Z_0 = X$
+
+  \vfill
+
+  $\dim X^\star = \dim {Z_0}^\star \leq 2q - p + 1 \leq q-2$.
+
+  \vfill
+
+  Choose homeo $\Delta^q \to X$, \\
+  subdivide $\Delta^q$ at a vertex in general position with respect to
+  $f^{-1}(X^\star)$ \\
+  get $f_0 : C\partial \Delta^q \to Z_0$
+\end{frame}
+
+\begin{frame}
+  \frametitle{From $i-1$ to $i$}
+
+  $v := \mbox{vertex of $CY_{i-1}$}$.
+  $W_{i-1} := {f_{i-1}}^{-1}({Z_{i-1}}^\star)$.
+
+  $p : W_{i-1} \to Y_{i-1}$ projection, not PL, but, after triangulating,
+  can be made to send simplexes in $W$ to simplexes in $Y_{i-1}$ of
+  the same dimension.
+
+  $Y_i = $ the $(q-i-1)$ simplexes in such a triangulation of $Y_{i-1}$.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Trouble!}
+  
+  $CY_i$ is a subcone of $CY_{i-1}$ \\
+  but we can't define $f_i$ by restriction \\
+  because then $Z_i = f(C_i) \supset f(W_{i-1}) = {Z_{i-1}}^\star$ is the
+  wrong dimension.
+
+  \vfill
+
+  Subdivide $W_{i-1}$, and order the simplexes $A_j$ from the ground to the
+  sky, i.e., \\
+  the points that overshadow $f(\interior A_k)$ are in $\bigcup_{j <
+    k} f(\interior A_j)$
+\end{frame}
+
+\begin{frame}
+  \frametitle{Blisters}
+
+  Add blisters $J_j$ to each $A_j$.
+
+  Define $f_i : CY_i \to Z_{i-1}$, and $Z_i = f_i(CY_i)$, 
+  after pushing up the blisters.
+
+  The point is $\dim {Z_i}^\star \leq q-i-2$.
+\end{frame}
+
+\begin{frame}
+  \frametitle{The sunny collapse}
+
+  $J = \bigcup \mbox{blisters}$
+  \vfill
+
+  $C_{i-1} \collapses CY_i \cup J$, which under $f$\\
+  $Z_{i-1} \collapses Z_i \cup fJ$ is sunny.
+
+  \vfill
+  But we have ordered these!
+\end{frame}
+
+\begin{frame}
+  \frametitle{Producing a sunny collapse}
+
+  $Y_0 \subset \cdots \subset Y_q$ \\
+  $Z_0 \subset \cdots \subset Z_q$ \\
+  and $f_i : CY_i \to Z_i$ \\
+  so that
+  \begin{itemize}
+  \item $Y_i$ is $(q-i-1)$-dimensional 
+  \item $\dim {Z_i}^\star \leq q-i-2$ \\
+  \item ${f_i}^{-1}({Z_i}^\star)$ doesn't meet cone point, \\
+    \quad meets cone pieces finitely
+  \item ${Z_i} \sunnycollapses {Z_{i-1}}$
+  \end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setbackgroundpicture{puzzle.jpg}
+\begin{frame}
+\large
+\vfill
+\begin{center}
+  Putting together all the pieces again.
+\end{center}
+\vfill  
+\end{frame}
+\clearbackgroundpicture
+
+\begin{frame}
+  If $X \subset I^p$, define $X^\sharp$ to be all points in $I^p$
+  lying in shadow of $X$.
+
+  \vfill
+  \pause
+  $M = \left(I^{p-1} \times \{0\}\right) \cup X^\sharp$.
+
+\vfill
+\pause
+First show $I^p \collapses M$.
+\end{frame}
+
+\begin{frame}
+ \includegraphics[width=\textwidth]{sunny-step-one-bad.pdf}
+\end{frame}
+
+\begin{frame}
+  If $X \subset I^p$ and $X \sunnycollapses \mbox{point}$, then
+$$
+X = X_0 \sunnycollapses X_1 \sunnycollapses \cdots \sunnycollapses K_n
+= \mbox{point}.
+$$\pause
+Define $M_i = \left(I^{p-1} \times \{0\}\right) \cup X \cup
+{X_i}^\sharp$.
+
+\vfill
+\pause
+\textbf{Goal: } $I^p \collapses M_0 \collapses \cdots \collapses M_n
+\collapses X$.
+\end{frame}
+
+\begin{frame}
+ \includegraphics[width=\textwidth]{sunny-step-two-bad.pdf}
+\end{frame}
+
+
+\end{document}
+
+
+

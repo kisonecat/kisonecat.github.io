@@ -1,0 +1,54 @@
+Problem Set 4
+Summer 2010
+
+Piecewise-Linear Topology
+Jim Fowler
+
+A new equivalence. Problem Set 4 introduces simple homotopy equivalence, an equivalence relation between simplicial complexes which is coarser than simplicial isomorphism or PL homeomorphism; Please write down answers to problems labeled with •. Deﬁnition. Let K be a complex, and σ ∈ K a simplex. Call σ a principal simplex if the only simplex containing σ is σ itself (i.e., it isn’t contained in a larger simplex). For a simplex σ ∈ K, call τ < σ a free face of σ if the only simplexes containing τ are τ and σ. If L and K = L ⊔ {σ, τ } are simplicial complexes, and σ is a principal simplex of K, and τ is a free face of σ, then L is an elementary simplicial collapse of K. If K1 , K2 , . . . , Kn are complexes, with Ki+1 an elementary simplicial collapse of Ki , then Kn is a simplicial collapse of K1 , denoted K1 ↘ Kn ; conversely, K1 a simplicial expansion of Kn , denoted K n ↗ K1 . Finally, K is simple homotopy equivalent to L if you can reach transform K into L via a sequence of • PL homeomorphisms, • simplicial collapses, • simplicial expansions. In this case, we write K
+
+L.
+
+• Problem 1. Find two manifolds with boundary which are simple homotopy equivalent, but not PL homeomorphic.
+Deﬁnition. Let K be a complex. If K ↘ ∆0 , i.e., it collapses to a point, then we call the complex collapsible.
+
+• Problem 2. Prove that the complex ∆n is collapsible.
+Problem 3. Construct inﬁnitely many collapsible complexes, no two of which are PL homeomorphic.
+
+Problem 4. Show that Bing’s House with Two Rooms, as shown on the right, is simple homotopy equivalent to a point, but is not collapsible.
+
+Problem 5. Show that the dunce cap is not collapsible, but is simple homotopy equivalent to a point; the dunce cap is constructed by starting with triangle ABC, and identifying edge AB with edge AC, and also with edge CB.
+
+• Problem 6. Is χ(K ) = χ( L) if K and L are simple homotopy equivalent?
+Deﬁnition. The cone of a complex K (written CK) is K ∗ ∆0 , i.e., the join of K with a point.
+
+• Problem 7. Show that the cone of any complex is collapsible.
+Deﬁnition. The suspension of a complex K (written SK) is K ∗ S0 , where S0 = ∂∆1 , that is, two disjoint points. In this notation, SSn ∼ Sn+1 . =
+
+• Problem 8. Find a complex K so that SK
+
+K.
+
+Problem 9. Is K (non-)collapsible precisely when SK is (non-)collapsible? Problem 10. Is the join of collapsible complexes necessarily collapsible? Problem 11. Is join well-deﬁned on simple homotopy types? That is, if K L L′ , is it then the case that K ∗ L K ′ ∗ L′ ?
+
+K ′ and
+
+3-manifolds
+Problem 12. Prove that there exist two distinct 3-manifolds. Problem 13. Find a copy of T 2 #T 2 #T 2 inside T 3 , which divides T 3 into two components, homeomorphic to each other. Problem 14. Let f : T 2 → T 2 be a homeomorphism, and use f to glue together two copies of S1 × ∆2 . Describe two distinct 3-manifolds that can result from this procedure (though it might be hard to prove that they are distinct, given what we know thus far!).
+
+Connected sum
+Problem 15. Given n-manifolds M and N , compute χ( M#N ) in terms of χ( M ) and χ( N ).
+
+• Problem 16. Show that T 2 and T 2 #T 2 are not PL homeomorphic.
+Problem 17. Let K be the Klein bottle; determine whether K#K and T 2 #K are PL homeomorphic. Problem 18 (Hard). Suppose that M#N = M. Does it follow that N is a sphere?
+
+Orientability
+• Problem 19. Construct an orientation on Sn .
+Problem 20. Does there exist a connected 2-manifold M2 with
+
+χ( M ) > 0 and w1 ( M ) = 1.
+Problem 21. Give an example of a non-orientable 3-manifold M3 . Problem 22. Let K be the Klein bottle; is there an orientation on the 4-manifold K × K? Problem 23. Consider how w1 ( M × N ) might relate to w1 ( M ) and w1 ( N ).
+
+Products
+Problem 24. Show that if M is a manifold, then M × S1 is a manifold. What does M × S1 even mean? Problem 25. Compute χ(K × L) in terms of χ(K ) and χ( L). Problem 26. Show that there exist inﬁnitely many distinct 4-manifolds.
+
+

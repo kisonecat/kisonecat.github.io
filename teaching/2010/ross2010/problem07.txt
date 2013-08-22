@@ -1,0 +1,49 @@
+Problem Set 7
+Summer 2010
+
+Piecewise-Linear Topology
+Jim Fowler
+
+Regular neighborhoods. Here we summarize the main results on simplicial neighborhoods from the textbook Introduction to Piecewise-Linear Topology. We will focus on applications of this theory. Deﬁnition (Some neighborhoods). The simplicial neighborhood of L in K is
+
+N ( L, K ) = { A ∈ K : A < B, B ∩ | L| ̸= ∅}.
+The simplicial complement of L in K is
+
+C ( L, K ) = { A ∈ K : A ∩ | L| = ∅}.
+Deﬁnition (Some subdivisions). Suppose L ⊂ K are complexes, and ai ∈ int Ai for each Ai ∈ K with Ai ̸∈ L. We deﬁne a subdivision K ′ ▹ K inductively by { { ai } ∗ ∂Ai if Ai ̸∈ L, Ai ′ = Ai if Ai ∈ L. This is called K derived away from L. On the other hand, the derived of K near L is obtained by deriving K away from L ∪ C ( L, K ), i.e., subdividing those simplexes meeting | L| but not in L. If K ′ is K derived near L, then N ( L, K ′ ) is a derived neighborhood of L in K. Deﬁnition (Regular neighborhood). Suppose X ⊂ Y are polyhedra. • |K | a neighborhood of X in Y . • | L| = X . • L
+
+K.
+
+• K ′ derived of K near L. Then | N ( L, K ′ )| is called a regular neighborhood of X in Y. Theorem. If N1 and N2 are regular neighborhoods of X in Y , then there is a homeomorphism h : Y → Y , which throws N1 onto N2 , and which is the identity on X , and the identity outside a compact subset of Y . Theorem. A regular neighborhood N of a polyhedron X in a manifold M is a manifold with boundary. Theorem (Simplicial neighborhood theorem). Suppose X is a compact polyhedron, M is a manifold, and X ⊂ int M. Then a polyhedral neighborhood N of X in int M is a regular neighborhood if and only if
+
+• N is a compact manifold with boundary • there are triangulations (K, L, J ) of ( N, X, ∂N ) with L ∂N ( L, K ).
+
+K, K = N ( L, K ) and J =
+
+Theorem. As before, suppose X is a compact polyhedron, M is a manifold, and X ⊂ int M. Then a polyhedral neighborhood N of X in int M is a regular neighborhood if and only if • N is a compact manifold with boundary • N ↘ X. Corollary. A collapsible manifold is a ball.
+
+Regular neighborhoods and Simplicial collapse
+Problem 1 (From Introduction to Piecewise-Linear Topology). Show that R n is PL homeomorphic to Sn − point. Problem 2. Suppose M2 is a 2-manifold, with ∂M = S1 ∪ S1 , and M ↘ S1 ⊂ ∂M. Identify M.
+
+• Problem 3. What are the possible regular neighborhoods of S1 inside a 2-manifold? Use this to describe those surfaces which collapse to a circle.
+Problem 4. Can you ﬁnd two different 3-manifolds which both collapse to S1 ? Which both collapse to S2 ?
+
+• Problem 5. Is a subcomplex of a collapsible complex necessarily collapsible?
+Problem 6. Let X and Y both be S1 ∨ S1 ∨ S1 , namely, three circles connected together at a single point; ﬁnd embeddings of X and Y into T 3 , so that T 3 − regular neighborhood of X collapses onto Y .
+
+• Problem 7. Show that T 2 − a disk and S3 − 3 disks collapse onto S1 ∨ S1 , the union of two circles along one point.
+
+Knot theory
+If you want to try your hand at Reidemeister moves, here are some exercises to help you to do so. Problem 8. Show that the ﬁgure eight knot is not the unknot.
+
+Problem 9. Is the trefoil knot identical to its mirror image: is
+
+the same as
+
+?
+
+Problem 10. Is the ﬁgure eight knot the same as its mirror image, i.e., is the same as ?
+
+Problem 11. Suppose S1 ⊂ S3 is a knot; show that the suspension SS1 ⊂ SS3 gives a knotted S2 in S4 .
+
+

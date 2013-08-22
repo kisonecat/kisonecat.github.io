@@ -1,0 +1,18 @@
+Lecture 23: Strong induction
+Tuesday, November 2, 2010
+
+Math 345
+Jim Fowler
+
+Textbook
+This lecture discusses section 7 of the textbook.
+
+Homework
+The homework is due Thursday, November 4, 2010. From Section 7 of the textbook, do exercises 1, 2, and 4.
+
+prime divisors
+Each natural number greater than or equal to 2 either is a product of prime numbers or is itself a prime number. Cor: Each integer, except 1 and 1, is divisible by some prime number. Let p be a prime number. Then for all integers x and y, if p divides xy, then p divides x or p divides y.
+
+1
+
+

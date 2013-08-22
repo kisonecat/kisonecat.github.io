@@ -1,0 +1,74 @@
+Lecture 39: Schwarz’ theorem
+Math 660—Jim Fowler Friday, August 13, 2010
+
+Poisson integral
+Given a continuous function U : [0, 2π] → R, consider 1 P∗ (z) = 2π
+2π 0
+
+e iθ + z U(θ) dθ. re iθ e −z
+
+Poisson integral
+Given a continuous function U : [0, 2π] → R, consider 1 P∗ (z) = 2π
+2π 0
+
+e iθ + z U(θ) dθ. re iθ e −z
+
+PU+V = PU + PV
+
+Poisson integral
+Given a continuous function U : [0, 2π] → R, consider 1 P∗ (z) = 2π
+2π 0
+
+e iθ + z U(θ) dθ. re iθ e −z
+
+PU+V = PU + PV PkU = kPU
+
+Poisson integral
+Given a continuous function U : [0, 2π] → R, consider 1 P∗ (z) = 2π
+2π 0
+
+e iθ + z U(θ) dθ. re iθ e −z
+
+PU+V = PU + PV PkU = kPU Pc = c
+
+Poisson integral
+Given a continuous function U : [0, 2π] → R, consider 1 P∗ (z) = 2π
+2π 0
+
+e iθ + z U(θ) dθ. re iθ e −z
+
+PU+V = PU + PV PkU = kPU Pc = c PU ≥ 0 if U ≥ 0.
+
+Schwarz’ theorem
+
+The function PU (z) is harmonic in the interior of the disk B1 (0), and continuous on the closed disk (provided U is continuous).
+
+Reﬂection principle
+
+Reﬂection principle
+
+If u(z) is harmonic, then u(z) is harmonic.
+
+Reﬂection principle
+
+If u(z) is harmonic, then u(z) is harmonic.
+
+If f (z) is analytic, then f (z) is analytic.
+
+Reﬂection principle
+
+If u(z) is harmonic, then u(z) is harmonic.
+
+If f (z) is analytic, then f (z) is analytic.
+
+Consider f (z) − f (z).
+
+Let Ω+ be the part in the upper half plane of a symmetric region Ω, let σ be the part of the real axis in Ω.
+
+Let Ω+ be the part in the upper half plane of a symmetric region Ω, let σ be the part of the real axis in Ω. Suppose v (x) is continuous in Ω+ ∪ σ, harmonic in Ω+ , and zero on σ.
+
+Let Ω+ be the part in the upper half plane of a symmetric region Ω, let σ be the part of the real axis in Ω. Suppose v (x) is continuous in Ω+ ∪ σ, harmonic in Ω+ , and zero on σ. Then v has a harmonic extension to Ω which satisﬁes the symmetry relation v (z = −v (z).
+
+Let Ω+ be the part in the upper half plane of a symmetric region Ω, let σ be the part of the real axis in Ω. Suppose v (x) is continuous in Ω+ ∪ σ, harmonic in Ω+ , and zero on σ. Then v has a harmonic extension to Ω which satisﬁes the symmetry relation v (z = −v (z). In the same situation, if v is the imaginary part of an analytic function f (z) in Ω+ , then f (z) has an analytic extension which satisﬁes f (z) = f (z).
+
+

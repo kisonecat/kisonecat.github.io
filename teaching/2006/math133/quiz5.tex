@@ -1,0 +1,122 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{nopageno}
+\usepackage{ifthen}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx} 
+\usepackage{version}
+\usepackage{amsthm}
+\usepackage{multicol}
+\usepackage{add-copyright}
+
+\excludeversion{solution}
+
+\DeclareMathOperator{\ft}{ft}
+
+\newcommand{\R}{\mathbb{R}}
+
+\title{Take-Home Quiz 5}
+\author{Math 133 Section 22}
+\date{Due Monday, May 15}
+
+\newcounter{problem}
+\setcounter{problem}{1}
+
+\newenvironment{problem}[1][]
+{\begin{flushleft}\hangindent=1em\hangafter=1\noindent\textbf{Problem \arabic{problem}.}
+\ifthenelse{\equal{#1}{}}{}{
+\textbf{(#1 \ifthenelse{\equal{#1}{1}}{point}{points}).}}
+}
+{\addtocounter{problem}{1}\end{flushleft}}
+
+\begin{document}
+\maketitle
+
+\noindent
+For each of the following series, determine whether or not the series
+is absolutely convergent, conditionally convergent, or divergent.  Be
+sure to mention which tests you are using, and to describe how you
+applied the test.
+
+\vfill
+
+\begin{multicols}{2}
+\begin{problem}[1]
+$$
+\sum_{n=1}^\infty \frac{(-1)^{n+1}}{n^2}.
+$$
+\end{problem}
+
+\vfill
+
+\begin{problem}[2]
+$$
+\sum_{n=1}^\infty \frac{(-1)^{n+1}}{\sqrt{n^2 - 1}}.
+$$
+\end{problem}
+
+\vfill
+
+\begin{problem}[2]
+$$
+\sum_{n=1}^\infty \frac{(-1)^{n+1} \cdot \sin n}{n^3}
+$$
+\end{problem}
+
+\vfill
+
+\begin{problem}[2]
+$$
+\sum_{n=1}^\infty (-1)^{n+1} n
+$$
+\end{problem}
+
+\vfill
+
+\end{multicols}
+
+\vfill
+
+\noindent
+Find the convergence set for each of the following power series.  Be
+sure to show your work.
+
+\vfill
+
+\begin{multicols}{2}
+\begin{problem}[2]
+$$
+\sum_{n=0}^\infty \frac{2^n \cdot x^n}{n!}.
+$$
+\end{problem}
+
+\vfill
+
+\begin{problem}[2]
+$$
+\sum_{n=0}^\infty \frac{x^{2n}}{4^n}.
+$$
+\end{problem}
+
+\vfill
+
+\begin{problem}[2]
+$$
+\sum_{n=0}^\infty (x+3)^n.
+$$
+\end{problem}
+
+\vfill
+
+\begin{problem}[2]
+$$
+\sum_{n=0}^\infty \frac{(x-1)^n}{n + 1}.
+$$
+\end{problem}
+
+\vfill
+
+\end{multicols}
+
+\end{document}

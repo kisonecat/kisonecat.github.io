@@ -1,0 +1,49 @@
+Midterm 2 Scores
+Autumn 2010
+The average score on Midterm 2 was 1471/1800, with a standard deviation of 319. The median score on Midterm 2 was 1585/1800.
+
+Math 345
+Jim Fowler
+
+Histogram
+
+800
+
+900
+
+1000
+
+1100
+
+1200
+
+1300
+
+1400
+
+1500
+
+1600
+
+1700
+
+1800
+
+1900
+
+Per Problem
+On On On On On problem problem problem problem problem 1 2 3 4 5 the the the the the class class class class class averaged averaged averaged averaged averaged 320.7/360 256.0/360 329.5/360 301.0/360 264.2/360 with with with with with standard standard standard standard standard deviation deviation deviation deviation deviation 86.3 108.3 75.4 108.7 70.0
+
+Crosstabs
+This shows the correlation between your scores on one problem and your scores on another. P1 100% 54% 37% 35% 62% 80% P2 54% 100% 19% 46% 57% 81% P3 37% 19% 100% 14% 13% 48% P4 35% 46% 14% 100% 35% 70% P5 62% 57% 13% 35% 100% 73% Total 80% 81% 48% 70% 73% 100%
+
+P1 P2 P3 P4 P5 Total
+
+Comparison between Midterm 1 and Midterm 2
+Here is a plot of your scores on the midterms.
+
+Score on Midterm 2
+
+Score on Midterm 1 I did a linear regression, and drew the regression line in red. In other words, if you received a score of P points (out of 1800) on the ﬁrst midterm, you might have expected to receive 0.882 · P + 215.0 points on the second midterm. If you received more points than this on the second midterm, you are probably keeping up with the material. If you received fewer points than this, you might be falling behind.
+
+

@@ -1,0 +1,203 @@
+\documentclass[12pt]{pset}
+%\usepackage{add-copyright}
+
+\geometry{margin=0.5in}
+\title{Problem Set 11}
+\course{Piecewise-Linear Topology}
+\author{Jim Fowler}
+\date{Summer 2010}
+
+\usepackage{tikz}
+\usetikzlibrary{matrix}
+
+\newcommand{\defnword}[1]{\textbf{#1}}
+
+\usepackage{stmaryrd}
+\newcommand{\boundary}{\partial}
+\newcommand{\collapses}{\searrow}
+\newcommand{\expands}{\nearrow}
+\newcommand{\she}{\ssearrow\nnearrow}
+\newcommand{\join}{\ast}
+\newcommand{\subdivided}{\triangleleft}
+\geometry{margin=1in}%,top=0.5in,bottom=0.5in}
+\DeclareMathOperator{\st}{st}
+\DeclareMathOperator{\trace}{trace}
+\DeclareMathOperator{\vertices}{vert}
+\DeclareMathOperator{\lk}{lk}
+\DeclareMathOperator{\cl}{cl}
+\DeclareMathOperator{\interior}{int}
+\DeclareMathOperator{\id}{id}
+\newcommand{\fullsubcomplex}{\Subset}
+
+\usepackage{hyperref}
+
+\begin{document}
+\maketitle
+
+% [[skim:///Users/jim/Papers/MR755006.pdf?page=2][page 2 of MR755006.pdf]]
+
+\subsubsection*{Homotopy.} Today, 
+%we will see why homology is invariant under subdivision, and 
+we will introduce
+\textit{homotopy}, a relationship between maps $X \to Y$.
+We will assume that homology is invariant under subdivision.
+
+%Why does the sequence split?  last time we used the fact that $X
+%\times I$ is the same as $X$ to compute that $H_n(X \times S^1) =
+%H_n(X) \oplus H_{n-1}(X)$.
+
+\parskip 0.45\baselineskip
+\parindent 0pt
+
+I had originally intended today to discuss why homology is invariant
+under PL homeomorphism, but I think it is wiser to delay that by one
+day---so for today, we'll assume that homology is invariant under subdivision.
+
+%\begin{problem}
+%  Thus far, we have treated homology as an invariant of simplicial
+%  complexes.  Show that it is actually an invariant of polyhedra, and
+%  functorial with respect to PL maps.
+%\end{problem}
+
+\subsection*{Homotopy}
+
+\begin{definition*}
+  We can describe $X \times I$ as a simplicial complex; in particular, for
+  $\Delta^n \times I$,
+  \begin{align*}
+    [v_0,\ldots,v_n] &= \Delta^n \times \{0\} \\
+    [w_0,\ldots,w_n] &= \Delta^n \times \{1\} \\
+    \Delta^n \times I &= \bigcup [v_0,\ldots,v_i,w_i,\ldots,w_n].
+    \end{align*}
+
+  Maps $f, g : X \to Y$ are \textbf{homotopic} if there is a map $F :
+  X \times I \to Y$ with $F |_{X \times \{0\}} = f$ and $F |_{X \times
+    \{1\}} = g$.  We write $f \simeq_F g$ if $f$ and $g$ are homotopic
+  via $F$, and call $F$ a \textbf{homotopy}.
+\end{definition*}
+
+\begin{problem}
+  Why is homotopy an equivalence relation between maps?% (i.e., reflexive, symmetric, and transitive).
+\end{problem}
+
+\begin{definition*}
+  Given $f, g : X \times I$ with $f \simeq_F g$, define the \textbf{prism
+    operator} $P : C_n(X) \to C_{n+1}(Y)$ via
+  $$
+  P(\sigma) = \sum_i (-1)^i F \circ (\sigma \times I)
+  |_{[v_0,\ldots,v_i,w_i,\ldots, w_n]}.
+  $$
+\end{definition*}
+
+\begin{problem}
+  Show that $\partial \circ P + P \circ \partial = g_\star - f_\star$.
+  When this is the case for some $P$ which raises degree, we say that
+  the chain maps $g_\star$ and $f_\star$ are \textbf{chain homotopic}
+  and call $P$ a \textbf{chain homotopy}.
+\end{problem}
+
+\begin{requiredproblem}
+  Show that homotopic maps induce the same map on homology (or more
+  generally, show that chain homotopic maps induce the same map on
+  homology).
+\end{requiredproblem}
+
+\begin{definition*}
+  Two spaces $X$ and $Y$ are \textbf{homotopy equivalent} if there
+  exist maps $f : X \to Y$ and $g : Y \to X$ so that $g \circ f \simeq
+  \id_X$ and $f \circ g \simeq \id_Y$.  In this case, we will write $X
+  \simeq Y$.
+\end{definition*}
+
+\begin{problem}
+  Show that homotopy equivalence is an equivalence relation between spaces.
+\end{problem}
+
+
+
+\begin{requiredproblem}
+  Find spaces $X$ and $Y$ so that $X \simeq Y$ but $X \not\cong Y$.
+\end{requiredproblem}
+
+\begin{problem}
+  Show that if $X \she Y$, then $X \simeq Y$.  (Interestingly, the
+  converse is quite false, but producing a counterexample would take us
+  beyond this course; Marshall Cohen's beautiful book \textit{A Course
+    in Simple-homotopy Theory} discusses such issues at length).
+\end{problem}
+
+\begin{problem}
+  Show that if $X \simeq Y$, then $H_n(X) \cong H_n(Y)$.  The converse
+  is false, but that would be difficult to show with the machinery we
+  have developed thus far.
+\end{problem}
+
+\begin{requiredproblem}
+ Show that $CX \simeq \mbox{point}$.
+\end{requiredproblem}
+
+\begin{problem}
+  If $X \simeq Y$, is it the case that $SX \simeq SY$?
+\end{problem}
+
+% [[skim:///Users/jim/Downloads/AT.pdf?page=121][page 121 of AT.pdf]]
+
+\subsection*{Fixed point theorems}
+
+Throughout mathematics, one finds theorems of the following shape: if
+such-and-such $f : X \to X$ such-and-such, then there exists $x \in X$
+with $f(x) = x$.  These theorems turn out to be quite useful.
+
+\begin{problem}[No retraction theorem] Show that there is no map $f :
+  D^n \to S^{n-1}$ so that $f |_{\partial D^n} =
+    \id_{S^{n-1}}$.  Such a map is called a \textbf{retraction}.
+\end{problem}
+
+\begin{problem}[Brouwer fixed point theorem] Show that every PL map
+  $f : D^n \to D^n$ has a fixed point.  \textit{Hint:} Suppose $f :
+  D^n \to D^n$ does not have a fixed point; intersect the line through
+  $x$ and $f(x)$ with $\partial D^n = S^{n-1}$ to build a retraction.
+  But is this a PL map?
+\end{problem}
+
+\subsection*{Coefficients}
+
+\begin{definition*}[Homology with coefficients]
+  Thus far, our chains have had integer coefficients; we can define
+  $C_n(X;R)$ to be formal sums of oriented $n$-simplexes in $X$ with
+  coefficients in the ring $R$.  We write $H_n(X;R)$ for the
+  corresponding homology.
+
+  The $n^{\mbox{\scriptsize th}}$ Betti number of $X$ is $b_n(X) := \dim H_n(X;\Q)$.  The
+  Euler characteristic of $X$ is
+  $$
+  \chi(X) = \sum_n (-1)^n \dim C_n(X;\Q) = \sum_n (-1)^n \dim H_n(X;\Q).
+  $$
+  The first equality is the definition; the second is a theorem.
+\end{definition*}
+
+\begin{problem}[Lefschetz fixed point theorem]
+  Given a map $f : X \to X$, define the \textbf{Lefschetz number} of
+  $f$ to be
+  $$
+  \Lambda(f) = \sum_n (-1)^n \trace \left(f_\star : H_n(X;\Q) \to H_n(X;\Q) \right).
+  $$
+  Show that if $\Lambda(f) \neq 0$, then $f$ has a fixed point.
+\end{problem}
+
+\begin{problem}
+  Show that the Lefschetz fixed point theorem implies Brouwer fixed
+  point theorem.
+\end{problem}
+
+\begin{problem}
+  Suppose $\chi(X) \neq 0$.  Show that any map $f : X \to X$ homotopic
+  to $\id_X$ has a fixed point.
+\end{problem}
+
+\begin{problem}
+  Find a space $X$ and a fixed-point-free map $f : X \to X$ with $f \simeq \id_X$.
+\end{problem}
+
+\end{document}
+

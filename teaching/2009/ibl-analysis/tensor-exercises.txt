@@ -1,0 +1,41 @@
+Deﬁne an operator
+
+(called the “Hodge star”),
+k n−k
+
+: deﬁned by
+
+Rn →
+
+Rn .
+
+(e1 ∧ · · · ∧ ek ) = ek+1 ∧ · · · ∧ en . Our deﬁnition depends on choosing a basis. Exercise. Compute dim Exercise. Is :
+k k n−k
+
+Rn and dim
+n−k
+
+Rn .
+
+Rn →
+
+Rn an isomorphism?
+
+Exercise. Can you ﬁnd a basis-free deﬁnition of ? Exercise. Compute ω in terms of ω.
+
+explain more here For n = 3, the cross-product of vectors v and w is v × w := (v ∧ w) . The inner product can also be interpreted in this language, as v, w = v ∧ ( w)
+
+A certain three tensor.
+Here we deﬁne a map that takes three vectors in R3 and produces a number: (a, b, c) → a, b × c . Exercise. Check that this is trilinear (so it is, in fact, a 3-tensor). We can deduce the true nature of this 3-tensor by using the Hodge star. Note that a, b × c = (a ∧ (b × c)) = (a ∧ (b ∧ c)) = (a ∧ b ∧ c) , and therefore a, b × c is antisymmetric in the inputs a, b, c. In fact, it is   a1 b 1 c 1 det a2 b2 c2  , a3 b 3 c 3 which explains a popular method for computing the cross product (by taking the determinant of a particular matrix). 1
+
+A certain four tensor.
+An interesing four tensor on R3 is (a, b, c, d) → a × (b × c), d . Exercise. Check that this is a four tensor. In fact, this four tensor can be written in a diﬀerent way. a × (b × c), d = ( (a ∧ (b ∧ c))) ∧ ( d) = (a ∧ (b ∧ c)) ∧ d = a ∧ ( (b ∧ c)) ∧ d = −a ∧ d ∧ (b ∧ c) = − ( (a ∧ d)) ∧ (b ∧ c) = − a × d, b × c (a ∧ c) ∧ ( ( b ∧ d)) + (a ∧ b) ∧ ( ( c ∧ d)) a ∧ (c · (b ∧ d) − b · (c ∧ d)) a ∧ (c · ( b ∧ d) − b · ( c ∧ d)) a ∧ ( c · ( b ∧ d) − b · ( c ∧ d)) (a ∧ c) · ( b ∧ d) − (a ∧ b) · ( c ∧ d) (a ∧ c) · ( b ∧ d) − (a ∧ b) · ( c ∧ d) (a ∧ c)(b ∧ d) − (a ∧ b)(c ∧ d)
+
+reduction
+( (( b) ∧ ( c))) ∧ d = c ∧ (b ∧ d) + b ∧ (c ∧ d)
+
+( (b ∧ c)) ∧ d = ( c) ∧ (( b) ∧ d) + ( b) ∧ (( c) ∧ d)
+
+2
+
+

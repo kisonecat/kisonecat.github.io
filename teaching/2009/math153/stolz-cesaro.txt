@@ -1,0 +1,26 @@
+A cool trick for limits of sequences
+Slogan. Taking successive diﬀerences of the terms in a sequence is vaguely like diﬀerentiating a function. Taking this slogan seriously, the following might be called a “l’Hˆpital’s rule for sequences.” o Here, the diﬀerences of successive terms take the place of the derivative:
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Theorem (Stolz-Ces`ro). Let an and bn be sequences of real numbers, both unbounded. Assume a bn is positive and increasing. If an+1 − an =L lim n→∞ bn+1 − bn then lim an /bn = L.
+n→∞
+
+A cleaner proof to an old problem
+You might remember 1 1 − 2 . 2 x→0 sin x x This problem, done in the straightforward way, required four applications of l’Hˆpital to increaso ingly ugly denominators. There is a trick—it doesn’t require any less diﬀerentiation, but the diﬀerentiation is much easier. Since sin x lim =1 x→0 x we can multiply the above by this, without changing the limit L. So L = lim L = lim Gathering these terms together gives L = lim which we put over a common denominator L = lim But this is pretty easy to apply l’Hˆpital to: o L = lim And again, L = lim And again, L = lim And once more, L = lim 4 sin(2x) . x→0 24x 2 − 2 cos(2x) . x→0 12x2 2x − 2 sin x cos x 2x − sin(2x) = lim . 3 x→0 x→0 4x 4x3 x2 − sin2 x . x→0 x4
+x→0 x→0
+
+sin2 x x2
+
+·
+
+1 1 − 2 2 sin x x
+
+1 sin2 x − x2 x4
+
+,
+
+c 2008 Jim Fowler
+
+8 cos(2x) 8 1 = = . x→0 24 24 3
+
+

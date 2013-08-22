@@ -1,0 +1,113 @@
+Lecture 20: Diﬀerentiating and integrating series
+Math 153 Section 57 Wednesday November 12, 2008
+Following chapter 12.9.
+
+1
+
+Diﬀerentiating term-by-term
+
+Deﬁne f : (−r, r) → R by f (x) = ∞ an xn . n=0 If ∞ an xn converges on (−r, r), then n=0
+∞
+
+an · n · xn−1
+n=1
+
+the term-wise derivative, also converges on (−r, r). Moreover, f is diﬀerentiable on (−r, r), and
+∞
+
+f (x) =
+n=0
+
+d (an xn ) = dx
+
+∞
+
+an · n · xn−1
+n=1
+
+Consequently: if you plug a power series into the machine that ﬁnds a Taylor series expansion, you get out the original power series. This is a key point, because if we can produce a power series by some other method, then we have found a Taylor series.
+
+2
+∞ n=1
+
+Radius of convergence, not same interval
+xn /n2 converges on [−1, 1], but the dreivative only converges on [−1, 1).
+
+3
+
+Examples
+= cos x
+
+d x e = ex dx d sin x dx
+
+1
+
+4
+
+Integrating term-by-term
+∞
+
+Deﬁne f : (−r, r) → R by a series f (x) =
+n=0
+
+an xn
+
+which converges for x ∈ (−r, r) Deﬁne F (x) =
+
+∞
+
+n=0
+
+an xn n+1
+
+which also converges for x ∈ (−r, r), and f (x) dx = F (x) + C Remember the C.
+
+5
+
+Logs
+∞ n n n=0 (−1) x ,
+
+Since 1/(1 + x) =
+
+we have that
+∞
+
+log(1 + x) =
+n=0
+
+(−1)n xn+1 +C n+1
+
+But C = 0.
+
+6
+
+Endpoints
+
+Abel’s theorem: if ∞ an xn converges on (−r, r), and f (x) equals the series there. n=0 If f is left continuous at r and the series converges, then f (r) = ∞ an rn . n=0 If f is right continuous at −r and the series converges, then f (r) = ∞ an (−r)n . n=0 So endpoints do get ﬁlled in correctly by series.
+
+7
+
+Not a correct argument whatsoever
+sin x = (1 − x/π) (1 + x/π) 1 − x 2π x2 4π 2 1+ x ··· 2π
+
+Multiply pairs of positive and negative roots, to get sin x = x 1− x2 π2 2 1− ···
+
+Multiply it out? 1− 1 1 1 + 2+ + ··· 2 π 4π 16π 2
+sin x . x
+
+x2 + · · · So, maybe
+
+But this should be the same as the Taylor series for
+∞
+
+n=1
+
+n2
+
+1 1 = 2 π 3!
+
+So maybe ∞ 1/n2 = 1/6. n=1 Well, no. We don’t have any justiﬁcation for making these arguments—why should that inﬁnite product be equal to (sin x)/x?
+
+3
+
+

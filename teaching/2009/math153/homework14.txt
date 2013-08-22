@@ -1,0 +1,40 @@
+Homework 14
+Due Monday, November 24, 2008
+A common question is: what should I choose for u? What should I choose for dv? You should choose something easier to diﬀerentiate for u, and easy to antidiﬀerentiate for dv. (a) Use integration by parts twice to rewrite cos(2x) sin(3x) dx in terms of itself—and therefore, ﬁnd an antiderivative. Such problems as these are usually solved by using a trigonometric substitution, but to illustrate the usefulness of integration by parts, refrain from using the angle sum formulas. (b) Here is our ﬁrst foray into the world of Fourier series. For real numbers a1 , a2 , . . . , ak , deﬁne
+k
+
+f (x) =
+n=1
+
+an sin(nx).
+
+For each integer m with 1 ≤ m ≤ k, compute 1 π
+π
+
+f (x) sin(mx) dx
+−π
+
+by using the same trick you used in problem (a). Hint: you will be helped by ﬁrst calculating
+π
+
+sin(nx) sin(mx) dx.
+−π
+
+There’s a lovely pattern for you to discover. (c) Use integration by parts to compute, for each natural number n ∈ N,
+π
+
+x sin(nx) dx.
+−π
+
+(d) Use integration by parts to evaluate
+1
+
+arctan x dx.
+0
+
+Hint: here you should set u = arctan x, and dv = dx. (e) Replace cos2 x with 1 − sin2 x in order to ﬁnd cos5 x sin4 x dx = cos x cos2 x
+2
+
+sin4 x dx.
+
+

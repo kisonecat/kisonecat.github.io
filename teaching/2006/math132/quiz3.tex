@@ -1,0 +1,89 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{nopageno}
+\usepackage{ifthen}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx} 
+\usepackage{version}
+\usepackage{amsthm}
+\usepackage{multicol}
+\usepackage{add-copyright}
+
+\excludeversion{solution}
+
+\DeclareMathOperator{\ft}{ft}
+
+\newcommand{\R}{\mathbb{R}}
+
+\title{Take-Home Quiz 3}
+\author{Math 132 Section 22}
+\date{Due Monday, January 30, 2006}
+
+\newcounter{problem}
+\setcounter{problem}{1}
+
+\newenvironment{problem}[1][]
+{\begin{flushleft}\hangindent=1em\hangafter=1\noindent\textbf{Problem \arabic{problem}.}
+\ifthenelse{\equal{#1}{}}{}{
+\textbf{(#1 \ifthenelse{\equal{#1}{1}}{point}{points}).}}
+}
+{\addtocounter{problem}{1}\end{flushleft}}
+
+\begin{document}
+\maketitle
+
+%This quiz is worth 14 points---12 points are for ``correctness'' of
+%answers, but an additional 2 points will be given out for
+%``style''---awarded to answers which are clearly written, easy to
+%follow, etc.
+
+For the following problems, if you claim that something doesn't exist,
+you must \textit{prove} it doesn't exist.
+
+In some sense, problems three and four are actually about soap
+bubbles: problem three, for instance, is about minimizing the surface
+area enclosing a particular volume, and this is exactly what bubbles
+do.
+
+\begin{problem}[3]
+Find (if they exist) the local and global minima and maxima of the function $f : \R \to \R$ given by
+$$
+f(x) = x^4 - x^2.
+$$
+\end{problem}
+
+\begin{problem}[3]
+Find (if they exist) the local and global minima and maxima of the function $f : (-\infty,0) \cup (0,4) \cup (4,\infty) \to \R$ given by
+$$
+f(x) = \frac{1}{x \cdot (4-x)}.
+$$
+\end{problem}
+
+\begin{problem}[4]
+You are again working for a soup company.  This time, build a soup can
+(i.e., a cylinder) holding $16\pi$ cubic units of soup, with the
+surface area as small as possible.
+
+%You are being chased on the coordinate plane!  Your current location
+%is $(-1,0)$, and to get to safety, you must run to $(\sqrt{2},2)$.
+%Through points with negative $x$-coordinate, you can travel at a speed
+%of $\sqrt{2}$ units per second; through points with positive
+%$x$-coordinate, you can travel at a speed of $1$ unit per second.
+%Where should you cross the $y$-axis in order to get to safety in the
+%fastest possible time?
+\end{problem}
+
+\begin{problem}[4]
+You are a highway planner.  You must connect three cities, 
+\begin{eqnarray*}
+\mbox{City A} & \mbox{ located at } & (-1,1), \\
+\mbox{City B} & \mbox{ located at } & (-1,-1), \\
+\mbox{City C} & \mbox{ located at } & (0,0),
+\end{eqnarray*}
+by three straight roads all meeting at a $3$-way intersection located
+at $(x,0)$.  Where should the junction be placed to minimize the total
+length of road needed?
+\end{problem}
+
+\end{document}

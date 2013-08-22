@@ -1,0 +1,44 @@
+Lecture 4: Solving equations
+Tuesday, September 28, 2010
+
+Math 345
+Jim Fowler
+
+Textbook
+This lecture discusses section 2 of the textbook.
+
+Homework
+The homework is due Thursday, September 30, 2010. From Section 2 of the textbook, do exercises 19 and 20. We did this example last time in class, so it shouldn’t be too hard.
+
+contradiction
+what is a contradiction? Q ∧ ¬Q
+
+Why does this work?
+look at a truth table
+
+how to prove a negative statement
+proof by contradiction example: ((P ⇒ Q) ∧ ¬Q) ⇒ ¬P .
+
+Versus contrapositive
+Want to prove P ⇒ Q? Method of Contradiction: Assume P and Not Q and prove some sort of contradiction. Method of Contrapositive: Assume Not Q and prove Not P.
+
+1
+
+example from textbook
+if x2 is even, then x is even.
+
+example: diophantine equation
+There are no positive integer solutions to the diophantine equation x2 − y 2 = 1 proof: factoring
+
+example: largest number
+theorem: there is no largest integer
+
+last digit of squares
+If n is a perfect square, then n ends with a 0, 1, 4, 5, 6 or 9.
+
+Ramsey theory
+There are six people at a party. At least 3 know each other, or 3 don’t.
+
+2
+
+

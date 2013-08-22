@@ -1,0 +1,28 @@
+Take-Home Quiz 2
+Math 131 Section 22 Due Monday, October 17, 2005
+You may use any resource (books, notes, even people), but you must write down your solutions when you are alone. Anytime that you are asked to evaluate a limit, you must justify your calculation. Problem 1. (1 point). Give the oﬃcial deﬁnition of lim f (x) = L.
+x→∞
+
+Problem 2. (2 points). Prove that lim 1/x = 0.
+x→∞
+
+Problem 3. (1 point). Evaluate lim 3x2 − 2x + 2 ⌊x⌋2 + 1
+4
+
+x→2+
+
+.
+
+Problem 4. (2 points). Evaluate
+x→17−
+
+lim ⌊x⌋ + ⌊−x⌋.
+
+Problem 5. (2 points). Evaluate x2 x2 − . x→∞ x − 1 x+1 lim Problem 6. (2 points). Evaluate lim+ x2 − x − 12 . x2 − 8x + 15 √ 3 2x3 + x + 1 √ . x2 + 1
+
+x→3
+
+Problem 7. (2 points). Evaluate lim
+x→∞
+
+

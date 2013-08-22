@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+\newtheorem*{example}{Example}
+\newtheorem*{thm}{Theorem}
+
+\title{Lecture 17: More Taylor series}
+\author{Math 153 Section 57}
+\date{Wednesday November  5, 2008}
+
+\begin{document}
+\maketitle
+
+Continuing in chapter 12.6.
+
+\subsection{Recall}
+
+\begin{itemize}
+\item Start with a function $f$
+\item Write down a Taylor series
+\item Does the series converge?
+\item Does the series converge to $f$?
+\end{itemize}
+
+How to find a series?  Differentiate the function.  Or, maybe use a
+trick: substitute (e.g., $1/(1+x^2)$) or multiply two well-known
+series together.  As we see soon, differentiation also works.
+
+\subsection{Taylor series}
+
+promised proofs.
+
+\subsection{Approximate $\pi$}
+
+Here is a series
+$$
+\arctan x = \sum_{n=0}^\infty \frac{(-1)^n x^{2n+1}}{2n + 1}
+$$
+Since $\arctan 1 = \pi/4$, we might try to approximate $\pi$ this way.
+
+
+
+\subsection{Things you can see from the series directly}
+
+For example, $\sin (-x) = - \sin x$ and $\cos x = \cos (-x)$.
+
+\subsection{Relationship between $e^x$ and trig functions}
+
+$e^{ix} = \cos x + i \sin x$.
+
+\subsection{$e$ is irrational}
+
+Assume $e = a/b$.
+
+Clever trick: define
+$$
+x = b! ( e - \sum_{n=0}^b 1/n! )
+$$
+
+Step 1: $x$ is an integer.  Substitute in $e = a/b$ to see this.
+
+Step 2: $x$ is between 0 and $1$.  
+Then,
+$$
+0 < x = \sum_{n=b+1}^\infty \frac{b!}{n!} \leq \sum_{n=b+1}^\infty \frac{1}{(b+1)^{n-b}} = 1/b
+$$
+But there is no integer between 0 and 1.
+
+Challenge: do something similar for $e^2$.
+
+\end{document}

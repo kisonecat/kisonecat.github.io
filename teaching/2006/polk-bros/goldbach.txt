@@ -1,0 +1,36 @@
+Name:
+
+The Goldbach Conjecture.
+Some background.
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+I present to you the ﬁrst twenty prime numbers 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, . . .
+The Conjecture.
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+Every even integer greater than two can be written as the sum of two primes.
+Experimental evidence.
+
+4 = 2 + 2,
+
+6 = 3 + 3,
+
+8 = 3 + 5,
+
+10 = 3 + 7,
+
+12 = 5 + 7.
+
+Can you keep going?
+
+14 = 18 = 22 = 26 = 30 = 34 = 38 = 42 =
+
++ + + + + + + +
+
+16 = 20 = 24 = 28 = 32 = 36 = 40 = 44 =
+
++ + + + + + + +
+
+c 2008 Jim Fowler
+
+

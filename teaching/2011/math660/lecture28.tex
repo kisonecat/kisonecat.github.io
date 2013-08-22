@@ -1,0 +1,115 @@
+\documentclass[14pt]{chalkfjord}
+
+\title{Lecture 28: Homology}
+\author{Math 660---Jim Fowler}
+\date{Friday, July 29, 2011}
+
+\begin{document}
+
+\begin{frame}\titlepage\end{frame}
+
+\begin{frame}
+  \Huge
+  \textbf{Maximum Principle!}
+\end{frame}
+
+\begin{frame}
+  \begin{theorem}
+    If $f : \Omega \to \C$ is analytic, nonconstant, \\
+    \quad $|f(z)|$ has no maximum in $\Omega$.
+  \end{theorem}
+
+  \begin{corollary}
+    If $f : K \to \C$ is continuous for $K$ compact, \\
+    \quad and $f |_{\mbox{interior}}$ is analytic, \\
+    \quad then the maximum of $|f(z)|$ is on the boundary of $K$.
+  \end{corollary}
+\end{frame}
+
+\begin{frame}
+  Proof 1: local mapping.
+
+  Proof 2: use Cauchy's integral formula on circles
+\end{frame}
+
+\begin{frame}
+  \begin{lemma}[Schwarz]
+    $f(z)$ analytic on $D_1(0)$ and $|f(z)| \leq 1$, $f(0) = 0$, then
+    \\
+    \quad $|f(z)| \leq |z|$ and $f'(0) \leq 1$.
+    If these inequalities are realized in the disk, then \\
+    \quad $f(z) = cz$ where $|c| = 1$.
+  \end{lemma}
+  \pause
+  \begin{proof}
+    Apply maximum principle to $f(z)/z$.
+  \end{proof}
+\end{frame}
+
+\begin{frame}
+  \Huge
+  \textbf{Homology!}
+\end{frame}
+
+\begin{frame}
+  A chain is a formal sum of arcs.
+
+  A cycle is a chain ``equivalent to'' a sum of closed curves.
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Simply-connected regions}
+
+  $\Omega \subset \C$ is \textbf{simply connected} if $\C - \Omega$ is
+  connected.
+
+  \begin{theorem}
+    $\Omega$ is simply connected iff \\
+    \quad for all $a \in \C - \Omega$, \\
+    \quad\quad and all cycles $\gamma$,
+    \quad $\eta(\gamma,a) = 0$.
+  \end{theorem}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Proof of theorem}
+
+  $\C - \Omega = A \cup B$ for closed, disjoint $A$, $B$.
+
+  \pause
+
+  Suppose $A$ bounded; pick $a \in A$.
+
+  \pause
+
+  Cover $\C$ by small squares \\
+  \quad (so small that each square may touch \\
+  \quad $A$ or $B$ but not both)
+
+  \pause
+
+  $$\gamma = \sum_{\mbox{$S$ touching $A$}} \partial S$$
+
+  \pause
+
+  $\gamma \subset \Omega$ and $\eta(\gamma,a) = 1$.  \pause\hfill $\Rightarrow\Leftarrow$
+\end{frame}
+
+\begin{frame}
+  $\gamma \subset \Omega$
+
+  Define $\gamma \sim 0$ \\
+  \quad if $\eta(\gamma,a) = 0$ \\
+  \quad for all $a \in \C - \Omega$.
+
+  \pause
+
+  Define $\gamma_1 \sim \gamma_2$ \\  
+  \quad if $\gamma_1 - \gamma_2 \sim 0$.
+
+\end{frame}
+
+% This lecture covers section 4.4.1 and 4.4.2 and 4.4.3 of the textbook.
+
+\end{document}

@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\usepackage{add-copyright}
+
+\usepackage{fullpage}
+\usepackage{nopageno}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\usepackage[margin=1.5cm, top=0.5cm]{geometry}
+
+\title{Solution Set 2}
+\date{Due Monday, October 6, 2008}
+
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+\item For each sequence, state whether it is bounded (and if so, above or below) and whether it is monotone (and if so, (non)increasing or (non)decreasing).
+
+\begin{description}
+\item[(a)] $a_n = 2^n$.  \textit{Bounded below but not above.  Increasing.}
+\vfill
+\item[(b)] $b_n = \sin n$.  \textit{Bounded both below and above.  Not monotone.}
+\vfill
+\item[(c)] $c_n = \displaystyle\frac{4 n}{n+1}$.  \textit{Bounded both below and above.  Increasing.}
+\vfill
+\item[(d)] $d_n = \displaystyle\frac{\sqrt{n+1}}{\sqrt{n}}$.  \textit{Bounded both below and above.  Decreasing.}
+\vfill
+\item[(e)] $e_n = (-1)^n \cdot n!$.  \textit{Not bounded.  Not monotone.}
+\vfill
+\item[(f)] $f_n = \cos \displaystyle\left(\frac{1}{n}\right)$.  \textit{Bounded both below and above.  Increasing.}
+\vfill
+\item[(g)] $g_n = 17$.  \textit{Bounded both below and above.  Nondecreasing and nonincreasing.}
+\vfill
+\item[(h)] $h_n = \left|5 - n\right| - n$.  \textit{Bounded both below and above.  Nonincreasing.}
+\vfill
+\end{description}
+
+\item Suppose $a_n$ is a bounded sequence.  Is the sequence $b_n = 17 \cdot a_n$ also bounded?  Why or why not?  
+\vfill
+
+\textbf{Yes.}  If $b_n$ is bounded above by $U$ and below by $L$, then for all $n \in \N$, we have $L \leq a_n \leq U$.  Multiplying this inequality by $17$ gives
+$$
+17 \cdot L \leq 17 \cdot a_n \leq 17 \cdot U
+$$
+for all $n \in \N$.  This means $b_n$ is bounded above by $17 \cdot U$
+and below by $17 \cdot L$.
+\vfill
+
+\item Suppose $a_n$ is a bounded sequence, and $a_n \neq 0$.  Is the sequence $b_n = 1/a_n$ also bounded?  Why or why not?
+\vfill
+
+\textbf{No.}  Let $a_n = 1/n$.  Then $a_n$ is bounded, but $b_n = 1/a_n = n$, which is not a bounded sequence.
+\vfill
+
+\item Suppose $a_n$ is a decreasing sequence.  Is the sequence $b_n = 2 a_n + 3$ also decreasing?  Why or why not?
+\vfill
+
+\textbf{Yes.}  We assume for all $n \in \N$ that $a_n > a_{n+1}$.  Multiplying both sides by $2$ and adding $3$ gives the inequality
+$$
+2 a_n + 3 > 2 a_{n+1} + 3 \mbox{ for all $n \in \N$.}
+$$
+This means $b_n > b_{n+1}$ for all $n \in \N$, so $b_n$ is decreasing.
+\vfill
+
+\item Suppose $a_n$ is an increasing sequence.  Is the sequence $b_n = {a_n}^2$ also increasing?  Why or why not?
+\vfill
+
+\textbf{No.}  Suppose $a_n = -1/n$.  This is an increasing sequence, but
+${a_n}^2 = 1/n^2$ is not increasing.
+\vfill
+
+\end{enumerate}
+
+\end{document}

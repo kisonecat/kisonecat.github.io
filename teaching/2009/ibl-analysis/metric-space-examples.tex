@@ -1,0 +1,195 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+
+\usepackage{fullpage}
+
+\usepackage{add-copyright}
+
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\theoremstyle{plain}% default
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}{Corollary}[theorem]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[theorem]
+\newtheorem{conjecture}{Conjecture}[theorem]
+\newtheorem{example}{Example}[theorem]
+\newtheorem{exercise}{Exercise}[theorem]
+\newtheorem{remark}{Remark}[theorem]
+\newtheorem*{warning}{Warning}
+
+\title{Examples of Metric Spaces}
+\author{Jim Fowler\ldots and You!}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+We should carry with ourselves many examples of metric spaces.  So
+far, we have subsets of $\R$ and the discrete metric space.
+
+\section{One quick example}
+
+\begin{proposition}
+Let $S^1 = [0,2\pi)$, with the metric
+$$
+d_{S^1}( x, y ) = \min \left\{ x - y, 2\pi - (x-y) \right\}
+$$ 
+Then $(S^1, d_{S^1})$ is a metric space.
+\end{proposition}
+
+\begin{remark}
+Thinking geometrically, $S^1$ is just the
+unit circle; the distance between points $x$ and $y$ is the length
+of the shortest arc joining $x$ and $y$.
+\end{remark}
+
+\section{Building new spaces from old}
+
+There are a few techniques we will introduce here:
+\begin{itemize}
+\item the product of two metric spaces,
+\item subsets of metric spaces,
+\item rescaling the metric
+\item the union of two metric spaces
+\end{itemize}
+
+\begin{definition}
+Let $(X, d_X)$ and $(Y, d_Y)$ be metric spaces.  The \textbf{product} of $X$ and $Y$ (written $X \times Y$) is
+the set of pairs
+$$
+\{ (x,y) : x \in X, y \in Y \}
+$$
+with the metric
+$$
+d_{X \times Y}\left( (x_1,y_1), (x_2, y_2) \right) = \max \left\{ d_X(x_1,x_2), d_Y(y_1,y_2) \right\}
+$$
+\end{definition}
+
+\begin{proposition}
+The space $(X \times Y, d_{X \times Y})$ is a metric space.
+\end{proposition}
+
+\begin{example}
+We normally write $\R \times \R$ as $\R^2$.  Note that $d_{\R \times \R}$ as defined above is \textit{not} the usual Euclidean metric.
+\end{example}
+
+\begin{exercise}
+What ``shape'' does a ball of radius $R$ have in the metric space $(\R \times \R, d_{\R \times \R})$?
+\end{exercise}
+
+\begin{remark}
+Recall that any subset of a metric space is still a metric space.
+\end{remark}
+
+\begin{proposition}
+  Let $(X,d)$ be a metric space, and pick $\epsilon > 0$.  Then $(X,
+  \epsilon \cdot d)$ is again a metric space (where $\epsilon \cdot d$
+  means the metric multipled by $\epsilon$).
+\end{proposition}
+
+\begin{proposition}
+The  metric spaces $(\R, d)$ and $(\R, 1000d)$ are isometric.
+\end{proposition}
+
+\begin{proposition}
+The  metric spaces $(S^1, d_{S^1})$ and $(S^1, 2 d_{S^1})$ are not isometric, but they are homeomorphic.
+\end{proposition}
+
+\begin{definition}
+  Suppose $(X_1, d_1)$ and $(X_2, d_2)$ are metric spaces.  The \textbf{disjoint union} $X_1 \sqcup X_2$ is the metric space
+having points $X_1 \sqcup X_2$, and metric
+\begin{align*}
+d_{X_1 \sqcup X_2}(x_1,y_1) &= d_1(x_1,y_1) \mbox{ if $x_1, y_1 \in X_1$,} \\
+d_{X_1 \sqcup X_2}(x_2,y_2) &= d_2(x_2,y_2) \mbox{ if $x_2, y_2 \in X_2$,} \\
+d_{X_1 \sqcup X_2}(x_1,y_2) &= 1 \mbox{ if $x_1 \in X_1$ and $y_2 \in X_2$,} \\
+d_{X_1 \sqcup X_2}(x_2,y_1) &= 1 \mbox{ if $x_2 \in X_2$ and $y_1 \in X_1$.}
+\end{align*}
+\end{definition}
+We can take the disjoint union of an indexed family of metric spaces: say $(X_i,d_i)$ are metric spaces for $i \in I$.  Then
+$$
+\bigsqcup_{i \in I} (X_i,d_i)
+$$
+can be defined as the above. 
+\begin{example}
+Let $(\{\star\}, d)$ be \textit{the} metric space consisting of a single point.  Then
+$$
+\bigsqcup_{i \in I} (\{\star\}, d)
+$$
+is the set $I$ with the discrete metric.
+\end{example}
+
+\begin{definition}
+Let $(X,d)$ be a metric space, and suppose $\sim$ is an equivalence relation on the points of $X$, such that
+$$
+x \sim x' \mbox{ and } y \sim y' \Rightarrow d(x,y) = d(x',y').
+$$
+In other words, the equivalence relation is compatible with the metric.  Then the \textbf{quotient} space $(X/\sim, d)$ consists of equivalence classes of points of $X$, and metric
+$$
+d([x], [y]) = d(x,y),
+$$
+where $[x]$ is the equivalence class containing $x$.
+\end{definition}
+
+\begin{definition}
+  Suppose $(X_1, d_1)$ and $(X_2, d_2)$ are metric spaces, and $f_i :
+  (Y,d) \to (X_i,d)$ is an isometry.  Then the \textbf{union} of $X_1$
+  and $X_2$ along $Y$, written $X_1 \cup_Y X_2$ is
+$$
+X_1 \sqcup X_2 / \sim
+$$
+where $x_1 \sim x_2$ if there exists $y \in Y$ with $f_i(y) = x_i$.
+\end{definition}
+This definition makes precise the notion of gluing together two metric spaces.
+
+\section{The 2-adic numbers}
+
+\begin{definition}
+For $p/q \in \Q$, find integers $a, b, n$ so that
+$$
+\frac{p}{q} = 2^n \frac{a}{b}
+$$
+so that neither $a$ nor $b$ are divisible by two.  Then the \textbf{2-adic valuation} of $p/q$, written
+$$
+|p/q|_2
+$$
+is defined to be $2^{-n}$.  By convention, $|0|_2 = 0$.
+\end{definition}
+We think of the 2-adic valuation as measuring how many twos there are
+in $p/q$.  Numbers containing a lot of twos (like 16) are small.
+
+\begin{definition}
+For $x, y \in \Q$, define the $2$-adic distance between them to be
+$$
+d_2(x,y) = |x-y|_2
+$$
+\end{definition}
+
+\begin{definition}
+The \textbf{2-adics} $(\Q_2,d_2)$ are the completion of $\Q$ with respect to the 2-adic metric $d_2$.
+\end{definition}
+
+By construction, $\Q_2$ is a complete metric space.
+
+\begin{exercise}
+Find an element of $\Q_2$ which is not in $\Q$.
+\end{exercise}
+
+\begin{exercise}
+Is $\Q_2$ connected?
+\end{exercise}
+
+\begin{remark}
+There is nothing special about $2$---we can similarly define $\Q_p$ for any prime $p$.
+\end{remark}
+
+\end{document}

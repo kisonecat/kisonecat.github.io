@@ -1,0 +1,15 @@
+Math 132 Section 22 Due Monday, January 30, 2006
+For the following problems, if you claim that something doesn’t exist, you must prove it doesn’t exist. In some sense, problems three and four are actually about soap bubbles: problem three, for instance, is about minimizing the surface area enclosing a particular volume, and this is exactly what bubbles do. Problem 1. (3 points). Find (if they exist) the local and global minima and maxima of the function f : R → R given by f (x) = x4 − x2 . Problem 2. (3 points). Find (if they exist) the local and global minima and maxima of the function f : (−∞, 0) ∪ (0, 4) ∪ (4, ∞) → R given by f (x) = 1 . x · (4 − x)
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+Problem 3. (4 points). You are again working for a soup company. This time, build a soup can (i.e., a cylinder) holding 16π cubic units of soup, with the surface area as small as possible. Problem 4. (4 points). You are a highway planner. You must connect three cities, City A City B City C located at located at located at (−1, 1), (−1, −1), (0, 0),
+
+by three straight roads all meeting at a 3-way intersection located at (x, 0). Where should the junction be placed to minimize the total length of road needed?
+
+c 2008 Jim Fowler
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Take-Home Quiz 3
+
+

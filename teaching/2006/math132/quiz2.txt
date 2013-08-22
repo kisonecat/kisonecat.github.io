@@ -1,0 +1,13 @@
+Math 132 Section 22 Due Wednesday, January 18, 2006
+Do not merely write down an answer—write also something to convince the skeptical and foolish reader (namely, Jim) that your answer is correct. Mathematics is not a collection of disconnected truths; it is a way to move from one truth to another. Problem 1. (2 points). Compute d (sin 3x − cos 5x) . dx Problem 2. (2 points). Compute d dx Problem 3. (2 points). Compute d dx sin2 x sin(x2 ) . sin 2x cos 3x .
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit
+
+Problem 4. (2 points). Recall that cos x = sin(π/2 − x). Calculate the derivative of cos x with respect to x by calculating d π sin −x . dx 2 Problem 5. (3 points). Recall the identity sin(2x) = 2 sin x cos x. Diﬀerentiate both sides of this equation with respect to x to get another identity. Problem 6. (3 points). When does d sin (sin x) dx equal zero?
+
+c 2008 Jim Fowler
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Take-Home Quiz 2
+
+

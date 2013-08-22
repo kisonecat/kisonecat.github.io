@@ -1,0 +1,19 @@
+extends ../../../views/teaching/course
+
+mixin youtube(videoId,size)
+  div.iframeHolder(style="position:relative;")
+    img.ratio(src="http://placehold.it/#{size}",style="display:block;width:100%;height:auto;")
+    iframe(id="ytplayer",type="text/html",src="http://www.youtube.com/embed/#{videoId}?origin=http://kisonecat.com",frameborder="0",style="position:absolute;top:0;left:0;width:100%; height:100%;")
+
+block details
+  p The course begins #{moment("September 27, 2013").fromNow()} on September 27, 2013.
+  p
+    a.btn.btn-primary.btn-lg(href="https://www.coursera.org/course/sequence") Enroll in my Coursera Course
+  div(style="clear: both;")
+  hr
+  .row
+    .col-lg-6
+      mixin youtube("bmH9AoKOYRw","16x9")
+    .col-lg-6
+      p Sequences and Series will challenge us to think very carefully about &ldquo;infinity.&rdquo;  What does it mean to add up an unending list of numbers? How can an infinite task result in a finite answer?  These questions lead us to some very deep concepts—but also to some powerful computational tools which are used not only in math but in many quantitative disciplines.
+      p This course is a first and friendly introduction to sequences, infinite series, convergence tests, and Taylor series.  It is suitable for someone who has seen just a bit of calculus before.  And since one learns mathematics by doing mathematics, this course encourages you to participate by providing plenty of computational problems, conceptual projects, and opportunities to explain your thought process to your peers.

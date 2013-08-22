@@ -1,0 +1,20 @@
+Lecture 19: Binomial theorem
+Tuesday, October 26, 2010
+
+Math 345
+Jim Fowler
+
+Textbook
+This lecture discusses section 5 of the textbook.
+
+Homework
+The homework is due Thursday, October 28, 2010. From Section 5 of the textbook, do exercises 11 and 12. this homework will force you to summarize today’s lecture and give your own proof of the binomial theorem.
+
+binomial coeﬃcients
+explain the notation. properties. boundary conditions.
+
+proof of the binomial theorem
+
+1
+
+
