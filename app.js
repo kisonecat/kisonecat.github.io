@@ -68,17 +68,17 @@ glob(path.join(__dirname, 'teaching/**/course.json'), {}, function (er, files) {
 	course.directory = path.dirname( filename );
 	course.url = course.directory.replace( __dirname, '' ) + '/';
 
+	if (course.logo) {
+	    var logoPath = course.url + course.logo;
+	    app.get( logoPath, function ( req, res ) { res.sendfile( path.join( __dirname, logoPath ) ) } );
+	}
+
 	course.resources = new Array();
 	require( path.join( course.directory, "resources.json" ) ).forEach( function(resource) {
 	    resource = _.extend( new Resource(), resource );
 	    resource.course = course;
 	    resource.url = course.url + resource.shortname;
 	    resource.preview = resource.filename.replace( '.pdf', '.png' );
-
-	    if (resource.logo) {
-		var logoPath = course.url + resource.logo;
-		app.get( logoPath, function ( req, res ) { res.sendfile( path.join( __dirname, logoPath ) ) } );
-	    }
 
 	    var thumbnailPath = course.url + resource.filename.replace( '.pdf', '.png' );
 	    var resourcePath = course.url + resource.filename;
