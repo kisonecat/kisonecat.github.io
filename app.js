@@ -75,6 +75,11 @@ glob(path.join(__dirname, 'teaching/**/course.json'), {}, function (er, files) {
 	    resource.url = course.url + resource.shortname;
 	    resource.preview = resource.filename.replace( '.pdf', '.png' );
 
+	    if (resource.logo) {
+		var logoPath = course.url + resource.logo;
+		app.get( logoPath, function ( req, res ) { res.sendfile( path.join( __dirname, logoPath ) ) } );
+	    }
+
 	    var thumbnailPath = course.url + resource.filename.replace( '.pdf', '.png' );
 	    var resourcePath = course.url + resource.filename;
 	    app.get( thumbnailPath, function ( req, res ) { res.sendfile( path.join( __dirname, thumbnailPath ) ) } );

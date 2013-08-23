@@ -1,0 +1,664 @@
+\documentclass[10pt]{handout}
+%\usepackage{add-copyright}
+
+\title{Calendar}
+\course{Math 2568}
+\date{Autumn 2013}
+\author{Jim Fowler}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{hyperref}
+
+\newcommand{\peem}{\textsc{p.m.}}
+\newcommand{\ayem}{\textsc{a.m.}}
+
+\titleformat{\section}[wrap]{\sffamily\bfseries}
+{\large\thesection}{1em}{\large}%[{\titlerule[0.5pt]}]
+\titlespacing*{\section}{1in}{*1.05}{*0.1}
+
+\titleformat{\subsection}[drop]{\sffamily}
+{\thesubsection}{1em}{}%[{\titlerule[0.5pt]}]
+\titlespacing*{\subsection}{2.2in}{*0.05}{*0.05}
+
+\usepackage{nopageno}
+\usepackage{multicol}
+\geometry{margin=1cm}
+%\geometry{landscape,margin=0.25in,bottom=0.25in,left=0.5in,right=0.5in}
+\usepackage{tabularx}
+\usepackage{rotating}
+
+\setlength{\parindent}{0in}
+\setlength{\parskip}{0in}
+\usepackage{calc}
+
+\begin{document}
+\maketitle
+
+\vspace{-2ex}
+
+\newlength{\wednesday}
+\settowidth{\wednesday}{\textsf{Wednesday}}
+
+\newlength{\monthwidth}
+\settowidth{\monthwidth}{\textsf{September}}
+
+\newlength{\daywidth}
+\settowidth{\daywidth}{\textsf{99,}}
+
+\newlength{\yearwidth}
+\settowidth{\yearwidth}{\textsf{9999}}
+
+\newlength{\weekwidth}
+\newlength{\weekheight}
+\settoheight{\weekheight}{\textsf{\textbf{Week 99}}}
+
+\newlength{\remaining}
+\setlength{\remaining}{\textwidth-\weekheight}
+
+  
+      
+    %    \section*{Week 1}
+
+        \settowidth{\weekwidth}{\textsf{\textbf{W1}}}
+    \raisebox{-\weekwidth}[0in][0in]{\rotatebox{90}{\textsf{\textbf{W1}}}}
+            \nopagebreak
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+                  \textsf{Wednesday} &
+\textsf{August} &
+\hfill\textsf{21,} &
+\textsf{2013} &
+      \textsection1.1 Introduction to matrices and systems of linear equations & pg.~2 \\
+                
+  
+    
+         \textsf{Friday} &
+\textsf{August} &
+\hfill\textsf{23,} &
+\textsf{2013} &
+     \textbf{Quiz 1 } & \\
+      
+  
+  
+        \end{tabularx}
+     \hrule     
+    \vspace{0.25ex}
+
+    
+    %    \section*{Week 2}
+
+        \settowidth{\weekwidth}{\textsf{\textbf{W2}}}
+    \raisebox{-\weekwidth}[0in][0in]{\rotatebox{90}{\textsf{\textbf{W2}}}}
+            \nopagebreak
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+                  \textsf{Monday} &
+\textsf{August} &
+\hfill\textsf{26,} &
+\textsf{2013} &
+      \textsection1.2 Echelon form and Gauss-Jordan elimination & pg.~14 \\
+                
+  
+  
+      
+  
+                  \textsf{Wednesday} &
+\textsf{August} &
+\hfill\textsf{28,} &
+\textsf{2013} &
+      \textsection1.3 Consistent systems of linear equations & pg.~28 \\
+                
+  
+    
+         \textsf{Friday} &
+\textsf{August} &
+\hfill\textsf{30,} &
+\textsf{2013} &
+     \textbf{Quiz 2 } & \\
+      
+  
+  
+        \end{tabularx}
+     \hrule     
+    \vspace{0.25ex}
+
+    
+    %    \section*{Week 3}
+
+        \settowidth{\weekwidth}{\textsf{\textbf{W3}}}
+    \raisebox{-\weekwidth}[0in][0in]{\rotatebox{90}{\textsf{\textbf{W3}}}}
+            \nopagebreak
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+    \textsf{Monday} &
+\textsf{September} &
+\hfill\textsf{ 2,} &
+\textsf{2013} &
+    \textit{Labor Day} & \\
+    
+  
+      
+  
+                  \textsf{Wednesday} &
+\textsf{September} &
+\hfill\textsf{ 4,} &
+\textsf{2013} &
+      \textsection1.5 Matrix operations & pg.~46 \\
+                
+  
+    
+         \textsf{Friday} &
+\textsf{September} &
+\hfill\textsf{ 6,} &
+\textsf{2013} &
+     \textbf{Quiz 3 } & \\
+      
+  
+  
+        \end{tabularx}
+     \hrule     
+    \vspace{0.25ex}
+
+    
+    %    \section*{Week 4}
+
+        \settowidth{\weekwidth}{\textsf{\textbf{W4}}}
+    \raisebox{-\weekwidth}[0in][0in]{\rotatebox{90}{\textsf{\textbf{W4}}}}
+            \nopagebreak
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+                  \textsf{Monday} &
+\textsf{September} &
+\hfill\textsf{ 9,} &
+\textsf{2013} &
+      \textsection1.6 Algebraic properties of matrix operations & pg.~61 \\
+                
+  
+  
+      
+  
+                  \textsf{Wednesday} &
+\textsf{September} &
+\hfill\textsf{11,} &
+\textsf{2013} &
+      \textsection1.7 Linear independence and nonsingular matrices & pg.~71 \\
+                
+  
+    
+         \textsf{Friday} &
+\textsf{September} &
+\hfill\textsf{13,} &
+\textsf{2013} &
+     \textbf{Quiz 4 } & \\
+      
+  
+  
+        \end{tabularx}
+     \hrule     
+    \vspace{0.25ex}
+
+    
+    %    \section*{Week 5}
+
+        \settowidth{\weekwidth}{\textsf{\textbf{W5}}}
+    \raisebox{-\weekwidth}[0in][0in]{\rotatebox{90}{\textsf{\textbf{W5}}}}
+            \nopagebreak
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+                  \textsf{Monday} &
+\textsf{September} &
+\hfill\textsf{16,} &
+\textsf{2013} &
+      \textsection1.9 Matrix inverses and their properties & pg.~113 \\
+             & & & & 
+      \textsection2.1 Vectors in the plane & pg.~114 \\
+                
+  
+  
+      
+  
+         \textsf{Wednesday} &
+\textsf{September} &
+\hfill\textsf{18,} &
+\textsf{2013} &
+     \textbf{Review } & \\
+      
+  
+    
+         \textsf{Friday} &
+\textsf{September} &
+\hfill\textsf{20,} &
+\textsf{2013} &
+     \textbf{Midterm 1 } & \\
+      
+  
+  
+        \end{tabularx}
+     \hrule     
+    \vspace{0.25ex}
+
+    
+    %    \section*{Week 6}
+
+        \settowidth{\weekwidth}{\textsf{\textbf{W6}}}
+    \raisebox{-\weekwidth}[0in][0in]{\rotatebox{90}{\textsf{\textbf{W6}}}}
+            \nopagebreak
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+                  \textsf{Monday} &
+\textsf{September} &
+\hfill\textsf{23,} &
+\textsf{2013} &
+      \textsection2.2 Vectors in space & pg.~128 \\
+             & & & & 
+      \textsection2.3 The dot product and the cross product & pg.~135 \\
+                
+  
+  
+      
+  
+                  \textsf{Wednesday} &
+\textsf{September} &
+\hfill\textsf{25,} &
+\textsf{2013} &
+      \textsection3.1 Introduction to $\mathbb{R}^n$ & pg.~164 \\
+             & & & & 
+      \textsection3.2 Vector space properties of $\mathbb{R}^n$ & pg.~167 \\
+                
+  
+    
+         \textsf{Friday} &
+\textsf{September} &
+\hfill\textsf{27,} &
+\textsf{2013} &
+     \textbf{Quiz 5 } & \\
+      
+  
+  
+        \end{tabularx}
+     \hrule     
+    \vspace{0.25ex}
+
+    
+    %    \section*{Week 7}
+
+        \settowidth{\weekwidth}{\textsf{\textbf{W7}}}
+    \raisebox{-\weekwidth}[0in][0in]{\rotatebox{90}{\textsf{\textbf{W7}}}}
+            \nopagebreak
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+                  \textsf{Monday} &
+\textsf{September} &
+\hfill\textsf{30,} &
+\textsf{2013} &
+      \textsection3.3 Examples of subspaces & pg.~176 \\
+                
+  
+  
+      
+  
+                  \textsf{Wednesday} &
+\textsf{October} &
+\hfill\textsf{ 2,} &
+\textsf{2013} &
+      \textsection3.4 Bases for subspaces & pg.~188 \\
+                
+  
+    
+         \textsf{Friday} &
+\textsf{October} &
+\hfill\textsf{ 4,} &
+\textsf{2013} &
+     \textbf{Quiz 6 } & \\
+      
+  
+  
+        \end{tabularx}
+     \hrule     
+    \vspace{0.25ex}
+
+    
+    %    \section*{Week 8}
+
+        \settowidth{\weekwidth}{\textsf{\textbf{W8}}}
+    \raisebox{-\weekwidth}[0in][0in]{\rotatebox{90}{\textsf{\textbf{W8}}}}
+            \nopagebreak
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+                  \textsf{Monday} &
+\textsf{October} &
+\hfill\textsf{ 7,} &
+\textsf{2013} &
+      \textsection3.5 Dimension & pg.~202 \\
+                
+  
+  
+      
+  
+                  \textsf{Wednesday} &
+\textsf{October} &
+\hfill\textsf{ 9,} &
+\textsf{2013} &
+      \textsection5.1 Introduction to vector spaces & pg.~358 \\
+                
+  
+    
+         \textsf{Friday} &
+\textsf{October} &
+\hfill\textsf{11,} &
+\textsf{2013} &
+     \textbf{Quiz 7 } & \\
+      
+  
+  
+        \end{tabularx}
+     \hrule     
+    \vspace{0.25ex}
+
+    
+    %    \section*{Week 9}
+
+        \settowidth{\weekwidth}{\textsf{\textbf{W9}}}
+    \raisebox{-\weekwidth}[0in][0in]{\rotatebox{90}{\textsf{\textbf{W9}}}}
+            \nopagebreak
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+                  \textsf{Monday} &
+\textsf{October} &
+\hfill\textsf{14,} &
+\textsf{2013} &
+      \textsection5.2 Vector spaces & pg.~360 \\
+             & & & & 
+      \textsection5.3 Subspaces & pg.~368 \\
+                
+  
+  
+      
+  
+                  \textsf{Wednesday} &
+\textsf{October} &
+\hfill\textsf{16,} &
+\textsf{2013} &
+      \textsection5.4 Linear indepenence, bases, and coordinates & pg.~375 \\
+                
+  
+    
+         \textsf{Friday} &
+\textsf{October} &
+\hfill\textsf{18,} &
+\textsf{2013} &
+     \textbf{Quiz 8 } & \\
+      
+  
+  
+        \end{tabularx}
+     \hrule     
+    \vspace{0.25ex}
+
+    
+    %    \section*{Week 10}
+
+        \settowidth{\weekwidth}{\textsf{\textbf{W10}}}
+    \raisebox{-\weekwidth}[0in][0in]{\rotatebox{90}{\textsf{\textbf{W10}}}}
+            \nopagebreak
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+                  \textsf{Monday} &
+\textsf{October} &
+\hfill\textsf{21,} &
+\textsf{2013} &
+      \textsection3.6 Orthogonal bases for subspaces & pg.~214 \\
+                
+  
+  
+      
+  
+                  \textsf{Wednesday} &
+\textsf{October} &
+\hfill\textsf{23,} &
+\textsf{2013} &
+      \textsection3.7 Linear transformations from $\mathbb{R}^n$ to $\mathbb{R}^m$ & pg.~225 \\
+                
+  
+    
+         \textsf{Friday} &
+\textsf{October} &
+\hfill\textsf{25,} &
+\textsf{2013} &
+     \textbf{Quiz 9 } & \\
+      
+  
+  
+        \end{tabularx}
+     \hrule     
+    \vspace{0.25ex}
+
+    
+    %    \section*{Week 11}
+
+        \settowidth{\weekwidth}{\textsf{\textbf{W11}}}
+    \raisebox{-\weekwidth}[0in][0in]{\rotatebox{90}{\textsf{\textbf{W11}}}}
+            \nopagebreak
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+                  \textsf{Monday} &
+\textsf{October} &
+\hfill\textsf{28,} &
+\textsf{2013} &
+      \textsection6.1 Introduction to determinants & pg.~448 \\
+                
+  
+  
+      
+  
+         \textsf{Wednesday} &
+\textsf{October} &
+\hfill\textsf{30,} &
+\textsf{2013} &
+     \textbf{Review } & \\
+      
+  
+    
+         \textsf{Friday} &
+\textsf{November} &
+\hfill\textsf{ 1,} &
+\textsf{2013} &
+     \textbf{Midterm 2 } & \\
+      
+  
+  
+        \end{tabularx}
+     \hrule     
+    \vspace{0.25ex}
+
+    
+    %    \section*{Week 12}
+
+        \settowidth{\weekwidth}{\textsf{\textbf{W12}}}
+    \raisebox{-\weekwidth}[0in][0in]{\rotatebox{90}{\textsf{\textbf{W12}}}}
+            \nopagebreak
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+                  \textsf{Monday} &
+\textsf{November} &
+\hfill\textsf{ 4,} &
+\textsf{2013} &
+      \textsection6.2 Cofactor expansions of determinants & pg.~448 \\
+                
+  
+  
+      
+  
+                  \textsf{Wednesday} &
+\textsf{November} &
+\hfill\textsf{ 6,} &
+\textsf{2013} &
+      \textsection6.3 Elementary operations and determinants & pg.~455 \\
+                
+  
+    
+         \textsf{Friday} &
+\textsf{November} &
+\hfill\textsf{ 8,} &
+\textsf{2013} &
+     \textbf{Quiz 10 } & \\
+      
+  
+  
+        \end{tabularx}
+     \hrule     
+    \vspace{0.25ex}
+
+    
+    %    \section*{Week 13}
+
+        \settowidth{\weekwidth}{\textsf{\textbf{W13}}}
+    \raisebox{-\weekwidth}[0in][0in]{\rotatebox{90}{\textsf{\textbf{W13}}}}
+            \nopagebreak
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+    \textsf{Monday} &
+\textsf{November} &
+\hfill\textsf{11,} &
+\textsf{2013} &
+    \textit{Veteran's Day} & \\
+    
+  
+      
+  
+                  \textsf{Wednesday} &
+\textsf{November} &
+\hfill\textsf{13,} &
+\textsf{2013} &
+      \textsection4.1 Eigenvalues for 2-by-2 matrices & pg.~276 \\
+             & & & & 
+      \textsection4.2 Determinants and the eigenvalue problem & pg.~280 \\
+                
+  
+    
+         \textsf{Friday} &
+\textsf{November} &
+\hfill\textsf{15,} &
+\textsf{2013} &
+     \textbf{Quiz 11 } & \\
+      
+  
+  
+        \end{tabularx}
+     \hrule     
+    \vspace{0.25ex}
+
+    
+    %    \section*{Week 14}
+
+        \settowidth{\weekwidth}{\textsf{\textbf{W14}}}
+    \raisebox{-\weekwidth}[0in][0in]{\rotatebox{90}{\textsf{\textbf{W14}}}}
+            \nopagebreak
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+                  \textsf{Monday} &
+\textsf{November} &
+\hfill\textsf{18,} &
+\textsf{2013} &
+      \textsection4.4 Eigenvalues and the characteristic polynomial & pg.~298 \\
+                
+  
+  
+      
+  
+                  \textsf{Wednesday} &
+\textsf{November} &
+\hfill\textsf{20,} &
+\textsf{2013} &
+      \textsection4.5 Eigenvectors and eigenspaces & pg.~307 \\
+             & & & & 
+      \textsection4.6 Complex eigenvalues and eigenvectors & pg.~315 \\
+                
+  
+    
+         \textsf{Friday} &
+\textsf{November} &
+\hfill\textsf{22,} &
+\textsf{2013} &
+     \textbf{Quiz 12 } & \\
+      
+  
+  
+        \end{tabularx}
+     \hrule     
+    \vspace{0.25ex}
+
+    
+    %    \section*{Week 15}
+
+        \settowidth{\weekwidth}{\textsf{\textbf{W15}}}
+    \raisebox{-\weekwidth}[0in][0in]{\rotatebox{90}{\textsf{\textbf{W15}}}}
+            \nopagebreak
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+                  \textsf{Monday} &
+\textsf{November} &
+\hfill\textsf{25,} &
+\textsf{2013} &
+      \textsection4.7 Similarity transformations and Diagonalization & pg.~325 \\
+                
+  
+  
+      
+  
+    \textsf{Wednesday} &
+\textsf{November} &
+\hfill\textsf{27,} &
+\textsf{2013} &
+    \textit{Thanksgiving Break} & \\
+    
+    
+    \textsf{Friday} &
+\textsf{November} &
+\hfill\textsf{29,} &
+\textsf{2013} &
+    \textit{Columbus Day} & \\
+    
+  
+        \end{tabularx}
+     \hrule     
+    \vspace{0.25ex}
+
+    
+    %    \section*{Week 16}
+
+        \settowidth{\weekwidth}{\textsf{\textbf{W16}}}
+    \raisebox{-\weekwidth}[0in][0in]{\rotatebox{90}{\textsf{\textbf{W16}}}}
+            \nopagebreak
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+                  \textsf{Monday} &
+\textsf{December} &
+\hfill\textsf{ 2,} &
+\textsf{2013} &
+      \textsection4.7 Similarity transformations and Diagonalization & pg.~330 \\
+                
+  
+  
+      
+  
+        \end{tabularx}
+        
+    \vspace{0.25ex}
+
+    
+    %    \section*{Week 17}
+
+    
+    \hspace{\weekheight}\begin{tabularx}{\remaining}{p{\wednesday}@{ }p{\monthwidth}@{ }p{\daywidth}@{ }p{\yearwidth}@{ }X@{}r@{}}
+         \textsf{Wednesday} &
+\textsf{December} &
+\hfill\textsf{11,} &
+\textsf{2013} &
+     \textbf{Final Exam at  8:00am } & \\
+      
+  
+
+\end{tabularx}
+\end{document}
