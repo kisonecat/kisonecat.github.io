@@ -35,10 +35,10 @@ block content
   hr
   .row.front-page
     - var link = '/teaching/2013/calculus-one/';
-    .col-lg-4
+    .col-lg-5
       a.thumbnail(href=link)
         img(src="/public/images/logos/calculus-one.png")
-    .col-lg-8
+    .col-lg-7
       - displayedCourses = _.without( displayedCourses, _.find( displayedCourses, function(course) { return course.shortname == 'math1151'; } ) );
       h3 <a href="#{link}">Calculus One</a>
       p Calculus is about the very large, the very small, and how things change.  The surprise is that something seemingly so abstract ends up explaining the real world.  Calculus plays a starring role in the biological, physical, and social sciences.  This online course is a first and friendly introduction to calculus, suitable for someone who has never seen the subject before, or for someone who has seen some calculus but wants to review the concepts and practice applying those concepts to solve problems.
@@ -46,13 +46,13 @@ block content
   hr
   - var list = _.filter( displayedCourses, function(course) { return course.logo; } );
   - displayedCourses = _.without.apply( this, [displayedCourses].concat( list ) );
-  - var rowCount = 4;
+  - var rowCount = 3;
   - var i = -rowCount;
   while i <= list.length
     - i += rowCount;
     .row.front-page
       each course in list.slice(i, i+rowCount)
-        .col-lg-3
+        .col-lg-4
            mixin courseThumbnail( course )
 
   - var list = _.sortBy( displayedCourses, 'year' ).reverse();
