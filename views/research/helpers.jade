@@ -3,9 +3,13 @@ mixin bibliographyEntry(paper)
   -   return x.replace('{$K$}','$K$').replace('~','&nbsp;').replace(/{([A-Z])}/, '$1').replace( '~', '&nbsp;' ).replace( '\bysame', '---' ).replace( /\\MR\{MR(.*?) (.*?)\}/, '<a href="http://www.ams.org/mathscinet-getitem?mr=\1">MR\1 \2</a>' ).replace( /\\MR\{MR([^ ]*?)\}/, '<a href="http://www.ams.org/mathscinet-getitem?mr=\1">MR\1</a>' ).replace( /\\MR\{([^ ]*?)\}/, '<a href="http://www.ams.org/mathscinet-getitem?mr=\1">MR\1</a>' ).replace( /\\textbf\{(.*?)\}/, '<b>\1</b>' ).replace( /\\emph\{(.*?)\}/, '<i>\1</i>' ).replace( /\{(.*?)\}/, '\1' ).replace( /\{(.*?)\}/, '\1' ).replace( '\ ', '&nbsp;' ).replace( '``', '&ldquo;' ).replace( "''", '&rdquo;' ).replace( '---', '&mdash;' ).replace( '--', '&ndash;' ).replace( '\bf', '' ).replace( /\\\i/, 'i' ).replace( /\\\'(.)/, '&$1acute;' ).replace( /\\\"(.)/, '&$1uml;' ).replace( /\\\`(.)/, '&$1grave;' ).replace( /\\\.Z/, '&#379;' ).replace( /\\sp (.)/, '<sup>\1</sup>' );
   - }
   if paper.entryType == 'ARTICLE'
-    p.bibliography-item !{cleanTex(paper.AUTHOR)} (#{paper.YEAR}). !{cleanTex(paper.TITLE)}. #{paper.JOURNAL}, Volume #{paper.VOLUME}
+    p.bibliography-item !{cleanTex(paper.AUTHOR)} (#{paper.YEAR}). !{cleanTex(paper.TITLE)}. #{paper.JOURNAL}
+      if paper.VOLUME
+        |, Volume #{paper.VOLUME}
       if paper.PAGES
         |, !{paper.PAGES.replace('--','&ndash;')}
+      if paper.NOTE
+        |, !{paper.NOTE}
       |.
   if paper.entryType == 'BOOK'  
     p.bibliography-item !{cleanTex(paper.AUTHOR)} (#{paper.YEAR}). !{cleanTex(paper.TITLE)}.  #{paper.PUBLISHER}.
