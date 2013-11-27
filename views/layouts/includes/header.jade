@@ -5,9 +5,12 @@
     ul.nav.navbar-nav
         li(class=(title === 'CV' ? 'active' : ''))
           a(href="/cv") CV
-        li(class=(section === 'Research' ? 'active' : ''))
+        li(class=(section === 'Research' ? 'dropdown active' : 'dropdown'))
           a.dropdown-toggle(href="#",data-toggle="dropdown") Research <b class="caret"></b>
           ul.dropdown-menu
+            li
+              a(href="/research/statement") Research Statement
+            li.divider
             li.dropdown-header Projects
             - var projectsInMenu = _.sortBy( projects, 'year' ).reverse().slice(0, 6);
             - each project in projectsInMenu
@@ -15,7 +18,7 @@
                 a(href="#{project.url}") #{project.title}
             if projects.length > 6
               li
-                a(href="/teaching") More projects&hellip;
+                a(href="/research") More projects&hellip;
             li.divider
             li
               a(href="/research/papers") Publication list

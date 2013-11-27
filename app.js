@@ -21,6 +21,46 @@ String.prototype.capitalize = function() {
     return this.charAt(0).toUpperCase() + this.slice(1);
 }
 
+var jade_filters = require('./node_modules/jade/lib/filters');
+
+jade_filters.latex = function(text) {
+    text = text.replace(/\\cite{MR([0-9]+)}/g, function(match, text, urlId){
+	return '<a href="http://www.ams.org/mathscinet-getitem?mr=' + text + '">[MR' + text + ']</a>';
+    });
+
+    text = text.replace( /--/g, '&ndash;' );
+    text = text.replace( /\\"i/g, '&iuml;' );
+    text = text.replace( /\\"o/g, '&ouml;' );
+    text = text.replace( /\\H{o}/g, '&#337;' );
+    text = text.replace( /~/g, '&nbsp;' );
+    text = text.replace( /\\Z/g, '\\mathbb{Z}' );
+    text = text.replace( /\\Q/g, '\\mathbb{Q}' );
+    text = text.replace( /---/g, '&mdash;' );
+    text = text.replace( /``/g, '&ldquo;' );
+    text = text.replace( /''/g, '&rdquo;' );
+    text = text.replace( /\\textit{([^}]*)}/g, '<em>$1</em>' );
+
+    text = text.replace( /\\begin{theorem}/g, '\n\n\\begin{theorem}' );
+    text = text.replace( /\\end{theorem}/g, '\\end{theorem}\n\n' );
+    text = text.replace( /\\begin{question}/g, '\n\n\\begin{question}' );
+    text = text.replace( /\\end{question}/g, '\\end{question}\n\n' );
+
+    text = text.replace(/\n\n+/g, "\n\n" )
+    var paragraphs = text.split( "\n\n" );
+    return _.map( paragraphs, function(p) {
+	p = p.replace( /\\begin{theorem}\[([^\]]+)\]/g, '<p class="theorem"><span class="theorem-title">Theorem.</span><span class="theorem-citation">($1)</span>' );
+	p = p.replace( /\\end{theorem}/g, '</p>' );
+
+	p = p.replace( /\\begin{question}\[([^\]]+)\]/g, '<p class="theorem"><span class="theorem-title">Question.</span><span class="theorem-citation">($1)</span>' );
+	p = p.replace( /\\begin{question}/g, '<p class="theorem"><span class="theorem-title">Question.</span>' );
+	p = p.replace( /\\end{question}/g, '</p>' );
+	if (!p.match(/<p class="theorem>/))
+	    return '<p>' + p + '</p>';
+	else
+	    return p;
+    }).join('');
+}
+
 ////////////////////////////////////////////////////////////////
 // load course information
 
@@ -158,11 +198,18 @@ function Project() {
     this.thumbnail = function() {
 	if (this.file)
 	    return this.url + this.file.replace( /.pdf$/, '.png' );
-	else
-	    return null;
+	else {
+	    if (this.arxiv) {
+		return this.url + this.arxiv + '.png';
+	    } else 
+		return null;
+	}
     }
 
     this.fileWithPath = function() {
+	if (this.arxiv)
+	    return 'http://arxiv.org/pdf/' + this.arxiv + '.pdf';
+
 	if (this.file)
 	    return this.url + this.file;
 	else
@@ -184,6 +231,13 @@ glob(path.join(__dirname, 'research/**/project.json'), {}, function (er, files) 
 	    project.jade = jade.compile(data);
 	});
 
+	fs.readFile(path.join( project.directory, 'summary.jade' ), 'utf8', function (err, data) {
+	    if (!err) {
+		var fn = jade.compile(data);
+		project.summary = jade.compile(data);
+	    }
+	});
+
 	project = _.extend(new Project(), project);
 	projects.push( project );
 
@@ -201,10 +255,22 @@ glob(path.join(__dirname, 'research/**/project.json'), {}, function (er, files) 
 	    app.get( project.thumbnail(), function ( req, res ) { res.sendfile( path.join( __dirname, project.thumbnail() ) ) } );
 	    app.get( project.fileWithPath(), function ( req, res ) { res.sendfile( path.join( __dirname, project.fileWithPath() ) ) } );
 	}
+
+	if (project.arxiv) {
+	    app.get( project.thumbnail(), function ( req, res ) { res.sendfile( path.join( __dirname, project.thumbnail() ) ) } );
+	    //app.get( project.fileWithPath(), function ( req, res ) { res.sendfile( path.join( __dirname, project.fileWithPath() ) ) } );
+	}
     });
 });
 
-app.get( '/research', function ( req, res ) { res.render( 'research/index', { section: 'Research', projects: projects, title: 'Research' } ); });
+app.get( '/research', function ( req, res ) { 
+    var published = _.filter( projects, function(p) { return p.status == "published"; } );
+    var unpublished = _.filter( projects, function(p) { return p.status != "published"; } );
+    res.render( 'research/index', { section: 'Research',
+				    unpublished: _.sortBy( unpublished, function(p) {return -p.year;} ),
+				    published: _.sortBy( published, function(p) {return -p.year;} ),
+				    title: 'Research' } );
+});
 
 var papers = new Array();
 fs.readFile(path.join( __dirname, "research/papers.bib" ), 'utf8', function (err, data) {
@@ -213,6 +279,58 @@ fs.readFile(path.join( __dirname, "research/papers.bib" ), 'utf8', function (err
     papers = _.sortBy( _.values( bibtexs ), 'YEAR' );
 });	    
 app.get( '/research/papers', function ( req, res ) { res.render( 'research/papers', { section: 'Research', papers: papers, title: 'Research' } ); });
+
+////////////////////////////////////////////////////////////////
+// setup research statement
+
+var fs = require('fs'), filename = path.join(__dirname, 'research/statement/short-statement.tex')
+fs.readFile(filename, 'utf8', function(err, data) {
+    if (err) throw err;
+    
+    var body = data.match(/\\begin{document}([\s\S]*)/i)[1];
+    body = body.replace( '\\end{document}', '' );
+    body = body.replace( /%.*/g, '' );
+    body = body.replace( '\\maketitle', '' );
+    body = body.replace( /---/g, '&mdash;' );
+    body = body.replace( /\\textit{([^}]*)}/g, '<em>$1</em>' );
+    body = body.replace( /\\subsection\*{([^}]*)}/g, '<h3>$1</h3>' );
+    body = body.replace( /``/g, '&ldquo;' );
+    body = body.replace( /''/g, '&rdquo;' );
+    body = body.replace( /--/g, '&ndash;' );
+    body = body.replace( /\\"i/g, '&iuml;' );
+    body = body.replace( /\\'e/g, '&eacute;' );
+    body = body.replace( /\\"o/g, '&ouml;' );
+    body = body.replace( /\\H{o}/g, '&#337;' );
+    body = body.replace( /~/g, '&nbsp;' );
+    body = body.replace( /\\Z/g, '\\mathbb{Z}' );
+    body = body.replace( /\\Q/g, '\\mathbb{Q}' );
+    body = body.replace( /---/g, '&mdash;' );
+    body = body.replace( /``/g, '&ldquo;' );
+    body = body.replace( /''/g, '&rdquo;' );
+    body = body.replace( /\\textit{([^}]*)}/g, '<em>$1</em>' );
+    body = body.replace( /\\texttt{([^}]*)}/g, '<code>$1</code>' );
+    body = body.replace( /\\href{http:\/\/kisonecat.com\/([^}]*)}{([^}]*)}/g, '<a href="/$1">$2</a>' );
+    body = body.replace( /\\href{([^}]*)}{([^}]*)}/g, '<a href="$1">$2</a>' );
+
+    body = body.replace( /\\begin{itemize}/g, '<ul>' );
+    body = body.replace( /\\item/g, '</li><li>' );
+    body = body.replace( /\\end{itemize}/g, '</li></ul>' );
+    body = body.replace( /<ul>[ \n]*<\/li>/g, '<ul>' );
+
+    body = body.replace( /\n\n/g, ' <br/> ' );
+    body = body.replace( /\n/g, ' ' );
+    body = _.collect( body.split( '<br/>' ), function( paragraph ) {
+	if (!paragraph.match( /[A-z]/ )) return '';
+	if (paragraph.match( '<h3>' ) || paragraph.match( '<ul>' ))
+	    return paragraph + "\n";
+	else
+	    return '<p>' + paragraph.replace(/^\s+|\s+$/g, '') + '</p>\n';
+	}).join( '' );
+	
+    app.get( '/research/statement', function ( req, res ) { res.render( 'research/statement', { section: 'Research', courses: courses, title: 'Research Statement', researchStatement: body } ); });
+    app.get( '/research/statement/research-statement.pdf', function ( req, res ) { res.sendfile( path.join(__dirname, 'research/statement/statement.pdf') ) });
+    app.get( '/research/statement/research-statement.png', function ( req, res ) { res.sendfile( path.join(__dirname, 'research/statement/statement.png') ) });
+});
 
 ////////////////////////////////////////////////////////////////
 // set up poet, the blogging platform

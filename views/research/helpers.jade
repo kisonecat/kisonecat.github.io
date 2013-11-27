@@ -15,3 +15,43 @@ mixin bibliographyEntry(paper)
     p.bibliography-item !{cleanTex(paper.AUTHOR)} (#{paper.YEAR}). !{cleanTex(paper.TITLE)}.  #{paper.PUBLISHER}.
   if paper.entryType == 'INCOLLECTION'
     p.bibliography-item !{cleanTex(paper.AUTHOR)} (#{paper.YEAR}). !{cleanTex(paper.TITLE)}. !{cleanTex(paper.BOOKTITLE)}, !{paper.PAGES.replace('--','&ndash;')}.
+
+mixin projectRow(project)
+  .row
+    if project.thumbnail()
+      .col-sm-10
+        if project.joint
+          h4 
+            a(href=project.url) #{project.title}
+            | 
+            small Joint work with #{project.joint.join( ', ' )}
+        else
+          h4 
+            a(href=project.url) #{project.title}
+
+        if project.hasOwnProperty('summary')
+          !=project.summary()
+          p
+            a(href=project.url) Read more &raquo
+        else
+          !=project.jade()
+      .col-sm-2
+        a.thumbnail(href=project.url)
+          img(src=project.thumbnail())
+    if !project.thumbnail()
+      .col-sm-12
+        if project.joint
+          h4 
+            a(href=project.url) #{project.title}
+            | 
+            small Joint work with #{project.joint.join( ', ' )}
+        else
+          h4 
+            a(href=project.url) #{project.title}
+
+        if project.hasOwnProperty('summary')
+          !=project.summary()
+          p
+            a(href=project.url) Read more &raquo
+        else
+          !=project.jade()

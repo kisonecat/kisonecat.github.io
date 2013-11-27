@@ -1,0 +1,775 @@
+\documentclass[12pt]{amsart}
+
+\title{Research Statement}
+\author{Jim Fowler}
+
+\newcommand{\mr}[1]{\cite{MR#1}}
+\newcommand{\nomr}[1]{\nocite{MR#1}}
+\newcommand{\arxiv}[1]{\cite{arxiv#1}}
+
+\usepackage[left=1.5in,right=1.5in,top=1.25in,bottom=1.25in]{geometry}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem*{corollary*}{Corollary}
+\newtheorem*{theorem*}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{lemma*}{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem*{remark*}{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem*{example*}{Example}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem*{definition*}{Definition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem*{conjecture*}{Conjecture}
+\newtheorem{question}[theorem]{Question}
+
+\DeclareMathOperator{\Sp}{Sp}
+
+\usepackage{amssymb}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\B}{\mathcal{B}}
+
+\usepackage[style=numeric]{biblatex}
+\addbibresource{references.bib}
+
+\begin{document}
+\maketitle
+
+I am a geometer, and I am interested in the geometric topology of
+manifolds and in geometric group theory.  Manifolds and their
+symmetries are ubiquitous throughout in mathematics and its
+applications.  Surfaces were studied already in the nineteenth century
+by Riemann, and higher dimensional manifolds became central of objects
+in the twentieth beginning with the work of Poincar\'e, and continuing
+with the work of Thom, Milnor, Wall, Smale, Novikov---to name just a
+few.
+
+My work makes use of the techniques and ideas from algebraic and
+combinatorial topology, surgery theory, number theory, and complexity
+theory.  A major theme of much of my work is the extent to which an
+object with some singularities or deficiencies can be ``resolved'' or
+``improved'' to a nicer object.  For instance,
+\begin{itemize}
+\item in Section~\ref{subsection:rational-poincare-duality},
+  there is the question of whether the classifying space for a
+  $\Q$-PD group can be ``resolved'' to an aspherical closed
+  $\mathbb{Q}$-homology manifold;
+\item in
+  Section~\ref{subsection:aspherical-manifold-and-triangulations},
+  there is the question of whether an aspherical topological manifold
+  can be ``resolved'' by a simplicial complex;
+\item in Section~\ref{subsection:computing-the-l-polynomial}, there
+  is the question of whether a PL $\mathbb{Q}$-homology manifold $M$
+  having cohomology ring $H^\star(M;\Q) = \Q[x]/(x^3)$ can be resolved
+  by a smooth manifold; and
+\item in Section~\ref{subsection:polynomially-bounded-topology}, there 
+  is the issue of whether, say, a cochain can be replaced by a
+  ``polynomially bounded'' cochain.
+\end{itemize}
+To make progress on questions like these, I make significant use of
+computational techniques, and often use the computer algebra system
+\texttt{sage} to run experiments.  My research has three specific
+directions:
+\begin{itemize}
+\item aspherical manifolds and Poincar\'e duality groups,
+\item computations surrounding high-dimensional manifolds, and
+\item undergraduate research.
+\end{itemize}
+%BADBAD include overview of the first two of the three directions
+By ``undergraduate research,'' I mean research projects involving
+undergraduates (some of which are listed on
+Page~\pageref{section:undergraduate-research}) but also research
+projects which occur as part of online courses and my NSF~TUES grant.
+As of November 2013, there have been 147k enrollments in my online
+courses, which have resulted in significant amounts of data.  This
+project is discussed in Section~\ref{subsection:moocs}.
+
+\newpage
+\section{Aspherical manifolds and Poincar\'e duality groups}
+\label{section:aspherical-manifolds}
+
+\subsection{Rational Poincar\'e duality}
+\label{subsection:rational-poincare-duality}
+A group $G$ is a Poincar\'e duality group if its classifying space
+$BG$ satisfies Poincar\'e duality; examples include fundamental groups
+of aspherical manifolds.  C.~T.~C.~Wall asked whether a Poincar\'e
+duality group is necessarily the fundamental group of an aspherical
+manifold, and M.~Davis in \cite{MR1747535} broadened Wall's question to
+$R$-homology manifolds:
+\begin{question}
+Is every finitely presented torsion-free group satisfying Poincar\'e
+duality with $R$-coefficients (``$R$-PD'') the fundamental group of an
+aspherical closed $R$-homology manifold?
+\end{question}
+\noindent
+My thesis answers M.~Davis' question in the negative, using
+Bestvina--Brady Morse theory to produce $\Q$-PD groups $G$ for which
+$BG$ does not have the homotopy type of a finite complex.
+
+I also addressed a generalization version of M.~Davis' question.
+There are weaker geometric conditions that nonetheless imply a group
+is $R$-PD: for $\pi$ to satisfy Poincar\'e duality with $R$
+coefficients, it suffices that $\pi$ act freely on an $R$-acyclic
+$R$-homology manifold.
+\begin{question}
+  Does every finitely presented group $\pi$ satisfying Poincar\'e
+  duality with $R$ coefficients act freely on an $R$-acyclic
+  $R$-homology manifold?
+\end{question}
+\noindent
+This is interesting when $R = \Q$.  All finite groups are
+$0$-dimensional $\Q$-PD, and extensions of $\Q$-PD groups by finite
+groups are therefore $\Q$-PD.  The restriction to torsion-free groups
+is not necessary, as groups with torsion may act freely on $\Q$-acyclic
+(albeit not contractible) finite complexes.
+
+A particular class of $\Q$-PD groups to consider are uniform lattices
+with torsion (which, by Selberg, are extensions of manifold groups by
+finite groups).
+\begin{theorem*}[Fowler]
+  Let $\Gamma$ be a uniform lattice containing an element of finite
+  order ($\neq$ 2).  Although $\Gamma$ is $\Q$-PD, $\Gamma$ does not
+  act freely on a $\Q$-acyclic $\Q$-homology manifold.
+\end{theorem*}
+\noindent
+The proof involves two obstructions: a finiteness obstruction, and a
+controlled symmetric signature.  With more work, I hope to address the
+situation for $\Gamma$ containing $2$-torsion
+\begin{proof}[Sketch of Proof:]
+The group $\Gamma$ is given as an extension $0 \to \pi \to \Gamma \to G \to 0$, where
+$\pi$ is torsion-free, and $G$ is a finite group.  Given the
+Baum-Connes conjecture for $\Gamma$, the $\Gamma$-equivariant
+signature operator on $E\pi$ (which is the universal space for proper
+$\Gamma$ actions) cannot be lifted back to the signature operator on
+$B\Gamma$.
+
+To obstruct this lift, the space $E\pi$ is used to determine the
+equivariant signature operator of $\Gamma$ acting on the universal
+cover of the hypothetical homology manifold; geometric localization
+arguments can then be combined with calculations near fixed points to
+give a contradiction---although this last step fails in the absence of
+odd torsion.
+\end{proof}
+
+%For the proof, I use the Novikov conjecture for $\Gamma$ as an input.
+%The stratified space $B\pi/G$ has singularities corresponding to the
+%fixed sets of the $G$-action; the map $p : B\Gamma \to B\pi/G$
+%resolves these singularities.  The controlled symmetric signature
+%$\sigma_\star(B\Gamma) \in H_\star(B\Gamma;\mathbb{L}\Q)$ is sent via
+%the assembly map to $L_\star(\Q\Gamma)$, but that assembly map factors
+%through $H_\star(B\pi/G;\mathbb{L}\Q\Gamma_x)$, the cohomology of
+%$B\pi/G$ with values in a spectral cosheaf corresponding to the
+%$L$-theory of the fibers of $p$; this corresponds to examining the
+%$\Gamma$-equivariant signature operator on $E\pi$ in the Baum-Connes
+%picture.
+
+%By using a splitting calculation as in Yamasaki \cite{MR884801}, we
+%restrict to a neighborhood of a singularity, reducing the calculation
+%to a $\rho$ invariant.
+
+%This does not produce a
+%counterexample to the Baum-Connes conjecture or Novikov conjecture,
+%however, as the above proof does not apply, since these examples
+%contain two torsion.
+
+In addition to controlled surgery considerations, there is a finiteness question:
+\begin{question}
+For a given group $G$, does there exist a free action of $G$
+on an $R$-acyclic complex, with finite quotient?
+\end{question}
+\noindent
+Bestvina and Brady \cite{MR1465330} call such groups FH over $R$, in
+analogy with other homological finiteness conditions.
+
+In many cases, a finiteness obstruction will prevent $\Gamma$ from
+acting on a $\Q$-acyclic finite complex, let alone a $\Q$-homology
+manifold.  Again, consider a uniform lattice $\Gamma$, and write $0
+\to \pi \to \Gamma \to G \to 0$, with $\pi$ torsion-free and $G$
+finite.  For convenience, $G = \Z/p\Z$.  If $G$ acts freely on a
+finite complex $B\pi$, then the Lefschetz fixed point theorem implies
+$\chi(B\pi^G) = 0$.
+
+The equivariant finiteness obstruction fits into a categorical
+framework defined by L\"uck \cite{MR1027600}; the condition
+$\chi(B\pi^G) = 0$, while necessary for $\Gamma$ to be FH, is not
+enough: $\chi(B\pi^G)$ can vanish while the Euler characteristics of
+the connected components of $B\pi^G$ may not vanish.  If $\chi(C) = 0$
+for each connected component $C$ of $B\pi^G$, then the equivariant
+finiteness obstruction does indeed vanish.  The componentwise
+vanishing of the Euler characteristic is easy to verify in some cases,
+such as when the fixed sets are all odd-dimensional submanifolds.
+
+\nomr{859767}
+\nomr{868892}
+\nomr{1076524}
+\nomr{1381603}
+\nomr{2222492}
+
+\nocite{MR2036915}
+\nocite{MR1943285}
+\nocite{MR2177038}
+\nocite{thesis}
+
+\subsection{Aspherical manifolds and triangulations}
+\label{subsection:aspherical-manifold-and-triangulations}
+
+Kirby and Siebenmann showed that there are manifolds that do not admit
+PL~structures \cite{MR242166}, and yet the possibility remained that
+all manifolds could be triangulated, meaning that for every manifold
+$M$, there is a simplicial complex $K$ so that the geometric
+realization of $K$ is homeomorphic to $M$, but of course the
+simplicial complex $K$ is not a PL~triangulation, meaning the links
+are not spheres.
+
+Freedman showed that there are 4-manifolds that cannot be triangulated
+\cite{MR679066}.  Davis and Januszkiewicz applied a hyperbolization
+procedure to Freedman's 4-manifolds to get closed aspherical
+4-manifolds that cannot be triangulated \cite{MR1131435}.  What about
+higher dimensions?
+
+In the late 1970s Galewski and Stern \cite{MR558395} and
+independently, Matumoto, showed that non-triangulable manifolds exist
+in all dimensions $> 4$ if and only if homology $3$-spheres with
+certain properties do not exist. In \cite{manolescu2013conley},
+Manolescu showed that there were no such homology $3$-spheres, and
+hence non-triangulable manifolds exist in every dimension $>4$.  
+
+Applying a hyperbolization technique to the Galewski-Stern manifolds shows the following.
+\begin{theorem}[Davis--Lafont--Fowler \cite{aspherical}]
+  Let $n > 5$.  There exists a closed aspherical $n$-manifold which
+  cannot be triangulated.
+\end{theorem}
+However, the following question remains open.
+\begin{question}
+  Do there exist closed aspherical $5$-manifolds that cannot be
+  triangulated?
+\end{question}
+
+\subsection*{Computer search for Poincar\'e duality groups}
+
+There are well-known algorithms for computing the group cohomology of
+finite groups \cite{MR603653}, but there are also algorithms for
+computing the group cohomology of automatic groups \cite{MR2093885},
+which I could improve to compute the cup product structure.  The
+examples of $\Q$-PD groups in
+Section~\ref{subsection:rational-poincare-duality} have a common
+structure as extensions of finite (0-dimensional) groups.
+\begin{question}
+Can one find new examples of $\Q$-PD groups among automatic groups?
+\end{question}
+Considering that it is not yet clear what sorts of restrictions
+automaticity might impose on a Poincar\'e duality group, such examples
+are even interesting independent of their usefulness for understanding
+$\Q$-homology manifolds.
+
+With the goal of generalizing the theory of automatic groups, Ranicki
+posed the problem of extending automatic structures on groups to a
+similar structure on group rings and forms over them \cite{MR1388296};
+developing a theory of ``automatic algebra'' is a great goal in its
+own right, and, practically speaking, such a theory would permit
+experimentation on algebraic Poincar\'e complexes using computer
+algebra systems.
+
+A computer search could also proceed for new hyperbolic $\Z$-PD
+groups; for such $\Gamma$, it is now known that $B\Gamma$ is homotopy
+equivalent to a $\Z$-homology manifold (if $\dim > 4$, by combining
+\cite{MR1394965} with work of Bartels and L\"uck).  Upon finding some
+examples, it might then be possible to discover a group $\Gamma$ so
+that $B\Gamma$ has the homotopy type of a $\Z$-homology manifold, but
+not the homotopy type of a manifold.
+
+\section{Computations surrounding high-dimensional manifolds}
+
+\subsection{Computing the $L$-polynomial}
+\label{subsection:computing-the-l-polynomial}
+
+The Hirzebruch $L$-polynomial is one place where number theory very
+strongly interacts with high-dimensional topology \cite{MR339202}.
+Recall that the Hirzebruch signature theorem relates the signature of
+a smooth closed manifold $M^{4k}$ to $\sum_I L_I
+p_I(M)$. Unfortunately, the na\"ive method to compute coefficients
+$L_I$ of the Hirzebruch $L$-polynomial is much too slow for
+applications; Zhixu~Su and I have discovered a recursive method which
+is fast enough to compute many coefficients.
+
+Solutions to some Diophantine equations related to these
+$L$-polynomials give rise to manifolds having a truncated polynomial
+algebra as their rational cohomology ring; such manifolds may exist
+even when the corresponding truncated polynomial algebra over $\Z$ is
+not the cohomology ring of any space.  For instance, there is a
+manifold having the rational cohomology that $\mathbb{O}P^4$ would be expected
+to have, if $\mathbb{O}P^4$ existed.
+
+On the other hand, nonexistence results are also possible.
+A rational projective plane means a smooth manifold $M^{4n}$ with
+$$
+H^\star(M;\Q) = \Q[x]/(x^3) \mbox{ with $|x| = 2n$}.
+$$
+\begin{question}
+  For which $n$ is there a rational projective plane $M^{4n}$?
+\end{question}
+There is a piecewise linear $\mathbb{Q}$-homology manifold with
+$\Q[x]/(x^3)$ as its cohomology ring, so this question can be viewed
+as a question about whether that $\mathbb{Q}$-homology manifold can be
+``resolved'' by a smooth manifold.  Integrally, this is not always
+possible by the celebrated work of Adams \cite{MR133837}, but in Zhixu
+Su's thesis, it was shown that there \textit{is} a rational projective
+plane in dimension~32.  But it is not always possible, even
+rationally.
+\begin{theorem}[Fowler--Su]
+  There is no rational projective plane in dimension~64.
+\end{theorem}
+This boils down to some number theory.  Since a rational projective
+plane has signature one, we would be seeking a solution to $s_{8,8}
+x^2 \pm s_{16} y = \pm 1$ for integers $x$ and $y$.  Note that $37$
+divides the numerator of $s_{16}$, because $37$ divides
+$B_{32}$---perhaps not so surprising considering 37's status as the
+smallest irregular prime.  So it is enough to show there is no
+solution to $x^2 \not\equiv \pm 1/s_{8,8} \pmod{37}$.  Since $s_{16}
+\equiv 0 \pmod{37}$,
+\begin{align*}
+  s_{8,8}
+  &\equiv \frac{{s_k}^2 - s_{2k}}{2} \pmod{37} \\
+  &\equiv \frac{{s_k}^2}{2} \pmod{37},
+\end{align*}
+but neither $2$ nor $-2$ is a quadratic residue modulo 37.
+
+The same argument works to rule out a rational projective plane in
+dimension $2^{k+3}$ provided one can find a prime $p$ so that
+\begin{itemize}
+\item $2$ and $-2$ are quadratic nonresidues modulo $p$,
+\item $\nu_p(s_{2 \cdot 2^k}) > 0$, but
+\item $\nu_p(s_{2^k}) = 0$.
+\end{itemize}
+To ensure $2$ is a quadratic nonresidue, it is enough that $p
+\not\equiv \pm 1 \pmod 8$; to ensure that $-2$ is also a quadratic
+nonresidue, we further want $p \equiv 5 \pmod 8$.
+
+The fact that divisors of $2^{2^k - 1} - 1$ are rarely (never?) $5
+\bmod 8$ tells us not to look for such primes among the divisors of
+the Mersenne factor.  The above desiderata are satisfied by finding a
+prime $p$ so that
+\begin{itemize}
+\item $p \equiv 5 \pmod 8$,
+\item $p > 4 \cdot 2^k$,
+\item $p$ divides the numerator of $B_{4 \cdot 2^k}$,
+\item $p$ does not divide the numerator of $B_{2 \cdot 2^k}$.
+\end{itemize}
+The number theory becomes rather involved computationally.  For
+example, the prime $p = 502261$ is $5 \bmod 8$ and divides the
+numerator of $B_{4 \cdot 2^{11}}$ but not $B_{2 \cdot 2^{11}}$, which
+rules out a rational projective plane in dimension $2^{14} = 4096$;
+similarly, the prime $p = 69399493$ is $5 \bmod 8$, divides the
+numerator of $B_{4 \cdot 2^{21}}$ but not $B_{2 \cdot 2^{21}}$, which
+rules out a projective plane in dimension $2^{24}$.  These
+calculations are possible due to tables of irregular primes produced
+by Joe P.~Buhler and David Harvey \cite{MR2813369}.
+
+Looking over these calculations, there are things that we can say in
+general.
+\begin{theorem}[Fowler--Su]
+  If $M^n$ is a rational projective plane, then $n = 2^a + 2^b$ for
+  $a, b \in \mathbb{N}$.
+\end{theorem}
+This result has some interesting consequences, such as the fact that
+there is a topological manifold which is not $\Q$-homotopy equivalent
+to a smooth manifold.
+%\begin{theorem}[Fowler--Su]
+%    The Milnor $E_8$ manifold $M^{504}$ is such.
+%    A smooth manifold $\Q$-homotopy equivalent to $M^{504}$ has signature 8.
+%   $504 = 256 + 128 + 64 + 32 + 16 + 8$,  so $\nu_2(s_{126}) = \nu_2(s_{63,63}) = 4$.
+%    A smooth manifold $\Q$-homotopy equivalent to $M^{504}$ 
+%    has signature divisible by 16.
+%\end{theorem}
+And even in dimensions $4n$ for which there is a rational projective plane, a refined question can be explored.
+\begin{question}
+  Suppose $M^{4n}$ is a rational projective plane.  How highly
+  connected can $M^{4n}$ be, integrally?
+\end{question}
+When $4n = 32$, we have a particularly nice answer by doing
+$\hat{A}$-genus calculations: there does not exist a simply-connected
+closed Spin manifold $M^{32}$ which is a rational projective plane, so
+a 32-dimensional example cannot even be integrally 2-connected.
+Calculations involving the Steenrod algebra and Stiefel-Whitney
+classes may provide other methods for determining how highly connected
+a rational projective plane must be.
+
+Finally, another interesting question is to study the asymptotic
+running time for algorithms computing the $L$-polynomial.
+\begin{question}
+How quickly can the $L$-polynomial be computed?
+\end{question}
+Such questions tie into Bernoulli number calculations, for which there
+are impressively fast analytic methods \cite{MR2684369}.  This would
+be a nice historical story, since the computation of Bernoulli numbers
+was the goal of a computer program from 1843 written by Ada Lovelace
+\cite{MR550674}.
+
+\subsection{Computing $L$-classes}
+
+Beyond the $L$-polynomial, computation of the total $L$-class would
+also permit certain manifolds to be recognized.  Here is an example of
+such a problem and a possible approach.  Brehm and K\"uhnel in
+\cite{MR1180457} exhibit a few different combinatorial 15-vertex
+triangulations of an 8-manifold ``like'' the quaternionic projective
+plane $\mathbb{H}P^8$.  One of these examples $X^8$ is especially
+symmetric, and likely PL homeomorphic to $\mathbb{H}P^8$.
+\begin{question}
+Is there a PL homeomorphism between the 15-vertex complex of Brehm--K\"uhnel and $\mathbb{H}P^8$?
+\end{question}
+Despite more recent work (e.g., \cite{MR3038783}) which has placed
+these examples in a nice context, this question remains open.  I
+propose answering this question with a direct computation of the
+rational $L$-class by implementing the procedure in \cite{MR440554}.
+It is perhaps surprising that this can be done effectively.  The
+relevant steps are to
+\begin{itemize}
+\item find a simplicial map $f : X^8 \times S^n \to S^{n+8}$ of nonzero degree,
+\item consider the preimage $f^{-1}(x)$ of some point $x \in S^{n+8}$, and
+\item compute the signature of $f^{-1}(x)$ by computing the cup product pairing on $H^\star(f^{-1}(x);\Q)$.
+\end{itemize}
+Of these, finding the map $f$ has proven to be more involved than I
+would have hoped; the stabilized copy of $X^8$ needs to be subdivided
+to get a map to a sphere, and this subdivision quickly increases the
+number of simplexes that need to be stored, in spite of how small the
+15-vertex triangulation is at first.  Nevertheless, I am optimistic
+that this is possible.
+
+\subsection{Computing Stiefel-Whitney classes}
+
+Having considered experiments with the $L$-classes---which amount to
+experiments with the Pontrjagin classes---there are also experiments
+one can do with Stiefel-Whitney classes.  This project is joint work
+in progress with Jean Lafont.
+
+Let $G$ be a finite group.  The Vasquez invariant $n(G)$ is the
+natural number so that, for any flat manifold $M$ with holonomy $G$,
+then $M$ is a toral expansion of some flat manifold with dimension
+$\leq n(G)$.  Computing $n(G)$ is Problem~4 of \cite{MR2252897}.
+
+That such a number $n(G)$ exists is a result of Vasquez'
+\cite{MR267487}, where Vasquez also points out that, in dimension $>
+n(G)$, the characteristic algebra of $M$ vanishes.  In other words,
+for a flat manifold $M$ with holonomy $G$, 
+$$
+w_{i_1}(M) w_{i_2}(M) \cdots w_{i_n}(M) = 0
+$$
+when $i_1 + i_2 + \cdots + i_n > n(G)$. For a given group $G$, by
+explicitly producing flat manifolds $M$ with holonomy $G$, a nonzero
+product of Stiefel-Whitney classes yields a lower bound on $n(G)$.  So
+ how is one to produce a ``random'' flat manifold with holonomy $G$?
+ Restrict to the case of $G = (\Z/2\Z)^k$.  Then a nice reasonable
+ collection of flat manifolds are the real Bott manifolds, which are
+ given by some combinatorial information \cite{MR2915482}, namely a
+ matrix with entries in $\{0,1\}$.
+\begin{question}
+  Let $G = (\Z/2\Z)^k$ and let $M$ be a real Bott manifold with
+   holonomy $G$.  What is the largest nonzero product of
+   Stiefel-Whitney classes of $M$?
+\end{question}
+ Given a random matrix, I have already written code to compute the
+ Stiefel-Whitney classes.  Probably more can be said by using the fact
+ that the holonomy group we are dealing with is abelian.
+
+ It would also be interesting to have some of explanation of the
+ statistics I am seeing in the data.  For example, with 26831 random
+ 12-by-12 upper triangular matrices so that $w_2 w_3 w_4$ is
+ nontrivial, only forty were found with holonomy $(\Z/2\Z)^6$ but 10999
+ were found with holonomy $(\Z/2\Z)^9$.
+
+%BADBAD
+%bott towers
+%iterated sphere bundles
+
+\subsection{Polynomially bounded homotopy theory}
+\label{subsection:polynomially-bounded-topology}
+
+In controlled topology, notions like homotopy are refined to include a
+condition on their size, measured via a reference map to a metric
+space.  There are different versions of controlled topology in current
+use, including bounded control and continuous control. But there are
+other versions of control that are worth considering.
+
+That is not so surprisingly: much of the success of geometric group
+theory comes by thinking about asymptotic invariants of a group as a
+metric space \cite{MR1253544}, but one can consider other asymptotic
+invariants for spaces.
+\begin{question}
+When does a CW complex have the homotopy type of a complex having polynomially many cells in
+dimension $n$?
+\end{question}
+This is a quantitative version of Wall's finiteness obstruction
+\cite{MR171284}.  Interestingly, a space might have Poincar\'e duality but
+not in a polynomially bounded sense, so there are analogies to be made
+between this project and the homology manifold projects.
+
+Crichton Ogle has developed polynomially bounded cohomology
+\cite{MR2109110}.  I have collaborated with Ogle to work through the
+foundations of polynomially bounded---and more generally,
+$\B$-bounded---homotopy theory \cite{MR2962981}, which would be one
+framework within which the above question could be addressed.
+Specifically, given a bounding class $\B$, we construct a bounded
+refinement ${\B K}(-)$ of Quillen's $K$-theory functor from rings to
+spaces. As defined, ${\B K}(-)$ is a functor from weighted rings to
+spaces, and is equipped with a comparison map $BK \to K$ induced by
+``forgetting control.''  In contrast to the situation with
+$\B$-bounded cohomology, there is a functorial splitting ${\B K}(-)
+\simeq K(-) \times {\B K}^{rel}(-)$ where ${\B K}^{rel}(-)$ is the
+homotopy fiber of the comparison map.
+
+Finally, there is also an analogy to be made between ``weighted
+rings'' and the geometric modules of Quinn \cite{MR802791}, along with
+$\B$-bounded homotopy theory and controlled topology.  Much of our
+work in \cite{MR2962981} is in building an appropriate $\B$-bounded
+Waldhausen category.  At the point where one can define $\B$-bounded
+Waldhausen categories, why not go all the way and consider a
+$\B$-bounded model theory?
+
+Christensen and Munkholm have placed continuous and bounded notions of
+control into a common, categorical framework \cite{MR1983017};
+Higson--Pedersen--Roe have introduced a different framework unifying
+various kinds of coarse spaces, from an analytic perspective
+\cite{MR1451755}.  Weiss--Williams formulate some examples of control
+within Waldhausen categories with duality \cite{MR1644309}.  All of
+these notions could be unified into a single theory of
+\textit{controlled model categories}.  Anderson's homotopy theory for
+boundedly controlled topology \cite{MR953961} is a starting point.
+
+There is some precedent for considering a controlled model category,
+namely the parametrized homotopy theory of May--Sigurdsson
+\cite{MR2271789}.  This latter theory, however, is more topological
+than geometric---the reference maps are not to metric spaces.
+Nevertheless, elucidating the precise relationship between the
+parametrized homotopy theory of May--Sigurdsson and the spectral
+cosheaves used in stratified surgery (see \cite{MR1308714}) would be
+very worthwhile.
+
+% MR1949110
+%http://www.ams.org/mathscinet/search/publdoc.html?arg3=&co4=AND&co5=AND&co6=AND&co7=AND&dr=all&pg4=AUCN&pg5=TI&pg6=PC&pg7=ALLF&pg8=ET&r=1&review_format=html&s4=&s5=&s6=&s7=MR1949110&s8=All&vfpref=html&yearRangeFirst=&yearRangeSecond=&yrop=eq
+%http://ac.els-cdn.com/S016686419800056X/1-s2.0-S016686419800056X-main.pdf?_tid=38b5ebec-3b2d-11e3-8718-00000aab0f01&acdnat=1382455297_7f36baf326362a6e70c6dd0a0170e065
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Undergraduate research}
+\label{section:undergraduate-research}
+
+There are two different ways to involve undergraduates in research.
+One way is to do research projects \textit{with} undergraduates: I
+have two successful projects that involved undergraduates in a
+significant way, as well as some proposed projects that I hope to do
+with future students.  The other way to involve undergraduates is to
+do research \textit{on} them: I have an ongoing project called
+MOOCulus, an adaptive learning platform that I built.  There have been
+about 150k enrollments in this online course, so we have quite a bit
+of data.
+
+\subsection{No three in line}
+\label{subsection:no-three-in-line}
+
+% http://arxiv.org/abs/1203.6604
+% The no-three-in-line problem on a torus
+
+For a group $G$, let $T(G)$ denote the cardinality of the largest
+subset $S \subset G$ so that no three elements of $S$ are in the same
+coset of a cyclic subgroup.  Undergraduates Andrew Groot and Deven Pandya, advised
+by myself and my colleague Bart Snapp, considered the case $G =
+\mathbb{Z}/m\mathbb{Z} \times \mathbb{Z}/n\mathbb{Z}$, and showed that
+\begin{align*}
+  T(\Z_p \times \Z_{p^2}) &= 2p, \\
+  T(\Z_p \times \Z_{pq})  &= p+1.
+\end{align*}
+This problem can also be formulated as a Gr\"obner basis question;
+after doing so, we computed $T(\Z_m \times \Z_n)$ for $2 \leq m \leq
+7$ and $2 \leq n \leq 19$.  These results are available in
+\cite{2012arXiv1203.6604F}.
+
+This problem presents some nice connections for undergraduates.
+Thinking of a coset of a cyclic subgroup as a ``line,'' there is then
+connection with the usual ``no three in line problem.''  Paul Erd\"os
+proved that for a prime $p$, one can place $p$ points on the $p\times
+p$ lattice in the plane \cite{MR41889}; the construction goes via a
+parabola modulo $p$.  Other more complicated constructions manage to
+place more points \cite{MR366817}.
+
+Another nice connection is made by considering other groups.  Although
+the no-three-in-line problem for $G = (\mathbb{Z}/p\mathbb{Z})^2$ can
+be considered as the $k$-arc problem from projective geometry
+\cite{MR554919}, the question is also interesting for, say, $G = S_n$ or
+$G = A_n$ where, say, Bezout's theorem doesn't make sense anymore.
+
+\subsection{Transversal of primes}
+\label{subsection:transversal-of-primes}
+
+Matej Penciak, then a student at the University of Rochester, among
+other students at the Ross program, became interested in the following
+question.
+\begin{question}[Question 1.6 ``Transversal of Primes'' from \cite{MR2847943}]
+  Let $p$ be the $n^{\mbox{\scriptsize th}}$ prime, and place the
+  integers $1$ through $p^2$ into a $p \times p$ array in order.  Is
+  it possible to choose a set of $p$ primes from the array so that no
+  two appear in the same row or column?
+\end{question}
+During Summer 2012, we gathered some evidence on this
+question.  Our approach used WalkSAT \cite{walksat}, a local search
+algorithm for Boolean satisfiability problems.  We verified that it is
+possible to arrange $p$ primes on a $p \times p$ board, no two in a
+row or column, for primes $\leq 1291$.
+
+\subsection{Proposed undergraduate research projects}
+\label{subsection:proposed-projects}
+
+Here are some proposed projects that could become good activities for
+undergraduates.
+\begin{description}
+\item[Space of five-by-five natural images]
+Carlsson--Ishkhanov--De Silva--Zomorodian found a Klein bottle in the
+space of $3 \times 3$ pixel patches of natural images
+\cite{natural-images}.  To be a bit more precise, each $3 \times 3$
+pixel patch from a black-and-white image yields a point in $[0,1]^9
+\subset \mathbb{R}^9$; one can normalize for brightness and contrast,
+and then apply a ``thresholding'' procedure to throw away some
+outliers.  Many of the remaining points are close to a Klein bottle
+embedded in $\mathbb{R}^9$.  A nice project would be describe the
+structure of, say, $5 \times 5$ pixel patches.  A first step would be
+to compute the persistent homology \cite{MR2121296} of the (suitably
+``thresholded'') point cloud, which could be done with available
+software by an undergraduate having some background in computer
+science.
+
+\item[Roots of random quaternionic polynomials]  There are
+other examples of point cloud data coming from ``pure mathematics''
+for which it would be interesting to calculate the persistent
+homology.  For example, there are well-known results on the
+distribution of complex roots of random polynomials, some of which are
+topologically interesting---for some distributions, the roots lie
+close to a circle.  There are algorithms for finding roots of a
+quaternionic polynomial \cite{MR6980} which can be performed in
+practice \cite{MR1851239}, so what sort of topological structure might
+one find in the roots of random quaternionic polynomials?  The same
+skillset that would help an undergraduate analyze the space of $5
+\times 5$ pixel patches could be applied to this question, as well.
+
+\item[Representation theory and the genetic code] The genetic code describes how sequences of DNA are transformed into proteins; the code is redundant, but why?  Considering that there are a large number of genetic
+codes, why should we see only a handful of possible codes in nature?
+Hornos and Hornos investigated the symmetries of the genetic code via
+representation theory \cite{originalhornos}, akin to the techniques
+used in particle physics with Lie groups.  But the genetic code is
+discrete, so instead of the representation theory of Lie groups,
+\textit{modular} representation theory is arguably the natural
+mathematical home for such study.  The ``wobble pair'' phenomena might
+be suggestive that symplectic geometry is relevant, i.e., thinking of
+a codon---three base pairs---not as a vector in $(\mathbb{F}_4)^3$ but
+as a vector in $(\mathbb{F}_2)^6$ adorned with a symplectic form. I
+found a 64-dimensional (i.e., $64 = 4^3$ codons) representation of 
+$\Sp(6,\mathbb{F}_2)$ over
+the field $\mathbb{F}_2$ in which there are 21 minimal submodules for a
+smaller symmetry group (i.e., 20 amino acids and 1 stop code);
+moreover, the dimensions of these minimal submodules are just large
+enough to account for the redundancy in the genetic code.
+
+It would be interesting to work with, say, an undergraduate student
+interested in math biology, teach them a bit of representation theory,
+and work out some of the consequences.  Of course, this project, like
+most of the work done on representation theory and the genetic code,
+is highly speculative.  One complaint is that such work is ``mere
+numerology'' which does not even succeed in giving the correct answer
+for the standard genetic code: for instance, there is no example in
+\cite{forger-1999,forger-1998} of a Lie group having precisely the
+correct representation theory to give rise to the standard genetic
+code, though there is a near-miss differing only in the symmetry
+breaking at the last stage.
+\end{description}
+
+\subsection{MOOCs and adaptive learning}
+\label{subsection:moocs}
+
+In January~2013, I launched the first massive open online course
+(MOOC) at The Ohio State University. My course was designed to cover
+the same content as the local, in-person sections of Math~1151, the
+first semester calculus course at OSU.  The largest component of this
+MOOC consisted of a home-built adaptive learning platform I designed,
+called MOOCulus, which delivers randomly-generated interactive
+problems to students \cite{evans}.  
+
+Beyond my $\sim 200$ lecture videos---some of which make use of
+augmented reality---the MOOCulus platform has generated significant
+amounts of data on the learning of calculus.  As of November 2013, we
+have had 147k students enroll in either the Coursera or iTunes~U
+version of my courses.  These enrollments have led to millions of
+attempts, and over two million correct answers, being submitted to
+MOOCulus.
+
+The Division of Undergraduate Education at the NSF has funded a
+Transforming Undergraduate Education in STEM (TUES) Type~1 award for
+my proposal DUE--1245433 (``Interactive Textbook'') with Bart Snapp
+and Herb Clemens.  The proposed activity will produce an online
+platform making it easier for other instructors to build engaging
+online courses like MOOCulus.  The goal is to build one of the
+``customizable, sustainable platforms'' that online education requires
+to succeed \cite{bowen2013higher}; parts of MOOCulus have already been
+used for English courses as well \cite{gates-foundation-grant}.
+
+Much previous work has been done on using adaptive learning systems to
+teach college mathematics.  Examples of such are ALEKS
+\cite{hagerty2005using,albert1999knowledge} or Knewton at Arizona
+State \cite{parry2012big}, though both of these emphasize
+pre-calculus, developmental coursework.  Some of these platforms use
+Bayesian networks to estimate a student's current understanding
+\cite{romero2010educational}.  Hidden Markov models (HMMs) have also
+been used in educational data mining for clustering
+\cite{shihdiscovery}.  These techniques and related ``machine
+learning'' techniques can predict student grades based on only a few
+assignments \cite{predict-grades}, even with incomplete data
+\cite{Zafra201115020}, which make them especially useful for an
+adaptive learning platform where not too much student data may be
+available on which to base the initial predictions.
+
+For MOOCulus, I chose to use a hidden Markov model to estimate student
+understanding; exactly which problems are assigned to the student
+depend on the output of the model.  Hidden Markov models can provide
+strong predictions of student behavior; in one example, a hidden
+Markov model---trained, as I propose here, via the Baum--Welch
+algorithm---did a better job of predicting student behavior in an
+e-Learning context than did a neural net \cite{anari2012intelligent}.
+Nevertheless, exactly how best to train the MOOCulus model remains a
+question.
+\begin{question}
+  What are the ``correct'' parameters for the hidden Markov model in
+  MOOCulus?
+\end{question}
+Parameter estimation is an extremely well-studied topic in the theory
+of Markov processes, e.g., \cite{MR202264} and \cite{MR123419}.
+Before having access to student data, instructors often ``have to
+provide appropriate values for the parameters in advance in order to
+obtain good results/model and therefore, the user must possess a
+certain amount of expertise in order to find the right
+settings'' \cite{romero2010educational}.  This is a serious
+usability problem with many adaptive learning systems---MOOCulus
+included.
+
+Determining appropriate values for these parameters is a usability
+issue, and also one of the major research questions my work addresses.
+The plan is to use the Baum--Welch algorithm from the GHMM library
+\cite{ghmm} so improvements to the parameters can be made
+automatically.  The overarching goal is that MOOCulus will improve
+student outcomes in math courses, as has been shown to happen with
+other online assessment systems \cite{angus2009does}.
+
+\printbibliography
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

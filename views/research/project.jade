@@ -17,6 +17,13 @@ block content
 
   !=project.jade()
 
+  if project.thumbnail()
+    p
+      if project.status == "published"
+        a.btn.btn-primary.btn-lg(href=project.fileWithPath()) <i class="icon-download"/></i>&nbsp;Download paper
+      else
+        a.btn.btn-primary.btn-lg(href=project.fileWithPath()) <i class="icon-download"/></i>&nbsp;Download preprint
+
   div(style="clear: both;")
 
   if project.bibtex

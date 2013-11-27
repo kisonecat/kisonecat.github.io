@@ -96,7 +96,7 @@ module.exports = function(grunt) {
         pdf2png: {
             all: {
                 files: [
-                    { src: ['teaching/**/*.pdf'] }
+                    { src: ['teaching/**/*.pdf', 'research/**/*.pdf'] }
                 ]
             }
         }
