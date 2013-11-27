@@ -2,3 +2,14 @@ node_modules
 bower_components
 *~
 *.pem
+research/statement/.cache/
+research/statement/auto/
+research/statement/references.bib
+research/statement/statement.aux
+research/statement/statement.bbl
+research/statement/statement.bcf
+research/statement/statement.blg
+research/statement/statement.log
+research/statement/statement.out
+research/statement/statement.run.xml
+research/statement/watermark.wmx
