@@ -38,12 +38,21 @@ jade_filters.latex = function(text) {
     text = text.replace( /---/g, '&mdash;' );
     text = text.replace( /``/g, '&ldquo;' );
     text = text.replace( /''/g, '&rdquo;' );
+    text = text.replace( /\\'e/g, '&eacute;' );
     text = text.replace( /\\textit{([^}]*)}/g, '<em>$1</em>' );
+
+    text = text.replace( /\\begin{itemize}/g, '<ul>' );
+    text = text.replace( /\\item/g, '</li><li>' );
+    text = text.replace( /\\end{itemize}/g, '</li></ul>' );
+    text = text.replace( /<ul>[ \n]*<\/li>/g, '<ul>' );
+    text = text.replace( /\\"u/g, '&uuml;' );
 
     text = text.replace( /\\begin{theorem}/g, '\n\n\\begin{theorem}' );
     text = text.replace( /\\end{theorem}/g, '\\end{theorem}\n\n' );
     text = text.replace( /\\begin{question}/g, '\n\n\\begin{question}' );
     text = text.replace( /\\end{question}/g, '\\end{question}\n\n' );
+    text = text.replace( /\\begin{proof}/g, '\n\n\\begin{proof}' );
+    text = text.replace( /\\end{proof}/g, '\\end{proof}\n\n' );
 
     text = text.replace(/\n\n+/g, "\n\n" )
     var paragraphs = text.split( "\n\n" );
@@ -54,7 +63,11 @@ jade_filters.latex = function(text) {
 	p = p.replace( /\\begin{question}\[([^\]]+)\]/g, '<p class="theorem"><span class="theorem-title">Question.</span><span class="theorem-citation">($1)</span>' );
 	p = p.replace( /\\begin{question}/g, '<p class="theorem"><span class="theorem-title">Question.</span>' );
 	p = p.replace( /\\end{question}/g, '</p>' );
-	if (!p.match(/<p class="theorem>/))
+	p = p.replace( /\\begin{proof}\[([^\]]+)\]/g, '<p class="theorem"><span class="theorem-title">$1</span>' );
+	p = p.replace( /\\begin{proof}/g, '<p class="theorem"><span class="theorem-title">Proof.</span>' );
+	p = p.replace( /\\end{proof}/g, '&nbsp;&#8718;</p>' );
+
+	if ((!p.match(/<p class="theorem">/)) && (!p.match(/<ul>/)))
 	    return '<p>' + p + '</p>';
 	else
 	    return p;
@@ -300,6 +313,7 @@ fs.readFile(filename, 'utf8', function(err, data) {
     body = body.replace( /\\"i/g, '&iuml;' );
     body = body.replace( /\\'e/g, '&eacute;' );
     body = body.replace( /\\"o/g, '&ouml;' );
+    body = body.replace( /\\"u/g, '&uuml;' );
     body = body.replace( /\\H{o}/g, '&#337;' );
     body = body.replace( /~/g, '&nbsp;' );
     body = body.replace( /\\Z/g, '\\mathbb{Z}' );
