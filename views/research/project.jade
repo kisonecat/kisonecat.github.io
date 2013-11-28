@@ -20,7 +20,10 @@ block content
   if project.thumbnail()
     p
       if project.status == "published"
-        a.btn.btn-primary.btn-lg(href=project.fileWithPath()) <i class="icon-download"/></i>&nbsp;Download paper
+        if project.title.match( /[Tt]hesis/ )
+          a.btn.btn-primary.btn-lg(href=project.fileWithPath()) <i class="icon-download"/></i>&nbsp;Download thesis
+        else
+          a.btn.btn-primary.btn-lg(href=project.fileWithPath()) <i class="icon-download"/></i>&nbsp;Download paper
       else
         a.btn.btn-primary.btn-lg(href=project.fileWithPath()) <i class="icon-download"/></i>&nbsp;Download preprint
 
