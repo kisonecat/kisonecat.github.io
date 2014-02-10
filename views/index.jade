@@ -27,11 +27,22 @@ block content
       !=post.preview
     .col-lg-4
       h4 <a href="/teaching/2014/math2568/">Math 2568: Linear algebra</a>
-      p If you are a student of mine taking Math 2568 this term, you might be looking for the course homepage.
+      p If you are a student who is taking Math 2568 this term, you might be looking for some resources.
     .col-lg-4
       h4 Office hours
       include office-hours
-
+  hr
+  .row.front-page
+    - var link = '/teaching/2014/m2o2c2/';
+    .col-lg-7
+      h3 <a href="#{link}">M2O2C2: Massively multivariable open online calculus course</a>
+      p M2O2C2 is an invitation to think carefully about how one thing changing affects something else.  What is the "derivative" of a function of many variables?  How can a curved object be approximated by a flat plane?  What does the chain rule look like when many things are affecting many other things?  How do we find an input which maximizes a function of many variables?
+      p This is a course in multivariable differential calculus, but we will also introduce a ton of linear algebra.  The result is a course targeted at a student who has seen a bit of calculus and is willing to learn about matrices and vectors to provide the best possible vantage point from which to understand derivatives of functions of many variables.
+      p
+        a.btn.btn-primary.btn-lg(href="https://www.coursera.org/course/m2o2c2") Enroll in the March 2014 Session
+    .col-lg-5
+      a.thumbnail(href=link)
+        img(src="/public/images/logos/m2o2c2.png")
   hr
   .row.front-page
     - var link = '/teaching/2014/calculus-two/';
@@ -40,7 +51,7 @@ block content
         img(src="/public/images/logos/calculus-two.png")
     .col-lg-7
       h3 <a href="#{link}">Calculus Two: Sequences and Series</a>
-      p Sequences and Series will challenge us to think very carefully about "infinity."  What does it mean to add up an unending list of numbers? How can an infinite task result in a finite answer?  These questions lead us to some very deep concepts—but also to some powerful computational tools which are used not only in math but in many quantitative disciplines.
+      p Sequences and Series will challenge us to think very carefully about "infinity."  What does it mean to add up an unending list of numbers? How can an infinite task result in a finite answer?  These questions lead us to some very deep concepts&mdash;but also to some powerful computational tools which are used not only in math but in many quantitative disciplines.
       p This course is a first introduction to sequences, infinite series, convergence tests, and Taylor series.  It is suitable for someone who has seen just a bit of calculus before.
       p
         a.btn.btn-primary.btn-lg(href="https://www.coursera.org/course/sequence") Enroll in the March 2014 Session

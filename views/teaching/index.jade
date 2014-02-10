@@ -21,6 +21,19 @@ block content
       include ../office-hours
   hr
   .row.front-page
+    - var link = '/teaching/2014/m2o2c2/';
+    .col-lg-5
+      a.thumbnail(href=link)
+        img(src="/public/images/logos/m2o2c2.png")
+    .col-lg-7
+      - displayedCourses = _.without( displayedCourses, _.find( displayedCourses, function(course) { return course.shortname == 'm2o2c2'; } ) );
+      h3 <a href="#{link}">M2O2C2: Massively multivariable open online calculus course</a>
+      p M2O2C2 is an invitation to think carefully about how one thing changing affects something else.  What is the "derivative" of a function of many variables?  How can a curved object be approximated by a flat plane?  What does the chain rule look like when many things are affecting many other things?  How do we find an input which maximizes a function of many variables?
+      p This is a course in multivariable differential calculus, but we will also introduce a ton of linear algebra.  The result is a course targeted at a student who has seen a bit of calculus and is willing to learn about matrices and vectors to provide the best possible vantage point from which to understand derivatives of functions of many variables.
+      p
+        a.btn.btn-primary.btn-lg(href="https://www.coursera.org/course/m2o2c2") Enroll in my Coursera Course
+  hr
+  .row.front-page
     - var link = '/teaching/2014/calculus-two/';
     .col-lg-7
       - displayedCourses = _.without( displayedCourses, _.find( displayedCourses, function(course) { return course.shortname == 'calculus-two'; } ) );
