@@ -8,26 +8,25 @@ block carousel
 
 block content
   .row.front-page
-    .col-lg-4
+    .col-lg-6
+      h4 <a href="/cv">Who is Jim Fowler?</a>
+      p Jim Fowler is a mathematician at <a href="http://math.osu.edu/">The Ohio State University</a>. His <a href="/research">research interests</a> broadly include geometry and topology, and more specifically focuses on the topology of high-dimensional manifolds and geometric group theory. In other words, he thinks in depth about highly symmetric geometric objects. He's fond of using computational techniques to attack problems in pure mathematics.
+      p Prior to working at <a href="http://math.osu.edu/">The Ohio State University</a>, he received an undergraduate degree from <a href="http://math.harvard.edu/">Harvard University</a> and received a Ph.D. from the <a href="http://math.uchicago.edu/">University of Chicago</a>.
+    .col-lg-6
       h4 <a href="/research">Research</a>
-      p Find a list of my <a href="/research/papers/">research papers</a>.  Read my <a href="/research/statement">research statement</a>.
-      p My <a href="/research">research</a> combines geometric group theory and surgery theory.
-    .col-lg-4
+      p Find a list of my <a href="/research/papers/">research papers</a>.  Read my <a href="/research/statement">research statement</a>.  My <a href="/research">research</a> combines geometric group theory and surgery theory.
       h4 <a href="/teaching">Teaching</a>
       p See my <a href="/teaching/statement">teaching statement</a>, download <a href="/teaching">course materials</a> from past and present courses, or watch <a href="/teaching/videos">some videos</a>.
+  hr
+  .row.front-page
     .col-lg-4
       h4 <a href='#' class="email">Email me</a>
       p The best way to contact me is via email: write to me at <a href='#' class="email"><span class="email">my last name at math.osu.edu</span></a>.
       p You can also call or text me at <span class="phone">(773) xxx-5659</span>.
-  hr
-  .row.front-page
     .col-lg-4
       - var post = poet.helpers.getPosts(0,1)[0];
       h4 <a href="#{post.url}">#{post.title}</a>
       !=post.preview
-    .col-lg-4
-      h4 <a href="/teaching/2014/math2568/">Math 2568: Linear algebra</a>
-      p If you are a student who is taking Math 2568 this term, you might be looking for some resources.
     .col-lg-4
       h4 Office hours
       include office-hours
