@@ -13,3 +13,6 @@ research/statement/statement.log
 research/statement/statement.out
 research/statement/statement.run.xml
 research/statement/watermark.wmx
+_site
+.sass-cache
+.jekyll-metadata
