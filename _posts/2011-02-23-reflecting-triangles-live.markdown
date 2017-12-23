@@ -1,0 +1,119 @@
+---
+layout: post
+title: Reflecting Triangles, live
+tags: personal mathematics
+date: 2011-02-23 08:05:21 +0000
+---
+
+<p>A while back I made some movies which began with a triangle in the
+plane, reflected that triangle through its three sides, reflected
+those triangles through their sides, and so forth.  The interesting
+result is that for only four shapes of triangles, the resulting set
+of triangle vertices is discrete.</p>
+<p>
+Using <a href="http://raphaeljs.com/">Raphael</a> and a plane geometry
+package that I wrote, I quickly redid this visualization in
+Javascript; you can now move the vertices around to see the effect on
+the reflected triangles.</p>
+      
+<script src="raphael-min.js" type="text/javascript" charset="utf-8"></script>
+<script src="geometry.js" type="text/javascript" charset="utf-8"></script>  
+<div class="canvas" id="sample"/>
+<script language="javascript">
+
+var element = document.getElementById("sample");
+var width = 400;
+var height = width * 0.7;
+var paper = Raphael(element, width, height);
+console.log(width);
+pA = paper.geometry.point( 0.5*width, 0.8*height );
+pB = paper.geometry.point( 0.25*width, 0.5*height );
+pC = paper.geometry.point( 0.5*width, 0.25*height );
+/*
+paper.geometry.label( pA, "A" );
+paper.geometry.label( pB, "B" );
+paper.geometry.label( pC, "C" );
+*/
+
+sC = paper.geometry.segment( pA,pB );
+sA = paper.geometry.segment( pB,pC );
+sB = paper.geometry.segment( pC,pA );
+sA.attr({"stroke-width":3});
+sB.attr({"stroke-width":3});
+sC.attr({"stroke-width":3});
+
+points = new Object();
+
+points["A"] = pA;
+points["B"] = pB;
+points["C"] = pC;
+
+function simplify(string) {
+    var first = string.slice(0,1);
+    var rest = string.slice(1, string.length);
+    if (rest.indexOf(first) < 0)
+	return first;
+
+    return first + rest.slice( rest.indexOf(first), rest.length );
+}
+
+function string_to_point( string ) {
+    if (points[string] != null) {
+	return points[string];
+    }
+
+    var head = string.slice(0, string.length - 1);
+    var tail = string.charAt(string.length - 1);
+    var point = string_to_point( head );
+    var line = {A:sA, B:sB, C:sC}[tail];
+
+    var reflected = paper.geometry.point_reflected( line, point );
+    reflected.attr( {r:0} );
+    //paper.geometry.label( reflected, string );
+    points[string] = reflected;
+
+    var first = string.charAt(0);
+    var rest = string.slice(1, string.length);
+    var other = {A:"B", B:"C", C:"A"}[first];
+    var another = {A:"C", B:"A", C:"B"}[first];
+    
+    var other_code = simplify(other + rest);
+    var another_code = simplify(another + rest);
+    
+    var s1 = paper.geometry.segment( reflected, string_to_point( other_code ) );
+    var s2 = paper.geometry.segment( reflected, string_to_point( another_code ) );
+
+    var opacity = 1.0 / string.length;
+    var linewidth = 4.0 / string.length;
+    s1.attr( {opacity: opacity, "stroke-width": linewidth} );
+    s2.attr( {opacity: opacity, "stroke-width": linewidth} );
+
+    return reflected;
+}
+
+function list_codes( depth )
+{
+    if (depth == 1)
+	return ["AA","BB","CC"];
+
+    var result = new Array();
+    var codes = list_codes( depth - 1 );
+    for( var i in codes ) {
+	code = codes[i];
+	var last = code.slice(code.length-1,code.length);
+	var other = {A:"B", B:"C", C:"A"}[last];
+	var another = {A:"C", B:"A", C:"B"}[last];
+	codes = codes.concat( [code + other, code + another] );
+    }
+
+    return codes;
+}
+
+var codes = list_codes( 5 );
+for( var i in codes ) {
+    var code = codes[i];
+    string_to_point(code);
+}
+
+</script>
+

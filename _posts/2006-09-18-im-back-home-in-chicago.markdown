@@ -1,0 +1,15 @@
+---
+layout: post
+title: I&#8217;m back home, in Chicago.
+tags: personal
+date: 2006-09-18 18:31:35 +0000
+---
+
+I left California far too quickly: some people that I had really wanted to see I didn't get to see.  But I got to spend a lot of time with my dad, which was excellent, and the conferences and Berkeley itself were a lot of fun.
+
+I understand why clutching functions are called clutching functions: a automobile's clutch transmits rotation from one object to another under the control of the driver, and a clutching function likewise glues together two different rotations under the control of the mathematician.
+
+Having been gone for two weeks, the beautiful cat Tasha has decided that my chair is her chair.
+
+I saw a poster that described a play as "crunchingly witty."  This seems like a very strange sort of wittiness to me.
+

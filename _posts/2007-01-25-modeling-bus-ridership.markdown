@@ -1,0 +1,21 @@
+---
+layout: post
+title: Modeling bus ridership.
+tags: personal
+date: 2007-01-25 18:23:29 +0000
+---
+
+While on public transportation, my mind wanders... And one might assume the following about me and my buses,
+
+* The bus travels for one unit of time,
+* I will get on the bus at a random time (uniformly distributed),
+* I will leave the bus at a random time (independent, unformly distributed).
+
+Then the probability that I am on the bus at time $t$ is $p(t) = 2 \cdot t \cdot (1-t)$.  So one might expect that the total number of people on the bus at time $t$ to look like $C \cdot t \cdot (1-t)$ for some $C$.
+
+I would enjoy riding a bus from the start to the end, and seeing how accurate this is, though tragically, I rather doubt it is very accurate at all.  For starters, the entrance and exit times are correlated (who gets off the bus one stop after they get on?), and there are places where people are more likely to enter, and where people are more likely to exit.  In fact, upon further reflection, this is a *horrible* model of bus ridership.
+
+But, if you, say, averaged all the bus routes to make the entrance and exit distributions more uniform...--is there anywhere I can get this data?  Wait, wait, this seems like an awful idea: I'd better stop now.
+
+Thanks to Bryce Johnson for pointing out a mistake in my calculation of the probability $p(t)$ above--I had forgotten to include a factor of two!
+

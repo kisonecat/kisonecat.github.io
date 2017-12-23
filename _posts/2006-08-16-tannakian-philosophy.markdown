@@ -1,0 +1,17 @@
+---
+layout: post
+title: Tannakian Philosophy
+tags: mathematics
+date: 2006-08-16 20:35:09 +0000
+---
+
+From [Recent Advances in the Langlands Program](http://arxiv.org/abs/math.AG/0303074), quoted in [This Week's Finds](http://math.ucr.edu/home/baez/week221.html):
+
+> First of all, it should be remarked that according to the Tannakian
+> phylosophy, one can reconstruct a group from the category of its finite-dimensional 
+> representations, equipped with the structure of the tensor product. 
+
+I suppose one should think of this as the categorification of Pontrjagin duality?
+
+For a long while, I had wondered how this goes; this [Introduction to Tannaka Duality and Quantum Groups](http://www.maths.mq.edu.au/~street/CT90Como.pdf) will probably answer my questions.
+

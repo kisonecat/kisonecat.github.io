@@ -1,0 +1,22 @@
+---
+title: Easy cases of the volume conjecture?
+tags: mathematics
+date: 2013-11-18 10:00:00 +00:00
+---
+
+The <a href="http://en.wikipedia.org/wiki/Volume_conjecture">volume conjecture</a> relates the hyperbolic volume of a knot complement to quantum invariants of the knot.  Specifically, the conjecture is that
+  $$\operatorname{Vol}(S^3 \setminus K) = \lim_{N \to \infty} \frac{2 \pi \log |J_N(K;\xi_N)|}{N}$$
+  where $J_N$ computes the colored <a href="http://en.wikipedia.org/wiki/Jones_polynomial">Jones polynomial</a> and $\xi_N = e^{2\pi i / N}$.  For some knots $K$, there are nice formulas for $J_N(K;\xi_N)$.  For instance, if $K$ is the figure eight knot, then <a href="http://arxiv.org/abs/1002.0126">$J_N(K;q)$ can be written as</a>
+  $$J_N(K;q) = \sum_{j=0}^{N-1} \prod_{\substack{k=-j \\ k \neq 0}}^j \left(q^{(N-k)/2} - q^{-(N-k)/2}\right).$$
+  When $q = \xi_N$ and one takes the limit, this sum transforms quite nicely into the Riemann sum which computes $6 \,\Lambda(\pi/3)$, which is the hyperbolic volume of the figure eight knot complement.
+  
+  Are there other cases in which one can verify the volume conjecture directly by finding a nice form for the colored Jones polynomial?  <a href="http://www.ams.org/mathscinet-getitem?mr=2779434">Yamazaki-Yokota in "On the limit of the colored Jones polynomial of a non-simple link"</a> verified, in the same direct way, the volume conjecture for a certain link with volume $6\,\Lambda(\pi/3)+16\,\Lambda(\pi/4)$.  I hope one could find other examples by searching for links and knots with "nice" volumes in terms of the Lobachevsky function $\,\Lambda$.
+
+  From my search with  <a href="http://www.math.uic.edu/t3m/SnapPy/doc/">SnapPy</a>,
+<ul>
+<li>the <a href="http://katlas.math.toronto.edu/wiki/L6a2">link $6^2_2$ in Rolfsen's table</a> has volume $12 \,\Lambda(\pi/3)$,</li>
+<li>the <a href="http://katlas.math.toronto.edu/wiki/L8a20">link $8^3_4$ in Rolfsen's table</a> has volume $30 \,\Lambda(\pi/3)$, and</li>
+<li>the <a href="http://katlas.math.toronto.edu/wiki/9_41">knot $9_{41}$</a> volume $44 \,\Lambda(\pi/5) - 24 \,\Lambda(3 \pi/10) + 2 \,\Lambda(3 \pi/5)$.</li>
+</ul>
+
+  Of course, there are lots of nonhyperbolic knots and it is hard to prove the volume conjecture even for those, in spite of the fact that their hyperbolic volume is "really nice" (namely, zero!).

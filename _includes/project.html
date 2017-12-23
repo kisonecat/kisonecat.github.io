@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-sm-12">
+    <h4><a href="{{ item.url }}">{{ item.title }}</a>
+      {% if item.joint %}
+      <small>Joint work with {{ item.joint | join: ', ' }}</small>
+      {% endif %}
+    </h4>
+    {% if item.summary %}
+      {{ item.summary }}
+      <p><a href="{{ item.url }}">Read more &raquo</a></p>
+    {% else %}
+      {{ item.content }}    
+    {% endif %}
+  </div>
+</div>
