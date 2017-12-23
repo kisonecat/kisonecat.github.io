@@ -1,6 +1,13 @@
 <div class="row">
   <div class="col-sm-12">
-    <h4><a href="{{ item.url }}">{{ item.title }}</a>
+    <h4>
+      {% if item.pdf %}
+        <a href="{{ item.pdf }}" class="btn btn-sm btn-secondary float-right"><i class="fa fa-download"></i>&nbsp;Download PDF</a>
+      {% endif %}
+      {% if item.arxiv %}
+	<a href="https://arxiv.org/pdf/{{ page.arxiv }}.pdf" class="btn btn-secondary btn-sm float-right"><i class="fa fa-eye"></i>&nbsp;View on ArXiv</a>	
+      {% endif %}	
+      <a href="{{ item.url }}">{{ item.title }}</a>
       {% if item.joint %}
       <small>Joint work with {{ item.joint | join: ', ' }}</small>
       {% endif %}

@@ -31,6 +31,9 @@ plugins:
   - jekyll-feed
   - jekyll-postfiles
 
+gems:
+  - jekyll/scholar
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
@@ -68,3 +71,22 @@ defaults:
     values:
       layout: "project"
       menu: "blog"
+      
+scholar:
+  style: apa
+  locale: en
+  sort_by: none
+  order: ascending
+
+  source: ./_bibliography
+  bibliography: references.bib
+  bibliography_template: "{{reference}}"
+
+  replace_strings: true
+  join_strings:    true
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
+
+  query: "@*"

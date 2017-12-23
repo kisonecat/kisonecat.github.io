@@ -30,3 +30,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'jekyll-pug', group: :jekyll_plugins
 
 gem 'jekyll-postfiles'
+gem 'jekyll-scholar'

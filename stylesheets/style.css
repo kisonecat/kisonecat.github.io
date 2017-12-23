@@ -211,6 +211,15 @@ span.theorem-citation {
 .center-cropped {
   object-fit: none; /* Do not scale the image */
   object-position: center; /* Center the image within the element */
-  /*height: 180px;*/
-  /*width: 100px;*/
+  height: 180px;
+}
+
+small {
+    font-size: 70%;
+    opacity: 0.5;
+}
+
+h1 small {
+    font-size: 50%;
+    opacity: 0.5;
 }
