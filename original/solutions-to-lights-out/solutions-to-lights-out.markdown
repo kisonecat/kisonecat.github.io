@@ -1,0 +1,27 @@
+{{{
+  "title": "Solutions to Lights Out",
+  "tags": ["personal", "mathematics"],
+  "date": "2008-07-21T21:32:40+00:00"
+}}}
+
+  <p>I'll briefly introduce the <a href="http://en.wikipedia.org/wiki/Lights_Out_(game)">Lights Out puzzle</a>: the game is played on an <em>n</em>-by-<em>n</em> grid of buttons which, when pressed, toggle between a lit and unlit state.  The twist is that toggling a light <em>also</em> toggles the state of its neighbors (above, below, right, left&mdash;although, on the boundary, lights have fewer neighbors).  All the buttons are lit when the game begins, and the goal is to turn all the lights off.</p>
+
+<p>There are two key observations:
+<ul>
+<li>toggling a light twice amounts to doing nothing,</li>
+<li>toggling light $A$ and then light $B$ has the same effect as toggling $B$ and then toggling $A$.
+</ul>
+As a result, <b>the order in which we press the buttons is irrelevant.</b>  So to solve the <em>n</em>-by-<em>n</em> puzzle, we just need to know whether a button needs to be pressed.  My old website had some pictures I made showing solutions for boards of various sizes&mdash;pictures where a white pixel meant "press" and a black pixel meant "don't press."  I assembled these pictures into a video, showing solutions to the Lights Out puzzle for $n \leq 200$:</p>
+
+<p><%= movie( 'lights-out.m4v', 400, 400 ) %></p>
+
+<p>For as cool as that looks, there's not much to be discovered (as far as I can tell) from watching these frames flash by.  But it does look like about half the buttons have to be pressed to solve the puzzle: why is that?</p>
+
+<p>The still frames of the movie are available <a href='solutions.zip' title='Solutions to the Lights Out game'>here as PNGs in a zipped archive</a>.  Here is a solution to the 400-by-400 board:</p>
+
+<div class="displayedMedia"><a href='lights-out-400-doublesize.png' title='Solution to 400x400 Lights Out'><img src='lights-out-400.png' alt='Solution to 400x400 Lights Out' /></a></div>
+
+<p>Finding that solution involved row-reducing a $(400 \cdot 400 + 1)$-by-$400 \cdot 400$ matrix&mdash;that's a matrix with over 25 billion entries.  On the other hand, each entry is one bit, so that matrix fits (not coincidentally) in 3 gigabytes of memory.  One could surely do better, considering how sparse the matrix is: perhaps we could have a little contest for solving very large Lights Out games.</p>
+
+<p>Besides the fact that all these pictures look awesome, Lights Out is a neat example to motivate some linear algebra over a finite field.  It illustrates how satisfying an "easy" local condition (each light must be turned off) might require a globally complicated solution&mdash;a lesson for mathematics and for life!</p>
+

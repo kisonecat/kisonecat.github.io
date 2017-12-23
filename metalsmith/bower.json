@@ -1,0 +1,13 @@
+{
+    "name": "fowler-homepage",
+    "version": "0.0.1",
+    "dependencies": {
+        "requirejs": "*",
+        "moment": "*",
+        "jquery": "*",
+        "bootstrap": "*",
+        "underscore": "*",
+        "font-awesome": "*",
+        "x-editable": "*"
+    }
+}

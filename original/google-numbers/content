@@ -1,0 +1,16 @@
+I searched for each number between 1 and 500 on Google, and recorded the (estimated) number of hits.  I'm not aware of anyone having done this before; in any case, I made a chart:
+
+<a href='http://kisonecat.com/wp-content/uploads/2008/08/big-plot.png' title='Big Plot of Google Searches for numbers 1 to 500'><img src='http://kisonecat.com/wp-content/uploads/2008/08/plot.png' alt='Google search results for numbers 1 to 500' /></a>
+
+Click on the above chart to see a <a href='http://kisonecat.com/wp-content/uploads/2008/08/big-plot.png' title='Big Plot of Google Searches for numbers 1 to 500'>bigger version</a>.  You can also look more closely at the first <a href='http://kisonecat.com/wp-content/uploads/2008/08/hundred-plot.png' title='Google Search Results for N between 1 and 100'>hundred numbers</a>, or look at the above data with a 
+<a href='http://kisonecat.com/wp-content/uploads/2008/08/log-plot.png' title='Log plot for google search results'>log scale on the y-axis</a>.
+
+I have some observations and questions:
+
+* There's some periodicity in the above data (every 5, every 10, every 100).
+* Can you explain how quickly the distribution falls off (is it exponentially decaying, for instance)?
+* The most popular numbers are, in decreasing order of popularity: 2, 3, 10, 4, 5, 11, 6, 7, 8, 20, 15, 30, 14, 18, 1, 24, 21, 19, 25, 22, 28, 29, 50, and so on.
+* The most popular numbers ending in 0 are, in decreasing order of popularity and having been divided by ten: 1, 2, 3, 5, 10, 4, 8, 9, 7, 20, 6, 50, 15, 12, 30, 25, 11, 40, 13, 18, 16, 14, and so on.  Is the distribution of numbers ending in 0 related to the distribution of all numbers?
+* Are certain families of numbers more popular?  Are prime numbers or square numbers particularly popular?
+
+You can download my <a href='http://kisonecat.com/wp-content/uploads/2008/08/data.csv' title='Data file for Google Numbers'>comma-separated data file</a> if you would like to play with the data yourself.  Note, however, that I got this data from [Google's SOAP interface](http://code.google.com/apis/soapsearch/reference.html), which, for reasons I don't understand, doesn't give the same number of "estimated hits" as the web page interface.

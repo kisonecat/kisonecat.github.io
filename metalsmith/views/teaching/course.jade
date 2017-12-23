@@ -1,0 +1,42 @@
+extends ../layouts/main
+include helpers
+
+
+block content
+  mixin breadcrumbs(['/teaching', course.url],['Teaching', course.title])
+
+  if course.logo
+    img.img-thumbnail.pull-right(src=course.logo,width=300)
+
+  h1 #{course.title}
+    | 
+    small
+      !=course.term.replace('-','&ndash;')
+  p 
+    !=course.description
+
+  block details
+
+  div(style="clear: both;")
+
+  each tag in course.resourceTags()
+    - var formatTag = function(tag) {
+    -   if (tag == 'handout') return 'Handouts';
+    -   if (tag == 'syllabus') return 'Syllabus';
+    -   if (tag == 'exam') return 'Exams';
+    -   if (tag == 'quiz') return 'Quizzes';
+    -   if (tag == 'homework') return 'Problem sets';
+    -   return tag.capitalize();
+    - }
+    h2
+      =formatTag(tag)
+    - var list = course.resourcesWithTag( tag );
+    - var rowCount = 4;
+    - var i = -rowCount;
+    while i <= list.length
+      - i += rowCount;
+      hr
+      .row
+        each resource in list.slice(i, i+rowCount)
+          .col-lg-3
+             mixin resourceThumbnail( resource )

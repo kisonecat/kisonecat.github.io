@@ -1,0 +1,21 @@
+[0] Config.pm:425> INFO - This is Biber 1.7
+[0] Config.pm:428> INFO - Logfile is 'statement.blg'
+[121] biber:252> INFO - === Wed Nov 27, 2013, 15:43:08
+[122] Biber.pm:333> INFO - Reading 'statement.bcf'
+[231] Biber.pm:630> INFO - Found 72 citekeys in bib section 0
+[255] Biber.pm:2997> INFO - Processing section 0
+[275] Biber.pm:3134> INFO - Looking for bibtex format file 'references.bib' for section 0
+[285] bibtex.pm:786> INFO - Found BibTeX data source 'references.bib'
+[403] Utils.pm:169> WARN - I didn't find a database entry for 'MR859767' (section 0)
+[403] Utils.pm:169> WARN - I didn't find a database entry for 'MR868892' (section 0)
+[404] Utils.pm:169> WARN - I didn't find a database entry for 'MR1076524' (section 0)
+[404] Utils.pm:169> WARN - I didn't find a database entry for 'MR1381603' (section 0)
+[404] Utils.pm:169> WARN - I didn't find a database entry for 'MR2222492' (section 0)
+[404] Utils.pm:169> WARN - I didn't find a database entry for 'thesis' (section 0)
+[487] Utils.pm:169> WARN - The field 'note' in entry 'Zafra201115020' cannot be null, deleting it
+[990] Biber.pm:2883> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[990] Biber.pm:2889> INFO - Sorting 'entry' list 'nty' keys
+[990] Biber.pm:2893> INFO - No sort tailoring available for locale 'en_US.UTF-8'
+[1828] bbl.pm:479> INFO - Writing 'statement.bbl' with encoding 'ascii'
+[1842] bbl.pm:552> INFO - Output to statement.bbl
+[1843] Biber.pm:105> INFO - WARNINGS: 7

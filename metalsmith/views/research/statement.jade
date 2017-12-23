@@ -1,0 +1,18 @@
+extends ../layouts/main
+include helpers
+
+block content
+  mixin breadcrumbs(['/research','/research/statement'],['Research','Research Statement'])
+  .row
+    .col-lg-9
+      p You may also want to see a list of <a href="/research">my research projects</a> or <a href="/research/papers">my publications</a>.
+      h2 Research Statement
+      !=researchStatement
+      p
+        a.btn.btn-primary.btn-lg(href="/research/statement/research-statement.pdf") <i class="icon-file"/></i>&nbsp;View longer research statement
+    .col-lg-3
+      .thumbnail
+        img(src="/research/statement/research-statement.png")
+        .caption
+          p A much longer version of my research statement is available as a PDF.
+          p <a href="/research/statement/research-statement.pdf" class="btn btn-primary"><i class="icon-download"></i>&nbsp;Download PDF</a>

@@ -1,0 +1,9 @@
+{
+    "shortname": "math5801",
+    "title": "General Topology and Knot Theory"
+    "description": "This course introduces topological and metric spaces, continuous maps, convergence, connectedness, and compactness, as well as some combinatorial, geometric, and algebraic techniques in knot theory and knot invariants."
+    "term": "Fall 2015",
+    "year": 2016,
+    "logo": "logo.png",
+    "instructor": "Jim Fowler"
+}

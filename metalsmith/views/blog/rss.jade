@@ -1,0 +1,13 @@
+doctype xml
+rss(version='2.0')
+  channel
+    title Jim Fowler
+    link kisonecat.com
+    description Jim Fowler writes about mathematics, among other things
+    each post in posts
+      item
+        title= post.title
+        link= post.url
+        description= post.rssDescription
+        pubDate= post.date
+        guid= post.slug

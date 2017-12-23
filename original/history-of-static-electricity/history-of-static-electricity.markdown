@@ -1,0 +1,16 @@
+{{{
+  "title": "History of Static Electricity?",
+  "tags": ["personal"],
+  "date": "2006-11-29T20:31:36+00:00"
+}}}
+
+  What can be said about the history of static electricity?  Did Greek science know about it?  Any medieval experiments with static electricity?
+
+It's sort of interesting that people knew about magnetism and electricity for hundreds of years before finding many good uses for that knowledge (granted, compasses and potentially batteries for electroplating, but these things are trinkets in our modern world so dependent on electricity); in contrast, the span between radiation and harnessing nuclear power was much shorter (although maybe our modern uses of nuclear power will seem like mere trinkets compared to the awesome uses to come).  I guess this isn't surprising---eh, nothing I say is surprising!
+
+And after listening to Sufjan Stevens' "A Good Man is Hard to Find," I read the short story with the same title.  I find myself liking "Seven Swans" more and more, and the short story by Flannery O'Connor was quite interesting.  The short story of the crane wife (which is used to good effect on the Decemberists new album of the same name) is quite beautiful, too.
+
+And last night, while doing some mathematics, I was also listening to an audiobook (well, podcast) rendition of Plato's *Republic*; I had forgotten the thing about the ring that turned people invisible!  It's funny enough that this gets picked up in the *Lord of the Rings*, but just the *idea* of such a ring is so provocative---where did the idea come from?
+
+And earlier this week, I was reading about king David's "mighty men" and about the beautiful Abishag.  I find it amusing how the names of these people (e.g., Glaucon in *The Republic* or Abishag) get remembered, with fame far beyond their expectation, I'm sure.
+

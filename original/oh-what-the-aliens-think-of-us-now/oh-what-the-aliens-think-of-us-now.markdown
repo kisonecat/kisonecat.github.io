@@ -1,0 +1,12 @@
+{{{
+  "title": "Oh what the aliens think of us now!",
+  "tags": ["personal"],
+  "date": "2006-10-05T06:09:15+00:00"
+}}}
+
+  I've spent a lot of time constructing languages (Kisonef and Naedari being my favorites); in a similar vein, I also tried to create a language that an alien civilization would be able to understand.  I had hoped to put a message written in my universal language in a conspicuous place (say, on a college campus), just to test if what I made really was understandable, even to humans!
+
+But I never got around to that, and plenty of other people have done exactly [that](http://www.martincmartin.com/SETIPuzzle.html).  This is related to the following question: state and prove a theorem in such a way that an alien would be able to follow your proof.
+
+But whoa!  I found out that Freudenthal (the mathematician) did the same thing: he created [LINCOS](http://en.wikipedia.org/wiki/Lincos).  Bizarre.  I also enjoyed looking at this <a href="http://www3.sympatico.ca/stephane_dumas/CETI/evpatoria_2003.jpg">image that we sent into space</a> and trying to imagine what the aliens must think of people who write with such strange characters.
+

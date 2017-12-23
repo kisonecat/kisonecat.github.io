@@ -1,0 +1,914 @@
+<!DOCTYPE 5><html lang="en"><head><meta charset="utf-8"/><title> - k = 1 cat - Jim Fowler</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="description" content="Jim Fowler"/><meta name="author" content="Jim Fowler"/><meta name="keywords" content="mathematics, math, maths, courses, course, research, education, teaching, topology, geometry"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/><link href="/stylesheets/style.css" rel="stylesheet" media="screen"/><link href="/stylesheets/cv.css" rel="stylesheet" media="screen"/><script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({showProcessingMessages: false, tex2jax: {
+  inlineMath: [['$','$'],['\\(','\\)']],
+  displayMath: [['$$','$$'], ['\\[','\\]']] },
+TeX: {
+ Macros: {
+   R: "{\\mathbb{R}}",
+   Q: "{\\mathbb{Q}}",            
+   Z: "{\\mathbb{Z}}",      
+   N: "{\\mathbb{N}}",            
+}}});</script><link rel="apple-touch-icon" sizes="114x114" href="/images/icons/favicon-114x114.png"/><link rel="apple-touch-icon" sizes="72x72" href="/images/icons/favicon-72x72.png"/><link rel="apple-touch-icon" sizes="57x57" href="/images/icons/favicon-57x57.png"/><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/></head><body><nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<a class="navbar-brand" href="/">Jim <strong>Fowler</strong></a>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a class="nav-link " href="/cv">CV</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " href="/research">Research</a>
+</li>      
+<li class="nav-item">
+<a class="nav-link " href="/teaching">Teaching</a>
+</li>            
+<li class="nav-item">
+<a class="nav-link active" href="/blog">Blog</a>
+</li>                  
+</ul>
+</div>
+</nav><main class="container-fluid" role="main"><nav class="breadcrumb">
+  <a class="breadcrumb-item" href="/">Home</a>
+  <a class="breadcrumb-item active" href="/blog">Blog</a>
+</nav>
+
+<h1>Blog posts</h1>
+
+
+<hr/>
+<h2><a href="/blog/volume-conjecture">Easy cases of the volume conjecture?</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2013-11-18 10:00:00 +0000</span>
+
+<span class="badge badge-default">mathematics</span>
+
+</h5>
+<div class="content">The volume conjecture relates the hyperbolic volume of a knot complement to quantum invariants of the knot. Specifically, the conjecture is that where $J_N$ computes the colored Jones polynomial and $\xi_N = e^{2\pi i / N}$. For some knots $K$, there are nice formulas for $J_N(K;\xi_N)$. For instance, if $K$ is the figure eight knot, then $J_N(K;q)$ can be written as When $q = \xi_N$ and one takes the limit, this sum transforms quite nicely...</div>
+<p><a href="/blog/volume-conjecture">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/reflecting-triangles-live">Reflecting Triangles, live</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2011-02-23 08:05:21 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+<span class="badge badge-default">mathematics</span>
+
+</h5>
+<div class="content">A while back I made some movies which began with a triangle in the plane, reflected that triangle through its three sides, reflected those triangles through their sides, and so forth. The interesting result is that for only four shapes of triangles, the resulting set of triangle vertices is discrete. Using Raphael and a plane geometry package that I wrote, I quickly redid this visualization in Javascript; you can now move the vertices around to...</div>
+<p><a href="/blog/reflecting-triangles-live">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/culturomics">Culturomics</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2010-12-18 09:02:45 +0000</span>
+
+<span class="badge badge-default">linguistics</span>
+
+<span class="badge badge-default">history</span>
+
+</h5>
+<div class="content">I have really fallen in love with Google Books Ngram Viewer, so I thought I'd do a little ``culturomics'' myself. Here's an image I made using Google's data: The brightness of the pixel at position $(x,y)$ is related to how frequently ``$x$'' appears in books published in the year $y$. Specifically, if $p$ is the number of times ``$x$'' appears in print during year $y$, divided by the number of times any number less than...</div>
+<p><a href="/blog/culturomics">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/many-more-lights-out">Many more Lights Out</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2010-07-17 00:05:32 +0000</span>
+
+<span class="badge badge-default">mathematics</span>
+
+</h5>
+<div class="content">A very long while ago I posted some solutions to Lights Out; back then, I solved the $n$-by-$n$ board by row-reducing an $n^2$-by-$n^2$ matrix. Since then, both Boris Okun and Brent Werness pointed out to me that I should've solved Lights Out by using a scanning algorithm: propagating the button presses down one row at a time, and exponentiating the propagation matrix to make sure that I don't get stuck at the last row. This...</div>
+<p><a href="/blog/many-more-lights-out">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/reflecting-triangles">Reflecting Triangles</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2010-03-16 05:23:23 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+<span class="badge badge-default">mathematics</span>
+
+</h5>
+<div class="content">My advisor, Shmuel Weinberger, was teaching Math 113, and asked for some pictures of the following procedure: Start with a triangle in the plane. Reflect that triangle across its three sides. And repeat, reflecting the resulting triangles through their sides, and so forth. I made a couple movies of this, illustrating this procedure as you move through the space of triangles. Observe how, for only four shapes of triangles, the resulting set of triangle vertices...</div>
+<p><a href="/blog/reflecting-triangles">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/projector-on-blackboard">Projector on Blackboard</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2010-01-19 07:30:13 +0000</span>
+
+<span class="badge badge-default">mathematics</span>
+
+</h5>
+<div class="content">I recently gave a beamer talk, which gave me the chance to point the beamer at my blackboard.
+
+
+  
+Your browser does not support the video tag.
+
+</div>
+<p><a href="/blog/projector-on-blackboard">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/my-mathematical-genealogy">My mathematical genealogy</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2009-06-11 20:06:38 +0000</span>
+
+<span class="badge badge-default">general</span>
+
+</h5>
+<div class="content">According to the Mathematics Genealogy Project, my mathematical genealogy is: Luca Pacioli Domenico Maria Novara da Ferrara Nicolaus Copernicus Georg Joachim von Leuchen Rheticus Caspar Peucer Salomon Alberti Ernestus Hettenbach Ambrosius Rhodius Christoph Notnagel Johann Andreas Quenstedt Michael Walther, Jr. Johann Pasch Johann Andreas Planer who doesn't have a Wikipedia page Christian August Hausen Abraham Gotthelf K&auml;stner Johann Friedrich Pfaff Carl Friedrich Gauss Christian Ludwig Gerling Julius Pl&uuml;cker C. Felix (Christian) Klein William Edward Story...</div>
+<p><a href="/blog/my-mathematical-genealogy">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/mbius-strip-and-pairs-of-points-on-a-circle">M&#246;bius strip, and pairs of points on a circle.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2009-01-28 18:33:51 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+<span class="badge badge-default">mathematics</span>
+
+</h5>
+<div class="content">Here's a little movie I made: Your browser does not support the video tag. I'm grading for the first year topology course at Chicago, and one of their homework problems asked them to show that pairs of (indistinguishable!) points on a circle correspond to points on the M&ouml;bius strip; in other words, the quotient of the torus $T^2 = S^1 \times S^1$ by the $\Z/2$-action which exchanges the two $S^1$ factors is a M&ouml;bius strip....</div>
+<p><a href="/blog/mbius-strip-and-pairs-of-points-on-a-circle">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/i-can-drive">I can drive!</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2008-09-26 21:46:39 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">I took my road test this morning—and I passed!
+
+After all these years, I am a licensed driver.  Now, where should I drive to?
+
+</div>
+<p><a href="/blog/i-can-drive">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/global-warming-according-to-google">Global Warming according to Google</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2008-08-22 00:04:32 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">Google Trends plots the search volume (or some other measure? search percentage?) for a given phrase over time. It’s ridiculously fun! As an example, let’s look at the number of times people search for the words hot and cold. I downloaded the CSV file offered by Google trends to make the following graph: The thick red and blue lines are the linear regressions on the number of searches for hot and cold, respectively. Behold!—people are...</div>
+<p><a href="/blog/global-warming-according-to-google">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/ancient-xerox">Ancient xerox technology.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2008-07-28 23:02:57 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">The Romans (among others!) wrote in wax with a stylus; the wax was embedded in boards, which were bound together in pairs.  If a Roman were to place clay between these boards, could they make a copy of their wax tablet in the clay?
+
+It strikes me as remarkable that coins were minted so long before books were printed—though I guess the motivation behind minting coins and printing books are rather different.
+
+</div>
+<p><a href="/blog/ancient-xerox">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/hyperbolizaion-of-polyhedra">Hyperbolization of Polyhedra</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2008-07-26 15:14:56 +0000</span>
+
+<span class="badge badge-default">talks</span>
+
+<span class="badge badge-default">mathematics</span>
+
+</h5>
+<div class="content">I gave a talk in the Farb and Friends Student Seminar (back in March!) on: MR1131435 This is an awesome paper—well-worth a few words on every blog! The construction is way easier than you might think. The ingredients: A model space $X$ with a map $f : X \to \Delta^n$ Any simplicial complex $K$ with a nondegenerate (edge-non-collapsing) map $K \to \Delta^n$ (if having a map to $\Delta^n$ seems like a bother, note that the...</div>
+<p><a href="/blog/hyperbolizaion-of-polyhedra">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/solutions-to-lights-out">Solutions to Lights Out</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2008-07-21 21:32:40 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+<span class="badge badge-default">mathematics</span>
+
+</h5>
+<div class="content">I'll briefly introduce the Lights Out puzzle: the game is played on an n-by-n grid of buttons which, when pressed, toggle between a lit and unlit state. The twist is that toggling a light also toggles the state of its neighbors (above, below, right, left&mdash;although, on the boundary, lights have fewer neighbors). All the buttons are lit when the game begins, and the goal is to turn all the lights off. There are two key...</div>
+<p><a href="/blog/solutions-to-lights-out">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/percolation">Percolation.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2008-07-20 06:02:52 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+<span class="badge badge-default">questions</span>
+
+<span class="badge badge-default">mathematics</span>
+
+</h5>
+<div class="content">I made a movie recently for my advisor. The movie is so pretty, that I thought I'd share it here: may I present to you randomly drawn dots, where two dots are the same color when they touch! I'll be a bit more explicit: a dot is drawn at a random location; if it does not overlap any previous dots, it gets a new color. Otherwise, the dot takes the color of the component it...</div>
+<p><a href="/blog/percolation">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/possible-homology-of-closed-manifolds">Possible homology of closed manifolds.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2008-03-09 01:10:21 +0000</span>
+
+<span class="badge badge-default">questions</span>
+
+<span class="badge badge-default">mathematics</span>
+
+</h5>
+<div class="content">In this fun paper, MR1845679 it is pointed out that homology is a very basic invariant, and closed manifolds are very basic objects and so a very basic question is: what sequences of abelian groups are the homology groups of a closed simply connected manifold? It isn't very hard to realize any sequence of abelian groups up to the middle dimension, but that middle dimension is tricky (e.g., classify $(n-1)$-connected $2n$-manifolds). Anyway, I was wondering:...</div>
+<p><a href="/blog/possible-homology-of-closed-manifolds">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/political-relationships-hidden-in-markets">Political relationships hidden in markets.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2008-03-08 23:44:38 +0000</span>
+
+<span class="badge badge-default">economics</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">I’m again applying Granger causality to time series data from Intrade. This time, however, I connect box A to box B with a green arrow if A becoming more likely causes B to become more likely, and with a red arrow if A becoming more likely causes B to become less likely. Shorter arrows suggest stronger relationships (technically, a lower p-value). Running the algorithm on the market data since January 1, 2008 with a lag...</div>
+<p><a href="/blog/political-relationships-hidden-in-markets">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/granger-causality-and-intrade-data">Granger causality and Intrade data.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2008-03-06 19:31:09 +0000</span>
+
+<span class="badge badge-default">economics</span>
+
+<span class="badge badge-default">personal</span>
+
+<span class="badge badge-default">computer</span>
+
+<span class="badge badge-default">science</span>
+
+<span class="badge badge-default">mathematics</span>
+
+</h5>
+<div class="content">Granger causality is a technique for determining whether one time series can be used to forecast another; since the Intrade market provides time series data for political questions, we can look at whether political outcomes can be used to forecast other political outcomes. There’s a library for the statistical package R to do the Granger test, and Intrade produces CSV market data. I fed the market data for various contracts since January 1, 2008 into...</div>
+<p><a href="/blog/granger-causality-and-intrade-data">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/movies-of-some-neat-cubical-complexes">Movies of some neat cubical complexes.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2008-02-25 05:27:32 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+<span class="badge badge-default">mathematics</span>
+
+</h5>
+<div class="content">I made some movies of some of my favorite complexes: let $I^n$ be the $n$-dimensional cube, and let $e_1, \ldots, e_n$ be the $n$ edges around the origin, and let $e_i e_j$ be the square face containing the edges $e_i$ and $e_j$. Define a subcomplex $\Sigma^2_n \subset I^n$ consisting of the squares and all the squares in $I^n$ parallel to these. It turns out that $\Sigma^2_n$ is a surface with a lot of symmetries. In...</div>
+<p><a href="/blog/movies-of-some-neat-cubical-complexes">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/books-that-are-useless-on-a-desert-island">Books that are useless on a desert island.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2008-02-01 05:36:57 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">Drew Hevle raises a very interesting question: suppose you are stranded on a desert island; what books would be entirely useless in this situation? Here are a few books that I wouldn’t want to be stranded on an island with: Federal Income Tax: Code and Regulations Selected Sections A Million Random Digits with 100,000 Normal Deviates Government Phone Book USA 2000 How to Build an Igloo: And Other Snow Shelters Do you have other ideas...</div>
+<p><a href="/blog/books-that-are-useless-on-a-desert-island">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/visualizing-pineapple-pancakes">Visualizing pineapple pancakes.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2008-01-30 01:04:53 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">The pineapple sauce pancake graph has English words as vertices, and a directed edge from $a$ to $b$ if the concatenation $ab$ is also an English word. For instance, there is a vertex labeled pine, and a vertex labeled apple, and an edge from pine to apple. Anyway, the graph is huge; and the usual visualization tool (Graphviz) doesn’t work particularly well on the whole graph, so I took a few hundred vertices around pine,...</div>
+<p><a href="/blog/visualizing-pineapple-pancakes">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/clustering-texts-with-an-obvious-grouping">Clustering texts with an obvious grouping.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2008-01-28 00:22:30 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+<span class="badge badge-default">linguistics</span>
+
+</h5>
+<div class="content">It was pointed out to me by Kenny Easwaran that I ought to try clustering texts that already have a natural grouping. So I ran the clustering program on 15 texts written by three authors, and here is the result: The largest eigenvalue is 25 times bigger than the next largest eigenvalue, and picks out the author pretty well. The top pile consists of Jane Austen’s books (with Emma split into three volumes). The middle...</div>
+<p><a href="/blog/clustering-texts-with-an-obvious-grouping">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/clustering-shakespeare">Clustering Shakespeare.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2008-01-23 04:23:57 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+<span class="badge badge-default">linguistics</span>
+
+</h5>
+<div class="content">I ran my clustering program (which I just ran on the New Testament) on Shakespeare’s plays—which were conveniently packaged into a text file by Open Source Shakespeare. The result was the following graph: I know little about Shakespeare, so I can’t say too much about the above image. I’d love to know what you think: does this arrangement of his plays make any sense? Given that modern processors are so good at vector and matrix...</div>
+<p><a href="/blog/clustering-shakespeare">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/clustering-the-new-testament">Clustering the New Testament.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2008-01-22 06:23:43 +0000</span>
+
+<span class="badge badge-default">theology</span>
+
+</h5>
+<div class="content">During Bible study last week, it was mentioned that people have used statistics to “determine” authorship of books of the Bible. Having a couple free hours last night, I tried my own experiment on the New Testament. The procedure was easy: I downloaded the Nestle-Aland 26th edition of the New Testament; each book in the New Testament became a vector $v$, with $v_w$ counting the number of times word $w$ appears in the book. The...</div>
+<p><a href="/blog/clustering-the-new-testament">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/npr-and-wedding-dresses">NPR and wedding dresses.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2007-11-15 00:20:05 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">While we (meaning my wife and I) were filling out the forms for our marriage license, we were interviewed by NPR for Morning Edition!  A copy of the broadcast is available online.
+
+</div>
+<p><a href="/blog/npr-and-wedding-dresses">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/national-bingo-night">National Bingo Night.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2007-05-30 00:59:19 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">National Bingo Night (which seems to me to be very silly, but ignoring that…) has a “play along at home” game, where you print out a bingo card. How would I design this? I had hoped that the website generated a Bingo card, digitally signed it, and then sent the signed card to the user. If it had been designed that way, ABC wouldn’t even need to remember which cards had been generated, as long...</div>
+<p><a href="/blog/national-bingo-night">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/istanbul-not-constantinople-as-a-cover-in-two-senses">Istanbul, not Constantinople, as a cover, in two senses.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2007-04-20 18:24:09 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">I am frequently amazed to discover that songs which I had believed to have been original are actually covers. It turns out, for instance, that TMBG’s “Istanbul (not Constantinople)” is a cover of a song from the 1950s. Ironically, one might argue that Istanbul is itself a cover of Constantinople–and that argument (unifying form and content) reminds me of the language games played by Salt: Grain of Life, a book asserting that its very structure...</div>
+<p><a href="/blog/istanbul-not-constantinople-as-a-cover-in-two-senses">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/length-spectrum">Spectral rigidity.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2007-04-19 21:55:50 +0000</span>
+
+<span class="badge badge-default">questions</span>
+
+<span class="badge badge-default">mathematics</span>
+
+</h5>
+<div class="content">For $X$ a metric space, and $S \subset X$, define the length spectrum of S to be $D_S := { d(x,y) : x, y \in S }$. It might be better to call this the “distance spectrum” or “distance set.” Ian, during his Pizza seminar, gave the following definition: a set $S \subset \R^n$ is a $k$-distance set if $D_S$ has cardinality no greater than $k$. In words, the distances between points in a $k$-distance...</div>
+<p><a href="/blog/length-spectrum">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/vitamin-c-and-analyzing-myself">Vitamin C and analyzing myself.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2007-04-04 17:23:00 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">Most mammals produce their own vitamin C, but humans carry a mutated form of the gene responsible for one of four enzymes enzymes necessary for vitamin C production, and so we humans must find it in our diets. In effect, every human being has a metabolic deficiency! And in light of this wonderful news, why not ingest tremendously huge amounts of vitamin C? In fact, I’d like to make this into a double-blind study of...</div>
+<p><a href="/blog/vitamin-c-and-analyzing-myself">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/a-week-of-food">To feed oneself for a week.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2007-03-27 19:36:17 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">The question is: how little can I spend to feed myself for one week? I ought to eat 2000 calories/day, so I’ll need to purchase 14,000 calories/week. Here’s a “healthy” option: just eat apples. One ounce of apple has 15 calories, so I’ll need to eat 58 pounds of apples per week; I might be able to get this many apples for 29 dollars. But I can do better! One “Take 5” candy bar is...</div>
+<p><a href="/blog/a-week-of-food">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/tashas-new-toy">Tasha&#8217;s new toy.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2007-03-06 05:38:15 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">Tasha the Cat received a new toy–a plastic circle containing corrugated cardboard, with a ball stuck in a track.  Watch her pounce!
+
+
+
+
+</div>
+<p><a href="/blog/tashas-new-toy">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/divinity-versus-humanity">Divinity versus Humanity.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2007-03-04 19:44:51 +0000</span>
+
+<span class="badge badge-default">theology</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">On a recent plane trip, I was reading a very abridged version of (the ten thousand page long!) Church Dogmatics by Karl Barth, and I found something totally beautiful. Believing God to be entirely “transcendent in contrast to all immanence” and “divine in contrast to everything human,” and reading (e.g., in Philippians 2:7) that Jesus is God having emptied himself, having made himself nothing, I concluded that God somehow hid his divinity in order that...</div>
+<p><a href="/blog/divinity-versus-humanity">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/translating-words">Translating individual words.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2007-03-04 01:42:25 +0000</span>
+
+<span class="badge badge-default">theology</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">Given a text in two languages, is it possible to uncover the meaning of individual words? The Bible is a particularly easy text to work with, since corresponding sentences are marked (i.e., with the same chapter and verse numbers). I downloaded a copy of the Hebrew Bible and the King James’ Version, and looked at Deuteronomy 6:4. For each word in Hebrew, I found all the other verses with that word, and gathered together all...</div>
+<p><a href="/blog/translating-words">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/no-cookie">No cookie for me.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2007-02-26 21:58:36 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">Today, I was about to sit down and read a paper (in French–I may not speak in tongues, but apparently I can read in tongues, so to speak!), and I thought to myself about how nice it would be to have a cookie. I went to Uncle Joe’s, I went to the Classics Cafe, I went to Cobb’s coffee shop, and then I gave up, for there were no cookies in any of those places,...</div>
+<p><a href="/blog/no-cookie">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/akedah">Genesis clusters around the Akedah.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2007-02-26 03:06:35 +0000</span>
+
+<span class="badge badge-default">theology</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">Someone contacted me with some questions about Bayesian document clustering; with that inspiration and a free afternoon a few weeks ago, I took a Hebrew bible and built a matrix $(A_{ij})$ where $A_{ij}$ equals the frequency of the $i$-th (Hebrew!) word in the $j$-th chapter of Genesis. I calculated its singular value decomposition (supposedly this is “latent semantic analysis”), and then took some dot products (calculating the “correlation” of chapters)… Anyhow, the result was astounding!...</div>
+<p><a href="/blog/akedah">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/hurwitz">Sharpness of the Hurwitz 84(g-1) theorem.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2007-02-23 21:23:53 +0000</span>
+
+<span class="badge badge-default">teaching</span>
+
+<span class="badge badge-default">mathematics</span>
+
+</h5>
+<div class="content">There are usually courses at Mathcamp about surfaces; there should be courses about orbifolds! For instance, knowing that the smallest hyperbolic orbifold is the (2,3,7)-orbifold, having orbifold Euler characteristic $-1/84$, immediately gives that a closed hyperbolic surface of genus $g$ has no more than $84(g-1)$ isometries (preserving orientation); this is “Hurwitz’ $84(g-1)$ theorem.” Just to show off this theorem, here is a cubical complex which is a surface with lots of symmetries (and the clever...</div>
+<p><a href="/blog/hurwitz">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/classifying-manifolds-is-impossible">Classifying manifolds is impossible.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2007-02-12 16:35:45 +0000</span>
+
+<span class="badge badge-default">mathematics</span>
+
+</h5>
+<div class="content">At a recent Pizza Seminar, Matt Day gave a lovely talk explaining why it isn’t possible to classify 4-manifolds. An algorithm for deciding whether two closed 4-manifolds are homeomorphic gives an algorithm for deciding whether a closed 4-manifold is simply connected, and therefore (since every finitely presented group is the fundamental group of a 4-manifold), and algorithm for deciding when a group is trivial. Here’s the reduction: we are given a 4-manifold $M$, and we...</div>
+<p><a href="/blog/classifying-manifolds-is-impossible">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/subgroups-of-products">Subgroups of products versus products of subgroups.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2007-02-04 04:17:10 +0000</span>
+
+<span class="badge badge-default">mathematics</span>
+
+</h5>
+<div class="content">This is a question I wandered into accidentally years ago now, which I think other people might be amused to think about (or more likely, put on an abstract algebra exam). Let $G$ be a group, and $H$ a subgroup of $G \times G$. Is $H$ always isomorphic to $G_1 \times G_2$, for some subgroups $G_1, G_2 &lt; G$? But beware!–I am not requiring (or expecting) any canonicity or naturality for the isomorphism: for instance...</div>
+<p><a href="/blog/subgroups-of-products">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/building-aspherical-manifolds">Building aspherical manifolds.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2007-01-25 19:17:59 +0000</span>
+
+<span class="badge badge-default">talks</span>
+
+<span class="badge badge-default">mathematics</span>
+
+</h5>
+<div class="content">I gave a Farb student seminar talk on a lovely paper, > MR0690848 I also used some of the material in > MR1937019 which summarizes other the many applications of the "reflection group trick," and works through some examples with cubical complexes. The main result is Theorem. Suppose $B\pi = K(\pi,1)$ is a finite complex. Then there is a closed aspherical manifold $M^n$ and a retraction $\pi_1(M) \to \pi$. This manifold $M$ can be explictly...</div>
+<p><a href="/blog/building-aspherical-manifolds">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/modeling-bus-ridership">Modeling bus ridership.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2007-01-25 18:23:29 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">While on public transportation, my mind wanders… And one might assume the following about me and my buses, The bus travels for one unit of time, I will get on the bus at a random time (uniformly distributed), I will leave the bus at a random time (independent, unformly distributed). Then the probability that I am on the bus at time $t$ is $p(t) = 2 \cdot t \cdot (1-t)$. So one might expect that...</div>
+<p><a href="/blog/modeling-bus-ridership">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/classifying-clothing-the-quest-for-the-non-orientable-tank-top">Classifying clothing: the quest for the non-orientable tank top.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2007-01-22 22:36:48 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">When I walk down the street, I create patterns in how I walk, often by controlling my stride length so I will step on cracks every third sidewalk square, or whatnot. If I were a true master, my stride length would be incommensurable with respect to the sidewalk length–surely this was the problem that forced irrationalities upon the Greeks… Anyway, I was also happy to realize (at a recent retreat) that clothing is nicely categorized...</div>
+<p><a href="/blog/classifying-clothing-the-quest-for-the-non-orientable-tank-top">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/cupholder-glue">Corrugated coffee cup holders.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2007-01-17 22:10:21 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">I’ve been (not surprisingly) drinking quite a bit of coffee lately, and I’ve noticed that many corregated coffee cup holders include a bit of loose glue.  At first, I thought this was a mistake, an oversight in the perfection of the coffee cup holder design.
+
+On the contrary, that bit of excess glue melts when the hot coffee is poured into the cup, adhering the corregated holder to the cup–brilliant!
+
+</div>
+<p><a href="/blog/cupholder-glue">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/estimating-the-speed-of-the-plane">Estimating the speed of the plane.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2007-01-16 22:45:14 +0000</span>
+
+<span class="badge badge-default">physics</span>
+
+</h5>
+<div class="content">I’m sometimes bored while flying, and I like looking out the window (though if I can, I usually pick aisle seats so I can exit more quickly). I realized something rather amusing. I closed one eye, and held two fingers about an inch apart and a foot away from my open eye. Then, I timed how long it took an object on the ground to move from the one finger to the other finger an...</div>
+<p><a href="/blog/estimating-the-speed-of-the-plane">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/boring-numbers">Most numbers are boring, asymptotically speaking.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-12-10 08:03:55 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">Let $f(n)$ be the number of Google hits for the integer $n$. Then $f(578)$ is about 100 million, and $f(1156)$, that is, the number of hits for a number twice as big, is about 40 million, a bit less than half as big. Doubling the input continues to halve the output: $f(2312)$ is about 20 million (half again!), and $f(4624)$ is about 8 million, and $f(9248)$ is about 4 million. There are about half as...</div>
+<p><a href="/blog/boring-numbers">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/google-numbers">On the Popularity of Certain Numbers.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-12-03 06:36:47 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">I searched for each number between 1 and 500 on Google, and recorded the (estimated) number of hits. I’m not aware of anyone having done this before; in any case, I made a chart: Click on the above chart to see a bigger version. You can also look more closely at the first hundred numbers, or look at the above data with a log scale on the y-axis. I have some observations and questions: There’s...</div>
+<p><a href="/blog/google-numbers">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/growth-series">Growth series.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-11-30 05:32:12 +0000</span>
+
+<span class="badge badge-default">general</span>
+
+</h5>
+<div class="content">In seminar today, Okun pointed out the following interesting observation; for any finitely generated group $G$, you can define its growth series $G(t) = \sum_{g \in G} t^{\ell(g)}$, where $\ell(g)$ is the length of the shortest word for $g$. The first observation is that $G(t)$ is often a rational function, in which case $G(1)$ makes sense. The second observation is that $G(1)$ is “often” equal to $\chi(G)$. This is an example of weighted $L^2$ cohomology....</div>
+<p><a href="/blog/growth-series">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/cartan">Constructing a Lie group from a Lie algebra.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-11-30 04:56:41 +0000</span>
+
+<span class="badge badge-default">mathematics</span>
+
+</h5>
+<div class="content">Cartan proved that every finite-dimensional real Lie algebra $\germ g$ comes from a connected, simply-connected Lie group $G$. I hadn't known the proof of this result (and apparently it is rather uglier than one might hope), but > MR0854249 gives a short proof of it, which I presented to the undergraduates in my Lie group seminar. I'll sketch the proof now. Theorem. For every Lie algebra $\mathfrak{g}$, there is a simply-connected, connected Lie group $G$...</div>
+<p><a href="/blog/cartan">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/history-of-static-electricity">History of Static Electricity?</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-11-29 20:31:36 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">What can be said about the history of static electricity? Did Greek science know about it? Any medieval experiments with static electricity? It’s sort of interesting that people knew about magnetism and electricity for hundreds of years before finding many good uses for that knowledge (granted, compasses and potentially batteries for electroplating, but these things are trinkets in our modern world so dependent on electricity); in contrast, the span between radiation and harnessing nuclear power...</div>
+<p><a href="/blog/history-of-static-electricity">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/experiments-in-cooking">Experiments in cooking.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-11-28 06:16:13 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">I tried making bread, but with significantly less flour than neccessary (and therefore, far more water than needed). The result was very much like cooked paste. It was pointed out to me that since the essence of bread is flour, trying to get by with less flour was undermining the very essence of bread (and I find such arguments very satisfying). I also made baklava again, and that turned out much better than the first...</div>
+<p><a href="/blog/experiments-in-cooking">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/coxeter-group-visualization">Coxeter group visualization.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-11-28 06:00:09 +0000</span>
+
+<span class="badge badge-default">mathematics</span>
+
+</h5>
+<div class="content">Jenn is a fabulous program for visualizing the Cayley graphs of finite Coxeter groups.  The pictures are absolutely beautiful (oh, symmetry!).
+
+</div>
+<p><a href="/blog/coxeter-group-visualization">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/open-parenthesis">On forgetting to close parentheses.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-11-22 23:27:23 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">Sometimes I’m scared that, at some point in my past, I opened a pair of parentheses without closing them.  Even worse, I’m sure I’ve feared this very thing in the past.
+
+Then again, maybe this is the common fear of all schemers: that our whole lives might now be a parenthetical comment.
+
+</div>
+<p><a href="/blog/open-parenthesis">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/approximating-l2-invariants-by-finite-dimensional-analogues">Approximating L^2 invariants by finite-dimensional analogues.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-11-22 22:42:51 +0000</span>
+
+<span class="badge badge-default">talks</span>
+
+</h5>
+<div class="content">I gave a couple of seminar talks on MR1280122 Here’s the main result in the paper. Let $X$ be a CW-complex, and filter $\Gamma = \pi_1 X$ as $\Gamma = \Gamma_1 \rhd \Gamma_2 \rhd \cdots$ with $[\Gamma_i : \Gamma_{i+1}] &lt; \infty$ so that $\bigcap_i \Gamma_i = { 1 }$. Let $X_i$ be the cover of $X$ corresponding to the normal subgroup $\Gamma_i$. Then, the limit of the “normalized” Betti numbers $\lim_{j \to \infty} b_j( X_i...</div>
+<p><a href="/blog/approximating-l2-invariants-by-finite-dimensional-analogues">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/must-needs-when-did-this-happen">Must needs?  When did this happen?</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-11-17 19:49:15 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">Perhaps a half-dozen times in the past week, I’ve read sentences with contain the phrase “must needs.” I have never considered this construction before; frankly, it sounds totally bizarre to my inner ear (my spiritual inner ear, that is). Thus, it must needs be that I’ve been teleported to another world, a world in which the English language developed differently than it did in the world from which I came. This tiny grammatical gem is...</div>
+<p><a href="/blog/must-needs-when-did-this-happen">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/algebraic-topology-and-distributed-computing">Algebraic topology and distributed computing.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-11-06 19:54:26 +0000</span>
+
+<span class="badge badge-default">talks</span>
+
+</h5>
+<div class="content">I gave a seminar talk on MR1389577 This paper doesn’t do it (but Rajsbaum’s MSRI talk did), but the result can be reformulated combinatorially, so that the algebraic topology appears as an instance of Sperner’s lemma; this is the sort of thing that should be done at mathcamp. Here is something that amuses me, but I know that if anyone else said it, I would find it extraordinarily annoying: seeing as these results apply to...</div>
+<p><a href="/blog/algebraic-topology-and-distributed-computing">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/want-to-be-my-roommate">Want to be my roommate?</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-11-04 04:34:31 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">I’m still trying to find (two!) new roommates (since my current roommate bought a place, and is moving out on December 15th).  If you know anybody who would like to move in with me, I’d love to know about it.
+
+There are some pictures of my home.
+
+</div>
+<p><a href="/blog/want-to-be-my-roommate">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/alphabet-songs">Alphabet Songs.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-10-23 17:29:42 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">I wonder if anyone knows about alphabet songs in other languages? I’d be particularly interested in knowing about Greek and Hebrew alphabet songs, and a bit about the history of such things. It seems like these songs must be used primarily to teach the lexicographic ordering of the letters; I suppose the Latin alphabet is ordered in keeping with the Greek alphabet, and so forth, but why did the early alphabets get placed in the...</div>
+<p><a href="/blog/alphabet-songs">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/efficient-construction-of-the-reals">Efficient construction of the reals.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-10-20 04:48:38 +0000</span>
+
+<span class="badge badge-default">mathematics</span>
+
+</h5>
+<div class="content">Today in Geometry/Topology seminar, quasihomomorphisms $\mathbb{Z} \to \mathbb{Z}$ were discussed, i.e., the set of maps $f : \mathbb{Z} \to \mathbb{Z}$ such that $| f(a+b) - f(a) - f(b) |$ is uniformly bounded, modulo the relation of being a bounded distance apart. These come up when defining rotation and translation numbers, for instance. Anyway, Uri Bader mentioned that these quasihomomorphisms form a field, isomorphic to $\R$, under pointwise addition and composition. I hadn't realized that this...</div>
+<p><a href="/blog/efficient-construction-of-the-reals">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/outer-space-and-real-aliens">Outer Space.  And real aliens.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-10-10 22:47:07 +0000</span>
+
+<span class="badge badge-default">mathematics</span>
+
+</h5>
+<div class="content">There are some questions about outer space that I would like to be able to answer. Some nice survey articles look to be: MR1957048 and also: MR1950871 Here is a ridiculously simple question I have wondered about: given $A, B \subset F_n$, say with $[F_n : A] = [F_n : B]$, how can I tell if $A$ and $B$ are conjugate? I suspect I’m being stupid here. In light of my recent comments on LINCOS...</div>
+<p><a href="/blog/outer-space-and-real-aliens">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/pineapple-sauce-pancakes">Pineapple sauce Pancakes.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-10-08 02:59:49 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">I’m fond of the Pineapple Sauce Pancake graph: the vertices are English words, and there is an edge from $a$ to $b$ if $ab$ is also an English word (e.g., “pan” and “cake” are English words, and there is an edge from “pan” to “cake” because “pancake” is also an English word). To play around with this, I wrote a Javascript program, complete with a Web 2.0 logo–which reminds me, I wonder if there is...</div>
+<p><a href="/blog/pineapple-sauce-pancakes">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/oh-what-the-aliens-think-of-us-now">Oh what the aliens think of us now!</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-10-05 06:09:15 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">I’ve spent a lot of time constructing languages (Kisonef and Naedari being my favorites); in a similar vein, I also tried to create a language that an alien civilization would be able to understand. I had hoped to put a message written in my universal language in a conspicuous place (say, on a college campus), just to test if what I made really was understandable, even to humans! But I never got around to that,...</div>
+<p><a href="/blog/oh-what-the-aliens-think-of-us-now">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/the-end-of-co-op">The end of Co-Op?</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-10-04 05:22:06 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">Last night, there was a terrible thunderstorm in Chicago; I’ve never seen so many trees on the road! I was supposed to land at Midway at 7:30pm last night, but we were diverted to Indianapolis, so I didn’t land in Chicago until 2:00am, and then I waited until 3:00am to get a taxi, so I didn’t get home until almost 4:00am. Crazy! My house lost power last night, and today some places are still without...</div>
+<p><a href="/blog/the-end-of-co-op">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/detecting-cat-like-typing">Detecting &#8220;cat-like&#8221; typing.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-09-27 20:51:06 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">There is a program called PawSense for Windows which detects “cat-like” typing, and then prevents further keyboard entry. I found some code for filtering keyboard events on Mac OS X, and I wanted to implement something similar. But this raises an interesting question: just what characterizes “cat-like” typing? The PawSense website suggested that cat paws are very broad, and usually strike nearby keys simultaneously. Another idea is to detect “human-like” typing and then freeze the...</div>
+<p><a href="/blog/detecting-cat-like-typing">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/more-car-trouble">More car trouble.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-09-26 17:51:39 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">This morning I went to the car to see if I could start it, and at least move it back and forth a bit (as I still don’t have my license). Fortunately, the car started! Unfortunately, the clutch doesn’t seem to do anything. I am holding down the clutch while the car starts, but then I can’t shift into reverse: all I hear is gear-grinding. I can’t shift into first at all; the knob won’t...</div>
+<p><a href="/blog/more-car-trouble">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/and-i-was-taking-a-bath">And I was taking a bath&#8230;</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-09-26 04:11:26 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">Two interesting things about taking a bath… The first was, while singing in the bathtub, I hit a resonant frequency, and I wondered: what can be deduced about the shape of my bathtub (well, bathroom) from this frequency? The second was that I heard something fall into Tasha’s water dish; thinking nothing of it, I was rather shocked (well, not literally shocked, but…) to find that it was my cell phone that had fallen into...</div>
+<p><a href="/blog/and-i-was-taking-a-bath">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/kolmogorov-complexity">Kolmogorov complexity.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-09-25 20:22:21 +0000</span>
+
+<span class="badge badge-default">computer</span>
+
+<span class="badge badge-default">science</span>
+
+</h5>
+<div class="content">Here are some very ill-thought-out ideas on Kolmogorov complexity.We define a metric on the space of bit-strings $\Sigma^\star$. For a universal Turing machine $T$, let $d_T(x,y)$ be the "length" of the shortest program that outputs $y$ on input $x$, or outputs $x$ on input $y$. This should measure how difficult it is to "relate" $x$ and $y$.The ends of the metric space $(\Sigma^\star, d_T)$ should correspond to infinite random bitstrings, and because choosing a different...</div>
+<p><a href="/blog/kolmogorov-complexity">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/tasha-drops-things-in-water">Tasha drops things in water.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-09-23 06:32:00 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">Often, Tasha picks something up (say, a pen, or a lego), carries it around, and then drops it into her water bowl. I have no idea what she is thinking when she does this. On the topic of cat thoughts, the Wikipedia article on cats observes: Some theories suggest that cats see their owners gone for long times of the day and assume they are out hunting, as they always have plenty of food available....</div>
+<p><a href="/blog/tasha-drops-things-in-water">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/euler-characteristic-of-closed-hyperbolic-4-manifolds">Euler characteristic of closed hyperbolic 4-manifolds.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-09-22 20:18:50 +0000</span>
+
+<span class="badge badge-default">mathematics</span>
+
+</h5>
+<div class="content">By the Gauss-Bonnet theorem, the volume of a hyperbolic 4-manifold is proportional to its Euler characteristic. There are examples, constructed explicitly in MR1758804 of hyperbolic 4-manifolds with every positive integer as their Euler characteristic. These examples are non-compact (with five or six cusps, I believe). But MR2191252 observes that there are restrictions on the Euler characteristic that a closed hyperbolic 4-manifold may possess. In particular, it is shown in MR0075647 that the Pontrjagin numbers of...</div>
+<p><a href="/blog/euler-characteristic-of-closed-hyperbolic-4-manifolds">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/im-back-home-in-chicago">I&#8217;m back home, in Chicago.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-09-18 18:31:35 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">I left California far too quickly: some people that I had really wanted to see I didn’t get to see. But I got to spend a lot of time with my dad, which was excellent, and the conferences and Berkeley itself were a lot of fun. I understand why clutching functions are called clutching functions: a automobile’s clutch transmits rotation from one object to another under the control of the driver, and a clutching function...</div>
+<p><a href="/blog/im-back-home-in-chicago">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/non-arithmetic-lattices">Non-arithmetic lattices.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-09-14 16:56:03 +0000</span>
+
+<span class="badge badge-default">mathematics</span>
+
+</h5>
+<div class="content">MR0932135 Vinberg, … Margulis’ amazing arithmeticity theorem says that irreducible lattices in Lie groups of high ($&gt;2$) rank are arithmetic. But ${\rm SO}(n,1)$ has rank 1, so a question is how to produce non-arithmetic lattices. For ${\rm SO}(3,1)$, there are non-arithmetic lattices coming from hyperbolic knot complements. G–P-S produces higher dimensional examples by taking two hyperbolic (arithmetic) manifolds, cutting along totally geodesic hypersurfaces, and gluing. Are there are examples of non-arithmetic hyperbolic manifolds without any...</div>
+<p><a href="/blog/non-arithmetic-lattices">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/public-transportation-is-awesome">Public transportation is awesome.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-09-12 16:48:38 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">I am still in California, and very much enjoying public transportation. Yesterday, I took AC Transit’s 65 bus (the “Euclid” bus) along an extremely (and therefore ironically) curvy road to get off the mountain of MSRI. (The “mountain of misery” belongs in a fantasy novel.) There’s a lot of people in California I would still like to see. Here is a really stupid question: If I have a wire (with a changing current) and I...</div>
+<p><a href="/blog/public-transportation-is-awesome">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/im-in-california-i-read-digital-fortress">I&#8217;m in California.  I read Digital Fortress.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-09-03 20:28:03 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">I’ve made it to Los Altos: I’m going to be staying with my dad, but during the next couple weeks visiting Berkeley to go to a conference, and to meet up with my advisor. I ended up talking Route 22 on VTA, and then walking a few miles to go here, in the dark, using GPS to guide me. I was amazed that this method worked! I guess I should warn you that I am...</div>
+<p><a href="/blog/im-in-california-i-read-digital-fortress">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/anime-cats-sufjan-stevens-again">Anime.  Cats.  Sufjan Stevens, again.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-09-02 03:10:17 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">I watched Neon Genesis Evangelion this summer again, and I’m watching El Hazard now. I am extremely tempted to purchase Mysterious Cities of Gold DVD’s—does anyone else remember how awesome that was? My cat Tasha is beautiful, and I will miss her while I am in Berkeley. I am extraordinarily excited by the possibility that Sufjan Stevens might, in his epic quest to author a musical tribute for all 50 states, choose Minnesota next. Perhaps...</div>
+<p><a href="/blog/anime-cats-sufjan-stevens-again">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/forget-me-not">Forget Me Not.  Undo.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-09-01 01:47:56 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">My Forget Me Not plug-in for Safari was reviewed on MacWorld! MacWorld Apple Matters MacUser It’s great to read the comments and find out what users wish were different: a lot of people don’t just want to Unclose Window but also Unclose Tab. For me, I really would have liked to have Unclose Window be underneath the Edit menu, but because the undo hierarchy is linked to the window (i.e., when you switch windows, the...</div>
+<p><a href="/blog/forget-me-not">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/friends">Friends&#8230;</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-08-22 22:54:09 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+</h5>
+<div class="content">In August, two of my friends from college have died: Daniel Bartlett and Michelle Knapp.  I’m not sure what else I can say; I remember them so clearly…
+
+</div>
+<p><a href="/blog/friends">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/tannakian-philosophy">Tannakian Philosophy</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-08-16 20:35:09 +0000</span>
+
+<span class="badge badge-default">mathematics</span>
+
+</h5>
+<div class="content">From Recent Advances in the Langlands Program, quoted in This Week’s Finds: First of all, it should be remarked that according to the Tannakian phylosophy, one can reconstruct a group from the category of its finite-dimensional representations, equipped with the structure of the tensor product. I suppose one should think of this as the categorification of Pontrjagin duality? For a long while, I had wondered how this goes; this Introduction to Tannaka Duality and Quantum...</div>
+<p><a href="/blog/tannakian-philosophy">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/finite-subgroups-of-rotation-groups">Finite subgroups of rotation groups.</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-04-05 23:12:49 +0000</span>
+
+<span class="badge badge-default">mathematics</span>
+
+</h5>
+<div class="content">Here is a question that I haven’t been able to find very much about:
+
+
+  What are the finite subgroups of the rotation groups $SO(n)$?
+
+
+For examples, I can take a Coxeter group, and choose elements corresponding to rotations (e.g., the subgroup generated by products of generators), but that’s not going to produce very many examples.
+
+</div>
+<p><a href="/blog/finite-subgroups-of-rotation-groups">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/3-manifolds">Orientable 3-manifolds are parallelizable</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-03-05 10:02:05 +0000</span>
+
+<span class="badge badge-default">mathematics</span>
+
+</h5>
+<div class="content">Here's a very easy theorem.Theorem. All closed orientable 3-manifolds are parallelizable. All closed orientable 3-manifolds are the boundary of a 4-manifold. Proof. Let $M$ be an orientable $3$-manifold. Recall that the Wu class $v$ is the unique cohomology class such that $\langle v \cup x, [M] \rangle = \langle Sq(x), [M] \rangle$, and Wu's theorem says that $w(M) = Sq(v)$. The up-shot is that Stiefel-Whitney classes are homotopy invariants, even though they are defined using...</div>
+<p><a href="/blog/3-manifolds">Read more &raquo</a></p>
+
+<hr/>
+<h2><a href="/blog/research-blog">Research Blog</a></h2>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2006-03-05 03:57:51 +0000</span>
+
+<span class="badge badge-default">general</span>
+
+</h5>
+<div class="content">I’ve been thinking for a while that I ought to start a research blog–something just to keep myself organized about the things I am thinking about, my thoughts on the papers I’ve read, my ideas, my questions. I figure I might as well make it public, though I seriously doubt anyone is going to read this.
+
+Anyway, hence this blog. We’ll see how it works.
+
+</div>
+<p><a href="/blog/research-blog">Read more &raquo</a></p>
+
+</main><footer><div class="container-fluid"><hr/><ul class="pull-right"><li><a class="socialmedia" href="http://www.facebook.com/kisonecat"><i class="fa fa-facebook-square"></i> Facebook</a></li><li><a class="socialmedia" href="https://github.com/kisonecat"><i class="fa fa-github-alt"></i> GitHub</a></li><li><a class="socialmedia" href="http://www.weibo.com/u/3696948727"><i class="fa fa-weibo"></i> Weibo</a></li><li><a class="socialmedia" href="http://arxiv.org/find/math/1/au:+Fowler_J/0/1/0/all/0/1"><i class="fa fa-file-alt"></i> arXiv</a></li><li><a class="socialmedia" href="/feed.xml"><i class="fa fa-rss"></i> RSS</a></li><li><a class="socialmedia" href="http://plus.google.com/116216190446738539368/"><i class="fa fa-google-plus"></i> Google Plus</a></li><li><a class="socialmedia" href="http://www.youtube.com/kisonecat"><i class="fa fa-youtube"></i> YouTube</a></li><li><a class="socialmedia" href="http://www.twitter.com/kisonecat"><i class="fa fa-twitter"></i> Twitter</a></li><li><a class="socialmedia" href="http://www.flickr.com/photos/kisonecat"><i class="fa fa-flickr"></i> Flickr</a></li></ul><p class="muted">&copy; 2017, Jim Fowler.</p><dl><dt>Phone</dt><dd><a href="https://clients4.google.com/voice/embed/webCallButton?id=54eeaacf921a90533693f59425514b0be0223330"><span class="phone">(773) xxx-5659</span></a></p></dd><dt>Email</dt><dd><a href='#' class="email"><span class="email">my last name at math dot osu dot edu</span></a></p></dd><dt>Postal Address</dt><dd><div class="postal-address"><a href="http://www.math.osu.edu/">OSU Department of Mathematics</a><br/>100 Math Tower<br/>231 West 18th Avenue<br/>Columbus, OH 43210-1174</p></div></dd></dl></div></footer><script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script><script type="text/javascript" src="/javascripts/pretty-print-dates.js">   </script><script type="text/javascript" src="/javascripts/personal-details.js"></script><script type="text/javascript">var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-558855-4']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();</script></body></html>

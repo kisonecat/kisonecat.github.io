@@ -1,0 +1,57 @@
+mixin bibliographyEntry(paper)
+  - function cleanTex(x) {
+  -   return x.replace('{$K$}','$K$').replace('~','&nbsp;').replace(/{([A-Z])}/, '$1').replace( '~', '&nbsp;' ).replace( '\bysame', '---' ).replace( /\\MR\{MR(.*?) (.*?)\}/, '<a href="http://www.ams.org/mathscinet-getitem?mr=\1">MR\1 \2</a>' ).replace( /\\MR\{MR([^ ]*?)\}/, '<a href="http://www.ams.org/mathscinet-getitem?mr=\1">MR\1</a>' ).replace( /\\MR\{([^ ]*?)\}/, '<a href="http://www.ams.org/mathscinet-getitem?mr=\1">MR\1</a>' ).replace( /\\textbf\{(.*?)\}/, '<b>\1</b>' ).replace( /\\emph\{(.*?)\}/, '<i>\1</i>' ).replace( /\{(.*?)\}/, '\1' ).replace( /\{(.*?)\}/, '\1' ).replace( '\ ', '&nbsp;' ).replace( '``', '&ldquo;' ).replace( "''", '&rdquo;' ).replace( '---', '&mdash;' ).replace( '--', '&ndash;' ).replace( '\bf', '' ).replace( /\\\i/, 'i' ).replace( /\\\'(.)/, '&$1acute;' ).replace( /\\\"(.)/, '&$1uml;' ).replace( /\\\`(.)/, '&$1grave;' ).replace( /\\\.Z/, '&#379;' ).replace( /\\sp (.)/, '<sup>\1</sup>' );
+  - }
+  if paper.entryType == 'ARTICLE'
+    p.bibliography-item !{cleanTex(paper.AUTHOR)} (#{paper.YEAR}). !{cleanTex(paper.TITLE)}. #{paper.JOURNAL}
+      if paper.VOLUME
+        |, Volume #{paper.VOLUME}
+      if paper.PAGES
+        |, !{paper.PAGES.replace('--','&ndash;')}
+      if paper.NOTE
+        |, !{paper.NOTE}
+      |.
+  if paper.entryType == 'BOOK'  
+    p.bibliography-item !{cleanTex(paper.AUTHOR)} (#{paper.YEAR}). !{cleanTex(paper.TITLE)}.  #{paper.PUBLISHER}.
+  if paper.entryType == 'INCOLLECTION'
+    p.bibliography-item !{cleanTex(paper.AUTHOR)} (#{paper.YEAR}). !{cleanTex(paper.TITLE)}. !{cleanTex(paper.BOOKTITLE)}, !{paper.PAGES.replace('--','&ndash;')}.
+
+mixin projectRow(project)
+  .row
+    if project.thumbnail()
+      .col-sm-10
+        if project.joint
+          h4 
+            a(href=project.url) #{project.title}
+            | 
+            small Joint work with #{project.joint.join( ', ' )}
+        else
+          h4 
+            a(href=project.url) #{project.title}
+
+        if project.hasOwnProperty('summary')
+          !=project.summary()
+          p
+            a(href=project.url) Read more &raquo
+        else
+          !=project.jade()
+      .col-sm-2
+        a.thumbnail(href=project.url)
+          img(src=project.thumbnail())
+    if !project.thumbnail()
+      .col-sm-12
+        if project.joint
+          h4 
+            a(href=project.url) #{project.title}
+            | 
+            small Joint work with #{project.joint.join( ', ' )}
+        else
+          h4 
+            a(href=project.url) #{project.title}
+
+        if project.hasOwnProperty('summary')
+          !=project.summary()
+          p
+            a(href=project.url) Read more &raquo
+        else
+          !=project.jade()

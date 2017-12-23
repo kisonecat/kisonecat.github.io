@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-12-23T01:25:37-05:00</updated><id>/</id><title type="html">k = 1 cat - Jim Fowler</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Easy cases of the volume conjecture?</title><link href="/blog/volume-conjecture" rel="alternate" type="text/html" title="Easy cases of the volume conjecture?" /><published>2013-11-18T05:00:00-05:00</published><updated>2013-11-18T05:00:00-05:00</updated><id>/blog/volume-conjecture</id><content type="html" xml:base="/blog/volume-conjecture">&lt;p&gt;The &lt;a href=&quot;http://en.wikipedia.org/wiki/Volume_conjecture&quot;&gt;volume conjecture&lt;/a&gt; relates the hyperbolic volume of a knot complement to quantum invariants of the knot.  Specifically, the conjecture is that
+  &lt;script type=&quot;math/tex&quot;&gt;\operatorname{Vol}(S^3 \setminus K) = \lim_{N \to \infty} \frac{2 \pi \log |J_N(K;\xi_N)|}{N}&lt;/script&gt;
+  where $J_N$ computes the colored &lt;a href=&quot;http://en.wikipedia.org/wiki/Jones_polynomial&quot;&gt;Jones polynomial&lt;/a&gt; and $\xi_N = e^{2\pi i / N}$.  For some knots $K$, there are nice formulas for $J_N(K;\xi_N)$.  For instance, if $K$ is the figure eight knot, then &lt;a href=&quot;http://arxiv.org/abs/1002.0126&quot;&gt;$J_N(K;q)$ can be written as&lt;/a&gt;
+  &lt;script type=&quot;math/tex&quot;&gt;J_N(K;q) = \sum_{j=0}^{N-1} \prod_{\substack{k=-j \\ k \neq 0}}^j \left(q^{(N-k)/2} - q^{-(N-k)/2}\right).&lt;/script&gt;
+  When $q = \xi_N$ and one takes the limit, this sum transforms quite nicely into the Riemann sum which computes $6 \,\Lambda(\pi/3)$, which is the hyperbolic volume of the figure eight knot complement.&lt;/p&gt;
+
+&lt;p&gt;Are there other cases in which one can verify the volume conjecture directly by finding a nice form for the colored Jones polynomial?  &lt;a href=&quot;http://www.ams.org/mathscinet-getitem?mr=2779434&quot;&gt;Yamazaki-Yokota in “On the limit of the colored Jones polynomial of a non-simple link”&lt;/a&gt; verified, in the same direct way, the volume conjecture for a certain link with volume $6\,\Lambda(\pi/3)+16\,\Lambda(\pi/4)$.  I hope one could find other examples by searching for links and knots with “nice” volumes in terms of the Lobachevsky function $\,\Lambda$.&lt;/p&gt;
+
+&lt;p&gt;From my search with  &lt;a href=&quot;http://www.math.uic.edu/t3m/SnapPy/doc/&quot;&gt;SnapPy&lt;/a&gt;,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the &lt;a href=&quot;http://katlas.math.toronto.edu/wiki/L6a2&quot;&gt;link $6^2_2$ in Rolfsen's table&lt;/a&gt; has volume $12 \,\Lambda(\pi/3)$,&lt;/li&gt;
+&lt;li&gt;the &lt;a href=&quot;http://katlas.math.toronto.edu/wiki/L8a20&quot;&gt;link $8^3_4$ in Rolfsen's table&lt;/a&gt; has volume $30 \,\Lambda(\pi/3)$, and&lt;/li&gt;
+&lt;li&gt;the &lt;a href=&quot;http://katlas.math.toronto.edu/wiki/9_41&quot;&gt;knot $9_{41}$&lt;/a&gt; volume $44 \,\Lambda(\pi/5) - 24 \,\Lambda(3 \pi/10) + 2 \,\Lambda(3 \pi/5)$.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Of course, there are lots of nonhyperbolic knots and it is hard to prove the volume conjecture even for those, in spite of the fact that their hyperbolic volume is “really nice” (namely, zero!).&lt;/p&gt;</content><author><name></name></author><category term="mathematics" /><summary type="html">The volume conjecture relates the hyperbolic volume of a knot complement to quantum invariants of the knot. Specifically, the conjecture is that where $J_N$ computes the colored Jones polynomial and $\xi_N = e^{2\pi i / N}$. For some knots $K$, there are nice formulas for $J_N(K;\xi_N)$. For instance, if $K$ is the figure eight knot, then $J_N(K;q)$ can be written as When $q = \xi_N$ and one takes the limit, this sum transforms quite nicely into the Riemann sum which computes $6 \,\Lambda(\pi/3)$, which is the hyperbolic volume of the figure eight knot complement. Are there other cases in which one can verify the volume conjecture directly by finding a nice form for the colored Jones polynomial? Yamazaki-Yokota in “On the limit of the colored Jones polynomial of a non-simple link” verified, in the same direct way, the volume conjecture for a certain link with volume $6\,\Lambda(\pi/3)+16\,\Lambda(\pi/4)$. I hope one could find other examples by searching for links and knots with “nice” volumes in terms of the Lobachevsky function $\,\Lambda$.</summary></entry><entry><title type="html">Reflecting Triangles, live</title><link href="/blog/reflecting-triangles-live" rel="alternate" type="text/html" title="Reflecting Triangles, live" /><published>2011-02-23T03:05:21-05:00</published><updated>2011-02-23T03:05:21-05:00</updated><id>/blog/reflecting-triangles-live</id><content type="html" xml:base="/blog/reflecting-triangles-live">&lt;p&gt;A while back I made some movies which began with a triangle in the
+plane, reflected that triangle through its three sides, reflected
+those triangles through their sides, and so forth.  The interesting
+result is that for only four shapes of triangles, the resulting set
+of triangle vertices is discrete.&lt;/p&gt;
+&lt;p&gt;
+Using &lt;a href=&quot;http://raphaeljs.com/&quot;&gt;Raphael&lt;/a&gt; and a plane geometry
+package that I wrote, I quickly redid this visualization in
+Javascript; you can now move the vertices around to see the effect on
+the reflected triangles.&lt;/p&gt;
+
+&lt;script src=&quot;raphael-min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;script src=&quot;geometry.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;div class=&quot;canvas&quot; id=&quot;sample&quot; /&gt;
+
+&lt;script language=&quot;javascript&quot;&gt;
+
+var element = document.getElementById(&quot;sample&quot;);
+var width = 400;
+var height = width * 0.7;
+var paper = Raphael(element, width, height);
+console.log(width);
+pA = paper.geometry.point( 0.5*width, 0.8*height );
+pB = paper.geometry.point( 0.25*width, 0.5*height );
+pC = paper.geometry.point( 0.5*width, 0.25*height );
+/*
+paper.geometry.label( pA, &quot;A&quot; );
+paper.geometry.label( pB, &quot;B&quot; );
+paper.geometry.label( pC, &quot;C&quot; );
+*/
+
+sC = paper.geometry.segment( pA,pB );
+sA = paper.geometry.segment( pB,pC );
+sB = paper.geometry.segment( pC,pA );
+sA.attr({&quot;stroke-width&quot;:3});
+sB.attr({&quot;stroke-width&quot;:3});
+sC.attr({&quot;stroke-width&quot;:3});
+
+points = new Object();
+
+points[&quot;A&quot;] = pA;
+points[&quot;B&quot;] = pB;
+points[&quot;C&quot;] = pC;
+
+function simplify(string) {
+    var first = string.slice(0,1);
+    var rest = string.slice(1, string.length);
+    if (rest.indexOf(first) &lt; 0)
+	return first;
+
+    return first + rest.slice( rest.indexOf(first), rest.length );
+}
+
+function string_to_point( string ) {
+    if (points[string] != null) {
+	return points[string];
+    }
+
+    var head = string.slice(0, string.length - 1);
+    var tail = string.charAt(string.length - 1);
+    var point = string_to_point( head );
+    var line = {A:sA, B:sB, C:sC}[tail];
+
+    var reflected = paper.geometry.point_reflected( line, point );
+    reflected.attr( {r:0} );
+    //paper.geometry.label( reflected, string );
+    points[string] = reflected;
+
+    var first = string.charAt(0);
+    var rest = string.slice(1, string.length);
+    var other = {A:&quot;B&quot;, B:&quot;C&quot;, C:&quot;A&quot;}[first];
+    var another = {A:&quot;C&quot;, B:&quot;A&quot;, C:&quot;B&quot;}[first];
+    
+    var other_code = simplify(other + rest);
+    var another_code = simplify(another + rest);
+    
+    var s1 = paper.geometry.segment( reflected, string_to_point( other_code ) );
+    var s2 = paper.geometry.segment( reflected, string_to_point( another_code ) );
+
+    var opacity = 1.0 / string.length;
+    var linewidth = 4.0 / string.length;
+    s1.attr( {opacity: opacity, &quot;stroke-width&quot;: linewidth} );
+    s2.attr( {opacity: opacity, &quot;stroke-width&quot;: linewidth} );
+
+    return reflected;
+}
+
+function list_codes( depth )
+{
+    if (depth == 1)
+	return [&quot;AA&quot;,&quot;BB&quot;,&quot;CC&quot;];
+
+    var result = new Array();
+    var codes = list_codes( depth - 1 );
+    for( var i in codes ) {
+	code = codes[i];
+	var last = code.slice(code.length-1,code.length);
+	var other = {A:&quot;B&quot;, B:&quot;C&quot;, C:&quot;A&quot;}[last];
+	var another = {A:&quot;C&quot;, B:&quot;A&quot;, C:&quot;B&quot;}[last];
+	codes = codes.concat( [code + other, code + another] );
+    }
+
+    return codes;
+}
+
+var codes = list_codes( 5 );
+for( var i in codes ) {
+    var code = codes[i];
+    string_to_point(code);
+}
+
+&lt;/script&gt;</content><author><name></name></author><category term="personal" /><category term="mathematics" /><summary type="html">A while back I made some movies which began with a triangle in the plane, reflected that triangle through its three sides, reflected those triangles through their sides, and so forth. The interesting result is that for only four shapes of triangles, the resulting set of triangle vertices is discrete. Using Raphael and a plane geometry package that I wrote, I quickly redid this visualization in Javascript; you can now move the vertices around to see the effect on the reflected triangles.</summary></entry><entry><title type="html">Culturomics</title><link href="/blog/culturomics" rel="alternate" type="text/html" title="Culturomics" /><published>2010-12-18T04:02:45-05:00</published><updated>2010-12-18T04:02:45-05:00</updated><id>/blog/culturomics</id><content type="html" xml:base="/blog/culturomics">&lt;p&gt;I have really fallen in love with &lt;a href=&quot;http://ngrams.googlelabs.com/&quot;&gt;Google Books Ngram Viewer&lt;/a&gt;, so I thought I'd do a little ``&lt;a href=&quot;http://www.sciencemag.org/content/early/2010/12/15/science.1199644&quot;&gt;culturomics&lt;/a&gt;'' myself.  Here's an image I made using &lt;a href=&quot;http://ngrams.googlelabs.com/datasets&quot;&gt;Google's data&lt;/a&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;displayedMedia&quot;&gt;&lt;a href=&quot;raster-original.png&quot; title=&quot;Numbers in Print&quot;&gt;&lt;img src=&quot;raster-small.png&quot; alt=&quot;Numbers in Print&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;The brightness of the pixel at position $(x,y)$ is related to
+how frequently ``$x$'' appears in books published in
+the year $y$.  Specifically, if $p$ is the number of times ``$x$''
+appears in print during year $y$, divided by the number of times any
+number less than 2100 appears in print during that year, then $(1 -
+p)^{1500}$ is the brightness of the pixel at $(x,y)$.&lt;/p&gt;
+
+&lt;p&gt;The dark, diagonal edge along the right hand side appears because
+in year $y$ there are many published appearances of numbers near $y$.&lt;/p&gt;
+
+&lt;div class=&quot;displayedMedia&quot;&gt;&lt;img src=&quot;dark-diagonal-edge.png&quot; alt=&quot;Dark diagonal edge&quot; /&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;b&gt;World events have left their mark on the numbers appearing in books!&lt;/b&gt;  For example, 1914 is still being talked about long after 1914, as evidenced by the darker line above 1914.&lt;/p&gt;
+
+&lt;p&gt;If we look at numbers just above 1000 and turn up the contrast a bit,&lt;/p&gt;
+
+&lt;div class=&quot;displayedMedia&quot;&gt;&lt;img src=&quot;around-one-thousand.png&quot; alt=&quot;Around one thousand&quot; /&gt;&lt;/div&gt;
+
+&lt;p&gt;we see an echo of the dark diagonal, from people writing (or more likely, the OCR software reading) zero instead of nine in the year.  There's a dark column for the Norman conquest in 1066; a number like $2^{10} = 1024$ was not so important until the 20th century.&lt;/p&gt;
+
+&lt;p&gt;If we look at numbers just above 1300,&lt;/p&gt;
+
+&lt;div class=&quot;displayedMedia&quot;&gt;&lt;img src=&quot;above-1300.png&quot; alt=&quot;Above 1300&quot; /&gt;&lt;/div&gt;
+
+&lt;p&gt;we can see an diagonal line from 1800s being read as 1300s, and a dark vertical line above 1453 (the ``end'' of the middle ages).  In the 18th century,&lt;/p&gt;
+
+&lt;div class=&quot;displayedMedia&quot;&gt;&lt;img src=&quot;above-1700.png&quot; alt=&quot;Above 1700&quot; /&gt;&lt;/div&gt;
+
+&lt;p&gt;1776 is quite visible.  &lt;b&gt;And finally, a puzzle:&lt;/b&gt;&lt;/p&gt;
+
+&lt;div class=&quot;displayedMedia&quot;&gt;&lt;img src=&quot;why-2044.png&quot; alt=&quot;Why 2044&quot; /&gt;&lt;/div&gt;
+
+&lt;p&gt;Why was ``2044'' so significant until the 1920s?&lt;/p&gt;
+
+&lt;div class=&quot;displayedMedia&quot;&gt;&lt;a href=&quot;http://ngrams.googlelabs.com/graph?content=2043,2044,2045&amp;amp;year_start=1800&amp;amp;year_end=2000&amp;amp;corpus=0&amp;amp;smoothing=0&quot;&gt;&lt;img width=&quot;500px&quot; src=&quot;2044-graph.png&quot; alt=&quot;2043,2044,2045 in Google ngrams viewer&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;I'd love to know the answer to this question.  The only thing I can guess that might relate the year 1919 to the year 2044 is solar eclipses.&lt;/p&gt;</content><author><name></name></author><category term="linguistics" /><category term="history" /><summary type="html">I have really fallen in love with Google Books Ngram Viewer, so I thought I'd do a little ``culturomics'' myself. Here's an image I made using Google's data: The brightness of the pixel at position $(x,y)$ is related to how frequently ``$x$'' appears in books published in the year $y$. Specifically, if $p$ is the number of times ``$x$'' appears in print during year $y$, divided by the number of times any number less than 2100 appears in print during that year, then $(1 - p)^{1500}$ is the brightness of the pixel at $(x,y)$. The dark, diagonal edge along the right hand side appears because in year $y$ there are many published appearances of numbers near $y$. World events have left their mark on the numbers appearing in books! For example, 1914 is still being talked about long after 1914, as evidenced by the darker line above 1914. If we look at numbers just above 1000 and turn up the contrast a bit, we see an echo of the dark diagonal, from people writing (or more likely, the OCR software reading) zero instead of nine in the year. There's a dark column for the Norman conquest in 1066; a number like $2^{10} = 1024$ was not so important until the 20th century. If we look at numbers just above 1300, we can see an diagonal line from 1800s being read as 1300s, and a dark vertical line above 1453 (the ``end'' of the middle ages). In the 18th century, 1776 is quite visible. And finally, a puzzle: Why was ``2044'' so significant until the 1920s? I'd love to know the answer to this question. The only thing I can guess that might relate the year 1919 to the year 2044 is solar eclipses.</summary></entry><entry><title type="html">Many more Lights Out</title><link href="/blog/many-more-lights-out" rel="alternate" type="text/html" title="Many more Lights Out" /><published>2010-07-16T20:05:32-04:00</published><updated>2010-07-16T20:05:32-04:00</updated><id>/blog/many-more-lights-out</id><content type="html" xml:base="/blog/many-more-lights-out">&lt;p&gt;A very long while ago I posted some &lt;a href=&quot;/~fowler/blog/posts/solutions-to-lights-out/&quot;&gt;solutions to Lights Out&lt;/a&gt;; back then, I solved the $n$-by-$n$ board by row-reducing an $n^2$-by-$n^2$ matrix.&lt;/p&gt;
+
+&lt;p&gt;Since then, both &lt;a href=&quot;https://pantherfile.uwm.edu/okun/www/&quot;&gt;Boris Okun&lt;/a&gt; and &lt;a href=&quot;http://www.facebook.com/bwerness&quot;&gt;Brent Werness&lt;/a&gt; pointed out to me that I should've solved Lights Out by using a &lt;em&gt;scanning algorithm&lt;/em&gt;: propagating the button presses down one row at a time, and exponentiating the propagation matrix to make sure that I don't get stuck at the last row.&lt;/p&gt;
+
+&lt;p&gt;This is much faster.&lt;/p&gt;
+
+&lt;p&gt;With this method, here is a (scaled down, auto-leveled) 2000-by-2000 solution:&lt;/p&gt;
+&lt;div class=&quot;displayedMedia&quot;&gt;&lt;a href=&quot;lights-2000.png&quot; title=&quot;Solution to 2000x2000 Lights Out&quot;&gt;&lt;img src=&quot;small-2000.png&quot; alt=&quot;Solution to 2000x2000 Lights Out&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;And here is a (very much scaled-down, auto-leveled) 5000-by-5000 solution:&lt;/p&gt;
+&lt;div class=&quot;displayedMedia&quot;&gt;&lt;a href=&quot;lights-5000.png&quot; title=&quot;Solution to 5000x5000 Lights Out&quot;&gt;&lt;img src=&quot;small-5000.png&quot; alt=&quot;Solution to 5000x5000 Lights Out&quot; /&gt;&lt;/a&gt;&lt;/div&gt;</content><author><name></name></author><category term="mathematics" /><summary type="html">A very long while ago I posted some solutions to Lights Out; back then, I solved the $n$-by-$n$ board by row-reducing an $n^2$-by-$n^2$ matrix.</summary></entry><entry><title type="html">Reflecting Triangles</title><link href="/blog/reflecting-triangles" rel="alternate" type="text/html" title="Reflecting Triangles" /><published>2010-03-16T01:23:23-04:00</published><updated>2010-03-16T01:23:23-04:00</updated><id>/blog/reflecting-triangles</id><content type="html" xml:base="/blog/reflecting-triangles">&lt;p&gt;My
+  advisor, &lt;a href=&quot;http://http://www.math.uchicago.edu/~shmuel/&quot;&gt;Shmuel Weinberger&lt;/a&gt;,
+  was teaching &lt;a href=&quot;http://math.uchicago.edu/~shmuel/113.pdf&quot;&gt;Math 113&lt;/a&gt;, and asked for some pictures of the following
+  procedure:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Start with a triangle in the plane.&lt;/li&gt;
+&lt;li&gt;Reflect that triangle across its three sides.&lt;/li&gt;
+&lt;li&gt;And repeat, reflecting the resulting triangles through their
+  sides, and so forth.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+I made a couple movies of this, illustrating this procedure as you
+move through the space of triangles.  Observe how, for only four shapes
+of triangles, the resulting set of triangle vertices is discrete.
+&lt;/p&gt;
+
+&lt;h3&gt;Movie with only a few triangles&lt;/h3&gt;
+&lt;video controls=&quot;&quot; loop=&quot;&quot;&gt;
+  &lt;source src=&quot;sparse.m4v&quot; type=&quot;video/mp4&quot; /&gt;
+Your browser does not support the video tag.
+&lt;/video&gt;
+
+&lt;h3&gt;Movie with more triangles&lt;/h3&gt;
+&lt;video controls=&quot;&quot; loop=&quot;&quot;&gt;
+  &lt;source src=&quot;dense.m4v&quot; type=&quot;video/mp4&quot; /&gt;
+Your browser does not support the video tag.
+&lt;/video&gt;</content><author><name></name></author><category term="personal" /><category term="mathematics" /><summary type="html">My advisor, Shmuel Weinberger, was teaching Math 113, and asked for some pictures of the following procedure: Start with a triangle in the plane. Reflect that triangle across its three sides. And repeat, reflecting the resulting triangles through their sides, and so forth. I made a couple movies of this, illustrating this procedure as you move through the space of triangles. Observe how, for only four shapes of triangles, the resulting set of triangle vertices is discrete. Movie with only a few triangles Your browser does not support the video tag.</summary></entry><entry><title type="html">Projector on Blackboard</title><link href="/blog/projector-on-blackboard" rel="alternate" type="text/html" title="Projector on Blackboard" /><published>2010-01-19T02:30:13-05:00</published><updated>2010-01-19T02:30:13-05:00</updated><id>/blog/projector-on-blackboard</id><content type="html" xml:base="/blog/projector-on-blackboard">&lt;p&gt;I recently gave a beamer talk, which gave me the chance to point the beamer at my blackboard.&lt;/p&gt;
+
+&lt;video controls=&quot;&quot; loop=&quot;&quot;&gt;
+  &lt;source src=&quot;projector.m4v&quot; type=&quot;video/mp4&quot; /&gt;
+Your browser does not support the video tag.
+&lt;/video&gt;</content><author><name></name></author><category term="mathematics" /><summary type="html">I recently gave a beamer talk, which gave me the chance to point the beamer at my blackboard.</summary></entry><entry><title type="html">My mathematical genealogy</title><link href="/blog/my-mathematical-genealogy" rel="alternate" type="text/html" title="My mathematical genealogy" /><published>2009-06-11T16:06:38-04:00</published><updated>2009-06-11T16:06:38-04:00</updated><id>/blog/my-mathematical-genealogy</id><content type="html" xml:base="/blog/my-mathematical-genealogy">&lt;p&gt;According to the &lt;a href=&quot;http://genealogy.math.ndsu.nodak.edu/&quot;&gt;Mathematics Genealogy Project&lt;/a&gt;, my mathematical genealogy is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Luca_Pacioli&quot;&gt;Luca Pacioli&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Domenico_Maria_Novara_da_Ferrara&quot;&gt;Domenico Maria Novara da Ferrara&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Nicholas_Copernicus&quot;&gt;Nicolaus Copernicus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Georg_Joachim_Rheticus&quot;&gt;Georg Joachim von Leuchen Rheticus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Caspar_Peucer&quot;&gt;Caspar Peucer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://de.wikipedia.org/wiki/Salomon_Alberti&quot;&gt;Salomon Alberti&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://de.wikipedia.org/wiki/Ernestus_Hettenbach&quot;&gt;Ernestus Hettenbach&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://de.wikipedia.org/wiki/Ambrosius_Rhode&quot;&gt;Ambrosius Rhodius&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://de.wikipedia.org/wiki/Christoph_Notnagel&quot;&gt;Christoph Notnagel&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Johannes_Andreas_Quenstedt&quot;&gt;Johann Andreas Quenstedt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://de.wikipedia.org/wiki/Michael_Walther_der_J&amp;uuml;ngere&quot;&gt;Michael Walther, Jr.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sv.wikipedia.org/wiki/Johan_Pasch&quot;&gt;Johann Pasch&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Johann_Andreas_Planer&quot;&gt;Johann Andreas Planer&lt;/a&gt; who doesn't have a Wikipedia page&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Christian_August_Hausen&quot;&gt;Christian August Hausen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Abraham_Gotthelf_K&amp;auml;stner&quot;&gt;Abraham Gotthelf K&amp;auml;stner&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Johann_Friedrich_Pfaff&quot;&gt;Johann Friedrich Pfaff&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Carl_Friedrich_Gauss&quot;&gt;Carl Friedrich Gauss&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Christian_Ludwig_Gerling&quot;&gt;Christian Ludwig Gerling&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Pl&amp;uuml;cker&quot;&gt;Julius Pl&amp;uuml;cker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Felix_Klein&quot;&gt;C. Felix (Christian) Klein&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/William_Edward_Story&quot;&gt;William Edward Story&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Solomon_Lefschetz&quot;&gt;Solomon Lefschetz&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Norman_Steenrod&quot;&gt;Norman Earl Steenrod&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/George_W._Whitehead&quot;&gt;George William Whitehead, Jr.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/John_Coleman_Moore&quot;&gt;John Coleman Moore&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/William_Browder_(mathematician)&quot;&gt;William Browder&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Sylvain_Cappell&quot;&gt;Sylvain Edward Cappell&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Shmuel_Weinberger&quot;&gt;Shmuel Aaron Weinberger&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are some branches to choose among, but I think the branch starting with Pacioli is the most appropriate.&lt;/p&gt;</content><author><name></name></author><category term="general" /><summary type="html">According to the Mathematics Genealogy Project, my mathematical genealogy is: Luca Pacioli Domenico Maria Novara da Ferrara Nicolaus Copernicus Georg Joachim von Leuchen Rheticus Caspar Peucer Salomon Alberti Ernestus Hettenbach Ambrosius Rhodius Christoph Notnagel Johann Andreas Quenstedt Michael Walther, Jr. Johann Pasch Johann Andreas Planer who doesn't have a Wikipedia page Christian August Hausen Abraham Gotthelf K&amp;auml;stner Johann Friedrich Pfaff Carl Friedrich Gauss Christian Ludwig Gerling Julius Pl&amp;uuml;cker C. Felix (Christian) Klein William Edward Story Solomon Lefschetz Norman Earl Steenrod George William Whitehead, Jr. John Coleman Moore William Browder Sylvain Edward Cappell Shmuel Aaron Weinberger There are some branches to choose among, but I think the branch starting with Pacioli is the most appropriate.</summary></entry><entry><title type="html">Möbius strip, and pairs of points on a circle.</title><link href="/blog/mbius-strip-and-pairs-of-points-on-a-circle" rel="alternate" type="text/html" title="M&amp;#246;bius strip, and pairs of points on a circle." /><published>2009-01-28T13:33:51-05:00</published><updated>2009-01-28T13:33:51-05:00</updated><id>/blog/mbius-strip-and-pairs-of-points-on-a-circle</id><content type="html" xml:base="/blog/mbius-strip-and-pairs-of-points-on-a-circle">&lt;p&gt;Here's a little movie I made:&lt;/p&gt;
+
+&lt;video controls=&quot;&quot; loop=&quot;&quot;&gt;
+  &lt;source src=&quot;mobius.m4v&quot; type=&quot;video/mp4&quot; /&gt;
+Your browser does not support the video tag.
+&lt;/video&gt;
+
+&lt;p&gt;I'm grading for the first year topology course at Chicago, and one of their homework problems asked them to show that pairs of (indistinguishable!) points on a circle correspond to points on the &lt;a href=&quot;http://en.wikipedia.org/wiki/Möbius_strip&quot;&gt;M&amp;ouml;bius strip&lt;/a&gt;; in other words, the quotient of the torus $T^2 = S^1 \times S^1$ by the $\Z/2$-action which exchanges the two $S^1$ factors is a M&amp;ouml;bius strip.&lt;/p&gt;
+
+&lt;p&gt;In the above animation, you can see the identification in action: the two red points on the green circle correspond to the red dot on the M&amp;ouml;bius strip.&lt;/p&gt;</content><author><name></name></author><category term="personal" /><category term="mathematics" /><summary type="html">Here's a little movie I made: Your browser does not support the video tag. I'm grading for the first year topology course at Chicago, and one of their homework problems asked them to show that pairs of (indistinguishable!) points on a circle correspond to points on the M&amp;ouml;bius strip; in other words, the quotient of the torus $T^2 = S^1 \times S^1$ by the $\Z/2$-action which exchanges the two $S^1$ factors is a M&amp;ouml;bius strip. In the above animation, you can see the identification in action: the two red points on the green circle correspond to the red dot on the M&amp;ouml;bius strip.</summary></entry><entry><title type="html">I can drive!</title><link href="/blog/i-can-drive" rel="alternate" type="text/html" title="I can drive!" /><published>2008-09-26T17:46:39-04:00</published><updated>2008-09-26T17:46:39-04:00</updated><id>/blog/i-can-drive</id><content type="html" xml:base="/blog/i-can-drive">&lt;p&gt;I took my road test this morning—and I passed!&lt;/p&gt;
+
+&lt;p&gt;After all these years, I am a licensed driver.  Now, where should I drive to?&lt;/p&gt;</content><author><name></name></author><category term="personal" /><summary type="html">I took my road test this morning—and I passed! After all these years, I am a licensed driver. Now, where should I drive to?</summary></entry><entry><title type="html">Global Warming according to Google</title><link href="/blog/global-warming-according-to-google" rel="alternate" type="text/html" title="Global Warming according to Google" /><published>2008-08-21T20:04:32-04:00</published><updated>2008-08-21T20:04:32-04:00</updated><id>/blog/global-warming-according-to-google</id><content type="html" xml:base="/blog/global-warming-according-to-google">&lt;p&gt;&lt;a href=&quot;http://www.google.com/trends&quot;&gt;Google Trends&lt;/a&gt; plots the search volume (or some other measure?  search percentage?) for a given phrase over time.  It’s ridiculously fun!&lt;/p&gt;
+
+&lt;p&gt;As an example, let’s look at the number of times people search for the words &lt;b&gt;hot&lt;/b&gt; and &lt;b&gt;cold&lt;/b&gt;.  I downloaded the &lt;a href=&quot;google-global-warming.csv&quot; title=&quot;Google Global Warming Data&quot;&gt;CSV file&lt;/a&gt; offered by Google trends to make the following graph:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;google-global-warming.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The thick red and blue lines are the linear regressions on the number of searches for &lt;b&gt;hot&lt;/b&gt; and &lt;b&gt;cold&lt;/b&gt;, respectively.  Behold!—people are searching &lt;i&gt;more often&lt;/i&gt; for &lt;b&gt;hot&lt;/b&gt; lately, and &lt;i&gt;less often&lt;/i&gt; as of late for &lt;b&gt;cold&lt;/b&gt;!  The search volume does seem to be related to the temperature: you might notice that the search volume for &lt;b&gt;cold&lt;/b&gt; dips under the regression line during the summer, but exceeds it during the winter.&lt;/p&gt;
+
+&lt;p&gt;And so, &lt;b&gt;global warming is being revealed in our search habits.&lt;/b&gt;  Maybe I should’ve titled this post “Google warming.”&lt;/p&gt;</content><author><name></name></author><category term="personal" /><summary type="html">Google Trends plots the search volume (or some other measure? search percentage?) for a given phrase over time. It’s ridiculously fun! As an example, let’s look at the number of times people search for the words hot and cold. I downloaded the CSV file offered by Google trends to make the following graph: The thick red and blue lines are the linear regressions on the number of searches for hot and cold, respectively. Behold!—people are searching more often for hot lately, and less often as of late for cold! The search volume does seem to be related to the temperature: you might notice that the search volume for cold dips under the regression line during the summer, but exceeds it during the winter. And so, global warming is being revealed in our search habits. Maybe I should’ve titled this post “Google warming.”</summary></entry></feed>

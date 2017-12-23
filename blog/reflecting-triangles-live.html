@@ -1,0 +1,192 @@
+<!DOCTYPE 5><html lang="en"><head><meta charset="utf-8"/><title>Reflecting Triangles, live - k = 1 cat - Jim Fowler</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="description" content="Jim Fowler"/><meta name="author" content="Jim Fowler"/><meta name="keywords" content="mathematics, math, maths, courses, course, research, education, teaching, topology, geometry"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/><link href="/stylesheets/style.css" rel="stylesheet" media="screen"/><link href="/stylesheets/cv.css" rel="stylesheet" media="screen"/><script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({showProcessingMessages: false, tex2jax: {
+  inlineMath: [['$','$'],['\\(','\\)']],
+  displayMath: [['$$','$$'], ['\\[','\\]']] },
+TeX: {
+ Macros: {
+   R: "{\\mathbb{R}}",
+   Q: "{\\mathbb{Q}}",            
+   Z: "{\\mathbb{Z}}",      
+   N: "{\\mathbb{N}}",            
+}}});</script><link rel="apple-touch-icon" sizes="114x114" href="/images/icons/favicon-114x114.png"/><link rel="apple-touch-icon" sizes="72x72" href="/images/icons/favicon-72x72.png"/><link rel="apple-touch-icon" sizes="57x57" href="/images/icons/favicon-57x57.png"/><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/></head><body><nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<a class="navbar-brand" href="/">Jim <strong>Fowler</strong></a>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a class="nav-link " href="/cv">CV</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " href="/research">Research</a>
+</li>      
+<li class="nav-item">
+<a class="nav-link " href="/teaching">Teaching</a>
+</li>            
+<li class="nav-item">
+<a class="nav-link active" href="/blog">Blog</a>
+</li>                  
+</ul>
+</div>
+</nav><main class="container-fluid" role="main"><nav class="breadcrumb">
+  <a class="breadcrumb-item" href="/">Home</a>
+  <a class="breadcrumb-item" href="/blog">Blog</a>
+  <a class="breadcrumb-item active" href="/blog/reflecting-triangles-live">Reflecting Triangles, live</a>  
+</nav>
+
+<h1><a href="/blog/reflecting-triangles-live">Reflecting Triangles, live</a></h1>
+<h5><i class="fa fa-calendar"></i>&nbsp;<span class="date">2011-02-23 08:05:21 +0000</span>
+
+<span class="badge badge-default">personal</span>
+
+<span class="badge badge-default">mathematics</span>
+
+</h5>
+
+<hr/>
+
+<p>A while back I made some movies which began with a triangle in the
+plane, reflected that triangle through its three sides, reflected
+those triangles through their sides, and so forth.  The interesting
+result is that for only four shapes of triangles, the resulting set
+of triangle vertices is discrete.</p>
+<p>
+Using <a href="http://raphaeljs.com/">Raphael</a> and a plane geometry
+package that I wrote, I quickly redid this visualization in
+Javascript; you can now move the vertices around to see the effect on
+the reflected triangles.</p>
+
+<script src="raphael-min.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="geometry.js" type="text/javascript" charset="utf-8"></script>
+
+<div class="canvas" id="sample" />
+
+<script language="javascript">
+
+var element = document.getElementById("sample");
+var width = 400;
+var height = width * 0.7;
+var paper = Raphael(element, width, height);
+console.log(width);
+pA = paper.geometry.point( 0.5*width, 0.8*height );
+pB = paper.geometry.point( 0.25*width, 0.5*height );
+pC = paper.geometry.point( 0.5*width, 0.25*height );
+/*
+paper.geometry.label( pA, "A" );
+paper.geometry.label( pB, "B" );
+paper.geometry.label( pC, "C" );
+*/
+
+sC = paper.geometry.segment( pA,pB );
+sA = paper.geometry.segment( pB,pC );
+sB = paper.geometry.segment( pC,pA );
+sA.attr({"stroke-width":3});
+sB.attr({"stroke-width":3});
+sC.attr({"stroke-width":3});
+
+points = new Object();
+
+points["A"] = pA;
+points["B"] = pB;
+points["C"] = pC;
+
+function simplify(string) {
+    var first = string.slice(0,1);
+    var rest = string.slice(1, string.length);
+    if (rest.indexOf(first) < 0)
+	return first;
+
+    return first + rest.slice( rest.indexOf(first), rest.length );
+}
+
+function string_to_point( string ) {
+    if (points[string] != null) {
+	return points[string];
+    }
+
+    var head = string.slice(0, string.length - 1);
+    var tail = string.charAt(string.length - 1);
+    var point = string_to_point( head );
+    var line = {A:sA, B:sB, C:sC}[tail];
+
+    var reflected = paper.geometry.point_reflected( line, point );
+    reflected.attr( {r:0} );
+    //paper.geometry.label( reflected, string );
+    points[string] = reflected;
+
+    var first = string.charAt(0);
+    var rest = string.slice(1, string.length);
+    var other = {A:"B", B:"C", C:"A"}[first];
+    var another = {A:"C", B:"A", C:"B"}[first];
+    
+    var other_code = simplify(other + rest);
+    var another_code = simplify(another + rest);
+    
+    var s1 = paper.geometry.segment( reflected, string_to_point( other_code ) );
+    var s2 = paper.geometry.segment( reflected, string_to_point( another_code ) );
+
+    var opacity = 1.0 / string.length;
+    var linewidth = 4.0 / string.length;
+    s1.attr( {opacity: opacity, "stroke-width": linewidth} );
+    s2.attr( {opacity: opacity, "stroke-width": linewidth} );
+
+    return reflected;
+}
+
+function list_codes( depth )
+{
+    if (depth == 1)
+	return ["AA","BB","CC"];
+
+    var result = new Array();
+    var codes = list_codes( depth - 1 );
+    for( var i in codes ) {
+	code = codes[i];
+	var last = code.slice(code.length-1,code.length);
+	var other = {A:"B", B:"C", C:"A"}[last];
+	var another = {A:"C", B:"A", C:"B"}[last];
+	codes = codes.concat( [code + other, code + another] );
+    }
+
+    return codes;
+}
+
+var codes = list_codes( 5 );
+for( var i in codes ) {
+    var code = codes[i];
+    string_to_point(code);
+}
+
+</script>
+
+
+
+<ul class="pagination justify-content-center">
+  
+  <li class="page-item">
+    <a class="page-link" href="/blog/culturomics" aria-label="Previous">
+      <span aria-hidden="true">&laquo; Past</span>
+      <span class="sr-only">Past post</span>
+    </a>
+  </li>
+  
+  
+  
+  <li class="page-item">
+    <a class="page-link" href="/blog/volume-conjecture" aria-label="Next">
+      <span aria-hidden="true">Future &raquo;</span>
+      <span class="sr-only">Future post</span>
+    </a>
+  </li>
+  
+</ul>
+</main><footer><div class="container-fluid"><hr/><ul class="pull-right"><li><a class="socialmedia" href="http://www.facebook.com/kisonecat"><i class="fa fa-facebook-square"></i> Facebook</a></li><li><a class="socialmedia" href="https://github.com/kisonecat"><i class="fa fa-github-alt"></i> GitHub</a></li><li><a class="socialmedia" href="http://www.weibo.com/u/3696948727"><i class="fa fa-weibo"></i> Weibo</a></li><li><a class="socialmedia" href="http://arxiv.org/find/math/1/au:+Fowler_J/0/1/0/all/0/1"><i class="fa fa-file-alt"></i> arXiv</a></li><li><a class="socialmedia" href="/feed.xml"><i class="fa fa-rss"></i> RSS</a></li><li><a class="socialmedia" href="http://plus.google.com/116216190446738539368/"><i class="fa fa-google-plus"></i> Google Plus</a></li><li><a class="socialmedia" href="http://www.youtube.com/kisonecat"><i class="fa fa-youtube"></i> YouTube</a></li><li><a class="socialmedia" href="http://www.twitter.com/kisonecat"><i class="fa fa-twitter"></i> Twitter</a></li><li><a class="socialmedia" href="http://www.flickr.com/photos/kisonecat"><i class="fa fa-flickr"></i> Flickr</a></li></ul><p class="muted">&copy; 2017, Jim Fowler.</p><dl><dt>Phone</dt><dd><a href="https://clients4.google.com/voice/embed/webCallButton?id=54eeaacf921a90533693f59425514b0be0223330"><span class="phone">(773) xxx-5659</span></a></p></dd><dt>Email</dt><dd><a href='#' class="email"><span class="email">my last name at math dot osu dot edu</span></a></p></dd><dt>Postal Address</dt><dd><div class="postal-address"><a href="http://www.math.osu.edu/">OSU Department of Mathematics</a><br/>100 Math Tower<br/>231 West 18th Avenue<br/>Columbus, OH 43210-1174</p></div></dd></dl></div></footer><script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script><script type="text/javascript" src="/javascripts/pretty-print-dates.js">   </script><script type="text/javascript" src="/javascripts/personal-details.js"></script><script type="text/javascript">var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-558855-4']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();</script></body></html>

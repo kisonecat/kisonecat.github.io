@@ -1,0 +1,2 @@
+
+Topological spaces; continuous maps and metric spaces; connectedness, compactness, countability axioms; metrization, compactification, and convergence; combinatorial, geometric, and algebraic techniques in knot theory; invariants of knots.

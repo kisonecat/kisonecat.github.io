@@ -1,0 +1,18 @@
+div.blogpost
+  .page-header
+    h1
+      a(href=post.url)
+        != post.title
+    h5
+      i.icon-calendar
+      | 
+      span.date #{moment(post.date).format("D MMMM YYYY")}
+      | 
+      - each tag in post.tags
+        a(href="/blog/tag/#{tag}")
+          span.label.label-default #{tag}
+        | 
+
+
+  div.content
+    != post.preview

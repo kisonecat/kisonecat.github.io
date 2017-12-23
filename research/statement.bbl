@@ -1,0 +1,1589 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{entry}{nty}
+    \entry{MR2036915}{article}{}
+      \name{labelname}{5}{}{%
+        {{hash=64ce04c765698ee3fdd66980f7fd0356}{Adams}{A\bibinitperiod}{C.}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=cea839b7f05364a1bfa7908103a2ea3a}{Colestock}{C\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=0cc497648ae5f43a7975da372ccb2caf}{Fowler}{F\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=9f5ba91475c279e02a07d8ef7ec795ad}{Gillam}{G\bibinitperiod}{W.}{W\bibinitperiod}{}{}{}{}}%
+        {{hash=494cd24ec61b1f81f9841e7f0d8582b8}{Katerman}{K\bibinitperiod}{E.}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{hash=64ce04c765698ee3fdd66980f7fd0356}{Adams}{A\bibinitperiod}{C.}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=cea839b7f05364a1bfa7908103a2ea3a}{Colestock}{C\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=0cc497648ae5f43a7975da372ccb2caf}{Fowler}{F\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=9f5ba91475c279e02a07d8ef7ec795ad}{Gillam}{G\bibinitperiod}{W.}{W\bibinitperiod}{}{}{}{}}%
+        {{hash=494cd24ec61b1f81f9841e7f0d8582b8}{Katerman}{K\bibinitperiod}{E.}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9a244b27e263f9555ae153abfc9e3c22}
+      \strng{fullhash}{578f4b250d9280c45a8a64f8722303fa}
+      \field{sortinit}{A}
+      \field{labeltitle}{Cleanliness of geodesics in hyperbolic 3-manifolds}
+      \field{issn}{0030-8730}
+      \field{journaltitle}{Pacific J. Math.}
+      \field{number}{2}
+      \field{title}{Cleanliness of geodesics in hyperbolic 3-manifolds}
+      \field{volume}{213}
+      \field{year}{2004}
+      \field{pages}{201\bibrangedash 211}
+      \verb{doi}
+      \verb 10.2140/pjm.2004.213.201
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.2140/pjm.2004.213.201
+      \endverb
+    \endentry
+    \entry{MR2177038}{article}{}
+      \name{labelname}{5}{}{%
+        {{hash=64ce04c765698ee3fdd66980f7fd0356}{Adams}{A\bibinitperiod}{C.}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=cea839b7f05364a1bfa7908103a2ea3a}{Colestock}{C\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=0cc497648ae5f43a7975da372ccb2caf}{Fowler}{F\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=9f5ba91475c279e02a07d8ef7ec795ad}{Gillam}{G\bibinitperiod}{W.}{W\bibinitperiod}{}{}{}{}}%
+        {{hash=494cd24ec61b1f81f9841e7f0d8582b8}{Katerman}{K\bibinitperiod}{E.}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{hash=64ce04c765698ee3fdd66980f7fd0356}{Adams}{A\bibinitperiod}{C.}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=cea839b7f05364a1bfa7908103a2ea3a}{Colestock}{C\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=0cc497648ae5f43a7975da372ccb2caf}{Fowler}{F\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=9f5ba91475c279e02a07d8ef7ec795ad}{Gillam}{G\bibinitperiod}{W.}{W\bibinitperiod}{}{}{}{}}%
+        {{hash=494cd24ec61b1f81f9841e7f0d8582b8}{Katerman}{K\bibinitperiod}{E.}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9a244b27e263f9555ae153abfc9e3c22}
+      \strng{fullhash}{578f4b250d9280c45a8a64f8722303fa}
+      \field{sortinit}{A}
+      \field{labeltitle}{Cusp size bounds from singular surfaces in hyperbolic 3-manifolds}
+      \field{issn}{0002-9947}
+      \field{journaltitle}{Trans. Amer. Math. Soc.}
+      \field{number}{2}
+      \field{title}{Cusp size bounds from singular surfaces in hyperbolic 3-manifolds}
+      \field{volume}{358}
+      \field{year}{2006}
+      \field{pages}{727\bibrangedash 741}
+      \verb{doi}
+      \verb 10.1090/S0002-9947-05-03662-7
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1090/S0002-9947-05-03662-7
+      \endverb
+    \endentry
+    \entry{MR133837}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=dd35186d1f91101055cb471590910e82}{Adams}{A\bibinitperiod}{J.\bibnamedelimi F.}{J\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=dd35186d1f91101055cb471590910e82}{Adams}{A\bibinitperiod}{J.\bibnamedelimi F.}{J\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{dd35186d1f91101055cb471590910e82}
+      \strng{fullhash}{dd35186d1f91101055cb471590910e82}
+      \field{sortinit}{A}
+      \field{labeltitle}{Vector fields on spheres}
+      \field{issn}{0002-9904}
+      \field{journaltitle}{Bull. Amer. Math. Soc.}
+      \field{title}{Vector fields on spheres}
+      \field{volume}{68}
+      \field{year}{1962}
+      \field{pages}{39\bibrangedash 41}
+    \endentry
+    \entry{albert1999knowledge}{book}{}
+      \name{labelname}{2}{}{%
+        {{hash=650fd6877a5e4ff556a4af86f032a1a0}{Albert}{A\bibinitperiod}{Dietrich}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=81054b6f885001227bb5882040f3705c}{Lukas}{L\bibinitperiod}{Josef}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=650fd6877a5e4ff556a4af86f032a1a0}{Albert}{A\bibinitperiod}{Dietrich}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=81054b6f885001227bb5882040f3705c}{Lukas}{L\bibinitperiod}{Josef}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Psychology Press}%
+      }
+      \strng{namehash}{3328ab117b7623e85b1eb1a3a467c12a}
+      \strng{fullhash}{3328ab117b7623e85b1eb1a3a467c12a}
+      \field{sortinit}{A}
+      \field{labeltitle}{Knowledge spaces: Theories, empirical research, and applications}
+      \field{title}{Knowledge spaces: Theories, empirical research, and applications}
+      \field{year}{1999}
+    \endentry
+    \entry{anari2012intelligent}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=575c2d3dd0e1d7ef070ee695b0a8a3b9}{Anari}{A\bibinitperiod}{Morteza\bibnamedelima Saberi}{M\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=1bd75cd2814ed8b8891b4d383377ea68}{Anari}{A\bibinitperiod}{Maryam\bibnamedelima Saberi}{M\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=575c2d3dd0e1d7ef070ee695b0a8a3b9}{Anari}{A\bibinitperiod}{Morteza\bibnamedelima Saberi}{M\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=1bd75cd2814ed8b8891b4d383377ea68}{Anari}{A\bibinitperiod}{Maryam\bibnamedelima Saberi}{M\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b9922d721b6eaac4363c426c5599f6ed}
+      \strng{fullhash}{b9922d721b6eaac4363c426c5599f6ed}
+      \field{sortinit}{A}
+      \field{labeltitle}{Intelligent E-Learning Systems Using Student Behavior Prediction}
+      \field{journaltitle}{Basic. Appl. Sci. Res}
+      \field{number}{12}
+      \field{title}{Intelligent E-Learning Systems Using Student Behavior Prediction}
+      \field{volume}{2}
+      \field{year}{2012}
+      \field{pages}{12017\bibrangedash 12023}
+    \endentry
+    \entry{MR953961}{book}{}
+      \name{labelname}{2}{}{%
+        {{hash=134d96a7a7a771283b728f7baef15110}{Anderson}{A\bibinitperiod}{Douglas\bibnamedelima R.}{D\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{hash=9893675000fb507ac5ed5b51332a76d3}{Munkholm}{M\bibinitperiod}{Hans\bibnamedelima J.}{H\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=134d96a7a7a771283b728f7baef15110}{Anderson}{A\bibinitperiod}{Douglas\bibnamedelima R.}{D\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{hash=9893675000fb507ac5ed5b51332a76d3}{Munkholm}{M\bibinitperiod}{Hans\bibnamedelima J.}{H\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag}%
+      }
+      \strng{namehash}{04b57eb45be1faa196a62cdc30f80922}
+      \strng{fullhash}{04b57eb45be1faa196a62cdc30f80922}
+      \field{sortinit}{A}
+      \field{labeltitle}{Boundedly controlled topology}
+      \field{isbn}{3-540-19397-9}
+      \field{note}{Foundations of algebraic topology and simple homotopy theory}
+      \field{series}{Lecture Notes in Mathematics}
+      \field{title}{Boundedly controlled topology}
+      \field{volume}{1323}
+      \field{year}{1988}
+      \field{pages}{xii+309}
+    \endentry
+    \entry{angus2009does}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=f46d6f142f3e4073180ab6128a530aaa}{Angus}{A\bibinitperiod}{Simon\bibnamedelima D}{S\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{hash=aa1849940c06da2f4a7f5cb599ef90d0}{Watson}{W\bibinitperiod}{Judith}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=f46d6f142f3e4073180ab6128a530aaa}{Angus}{A\bibinitperiod}{Simon\bibnamedelima D}{S\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{hash=aa1849940c06da2f4a7f5cb599ef90d0}{Watson}{W\bibinitperiod}{Judith}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{352a8ceaa07d313eeb8ee1767728e255}
+      \strng{fullhash}{352a8ceaa07d313eeb8ee1767728e255}
+      \field{sortinit}{A}
+      \field{labeltitle}{Does regular online testing enhance student learning in the numerical sciences? Robust evidence from a large data set}
+      \field{journaltitle}{British Journal of Educational Technology}
+      \field{number}{2}
+      \field{title}{Does regular online testing enhance student learning in the numerical sciences? Robust evidence from a large data set}
+      \field{volume}{40}
+      \field{year}{2009}
+      \field{pages}{255\bibrangedash 272}
+    \endentry
+    \entry{MR202264}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=4df2ad455942f6f13e125e4ac93740be}{Baum}{B\bibinitperiod}{Leonard\bibnamedelima E.}{L\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=8ea4b0d08cb69e7a6c9b2b460ece7f63}{Petrie}{P\bibinitperiod}{Ted}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=4df2ad455942f6f13e125e4ac93740be}{Baum}{B\bibinitperiod}{Leonard\bibnamedelima E.}{L\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=8ea4b0d08cb69e7a6c9b2b460ece7f63}{Petrie}{P\bibinitperiod}{Ted}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{059bd792997511e1c5da60a7b9675b0d}
+      \strng{fullhash}{059bd792997511e1c5da60a7b9675b0d}
+      \field{sortinit}{B}
+      \field{labeltitle}{Statistical inference for probabilistic functions of finite state {M}arkov chains}
+      \field{issn}{0003-4851}
+      \field{journaltitle}{Ann. Math. Statist.}
+      \field{title}{Statistical inference for probabilistic functions of finite state {M}arkov chains}
+      \field{volume}{37}
+      \field{year}{1966}
+      \field{pages}{1554\bibrangedash 1563}
+    \endentry
+    \entry{MR1465330}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=7ca8ad62fff058da83d56cf267684e38}{Bestvina}{B\bibinitperiod}{Mladen}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=47d33d565895356ebd7d2ee9bc0443d6}{Brady}{B\bibinitperiod}{Noel}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=7ca8ad62fff058da83d56cf267684e38}{Bestvina}{B\bibinitperiod}{Mladen}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=47d33d565895356ebd7d2ee9bc0443d6}{Brady}{B\bibinitperiod}{Noel}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{72bbaff990ee523afde2bbd9a4ee428e}
+      \strng{fullhash}{72bbaff990ee523afde2bbd9a4ee428e}
+      \field{sortinit}{B}
+      \field{labeltitle}{Morse theory and finiteness properties of groups}
+      \field{issn}{0020-9910}
+      \field{journaltitle}{Invent. Math.}
+      \field{number}{3}
+      \field{title}{Morse theory and finiteness properties of groups}
+      \field{volume}{129}
+      \field{year}{1997}
+      \field{pages}{445\bibrangedash 470}
+      \verb{doi}
+      \verb 10.1007/s002220050168
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/s002220050168
+      \endverb
+    \endentry
+    \entry{MR123419}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=1510894b195c898f61d6cbd12bfaf118}{Billingsley}{B\bibinitperiod}{Patrick}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=1510894b195c898f61d6cbd12bfaf118}{Billingsley}{B\bibinitperiod}{Patrick}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Statistical Research Monographs, Vol. II. The University of Chicago Press, Chicago, Ill.}%
+      }
+      \strng{namehash}{1510894b195c898f61d6cbd12bfaf118}
+      \strng{fullhash}{1510894b195c898f61d6cbd12bfaf118}
+      \field{sortinit}{B}
+      \field{labeltitle}{Statistical inference for {M}arkov processes}
+      \field{title}{Statistical inference for {M}arkov processes}
+      \field{year}{1961}
+      \field{pages}{vii+75}
+    \endentry
+    \entry{bowen2013higher}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=b12e707c43516a4fb2585ae473272d8f}{Bowen}{B\bibinitperiod}{William\bibnamedelima G}{W\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=b12e707c43516a4fb2585ae473272d8f}{Bowen}{B\bibinitperiod}{William\bibnamedelima G}{W\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{b12e707c43516a4fb2585ae473272d8f}
+      \strng{fullhash}{b12e707c43516a4fb2585ae473272d8f}
+      \field{sortinit}{B}
+      \field{labeltitle}{Higher education in the digital age}
+      \field{title}{Higher education in the digital age}
+      \field{year}{2013}
+    \endentry
+    \entry{MR1943285}{incollection}{}
+      \name{labelname}{5}{}{%
+        {{hash=436638b8eceee9bb859b453c1358a4c3}{Brandman}{B\bibinitperiod}{Jeremy}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=b7241aef9a9368c039f4ba6479b8a046}{Fowler}{F\bibinitperiod}{James}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=fb0e19e3a6373870704e6375924f7230}{Lins}{L\bibinitperiod}{Brian}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=09541ccbe82d673d3a0dd2299aff0b10}{Spitkovsky}{S\bibinitperiod}{Ilya}{I\bibinitperiod}{}{}{}{}}%
+        {{hash=5fc201e93c07d6640d7ef9d7e98df8e5}{Zobin}{Z\bibinitperiod}{Nahum}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{hash=436638b8eceee9bb859b453c1358a4c3}{Brandman}{B\bibinitperiod}{Jeremy}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=b7241aef9a9368c039f4ba6479b8a046}{Fowler}{F\bibinitperiod}{James}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=fb0e19e3a6373870704e6375924f7230}{Lins}{L\bibinitperiod}{Brian}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=09541ccbe82d673d3a0dd2299aff0b10}{Spitkovsky}{S\bibinitperiod}{Ilya}{I\bibinitperiod}{}{}{}{}}%
+        {{hash=5fc201e93c07d6640d7ef9d7e98df8e5}{Zobin}{Z\bibinitperiod}{Nahum}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {de Gruyter}%
+      }
+      \strng{namehash}{6e9194e2940cc397fcfa951ac560603b}
+      \strng{fullhash}{108eb2fe20dadf7f71f3be2051094add}
+      \field{sortinit}{B}
+      \field{labeltitle}{Convex hulls of {C}oxeter groups}
+      \field{booktitle}{Function spaces, interpolation theory and related topics ({L}und, 2000)}
+      \field{title}{Convex hulls of {C}oxeter groups}
+      \field{year}{2002}
+      \field{pages}{213\bibrangedash 240}
+    \endentry
+    \entry{MR1180457}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=3d19d616e119099914f63cc800c884db}{Brehm}{B\bibinitperiod}{Ulrich}{U\bibinitperiod}{}{}{}{}}%
+        {{hash=0afc783bcc265a3952adc2c93b4a439c}{K{\"u}hnel}{K\bibinitperiod}{Wolfgang}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=3d19d616e119099914f63cc800c884db}{Brehm}{B\bibinitperiod}{Ulrich}{U\bibinitperiod}{}{}{}{}}%
+        {{hash=0afc783bcc265a3952adc2c93b4a439c}{K{\"u}hnel}{K\bibinitperiod}{Wolfgang}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{605ce6f95b5ce2e2cd58256186893f02}
+      \strng{fullhash}{605ce6f95b5ce2e2cd58256186893f02}
+      \field{sortinit}{B}
+      \field{labeltitle}{{$15$}-vertex triangulations of an {$8$}-manifold}
+      \field{issn}{0025-5831}
+      \field{journaltitle}{Math. Ann.}
+      \field{number}{1}
+      \field{title}{{$15$}-vertex triangulations of an {$8$}-manifold}
+      \field{volume}{294}
+      \field{year}{1992}
+      \field{pages}{167\bibrangedash 193}
+      \verb{doi}
+      \verb 10.1007/BF01934320
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/BF01934320
+      \endverb
+    \endentry
+    \entry{MR1394965}{article}{}
+      \name{labelname}{4}{}{%
+        {{hash=27744b6d83dc5c271b02562397972b6d}{Bryant}{B\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=0fbc31cf09d8ea73120a22b80ac32066}{Ferry}{F\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=bf4f03c803852a9c8b0f8d7f27378a02}{Mio}{M\bibinitperiod}{W.}{W\bibinitperiod}{}{}{}{}}%
+        {{hash=c918abce9541fcab4207a3c4001f2bd4}{Weinberger}{W\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=27744b6d83dc5c271b02562397972b6d}{Bryant}{B\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=0fbc31cf09d8ea73120a22b80ac32066}{Ferry}{F\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=bf4f03c803852a9c8b0f8d7f27378a02}{Mio}{M\bibinitperiod}{W.}{W\bibinitperiod}{}{}{}{}}%
+        {{hash=c918abce9541fcab4207a3c4001f2bd4}{Weinberger}{W\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{6efc2ae3cc7f4a748325e11c4feb9088}
+      \strng{fullhash}{8c1dfa0339317448d5e2a42063cb8ba6}
+      \field{sortinit}{B}
+      \field{labeltitle}{Topology of homology manifolds}
+      \field{issn}{0003-486X}
+      \field{journaltitle}{Ann. of Math. (2)}
+      \field{number}{3}
+      \field{title}{Topology of homology manifolds}
+      \field{volume}{143}
+      \field{year}{1996}
+      \field{pages}{435\bibrangedash 467}
+      \verb{doi}
+      \verb 10.2307/2118532
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.2307/2118532
+      \endverb
+    \endentry
+    \entry{MR2813369}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=00a45e2d5c3fa48a6a2a40b9f4dcbf63}{Buhler}{B\bibinitperiod}{J.\bibnamedelimi P.}{J\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{hash=8e9c9c1c017f66200836036ee3e75f0b}{Harvey}{H\bibinitperiod}{D.}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=00a45e2d5c3fa48a6a2a40b9f4dcbf63}{Buhler}{B\bibinitperiod}{J.\bibnamedelimi P.}{J\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{hash=8e9c9c1c017f66200836036ee3e75f0b}{Harvey}{H\bibinitperiod}{D.}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9c0315857e392d5e46b7d9fe151fadd2}
+      \strng{fullhash}{9c0315857e392d5e46b7d9fe151fadd2}
+      \field{sortinit}{B}
+      \field{labeltitle}{Irregular primes to 163 million}
+      \field{issn}{0025-5718}
+      \field{journaltitle}{Math. Comp.}
+      \field{number}{276}
+      \field{title}{Irregular primes to 163 million}
+      \field{volume}{80}
+      \field{year}{2011}
+      \field{pages}{2435\bibrangedash 2444}
+      \verb{doi}
+      \verb 10.1090/S0025-5718-2011-02461-0
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1090/S0025-5718-2011-02461-0
+      \endverb
+    \endentry
+    \entry{natural-images}{article}{}
+      \name{labelname}{4}{}{%
+        {{hash=86916713a3861f9e4e6fa5e0ce4c7b44}{Carlsson}{C\bibinitperiod}{Gunnar}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=51465f5ffeb3138030f0a8d0b945d533}{Ishkhanov}{I\bibinitperiod}{Tigran}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=2a5805ef31bbc7a53a4bea574333618a}{De\bibnamedelima Silva}{D\bibinitperiod\bibinitdelim S\bibinitperiod}{Vin}{V\bibinitperiod}{}{}{}{}}%
+        {{hash=f30d2b78e0e34c02d8e03ea5698fb192}{Zomorodian}{Z\bibinitperiod}{Afra}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=86916713a3861f9e4e6fa5e0ce4c7b44}{Carlsson}{C\bibinitperiod}{Gunnar}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=51465f5ffeb3138030f0a8d0b945d533}{Ishkhanov}{I\bibinitperiod}{Tigran}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=2a5805ef31bbc7a53a4bea574333618a}{De\bibnamedelima Silva}{D\bibinitperiod\bibinitdelim S\bibinitperiod}{Vin}{V\bibinitperiod}{}{}{}{}}%
+        {{hash=f30d2b78e0e34c02d8e03ea5698fb192}{Zomorodian}{Z\bibinitperiod}{Afra}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{1716a56b611ebb21db855100656d148b}
+      \strng{fullhash}{6a11ff9b71fd4cfa894c3e4e2a15f46a}
+      \field{sortinit}{C}
+      \field{labeltitle}{On the local behavior of spaces of natural images}
+      \field{journaltitle}{International journal of computer vision}
+      \field{number}{1}
+      \field{title}{On the local behavior of spaces of natural images}
+      \field{volume}{76}
+      \field{year}{2008}
+      \field{pages}{1\bibrangedash 12}
+    \endentry
+    \entry{MR3038783}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=75e879774f3d1dfe6b80a6bca389f52e}{Chapoton}{C\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=c40b9980cdaa3d6ac5c3983bd02868e0}{Manivel}{M\bibinitperiod}{L.}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=75e879774f3d1dfe6b80a6bca389f52e}{Chapoton}{C\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=c40b9980cdaa3d6ac5c3983bd02868e0}{Manivel}{M\bibinitperiod}{L.}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{51dfb900394216569cfaeede00095851}
+      \strng{fullhash}{51dfb900394216569cfaeede00095851}
+      \field{sortinit}{C}
+      \field{labeltitle}{Triangulations and {S}everi varieties}
+      \field{issn}{1058-6458}
+      \field{journaltitle}{Exp. Math.}
+      \field{number}{1}
+      \field{title}{Triangulations and {S}everi varieties}
+      \field{volume}{22}
+      \field{year}{2013}
+      \field{pages}{60\bibrangedash 73}
+      \verb{doi}
+      \verb 10.1080/10586458.2013.743854
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1080/10586458.2013.743854
+      \endverb
+    \endentry
+    \entry{MR1983017}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=40342891b0bc81a4fd6193de56f898f3}{Christensen}{C\bibinitperiod}{Ren{\'e}\bibnamedelima Depont}{R\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{hash=e5366741d9831732ce553893c462f2f0}{Munkholm}{M\bibinitperiod}{Hans\bibnamedelima J{\o}rgen}{H\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=40342891b0bc81a4fd6193de56f898f3}{Christensen}{C\bibinitperiod}{Ren{\'e}\bibnamedelima Depont}{R\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{hash=e5366741d9831732ce553893c462f2f0}{Munkholm}{M\bibinitperiod}{Hans\bibnamedelima J{\o}rgen}{H\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{bd925eb283e00d997972ae5a0225edf3}
+      \strng{fullhash}{bd925eb283e00d997972ae5a0225edf3}
+      \field{sortinit}{C}
+      \field{labeltitle}{Topology with monoidal control}
+      \field{issn}{1512-0139}
+      \field{journaltitle}{Homology Homotopy Appl.}
+      \field{number}{1}
+      \field{title}{Topology with monoidal control}
+      \field{volume}{4}
+      \field{year}{2002}
+      \field{pages}{213\bibrangedash 234}
+    \endentry
+    \entry{aspherical}{article}{}
+      \name{labelname}{3}{}{%
+        {{hash=976f3309575ad3cc2803ad9ae3425bd0}{Davis}{D\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=0cc497648ae5f43a7975da372ccb2caf}{Fowler}{F\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=f77cf8a9cf5b77b6c6d9377d743b711b}{Lafont}{L\bibinitperiod}{J.-F.}{J\bibinithyphendelim F\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=976f3309575ad3cc2803ad9ae3425bd0}{Davis}{D\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=0cc497648ae5f43a7975da372ccb2caf}{Fowler}{F\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=f77cf8a9cf5b77b6c6d9377d743b711b}{Lafont}{L\bibinitperiod}{J.-F.}{J\bibinithyphendelim F\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{2b5712929488a2e673833a482df5bbbd}
+      \strng{fullhash}{2b5712929488a2e673833a482df5bbbd}
+      \field{sortinit}{D}
+      \field{labeltitle}{Aspherical manifolds that cannot be triangulated}
+      \field{journaltitle}{Algebr. Geom. Topol.}
+      \field{note}{Accepted for publication}
+      \field{title}{Aspherical manifolds that cannot be triangulated}
+      \field{year}{2013}
+    \endentry
+    \entry{MR1747535}{incollection}{}
+      \name{labelname}{1}{}{%
+        {{hash=ef2e1ad2988b74290ec4155492260959}{Davis}{D\bibinitperiod}{Michael\bibnamedelima W.}{M\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=ef2e1ad2988b74290ec4155492260959}{Davis}{D\bibinitperiod}{Michael\bibnamedelima W.}{M\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Princeton, NJ}%
+      }
+      \list{publisher}{1}{%
+        {Princeton Univ. Press}%
+      }
+      \strng{namehash}{ef2e1ad2988b74290ec4155492260959}
+      \strng{fullhash}{ef2e1ad2988b74290ec4155492260959}
+      \field{sortinit}{D}
+      \field{labeltitle}{Poincar\'e duality groups}
+      \field{booktitle}{Surveys on surgery theory, {V}ol. 1}
+      \field{series}{Ann. of Math. Stud.}
+      \field{title}{Poincar\'e duality groups}
+      \field{volume}{145}
+      \field{year}{2000}
+      \field{pages}{167\bibrangedash 193}
+    \endentry
+    \entry{MR1131435}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=ef2e1ad2988b74290ec4155492260959}{Davis}{D\bibinitperiod}{Michael\bibnamedelima W.}{M\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+        {{hash=8c4dad53ea9e4d163dfd71a0ef26a7f2}{Januszkiewicz}{J\bibinitperiod}{Tadeusz}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=ef2e1ad2988b74290ec4155492260959}{Davis}{D\bibinitperiod}{Michael\bibnamedelima W.}{M\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+        {{hash=8c4dad53ea9e4d163dfd71a0ef26a7f2}{Januszkiewicz}{J\bibinitperiod}{Tadeusz}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{575e376c57e8a521464c1f333cb0ddd9}
+      \strng{fullhash}{575e376c57e8a521464c1f333cb0ddd9}
+      \field{sortinit}{D}
+      \field{labeltitle}{Hyperbolization of polyhedra}
+      \field{issn}{0022-040X}
+      \field{journaltitle}{J. Differential Geom.}
+      \field{number}{2}
+      \field{title}{Hyperbolization of polyhedra}
+      \field{volume}{34}
+      \field{year}{1991}
+      \field{pages}{347\bibrangedash 388}
+      \verb{url}
+      \verb http://projecteuclid.org/getRecord?id=euclid.jdg/1214447212
+      \endverb
+    \endentry
+    \entry{MR2093885}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=1a449d87427e4ef9eddfe04059990928}{Ellis}{E\bibinitperiod}{Graham}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=1a449d87427e4ef9eddfe04059990928}{Ellis}{E\bibinitperiod}{Graham}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{1a449d87427e4ef9eddfe04059990928}
+      \strng{fullhash}{1a449d87427e4ef9eddfe04059990928}
+      \field{sortinit}{E}
+      \field{labeltitle}{Computing group resolutions}
+      \field{issn}{0747-7171}
+      \field{journaltitle}{J. Symbolic Comput.}
+      \field{number}{3}
+      \field{title}{Computing group resolutions}
+      \field{volume}{38}
+      \field{year}{2004}
+      \field{pages}{1077\bibrangedash 1118}
+      \verb{doi}
+      \verb 10.1016/j.jsc.2004.03.003
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1016/j.jsc.2004.03.003
+      \endverb
+    \endentry
+    \entry{gates-foundation-grant}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=6827fdf92ab4cd26fcc298280be100e9}{English}{E\bibinitperiod}{Department}{D\bibinitperiod}{of}{o\bibinitperiod}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=6827fdf92ab4cd26fcc298280be100e9}{English}{E\bibinitperiod}{Department}{D\bibinitperiod}{of}{o\bibinitperiod}{}{}}%
+      }
+      \strng{namehash}{6827fdf92ab4cd26fcc298280be100e9}
+      \strng{fullhash}{6827fdf92ab4cd26fcc298280be100e9}
+      \field{sortinit}{E}
+      \field{labeltitle}{RCL Team Awarded \$50K Bill \& Melinda Gates Foundation Grant for MOOC ``Writing II: Rhetorical Composition.''}
+      \field{month}{01}
+      \field{title}{RCL Team Awarded \$50K Bill \& Melinda Gates Foundation Grant for MOOC ``Writing II: Rhetorical Composition.''}
+      \field{year}{2013}
+      \verb{url}
+      \verb http://go.osu.edu/english
+      \endverb
+    \endentry
+    \entry{MR2847943}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=38dacc6d3489592f81d691e83b26a8b4}{Erickson}{E\bibinitperiod}{Martin}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=38dacc6d3489592f81d691e83b26a8b4}{Erickson}{E\bibinitperiod}{Martin}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Washington, DC}%
+      }
+      \list{publisher}{1}{%
+        {Mathematical Association of America}%
+      }
+      \strng{namehash}{38dacc6d3489592f81d691e83b26a8b4}
+      \strng{fullhash}{38dacc6d3489592f81d691e83b26a8b4}
+      \field{sortinit}{E}
+      \field{labeltitle}{Beautiful mathematics}
+      \field{isbn}{978-0-88385-576-8}
+      \field{series}{MAA Spectrum}
+      \field{title}{Beautiful mathematics}
+      \field{year}{2011}
+      \field{pages}{xiv+177}
+      \verb{doi}
+      \verb 10.5948/UPO9781614445098
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.5948/UPO9781614445098
+      \endverb
+    \endentry
+    \entry{forger-1998}{misc}{}
+      \name{labelname}{2}{}{%
+        {{hash=efd3cd914ad160de5a8ad4970eec2b54}{Forger}{F\bibinitperiod}{F.\bibnamedelimi M.\bibnamedelimi }{F\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{hash=2a7fe336e5f32062bf7d3ae7ccb8c26a}{Sachse}{S\bibinitperiod}{R.\bibnamedelimi S.\bibnamedelimi }{R\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=efd3cd914ad160de5a8ad4970eec2b54}{Forger}{F\bibinitperiod}{F.\bibnamedelimi M.\bibnamedelimi }{F\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{hash=2a7fe336e5f32062bf7d3ae7ccb8c26a}{Sachse}{S\bibinitperiod}{R.\bibnamedelimi S.\bibnamedelimi }{R\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{3cfe26bbe1923278e107de05b661b2f4}
+      \strng{fullhash}{3cfe26bbe1923278e107de05b661b2f4}
+      \field{sortinit}{F}
+      \field{labeltitle}{Lie Superalgebras and the Multiplet Structure of the Genetic Code I: Codon Representations}
+      \field{title}{Lie Superalgebras and the Multiplet Structure of the Genetic Code I: Codon Representations}
+      \field{year}{1998}
+      \verb{url}
+      \verb http://www.citebase.org/abstract?id=oai:arXiv.org:math-ph/9808001
+      \endverb
+    \endentry
+    \entry{forger-1999}{misc}{}
+      \name{labelname}{2}{}{%
+        {{hash=994de45cd05d9e806e47db22536e941f}{Forger}{F\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=6d39c809eb29b8efb0109096257bb7c6}{Sachse}{S\bibinitperiod}{Sebastian}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=994de45cd05d9e806e47db22536e941f}{Forger}{F\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=6d39c809eb29b8efb0109096257bb7c6}{Sachse}{S\bibinitperiod}{Sebastian}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{0cdd8bd0833237b7211ef4afb738ddcd}
+      \strng{fullhash}{0cdd8bd0833237b7211ef4afb738ddcd}
+      \field{sortinit}{F}
+      \field{labeltitle}{Lie Superalgebras and the Multiplet Structure of the Genetic Code II: Branching Schemes}
+      \field{title}{Lie Superalgebras and the Multiplet Structure of the Genetic Code II: Branching Schemes}
+      \field{year}{1999}
+      \verb{url}
+      \verb http://www.citebase.org/abstract?id=oai:arXiv.org:math-ph/9905017
+      \endverb
+    \endentry
+    \entry{MR2962981}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=0cc497648ae5f43a7975da372ccb2caf}{Fowler}{F\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=70d529cc619309b7ca37750e69f9e552}{Ogle}{O\bibinitperiod}{C.}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=0cc497648ae5f43a7975da372ccb2caf}{Fowler}{F\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=70d529cc619309b7ca37750e69f9e552}{Ogle}{O\bibinitperiod}{C.}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{2df6475f8ca8dba1c31bc6f60ae6dc16}
+      \strng{fullhash}{2df6475f8ca8dba1c31bc6f60ae6dc16}
+      \field{sortinit}{F}
+      \field{labeltitle}{Bounded homotopy theory and the {$K$}-theory of weighted complexes}
+      \field{issn}{0371-9685}
+      \field{journaltitle}{Tr. Mat. Inst. Steklova}
+      \field{number}{Klassicheskaya i Sovremennaya Matematika v Pole Deyatelnosti Borisa Nikolaevicha Delone}
+      \field{title}{Bounded homotopy theory and the {$K$}-theory of weighted complexes}
+      \field{volume}{275}
+      \field{year}{2011}
+      \field{pages}{210\bibrangedash 226}
+      \verb{doi}
+      \verb 10.1134/S0081543811080141
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1134/S0081543811080141
+      \endverb
+    \endentry
+    \entry{2012arXiv1203.6604F}{article}{}
+      \name{labelname}{4}{}{%
+        {{hash=0cc497648ae5f43a7975da372ccb2caf}{{Fowler}}{F\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=9fcf2e05336278223540fbd139e6ea9d}{{Groot}}{G\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=3d8b3eb3e70d6ddecd308dbdae8e746b}{{Pandya}}{P\bibinitperiod}{D.}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=9f332bca8222f8c57b49abc2019976e1}{{Snapp}}{S\bibinitperiod}{B.}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=0cc497648ae5f43a7975da372ccb2caf}{{Fowler}}{F\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=9fcf2e05336278223540fbd139e6ea9d}{{Groot}}{G\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=3d8b3eb3e70d6ddecd308dbdae8e746b}{{Pandya}}{P\bibinitperiod}{D.}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=9f332bca8222f8c57b49abc2019976e1}{{Snapp}}{S\bibinitperiod}{B.}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{0b449edb33573dd73111d8e2960eac76}
+      \strng{fullhash}{c960a68409238d1c3f115a4f6cc78879}
+      \field{sortinit}{F}
+      \field{labeltitle}{{The no-three-in-line problem on a torus}}
+      \field{eprintclass}{math.CO}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{ArXiv e-prints}
+      \field{month}{03}
+      \field{title}{{The no-three-in-line problem on a torus}}
+      \field{year}{2012}
+      \verb{eprint}
+      \verb 1203.6604
+      \endverb
+      \keyw{Mathematics - Combinatorics,Mathematics - Commutative Algebra,05B30,12Y05}
+    \endentry
+    \entry{MR679066}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=30b37028095b3722fc486f757e024068}{Freedman}{F\bibinitperiod}{Michael\bibnamedelima Hartley}{M\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=30b37028095b3722fc486f757e024068}{Freedman}{F\bibinitperiod}{Michael\bibnamedelima Hartley}{M\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{30b37028095b3722fc486f757e024068}
+      \strng{fullhash}{30b37028095b3722fc486f757e024068}
+      \field{sortinit}{F}
+      \field{labeltitle}{The topology of four-dimensional manifolds}
+      \field{issn}{0022-040X}
+      \field{journaltitle}{J. Differential Geom.}
+      \field{number}{3}
+      \field{title}{The topology of four-dimensional manifolds}
+      \field{volume}{17}
+      \field{year}{1982}
+      \field{pages}{357\bibrangedash 453}
+      \verb{url}
+      \verb http://projecteuclid.org/getRecord?id=euclid.jdg/1214437136
+      \endverb
+    \endentry
+    \entry{MR558395}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=d31d5327616ff0bdcdb620de39faf97d}{Galewski}{G\bibinitperiod}{David\bibnamedelima E.}{D\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=dfc8d9bff3c0bcd1f647ec1faace4f92}{Stern}{S\bibinitperiod}{Ronald\bibnamedelima J.}{R\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=d31d5327616ff0bdcdb620de39faf97d}{Galewski}{G\bibinitperiod}{David\bibnamedelima E.}{D\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=dfc8d9bff3c0bcd1f647ec1faace4f92}{Stern}{S\bibinitperiod}{Ronald\bibnamedelima J.}{R\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{f9cb0b2babd5e720d5b342047bc695b1}
+      \strng{fullhash}{f9cb0b2babd5e720d5b342047bc695b1}
+      \field{sortinit}{G}
+      \field{labeltitle}{Classification of simplicial triangulations of topological manifolds}
+      \field{issn}{0003-486X}
+      \field{journaltitle}{Ann. of Math. (2)}
+      \field{number}{1}
+      \field{title}{Classification of simplicial triangulations of topological manifolds}
+      \field{volume}{111}
+      \field{year}{1980}
+      \field{pages}{1\bibrangedash 34}
+      \verb{doi}
+      \verb 10.2307/1971215
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.2307/1971215
+      \endverb
+    \endentry
+    \entry{MR603653}{incollection}{}
+      \name{labelname}{1}{}{%
+        {{hash=ecce9ef5b9845e0908c6098cad9c6ead}{Glazunov}{G\bibinitperiod}{N.\bibnamedelimi M.}{N\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=ecce9ef5b9845e0908c6098cad9c6ead}{Glazunov}{G\bibinitperiod}{N.\bibnamedelimi M.}{N\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Kiev}%
+      }
+      \list{publisher}{1}{%
+        {Akad. Nauk Ukrain. SSR Inst. Kibernet.}%
+      }
+      \strng{namehash}{ecce9ef5b9845e0908c6098cad9c6ead}
+      \strng{fullhash}{ecce9ef5b9845e0908c6098cad9c6ead}
+      \field{sortinit}{G}
+      \field{labeltitle}{Algorithms for calculation of cohomology groups of finite groups. {I}}
+      \field{booktitle}{Computations in algebra and combinatorial analysis ({R}ussian)}
+      \field{title}{Algorithms for calculation of cohomology groups of finite groups. {I}}
+      \field{year}{1978}
+      \field{pages}{208\bibrangedash 218}
+    \endentry
+    \entry{MR1253544}{incollection}{}
+      \name{labelname}{1}{}{%
+        {{hash=a68627ca86c49f3a814854d9d8d91ca6}{Gromov}{G\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=a68627ca86c49f3a814854d9d8d91ca6}{Gromov}{G\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Cambridge}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge Univ. Press}%
+      }
+      \strng{namehash}{a68627ca86c49f3a814854d9d8d91ca6}
+      \strng{fullhash}{a68627ca86c49f3a814854d9d8d91ca6}
+      \field{sortinit}{G}
+      \field{labeltitle}{Asymptotic invariants of infinite groups}
+      \field{booktitle}{Geometric group theory, {V}ol.\ 2 ({S}ussex, 1991)}
+      \field{series}{London Math. Soc. Lecture Note Ser.}
+      \field{title}{Asymptotic invariants of infinite groups}
+      \field{volume}{182}
+      \field{year}{1993}
+      \field{pages}{1\bibrangedash 295}
+    \endentry
+    \entry{hagerty2005using}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=4049a58735f1e451a6f309add5a5766d}{Hagerty}{H\bibinitperiod}{Gary}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=2c528ec769079cc43320d94eb0c26a74}{Smith}{S\bibinitperiod}{S}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=4049a58735f1e451a6f309add5a5766d}{Hagerty}{H\bibinitperiod}{Gary}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=2c528ec769079cc43320d94eb0c26a74}{Smith}{S\bibinitperiod}{S}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {ERIC}%
+      }
+      \strng{namehash}{10fa789caa4285451c66cbf1b61e3c6c}
+      \strng{fullhash}{10fa789caa4285451c66cbf1b61e3c6c}
+      \field{sortinit}{H}
+      \field{labeltitle}{Using the Web-Based Interactive Software ALEKS to Enhance College Algebra.}
+      \field{journaltitle}{Mathematics and Computer Education}
+      \field{number}{3}
+      \field{title}{Using the Web-Based Interactive Software ALEKS to Enhance College Algebra.}
+      \field{volume}{39}
+      \field{year}{2005}
+      \field{pages}{183\bibrangedash 194}
+    \endentry
+    \entry{MR366817}{article}{}
+      \name{labelname}{4}{}{%
+        {{hash=0f4a18acb60ce29405d0496b4622574e}{Hall}{H\bibinitperiod}{R.\bibnamedelimi R.}{R\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{hash=a436a52f6f634f165d0230869257bf90}{Jackson}{J\bibinitperiod}{T.\bibnamedelimi H.}{T\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=b6af18c2c213fc373efe367feadadb2c}{Sudbery}{S\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=999876425b9fbbfad939e5cb59a252e5}{Wild}{W\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=0f4a18acb60ce29405d0496b4622574e}{Hall}{H\bibinitperiod}{R.\bibnamedelimi R.}{R\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{hash=a436a52f6f634f165d0230869257bf90}{Jackson}{J\bibinitperiod}{T.\bibnamedelimi H.}{T\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=b6af18c2c213fc373efe367feadadb2c}{Sudbery}{S\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=999876425b9fbbfad939e5cb59a252e5}{Wild}{W\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{8e1afee053b85e4b04abdf2a8c1b3030}
+      \strng{fullhash}{014bb9b6ae004849b5d477f3bbcbedde}
+      \field{sortinit}{H}
+      \field{labeltitle}{Some advances in the no-three-in-line problem}
+      \field{journaltitle}{J. Combinatorial Theory Ser. A}
+      \field{title}{Some advances in the no-three-in-line problem}
+      \field{volume}{18}
+      \field{year}{1975}
+      \field{pages}{336\bibrangedash 341}
+    \endentry
+    \entry{MR2684369}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=4f63956032539faf2fc63521a396bb52}{Harvey}{H\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=4f63956032539faf2fc63521a396bb52}{Harvey}{H\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{4f63956032539faf2fc63521a396bb52}
+      \strng{fullhash}{4f63956032539faf2fc63521a396bb52}
+      \field{sortinit}{H}
+      \field{labeltitle}{A multimodular algorithm for computing {B}ernoulli numbers}
+      \field{issn}{0025-5718}
+      \field{journaltitle}{Math. Comp.}
+      \field{number}{272}
+      \field{title}{A multimodular algorithm for computing {B}ernoulli numbers}
+      \field{volume}{79}
+      \field{year}{2010}
+      \field{pages}{2361\bibrangedash 2370}
+      \verb{doi}
+      \verb 10.1090/S0025-5718-2010-02367-1
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1090/S0025-5718-2010-02367-1
+      \endverb
+    \endentry
+    \entry{MR1451755}{article}{}
+      \name{labelname}{3}{}{%
+        {{hash=e4be18921b4a78058024acb4be99eeb5}{Higson}{H\bibinitperiod}{Nigel}{N\bibinitperiod}{}{}{}{}}%
+        {{hash=6d356684fccd93e29ae9d463df91ffac}{Pedersen}{P\bibinitperiod}{Erik\bibnamedelima Kj{\ae}r}{E\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{hash=1e72a788c1fd0efafbf2319609787cc8}{Roe}{R\bibinitperiod}{John}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=e4be18921b4a78058024acb4be99eeb5}{Higson}{H\bibinitperiod}{Nigel}{N\bibinitperiod}{}{}{}{}}%
+        {{hash=6d356684fccd93e29ae9d463df91ffac}{Pedersen}{P\bibinitperiod}{Erik\bibnamedelima Kj{\ae}r}{E\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{hash=1e72a788c1fd0efafbf2319609787cc8}{Roe}{R\bibinitperiod}{John}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{22f2c62cc300960f82a3b0680ca69356}
+      \strng{fullhash}{22f2c62cc300960f82a3b0680ca69356}
+      \field{sortinit}{H}
+      \field{labeltitle}{{$C^\ast$}-algebras and controlled topology}
+      \field{issn}{0920-3036}
+      \field{journaltitle}{$K$-Theory}
+      \field{number}{3}
+      \field{title}{{$C^\ast$}-algebras and controlled topology}
+      \field{volume}{11}
+      \field{year}{1997}
+      \field{pages}{209\bibrangedash 239}
+      \verb{doi}
+      \verb 10.1023/A:1007705726771
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1023/A:1007705726771
+      \endverb
+    \endentry
+    \entry{MR554919}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=ad1b9a6f966c6d88bb65bc4ccebeda51}{Hirschfeld}{H\bibinitperiod}{J.\bibnamedelimi W.\bibnamedelimi P.}{J\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=ad1b9a6f966c6d88bb65bc4ccebeda51}{Hirschfeld}{H\bibinitperiod}{J.\bibnamedelimi W.\bibnamedelimi P.}{J\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {The Clarendon Press Oxford University Press}%
+      }
+      \strng{namehash}{ad1b9a6f966c6d88bb65bc4ccebeda51}
+      \strng{fullhash}{ad1b9a6f966c6d88bb65bc4ccebeda51}
+      \field{sortinit}{H}
+      \field{labeltitle}{Projective geometries over finite fields}
+      \field{isbn}{0-19-853526-0}
+      \field{note}{Oxford Mathematical Monographs}
+      \field{title}{Projective geometries over finite fields}
+      \field{year}{1979}
+      \field{pages}{xii+474}
+    \endentry
+    \entry{originalhornos}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=bf7aa0db90bba44156bc1e788d70b19e}{Hornos}{H\bibinitperiod}{J.\bibnamedelimi E.}{J\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=7ea69af379190e9ba1b805a73f1060fd}{Hornos}{H\bibinitperiod}{Y.\bibnamedelimi M.}{Y\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=bf7aa0db90bba44156bc1e788d70b19e}{Hornos}{H\bibinitperiod}{J.\bibnamedelimi E.}{J\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{hash=7ea69af379190e9ba1b805a73f1060fd}{Hornos}{H\bibinitperiod}{Y.\bibnamedelimi M.}{Y\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c43aa45d5db81f9b11cc907865a6cf8a}
+      \strng{fullhash}{c43aa45d5db81f9b11cc907865a6cf8a}
+      \field{sortinit}{H}
+      \field{labeltitle}{{{A}lgebraic model for the evolution of the genetic code}}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{month}{12}
+      \field{title}{{{A}lgebraic model for the evolution of the genetic code}}
+      \field{volume}{71}
+      \field{year}{1993}
+      \field{pages}{4401\bibrangedash 4404}
+    \endentry
+    \entry{MR242166}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=12a47b617ace7bc0ac460f98a65f9748}{Kirby}{K\bibinitperiod}{R.\bibnamedelimi C.}{R\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{hash=dd1c1ab98f939e6fe934b15590a5498f}{Siebenmann}{S\bibinitperiod}{L.\bibnamedelimi C.}{L\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=12a47b617ace7bc0ac460f98a65f9748}{Kirby}{K\bibinitperiod}{R.\bibnamedelimi C.}{R\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{hash=dd1c1ab98f939e6fe934b15590a5498f}{Siebenmann}{S\bibinitperiod}{L.\bibnamedelimi C.}{L\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{425f1aa65ec81b15a391373209ea5f08}
+      \strng{fullhash}{425f1aa65ec81b15a391373209ea5f08}
+      \field{sortinit}{K}
+      \field{labeltitle}{On the triangulation of manifolds and the {H}auptvermutung}
+      \field{issn}{0002-9904}
+      \field{journaltitle}{Bull. Amer. Math. Soc.}
+      \field{title}{On the triangulation of manifolds and the {H}auptvermutung}
+      \field{volume}{75}
+      \field{year}{1969}
+      \field{pages}{742\bibrangedash 749}
+    \endentry
+    \entry{evans}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=ae9fd6abfcae68603167e063b6fb24c6}{Knott}{K\bibinitperiod}{Jessica}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=ae9fd6abfcae68603167e063b6fb24c6}{Knott}{K\bibinitperiod}{Jessica}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{ae9fd6abfcae68603167e063b6fb24c6}
+      \strng{fullhash}{ae9fd6abfcae68603167e063b6fb24c6}
+      \field{sortinit}{K}
+      \field{labeltitle}{MOOCulus for Calculus Fun: An Interview with Tom Evans}
+      \field{journaltitle}{ETC Journal: a journal for educational technology and change.}
+      \field{title}{MOOCulus for Calculus Fun: An Interview with Tom Evans}
+      \field{volume}{July}
+      \field{year}{2013}
+    \endentry
+    \entry{predict-grades}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=a55810fcc180abdc36a8f3a1c3e22d6a}{Kotsiantis}{K\bibinitperiod}{S.B.}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=a55810fcc180abdc36a8f3a1c3e22d6a}{Kotsiantis}{K\bibinitperiod}{S.B.}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{publisher}{1}{%
+        {Springer Netherlands}%
+      }
+      \strng{namehash}{a55810fcc180abdc36a8f3a1c3e22d6a}
+      \strng{fullhash}{a55810fcc180abdc36a8f3a1c3e22d6a}
+      \field{sortinit}{K}
+      \field{labeltitle}{Use of machine learning techniques for educational proposes: a decision support system for forecasting students' grades}
+      \field{issn}{0269-2821}
+      \field{journaltitle}{Artificial Intelligence Review}
+      \field{number}{4}
+      \field{title}{Use of machine learning techniques for educational proposes: a decision support system for forecasting students' grades}
+      \field{volume}{37}
+      \field{year}{2012}
+      \field{pages}{331\bibrangedash 344}
+      \verb{doi}
+      \verb 10.1007/s10462-011-9234-x
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/s10462-011-9234-x
+      \endverb
+      \keyw{Machine learning; Educational data mining; Decision support tools}
+    \endentry
+    \entry{MR1027600}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=42b5e5f9f3cfaab60c0df4897091b35c}{L{\"u}ck}{L\bibinitperiod}{Wolfgang}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=42b5e5f9f3cfaab60c0df4897091b35c}{L{\"u}ck}{L\bibinitperiod}{Wolfgang}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag}%
+      }
+      \strng{namehash}{42b5e5f9f3cfaab60c0df4897091b35c}
+      \strng{fullhash}{42b5e5f9f3cfaab60c0df4897091b35c}
+      \field{sortinit}{L}
+      \field{labeltitle}{Transformation groups and algebraic {$K$}-theory}
+      \field{isbn}{3-540-51846-0}
+      \field{note}{Mathematica Gottingensis}
+      \field{series}{Lecture Notes in Mathematics}
+      \field{title}{Transformation groups and algebraic {$K$}-theory}
+      \field{volume}{1408}
+      \field{year}{1989}
+      \field{pages}{xii+443}
+    \endentry
+    \entry{manolescu2013conley}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=db98d50286a8ffa6c7cfe9381c198493}{Manolescu}{M\bibinitperiod}{Ciprian}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=db98d50286a8ffa6c7cfe9381c198493}{Manolescu}{M\bibinitperiod}{Ciprian}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{db98d50286a8ffa6c7cfe9381c198493}
+      \strng{fullhash}{db98d50286a8ffa6c7cfe9381c198493}
+      \field{sortinit}{M}
+      \field{labeltitle}{The Conley index, gauge theory, and triangulations}
+      \field{journaltitle}{Journal of Fixed Point Theory and Applications}
+      \field{title}{The Conley index, gauge theory, and triangulations}
+      \field{year}{2013}
+      \field{pages}{1\bibrangedash 27}
+    \endentry
+    \entry{MR2271789}{book}{}
+      \name{labelname}{2}{}{%
+        {{hash=5d5f65548a0990e12cdba62c77295ec2}{May}{M\bibinitperiod}{J.\bibnamedelimi P.}{J\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{hash=2c99917e7991e047e4e196013d713aa1}{Sigurdsson}{S\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=5d5f65548a0990e12cdba62c77295ec2}{May}{M\bibinitperiod}{J.\bibnamedelimi P.}{J\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{hash=2c99917e7991e047e4e196013d713aa1}{Sigurdsson}{S\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Providence, RI}%
+      }
+      \list{publisher}{1}{%
+        {American Mathematical Society}%
+      }
+      \strng{namehash}{863dede7b7578d6627e1fe71269b4b1c}
+      \strng{fullhash}{863dede7b7578d6627e1fe71269b4b1c}
+      \field{sortinit}{M}
+      \field{labeltitle}{Parametrized homotopy theory}
+      \field{isbn}{978-0-8218-3922-5; 0-8218-3922-5}
+      \field{series}{Mathematical Surveys and Monographs}
+      \field{title}{Parametrized homotopy theory}
+      \field{volume}{132}
+      \field{year}{2006}
+      \field{pages}{x+441}
+    \endentry
+    \entry{MR440554}{book}{}
+      \name{labelname}{2}{}{%
+        {{hash=23a9fc8317829d07e48c0c8cd2ce7dc3}{Milnor}{M\bibinitperiod}{John\bibnamedelima W.}{J\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+        {{hash=f0efd25cb32bc50037f7a7072efb0d65}{Stasheff}{S\bibinitperiod}{James\bibnamedelima D.}{J\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=23a9fc8317829d07e48c0c8cd2ce7dc3}{Milnor}{M\bibinitperiod}{John\bibnamedelima W.}{J\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+        {{hash=f0efd25cb32bc50037f7a7072efb0d65}{Stasheff}{S\bibinitperiod}{James\bibnamedelima D.}{J\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Princeton, N. J.}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{ddc976439959c5461c45393dc5626df8}
+      \strng{fullhash}{ddc976439959c5461c45393dc5626df8}
+      \field{sortinit}{M}
+      \field{labeltitle}{Characteristic classes}
+      \field{note}{Annals of Mathematics Studies, No. 76}
+      \field{title}{Characteristic classes}
+      \field{year}{1974}
+      \field{pages}{vii+331}
+    \endentry
+    \entry{MR6980}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=7b6a5eeaaf8fc2da1b0ddfb3715e7eb2}{Niven}{N\bibinitperiod}{Ivan}{I\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=7b6a5eeaaf8fc2da1b0ddfb3715e7eb2}{Niven}{N\bibinitperiod}{Ivan}{I\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{7b6a5eeaaf8fc2da1b0ddfb3715e7eb2}
+      \strng{fullhash}{7b6a5eeaaf8fc2da1b0ddfb3715e7eb2}
+      \field{sortinit}{N}
+      \field{labeltitle}{The roots of a quaternion}
+      \field{issn}{0002-9890}
+      \field{journaltitle}{Amer. Math. Monthly}
+      \field{title}{The roots of a quaternion}
+      \field{volume}{49}
+      \field{year}{1942}
+      \field{pages}{386\bibrangedash 388}
+    \endentry
+    \entry{MR2109110}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=70d529cc619309b7ca37750e69f9e552}{Ogle}{O\bibinitperiod}{C.}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=70d529cc619309b7ca37750e69f9e552}{Ogle}{O\bibinitperiod}{C.}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{70d529cc619309b7ca37750e69f9e552}
+      \strng{fullhash}{70d529cc619309b7ca37750e69f9e552}
+      \field{sortinit}{O}
+      \field{labeltitle}{Polynomially bounded cohomology and discrete groups}
+      \field{issn}{0022-4049}
+      \field{journaltitle}{J. Pure Appl. Algebra}
+      \field{number}{2}
+      \field{title}{Polynomially bounded cohomology and discrete groups}
+      \field{volume}{195}
+      \field{year}{2005}
+      \field{pages}{173\bibrangedash 209}
+      \verb{doi}
+      \verb 10.1016/j.jpaa.2004.06.009
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1016/j.jpaa.2004.06.009
+      \endverb
+    \endentry
+    \entry{parry2012big}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=461bc46d74a0cba643d0ab90a80464ee}{Parry}{P\bibinitperiod}{Marc}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=461bc46d74a0cba643d0ab90a80464ee}{Parry}{P\bibinitperiod}{Marc}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{461bc46d74a0cba643d0ab90a80464ee}
+      \strng{fullhash}{461bc46d74a0cba643d0ab90a80464ee}
+      \field{sortinit}{P}
+      \field{labeltitle}{Big Data on Campus}
+      \field{journaltitle}{The New York Times}
+      \field{title}{Big Data on Campus}
+      \field{year}{2012}
+      \field{pages}{1\bibrangedash 9}
+    \endentry
+    \entry{MR550674}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=d5e9426f07b2e610e07ba87707235052}{Petrenko}{P\bibinitperiod}{A.\bibnamedelimi K.}{A\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{hash=ca4351ef5a45ec46c5d3668a81b17520}{Petrenko}{P\bibinitperiod}{O.\bibnamedelimi L.}{O\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=d5e9426f07b2e610e07ba87707235052}{Petrenko}{P\bibinitperiod}{A.\bibnamedelimi K.}{A\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{hash=ca4351ef5a45ec46c5d3668a81b17520}{Petrenko}{P\bibinitperiod}{O.\bibnamedelimi L.}{O\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{00557a1f7cc99cc3c03e02ca9b686984}
+      \strng{fullhash}{00557a1f7cc99cc3c03e02ca9b686984}
+      \field{sortinit}{P}
+      \field{labeltitle}{The {B}abbage machine and the origins of programming}
+      \field{issn}{0136-0949}
+      \field{journaltitle}{Istor.-Mat. Issled.}
+      \field{number}{24}
+      \field{title}{The {B}abbage machine and the origins of programming}
+      \field{year}{1979}
+      \field{pages}{340\bibrangedash 360\bibrangessep 389}
+    \endentry
+    \entry{MR802791}{incollection}{}
+      \name{labelname}{1}{}{%
+        {{hash=7fd296cf3bcc29bea9a33cf301a8d6c9}{Quinn}{Q\bibinitperiod}{Frank}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=7fd296cf3bcc29bea9a33cf301a8d6c9}{Quinn}{Q\bibinitperiod}{Frank}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{7fd296cf3bcc29bea9a33cf301a8d6c9}
+      \strng{fullhash}{7fd296cf3bcc29bea9a33cf301a8d6c9}
+      \field{sortinit}{Q}
+      \field{labeltitle}{Geometric algebra}
+      \field{booktitle}{Algebraic and geometric topology ({N}ew {B}runswick, {N}.{J}., 1983)}
+      \field{series}{Lecture Notes in Math.}
+      \field{title}{Geometric algebra}
+      \field{volume}{1126}
+      \field{year}{1985}
+      \field{pages}{182\bibrangedash 198}
+      \verb{doi}
+      \verb 10.1007/BFb0074444
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/BFb0074444
+      \endverb
+    \endentry
+    \entry{romero2010educational}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=d761fe297cfeff814f3cd325aa515b7b}{Romero}{R\bibinitperiod}{Crist{\'o}bal}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=cce83d40c7c094c133543b97f928814b}{Ventura}{V\bibinitperiod}{Sebasti{\'a}n}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=d761fe297cfeff814f3cd325aa515b7b}{Romero}{R\bibinitperiod}{Crist{\'o}bal}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=cce83d40c7c094c133543b97f928814b}{Ventura}{V\bibinitperiod}{Sebasti{\'a}n}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{68a95805d389d5cf368169a08b3045cc}
+      \strng{fullhash}{68a95805d389d5cf368169a08b3045cc}
+      \field{sortinit}{R}
+      \field{labeltitle}{Educational data mining: a review of the state of the art}
+      \field{journaltitle}{Systems, Man, and Cybernetics, Part C: Applications and Reviews, IEEE Transactions on}
+      \field{number}{6}
+      \field{title}{Educational data mining: a review of the state of the art}
+      \field{volume}{40}
+      \field{year}{2010}
+      \field{pages}{601\bibrangedash 618}
+    \endentry
+    \entry{MR41889}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=418e650371429f15087254215cb464b7}{Roth}{R\bibinitperiod}{K.\bibnamedelimi F.}{K\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=418e650371429f15087254215cb464b7}{Roth}{R\bibinitperiod}{K.\bibnamedelimi F.}{K\bibinitperiod\bibinitdelim F\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{418e650371429f15087254215cb464b7}
+      \strng{fullhash}{418e650371429f15087254215cb464b7}
+      \field{sortinit}{R}
+      \field{labeltitle}{On a problem of {H}eilbronn}
+      \field{issn}{0024-6107}
+      \field{journaltitle}{J. London Math. Soc.}
+      \field{title}{On a problem of {H}eilbronn}
+      \field{volume}{26}
+      \field{year}{1951}
+      \field{pages}{198\bibrangedash 204}
+    \endentry
+    \entry{ghmm}{online}{}
+      \name{labelname}{6}{}{%
+        {{hash=d74d85032e16a79d8084a5d6848fb6ec}{Schliep}{S\bibinitperiod}{Alexander}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=0e5b39a7107aaa19bbc7d83c478ef9cc}{Costa}{C\bibinitperiod}{Ivan\bibnamedelima G.}{I\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{hash=ccd84529493564950590c21eaec19ce7}{Georgi}{G\bibinitperiod}{Benjamin}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=8305cf763ce839321ef58044c7b3ef49}{Hafemeister}{H\bibinitperiod}{Christoph}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=39a46567eb288395c002dbaf95eabd52}{Sch{\"o}nhuth}{S\bibinitperiod}{Alexander}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=a6423854f92db8488e69f63018013eca}{Mahmud}{M\bibinitperiod}{Md\bibnamedelima Pavel}{M\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{6}{}{%
+        {{hash=d74d85032e16a79d8084a5d6848fb6ec}{Schliep}{S\bibinitperiod}{Alexander}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=0e5b39a7107aaa19bbc7d83c478ef9cc}{Costa}{C\bibinitperiod}{Ivan\bibnamedelima G.}{I\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{hash=ccd84529493564950590c21eaec19ce7}{Georgi}{G\bibinitperiod}{Benjamin}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=8305cf763ce839321ef58044c7b3ef49}{Hafemeister}{H\bibinitperiod}{Christoph}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=39a46567eb288395c002dbaf95eabd52}{Sch{\"o}nhuth}{S\bibinitperiod}{Alexander}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=a6423854f92db8488e69f63018013eca}{Mahmud}{M\bibinitperiod}{Md\bibnamedelima Pavel}{M\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{dc7f1198f99ccd8c84b3c313599ebf08}
+      \strng{fullhash}{b2013b4d815cc10c5dc129684410d0a3}
+      \field{sortinit}{S}
+      \field{labeltitle}{The General Hidden Markov Model library}
+      \field{month}{08}
+      \field{title}{The General Hidden Markov Model library}
+      \field{year}{2013}
+      \verb{url}
+      \verb http://ghmm.org
+      \endverb
+    \endentry
+    \entry{walksat}{article}{}
+      \true{morelabelname}
+      \name{labelname}{3}{}{%
+        {{hash=0ff75e71f593b1e7ef8dc99e4a1ff418}{Selman}{S\bibinitperiod}{Bart}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=b2f57860068ca81fddf9083bdf8e72a5}{Kautz}{K\bibinitperiod}{Henry}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=48e49f55c3b1ebfe9cf1954935b19d8d}{Cohen}{C\bibinitperiod}{Bram}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \true{moreauthor}
+      \name{author}{3}{}{%
+        {{hash=0ff75e71f593b1e7ef8dc99e4a1ff418}{Selman}{S\bibinitperiod}{Bart}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=b2f57860068ca81fddf9083bdf8e72a5}{Kautz}{K\bibinitperiod}{Henry}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=48e49f55c3b1ebfe9cf1954935b19d8d}{Cohen}{C\bibinitperiod}{Bram}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{1a05e063725866e4a8366fbdfdc67bbe}
+      \strng{fullhash}{614a8f58cce15d8b9383e5a7b9a13094}
+      \field{sortinit}{S}
+      \field{labeltitle}{Local search strategies for satisfiability testing}
+      \field{journaltitle}{Cliques, coloring, and satisfiability: Second DIMACS implementation challenge}
+      \field{title}{Local search strategies for satisfiability testing}
+      \field{volume}{26}
+      \field{year}{1993}
+      \field{pages}{521\bibrangedash 532}
+    \endentry
+    \entry{MR1851239}{article}{}
+      \name{labelname}{3}{}{%
+        {{hash=d77e435bdc6f9ec79aefeb0a11a5a90a}{Ser{\^o}dio}{S\bibinitperiod}{R.}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=b6ad80655ef8d2e274b22f915baef0a9}{Pereira}{P\bibinitperiod}{E.}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=b917d6a1d23e8fb6221ef042e6c94436}{Vit{\'o}ria}{V\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=d77e435bdc6f9ec79aefeb0a11a5a90a}{Ser{\^o}dio}{S\bibinitperiod}{R.}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=b6ad80655ef8d2e274b22f915baef0a9}{Pereira}{P\bibinitperiod}{E.}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=b917d6a1d23e8fb6221ef042e6c94436}{Vit{\'o}ria}{V\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{983d333f30245c0e4efb140ca4272b7e}
+      \strng{fullhash}{983d333f30245c0e4efb140ca4272b7e}
+      \field{sortinit}{S}
+      \field{labeltitle}{Computing the zeros of quaternion polynomials}
+      \field{issn}{0898-1221}
+      \field{journaltitle}{Comput. Math. Appl.}
+      \field{note}{Numerical methods and computational mechanics (Miskolc, 1998)}
+      \field{number}{8-9}
+      \field{title}{Computing the zeros of quaternion polynomials}
+      \field{volume}{42}
+      \field{year}{2001}
+      \field{pages}{1229\bibrangedash 1237}
+      \verb{doi}
+      \verb 10.1016/S0898-1221(01)00235-8
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1016/S0898-1221(01)00235-8
+      \endverb
+    \endentry
+    \entry{shihdiscovery}{article}{}
+      \name{labelname}{3}{}{%
+        {{hash=87ded5f50ba5937b96ddedad9592686d}{Shih}{S\bibinitperiod}{Benjamin}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=3f33157e7a771f5c4ad5453e2bfd6a3a}{Koedinger}{K\bibinitperiod}{Kenneth\bibnamedelima R}{K\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{hash=02f6653c0e96cdc7d40f942944d5e3fb}{Scheines}{S\bibinitperiod}{Richard}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=87ded5f50ba5937b96ddedad9592686d}{Shih}{S\bibinitperiod}{Benjamin}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=3f33157e7a771f5c4ad5453e2bfd6a3a}{Koedinger}{K\bibinitperiod}{Kenneth\bibnamedelima R}{K\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{hash=02f6653c0e96cdc7d40f942944d5e3fb}{Scheines}{S\bibinitperiod}{Richard}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c1d6dd41e84fc1f77b863c76f7e0134a}
+      \strng{fullhash}{c1d6dd41e84fc1f77b863c76f7e0134a}
+      \field{sortinit}{S}
+      \field{labeltitle}{Discovery of Student Strategies using Hidden Markov Model Clustering}
+      \field{journaltitle}{International Conference on Educational Data Mining}
+      \field{title}{Discovery of Student Strategies using Hidden Markov Model Clustering}
+      \field{year}{2010}
+    \endentry
+    \entry{MR2252897}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=8ad55fbea4fb7805719f65bb67bd3a72}{Szczepa{\'n}ski}{S\bibinitperiod}{Andrzej}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=8ad55fbea4fb7805719f65bb67bd3a72}{Szczepa{\'n}ski}{S\bibinitperiod}{Andrzej}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{8ad55fbea4fb7805719f65bb67bd3a72}
+      \strng{fullhash}{8ad55fbea4fb7805719f65bb67bd3a72}
+      \field{sortinit}{S}
+      \field{labeltitle}{Problems on {B}ieberbach groups and flat manifolds}
+      \field{issn}{0046-5755}
+      \field{journaltitle}{Geom. Dedicata}
+      \field{title}{Problems on {B}ieberbach groups and flat manifolds}
+      \field{volume}{120}
+      \field{year}{2006}
+      \field{pages}{111\bibrangedash 118}
+      \verb{doi}
+      \verb 10.1007/s10711-006-9056-1
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/s10711-006-9056-1
+      \endverb
+    \endentry
+    \entry{MR1388296}{incollection}{}
+      \list{location}{1}{%
+        {Cambridge}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge Univ. Press}%
+      }
+      \field{sortinit}{T}
+      \field{labeltitle}{The problem session}
+      \field{booktitle}{Novikov conjectures, index theorems and rigidity, {V}ol.\ 1 ({O}berwolfach, 1993)}
+      \field{series}{London Math. Soc. Lecture Note Ser.}
+      \field{title}{The problem session}
+      \field{volume}{226}
+      \field{year}{1995}
+      \field{pages}{67\bibrangedash 78}
+    \endentry
+    \entry{MR267487}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=703b0035bb2f6d38c7ed82e161e868b5}{Vasquez}{V\bibinitperiod}{Alphonse\bibnamedelima T.}{A\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=703b0035bb2f6d38c7ed82e161e868b5}{Vasquez}{V\bibinitperiod}{Alphonse\bibnamedelima T.}{A\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{703b0035bb2f6d38c7ed82e161e868b5}
+      \strng{fullhash}{703b0035bb2f6d38c7ed82e161e868b5}
+      \field{sortinit}{V}
+      \field{labeltitle}{Flat {R}iemannian manifolds}
+      \field{issn}{0022-040X}
+      \field{journaltitle}{J. Differential Geometry}
+      \field{title}{Flat {R}iemannian manifolds}
+      \field{volume}{4}
+      \field{year}{1970}
+      \field{pages}{367\bibrangedash 382}
+    \endentry
+    \entry{MR171284}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=c4b37c8451f56fb5b7cc171b1d6ab6c0}{Wall}{W\bibinitperiod}{C.\bibnamedelimi T.\bibnamedelimi C.}{C\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=c4b37c8451f56fb5b7cc171b1d6ab6c0}{Wall}{W\bibinitperiod}{C.\bibnamedelimi T.\bibnamedelimi C.}{C\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c4b37c8451f56fb5b7cc171b1d6ab6c0}
+      \strng{fullhash}{c4b37c8451f56fb5b7cc171b1d6ab6c0}
+      \field{sortinit}{W}
+      \field{labeltitle}{Finiteness conditions for {${\rm CW}$}-complexes}
+      \field{issn}{0003-486X}
+      \field{journaltitle}{Ann. of Math. (2)}
+      \field{title}{Finiteness conditions for {${\rm CW}$}-complexes}
+      \field{volume}{81}
+      \field{year}{1965}
+      \field{pages}{56\bibrangedash 69}
+    \endentry
+    \entry{MR1308714}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=d3d183559eb6c429a433efa1b2989e09}{Weinberger}{W\bibinitperiod}{Shmuel}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=d3d183559eb6c429a433efa1b2989e09}{Weinberger}{W\bibinitperiod}{Shmuel}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Chicago, IL}%
+      }
+      \list{publisher}{1}{%
+        {University of Chicago Press}%
+      }
+      \strng{namehash}{d3d183559eb6c429a433efa1b2989e09}
+      \strng{fullhash}{d3d183559eb6c429a433efa1b2989e09}
+      \field{sortinit}{W}
+      \field{labeltitle}{The topological classification of stratified spaces}
+      \field{isbn}{0-226-88566-6; 0-226-88567-4}
+      \field{series}{Chicago Lectures in Mathematics}
+      \field{title}{The topological classification of stratified spaces}
+      \field{year}{1994}
+      \field{pages}{xiv+283}
+    \endentry
+    \entry{MR1644309}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=377cfa9a972e1466e34da64daada59a4}{Weiss}{W\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=1a9b2f3f1dfdf837e041d157e922923d}{Williams}{W\bibinitperiod}{Bruce}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=377cfa9a972e1466e34da64daada59a4}{Weiss}{W\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=1a9b2f3f1dfdf837e041d157e922923d}{Williams}{W\bibinitperiod}{Bruce}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9610245c4b5ead11b2d4fc1dbb11bb59}
+      \strng{fullhash}{9610245c4b5ead11b2d4fc1dbb11bb59}
+      \field{sortinit}{W}
+      \field{labeltitle}{Duality in {W}aldhausen categories}
+      \field{issn}{0933-7741}
+      \field{journaltitle}{Forum Math.}
+      \field{number}{5}
+      \field{title}{Duality in {W}aldhausen categories}
+      \field{volume}{10}
+      \field{year}{1998}
+      \field{pages}{533\bibrangedash 603}
+      \verb{doi}
+      \verb 10.1515/form.10.5.533
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1515/form.10.5.533
+      \endverb
+    \endentry
+    \entry{MR2915482}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=df12d9671ed9c182a249ef2f6af6a5ca}{Yu}{Y\bibinitperiod}{Li}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=df12d9671ed9c182a249ef2f6af6a5ca}{Yu}{Y\bibinitperiod}{Li}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{df12d9671ed9c182a249ef2f6af6a5ca}
+      \strng{fullhash}{df12d9671ed9c182a249ef2f6af6a5ca}
+      \field{sortinit}{Y}
+      \field{labeltitle}{Discrete group actions and generalized real {B}ott manifolds}
+      \field{issn}{1073-2780}
+      \field{journaltitle}{Math. Res. Lett.}
+      \field{number}{6}
+      \field{title}{Discrete group actions and generalized real {B}ott manifolds}
+      \field{volume}{18}
+      \field{year}{2011}
+      \field{pages}{1289\bibrangedash 1303}
+      \verb{doi}
+      \verb 10.4310/MRL.2011.v18.n6.a17
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.4310/MRL.2011.v18.n6.a17
+      \endverb
+    \endentry
+    \entry{Zafra201115020}{article}{}
+      \name{labelname}{3}{}{%
+        {{hash=76f91a43e9fea5563851b4ada59c9b8f}{Zafra}{Z\bibinitperiod}{Amelia}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=d761fe297cfeff814f3cd325aa515b7b}{Romero}{R\bibinitperiod}{Crist{\'o}bal}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=cce83d40c7c094c133543b97f928814b}{Ventura}{V\bibinitperiod}{Sebasti{\'a}n}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=76f91a43e9fea5563851b4ada59c9b8f}{Zafra}{Z\bibinitperiod}{Amelia}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=d761fe297cfeff814f3cd325aa515b7b}{Romero}{R\bibinitperiod}{Crist{\'o}bal}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=cce83d40c7c094c133543b97f928814b}{Ventura}{V\bibinitperiod}{Sebasti{\'a}n}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{4e2c95cc8f65068d0b6547de53eb818a}
+      \strng{fullhash}{4e2c95cc8f65068d0b6547de53eb818a}
+      \field{sortinit}{Z}
+      \field{labeltitle}{Multiple instance learning for classifying students in learning management systems}
+      \field{issn}{0957-4174}
+      \field{journaltitle}{Expert Systems with Applications}
+      \field{number}{12}
+      \field{title}{Multiple instance learning for classifying students in learning management systems}
+      \field{volume}{38}
+      \field{year}{2011}
+      \field{pages}{15020\bibrangedash 15031}
+      \verb{doi}
+      \verb http://dx.doi.org/10.1016/j.eswa.2011.05.044
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0957417411008281
+      \endverb
+      \keyw{Traditional supervised learning}
+    \endentry
+    \entry{MR339202}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=304bbe5c5d3e1de02175e2e38ba3bc66}{Zagier}{Z\bibinitperiod}{Don\bibnamedelima Bernard}{D\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=304bbe5c5d3e1de02175e2e38ba3bc66}{Zagier}{Z\bibinitperiod}{Don\bibnamedelima Bernard}{D\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag}%
+      }
+      \strng{namehash}{304bbe5c5d3e1de02175e2e38ba3bc66}
+      \strng{fullhash}{304bbe5c5d3e1de02175e2e38ba3bc66}
+      \field{sortinit}{Z}
+      \field{labeltitle}{Equivariant {P}ontrjagin classes and applications to orbit spaces. {A}pplications of the {$G$}-signature theorem to transformation groups, symmetric products and number theory}
+      \field{series}{Lecture Notes in Mathematics, Vol. 290}
+      \field{title}{Equivariant {P}ontrjagin classes and applications to orbit spaces. {A}pplications of the {$G$}-signature theorem to transformation groups, symmetric products and number theory}
+      \field{year}{1972}
+      \field{pages}{viii+130}
+    \endentry
+    \entry{MR2121296}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=f30d2b78e0e34c02d8e03ea5698fb192}{Zomorodian}{Z\bibinitperiod}{Afra}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=86916713a3861f9e4e6fa5e0ce4c7b44}{Carlsson}{C\bibinitperiod}{Gunnar}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=f30d2b78e0e34c02d8e03ea5698fb192}{Zomorodian}{Z\bibinitperiod}{Afra}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=86916713a3861f9e4e6fa5e0ce4c7b44}{Carlsson}{C\bibinitperiod}{Gunnar}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{1a29492dcb45701e89a07b9e69cf839e}
+      \strng{fullhash}{1a29492dcb45701e89a07b9e69cf839e}
+      \field{sortinit}{Z}
+      \field{labeltitle}{Computing persistent homology}
+      \field{issn}{0179-5376}
+      \field{journaltitle}{Discrete Comput. Geom.}
+      \field{number}{2}
+      \field{title}{Computing persistent homology}
+      \field{volume}{33}
+      \field{year}{2005}
+      \field{pages}{249\bibrangedash 274}
+      \verb{doi}
+      \verb 10.1007/s00454-004-1146-y
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/s00454-004-1146-y
+      \endverb
+    \endentry
+  \endsortlist
+  \missing{thesis}
+  \missing{MR2222492}
+  \missing{MR1076524}
+  \missing{MR868892}
+  \missing{MR859767}
+  \missing{MR1381603}
+\endrefsection
+\endinput
+

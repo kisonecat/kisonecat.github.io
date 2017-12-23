@@ -1,0 +1,16 @@
+extends ../layouts/main
+include helpers
+
+block content
+  mixin breadcrumbs(['/research'],['Research'])
+  p My research is in topology and geometry&mdash;specifically, surgery theory and geometric group theory. A few of my favorite things include: aspherical manifolds, rational homotopy types of manifolds, group actions on manifolds, quantified versions of classical invariants.
+  p You may also be interested in seeing a <a href="/research/papers">list of my publications</a> or reading <a href="/research/statement">my research statement</a>.
+  h3 Work in progress
+  - each project in unpublished
+    mixin projectRow(project)
+    hr
+  h3 Previous projects
+  - each project in published
+    mixin projectRow(project)
+    if published.indexOf(project) + 1 != published.length
+      hr

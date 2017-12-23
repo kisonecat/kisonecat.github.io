@@ -1,0 +1,67 @@
+mixin youtube(video,size)
+  | {% include youtube.html video="#{video}" size="#{size}" %}
+
+div.contenter
+  h1 Videos
+  p You can find all my videos on <a href="http://www.youtube.com/kisonecat">YouTube</a>, including the <a href="http://www.youtube.com/watch?v=R4xtSdvkG-s&feature=c4-overview-vl&list=PLjOkVtsM_edKlAd5unZC0WxSUQTjv6Dpd">videos I made for my Calculus MOOCs</a>; many of my videos are also on <a href="https://itunes.apple.com/us/course/calculus-one/id660718824">iTunes U</a>.
+  hr
+  h2 Animations
+  .row
+    .col-lg-4
+      .thumbnail
+        +youtube("OOUW0cZRa3Y","4x3")
+        .caption
+          h4 M&#246;bius strip as a configuration space
+          p A M&#246;bius strip can be regarded as the configuration space of pairs of (indistinguishable!) points on a circle.
+    .col-lg-4
+      .thumbnail
+        +youtube("twjnAE3SjJw","4x4")
+        .caption
+          h4 Percolation
+          p A dot is drawn at a random location; if it does not overlap any previous dots, it gets a new color. Otherwise, the dot takes the color of the component it touches. Sometimes a new dot connects many components, and in this case, the new component takes on the color of the largest among the old components.
+          p After drawing <em>n</em> dots, how many components should we expect to see?  When you draw only a few dots, most of those dots are isolated and have their own color; but after drawing a ridiculously large number of dots, they are all connected and the same color.
+    .col-lg-4
+      .thumbnail
+        +youtube("fUa6cT069js","4x4")
+        .caption
+          h4 Reflecting triangles in the plane
+          p Start with a triangle in the plane; reflect that triangle across its three sides; repeat, reflecting the resulting triangles through their sides, over and over again.
+          p Observe how, for only four shapes of triangles, the resulting set of triangle vertices is discrete.  You can <a href="http://www.youtube.com/watch?v=_kWNyrRaQIw">watch the same thing with more triangles</a>.
+  hr
+  h2 Expository videos
+  .row
+    .col-lg-4
+      .thumbnail
+        +youtube("tpL95Sd7zT0","4x3")
+        .caption
+          h4 Tensor products
+    .col-lg-4
+      .thumbnail
+        +youtube("MNZJTeS_9T4","4x3")
+        .caption
+          h4 The chain rule
+    .col-lg-4
+      .thumbnail
+        +youtube("SjCs_HyYtSo","4x3")
+        .caption
+          h4 Linear functionals and dual vector spaces
+  hr
+  h2 Short calculus lectures
+  .row
+    .col-lg-4
+      .thumbnail
+        +youtube("LcJPGsWErdQ","16x9")
+        .caption
+          h4 How can we multiply quickly?
+    .col-lg-4
+      .thumbnail
+        +youtube("otW6HcxrRlY","16x9")
+        .caption
+          h4 Visualizing $\epsilon$s and $\delta$s
+    .col-lg-4
+      .thumbnail
+        +youtube("P4uPiXBP_rc","16x9")
+        .caption
+          h4 Why is $\infty$ not a number?
+  hr
+  p Many more of these sorts of videos are available on my <a href="http://www.youtube.com/kisonecat">YouTube channel</a>.

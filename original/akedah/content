@@ -1,0 +1,21 @@
+Someone contacted me with some questions about Bayesian document clustering; with that inspiration and a free afternoon a few weeks ago, I took a Hebrew bible and built a matrix $(A_{ij})$ where $A_{ij}$ equals the frequency of the $i$-th (Hebrew!) word in the $j$-th chapter of Genesis.  I calculated its singular value decomposition (supposedly this is "latent semantic analysis"), and then took some dot products (calculating the "correlation" of chapters)...
+
+Anyhow, the result was astounding!  The following table gives, for each chapter, a list of those chapters for which the given chapter is the chapter most highly correlated with it.  Ah, that's confusing; as an example to clarify this, the chapter most similar to chapters six, seven, eight, and nine is chapter one.  With that, here's the data:
+<table>
+<tr><td>Chapter 1:</td><td>2, 6-9</td></tr>
+<tr><td>Chapter 5:</td><td>11</td></tr>
+<tr><td>Chapter 7:</td><td>1</td></tr>
+<tr><td>Chapter 10:</td><td>12-15, 34, 36, 46, 49</td></tr>
+<tr><td>Chapter 11:</td><td>5</td></tr>
+<tr><td>Chapter 15:</td><td>16</td></tr>
+<tr><td>Chapter 21:</td><td>3, 22</td></tr>
+<tr><td>Chapter 22:</td><td>4, 17-33, 35, 38, 44</td></tr>
+<tr><td>Chapter 36:</td><td>10</td></tr>
+<tr><td>Chapter 37:</td><td>43</td></tr>
+<tr><td>Chapter 40:</td><td>41, 45, 47, 50</td></tr>
+<tr><td>Chapter 41:</td><td>39</td></tr>
+<tr><td>Chapter 45:</td><td>37, 42, 48</td></tr>
+<tr><td>Chapter 50:</td><td>40</td></tr>
+</table>
+
+The shocking thing is that <b>for 21 chapters of Genesis--for nearly half the book--the most highly correlated chapter is chapter 22--the binding of Isaac.</b>  In my mind, that story is the most powerful in Genesis, central to the message, and so it is especially remarkable that this crazy game with matrices also "detected" that most of Genesis clusters around that story.

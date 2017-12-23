@@ -1,0 +1,805 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.16)  23 DEC 2017 00:12
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**research-statement.tex
+(./research-statement.tex
+LaTeX2e <2017-04-15>
+Babel <3.15> and hyphenation patterns for 84 language(s) loaded.
+(/usr/share/texmf-dist/tex/latex/amscls/amsart.cls
+Document Class: amsart 2015/03/04 v2.20.2
+\linespacing=\dimen102
+\normalparindent=\dimen103
+\normaltopskip=\skip41
+(/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip42
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks14
+\ex@=\dimen104
+))
+(/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen105
+)
+(/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count79
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count80
+\leftroot@=\count81
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count82
+\DOTSCASE@=\count83
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen106
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count84
+\c@MaxMatrixCols=\count85
+\dotsspace@=\muskip10
+\c@parentequation=\count86
+\dspbrk@lvl=\count87
+\tag@help=\toks15
+\row@=\count88
+\column@=\count89
+\maxfields@=\count90
+\andhelp@=\toks16
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
+\@envbody=\toks17
+\multlinegap=\skip43
+\multlinetaggap=\skip44
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 388.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+\copyins=\insert199
+\abstractbox=\box28
+\listisep=\skip45
+\c@part=\count91
+\c@section=\count92
+\c@subsection=\count93
+\c@subsubsection=\count94
+\c@paragraph=\count95
+\c@subparagraph=\count96
+\c@figure=\count97
+\c@table=\count98
+\abovecaptionskip=\skip46
+\belowcaptionskip=\skip47
+\captionindent=\dimen113
+\thm@style=\toks19
+\thm@bodyfont=\toks20
+\thm@headfont=\toks21
+\thm@notefont=\toks22
+\thm@headpunct=\toks23
+\thm@preskip=\skip48
+\thm@postskip=\skip49
+\thm@headsep=\skip50
+\dth@everypar=\toks24
+)
+(/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks25
+)
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count99
+\Gm@cntv=\count100
+\c@Gm@tempcnt=\count101
+\Gm@bindingoffset=\dimen114
+\Gm@wd@mp=\dimen115
+\Gm@odd@mp=\dimen116
+\Gm@even@mp=\dimen117
+\Gm@layoutwidth=\dimen118
+\Gm@layoutheight=\dimen119
+\Gm@layouthoffset=\dimen120
+\Gm@layoutvoffset=\dimen121
+\Gm@dimlist=\toks26
+)
+\c@theorem=\count102
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(/usr/share/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2017/11/05 v3.8 programmable bibliographies (PK/JW/AB)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count103
+)
+(/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/share/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count104
+
+(/usr/share/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/share/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texmf-dist/tex/generic/xstring/xstring.tex
+\@xs@message=\write3
+\integerpart=\count105
+\decimalpart=\count106
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+\c@tabx@nest=\count107
+\c@listtotal=\count108
+\c@listcount=\count109
+\c@liststart=\count110
+\c@liststop=\count111
+\c@citecount=\count112
+\c@citetotal=\count113
+\c@multicitecount=\count114
+\c@multicitetotal=\count115
+\c@instcount=\count116
+\c@maxnames=\count117
+\c@minnames=\count118
+\c@maxitems=\count119
+\c@minitems=\count120
+\c@citecounter=\count121
+\c@savedcitecounter=\count122
+\c@uniquelist=\count123
+\c@uniquename=\count124
+\c@refsection=\count125
+\c@refsegment=\count126
+\c@maxextratitle=\count127
+\c@maxextratitleyear=\count128
+\c@maxextradate=\count129
+\c@maxextraalpha=\count130
+\c@abbrvpenalty=\count131
+\c@highnamepenalty=\count132
+\c@lownamepenalty=\count133
+\c@maxparens=\count134
+\c@parenlevel=\count135
+\blx@tempcnta=\count136
+\blx@tempcntb=\count137
+\blx@tempcntc=\count138
+\blx@maxsection=\count139
+\blx@maxsegment@0=\count140
+\blx@notetype=\count141
+\blx@parenlevel@text=\count142
+\blx@parenlevel@foot=\count143
+\blx@sectionciteorder@0=\count144
+\labelnumberwidth=\skip51
+\labelalphawidth=\skip52
+\biblabelsep=\skip53
+\bibitemsep=\skip54
+\bibnamesep=\skip55
+\bibinitsep=\skip56
+\bibparsep=\skip57
+\bibhang=\skip58
+\blx@bcfin=\read1
+\blx@bcfout=\write4
+\c@mincomprange=\count145
+\c@maxcomprange=\count146
+\c@mincompwidth=\count147
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/blx-dm.def)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'numeric.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count148
+\c@savedafterword=\count149
+\c@annotator=\count150
+\c@savedannotator=\count151
+\c@author=\count152
+\c@savedauthor=\count153
+\c@bookauthor=\count154
+\c@savedbookauthor=\count155
+\c@commentator=\count156
+\c@savedcommentator=\count157
+\c@editor=\count158
+\c@savededitor=\count159
+\c@editora=\count160
+\c@savededitora=\count161
+\c@editorb=\count162
+\c@savededitorb=\count163
+\c@editorc=\count164
+\c@savededitorc=\count165
+\c@foreword=\count166
+\c@savedforeword=\count167
+\c@holder=\count168
+\c@savedholder=\count169
+\c@introduction=\count170
+\c@savedintroduction=\count171
+\c@namea=\count172
+\c@savednamea=\count173
+\c@nameb=\count174
+\c@savednameb=\count175
+\c@namec=\count176
+\c@savednamec=\count177
+\c@translator=\count178
+\c@savedtranslator=\count179
+\c@shortauthor=\count180
+\c@savedshortauthor=\count181
+\c@shorteditor=\count182
+\c@savedshorteditor=\count183
+\c@labelname=\count184
+\c@savedlabelname=\count185
+\c@institution=\count186
+\c@savedinstitution=\count187
+\c@lista=\count188
+\c@savedlista=\count189
+\c@listb=\count190
+\c@savedlistb=\count191
+\c@listc=\count192
+\c@savedlistc=\count193
+\c@listd=\count194
+\c@savedlistd=\count195
+\c@liste=\count196
+\c@savedliste=\count197
+\c@listf=\count198
+\c@savedlistf=\count266
+\c@location=\count267
+\c@savedlocation=\count268
+\c@organization=\count269
+\c@savedorganization=\count270
+\c@origlocation=\count271
+\c@savedoriglocation=\count272
+\c@origpublisher=\count273
+\c@savedorigpublisher=\count274
+\c@publisher=\count275
+\c@savedpublisher=\count276
+\c@language=\count277
+\c@savedlanguage=\count278
+\c@origlanguage=\count279
+\c@savedoriglanguage=\count280
+\c@pageref=\count281
+\c@savedpageref=\count282
+\shorthandwidth=\skip59
+\shortjournalwidth=\skip60
+\shortserieswidth=\skip61
+\shorttitlewidth=\skip62
+\shortauthorwidth=\skip63
+\shorteditorwidth=\skip64
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2017/11/05 v3.8 biblatex compatibility (PK/JW/AB)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2017/11/05 v3.8 biblatex compatibility (PK/JW/AB)
+\c@textcitecount=\count283
+\c@textcitetotal=\count284
+\c@textcitemaxnames=\count285
+\c@biburlnumpenalty=\count286
+\c@biburlucpenalty=\count287
+\c@biburllcpenalty=\count288
+\c@smartand=\count289
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2017/11/05 v3.8 biblatex bibliography style (PK/JW/AB)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2017/11/05 v3.8 biblatex bibliography style (PK/JW/AB)
+\c@bbx:relatedcount=\count290
+\c@bbx:relatedtotal=\count291
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2017/11/05 v3.8 biblatex citation style (PK/JW/AB)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+))
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2017/11/05 v3.8 biblatex localization (PK/JW/AB)
+)
+\@quotelevel=\count292
+\@quotereset=\count293
+
+(./research-statement.aux)
+\openout1 = `research-statement.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Try loading font information for U+msa on input line 45.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 45.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(108.405pt, 397.485pt, 108.405pt)
+* v-part:(T,H,B)=(90.3375pt, 614.295pt, 90.3375pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=397.485pt
+* \textheight=614.295pt
+* \oddsidemargin=36.13501pt
+* \evensidemargin=36.13501pt
+* \topmargin=-3.9325pt
+* \headheight=8.0pt
+* \headsep=14.0pt
+* \topskip=10.0pt
+* \footskip=12.0pt
+* \marginparwidth=90.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=7.0pt plus 11.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package biblatex Info: No input encoding detected.
+(biblatex)             Assuming 'ascii'.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'ascii'.
+\openout4 = `research-statement.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'research-statement.bbl' not found.
+No file research-statement.bbl.
+Package biblatex Info: Reference section=0 on input line 45.
+Package biblatex Info: Reference segment=0 on input line 45.
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+
+LaTeX Warning: Citation 'MR1747535' on page 2 undefined on input line 107.
+
+[2]
+
+LaTeX Warning: Citation 'MR1465330' on page 3 undefined on input line 191.
+
+
+LaTeX Warning: Citation 'MR1027600' on page 3 undefined on input line 203.
+
+
+LaTeX Warning: Citation 'MR859767' undefined on input line 212.
+
+
+LaTeX Warning: Citation 'MR868892' undefined on input line 213.
+
+
+LaTeX Warning: Citation 'MR1076524' undefined on input line 214.
+
+
+LaTeX Warning: Citation 'MR1381603' undefined on input line 215.
+
+
+LaTeX Warning: Citation 'MR2222492' undefined on input line 216.
+
+
+LaTeX Warning: Citation 'MR2036915' undefined on input line 218.
+
+
+LaTeX Warning: Citation 'MR1943285' undefined on input line 219.
+
+
+LaTeX Warning: Citation 'MR2177038' undefined on input line 220.
+
+
+LaTeX Warning: Citation 'thesis' undefined on input line 221.
+
+
+LaTeX Warning: Citation 'MR242166' on page 3 undefined on input line 227.
+
+
+Overfull \hbox (1.01851pt too wide) in paragraph at lines 226--233
+\OT1/cmr/m/n/12 showed that there are man-i-folds that do not ad-mit PL struc-t
+ures [[]],
+ []
+
+
+LaTeX Warning: Citation 'MR679066' on page 3 undefined on input line 235.
+
+
+LaTeX Warning: Citation 'MR1131435' on page 3 undefined on input line 237.
+
+
+LaTeX Warning: Citation 'MR558395' on page 3 undefined on input line 240.
+
+
+LaTeX Warning: Citation 'manolescu2013conley' on page 3 undefined on input line
+ 243.
+
+
+LaTeX Warning: Citation 'aspherical' on page 3 undefined on input line 248.
+
+
+LaTeX Warning: Citation 'MR603653' on page 3 undefined on input line 261.
+
+
+LaTeX Warning: Citation 'MR2093885' on page 3 undefined on input line 262.
+
+[3]
+
+LaTeX Warning: Citation 'MR1388296' on page 4 undefined on input line 277.
+
+
+LaTeX Warning: Citation 'MR1394965' on page 4 undefined on input line 286.
+
+
+LaTeX Warning: Citation 'MR339202' on page 4 undefined on input line 297.
+
+
+Overfull \hbox (1.55391pt too wide) in paragraph at lines 296--304
+\OT1/cmr/m/n/12 place where num-ber the-ory very strongly in-ter-acts with high
+-dimensional topol-
+ []
+
+
+LaTeX Warning: Citation 'MR133837' on page 4 undefined on input line 325.
+
+[4]
+
+LaTeX Warning: Citation 'MR2813369' on page 5 undefined on input line 376.
+
+[5]
+
+LaTeX Warning: Citation 'MR2684369' on page 6 undefined on input line 413.
+
+
+LaTeX Warning: Citation 'MR550674' on page 6 undefined on input line 416.
+
+
+LaTeX Warning: Citation 'MR1180457' on page 6 undefined on input line 423.
+
+
+LaTeX Warning: Citation 'MR3038783' on page 6 undefined on input line 430.
+
+
+LaTeX Warning: Citation 'MR440554' on page 6 undefined on input line 433.
+
+[6]
+Overfull \hbox (1.48448pt too wide) in paragraph at lines 450--454
+\OT1/cmr/m/n/12 with the $\OML/cmm/m/it/12 L$\OT1/cmr/m/n/12 -classes---which a
+mount to ex-per-i-ments with the Pon-tr-ja-gin classes---
+ []
+
+
+LaTeX Warning: Citation 'MR2252897' on page 7 undefined on input line 458.
+
+
+LaTeX Warning: Citation 'MR267487' on page 7 undefined on input line 461.
+
+
+LaTeX Warning: Citation 'MR2915482' on page 7 undefined on input line 473.
+
+
+LaTeX Warning: Citation 'MR1253544' on page 7 undefined on input line 505.
+
+[7]
+
+LaTeX Warning: Citation 'MR171284' on page 8 undefined on input line 512.
+
+
+LaTeX Warning: Citation 'MR2109110' on page 8 undefined on input line 517.
+
+
+LaTeX Warning: Citation 'MR2962981' on page 8 undefined on input line 519.
+
+
+Overfull \hbox (18.92406pt too wide) in paragraph at lines 516--529
+[]\OT1/cmr/m/n/12 Crichton Ogle has de-vel-oped poly-no-mi-ally bounded co-ho-m
+ol-ogy [[]].
+ []
+
+
+LaTeX Warning: Citation 'MR802791' on page 8 undefined on input line 531.
+
+
+LaTeX Warning: Citation 'MR2962981' on page 8 undefined on input line 533.
+
+
+LaTeX Warning: Citation 'MR1983017' on page 8 undefined on input line 539.
+
+
+LaTeX Warning: Citation 'MR1451755' on page 8 undefined on input line 542.
+
+
+LaTeX Warning: Citation 'MR1644309' on page 8 undefined on input line 543.
+
+
+LaTeX Warning: Citation 'MR953961' on page 8 undefined on input line 546.
+
+
+LaTeX Warning: Citation 'MR2271789' on page 8 undefined on input line 550.
+
+
+LaTeX Warning: Citation 'MR1308714' on page 8 undefined on input line 554.
+
+[8]
+
+LaTeX Warning: Citation '2012arXiv1203.6604F' on page 9 undefined on input line
+ 594.
+
+
+LaTeX Warning: Citation 'MR41889' on page 9 undefined on input line 600.
+
+
+LaTeX Warning: Citation 'MR366817' on page 9 undefined on input line 602.
+
+
+LaTeX Warning: Citation 'MR554919' on page 9 undefined on input line 607.
+
+
+LaTeX Warning: Citation 'MR2847943' on page 9 undefined on input line 616.
+
+
+LaTeX Warning: Citation 'walksat' on page 9 undefined on input line 623.
+
+
+LaTeX Warning: Citation 'natural-images' on page 9 undefined on input line 637.
+
+
+
+LaTeX Warning: Citation 'MR2121296' on page 9 undefined on input line 644.
+
+
+Overfull \hbox (1.31595pt too wide) in paragraph at lines 635--648
+[]\OT1/cmr/m/n/12 Carlsson--Ishkhanov--De Silva--
+ []
+
+[9]
+
+LaTeX Warning: Citation 'MR6980' on page 10 undefined on input line 656.
+
+
+LaTeX Warning: Citation 'MR1851239' on page 10 undefined on input line 657.
+
+
+LaTeX Warning: Citation 'originalhornos' on page 10 undefined on input line 665
+.
+
+
+LaTeX Warning: Citation 'forger-1999' on page 10 undefined on input line 687.
+
+
+LaTeX Warning: Citation 'forger-1998' on page 10 undefined on input line 687.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10]
+
+LaTeX Warning: Citation 'evans' on page 11 undefined on input line 702.
+
+
+LaTeX Warning: Citation 'bowen2013higher' on page 11 undefined on input line 71
+9.
+
+
+LaTeX Warning: Citation 'gates-foundation-grant' on page 11 undefined on input 
+line 720.
+
+
+LaTeX Warning: Citation 'hagerty2005using' on page 11 undefined on input line 7
+24.
+
+
+LaTeX Warning: Citation 'albert1999knowledge' on page 11 undefined on input lin
+e 724.
+
+
+LaTeX Warning: Citation 'parry2012big' on page 11 undefined on input line 725.
+
+
+LaTeX Warning: Citation 'romero2010educational' on page 11 undefined on input l
+ine 728.
+
+
+LaTeX Warning: Citation 'shihdiscovery' on page 11 undefined on input line 730.
+
+
+
+LaTeX Warning: Citation 'predict-grades' on page 11 undefined on input line 732
+.
+
+
+LaTeX Warning: Citation 'Zafra201115020' on page 11 undefined on input line 733
+.
+
+
+Overfull \hbox (1.09215pt too wide) in paragraph at lines 722--736
+\OT1/cmr/m/n/12 teach col-lege math-e-mat-ics. Ex-am-ples of such are ALEKS [[]
+,
+ []
+
+
+Overfull \hbox (4.54347pt too wide) in paragraph at lines 722--736
+[]\OT1/cmr/m/n/12 ] or Knew-ton at Ari-zona State [[]], though
+ []
+
+
+LaTeX Warning: Citation 'anari2012intelligent' on page 11 undefined on input li
+ne 743.
+
+[11]
+
+LaTeX Warning: Citation 'MR202264' on page 12 undefined on input line 751.
+
+
+LaTeX Warning: Citation 'MR123419' on page 12 undefined on input line 751.
+
+
+LaTeX Warning: Citation 'romero2010educational' on page 12 undefined on input l
+ine 756.
+
+
+LaTeX Warning: Citation 'ghmm' on page 12 undefined on input line 763.
+
+
+LaTeX Warning: Citation 'angus2009does' on page 12 undefined on input line 766.
+
+
+
+LaTeX Warning: Empty bibliography on input line 768.
+
+[12] (./research-statement.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                research-statement
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'research-statement.run.xml'.
+\openout1 = `research-statement.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 9123 strings out of 492985
+ 152138 string characters out of 6138637
+ 566502 words of memory out of 5000000
+ 12461 multiletter control sequences out of 15000+600000
+ 11407 words of font info for 45 fonts, out of 8000000 for 9000
+ 1302 hyphenation exceptions out of 8191
+ 35i,9n,31p,838b,1178s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></u
+sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/m
+sam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
+>
+Output written on research-statement.pdf (12 pages, 217406 bytes).
+PDF statistics:
+ 111 PDF objects out of 1000 (max. 8388607)
+ 79 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

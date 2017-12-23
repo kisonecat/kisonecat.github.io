@@ -1,0 +1,12 @@
+extends ../layouts/main
+include helpers
+
+block content
+  mixin breadcrumbs(['/research', '/research/papers'],['Research', 'Publication List'])
+
+  h1 Publication List
+
+  p You may prefer reading <a href="/research">about some of my current projects</a> or reading <a href="/research/statement">my research statement</a>.
+
+  - each paper in papers
+    mixin bibliographyEntry(paper)

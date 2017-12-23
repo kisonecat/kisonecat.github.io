@@ -1,0 +1,10 @@
+{{{
+  "title": "Corrugated coffee cup holders.",
+  "tags": ["personal"],
+  "date": "2007-01-17T22:10:21+00:00"
+}}}
+
+  I've been (not surprisingly) drinking quite a bit of coffee lately, and I've noticed that many corregated coffee cup holders include a bit of loose glue.  At first, I thought this was a mistake, an oversight in the perfection of the coffee cup holder design.
+
+On the contrary, that bit of excess glue melts when the hot coffee is poured into the cup, adhering the corregated holder to the cup--brilliant!
+

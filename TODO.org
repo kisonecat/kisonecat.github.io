@@ -1,0 +1,6 @@
+* TODO all non-text assets in _posts are missing
+* TODO MR number formatting
+* TODO \begin{theorem} and \begin{proof}
+3-manifolds
+http://localhost:4000/blog/non-arithmetic-lattices
+google-unmbers

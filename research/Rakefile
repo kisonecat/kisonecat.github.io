@@ -1,0 +1,157 @@
+#! /usr/bin/ruby
+
+require 'rubygems'
+require 'open-uri'
+require 'mechanize'
+
+def secure_download_bibtex( mrnumber )
+  agent = WWW::Mechanize.new
+  
+  page = agent.get("http://www.ams.org.proxy.lib.ohio-state.edu/mathscinet/search/publications.html?fmt=bibtex&pg1=MR&s1=#{mrnumber}")
+  form = page.form('login')
+  form.j_username = 'fowler.291'
+  form.j_password = 'yKX4L4pvLtnnLBmWW8cLQt44rxHX'
+  puts "Submitting Buckeye password..."
+  result = agent.submit(form, form.buttons.first)
+
+  form = result.forms[0]
+  puts "Passing through the Shibboleth..."
+  result = agent.submit(form, form.buttons.first)
+
+  return result.body
+end
+
+def download_bibtex( mrnumber )
+  @url = "http://www.ams.org/mathscinet/search/publications.html?fmt=bibtex&pg1=MR&s1=#{mrnumber}"
+
+  doc = nil
+  begin
+    doc = open(@url)
+  rescue
+    doc = secure_download_bibtex( mrnumber )
+  end
+
+  bibtex = (Nokogiri::HTML(doc)/('pre')).inner_html
+
+  bibtex_file = File.open(".cache/MR#{mrnumber}.bibtex", "w")
+  bibtex_file.puts bibtex
+  bibtex_file.close
+end
+
+def download_arxiv( code )
+  bibtex = "@MISC{morris-2001,\n  author = {Dave Witte Morris},\n  title = {Introduction to Arithmetic Groups},\n  url = {http://www.citebase.org/abstract?id=oai:arXiv.org:math/0106063},\n  year = {2001}\n}"
+  unless code == 'math.dg:0106063'
+    puts "downloading #{code} from arxiv"
+    puts "url = http://www.citebase.org/openurl?url_ver=Z39.88-2004&svc_id=bibtex&rft_id=oai%3AarXiv.org%3A#{code.gsub(':','/')}"
+    bibtex = open("http://www.citebase.org/openurl?url_ver=Z39.88-2004&svc_id=bibtex&rft_id=oai%3AarXiv.org%3A#{code.gsub(':','/')}").read
+  end
+
+  extras = ""
+  if code.match( ':' ) # old-style
+    extras = "eprint = \"#{code.gsub(':','/')}\","
+  else
+    extras = "archivePrefix = \"arXiv\", eprint        = \"#{code}\","
+  end
+
+  bibtex.gsub!( /(^@[A-z]*\{).*,/, '\1arXiv:' + code + ',' + extras )
+  bibtex.gsub!( '\$', '$' )
+  bibtex.gsub!( '\\\\', '\\' )
+  bibtex_file = File.open(".cache/arXiv:#{code}.bibtex", "w")
+  bibtex_file.puts bibtex
+  bibtex_file.close
+end
+
+################################################################
+
+paper_file = 'statement.tex'
+
+task :default => [paper_file.gsub( /\.tex$/, '.pdf' )]
+
+subsections=File.read(paper_file).scan( /\\input\{([^\}]+)\}/ ).collect{ |x| "#{x}.tex" }
+tex_files = [paper_file] + subsections
+
+puts "Input files: #{tex_files.join(', ')}"
+
+text = tex_files.collect{ |x| File.read(x) }.join( "\n" )
+mrnumbers = text.scan( /\\n?o?cite\{([MR0-9,]*)\}/ ).collect{ |x| x[0].split(',') }.flatten
+mr_files = mrnumbers.collect{ |x| ".cache/#{x}.bibtex" }
+arxivs = text.scan( /\\n?o?cite\{arXiv:([^\}]*)\}/ )
+arxiv_files = arxivs.collect{ |x| ".cache/arXiv:#{x}.bibtex" }
+
+file 'references.bib' => (mr_files + arxiv_files) do |t|
+  f = File.open( 'references.bib', 'w' )
+  f.puts File.open( 'other-references.bib', 'r' ).read
+  f.puts t.prerequisites.collect{ |x|
+    File.read( x ).gsub( /MR0*/, 'MR' )
+  }.join( "\n\n" )
+  f.close
+end
+
+directory '.cache'
+
+rule( /.cache\/MR[0-9]*\.bibtex$/ => [] ) do |t|
+  mr_number = t.name.match( /MR([0-9]*).bibtex/ )[1]
+  download_bibtex( mr_number )
+end
+
+rule( /.cache\/arXiv:.*\.bibtex$/ => [] ) do |t|
+  mr_number = t.name.match( /arXiv:(.*).bibtex/ )[1]
+  download_arxiv( mr_number )
+end
+
+file 'statement.pdf' => (tex_files + ['references.bib']) do |t|
+  f = File.open( 'watermark.wmx', 'w' )
+  f.puts ('\SetWatermarkText{\sf DRAFT ' + `date '+%l:%M%p %B %d, %Y'` + '}')
+  f.close
+
+  sh "pdflatex statement.tex"
+  sh "biber statement"
+  sh "pdflatex statement.tex"
+  sh "pdflatex statement.tex"
+end
+
+file 'main.tar.gz' => (tex_files + ['references.bib']) do |t|
+  f = File.open( 'watermark.wmx', 'w' )
+  f.puts ('')
+  f.close
+
+  contents = Hash.new
+  tex_files.each{ |filename|
+    contents[filename] = File.read(filename)
+  }
+
+  single_file = contents['main.tex'].split( "\n" ).collect{ |line|
+    if line.match( /\\input\{([A-z\-]*)\}/ )
+      contents["#{$1}.tex"]
+    else
+      line
+    end
+  }.join( "\n" ).gsub( /%.*/, '' )
+
+  f = File.open( 'paper.tex', 'w' )
+  f.puts single_file
+  f.close
+
+  f = File.open( 'watermark.wmx', 'w' )
+  f.puts ('')
+  f.close
+
+  tex_files = ['paper.tex']
+
+  f = File.open( 'Makefile', 'w' )
+  f.puts "paper.pdf: " + (tex_files + ['references.bib']).join( ' ' )
+  f.puts "\tpdflatex paper"
+  f.puts "\tbibtex paper"
+  f.puts "\tpdflatex paper"
+  f.puts "\tpdflatex paper"
+  f.close
+
+  sh "tar -czvf main.tar.gz " + (tex_files + ['references.bib']).join( ' ' ) + " Makefile"
+end
+
+
+require 'fileutils'
+
+task :view => ['main.pdf'] do |t|
+  `mupdf main.pdf &`
+end
