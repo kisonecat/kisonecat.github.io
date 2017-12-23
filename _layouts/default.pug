@@ -16,8 +16,14 @@ html(lang="en")
     script(type="text/x-mathjax-config")
       | MathJax.Hub.Config({showProcessingMessages: false, tex2jax: {
       |   inlineMath: [['$','$'],['\\(','\\)']],
-      |   displayMath: [['$$','$$'], ['\\[','\\]']] } });
-
+      |   displayMath: [['$$','$$'], ['\\[','\\]']] },
+      | TeX: {
+      |  Macros: {
+      |    R: "{\\mathbb{R}}",
+      |    Q: "{\\mathbb{Q}}",            
+      |    Z: "{\\mathbb{Z}}",      
+      |    N: "{\\mathbb{N}}",            
+      | }}});
     link(rel="apple-touch-icon",sizes="114x114",href="/images/icons/favicon-114x114.png")
     link(rel="apple-touch-icon",sizes="72x72",href="/images/icons/favicon-72x72.png")
     link(rel="apple-touch-icon",sizes="57x57",href="/images/icons/favicon-57x57.png")

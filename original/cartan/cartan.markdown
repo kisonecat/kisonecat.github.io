@@ -1,9 +1,9 @@
-{{{
-  "title": "Constructing a Lie group from a Lie algebra.",
-  "tags": ["mathematics"],
-  "date": "2006-11-30T04:56:41+00:00"
-}}}
-
+---
+layout:  post
+title:  "Constructing a Lie group from a Lie algebra."
+tags:  mathematics
+date:  2006-11-30 04:56:41 -00:00
+---
   Cartan proved that every finite-dimensional real Lie algebra $\germ g$ comes from a connected, simply-connected Lie group $G$.  I hadn't known the proof of this result (and apparently it is rather uglier than one might hope), but
 
 > MR0854249
