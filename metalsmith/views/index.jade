@@ -66,27 +66,3 @@ block content
       a.thumbnail(href=link)
         img(src="/public/images/logos/m2o2c2.png")
 
-block broken
-  .carousel.slide(id="carousel-example-generic")
-    ol.carousel-indicators
-      li.active(data-target="#carousel-example-generic",data-slide-to="0")
-      li(data-target="#carousel-example-generic",data-slide-to="1")
-      li(data-target="#carousel-example-generic",data-slide-to="2")
-    .carousel-inner
-      .item.active
-        img(src="/public/images/banners/sarah-and-jim.jpg")
-        .carousel-caption
-          p Sarah and Jim
-      .item
-        img(src="/public/images/banners/teaching.jpg")
-        .carousel-caption
-          p Teaching
-      .item
-        img(src="/public/images/banners/software.jpg")
-        .carousel-caption
-          p Software
-
-    a.left.carousel-control(href="#carousel-example-generic",data-slide="prev")
-      span.icon-prev
-    a.right.carousel-control(href="#carousel-example-generic",data-slide="next")
-      span.icon-next
