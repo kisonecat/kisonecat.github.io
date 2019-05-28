@@ -1,0 +1,30 @@
+---
+layout: default
+title: Research
+menu: research
+---
+
+<nav class="breadcrumb">
+  <a class="breadcrumb-item" href="/">Home</a>
+  <a class="breadcrumb-item active" href="/research">Research</a>
+</nav>
+
+<p>My research is in topology and geometry&mdash;specifically, surgery theory and geometric group theory. A few of my favorite things include: aspherical manifolds, rational homotopy types of manifolds, group actions on manifolds, quantified versions of classical invariants.</p>
+<p>You may also be interested in seeing a <a href="/research/papers">list of my publications</a> or reading <a href="/research/statement">my research statement</a>.</p>
+
+<hr/>
+
+<h2>Works in progress</h2>
+{% assign unpublished = site.research | where:'status','unpublished' %}
+{% for item in unpublished %}
+  {% include project.html %}
+  <hr/>
+{% endfor %}
+<h2>Previous projects</h2>
+{% assign published = site.research | where:'status','published' %}
+{% for item in published %}
+  {% include project.html %}
+  {% if item != published.last %}
+    <hr/>
+  {% endif %}
+{% endfor %}

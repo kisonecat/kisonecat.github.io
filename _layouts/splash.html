@@ -1,0 +1,17 @@
+{% if page.splash %}
+<div id="showcase" class="splash-{{ page.splash }}">
+  {% if page.splash == 'home' %}
+  <div id="leftshowcase">
+    <h1>I am Jim Fowler.</h1>
+    <h2>Here is my <a href="/cv"><i>curriculum vitae</i></a>.</h2>
+  </div>
+  {% endif %}
+  {% if page.splash == 'teaching' %}
+  <div id="leftshowcase">
+    <h1>Taking a math course?</h1>
+    <h2>Here are some resources from courses I have taught.</h2>
+  </div>
+  {% endif %}
+</div>
+{% endif %}
+

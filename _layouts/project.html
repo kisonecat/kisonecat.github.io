@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<nav class="breadcrumb">
+  <a class="breadcrumb-item" href="/">Home</a>
+  <a class="breadcrumb-item" href="/research">Research</a>
+  <a class="breadcrumb-item active" href="{{ page.url }}">{{ page.title }}</a>  
+</nav>
+
+
+
+<h1>{{ page.title }}
+{% if page.joint %}  
+<small>Joint work with {{ page.joint | join: ', ' }}</small>
+{% endif %}
+</h1>
+
+
+<div class="row">
+  <div class="col-lg-9">
+    {{ content }}    
+  </div>
+  
+  {% if page.pdf %}
+  <div class="col-lg-3">
+    <div class="card">
+      <img class="card-img-top center-cropped" src="{{ page.pdf | replace: '.pdf', '.png' }}">
+      <div class="card-block">
+	<h4 class="card-title">Download as PDF</h4>
+	<a href="{{ page.pdf }}" class="btn btn-primary"><i class="fa fa-download"></i>&nbsp;Download</a>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  
+  {% if page.arxiv %}
+  <div class="col-lg-3">
+    <div class="card">
+      <div class="card-block">
+	<h4 class="card-title">Download from the ArXiv</h4>
+	<a href="https://arxiv.org/pdf/{{ page.arxiv }}.pdf" class="btn btn-primary"><i class="fa fa-download"></i>&nbsp;Download</a>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  
+</div>
+
+{% if page.mr %}
+<hr/>
+<h2>References</h2>
+{% reference {{page.mr}} %}
+{% endif %}
