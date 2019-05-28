@@ -31,7 +31,7 @@ plugins:
   - jekyll-feed
   - jekyll-postfiles
 
-gems:
+plugins:
   - jekyll/scholar
 
 # Exclude from processing.

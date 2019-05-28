@@ -1,13 +1,10 @@
 extends ../layouts/main
 include helpers
 
-mixin youtube(videoId,size)
-  div.iframeHolder(style="position:relative;")
-    img.ratio(src="http://placehold.it/#{size}",style="display:block;width:100%;height:auto;")
-    iframe(id="ytplayer",type="text/html",src="http://www.youtube.com/embed/#{videoId}?origin=http://kisonecat.com",frameborder="0",style="position:absolute;top:0;left:0;width:100%; height:100%;")
 
 block content
   mixin breadcrumbs(['/teaching','/teaching/videos'],['Teaching','Videos'])
+  
   h1 Videos
   p You can find all my videos on <a href="http://www.youtube.com/kisonecat">YouTube</a>, including the <a href="http://www.youtube.com/watch?v=R4xtSdvkG-s&feature=c4-overview-vl&list=PLjOkVtsM_edKlAd5unZC0WxSUQTjv6Dpd">videos I made for my Calculus MOOCs</a>; many of my videos are also on <a href="https://itunes.apple.com/us/course/calculus-one/id660718824">iTunes U</a>.
   hr

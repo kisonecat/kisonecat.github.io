@@ -1,8 +1,7 @@
-extends ../layouts/main
-
+include ../_layouts/helpers
 
 block content
-  mixin breadcrumbs(['/cv'],['CV'])
+  +breadcrumbs(['/cv'],['CV'])
   .row
     .col-lg-9
       include cv.html
