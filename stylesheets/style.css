@@ -91,9 +91,9 @@ footer div.postal-address {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
-    padding-top: 56pt;
+    /*padding-top: 56pt;*/
     margin-bottom: 16pt;
-    margin-top: -90px;
+    /*margin-top: -90px;*/
 }
 
 #empty-showcase {
@@ -109,11 +109,11 @@ footer div.postal-address {
 }
 
 .splash-home {
-    background-image: url('/public/images/banners/home.jpg');
+    background-image: url('/images/banners/home.jpg');
 }
 
 .splash-teaching {
-    background-image: url('/public/images/banners/teaching.jpg');
+    background-image: url('/images/banners/teaching.jpg');
 }
 
 #showcase #leftshowcase {
@@ -142,7 +142,7 @@ footer div.postal-address {
 }
 
 #showcase a {
-    color: #3FBF3F;
+    color: #428bca;
     text-decoration: none;
 }
 
@@ -157,9 +157,14 @@ footer div.postal-address {
     font-weight: bold;
 }
 
+/*
 .front-page h1 a, .front-page h2 a, .front-page h3 a, .front-page h4 a {
-  color: @brand-success;
+  color: #3FBF3F;
 }
+
+a {
+    color: #3FBF3F;
+}*/
 
 /****************************************************************/
 /* handle tex logo in html */
@@ -222,4 +227,10 @@ small {
 h1 small {
     font-size: 50%;
     opacity: 0.5;
+}
+
+/* Thumbnails */
+
+.thumbnail img {
+    width: 100%;
 }

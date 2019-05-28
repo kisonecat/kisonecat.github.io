@@ -7,36 +7,35 @@
       h4 <a href="/research">Research</a>
       p Find a list of my <a href="/research/papers/">research papers</a>.  Read my <a href="/research/statement">research statement</a>.  My <a href="/research">research</a> combines geometric group theory and surgery theory.
       h4 <a href="/teaching">Teaching</a>
-p See my <a href="/teaching/statement">teaching statement</a>, download <a href="/teaching">course materials</a> from past and present courses, or watch <a href="/teaching/videos">some videos</a>.  I teach on <a href="https://www.coursera.org/instructor/jimfowler">Coursera</a> and on <a href="https://itunes.apple.com/us/course/calculus-one/id660718824">iTunes U</a>.
+      p See my <a href="/teaching/statement">teaching statement</a>, download <a href="/teaching">course materials</a> from past and present courses, or watch <a href="/teaching/videos">some videos</a>.  I taught on <a href="https://www.coursera.org/instructor/jimfowler">Coursera</a> and on <a href="https://itunes.apple.com/us/course/calculus-one/id660718824">iTunes U</a>.
 hr
 .row.front-page
-    .col-lg-4
+    .col-lg-6
       h4 <a href='#' class="email">Email me</a>
       p The best way to contact me is via email: write to me at <a href='#' class="email"><span class="email">my last name at math.osu.edu</span></a>.
       p You can also call or text me at <span class="phone">(773) xxx-5659</span>.
-    .col-lg-4
       | POSTOREVIEW
-    .col-lg-4
+    .col-lg-6
       h4 Office hours
-        | {{ include office-hours.html }}
+      include office-hours.md
 hr
 .row.front-page
-    - var link = '/teaching/2013/calculus-one/';
+    - var link = 'https://ximera.osu.edu/mooculus/calculus1';
     .col-lg-7
       h3 <a href="#{link}">Calculus One</a>
       p Calculus is about the very large, the very small, and how things change.  The surprise is that something seemingly so abstract ends up explaining the real world.  Calculus plays a starring role in the biological, physical, and social sciences.  This online course is a first and friendly introduction to calculus, suitable for someone who has never seen the subject before, or for someone who has seen some calculus but wants to review the concepts and practice applying those concepts to solve problems.
       p
-        a.btn.btn-primary.btn-lg(href="https://www.coursera.org/learn/calculus1") Enroll Now
+        a.btn.btn-primary.btn-lg(href="https://youtube.com/kisonecat") View My Videos
     .col-lg-5
       a.thumbnail(href=link)
-        img(src="/public/images/logos/calculus-one.png")
+        img(src="/images/logos/calculus-one.png")
 
 hr
 .row.front-page
-    - var link = '/teaching/2014/calculus-two/';
+    - var link = 'https://ximera.osu.edu/mooculus/calculus2';
     .col-lg-5
       a.thumbnail(href=link)
-        img(src="/public/images/logos/calculus-two.png")
+        img(src="/images/logos/calculus-two.png")
     .col-lg-7
       h3 <a href="#{link}">Calculus Two: Sequences and Series</a>
       p Sequences and Series will challenge us to think very carefully about "infinity."  What does it mean to add up an unending list of numbers? How can an infinite task result in a finite answer?  These questions lead us to some very deep concepts&mdash;but also to some powerful computational tools which are used not only in math but in many quantitative disciplines.
@@ -53,6 +52,6 @@ hr
       p This is a course in multivariable differential calculus, but we will also introduce a ton of linear algebra.  The result is a course targeted at a student who has seen a bit of calculus and is willing to learn about matrices and vectors to provide the best possible vantage point from which to understand derivatives of functions of many variables.
     .col-lg-3
       a.thumbnail(href=link)
-        img(src="/public/images/logos/m2o2c2.png")
+        img(src="/images/logos/m2o2c2.png")
 
 
