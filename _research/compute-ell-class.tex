@@ -1,0 +1,24 @@
+---
+title: L-class computations
+status: unpublished
+year: 2012
+summary: 'Computation of the total $L$-class would also solve some manifold recognition problems, such as recognizing whether a particular combinatorial 15-vertex triangulations of an 8-manifold is the quaternionic projective plane $\mathbb{H}P^8$.  One of these examples $X^8$ is especially symmetric, and likely PL homeomorphic to $\mathbb{H}P^8$.'
+---
+
+UPDATE: This is solved by Denis Gorodkov in https://arxiv.org/abs/1603.05541
+
+Computation of the total $L$-class would also solve some manifold recognition problems.  Here is an example of such a problem and my proposed approach.  Brehm and K\"uhnel in \cite{MR1180457} exhibit a few different combinatorial 15-vertex triangulations of an 8-manifold ``like'' the quaternionic projective plane $\mathbb{H}P^8$.  One of these examples $X^8$ is especially symmetric, and likely PL homeomorphic to $\mathbb{H}P^8$.
+
+\begin{question}
+Is there a PL homeomorphism between the 15-vertex complex of Brehm--K\"uhnel and $\mathbb{H}P^8$?
+\end{question}
+
+Despite more recent work (e.g., \cite{MR3038783}) which has placed these examples in a nice context, this question remains open.  I propose answering this question with a direct computation of the rational $L$-class by implementing the procedure in \cite{MR440554}. It is perhaps surprising that this can be done effectively.  The relevant steps are to
+
+\begin{itemize}
+\item find a simplicial map $f : X^8 \times S^n \to S^{n+8}$ of nonzero degree,
+\item consider the preimage $f^{-1}(x)$ of some point $x \in S^{n+8}$, and
+\item compute the signature of $f^{-1}(x)$ by computing the cup product pairing on $H^\star(f^{-1}(x);\Q)$.
+\end{itemize}
+
+Of these, finding the map $f$ has proven to be more involved than I would have hoped; the stabilized copy of $X^8$ needs to be subdivided to get a map to a sphere, and this subdivision quickly increases the number of simplexes that need to be stored, in spite of how small the 15-vertex triangulation is at first.  More work needs to be done.
