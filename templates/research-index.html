@@ -1,0 +1,26 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item active">Research</li>
+  </ol>
+</nav>
+
+<p>My research is in topology and geometry—specifically, surgery theory
+and geometric group theory. A few of my favorite things include:
+aspherical manifolds, rational homotopy types of manifolds, group
+actions on manifolds, quantified versions of classical invariants.</p>
+
+<p>You may also be interested in seeing a list of my publications or
+reading <a href="/research/statement">my research statement</a>.</p>
+
+<hr/>
+
+$for(projects)$
+<a href="$url$"><h1>$title$
+$if(joint)$
+<small class="text-muted">Joint work with $for(joint)$$joint$$sep$, $endfor$</small>
+$endif$
+</h1></a>
+$body$
+$sep$<hr/>
+$endfor$

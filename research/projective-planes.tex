@@ -1,0 +1,92 @@
+---
+title: Projective planes
+status: unpublished
+year: 2013
+joint:
+  - Zhixu Su
+summary: 'The Hirzebruch $L$-polynomial is one place where number theory very strongly interacts with high-dimensional topology \cite{MR0339202}. Recall that the Hirzebruch signature theorem relates the signature of a smooth closed manifold $M^{4k}$ to $\sum_I L_I p_I(M)$. Unfortunately, the na\"ive method to compute coefficients $L_I$ of the Hirzebruch $L$-polynomial is much too slow for applications; Zhixu Su and I have discovered a recursive method which is fast enough to compute many coefficients. Solutions to some Diophantine equations related to these $L$-polynomials give rise to manifolds having a truncated polynomial algebra as their rational cohomology ring; such manifolds may exist even when the corresponding truncated polynomial algebra over $\Z$ is not the cohomology ring of any space.  For instance, there is a manifold having the rational cohomology that $\mathbb{O}P^4$ would be expected to have, if $\mathbb{O}P^4$ existed.'
+---
+
+
+The Hirzebruch $L$-polynomial is one place where number theory very strongly interacts with high-dimensional topology \cite{MR0339202}. Recall that the Hirzebruch signature theorem relates the signature of a smooth closed oriented manifold $M^{4k}$ to $\sum_I L_I p_I(M)$. Unfortunately, the na\"ive method to compute coefficients $L_I$ of the Hirzebruch $L$-polynomial is much too slow for applications; Zhixu~Su and I have discovered a recursive method which is fast enough to compute many coefficients.
+
+  Solutions to some Diophantine equations related to these $L$-polynomials give rise to manifolds having a truncated polynomial algebra as their rational cohomology ring; such manifolds may exist even when the corresponding truncated polynomial algebra over $\Z$ is not the cohomology ring of any space.  For instance, there is a manifold having the rational cohomology that $\mathbb{O}P^4$ would be expected to have, if $\mathbb{O}P^4$ existed.
+
+  On the other hand, nonexistence results are also possible. A rational projective plane means a smooth manifold $M^{4n}$ with $H^\star(M;\Q) = \Q[x]/(x^3)$ with $|x| = 2n$.
+  \begin{question}
+  For which $n$ is there a rational projective plane $M^{4n}$?
+  \end{question}
+  There is a piecewise linear $\mathbb{Q}$-homology manifold with $\Q[x]/(x^3)$ as its cohomology ring, so this question can be viewed as a question about whether that $\mathbb{Q}$-homology manifold can be ``resolved'' by a smooth manifold.  Integrally, this is not always possible by the celebrated work of Adams \cite{MR133837}, but in Zhixu Su's thesis, it was shown that there \textit{is} a rational projective plane in dimension~32.  But it is not always possible, even rationally.
+  \begin{theorem}[Fowler--Su]
+    There is no rational projective plane in dimension~64.
+  \end{theorem}
+  This boils down to some number theory.  Since a rational projective plane has signature one, we would be seeking a solution to $s_{8,8} x^2 \pm s_{16} y = \pm 1$ for integers $x$ and $y$.  Note that $37$ divides the numerator of $s_{16}$, because $37$ divides $B_{32}$---perhaps not so surprising considering 37's status as the smallest irregular prime.  So it is enough to show there is no solution to $x^2 \not\equiv \pm 1/s_{8,8} \pmod{37}$.  Since $s_{16} \equiv 0 \pmod{37}$,
+  
+\begin{align*}
+  s_{8,8}
+  &\equiv \frac{ {s_k}^2 - s_{2k}}{2} \pmod{37} \\
+  &\equiv \frac{ {s_k}^2}{2} \pmod{37},
+\end{align*}
+  
+but neither $2$ nor $-2$ is a quadratic residue modulo 37.
+
+The same argument works to rule out a rational projective plane in
+dimension $2^{k+3}$ provided one can find a prime $p$ so that
+\begin{itemize}
+  \item $2$ and $-2$ are quadratic nonresidues modulo $p$,
+  \item $\nu_p(s_{2 \cdot 2^k}) > 0$, but
+  \item $\nu_p(s_{2^k}) = 0$.
+\end{itemize}
+To ensure $2$ is a quadratic nonresidue, it is enough that $p \not\equiv \pm 1 \pmod 8$; to ensure that $-2$ is also a quadratic nonresidue, we further want $p \equiv 5 \pmod 8$.
+
+The fact that divisors of $2^{2^k - 1} - 1$ are rarely (never?)
+$5 \bmod 8$ tells us not to look for such primes among the divisors of
+the Mersenne factor.  The above desiderata are satisfied by finding a
+prime $p$ so that
+\begin{itemize}
+    \item $p \equiv 5 \pmod 8$,
+    \item $p > 4 \cdot 2^k$,
+    \item $p$ divides the numerator of $B_{4 \cdot 2^k}$,
+    \item $p$ does not divide the numerator of $B_{2 \cdot 2^k}$.
+\end{itemize}
+The number theory becomes rather involved computationally.  For
+example, the prime $p = 502261$ is $5 \bmod 8$ and divides the
+numerator of $B_{4 \cdot 2^{11}}$ but not $B_{2 \cdot 2^{11}}$, which rules
+out a rational projective plane in dimension $2^{14} = 4096$;
+similarly, the prime $p = 69399493$ is $5 \bmod 8$, divides the
+numerator of $B_{4 \cdot 2^{21}}$ but not $B_{2 \cdot 2^{21}}$, which rules
+out a projective plane in dimension $2^{24}$.  These calculations are
+possible due to tables of irregular primes produced by Joe P.~Buhler
+and David Harvey \cite{MR2813369}.
+
+Looking over these calculations, there are things that we can say in general.
+\begin{theorem}[Fowler--Su]
+  If $M^n$ is a rational projective plane, then $n = 2^a + 2^b$ for
+  $a, b \in \mathbb{N}$.
+\end{theorem}
+This result has some interesting consequences, such as the fact that
+there is a topological manifold which is not $\Q$-homotopy equivalent
+to a smooth manifold.  And even in dimensions $4n$ for which there is
+a rational projective plane, a refined question can be explored.
+\begin{question}
+  Suppose $M^{4n}$ is a rational projective plane.  How highly
+  connected can $M^{4n}$ be, integrally?
+\end{question}
+When $4n = 32$, we have a particularly nice answer by doing
+$\hat{A}$-genus calculations: there does not exist a simply-connected
+closed Spin manifold $M^{32}$ which is a rational projective plane, so
+a 32-dimensional example cannot even be integrally 2-connected.
+Calculations involving the Steenrod algebra and Stiefel-Whitney
+classes may provide other methods for determining how highly connected
+a rational projective plane must be.
+
+Finally, another interesting question is to study the asymptotic
+running time for algorithms computing the $L$-polynomial.
+\begin{question}
+How quickly can the $L$-polynomial be computed?
+\end{question}
+Such questions tie into Bernoulli number calculations, for which there
+are impressively fast analytic methods \cite{MR2684369}.  This would
+be a nice historical story, since the computation of Bernoulli numbers
+was the goal of computer program from 1843 written by Ada Lovelace
+\cite{MR550674}.

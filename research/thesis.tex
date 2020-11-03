@@ -1,0 +1,43 @@
+---
+title: Ph.D. Thesis
+status: published
+year: 2009
+bibtex: thesis.bibtex
+pdf: thesis.pdf
+png: thesis.png
+summary: 'We say that a group $G$ is $\mathbb{Q}$-$\mathrm{PD}$ if it satisfies Poincare duality with rational coefficients (i.e., if its classifying space $BG$ does).  Examples include the fundamental groups of aspherical manifolds. But there are other geometric examples: if a group $G$ acts freely on a rationally-acyclic, rational homology manifold, then $G$ is $\mathbb{Q}$-$\mathrm{PD}$.  Does every $\mathbb{Q}$-$\mathrm{PD}$ arise in this way&mdash;does every $\mathbb{Q}$-$\mathrm{PD}$ group act on such an object? The answer is no: lattices with torsion in semisimple Lie groups are counterexamples.'
+mr: MR2713220
+---
+
+A group $G$ is a Poincar\'e duality group if its classifying space $BG$ satisfies Poincar\'e duality; examples include fundamental groups of aspherical manifolds.  C.~T.~C.~Wall asked whether a Poincar\'e duality group is necessarily the fundamental group of an aspherical manifold, and M.~Davis in \cite{MR1747535} broadened Wall's question to $R$-homology manifolds:
+  \begin{question}[M.~Davis]
+  Is every finitely presented torsion-free group satisfying Poincar\'e
+  duality with $R$-coefficients (``$R$-PD'') the fundamental group of an
+  aspherical closed $R$-homology manifold?
+  \end{question}
+My thesis answers M.~Davis' question in the negative, using Bestvina--Brady Morse theory to produce $\Q$-PD groups $G$ for which $BG$ does not have the homotopy type of a finite complex.
+
+  I also addressed a generalization version of M.~Davis' question. There are weaker geometric conditions that nonetheless imply a group is $R$-PD: for $\pi$ to satisfy Poincar\'e duality with $R$ coefficients, it suffices that $\pi$ act freely on an $R$-acyclic $R$-homology manifold.
+  \begin{question}
+    Does every finitely presented group $\pi$ satisfying Poincar\'e duality with $R$ coefficients act freely on an $R$-acyclic $R$-homology manifold?
+  \end{question}
+  This is interesting when $R = \Q$.  All finite groups are $0$-dimensional $\Q$-PD, and extensions of $\Q$-PD groups by finite groups are therefore $\Q$-PD.  The restriction to torsion-free groups is not necessary, as groups with torsion may act freely on $\Q$-acyclic (albeit not contractible) finite complexes.
+
+  A particular class of $\Q$-PD groups to consider are uniform lattices with torsion (which, by Selberg, are extensions of manifold groups by finite groups).
+  \begin{theorem}[Fowler]
+    Let $\Gamma$ be a uniform lattice containing an element of finite order ($\neq$ 2).  Although $\Gamma$ is $\Q$-PD, $\Gamma$ does not act freely on a $\Q$-acyclic $\Q$-homology manifold.
+  \end{theorem}
+  The proof involves two obstructions: a finiteness obstruction, and a controlled symmetric signature.  With more work, I hope to address the situation for $\Gamma$ containing $2$-torsion
+  \begin{proof}[Sketch of Proof:]
+    The group $\Gamma$ is given as an extension $0 \to \pi \to \Gamma \to G \to 0$, where $\pi$ is torsion-free, and $G$ is a finite group.  Given the Baum-Connes conjecture for $\Gamma$, the $\Gamma$-equivariant signature operator on $E\pi$ (which is the universal space for proper $\Gamma$ actions) cannot be lifted back to the signature operator on $B\Gamma$.  To obstruct this lift, the space $E\pi$ is used to determine the equivariant signature operator of $\Gamma$ acting on the universal cover of the hypothetical homology manifold; geometric localization arguments can then be combined with calculations near fixed points to give a contradiction---although this last step fails in the absence of odd torsion.
+  \end{proof}
+
+  In addition to controlled surgery considerations, there is a finiteness question:
+  \begin{question}
+  For a given group $G$, does there exist a free action of $G$ on an $R$-acyclic complex, with finite quotient?
+  \end{question}
+  Bestvina and Brady \cite{MR1465330} call such groups FH over $R$, in analogy with other homological finiteness conditions.
+
+  In many cases, a finiteness obstruction will prevent $\Gamma$ from acting on a $\Q$-acyclic finite complex, let alone a $\Q$-homology manifold.  Again, consider a uniform lattice $\Gamma$, and write $0 \to \pi \to \Gamma \to G \to 0$, with $\pi$ torsion-free and $G$ finite.  For convenience, $G = \Z/p\Z$.  If $G$ acts freely on a finite complex $B\pi$, then the Lefschetz fixed point theorem implies $\chi(B\pi^G) = 0$.
+
+  The equivariant finiteness obstruction fits into a categorical framework defined by L\"uck \cite{MR1027600}; the condition $\chi(B\pi^G) = 0$, while necessary for $\Gamma$ to be FH, is not enough: $\chi(B\pi^G)$ can vanish while the Euler characteristics of the connected components of $B\pi^G$ may not vanish.  If $\chi(C) = 0$ for each connected component $C$ of $B\pi^G$, then the equivariant finiteness obstruction does indeed vanish.  The componentwise vanishing of the Euler characteristic is easy to verify in some cases, such as when the fixed sets are all odd-dimensional submanifolds.

@@ -1,0 +1,45 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item"><a href="/research">Research</a></li>
+    <li class="breadcrumb-item active" aria-current="page">$title$</li>
+  </ol>
+</nav>
+
+<h1>$title$
+$if(joint)$
+<small class="text-muted">Joint work with $for(joint)$$joint$$sep$, $endfor$</small>
+$endif$
+</h1>
+
+<div class="row">
+  <div class="col-lg-9">
+    $body$
+  </div>
+  
+$if(pdf)$
+  <div class="col-lg-3">
+    <div class="card">
+      <img class="card-img-top center-cropped" src="{{ page.pdf | replace: '.pdf', '.png' }}">
+      <div class="card-block">
+	<h4 class="card-title">Download as PDF</h4>
+	<a href="$pdf$" class="btn btn-primary"><i class="fa fa-download"></i>&nbsp;Download</a>
+      </div>
+    </div>
+  </div>
+$endif$
+  
+$if(arxiv)$
+  <div class="col-lg-3">
+    <div class="card">
+      <div class="card-block">
+	<h4 class="card-title">Download from the ArXiv</h4>
+	<a href="https://arxiv.org/pdf/$arxiv$.pdf" class="btn btn-primary"><i class="fa fa-download"></i>&nbsp;Download</a>
+      </div>
+    </div>
+  </div>
+$endif$
+  
+</div>
+
+

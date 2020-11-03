@@ -1,0 +1,89 @@
+main {
+    padding-top: 4.4375rem;
+}
+
+.splash-home {
+    background-image: url('/images/banners/home.jpg');
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;              /* optional, center the image */
+
+}
+
+.splash-teaching {
+    background-image: url('/images/banners/teaching.jpg');
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;              /* optional, center the image */    
+}
+
+#showcase #leftshowcase {
+    width: 60%;
+}
+
+#showcase h1 {
+    text-align: right;
+    padding: 15pt;
+    font-size: 48pt;
+    font-weight: bold;
+    margin: 0;
+    color: #fff;
+    text-shadow: #111 1px 1px 3px;
+    padding-top: 60pt;
+}
+
+#showcase h2 {
+    text-align: right;
+    padding: 24pt;
+    font-size: 24pt;
+    font-weight: bold;
+    margin: 0;
+    color: #fff;
+    text-shadow: #111 1px 1px 2px;
+}
+
+#showcase a {
+    color: #428bca;
+    text-decoration: none;
+}
+
+#showcase a:hover {
+    text-decoration: underline;
+}
+
+/****************************************************************/
+/* footer */
+
+footer {
+  padding-top: 32pt;
+  color: #AAA;
+  font-size: 10pt;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer ul li {
+    display: inline;
+    padding-right: 12pt;
+}
+
+footer dl dt {
+    font-weight:bold;
+    margin-right:10px;
+    text-align: right;
+    width:100pt;
+    display: inline;
+}
+ 
+footer dl dd {
+    margin:2px 0;
+    display: inline;
+}
+
+footer div.postal-address {
+    display: inline-block;
+    vertical-align: top;
+}
