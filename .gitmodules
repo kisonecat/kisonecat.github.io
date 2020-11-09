@@ -1,0 +1,9 @@
+[submodule "courses/math5520h"]
+	path = courses/math5520h
+	url = git@github.com:kisonecat/math5520h.git
+[submodule "courses/math5801"]
+	path = courses/math5801
+	url = git@github.com:kisonecat/math5801.git
+[submodule "curriculum-vitae"]
+	path = curriculum-vitae
+	url = git@github.com:kisonecat/curriculum-vitae.git

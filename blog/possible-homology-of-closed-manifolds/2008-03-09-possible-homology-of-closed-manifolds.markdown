@@ -5,7 +5,7 @@ tags: questions mathematics
 date: 2008-03-09 01:10:21 +0000
 ---
 
-In this fun paper, <blockquote>MR1845679</blockquote> it is pointed out that
+In this fun paper @MR1845679 it is pointed out that
 
 - *homology* is a very basic invariant, and
 - *closed manifolds* are very basic objects

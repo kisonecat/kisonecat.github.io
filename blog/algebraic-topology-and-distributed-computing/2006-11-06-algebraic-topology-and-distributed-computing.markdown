@@ -5,9 +5,7 @@ tags: talks
 date: 2006-11-06 19:54:26 +0000
 ---
 
-I gave a seminar talk on
-
-> MR1389577
+I gave a seminar talk on @MR1389577.
 
 This paper doesn't do it (but Rajsbaum's MSRI talk did), but the result can be reformulated combinatorially, so that the algebraic topology appears as an instance of Sperner's lemma; this is the sort of thing that should be done at mathcamp.
 

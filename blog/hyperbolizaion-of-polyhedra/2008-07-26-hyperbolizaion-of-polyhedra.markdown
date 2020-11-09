@@ -5,9 +5,7 @@ tags: talks mathematics
 date: 2008-07-26 15:14:56 +0000
 ---
 
-I gave a talk in the <b>Farb and Friends Student Seminar</b> (back in March!) on:
-
-> MR1131435
+I gave a talk in the <b>Farb and Friends Student Seminar</b> (back in March!) on @MR1131435.
 
 This is an <b>awesome paper</b>&mdash;well-worth a few words on every blog!
 

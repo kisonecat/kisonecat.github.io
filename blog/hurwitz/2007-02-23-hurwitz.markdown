@@ -15,9 +15,6 @@ So here's the punchline--or rather the punch-question--<strong>why is the genus 
 
 The point is, even without doing any calculations or thinking very hard, the number of symmetries of $\Sigma^2_n$ is growing exponentially in $n$, and therefore the genus must be growing exponentially in $n$ as well---the orbifold makes this reasoning precise.
 
-There's a lot of stuff left to be discovered about the number of automorphisms of genus $g$ surfaces.  For instance, it's known that the $84(g-1)$ bound is attained for infinitely many genera, but there are also infinitely many genera for which it is not attained.  Let $N(g)$ be the maximal order of the automorphism group of a genus $g$ surface; Maclachlan and Accola proved (in 1968) that $N(g) \geq 8(g+1)$.  This bound is sharp, too.  There's a beautiful paper
-
-> MR2132170
-
+There's a lot of stuff left to be discovered about the number of automorphisms of genus $g$ surfaces.  For instance, it's known that the $84(g-1)$ bound is attained for infinitely many genera, but there are also infinitely many genera for which it is not attained.  Let $N(g)$ be the maximal order of the automorphism group of a genus $g$ surface; Maclachlan and Accola proved (in 1968) that $N(g) \geq 8(g+1)$.  This bound is sharp, too.  There's a beautiful paper @MR2132170
 working out what happens in the arithmetic and non-arithmetic case.  Anyway, what is known about the set of $g$ for which $84(g-1)$ is attained?  <strong>What is the asymptotic density of this set?</strong>
 

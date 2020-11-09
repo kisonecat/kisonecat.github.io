@@ -11,9 +11,5 @@ An algorithm for deciding whether two closed 4-manifolds are homeomorphic gives 
 
 Since there is no algorithm for deciding when a group is trivial, there can not be an algorithm for deciding when two closed 4-manifolds are homeomorphic.
 
-Here is a paper discussing some of these issues:
-
-> MR2234702
-
-In particular, that paper discusses Novikov's proof that $S^n$ cannot be recognized for $n \geq 5$.
+There is a paper @MR2234702 discussing some of these issues.  In particular, that paper discusses Novikov's proof that $S^n$ cannot be recognized for $n \geq 5$.
 
