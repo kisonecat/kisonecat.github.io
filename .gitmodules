@@ -5,5 +5,5 @@
 	path = courses/math5801
 	url = git@github.com:kisonecat/math5801.git
 [submodule "curriculum-vitae"]
-	path = curriculum-vitae
+	path = cv
 	url = git@github.com:kisonecat/curriculum-vitae.git
