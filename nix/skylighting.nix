@@ -1,5 +1,5 @@
 { mkDerivation, base, binary, bytestring, containers
-, skylighting-core, stdenv
+, skylighting-core, stdenv, lib
 }:
 mkDerivation {
   pname = "skylighting";
@@ -12,5 +12,5 @@ mkDerivation {
   ];
   homepage = "https://github.com/jgm/skylighting";
   description = "syntax highlighting library";
-  license = stdenv.lib.licenses.gpl2;
+  license = lib.licenses.gpl2;
 }

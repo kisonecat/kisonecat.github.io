@@ -3,7 +3,7 @@
 , case-insensitive, colour, containers, criterion, Diff, directory
 , filepath, HUnit, hxt, mtl, pretty-show, QuickCheck, random
 , regex-pcre-builtin, safe, stdenv, tasty, tasty-golden
-, tasty-hunit, tasty-quickcheck, text, transformers, utf8-string
+, tasty-hunit, tasty-quickcheck, text, transformers, utf8-string, lib
 }:
 mkDerivation {
   pname = "skylighting-core";
@@ -27,5 +27,5 @@ mkDerivation {
   ];
   homepage = "https://github.com/jgm/skylighting";
   description = "syntax highlighting library";
-  license = stdenv.lib.licenses.bsd3;
+  license = lib.licenses.bsd3;
 }

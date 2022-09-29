@@ -1,6 +1,9 @@
 { mkDerivation, base, blaze-html, containers, extra, filepath
-, hakyll, latex-svg-hakyll, latex-svg-image, latex-svg-pandoc
-, pandoc, pandoc-citeproc, pandoc-types, pcre-heavy, pcre-light
+, hakyll,
+#latex-svg-hakyll,
+#latex-svg-image,
+#latex-svg-pandoc,
+ pandoc, pandoc-citeproc, pandoc-types, pcre-heavy, pcre-light
 , stdenv, text, time
 }:
 mkDerivation {
@@ -10,8 +13,11 @@ mkDerivation {
   isLibrary = false;
   isExecutable = true;
   executableHaskellDepends = [
-    base blaze-html containers extra filepath hakyll latex-svg-hakyll
-    latex-svg-image latex-svg-pandoc pandoc pandoc-citeproc
+    base blaze-html containers extra filepath hakyll
+    #latex-svg-hakyll
+    #latex-svg-image
+    #latex-svg-pandoc
+    pandoc pandoc-citeproc
     pandoc-types pcre-heavy pcre-light text time
   ];
   license = "unknown";

@@ -1,7 +1,7 @@
 { mkDerivation, aeson, base, bytestring, containers, criterion
 , deepseq, ghc-prim, HUnit, QuickCheck, stdenv, string-qq, syb
 , test-framework, test-framework-hunit, test-framework-quickcheck2
-, text, transformers
+, text, transformers, lib
 }:
 mkDerivation {
   pname = "pandoc-types";
@@ -20,5 +20,5 @@ mkDerivation {
   benchmarkHaskellDepends = [ base criterion text ];
   homepage = "https://pandoc.org/";
   description = "Types for representing a structured document";
-  license = stdenv.lib.licenses.bsd3;
+  license = lib.licenses.bsd3;
 }

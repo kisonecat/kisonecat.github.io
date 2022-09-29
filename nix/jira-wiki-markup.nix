@@ -1,4 +1,4 @@
-{ mkDerivation, base, mtl, parsec, stdenv, tasty, tasty-hunit, text
+{ mkDerivation, base, mtl, parsec, stdenv, tasty, tasty-hunit, text, lib
 }:
 mkDerivation {
   pname = "jira-wiki-markup";
@@ -11,5 +11,5 @@ mkDerivation {
   testHaskellDepends = [ base parsec tasty tasty-hunit text ];
   homepage = "https://github.com/tarleb/jira-wiki-markup";
   description = "Handle Jira wiki markup";
-  license = stdenv.lib.licenses.mit;
+  license = lib.licenses.mit;
 }

@@ -1,4 +1,4 @@
-{ nixpkgs ? import <nixpkgs> {}, compiler ? "ghc884" }:
+{ nixpkgs ? import <nixpkgs> {}, compiler ? "ghc8107" }:
 nixpkgs.lib.overrideDerivation
   (import ./default.nix { inherit nixpkgs compiler; }).env
   (old:

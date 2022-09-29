@@ -11,7 +11,7 @@
 , syb, tagsoup, tasty, tasty-golden, tasty-hunit, tasty-lua
 , tasty-quickcheck, temporary, texmath, text, text-conversions
 , time, unicode-transforms, unix, unordered-containers, vector
-, weigh, xml, zip-archive, zlib
+, weigh, xml, zip-archive, zlib, lib
 }:
 mkDerivation {
   pname = "pandoc";
@@ -51,5 +51,5 @@ mkDerivation {
   '';
   homepage = "https://pandoc.org";
   description = "Conversion between markup formats";
-  license = stdenv.lib.licenses.gpl2;
+  license = lib.licenses.gpl2;
 }

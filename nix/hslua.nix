@@ -1,6 +1,6 @@
 { mkDerivation, base, bytestring, containers, criterion, deepseq
 , exceptions, fail, lua5_3, mtl, QuickCheck, quickcheck-instances
-, stdenv, tasty, tasty-hunit, tasty-quickcheck, text
+, stdenv, tasty, tasty-hunit, tasty-quickcheck, text, lib
 }:
 mkDerivation {
   pname = "hslua";
@@ -18,5 +18,5 @@ mkDerivation {
   benchmarkHaskellDepends = [ base bytestring criterion deepseq ];
   homepage = "https://hslua.github.io/";
   description = "Bindings to Lua, an embeddable scripting language";
-  license = stdenv.lib.licenses.mit;
+  license = lib.licenses.mit;
 }
