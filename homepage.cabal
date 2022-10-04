@@ -28,7 +28,8 @@ executable homepage
   ghc-options:      -Wall
   build-depends:
       base,
-      hakyll == 4.13.4.0,
+      --hakyll == 4.13.4.0,
+      hakyll,
       filepath,
       latex-svg-hakyll,
       latex-svg-image,
