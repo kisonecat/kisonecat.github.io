@@ -92,6 +92,13 @@ hr {
     width: 100%;
 }
 
+blockquote {
+    border-left-style: solid;
+    border-left-width: 6px;
+    border-left-color: #444;
+    padding-left: 20px;
+}
+
 @font-face {
 	font-family: 'Computer Modern';
 	src: url('/fonts/cmunrm.eot');

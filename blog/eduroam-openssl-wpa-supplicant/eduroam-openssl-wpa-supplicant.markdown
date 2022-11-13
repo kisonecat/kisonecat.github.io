@@ -21,7 +21,7 @@ wpa_supplicant[2213]: OpenSSL: openssl_handshake - SSL_connect error:0A000152:SS
 So this seemed to be an issue with OpenSSL not supporting certain legacy protocols.
 
 Some searching revealed that [James Ralston](https://www.spinics.net/lists/hostap/msg09840.html)
-discussing this issue, and describing a patch to `wpa_supplicant` to
+discussed this issue and described a patch to `wpa_supplicant` to
 support legacy servers.  Here's `eduroam.patch`:
 
 ```
